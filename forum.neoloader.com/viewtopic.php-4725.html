@@ -1,0 +1,505 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>NeoLoader 0.30b - Bug List - NeoLoader Forum</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - NeoLoader Forum" href="feed.php">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="feed-1.php?mode=topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Bugs" href="feed-10.php?f=171">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - NeoLoader 0.30b - Bug List" href="feed-223.php?f=171&amp;t=3265">
+	<link rel="canonical" href="viewtopic.php-3363.html?t=3265">
+
+<!--
+	phpBB style name: prosilver Special Edition
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:      phpBB Limited ( https://www.phpbb.com/ )
+-->
+
+<link href="styles/prosilver/theme/print.css?assets_version=4" rel="stylesheet" media="print" title="printonly">
+
+<link href="styles/prosilver/theme/common.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/links.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/content.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/buttons.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/cp.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/forms.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/colours.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/imageset.css?assets_version=4" rel="stylesheet">
+
+<link href="styles/prosilver_se/theme/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/en/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/responsive.css?assets_version=4" rel="stylesheet" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)">
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=4" rel="stylesheet" />
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner">
+
+			<div id="site-description">
+				<a id="logo" class="logo" href="http://neoloader.com" title="NeoLoader Homepage"><span class="imageset site_logo"></span></a>
+				<h1>NeoLoader Forum</h1>
+				<p>Forum of the NeoLoader P2P Client/Downloader</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+						<div id="search-box" class="search-box search-header">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…">
+					<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+					<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+					
+				</fieldset>
+				</form>
+			</div>
+			
+			</div>
+		</div>
+
+		<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="linklist bulletin" role="menubar">
+
+		<li id="quick-links" class="small-icon responsive-menu dropdown-container" data-skip-responsive="true">
+			<a href="#" class="responsive-menu-link dropdown-trigger">Quick links</a>
+			<div class="dropdown hidden">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																								<li class="small-icon icon-search-unanswered"><a href="search.php-1.html?search_id=unanswered" role="menuitem">Unanswered posts</a></li>
+						<li class="small-icon icon-search-active"><a href="search.php-2.html?search_id=active_topics" role="menuitem">Active topics</a></li>
+						<li class="separator"></li>
+						<li class="small-icon icon-search"><a href="search.php.html" role="menuitem">Search</a></li>
+					
+											<li class="separator"></li>
+												<li class="small-icon icon-team"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li class="small-icon icon-faq" data-skip-responsive="true"><a href="faq.php.html" rel="help" title="Frequently Asked Questions" role="menuitem">FAQ</a></li>
+						
+			<li class="small-icon icon-logout rightside" data-skip-responsive="true"><a href="ucp.php.html?mode=login" title="Login" accesskey="x" role="menuitem">Login</a></li>
+					<li class="small-icon icon-register rightside" data-skip-responsive="true"><a href="ucp.php-1.html?mode=register" role="menuitem">Register</a></li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="linklist navlinks" role="menubar">
+						<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" accesskey="h" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="index">Board index</a></span>
+											<span class="crumb"><a href="viewforum.php-3.html?f=169" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="169">NeoLoader English</a></span>
+															<span class="crumb"><a href="viewforum.php-6.html?f=171" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="171">Bugs</a></span>
+												</li>
+		
+					<li class="rightside responsive-search" style="display: none;"><a href="search.php.html" title="View the advanced search options" role="menuitem">Search</a></li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body">
+		
+		
+<h2 class="topic-title"><a href="viewtopic.php-1084.html?f=171&amp;t=3265">NeoLoader 0.30b - Bug List</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+			<a href="posting.php-1173.html?mode=reply&amp;f=171&amp;t=3265" class="button icon-button locked-icon" title="This topic is locked, you cannot edit posts or make further replies.">
+			Locked		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-3364.html?f=171&amp;t=3265&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…">
+				<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+				<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+				<input type="hidden" name="t" value="3265">
+<input type="hidden" name="sf" value="msgonly">
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			5 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+	
+</div>
+
+
+			<div id="p16219" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16219">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16219">
+
+			<h3 class="first"><a href="#p16219">NeoLoader 0.30b - Bug List</a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3365.html?p=16219#p16219"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Sun May 05, 2013 7:03 am </p>
+
+			
+			
+			<div class="content">[CENTER]<strong>[color="#FF0000"]Know Bugs 0.30b[/color]</strong>[/CENTER]<br><br>- Can't choose Temp folder in 1st start wizard<br>- In 1st start wizard advanced options are not show, after turning off only grey out. It should be grey out and not invisible even first<br>- Default columm size & order have no sense<br>- Lag switching windows that show previous window<br>- Columm order is not auto-updated, you need to update it manually<br>- ed2k download don't find sources<br>- torrent download find peer but don't download<br>- No fileicon with magnet links after grabbed. It works after restart &lt;--- tried more times and now no more happens, strange<br>- Avaibility X/Y --&gt; With magnet link X stays always at 0 but peers are connected. <em>EDIT: Maybe because Y is total peers and X is seeds! Seems like that...</em><br>- AutoShare ed2k is active, but right click on single files it says not<br>- Can't select Temp directory in subfolder of Incoming one, else there will be download list bugged<br>- When removing/deleting a file from downloads, it is not canceled from Temp folder<br>- Really high overhead without reason (for example in upload 0b/s (25kb/s))<br>- Unstable download speed, same as upload, tested with linux distros<br>- Sometimes at startup it don't find any sources.seed.peer.<br>- When downloading multiple torrent files since the folder is not wrote on incoming folder there is a bug in filelist<br><br><strong>Host Untested <img class="smilies" src="./images/smilies/frown.png" alt=":(" title=":("> </strong></div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16223" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16223">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16223">
+
+			<h3><a href="#p16223"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3366.html?p=16223#p16223"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Sun May 05, 2013 8:58 pm </p>
+
+			
+			
+			<div class="content">Bug list updated.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16226" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16226">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16226">
+
+			<h3><a href="#p16226"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3367.html?p=16226#p16226"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Wed May 08, 2013 1:27 pm </p>
+
+			
+			
+			<div class="content">Updated bug list</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16228" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16228">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16228">
+
+			<h3><a href="#p16228"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3368.html?p=16228#p16228"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Thu May 09, 2013 12:36 pm </p>
+
+			
+			
+			<div class="content">- Can't choose Temp folder in 1st start wizard<br>-- this is intended behavior (not a bug), we need to force the incoming directory and the temp directory to be on the same physical drive.<br>- In 1st start wizard advanced options are not show, after turning off only grey out. It should be grey out and not invisible even first<br>-- removing the items again would be better i agree, but it would be more complicated to implement, and I believe it does not really matter if its grayed out or fully hidden. I will leave it as it is for the foreseeable future.<br>- Default columm size & order have no sense<br>-- fixed in 0.31 using settings you send me<br>- Lag switching windows that show previous window<br>-- fixed in 0.31 when switching and waiting for new file list window is cleared.<br>- torrent download find peer but don't download<br>-- fixed in 0.31 issue was only with *,torrents not with magnets<br>- No fileicon with magnet links after grabbed. It works after restart &lt;--- tried more times and now no more happens, strange<br>-- fixed in 0.31<br>- AutoShare ed2k is active, but right click on single files it says not<br>-- fixed in 0.31, Note: after changing the setting it is not applyed to old files, also note that the state is being set only after the file was hashed and a ed2k has<br>- When removing/deleting a file from downloads, it is not canceled from Temp folder<br>-- fixed in 0.31<br>- When downloading multiple torrent files since the folder is not wrote on incoming folder there is a bug in filelist<br>-- fixed in 0.31<br>- single file sharing does not work<br>-- fixed in 0.31</div>
+
+			
+									
+									<div id="sig16228" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16235" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16235">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16235">
+
+			<h3><a href="#p16235"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3369.html?p=16235#p16235"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Thu May 09, 2013 2:55 pm </p>
+
+			
+			
+			<div class="content">Thanks I'll test from now the new release and I'll make a new bug list.<br><br>I don't agree with temp folder on 1st wizard, you can even change it choosing the same drive as incoming without any problem, if not just prompt and error window :\<br><br>I will not delete these from bug list but I'll add you explanation about. Thanks.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+	
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=171&amp;t=3265">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<input type="submit" name="sort" value="Go" class="button2">
+			</fieldset>
+	</form>
+	<hr>
+
+<div class="action-bar bottom">
+	<div class="buttons">
+		
+			<a href="posting.php-1173.html?mode=reply&amp;f=171&amp;t=3265" class="button icon-button locked-icon" title="This topic is locked, you cannot edit posts or make further replies.">
+			Locked		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-3364.html?f=171&amp;t=3265&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+	
+			<div class="pagination">
+			5 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+		<div class="clear"></div>
+</div>
+
+
+	<p class="jumpbox-return"><a href="viewforum.php-6.html?f=171" class="left-box arrow-left" accesskey="r">Return to “Bugs”</a></p>
+
+
+	<div class="dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+		<span title="Jump to" class="dropdown-trigger button dropdown-select">
+			Jump to		</span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																			<li><a href="viewforum.php.html?f=10">News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-1.html?f=11">Board News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-2.html?f=161">NeoLoader Releases</a></li>
+																<li><a href="viewforum.php-3.html?f=169">NeoLoader English</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-4.html?f=180">General/Discussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-5.html?f=170">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-6.html?f=171">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-7.html?f=172">Feature Requests</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-8.html?f=173">Script Development</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-9.html?f=174">Extensions</a></li>
+																<li><a href="viewforum.php-10.html?f=163">NeoLoader German</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-11.html?f=179">Algemeines/Diskussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-12.html?f=164">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-13.html?f=165">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-14.html?f=166">Feature Wünsche</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-15.html?f=167">Script Entwicklung</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-16.html?f=168">Erweiterungen</a></li>
+																<li><a href="viewforum.php-17.html?f=4">Community</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-18.html?f=81">OffTopic</a></li>
+										</ul>
+		</div>
+	</div>
+
+
+	<div class="stat-block online-list">
+		<h3>Who is online</h3>
+		<p>Users browsing this forum: No registered users and 4 guests</p>
+	</div>
+
+			</div>
+
+
+<div id="page-footer">
+	<div class="navbar">
+	<div class="inner">
+
+	<ul id="nav-footer" class="linklist bulletin" role="menubar">
+		<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" data-navbar-reference="index">Board index</a></span>
+					</li>
+		
+				<li class="rightside">All times are <abbr title="UTC+1">UTC+01:00</abbr></li>
+							<li class="small-icon icon-delete-cookies rightside"><a href="ucp.php-3.html?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">Delete all board cookies</a></li>
+									<li class="small-icon icon-team rightside" data-last-responsive="true"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>				<li class="small-icon icon-contact rightside" data-last-responsive="true"><a href="memberlist.php-11.html?mode=contactadmin" role="menuitem">Contact us</a></li>	</ul>
+
+	</div>
+</div>
+
+	<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+	</div>
+	<div id="loading_indicator"></div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close"></a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div class="copyright">
+		Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<script type="text/javascript" src="assets/javascript/jquery.min.js?assets_version=4"></script>
+<script type="text/javascript" src="assets/javascript/core.js?assets_version=4"></script>
+
+
+<script type="text/javascript" src="styles/prosilver/template/forum_fn.js?assets_version=4"></script>
+
+<script type="text/javascript" src="styles/prosilver/template/ajax.js?assets_version=4"></script>
+
+
+
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

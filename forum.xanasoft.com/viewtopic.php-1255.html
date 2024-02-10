@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; [bug] Run menu doesn't run programs</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>[bug] Run menu doesn't run programs</h2>
+		<p><a href="viewtopic.php-190.html?f=14&amp;t=719">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=719</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>[bug] Run menu doesn't run programs</h3>
+				<div class="date">Posted: <strong>Sat Jan 13, 2024 8:50 am</strong></div>
+				<div class="author">by <strong>SamDi</strong></div>
+				<div class="content">Hi,<br>
+<br>
+using 1.12.7 (and the versions before) I can run a program by right-clicking on a sandbox and choosing <em class="text-italics">Run </em>| <em class="text-italics">Run Program</em> and entering the complete command. 1 instance starts, spawns 4 child instances (same exe) and closes.<br>
+Using the very same command line (e.g. <div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>C:\Users\SamDi\AppData\Local\Programs\filen-desktop\Filen.exe</code></pre></div>) as in above example doesn't work as entry in <em class="text-italics">Sandbox Options</em> | <em class="text-italics">general Options</em> | <em class="text-italics">Run Menu</em>.<br>
+When configuring as described above and right-clicking <em class="text-italics">Run </em>and choosing the <em class="text-italics">Run </em>entry the program starts 1 instance but gets closed within fractions of a second w/o spawning child instances.<br>
+<br>
+pls. fix, it sucks having to copy &amp; paste the command every time<br>
+<br>
+<br>
+Thank you</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: [bug] Run menu doesn't run programs</h3>
+				<div class="date">Posted: <strong>Sat Jan 13, 2024 1:38 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Do other programs still work fine?<br>
+where can this software be downloaded?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: [bug] Run menu doesn't run programs</h3>
+				<div class="date">Posted: <strong>Sat Jan 13, 2024 3:35 pm</strong></div>
+				<div class="author">by <strong>SamDi</strong></div>
+				<div class="content">Yes, all others (MS Office, Firefox, and some exotic programs) start OK, <em class="text-italics">Force program</em> works for them.<br>
+<a href="https://filen.io/apps/desktop" class="postlink">Filen Desktop</a><br>
+<br>
+filen sandbox's ini:
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>Enabled=y
+BlockNetworkFiles=y
+RecoverFolder=%Personal%
+RecoverFolder=%Desktop%
+BorderColor=#7fffff,on,3
+Template=OpenBluetooth
+Template=SkipHook
+Template=FileCopy
+Template=qWave
+Template=BlockPorts
+Template=LingerPrograms
+Template=AutoRecoverIgnore
+ConfigLevel=10
+UsePrivacyMode=y
+UseFileDeleteV2=y
+UseRegDeleteV2=y
+AutoRecover=y
+OpenFilePath=C:\Users\SamDi\AppData\Local\Programs\filen-desktop
+OpenFilePath=C:\Users\SamDi\AppData\Local\filen-desktop-updater
+OpenFilePath=C:\Users\SamDi\AppData\Roaming\filen-desktop
+ForceProcess=Filen.exe
+ForceFolder=C:\Users\SamDi\AppData\Local\Programs\filen-desktop
+AutoDelete=y
+ReadFilePath=S:\_enc
+BoxNameTitle=-
+RunCommand=Filen.io|C:\Users\SamDi\AppData\Local\Programs\filen-desktop\Filen.exe
+DebugTrace=y
+</code></pre></div></div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

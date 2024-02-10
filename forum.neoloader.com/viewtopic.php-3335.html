@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; NeoLoader 0.31a Bug List</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>NeoLoader 0.31a Bug List</h2>
+		<p><a href="viewtopic.php-1080.html?f=171&amp;t=3269">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3269</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>3</strong></div>
+					<div class="post">
+				<h3>NeoLoader 0.31a Bug List</h3>
+				<div class="date">Posted: <strong>Thu May 09, 2013 3:13 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">[color="#FF0000"]<strong>Know bugs that will not be fixed soon</strong>[/color]<br><strong>- Can't choose Temp folder in 1st start wizard</strong><br>-Xanatos Said- this is intended behavior (not a bug), we need to force the incoming directory and the temp directory to be on the same physical drive.<br>-I say- Make it like incoming folder and if "the same physical drive" condition is not respected promt an error when going to the next page.<br><br><strong>- In 1st start wizard advanced options are not show, after turning off only grey out. It should be grey out and not invisible even first</strong><br>-- removing the items again would be better i agree, but it would be more complicated to implement, and I believe <span style="text-decoration: underline">it does not really matter if its grayed out or fully hidden</span>. I will leave it as it is for the foreseeable future.<br><br>[HR][/HR]<br><strong>Bug in the log</strong><br>- "Instalation" instead "Installation" in log line that says update avaible<br>- Some things maybe have to be changed like connecting kademlia and not succesful message and connected neokad but not connecting message<br>- If you copy a log line it change color into blue<br><br>[HR][/HR]<br><strong>UI Bugs</strong><br>- Columm order is not auto-updated, you need to update it manually. I wish a switchable setting in options for that<br>- Can't select Temp directory in subfolder of Incoming one, else there will be download list bugged<br>- Scrolling the lists up or down with a lot of files you can see fitness bar number or progress %<br><br>[HR][/HR]<br><strong>Core Bugs</strong><br>- [color="#FF0000"]Sometimes neoloader.exe process is still running after close. You can also see that because after restart you will have a log message that tell you using a temporary port[/color]<br>- [color="#FF0000"]With 2 multitorrent can happen that there is a file with same name/hash but in 2 different folder of the 2 different torrent. NeoLoader don't share it when see same filename or same hash (it happened with a .txt). In less words we called it "duplicate files sharing bug"[/color]<br>- Video Player is not working<br>- Rare NeoKad crash --&gt; <a href="http://board.neoloader.com/bugs/3269-neoloader-0-31-bug-list.html#post16243" class="postlink">http://board.neoloader.com/bugs/3269-neoloader-0-31-bug-list.html#post16243</a> (thx @enOehTsIsihT)<br><br>[HR][/HR]<br>- Pause/Stop loading are bugged. First of all in UI the downloaded data disappear when you stop loading (also the progressbar on the blue) and 2nd the connection are not dropped, I think you should check again both pause&stop.<br>- [color="#FF0000"]With normal connections number values you can't reach stable upload/downloads speeds. I think is a bug of the code because to make these working you have to put &lt;10 connection, impossible![/color]<br><br>[HR][/HR]<br><br><strong>[color="#FF0000"]This bug list will be upadted daily[/color]</strong></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu May 09, 2013 6:57 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">Neoloader Couldnt start Search: Neo Kad Not Connected</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu May 09, 2013 7:26 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>enOehTsIsihT wrote:</cite>Neoloader Couldnt start Search: Neo Kad Not Connected</div></blockquote><br>fixed, there was a bug with the bootstrap script.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu May 09, 2013 8:23 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">But list updated... <img class="smilies" src="./images/smilies/wink.png" alt=";)" title=";)"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu May 09, 2013 8:49 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Updated again, sorry <img class="smilies" src="./images/smilies/frown.png" alt=":(" title=":("></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri May 10, 2013 5:52 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Updated bug list, marked as red high priority bug.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri May 10, 2013 7:59 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">"ed2k/eMule options :share new files automatically" has a bug.<br><br>video<br><br>clip0016.7z (1.7 MB)<br><a href="https://mega.co.nz/#!F4UG3KwZ!Klp0h3LIKe8VvT-u1gabaifY4Ut63NFZKk0KpaEL6l4" class="postlink">https://mega.co.nz/#!F4UG3KwZ!Klp0h3LIKe8VvT-u1gabaifY4Ut63NFZKk0KpaEL6l4</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri May 10, 2013 8:05 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">I have no idea why it produced</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri May 10, 2013 8:13 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Hi enOehtsIsihT,  (simply username...)<br><br>Thanks for reporting these bugs, I'll add in bug list.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri May 10, 2013 8:56 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">"Delete file" has  a bug.<br><br>video<br><br>clip0018.7z (1.4 MB)<br><a href="https://mega.co.nz/#!NlMUVASY!G4-dq2o87Yt4fF56cxbiNXsYubkAbA98XK6c7hB3VDs" class="postlink">https://mega.co.nz/#!NlMUVASY!G4-dq2o87Yt4fF56cxbiNXsYubkAbA98XK6c7hB3VDs</a></div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>3</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

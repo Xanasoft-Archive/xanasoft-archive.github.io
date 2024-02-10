@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Update Problem with SB+</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Update Problem with SB+</h2>
+		<p><a href="viewtopic.php-196.html?f=14&amp;t=712">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=712</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Update Problem with SB+</h3>
+				<div class="date">Posted: <strong>Sat Jan 06, 2024 5:39 am</strong></div>
+				<div class="author">by <strong>kerflot</strong></div>
+				<div class="content">This problem started some months back.<br>
+I'm using Windows 11 Pro.<br>
+When updating SB+ from within the program the update stops with certain .dll files that it cannot replace.<br>
+<br>
+The files are:<br>
+SbieShellExt.dll<br>
+vcruntime140_1.dll<br>
+vcruntime140.dll<br>
+msvcp140.dll<br>
+<br>
+I have gotten around this by going into the Sandboxie folder in Program Files and renaming the these files. The system won't let me delete them.<br>
+In the past I have also downloaded the new EXE and ran it in Window's Safe Mode. Wouldn't work if I tried running it within Windows 11, even via Run as Administrator.<br>
+<br>
+Seeing as nobody else is complaining about this I am assuming that it's peculiar to my system.<br>
+<br>
+Does anybody know if there is a setting in Windows 11 that needs to be changed.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Update Problem with SB+</h3>
+				<div class="date">Posted: <strong>Sat Jan 06, 2024 7:51 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">Did that happen across multiple versions? I imagine there being an issue with the installer in some cases, but it shouldn't be reoccurring, unless there is a flaw in the updater's logic, in which case I'd expect it to be triggered for multiple people.<br>
+<br>
+You might want to back up your sandboxie.ini (usually located in C:\Windows; holding the configuration of Sandboxie and the sandboxes) the sandboxes themselves (if any, usually at C:\Sandbox\), maybe the sandboxie-plus.ini (containing UI settings, usually located at %AppData%\Local\Sandboxie-Plus\), your certificate.dat (if any) located in the installation folder of Sandboxie-Plus, then uninstall Sandboxie-Plus, just to do a clean installation.<br>
+<br>
+Please note that David changed the update procedure from within the user-interface for non-active, non-valid, certificates, so that the update from stable release to stable release is no longer automated. It requires a certificate to do an automated installation. Without a valid and active certificate, users are guided to the download page. Pre-releases are not covered. This change got made with Sandboxie-Plus 1.12.4.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Update Problem with SB+</h3>
+				<div class="date">Posted: <strong>Sun Jan 07, 2024 5:45 am</strong></div>
+				<div class="author">by <strong>kerflot</strong></div>
+				<div class="content">Thank you bastik-1001 I'll try that at a future date.  <img class="smilies" src="images/smilies/icon_e_biggrin.gif" width="15" height="17" alt=":D" title="Very Happy"> <br>
+ <br>
+It started at about 3 versions ago.<br>
+As a Plus member I also had been installing the early release versions made available to us. Maybe I accidentally installed a Beta version.<br>
+<br>
+I was paying the lowest subscription that was available but then the rules changed and from what I remember my subscription no longer qualified me. The minimum subscription was increased (or introduced).<br>
+Having said that my licence kept me going to the end of November when I had to renew the subscription.<br>
+So it sounds to me that you may have hit the nail on the head about the changed update procedure being the cause, though there's always the chance that I did something silly<br>
+.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Update Problem with SB+</h3>
+				<div class="date">Posted: <strong>Sun Jan 07, 2024 3:27 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">This should not be caused by you tempering with any setting. Just something that might went wrong.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

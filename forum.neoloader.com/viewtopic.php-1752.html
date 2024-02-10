@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; multi-IP</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>multi-IP</h2>
+		<p><a href="viewtopic.php-267.html?f=172&amp;t=6791">http://forum.neoloader.com/viewtopic.php?f=172&amp;t=6791</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>multi-IP</h3>
+				<div class="date">Posted: <strong>Sat Mar 28, 2015 5:33 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">I download the same files by vmware because I need vmware for geting multi-IP<br><br>Can neolader be added the funtion for geting multi-IP?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: multi-IP</h3>
+				<div class="date">Posted: <strong>Sat Mar 28, 2015 8:31 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Hi,<br>Yes thats somewhat possible but ... <br>iirc. you get the other IP by logging in to some service vpn or PPPoE or so...<br>To what extent windows would allow you having multiple parallel vpn connections open idk. that would have to be tested.<br>So it may be that you would still need a VM with a proxy application that the NeoLoader on the host would connect to.<br><br>Anyways this would be not very trivial to add as than Neo would need to manage internal multiple IP's/identity's ofcause doable but not as strait forwards as it could be.<br><br>What would be the benefit of such a feature?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: multi-IP</h3>
+				<div class="date">Posted: <strong>Sat Mar 28, 2015 6:53 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">The function can let neoloader use bandwidth effectively.<br>It  seem like neomule's voodoo,but it don't need to  run  neoloaders</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: multi-IP</h3>
+				<div class="date">Posted: <strong>Sat Mar 28, 2015 7:03 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Does that make a difference for torrents for you or only for ed2k downloads.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: multi-IP</h3>
+				<div class="date">Posted: <strong>Sun Mar 29, 2015 3:44 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">That makes a difference for all downloads.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: multi-IP</h3>
+				<div class="date">Posted: <strong>Sun Mar 29, 2015 7:35 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I see....<br><br>ok, hmm... <br>do you want the feature to work like in your video a.k.a. LanCast / Local peer discovers,<br>or do you want it o work the VooDoo way a.k.a. without the clients on the VM having to keep the files on the VHD?<br><br>David</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: multi-IP</h3>
+				<div class="date">Posted: <strong>Sun Mar 29, 2015 7:58 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>I see....<br><br>ok, hmm... <br>do you want the feature to work like in your video a.k.a. LanCast / Local peer discovers,<br>or do you want it o work the VooDoo way a.k.a. without the clients on the VM having to keep the files on the VHD?<br><br>David</div></blockquote><br>I want it o work the VooDoo way a.k.a. without the clients on the VM having to keep the files on the VHD.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: multi-IP</h3>
+				<div class="date">Posted: <strong>Sun Mar 29, 2015 8:48 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Ok,<br>I will need to think about how to do that the best way.<br><br>Neo's internal layout would allow to have multiple client objects internally for each one source object, but since a VM is needed anyways for the login,<br>it may be more convenient to go again with a voodoo approach.<br><br>Multiple client objects would be the most elegant solution but also the most complicated one, and it would add some CPU/RAM overhead for use also without this feature.<br><br>The voodoo approach needs multiple full Neos to run but is simpler to implement as I only need to redirect the IO operations and duplicate the file list.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Start certain programmes outside the sandbox by default</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Start certain programmes outside the sandbox by default</h2>
+		<p><a href="viewtopic.php-1068.html?f=14&amp;t=485">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=485</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Start certain programmes outside the sandbox by default</h3>
+				<div class="date">Posted: <strong>Sat Dec 10, 2022 10:07 pm</strong></div>
+				<div class="author">by <strong>sbieuser2344</strong></div>
+				<div class="content">Sandboxie-plus 1.5.3 @ Win 11 <br>
+<br>
+I have e screenshotting software (snagIT techsmith.com), that is startet, when windows starts. If you make screenshots, they are opened snagIT-editor. But snagIT-editor allways starts in my Default sandbox.<br>
+That bothers me, because I trust snagIT. And I have the overhead of restoring the screenshots. That's why I want both snagIT and snagIT Editor to always start outside the sandbox.<br>
+<br>
+How can I set this <img class="smilies" src="images/smilies/icon_question.gif" width="15" height="17" alt=":?:" title="Question"> <br>
+<br>
+Thank you! <img class="smilies" src="images/smilies/icon_e_smile.gif" width="15" height="17" alt=":)" title="Smile"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Start certain programmes outside the sandbox by default</h3>
+				<div class="date">Posted: <strong>Sun Jul 16, 2023 8:02 am</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">You can use BreakoutProcess for it. This has been added to make it possible to start some software in its dedicated box, but with it one can make something run outside a sandbox.<br>
+<br>
+Either you edit the Sandboxie.ini or use the user interface of Sandboxie Plus (Sandman)<br>
+<br>
+You add:
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>BreakoutProcess=program.exe</code></pre></div>
+to the sandbox where you want the process to be launched outside Sandboxie. Where you replace program.exe with the binary name of the process that should break out, e.g. example.exe<br>
+<br>
+With the UI you have to right-click on the box, open its settings, go to <em class="text-italics">Program Control</em> and the tab <em class="text-italics">Breakout Programs</em>. There you can add the process or processes that need to be outside the sandbox.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

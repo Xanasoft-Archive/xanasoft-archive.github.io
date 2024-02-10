@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; pre-allocate all files</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>pre-allocate all files</h2>
+		<p><a href="viewtopic.php-1640.html?f=172&amp;t=3307">http://forum.neoloader.com/viewtopic.php?f=172&amp;t=3307</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>pre-allocate all files</h3>
+				<div class="date">Posted: <strong>Fri Jul 26, 2013 4:14 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">Neoloader may  need the function.
+<br>
+<br>And it let user choose that,append or not.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Jul 27, 2013 4:56 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I don't see the benefit in prealocating files, since neo uses a asynchronous IO there should be no problems allocating large files on the fly.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Jan 20, 2014 6:17 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">It seems that it's implemented instead... why did you changed idea ? It's even not switchable.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Jan 20, 2014 8:40 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">There is an major issue when writing to an empty many GB large file at the end.<br>such an action triggers windows to fill all the empty space before the written area with 0's and that takes a loooong time, so long infact that the buffer runs full and neo must stop downloading for many minutes for the write operations to finish.<br>Thats not good and the only proper fix is to preallocate the file.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

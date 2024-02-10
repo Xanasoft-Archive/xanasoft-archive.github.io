@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>NeoLoader</title>
+
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/animate.min.css" rel="stylesheet">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="canonical" href="anonyimity.html" >
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js" ></script>
+<![endif]-->
+
+
+
+<script src="js/wow.min.js" ></script>
+<script>
+ new WOW().init();
+</script>
+
+</head>
+
+<body>
+	<header>
+		<script type="text/javascript" src="js/header.js"></script>
+	</header>	
+	
+	<div id="wrap"><br>	
+		<section id="content">
+			<div class="anonymity">
+				<h1>NeoKad Network</h1>
+
+<p>NeoKad's design goal was flexibility and anonymity. While classical Kad's can only handled payload types that they have hard coded support for. NeoKad can handle arbitrary payloads, this is achieved by running a script engine on each node and letting the scripts handle the payload processing, the scripts are sent if needed together with the lookup request. This architecture allows any developer to use our universal Kademlia network for his particular purpose. Simple things that spring to mind would be for example an anonymous untraceable Messager, or a censorship resistant alternative DNS system.
+NeoKad's routing is implemented in a way that provides anonymity and deniability to its users, by means of recursive lookups, this means that instead of searching oneself for the globally closest nodes to send the requests to the system sends the request directly to the locally known closest node that than sends it further to even closer nodes, etc.. until the actual target nodes will be reached. This design ensures not only factual anonymity and plausible deniability to any particular node, it also makes the network incredibly robust to fragmentation. Like will for example occur with IPv4 and IPv6 where the network is spit into 3 groups of nodes, those with only a IPv4 those with IPv4 and IPv6 and those with an IPv6 only, the recursive lookup design allows any node to reach any other node, even though no direct connection can be established.
+An obvious extension was to add packet routing capabilities, so that using NeoKad you can not only publish data into the network and than retrieve it, but also establish reliable streaming tunnels between 2 anonymous entities, kind of like in I2P or TOR hidden services tunnel.
+It basically works like this, the initiating node sets up a route that is identified by a EC (Elliptic Curve) public key fingerprint called (Entity ID) that was generated for the session, and spans the route into the target area around some randomly chosen 128bit Target ID, this pair of informations Entity ID and Target ID are all that is needed to contact the client, the real location (IP Address) of the client is hidden and not known to anyone, except the initiator himself. A relaying node can not distinguish if the previous node is the actual initializer of such a tunnel or a just yet another relay. This actually opens an very useful  opportunity a client that wants to have better speeds can choose a Target ID that lays very near to the Node ID of his NeoKad Node and this way be reachable without actually the need of going through a relay, of cause  than he will not be anonymous anymore but he and he alone will know that he is the initiator and not just the last relay node. So he could always deny any involvement and no one would be able to prove otherwise, and Voilà full plausible deniability, same trick works with any lookup within NeoKad. So this allows us to combine to a certain extent the security advantages of a typical anonymous network with the performance advantages of direct connections. Of cause all data are encrypted using strong end to end encryption, and in addition to that there is also a obfuscation layer to prevent ISP level filtering.
+</p><br>
+<p>NeoShare is a anonymous P2P file sharing network that builds upon NeoKad's packet routing capabilities. It basically implements a simple P2P File-sharing protocol that instead of IP addresses works with Entity ID's and exchanges all data using NeoKad. As already hinted the use of variable length tunnels including 0 hoops gives the system the distinct advantage over other anonymous P2P implementations. In addition to that NeoKad's flexible Payload handling system allows to not to only store source and file informations in side the network, but even to cache many MB large parts on randomly selected nodes, adding to the speed benefits. This allows a user even to share files while his own client is off line he just has to order his client to push the entire file into the network, kind of like Freenet.
+</p><br>
+<p>To sum it up the combination of various anonymization and misdirection techniques should ensure an unprecedented level of quality/speed while at the same time provide to any user exactly as much anonymity or deniability as he sees fit.
+</p>
+				
+			</div>
+			
+		</section>
+	</div>	
+
+</body>
+</html>

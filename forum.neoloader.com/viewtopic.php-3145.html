@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; 0.40 Bugs - Page 7</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>0.40 Bugs</h2>
+		<p><a href="viewtopic.php-1040.html?f=171&amp;t=3327">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3327</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>7</strong> of <strong>8</strong></div>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Oct 16, 2013 10:09 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Another SS, always without any network activity, only neoloader --&gt; <a href="removed.png" class="postlink">http://i.imgur.com/V8GMHzm.jpg</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Oct 17, 2013 5:53 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">22.<br>progress bug<br><br>clip0140.7z (481 KB)<br><a href="https://mega.co.nz/#!s8kjDQDT!PA000HOWWLTbmhpdo1cb3l2ryDM3B8FhiW2ib_DJk54" class="postlink">https://mega.co.nz/#!s8kjDQDT!PA000HOWWLTbmhpdo1cb3l2ryDM3B8FhiW2ib_DJk54</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Oct 17, 2013 7:27 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content"><a href="THzSOr5.png" class="postlink">http://i.imgur.com/THzSOr5.png</a><br><br>Another example of overhead bug with ed2k/torrent uploading. Don't forgot to read latest post on page 6.<br><br>p.s. Ed2k overhead missed is ~100% of the estimated <a href="0ZN1iW3.jpg" class="postlink">http://i.imgur.com/0ZN1iW3.jpg</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Oct 18, 2013 8:08 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Interesting, the purple bar says that I'm uploading at 68 kb/s when my ISP give me only ~48 kb/s. <br><br><a href="gRrz5Yx.jpg" class="postlink">http://i.imgur.com/gRrz5Yx.jpg</a><br><br>The case if ofc with ed2k, so I can say that when I'm uploading in ed2k network the purple bar don't work as it should.<br><br>GOT AGAIN THE ED2K STUCKED BUG! How to reproduce:<br>Open NeoLoader, wait some seconds, when it start connecting @ed2k sources, close it. Restart Neo. Stucked!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Oct 18, 2013 9:13 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">That nafc counts more than you ISP gives you is strange, it is even more strange that this happens only when ed2k upload is on.<br><br>please use windows taskmanager to check if windows really sees so much traffic on your LAN card or if only the NAFC code fucks something up.<br><br>are you using some VPN?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Oct 18, 2013 9:55 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">No I'm not using any VPN, actually I can't test cuz ed2k stucked. I'm 100% sure that the purble bar is wrong when I'm uploading on ed2k because I can't reach these upload value, 40 kb/s of ed2k is correct instead.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Oct 20, 2013 10:33 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">@Neo26<br>can i can not reproduce your stucking problem, please send me the full config dir of a stucked instlation.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Oct 20, 2013 4:04 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">The not counted ~ 10% overhead are Ethernet Overhead that should be only between the PC and the Modem but not cross the ISP line.<br>Windows shows in the task manager the raw bytes write to the NIC including Ethernet headers, instead of IP traffic only.<br><br>Howe ever it seams that some ISP's are specifying their maximal line throughput including said overhead, what is technically cheating.<br><br>So since the average user does not grasp the complexity of all OSI layers and was lied to by his ISP I added the Ethernet frame overhead to the overhead calculation for now.<br><br>So even its technically wrong it looks much more right <img class="smilies" src="./images/smilies/tongue.png" alt=":p" title=":p"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Oct 21, 2013 7:29 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">I'm not sure about that. I did many speedtest to check the ISP speeds, and it works correctly as it should, also because their "central" is located 50meters from my home.<br><br><blockquote class="uncited"><div>The not counted ~ 10% overhead are Ethernet Overhead that should be only between the PC and the Modem but not cross the ISP line.</div></blockquote><br>When the purple line reach the maximum ISP speed I have problem in navigation so I'm not sure that you're right.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Oct 21, 2013 9:13 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>Neo26 wrote:</cite>When the purple line reach the maximum ISP speed I have problem in navigation so I'm not sure that you're right.</div></blockquote><br><br>Howe ever it seams that some ISP's are specifying their maximal line throughput including said overhead, what is technically cheating.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>7</strong> of <strong>8</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

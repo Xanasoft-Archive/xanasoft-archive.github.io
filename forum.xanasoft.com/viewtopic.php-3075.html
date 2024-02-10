@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; SOLVED: SBIE2101 - can't launch ANYTHING in ANY sandbox</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>SOLVED: SBIE2101 - can't launch ANYTHING in ANY sandbox</h2>
+		<p><a href="viewtopic.php-1166.html?f=14&amp;t=134">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=134</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>2</strong></div>
+					<div class="post">
+				<h3>SOLVED: SBIE2101 - can't launch ANYTHING in ANY sandbox</h3>
+				<div class="date">Posted: <strong>Sun Sep 05, 2021 5:32 pm</strong></div>
+				<div class="author">by <strong>Herculeesjr</strong></div>
+				<div class="content">I've tried uninstalling Sandboxie Plus, restarting, installing the latest Sandboxie Plus, restarting, opening Sandboxie and right clicking the default box and going to Run &gt; ANY option results in these error messages:<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>12:11:47.767   Start.exe (2164): SBIE2101 Object name not found: \Sessions\1\BaseNamedObjects\SM0:2164:304:WilStaging_02, error CreateMutant (C0000022) access=001F0001 initialized=1
+PID 8416: SBIE2314 Cancelling process Start.exe [11400 / 7]
+Start.exe (13980): SBIE2101 Object name not found: \Sessions\1\BaseNamedObjects\SM0:13980:304:WilStaging_02, error CreateMutant (C0000022) access=001F0001 initialized=1
+PID 8416: SBIE2314 Cancelling process Start.exe [13980 / 7]
+Start.exe (3024): SBIE2101 Object name not found: \Sessions\1\BaseNamedObjects\SM0:3024:304:WilStaging_02, error CreateMutant (C0000022) access=001F0001 initialized=1
+PID 8416: SBIE2314 Cancelling process Start.exe [3024 / 7]
+Start.exe (8808): SBIE2101 Object name not found: \Sessions\1\BaseNamedObjects\SM0:8808:304:WilStaging_02, error CreateMutant (C0000022) access=001F0001 initialized=1
+PID 8416: SBIE2314 Cancelling process Start.exe [8808 / 7]</code></pre></div>
+
+I even went as far as uninstalling Sandboxie again, deleting the C:\Sandbox folder, deleting the Sandboxie folders from %appdata%, running CCleaner, restarting, reinstalling, restarting, opening a new DefaultBox and trying to run anything, same issue no change. I have not changed any settings in Sandboxie at all and have not updated it since I installed it about a month ago, till now while trying reinstalls. I am running Windows <strong class="text-strong"><span style="text-decoration:underline">11</span></strong> if that helps any.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: SBIE2101 - can't launch ANYTHING in ANY sandbox</h3>
+				<div class="date">Posted: <strong>Mon Sep 06, 2021 12:47 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">windows 11 the builds past 22000.x need an additional open IPC path<br>
+<br>
+OpenIpcPath=\Sessions\*\BaseNamedObjects\SM*:WilStaging_*<br>
+<br>
+with it it works fine,<br>
+<br>
+this setting will be included by default in upcoming builds but till then you can add it manually to your sandboxie ini,<br>
+<br>
+Cheers<br>
+David X.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: SBIE2101 - can't launch ANYTHING in ANY sandbox</h3>
+				<div class="date">Posted: <strong>Mon Sep 06, 2021 9:20 pm</strong></div>
+				<div class="author">by <strong>Herculeesjr</strong></div>
+				<div class="content"><blockquote><div><cite><a href="memberlist.php-8.html?mode=viewprofile&amp;u=49">DavidXanatos</a> wrote: <a href="viewtopic.php-3077.html?p=249#p249" data-post-id="249" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><div class="responsive-hide">Mon Sep 06, 2021 12:47 pm</div></cite>
+windows 11 the builds past 22000.x need an additional open IPC path<br>
+<br>
+OpenIpcPath=\Sessions\*\BaseNamedObjects\SM*:WilStaging_*<br>
+<br>
+with it it works fine,<br>
+<br>
+this setting will be included by default in upcoming builds but till then you can add it manually to your sandboxie ini,<br>
+<br>
+Cheers<br>
+David X.
+</div></blockquote>
+
+That fixed it! Thank you!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: SOLVED: SBIE2101 - can't launch ANYTHING in ANY sandbox</h3>
+				<div class="date">Posted: <strong>Tue Sep 28, 2021 9:50 am</strong></div>
+				<div class="author">by <strong>discofreak</strong></div>
+				<div class="content">I have a similar issue with several apps<br>
+When I start a program I see that sandboxie is going to open but without success, and need to terminate the box.<br>
+Windows 10</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: SBIE2101 - can't launch ANYTHING in ANY sandbox</h3>
+				<div class="date">Posted: <strong>Tue Oct 05, 2021 5:25 pm</strong></div>
+				<div class="author">by <strong>MalevolentWizard</strong></div>
+				<div class="content"><blockquote><div><cite><a href="memberlist.php-8.html?mode=viewprofile&amp;u=49">DavidXanatos</a> wrote: <a href="viewtopic.php-3077.html?p=249#p249" data-post-id="249" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><div class="responsive-hide">Mon Sep 06, 2021 12:47 pm</div></cite>
+windows 11 the builds past 22000.x need an additional open IPC path<br>
+<br>
+OpenIpcPath=\Sessions\*\BaseNamedObjects\SM*:WilStaging_*<br>
+<br>
+with it it works fine,<br>
+<br>
+this setting will be included by default in upcoming builds but till then you can add it manually to your sandboxie ini,<br>
+<br>
+Cheers<br>
+David X.
+</div></blockquote>
+
+Where exactly do you add that in the ini?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: SOLVED: SBIE2101 - can't launch ANYTHING in ANY sandbox</h3>
+				<div class="date">Posted: <strong>Fri Oct 15, 2021 6:38 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">to the section of each box</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: SOLVED: SBIE2101 - can't launch ANYTHING in ANY sandbox</h3>
+				<div class="date">Posted: <strong>Thu Jan 20, 2022 1:57 am</strong></div>
+				<div class="author">by <strong>discofreak</strong></div>
+				<div class="content">Hey, thank you for your answer and sow if I write you only today but I just saw it.<br>
+Nothing to do, I tried to included it sandbox.ini but doesn't work.<br>
+I'm trying to run Amazon Music Unlimited App in sandboxie but it crash just after the open. Do u have any other idea? thanks</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: SOLVED: SBIE2101 - can't launch ANYTHING in ANY sandbox</h3>
+				<div class="date">Posted: <strong>Wed Jan 26, 2022 3:08 pm</strong></div>
+				<div class="author">by <strong>helicopterjeff</strong></div>
+				<div class="content">I'm having this issue w/ version 1.0.7. I have no idea where to put the openipcpath you've mentioned.<br>
+<br>
+any ideas?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: SOLVED: SBIE2101 - can't launch ANYTHING in ANY sandbox</h3>
+				<div class="date">Posted: <strong>Sat Jan 29, 2022 3:15 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">you can add ipc settings in this settings page, see screenshot: <a href="https://paste.pics/FTFOP" class="postlink">https://paste.pics/FTFOP</a><br>
+<br>
+about amazon, have you tried to run it in a App compartment mode box?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: SOLVED: SBIE2101 - can't launch ANYTHING in ANY sandbox</h3>
+				<div class="date">Posted: <strong>Tue Feb 08, 2022 12:29 pm</strong></div>
+				<div class="author">by <strong>discofreak</strong></div>
+				<div class="content"><blockquote><div><cite><a href="memberlist.php-8.html?mode=viewprofile&amp;u=49">DavidXanatos</a> wrote: <a href="viewtopic.php-3084.html?p=553#p553" data-post-id="553" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><div class="responsive-hide">Sat Jan 29, 2022 3:15 pm</div></cite>
+you can add ipc settings in this settings page, see screenshot: <a href="https://paste.pics/FTFOP" class="postlink">https://paste.pics/FTFOP</a><br>
+<br>
+about amazon, have you tried to run it in a App compartment mode box?
+</div></blockquote>
+
+I tried with the pic but doesn't work anyway, about the App compartment mode box I don't know what it is and how to do it. could u explain me pls?</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>2</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

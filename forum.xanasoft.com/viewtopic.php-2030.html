@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Browser bookmark - Page 2</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Browser bookmark</h2>
+		<p><a href="viewtopic.php-621.html?f=12&amp;t=626">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=626</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>2</strong> of <strong>2</strong></div>
+					<div class="post">
+				<h3>Re: Browser bookmark</h3>
+				<div class="date">Posted: <strong>Wed Jul 26, 2023 3:56 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">The user and contributor offhub (on Github) concluded that the browser is set up to sync its data. Something I had thought not to be the case, since it is to be expected that when the profile is set up to sync data and said profile is used in the sandbox that the browser will sync itself.<br>
+<br>
+<br>
+To test this the following line needs to be added, so that the sandboxed browser will not be able to see the profile and any attempt to write to it the folder will be redirected into the sandbox. Please clear out the box, before trying.
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>WriteFilePath=%LocalAppData%\BraveSoftware\Brave-Browser\User Data\Default\</code></pre></div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Browser bookmark</h3>
+				<div class="date">Posted: <strong>Wed Jul 26, 2023 4:34 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">I am echoing offhub, here, so that information can be found easily.<br>
+<br>
+You create a separate profile for Sandboxie and use that profile under Sandboxie.<br>
+<br>
+For regular shortcut:<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" -profile-directory=Sandboxie</code></pre></div>
+
+For sandboxed shortcut:<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>"C:\Program Files\Sandboxie-Plus\SandMan.exe" /box:DefaultBox "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" -profile-directory=Sandboxie</code></pre></div>
+
+Or Run Menu entry for Sandboxie-Plus: (Sandbox Options &gt; General Options &gt; Run Menu) which will add this to the Sandboxie.ini<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>RunCommand=Brave|"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" -profile-directory=Sandboxie</code></pre></div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Browser bookmark</h3>
+				<div class="date">Posted: <strong>Wed Jul 26, 2023 6:06 pm</strong></div>
+				<div class="author">by <strong>forSandboxie</strong></div>
+				<div class="content">LOL yeah i totally forgot that i have sync turned on for bookmarks and passwords, mainly to streamline my browsing on both PC and phone. Simply creating a new profile on the sandboxed brave and set it as the default profile "fixed" the synced bookmark "problem". I feel so stupid now haha. Thank you bastik and the others for trying to help me.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Browser bookmark</h3>
+				<div class="date">Posted: <strong>Wed Jul 26, 2023 6:16 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">You are welcome. I am glad that this could be figured out. Thank you for replying again and confirming offhub's conclusion of what I erroneously assumed not to be enabled on your end.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>2</strong> of <strong>2</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,630 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>xanasoft.com - Search</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - xanasoft.com" href="/feed">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed/topics">				
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<link href="assets/css/font-awesome.min.css?assets_version=3" rel="stylesheet">
+<link href="styles/prosilver/theme/stylesheet.css?assets_version=3" rel="stylesheet">
+<link href="styles/prosilver/theme/en/stylesheet.css?assets_version=3" rel="stylesheet">
+
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=3" rel="stylesheet">
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-search ltr ">
+
+
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar" role="banner">
+					<div class="inner">
+
+			<div id="site-description" class="site-description">
+		<a id="logo" class="logo" href="index.php.html" title="Board index">
+					<span class="site_logo"></span>
+				</a>
+				<h1>xanasoft.com</h1>
+				<p>Xanasoft support forum</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+									<div id="search-box" class="search-box search-header" role="search">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…">
+					<button class="button button-search" type="submit" title="Search">
+						<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+					</button>
+					<a href="search.php.html" class="button button-search-end" title="Advanced search">
+						<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+					</a>
+					
+				</fieldset>
+				</form>
+			</div>
+						
+			</div>
+					</div>
+				<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="nav-main linklist" role="menubar">
+
+		<li id="quick-links" class="quick-links dropdown-container responsive-menu" data-skip-responsive="true">
+			<a href="#" class="dropdown-trigger">
+				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>Quick links</span>
+			</a>
+			<div class="dropdown">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																									<li>
+								<a href="search.php-1.html?search_id=unanswered" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>Unanswered topics</span>
+								</a>
+							</li>
+							<li>
+								<a href="search.php-2.html?search_id=active_topics" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>Active topics</span>
+								</a>
+							</li>
+							<li class="separator"></li>
+							<li>
+								<a href="search.php.html" role="menuitem">
+									<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>Search</span>
+								</a>
+							</li>
+					
+										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li data-skip-responsive="true">
+			<a href="/help/faq" rel="help" title="Frequently Asked Questions" role="menuitem">
+				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>FAQ</span>
+			</a>
+		</li>
+						
+			<li class="rightside" data-skip-responsive="true">
+			<a href="ucp.php-8142.html?mode=login&amp;redirect=search.php%3Fauthor_id%3D398%26sr%3Dposts" title="Login" accesskey="x" role="menuitem">
+				<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>Login</span>
+			</a>
+		</li>
+					<li class="rightside" data-skip-responsive="true">
+				<a href="ucp.php-1.html?mode=register" role="menuitem">
+					<i class="icon fa-pencil-square-o  fa-fw" aria-hidden="true"></i><span>Register</span>
+				</a>
+			</li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
+								<li class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+										<span class="crumb" itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope=""><a href="index.php.html" itemtype="https://schema.org/Thing" itemscope="" itemprop="item" accesskey="h" data-navbar-reference="index"><i class="icon fa-home fa-fw"></i><span itemprop="name">Board index</span></a><meta itemprop="position" content="1"></span>
+
+																			<span class="crumb" itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope=""><a href="search.php.html" itemtype="https://schema.org/Thing" itemscope="" itemprop="item"><span itemprop="name">Search</span></a><meta itemprop="position" content="2"></span>
+												</li>
+		
+					<li class="rightside responsive-search">
+				<a href="search.php.html" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body" class="page-body" role="main">
+		
+		
+
+<h2 class="searchresults-title">Search found 10 matches</h2>
+
+	<p class="advanced-search-link">
+		<a class="arrow-left" href="search.php.html" title="Advanced search">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>Go to advanced search</span>
+		</a>
+	</p>
+
+
+	<div class="action-bar bar-top">
+
+			<div class="search-box" role="search">
+			<form method="post" action="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=398">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="add_keywords" id="add_keywords" value="" placeholder="Search these results">
+				<button class="button button-search" type="submit" title="Search">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</button>
+				<a href="search.php.html" class="button button-search-end" title="Advanced search">
+					<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+				</a>
+			</fieldset>
+			</form>
+		</div>
+	
+		
+		<div class="pagination">
+						Search found 10 matches
+							 &bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+	</div>
+
+
+					<div class="search post bg2">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="memberlist.php-381.html?mode=viewprofile&amp;u=398" class="username">calisun</a></dt>
+			<dd class="search-result-date">Thu Sep 29, 2022 9:53 pm</dd>
+			<dd>Forum: <a href="viewforum.php-9.html?f=16">Bug Reports</a></dd>
+			<dd>Topic: <a href="viewtopic.php-1537.html?f=16&amp;t=446">Firefox keeps showing SBIE2203 error and keeps crashing</a></dd>
+						<dd>Replies: <strong>7</strong></dd>
+			<dd>Views: <strong>2820</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="viewtopic.php-4401.html?f=16&amp;t=446&amp;p=938#p938">Re: Firefox keeps showing SBIE2203 error and keeps crashing</a></h3>
+			<div class="content">I have also created same ticket on github and it is being evaluated by someone there.<br>
+<br>
+<a href="https://github.com/sandboxie-plus/Sandboxie/issues/2288" class="postlink">https://github.com/sandboxie-plus/Sandboxie/issues/2288</a></div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="viewtopic.php-4401.html?f=16&amp;t=446&amp;p=938#p938" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg1">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="memberlist.php-381.html?mode=viewprofile&amp;u=398" class="username">calisun</a></dt>
+			<dd class="search-result-date">Thu Sep 29, 2022 1:04 am</dd>
+			<dd>Forum: <a href="viewforum.php-9.html?f=16">Bug Reports</a></dd>
+			<dd>Topic: <a href="viewtopic.php-1537.html?f=16&amp;t=446">Firefox keeps showing SBIE2203 error and keeps crashing</a></dd>
+						<dd>Replies: <strong>7</strong></dd>
+			<dd>Views: <strong>2820</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="viewtopic.php-4402.html?f=16&amp;t=446&amp;p=936#p936">Re: Firefox keeps showing SBIE2203 error and keeps crashing</a></h3>
+			<div class="content">Well, the celebration did not last long. Within 20 minutes, error returned and Firefox crashed.</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="viewtopic.php-4402.html?f=16&amp;t=446&amp;p=936#p936" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg2">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="memberlist.php-381.html?mode=viewprofile&amp;u=398" class="username">calisun</a></dt>
+			<dd class="search-result-date">Wed Sep 28, 2022 11:44 pm</dd>
+			<dd>Forum: <a href="viewforum.php-9.html?f=16">Bug Reports</a></dd>
+			<dd>Topic: <a href="viewtopic.php-1537.html?f=16&amp;t=446">Firefox keeps showing SBIE2203 error and keeps crashing</a></dd>
+						<dd>Replies: <strong>7</strong></dd>
+			<dd>Views: <strong>2820</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="viewtopic.php-4403.html?f=16&amp;t=446&amp;p=935#p935">Re: Firefox keeps showing SBIE2203 error and keeps crashing</a></h3>
+			<div class="content">I was able to fix by downloading latest release (v1.3.5) from github. ( <a href="https://github.com/sandboxie-plus/Sandboxie/releases/" class="postlink">https://github.com/sandboxie-plus/Sandboxie/releases/</a> )<br>
+Strange thing is that when I clicked on "Check for Updates" inside SandBoxie, I was told that v1.3.2 is the latest release.</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="viewtopic.php-4403.html?f=16&amp;t=446&amp;p=935#p935" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg1">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="memberlist.php-381.html?mode=viewprofile&amp;u=398" class="username">calisun</a></dt>
+			<dd class="search-result-date">Tue Sep 27, 2022 10:59 pm</dd>
+			<dd>Forum: <a href="viewforum.php-9.html?f=16">Bug Reports</a></dd>
+			<dd>Topic: <a href="viewtopic.php-1537.html?f=16&amp;t=446">Firefox keeps showing SBIE2203 error and keeps crashing</a></dd>
+						<dd>Replies: <strong>7</strong></dd>
+			<dd>Views: <strong>2820</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="viewtopic.php-4404.html?f=16&amp;t=446&amp;p=933#p933">Re: Firefox keeps showing SBIE2203 error and keeps crashing</a></h3>
+			<div class="content">Additional error messages:</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="viewtopic.php-4404.html?f=16&amp;t=446&amp;p=933#p933" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg2">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="memberlist.php-381.html?mode=viewprofile&amp;u=398" class="username">calisun</a></dt>
+			<dd class="search-result-date">Tue Sep 27, 2022 6:26 am</dd>
+			<dd>Forum: <a href="viewforum.php-9.html?f=16">Bug Reports</a></dd>
+			<dd>Topic: <a href="viewtopic.php-1537.html?f=16&amp;t=446">Firefox keeps showing SBIE2203 error and keeps crashing</a></dd>
+						<dd>Replies: <strong>7</strong></dd>
+			<dd>Views: <strong>2820</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="viewtopic.php-4405.html?f=16&amp;t=446&amp;p=932#p932">Firefox keeps showing SBIE2203 error and keeps crashing</a></h3>
+			<div class="content">Firefox keeps showing SBIE2203 error and keeps crashing.<br>
+SandBoxie Version:  1.3.2<br>
+Firefox Version:  106.0b4<br>
+Windows 10 Pro 64</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="viewtopic.php-4405.html?f=16&amp;t=446&amp;p=932#p932" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg1">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="memberlist.php-381.html?mode=viewprofile&amp;u=398" class="username">calisun</a></dt>
+			<dd class="search-result-date">Mon Nov 22, 2021 6:29 pm</dd>
+			<dd>Forum: <a href="viewforum.php-9.html?f=16">Bug Reports</a></dd>
+			<dd>Topic: <a href="viewtopic.php-1573.html?f=16&amp;t=191">Firefox issues inside Sandboxie</a></dd>
+						<dd>Replies: <strong>4</strong></dd>
+			<dd>Views: <strong>3933</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="viewtopic.php-4406.html?f=16&amp;t=191&amp;p=396#p396">Re: Firefox issues inside Sandboxie</a></h3>
+			<div class="content">UPDATE&#58; I have found my old install file for SandBoxie 5&#46;33&#46;3, so I have uninstalled latest version of SandBoxie and re-installed 5&#46;33&#46;3 Everything is working fine now and even the issues, mentioned at the start of this thread, are no longer issues&#46; So I will just stick with the old tried and true 5&#46;&#46;&#46;</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="viewtopic.php-4406.html?f=16&amp;t=191&amp;p=396#p396" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg2">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="memberlist.php-381.html?mode=viewprofile&amp;u=398" class="username">calisun</a></dt>
+			<dd class="search-result-date">Mon Nov 22, 2021 5:44 pm</dd>
+			<dd>Forum: <a href="viewforum.php-9.html?f=16">Bug Reports</a></dd>
+			<dd>Topic: <a href="viewtopic.php-1573.html?f=16&amp;t=191">Firefox issues inside Sandboxie</a></dd>
+						<dd>Replies: <strong>4</strong></dd>
+			<dd>Views: <strong>3933</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="viewtopic.php-4407.html?f=16&amp;t=191&amp;p=395#p395">Re: Firefox issues inside Sandboxie</a></h3>
+			<div class="content">After having above issues, I started to experiment with other versions of SandBoxie, so I no longer have version 5.33.3 installed.<br>
+See my other post for continuation of saga: <a href="viewtopic.php-1575.html?f=16&amp;t=190" class="postlink">viewtopic.php?f=16&amp;t=190</a></div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="viewtopic.php-4407.html?f=16&amp;t=191&amp;p=395#p395" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg1">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="memberlist.php-381.html?mode=viewprofile&amp;u=398" class="username">calisun</a></dt>
+			<dd class="search-result-date">Fri Nov 19, 2021 10:45 pm</dd>
+			<dd>Forum: <a href="viewforum.php-9.html?f=16">Bug Reports</a></dd>
+			<dd>Topic: <a href="viewtopic.php-1575.html?f=16&amp;t=190">Sanboxie Error</a></dd>
+						<dd>Replies: <strong>1</strong></dd>
+			<dd>Views: <strong>1896</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="viewtopic.php-1576.html?f=16&amp;t=190&amp;p=393#p393">Re: Sanboxie Error</a></h3>
+			<div class="content">Update,<br>
+I am able to run Chromium and MS Edge in Sandboxie+, but not Firefox. Issue started with recent Firefox update to version 94.0.1<br>
+To test it, I upgraded Firefox to Beta: 95.0b9, but no luck. I still get the error screen as in previous post.</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="viewtopic.php-1576.html?f=16&amp;t=190&amp;p=393#p393" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg2">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="memberlist.php-381.html?mode=viewprofile&amp;u=398" class="username">calisun</a></dt>
+			<dd class="search-result-date">Fri Nov 19, 2021 8:34 am</dd>
+			<dd>Forum: <a href="viewforum.php-9.html?f=16">Bug Reports</a></dd>
+			<dd>Topic: <a href="viewtopic.php-1573.html?f=16&amp;t=191">Firefox issues inside Sandboxie</a></dd>
+						<dd>Replies: <strong>4</strong></dd>
+			<dd>Views: <strong>3933</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="viewtopic.php-4408.html?f=16&amp;t=191&amp;p=391#p391">Firefox issues inside Sandboxie</a></h3>
+			<div class="content">All the below mentioned issues with Firefox only happen when running inside Sandboxie&#46; Firefox outside of Sandboxie has no issues&#46; Everything worked fine until latest Firefox update to 94&#46;0&#46;1 Issues discovered so far&#58; - Right-clicking on link on any page and choosing "Open in new tab" Does nothing, &#46;&#46;&#46;</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="viewtopic.php-4408.html?f=16&amp;t=191&amp;p=391#p391" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+							<div class="search post bg1">
+			<div class="inner">
+
+			<dl class="postprofile">
+						<dt class="author">by <a href="memberlist.php-381.html?mode=viewprofile&amp;u=398" class="username">calisun</a></dt>
+			<dd class="search-result-date">Fri Nov 19, 2021 8:32 am</dd>
+			<dd>Forum: <a href="viewforum.php-9.html?f=16">Bug Reports</a></dd>
+			<dd>Topic: <a href="viewtopic.php-1575.html?f=16&amp;t=190">Sanboxie Error</a></dd>
+						<dd>Replies: <strong>1</strong></dd>
+			<dd>Views: <strong>1896</strong></dd>
+					</dl>
+
+		<div class="postbody">
+			<h3><a href="viewtopic.php-4409.html?f=16&amp;t=190&amp;p=390#p390">Sanboxie Error</a></h3>
+			<div class="content">I was having problems with Sanboxie (See my other bug report https&#58;//forum&#46;xanasoft&#46;com/viewtopic&#46;php?f=16&t=191 ) so I decided un-install v5&#46;33&#46;3 and install Sandboxie-Classic-x64-v5&#46;53&#46;3&#46;exe But I was getting error message (See screenshot below) So I decided to un-install v 5&#46;53&#46;3 and install Sand&#46;&#46;&#46;</div>
+					</div>
+	
+			<ul class="searchresults">
+			<li>
+				<a href="viewtopic.php-4409.html?f=16&amp;t=190&amp;p=390#p390" class="arrow-right">
+					<i class="icon fa-angle-right fa-fw icon-black" aria-hidden="true"></i><span>Jump to post</span>
+				</a>
+			</li>
+		</ul>
+	
+			</div>
+		</div>
+			
+<div class="action-bar bottom">
+		<form method="post" action="./search.php?st=0&amp;sk=t&amp;sd=d&amp;sr=posts&amp;author_id=398">
+		<div class="dropdown-container dropdown-container-left dropdown-button-control sort-tools">
+	<span title="Display and sorting options" class="button button-secondary dropdown-trigger dropdown-select">
+		<i class="icon fa-sort-amount-asc fa-fw" aria-hidden="true"></i>
+		<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+	</span>
+	<div class="dropdown hidden">
+		<div class="pointer"><div class="pointer-inner"></div></div>
+		<div class="dropdown-contents">
+			<fieldset class="display-options">
+							<label>Display: <select name="st" id="st"><option value="0" selected="selected">All results</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+								<label>Sort by: <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="f">Forum</option><option value="i">Topic title</option><option value="s">Post subject</option></select></label>
+				<label>Direction: <select name="sd" id="sd"><option value="a">Ascending</option><option value="d" selected="selected">Descending</option></select></label>
+								<hr class="dashed">
+				<input type="submit" class="button2" name="sort" value="Go">
+						</fieldset>
+		</div>
+	</div>
+</div>
+	</form>
+		
+	<div class="pagination">
+		Search found 10 matches
+					 &bull; Page <strong>1</strong> of <strong>1</strong>
+			</div>
+</div>
+
+
+<div class="action-bar actions-jump">
+		<p class="jumpbox-return">
+		<a class="left-box arrow-left" href="search.php.html" title="Advanced search" accesskey="r">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>Go to advanced search</span>
+		</a>
+	</p>
+	
+		<div class="jumpbox dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+			<span title="Jump to" class="button button-secondary dropdown-trigger dropdown-select">
+				<span>Jump to</span>
+				<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+			</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																				<li><a href="viewforum.php.html?f=1" class="jumpbox-cat-link"> <span> General</span></a></li>
+																<li><a href="viewforum.php-1.html?f=27" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Announcements</span></a></li>
+																<li><a href="viewforum.php-2.html?f=28" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Forum Discussion</span></a></li>
+																<li><a href="viewforum.php-3.html?f=2" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Off-Topic</span></a></li>
+																<li><a href="viewforum.php-4.html?f=4" class="jumpbox-cat-link"> <span> Sandboxie+</span></a></li>
+																<li><a href="viewforum.php-5.html?f=12" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-6.html?f=13" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-7.html?f=14" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-8.html?f=15" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-9.html?f=16" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+																<li><a href="viewforum.php-10.html?f=3" class="jumpbox-cat-link"> <span> TaskExplorer</span></a></li>
+																<li><a href="viewforum.php-11.html?f=7" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-12.html?f=8" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-13.html?f=9" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-14.html?f=10" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-15.html?f=11" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+																<li><a href="viewforum.php-16.html?f=5" class="jumpbox-cat-link"> <span> DiskCryptor</span></a></li>
+																<li><a href="viewforum.php-17.html?f=17" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-18.html?f=18" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-19.html?f=19" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-20.html?f=20" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-21.html?f=21" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+																<li><a href="viewforum.php-22.html?f=6" class="jumpbox-cat-link"> <span> PrivateWin10</span></a></li>
+																<li><a href="viewforum.php-23.html?f=22" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-24.html?f=23" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-25.html?f=24" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-26.html?f=25" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-27.html?f=26" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+											</ul>
+		</div>
+	</div>
+
+	</div>
+
+			</div>
+
+
+<div id="page-footer" class="page-footer" role="contentinfo">
+	<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-footer" class="nav-footer linklist" role="menubar">
+		<li class="breadcrumbs">
+									<span class="crumb"><a href="index.php.html" data-navbar-reference="index"><i class="icon fa-home fa-fw" aria-hidden="true"></i><span>Board index</span></a></span>					</li>
+		
+				<li class="rightside">All times are <span title="UTC">UTC</span></li>
+							<li class="rightside">
+				<a href="ucp.php-2.html?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">
+					<i class="icon fa-trash fa-fw" aria-hidden="true"></i><span>Delete cookies</span>
+				</a>
+			</li>
+																<li class="rightside" data-last-responsive="true">
+				<a href="memberlist.php-11.html?mode=contactadmin" role="menuitem">
+					<i class="icon fa-envelope fa-fw" aria-hidden="true"></i><span>Contact us</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+
+	<div class="copyright">
+				<p class="footer-row">
+			<span class="footer-copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited</span>
+		</p>
+						<p class="footer-row" role="menu">
+			<a class="footer-link" href="ucp.php-3.html?mode=privacy" title="Privacy" role="menuitem">
+				<span class="footer-link-text">Privacy</span>
+			</a>
+			|
+			<a class="footer-link" href="ucp.php-4.html?mode=terms" title="Terms" role="menuitem">
+				<span class="footer-link-text">Terms</span>
+			</a>
+		</p>
+					</div>
+
+	<div id="darkenwrapper" class="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken" class="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	<img src="/cron/cron.task.core.queue" width="1" height="1" alt="cron"></div>
+
+<script src="assets/javascript/jquery-3.4.1.min.js?assets_version=3"></script>
+<script src="assets/javascript/core.js?assets_version=3"></script>
+
+
+<script>
+(function($) {  // Avoid conflicts with other libraries
+
+'use strict';
+
+	phpbb.addAjaxCallback('reporttosfs', function(data) {
+		if (data.postid !== "undefined") {
+			$('#sfs' + data.postid).hide();
+			phpbb.closeDarkenWrapper(5000);
+		}
+	});
+
+})(jQuery);
+</script>
+<script src="styles/prosilver/template/forum_fn.js?assets_version=3"></script>
+<script src="styles/prosilver/template/ajax.js?assets_version=3"></script>
+
+
+
+</body>
+</html>

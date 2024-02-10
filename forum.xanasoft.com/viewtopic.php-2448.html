@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Tracing API call sequence from log report</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Tracing API call sequence from log report</h2>
+		<p><a href="viewtopic.php-786.html?f=12&amp;t=347">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=347</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Tracing API call sequence from log report</h3>
+				<div class="date">Posted: <strong>Tue May 24, 2022 4:57 am</strong></div>
+				<div class="author">by <strong>febri</strong></div>
+				<div class="content">Hello,<br>
+To trace API call sequence in runtime, we can hook the program using Detours hooking library.<br>
+<br>
+But what I want to ask, is there a way to get the api call sequence from the trace log provided by sandboxie after it's done running malware/benign ?<br>
+because I'm planning to build a parser to get API call sequence and a malware detection system, using api sequences as input.<br>
+Thank you in advance.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Tracing API call sequence from log report</h3>
+				<div class="date">Posted: <strong>Tue May 24, 2022 7:17 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">You can enable syscall tracing with CallTrace=*<br>
+then you get all calls to ntdll.dll logged</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Tracing API call sequence from log report</h3>
+				<div class="date">Posted: <strong>Fri May 27, 2022 2:59 am</strong></div>
+				<div class="author">by <strong>febri</strong></div>
+				<div class="content">Thanks for the answer,<br>
+but, I want to ask again, is there any other way if I want to get the win 32 API Sequence only?<br>
+<br>
+The background is that I want to continue, and add many new datasets in the form of win32 API call sequences for malware and benign from previous research, source at the following link: <a href="https://ocslab.hksecurity.net/apimds-dataset" class="postlink">https://ocslab.hksecurity.net/apimds-dataset</a>, so I want to get based on win32 API only what Sandboxie gave.<br>
+<br>
+Then I will process the dataset using a Machine Learning model to create a detection system, so that later when a new sequence is entered as input to the detection system, it can detect whether the program being executed is malware/benign.<br>
+Thanks very much.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Tracing API call sequence from log report</h3>
+				<div class="date">Posted: <strong>Mon May 30, 2022 5:04 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">You can use the Api log dll: <a href="https://github.com/sandboxie-plus/LogApiDll" class="postlink">https://github.com/sandboxie-plus/LogApiDll</a> to log mroe but  not all win32 api calls, if you need more than what its already logging you will need to add them manually to that dll.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Tracing API call sequence from log report</h3>
+				<div class="date">Posted: <strong>Tue May 31, 2022 7:03 am</strong></div>
+				<div class="author">by <strong>febri</strong></div>
+				<div class="content">yes, I've used <a href="https://github.com/sandboxie-plus/LogApiDll" class="postlink">https://github.com/sandboxie-plus/LogApiDll</a>, but just want to make sure, is it sequenced or not?<br>
+<br>
+image link : <a href="https://postimg.cc/hzQzvrFc" class="postlink">https://postimg.cc/hzQzvrFc</a><br>
+<br>
+Thank you very much</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Tracing API call sequence from log report</h3>
+				<div class="date">Posted: <strong>Tue May 31, 2022 5:47 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">yes the order of the events should be maintained thay should not arive at the login server out of order or with any significant delay.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

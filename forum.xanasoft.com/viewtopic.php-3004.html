@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Stopping messages about large files</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Stopping messages about large files</h2>
+		<p><a href="viewtopic.php-1156.html?f=14&amp;t=44">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=44</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Stopping messages about large files</h3>
+				<div class="date">Posted: <strong>Fri Jun 11, 2021 11:06 pm</strong></div>
+				<div class="author">by <strong>LordRampantHump</strong></div>
+				<div class="content">Hey people<br>
+<br>
+how do i set the ini programatically like this:<br>
+<br>
+<img src="http://sandboxie-plus.com/wp-content/uploads/sites/2/2021/03/FileMigrationSettings.png" class="postimage" alt="Image"><br>
+<br>
+I dont want to import large files and i dont want to get messages agout it.<br>
+<br>
+This is how im creating the box:
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>execFile.exec('"C:/Program Files/Sandboxie-Plus/SbieIni.exe" set ' + acc.box + ' Enabled y"');</code></pre></div>
+
+Thanks  <img class="smilies" src="images/smilies/icon_e_biggrin.gif" width="15" height="17" alt=":D" title="Very Happy"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Stopping messages about large files</h3>
+				<div class="date">Posted: <strong>Sat Jul 15, 2023 4:33 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">These have to be added to the Sandboxie.ini:<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>CopyLimitKb=49152
+PromptForFileMigration=n
+CopyLimitSilent=y</code></pre></div>
+
+Different boxes can have different limits, by using different values. They need to be set per box.<br>
+<br>
+I don't work with the tool, so I can't tell you how to do what you are asking for, but someone else might. If you have figured it out by now, please share your knowledge.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

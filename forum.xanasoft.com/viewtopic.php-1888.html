@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; External Windows 10 loader trouble</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>External Windows 10 loader trouble</h2>
+		<p><a href="viewtopic.php-430.html?f=19&amp;t=50">https://forum.xanasoft.com/viewtopic.php?f=19&amp;t=50</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>External Windows 10 loader trouble</h3>
+				<div class="date">Posted: <strong>Wed Jun 16, 2021 7:15 am</strong></div>
+				<div class="author">by <strong>Changlal</strong></div>
+				<div class="content">Hi, I'm having a trouble with Windows 10 EFI loader when using DiskCryptor Build v1.2 Beta 3<br>
+<br>
+I wanna create external win10 loader - I just cut EFI folder from system partition 1 (100mb size - screenshot link below) and paste it on a usb device formatted in FAT32 file system.<br>
+<a href="d5xwK3b/screen.jpg" class="postlink">https://i.ibb.co/d5xwK3b/screen.jpg</a><br>
+<br>
+And it works. You can also remove partition 1 and partition 2 after, to have only one partition with system files.<br>
+OS loading proccesed from USB drive - choose the drive in UEFI boot menu.<br>
+<a href="MkGBxGn/screen.jpg" class="postlink">https://i.ibb.co/MkGBxGn/screen.jpg</a><br>
+<br>
+Trouble begins when i try to encrypt the system partition.<br>
+I have installed DiskCryptor loader over win10 bootloader (which is on the USB drive).<br>
+When I'm trying to load I have this error:<br>
+<a href="zFPrBRL/screen-2.jpg" class="postlink">https://i.ibb.co/zFPrBRL/screen-2.jpg</a><br>
+<br>
+Could you help me, please. Any suggestions how to solve this?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: External Windows 10 loader trouble</h3>
+				<div class="date">Posted: <strong>Mon Jun 21, 2021 5:34 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">looks liek you are missing the windows bootloader shomehow, normaly DC would rename the old windows loader so it expects it under a new name</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

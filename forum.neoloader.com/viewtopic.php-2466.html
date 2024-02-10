@@ -1,0 +1,760 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>0.49 Bugs - Page 7 - NeoLoader Forum</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - NeoLoader Forum" href="feed.php">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="feed-1.php?mode=topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Bugs" href="feed-10.php?f=171">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - 0.49 Bugs" href="feed-92.php?f=171&amp;t=3528">
+	<link rel="canonical" href="viewtopic.php-1251.html?t=3528&amp;start=60">
+
+<!--
+	phpBB style name: prosilver Special Edition
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:      phpBB Limited ( https://www.phpbb.com/ )
+-->
+
+<link href="styles/prosilver/theme/print.css?assets_version=4" rel="stylesheet" media="print" title="printonly">
+
+<link href="styles/prosilver/theme/common.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/links.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/content.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/buttons.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/cp.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/forms.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/colours.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/imageset.css?assets_version=4" rel="stylesheet">
+
+<link href="styles/prosilver_se/theme/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/en/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/responsive.css?assets_version=4" rel="stylesheet" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)">
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=4" rel="stylesheet" />
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner">
+
+			<div id="site-description">
+				<a id="logo" class="logo" href="http://neoloader.com" title="NeoLoader Homepage"><span class="imageset site_logo"></span></a>
+				<h1>NeoLoader Forum</h1>
+				<p>Forum of the NeoLoader P2P Client/Downloader</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+						<div id="search-box" class="search-box search-header">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…">
+					<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+					<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+					
+				</fieldset>
+				</form>
+			</div>
+			
+			</div>
+		</div>
+
+		<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="linklist bulletin" role="menubar">
+
+		<li id="quick-links" class="small-icon responsive-menu dropdown-container" data-skip-responsive="true">
+			<a href="#" class="responsive-menu-link dropdown-trigger">Quick links</a>
+			<div class="dropdown hidden">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																								<li class="small-icon icon-search-unanswered"><a href="search.php-1.html?search_id=unanswered" role="menuitem">Unanswered posts</a></li>
+						<li class="small-icon icon-search-active"><a href="search.php-2.html?search_id=active_topics" role="menuitem">Active topics</a></li>
+						<li class="separator"></li>
+						<li class="small-icon icon-search"><a href="search.php.html" role="menuitem">Search</a></li>
+					
+											<li class="separator"></li>
+												<li class="small-icon icon-team"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li class="small-icon icon-faq" data-skip-responsive="true"><a href="faq.php.html" rel="help" title="Frequently Asked Questions" role="menuitem">FAQ</a></li>
+						
+			<li class="small-icon icon-logout rightside" data-skip-responsive="true"><a href="ucp.php.html?mode=login" title="Login" accesskey="x" role="menuitem">Login</a></li>
+					<li class="small-icon icon-register rightside" data-skip-responsive="true"><a href="ucp.php-1.html?mode=register" role="menuitem">Register</a></li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="linklist navlinks" role="menubar">
+						<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" accesskey="h" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="index">Board index</a></span>
+											<span class="crumb"><a href="viewforum.php-3.html?f=169" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="169">NeoLoader English</a></span>
+															<span class="crumb"><a href="viewforum.php-6.html?f=171" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="171">Bugs</a></span>
+												</li>
+		
+					<li class="rightside responsive-search" style="display: none;"><a href="search.php.html" title="View the advanced search options" role="menuitem">Search</a></li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body">
+		
+		
+<h2 class="topic-title"><a href="viewtopic.php-202.html?f=171&amp;t=3528&amp;start=60">0.49 Bugs</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+			<a href="posting.php-510.html?mode=reply&amp;f=171&amp;t=3528" class="button icon-button locked-icon" title="This topic is locked, you cannot edit posts or make further replies.">
+			Locked		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-1252.html?f=171&amp;t=3528&amp;start=60&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…">
+				<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+				<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+				<input type="hidden" name="t" value="3528">
+<input type="hidden" name="sf" value="msgonly">
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			82 posts
+							<ul>
+	<li class="dropdown-container dropdown-button-control dropdown-page-jump page-jump">
+		<a href="#" class="dropdown-trigger" title="Click to jump to page…" role="button">Page <strong>7</strong> of <strong>9</strong></a>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+				<li>Jump to page:</li>
+				<li class="page-jump-form">
+					<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="10" data-base-url=".&#x2F;viewtopic.php&#x3F;f&#x3D;171&amp;amp&#x3B;t&#x3D;3528" data-start-name="start">
+					<input class="button2" value="Go" type="button">
+				</li>
+			</ul>
+		</div>
+	</li>
+		<li class="previous"><a href="viewtopic.php-201.html?f=171&amp;t=3528&amp;start=50" rel="prev" role="button">Previous</a></li>
+			<li><a href="viewtopic.php-198.html?f=171&amp;t=3528" role="button">1</a></li>
+			<li class="ellipsis" role="separator"><span>…</span></li>
+			<li><a href="viewtopic.php-200.html?f=171&amp;t=3528&amp;start=40" role="button">5</a></li>
+			<li><a href="viewtopic.php-201.html?f=171&amp;t=3528&amp;start=50" role="button">6</a></li>
+			<li class="active"><span>7</span></li>
+			<li><a href="viewtopic.php-203.html?f=171&amp;t=3528&amp;start=70" role="button">8</a></li>
+			<li><a href="viewtopic.php-204.html?f=171&amp;t=3528&amp;start=80" role="button">9</a></li>
+			<li class="next"><a href="viewtopic.php-203.html?f=171&amp;t=3528&amp;start=70" rel="next" role="button">Next</a></li>
+	</ul>
+					</div>
+	
+</div>
+
+
+			<div id="p21547" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile21547">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-18.html?mode=viewprofile&amp;u=3790" class="avatar"><img src="download/file-2.php?avatar=3790_1425060445.jpg" width="60" height="60" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-18.html?mode=viewprofile&amp;u=3790" class="username">Zebra</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-7.html?author_id=3790&amp;sr=posts">19</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat May 03, 2014 11:31 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content21547">
+
+			<h3 class="first"><a href="#p21547"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1253.html?p=21547#p21547"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-18.html?mode=viewprofile&amp;u=3790" class="username">Zebra</a></strong> &raquo; </span>Sat Jan 17, 2015 1:02 am </p>
+
+			
+			
+			<div class="content">NeoLoader almost doesn't upload anything: upload speed sense is disabled, there is set high upload limit, the log says:<br>"Stopping upload of ... after 0 kb, reason: client stalling".<br>What does "slot speed" (8kB/s), min trickle slots" (2) and "drop blocking slots" (off) settings do?</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p21548" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile21548">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content21548">
+
+			<h3><a href="#p21548"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1254.html?p=21548#p21548"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Sat Jan 17, 2015 9:18 am </p>
+
+			
+			
+			<div class="content">It happens on BitTorrent network ? Are you using the latest beta or the final build ?<br><br>SlotSpeed = The speed assigned to a single client.<br>example: With an upload limit of 30 kb/s and "Slotspeed = 8 kb/s" there are ~3-4 upload slot, to give a speed of 8 kb/s to each client. In eMule the slotspeed is 3 kb/s, and its a really low value IMHO.<br>The benefits of an high slot speed is to complete the transfer of the chunk in less time, but you set a slotspeed to high you may have an upload a bit unstable due to the clients not able to get your bandwitch. <br>I don't think that your problem is caused from that setting.<br><br>TrickleSlots: There are some clients in upload in a "standby" status. Why ? If any client can't receive his bandwitch for any reason (usually depends from him, not from us) this badwitch will be moved to a client that was in standby.<br>It improves the upload stability, without trickle slots if the clients in upload cannot receive your bandwitch, you'll not reach your upload limit.<br><br>Drop Blocking Slots: It drops after some time those clients that can't receive your bandwitch. Do not use it if you use an high value of Slot Speed, (8 kb/s, is not an high value), because more clients will not be able to receive that bandwitch and it will cause failed upload sessions.<br><br>Sorry for the bad english, if you want more information (with a better english) search in some emule wikies, they're surely explained on them.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p21549" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile21549">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-14.html?mode=viewprofile&amp;u=1009" class="avatar"><img src="download/file-4.php?avatar=1009_1425060435.png" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-14.html?mode=viewprofile&amp;u=1009" class="username">esher</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-12.html?author_id=1009&amp;sr=posts">46</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Apr 08, 2012 9:42 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content21549">
+
+			<h3><a href="#p21549"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1255.html?p=21549#p21549"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-14.html?mode=viewprofile&amp;u=1009" class="username">esher</a></strong> &raquo; </span>Sat Jan 17, 2015 3:04 pm </p>
+
+			
+			
+			<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>apart from the sorting in directorys.<br>i can not reproduce the file being paused issue here.<br>ware this ed2k files or torrents and can you make a video how to reproduce it please?</div></blockquote>
+<br>
+<br>ican t maek a videao cause i can't manage to reproduce it again. sorry</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p21553" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile21553">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-14.html?author_id=1087&amp;sr=posts">393</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Apr 16, 2012 2:22 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content21553">
+
+			<h3><a href="#p21553"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1256.html?p=21553#p21553"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a></strong> &raquo; </span>Thu Jan 22, 2015 6:43 pm </p>
+
+			
+			
+			<div class="content">8.<br>ed2k server BUG<br><br>clip0013.7z 352 KB<br><a href="https://mega.co.nz/#!t0tgUCRC!zt8q8103-nnsJFDPVxT7WbTi8GkB5smTXPay8ztgbvI" class="postlink">https://mega.co.nz/#!t0tgUCRC!zt8q8103-nnsJFDPVxT7WbTi8GkB5smTXPay8ztgbvI</a></div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p21554" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile21554">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content21554">
+
+			<h3><a href="#p21554"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1257.html?p=21554#p21554"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Thu Jan 22, 2015 7:24 pm </p>
+
+			
+			
+			<div class="content"><blockquote><div><cite>enOehTsIsihT wrote:</cite>8.<br>ed2k server BUG<br><br>clip0013.7z 352 KB<br><a href="https://mega.co.nz/#!t0tgUCRC!zt8q8103-nnsJFDPVxT7WbTi8GkB5smTXPay8ztgbvI" class="postlink">https://mega.co.nz/#!t0tgUCRC!zt8q8103-nnsJFDPVxT7WbTi8GkB5smTXPay8ztgbvI</a></div></blockquote><br><br>Not sure if its a bug, probably the Smart Search include the searching on servers, and to do that a server connection is needed...</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p21555" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile21555">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-14.html?author_id=1087&amp;sr=posts">393</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Apr 16, 2012 2:22 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content21555">
+
+			<h3><a href="#p21555"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1258.html?p=21555#p21555"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a></strong> &raquo; </span>Sat Jan 24, 2015 7:47 am </p>
+
+			
+			
+			<div class="content">9.<br>When active connections are max,neoloader can't download files.<br>clip0017.7z 1.2 MB<br><a href="https://mega.co.nz/#!NgtVwCjR!owDnI7rY_IZlMZd-zx2feCJ2Ctk8wb8YN6rRdDYMO_Q" class="postlink">https://mega.co.nz/#!NgtVwCjR!owDnI7rY_IZlMZd-zx2feCJ2Ctk8wb8YN6rRdDYMO_Q</a><br><br>10.<br>clip0018.7z 225 KB<br><a href="https://mega.co.nz/#!csVyyDKK!dHcV7gA_1GhnRUHq-4YO8tPI99DOnUW0ZBcqMUKLdk8" class="postlink">https://mega.co.nz/#!csVyyDKK!dHcV7gA_1GhnRUHq-4YO8tPI99DOnUW0ZBcqMUKLdk8</a></div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p21566" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile21566">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content21566">
+
+			<h3><a href="#p21566"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1259.html?p=21566#p21566"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Sun Feb 15, 2015 12:59 pm </p>
+
+			
+			
+			<div class="content"><blockquote><div><cite>enOehTsIsihT wrote:</cite>8.<br>ed2k server BUG<br><br>clip0013.7z 352 KB<br><a href="https://mega.co.nz/#!t0tgUCRC!zt8q8103-nnsJFDPVxT7WbTi8GkB5smTXPay8ztgbvI" class="postlink">https://mega.co.nz/#!t0tgUCRC!zt8q8103-nnsJFDPVxT7WbTi8GkB5smTXPay8ztgbvI</a></div></blockquote><br><br>I changed that such that neo loader does not connect to servers in smart search if servers are off</div>
+
+			
+									
+									<div id="sig21566" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p21567" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile21567">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content21567">
+
+			<h3><a href="#p21567"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1260.html?p=21567#p21567"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Sun Feb 15, 2015 1:21 pm </p>
+
+			
+			
+			<div class="content">10. fixed in next release
+<br>
+<br>9. working on a fixfor the next release its difficult as we need to manage the connections better :/</div>
+
+			
+									
+									<div id="sig21567" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p21571" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile21571">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-14.html?author_id=1087&amp;sr=posts">393</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Apr 16, 2012 2:22 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content21571">
+
+			<h3><a href="#p21571"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1261.html?p=21571#p21571"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a></strong> &raquo; </span>Tue Feb 17, 2015 6:10 am </p>
+
+			
+			
+			<div class="content">11.<br>search bug<br><br>clip0038.7z 290 KB<br><a href="https://mega.co.nz/#!xx9RyBAS!x4wLlAZ_-omZLWSqBoYUG2Jnb4vBnbNdPHFEvrUKsls" class="postlink">https://mega.co.nz/#!xx9RyBAS!x4wLlAZ_-omZLWSqBoYUG2Jnb4vBnbNdPHFEvrUKsls</a></div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p21573" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile21573">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-18.html?mode=viewprofile&amp;u=3790" class="avatar"><img src="download/file-2.php?avatar=3790_1425060445.jpg" width="60" height="60" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-18.html?mode=viewprofile&amp;u=3790" class="username">Zebra</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-7.html?author_id=3790&amp;sr=posts">19</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat May 03, 2014 11:31 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content21573">
+
+			<h3><a href="#p21573"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1262.html?p=21573#p21573"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-18.html?mode=viewprofile&amp;u=3790" class="username">Zebra</a></strong> &raquo; </span>Tue Feb 17, 2015 8:49 pm </p>
+
+			
+			
+			<div class="content">I know how these settings work: 400kB/s limit, 40kB/s SlotSpeed = 10+2 slots, I also prefer slotfocus. The problem is that in eMule my bandwidth is mostly saturated, in NeoLoader not - it sometimes drop to few kB/s and the log always says: "Stopping upload of ... after 0 kb, reason: client stalling".</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+	
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=171&amp;t=3528&amp;start=60">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<input type="submit" name="sort" value="Go" class="button2">
+			</fieldset>
+	</form>
+	<hr>
+
+<div class="action-bar bottom">
+	<div class="buttons">
+		
+			<a href="posting.php-510.html?mode=reply&amp;f=171&amp;t=3528" class="button icon-button locked-icon" title="This topic is locked, you cannot edit posts or make further replies.">
+			Locked		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-1252.html?f=171&amp;t=3528&amp;start=60&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+	
+			<div class="pagination">
+			82 posts
+							<ul>
+	<li class="dropdown-container dropdown-button-control dropdown-page-jump page-jump">
+		<a href="#" class="dropdown-trigger" title="Click to jump to page…" role="button">Page <strong>7</strong> of <strong>9</strong></a>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+				<li>Jump to page:</li>
+				<li class="page-jump-form">
+					<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="10" data-base-url=".&#x2F;viewtopic.php&#x3F;f&#x3D;171&amp;amp&#x3B;t&#x3D;3528" data-start-name="start">
+					<input class="button2" value="Go" type="button">
+				</li>
+			</ul>
+		</div>
+	</li>
+		<li class="previous"><a href="viewtopic.php-201.html?f=171&amp;t=3528&amp;start=50" rel="prev" role="button">Previous</a></li>
+			<li><a href="viewtopic.php-198.html?f=171&amp;t=3528" role="button">1</a></li>
+			<li class="ellipsis" role="separator"><span>…</span></li>
+			<li><a href="viewtopic.php-200.html?f=171&amp;t=3528&amp;start=40" role="button">5</a></li>
+			<li><a href="viewtopic.php-201.html?f=171&amp;t=3528&amp;start=50" role="button">6</a></li>
+			<li class="active"><span>7</span></li>
+			<li><a href="viewtopic.php-203.html?f=171&amp;t=3528&amp;start=70" role="button">8</a></li>
+			<li><a href="viewtopic.php-204.html?f=171&amp;t=3528&amp;start=80" role="button">9</a></li>
+			<li class="next"><a href="viewtopic.php-203.html?f=171&amp;t=3528&amp;start=70" rel="next" role="button">Next</a></li>
+	</ul>
+					</div>
+		<div class="clear"></div>
+</div>
+
+
+	<p class="jumpbox-return"><a href="viewforum.php-6.html?f=171" class="left-box arrow-left" accesskey="r">Return to “Bugs”</a></p>
+
+
+	<div class="dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+		<span title="Jump to" class="dropdown-trigger button dropdown-select">
+			Jump to		</span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																			<li><a href="viewforum.php.html?f=10">News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-1.html?f=11">Board News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-2.html?f=161">NeoLoader Releases</a></li>
+																<li><a href="viewforum.php-3.html?f=169">NeoLoader English</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-4.html?f=180">General/Discussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-5.html?f=170">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-6.html?f=171">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-7.html?f=172">Feature Requests</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-8.html?f=173">Script Development</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-9.html?f=174">Extensions</a></li>
+																<li><a href="viewforum.php-10.html?f=163">NeoLoader German</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-11.html?f=179">Algemeines/Diskussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-12.html?f=164">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-13.html?f=165">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-14.html?f=166">Feature Wünsche</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-15.html?f=167">Script Entwicklung</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-16.html?f=168">Erweiterungen</a></li>
+																<li><a href="viewforum.php-17.html?f=4">Community</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-18.html?f=81">OffTopic</a></li>
+										</ul>
+		</div>
+	</div>
+
+
+	<div class="stat-block online-list">
+		<h3>Who is online</h3>
+		<p>Users browsing this forum: No registered users and 3 guests</p>
+	</div>
+
+			</div>
+
+
+<div id="page-footer">
+	<div class="navbar">
+	<div class="inner">
+
+	<ul id="nav-footer" class="linklist bulletin" role="menubar">
+		<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" data-navbar-reference="index">Board index</a></span>
+					</li>
+		
+				<li class="rightside">All times are <abbr title="UTC+1">UTC+01:00</abbr></li>
+							<li class="small-icon icon-delete-cookies rightside"><a href="ucp.php-3.html?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">Delete all board cookies</a></li>
+									<li class="small-icon icon-team rightside" data-last-responsive="true"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>				<li class="small-icon icon-contact rightside" data-last-responsive="true"><a href="memberlist.php-11.html?mode=contactadmin" role="menuitem">Contact us</a></li>	</ul>
+
+	</div>
+</div>
+
+	<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+	</div>
+	<div id="loading_indicator"></div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close"></a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div class="copyright">
+		Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	<img src="cron.php?cron_type=cron.task.core.tidy_search" width="1" height="1" alt="cron"></div>
+
+<script type="text/javascript" src="assets/javascript/jquery.min.js?assets_version=4"></script>
+<script type="text/javascript" src="assets/javascript/core.js?assets_version=4"></script>
+
+
+<script type="text/javascript" src="styles/prosilver/template/forum_fn.js?assets_version=4"></script>
+
+<script type="text/javascript" src="styles/prosilver/template/ajax.js?assets_version=4"></script>
+
+
+
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

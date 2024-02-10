@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Sandboxie Classic v5.64.8 and with Adobe Acrobat Pro v2023.003.20215 or more newer is crashing</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Sandboxie Classic v5.64.8 and with Adobe Acrobat Pro v2023.003.20215 or more newer is crashing</h2>
+		<p><a href="viewtopic.php-308.html?f=16&amp;t=619">https://forum.xanasoft.com/viewtopic.php?f=16&amp;t=619</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Sandboxie Classic v5.64.8 and with Adobe Acrobat Pro v2023.003.20215 or more newer is crashing</h3>
+				<div class="date">Posted: <strong>Sun Jul 16, 2023 7:43 pm</strong></div>
+				<div class="author">by <strong>Bros</strong></div>
+				<div class="content">The <strong class="text-strong">Adobe Acrobat Pro</strong> (32-bit Continuous release) and with last two available updates for it (the <strong class="text-strong">v2023.003.20215</strong>, and the <strong class="text-strong">v2023.003.20244</strong>), when run with <strong class="text-strong">Sandboxie Classic v5.64.8</strong> is crashing within 1 minute after the Adobe Acrobat Pro has been sandboxed, and with this error report:<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>SBIE2224 Sandboxed program has crashed: Acrobat.exe [DefaultBox]
+SBIE2112 Object is not accessible: Unnamed object, call ConnectPort (C0000022) access=001F0000 initialized=1
+SBIE2112 Object is not accessible: Unnamed object, call ConnectPort (C0000022) access=001F0000 initialized=1</code></pre></div>
+
+<br>
+<br>
+<br>
+To be able to successfully reproduce the above bug error, I suggest to run sandboxed <strong class="text-strong">Mozilla Firefox</strong> Web browser (64-bit), and with the <strong class="text-strong">Adobe Acrobat extension</strong> installed here:<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>C:\Program Files (x86)\Adobe\Acrobat DC\Acrobat\Browser\WCFirefoxExtn\WebExtn\signed_extn\adobe_acrobat-1.0-windows.xpi</code></pre></div>
+
+This is the normal way how the Adobe Acrobat Pro software should function by default, because on this way numerous web pages across Internet <br>
+can be directly converted to the PDF file format, but from within the web browser itself.<br>
+<br>
+So, when this PDF conversion process is finish here, that will automatically open sandboxed Adobe Acrobat Pro software also,<br>
+and with this just converted PDF file opened in it...<br>
+<br>
+The problem now is, that within a minute and from last two above mentioned Adobe Acrobat Pro Updates, this sandboxed Adobe Acrobat Pro software is automatically crashing, resulting with the above Sandboxie error report.<br>
+<br>
+<br>
+However, if we just for e.g., simply try and press the right mouse click on the Adobe Acrobat icon on our Desktop and run it as Sandboxed, <br>
+this will not produce the above mentioned crashing at all, so someone can conclude that everything is working as supposed to be here, but unfortunately is not...<br>
+<br>
+<br>
+<br>
+<br>
+Thank you for help and advice, for fixing this bug also, and best regards!<br>
+<br>
+<br>
+<br>
+-----------------------------------------------------------------<br>
+<br>
+<br>
+<br>
+<strong class="text-strong">In case perhaps also additionally needed, all available Adobe Acrobat Updates are here (including the two above mentioned):</strong><br>
+<br>
+<a href="https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/index.html" class="postlink">https://www.adobe.com/devnet-docs/acrob ... index.html</a><br>
+<br>
+<a href="https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousjune2023qfe.html#dccontinuousjunetwentytwentythreeqfe" class="postlink">https://www.adobe.com/devnet-docs/acrob ... tythreeqfe</a><br>
+<br>
+<a href="https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousjuly2023.html#dccontinuousjulytwentytwentythree" class="postlink">https://www.adobe.com/devnet-docs/acrob ... wentythree</a><br>
+<br>
+<br>
+<br>
+<strong class="text-strong">The Adobe Acrobat Pro (Trial) software is also available legally here:</strong><br>
+<br>
+<a href="https://www.adobe.com/acrobat/acrobat-pro.html" class="postlink">https://www.adobe.com/acrobat/acrobat-pro.html</a><br>
+<br>
+<a href="https://www.adobe.com/acrobat/free-trial-download.html" class="postlink">https://www.adobe.com/acrobat/free-trial-download.html</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Sandboxie Classic v5.64.8 and with Adobe Acrobat Pro v2023.003.20215 or more newer is crashing</h3>
+				<div class="date">Posted: <strong>Mon Jul 17, 2023 4:36 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">Thank you for your report. <a href="https://github.com/sandboxie-plus/Sandboxie/issues/3045" class="postlink">This issue</a> might be related.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Sandboxie Classic v5.64.8 and with Adobe Acrobat Pro v2023.003.20215 or more newer is crashing</h3>
+				<div class="date">Posted: <strong>Tue Jul 18, 2023 2:48 am</strong></div>
+				<div class="author">by <strong>Bros</strong></div>
+				<div class="content">You welcome <strong class="text-strong">bastik-1001</strong>, and thank you very much also, for pointing this all out, that all this can be quite possible connected problems here... <img class="smilies" src="images/smilies/icon_e_wink.gif" width="15" height="17" alt=";)" title="Wink"> <br>
+<br>
+<br>
+Well, there are actually 2 ways how to create with <strong class="text-strong">Adobe Acrobat Pro</strong> software the Adobe PDF files from the Web pages (within a Web browser...):<br>
+<br>
+<strong class="text-strong">a)</strong> The first and most desirable way is, as I already explain on the begging of my first post here, with <strong class="text-strong">Adobe Acrobat extension</strong>, and that process will give as a fully <span style="text-decoration:underline">"editable and interactive PDF/dynamic PDF"</span> file at the end<br>
+<br>
+<strong class="text-strong">b)</strong> When we open our Web browser, then go via File -&gt; Print -&gt; As the PDF file, and that will give us only a <span style="text-decoration:underline">"static PDF"</span> file at the end of the process here, and usually we less want that kind of the PDF file to get after all here - cause it is static and flat..., it is actually just one big picture converted to a PDF file format and that's all...<br>
+<br>
+<br>
+So, for this experiment, I also try today to get this of a static PDF file (the <strong class="text-strong">b)</strong> option mentioned here), but from sandboxed Mozilla Firefox Web browser...<br>
+<br>
+At first 3-4 PDF files creation here on that particular way, apparently it will function OK, but after more and more PDF files here are being created like that (from different Mozilla Firefox Web browser tabs, different web pages...), during of this PDF file process creation, it will produce after all numerous Sandboxie errors which he will report..., but luckily and somehow, disregard all of this errors reporting, it will create simply all the static PDF files here and after all:<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>SBIE2203 Failed to communicate with Sandboxie Service:  *GUIPROXY_00000001; MsgId: 12 - acrotray.exe [C0000024]
+SBIE2203 Failed to communicate with Sandboxie Service:  *GUIPROXY_00000001; MsgId: 12 - acrotray.exe [C0000024]
+SBIE2203 Failed to communicate with Sandboxie Service:  *GUIPROXY_00000001; MsgId: 12 - acrotray.exe [C0000024]</code></pre></div>
+
+<br>
+However, it will again automatically just after every successful creation of that static PDF file(s) here, it will open it in sandboxed Adobe Acrobat Pro software at the end, and again this sandboxed Adobe Acrobat Pro software will then crash within a minute, like it is already described in my very first post here...<br>
+<br>
+<br>
+... Except (now, this is very interesting!), if we first run sandboxed Mozilla Firefox Web browser as usual, then go manually to an <strong class="text-strong">Adobe Acrobat (Pro) icon </strong>on our <strong class="text-strong">Desktop</strong>, and right click on that icon, and then run it Sandboxed like that.<br>
+<br>
+Now, if we done everything and exactly like that just being said, the Adobe Acrobat Pro software will not crash sandboxed anymore like before - like when we open first the sandboxed Mozilla Firefox web browser, and then start generating over Adobe Acrobat Pro software - but within Mozilla Firefox Web browser, the PDF file..., and as soon this PDF file is created, it will open it in sandboxed Adobe Acrobat Pro software, and then this very same and sandboxed Adobe Acrobat Pro software will crash within a minute in his sandboxed mode...<br>
+<br>
+Well, the problem is that the normal behavior, is the last one mentioned procedure here and for generating the PDF files with Adobe Acrobat Pro software in the first place (so, when we open first the sandboxed Mozilla Firefox web browser, and then start generating over Adobe Acrobat Pro software - but within Mozilla Firefox Web browser, the PDF file(s)...), and this procedure function just perfectly sandboxed, until last two Adobe Acrobat Pro updates...<br>
+<br>
+<br>
+<br>
+So, I believe that all of this Adobe Acrobat errors now, are actually just related here...</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

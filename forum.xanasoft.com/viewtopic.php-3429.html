@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Windows 11 - Can't open any app in Sandboxie 1.4.2 Plus on security higher than default</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Windows 11 - Can't open any app in Sandboxie 1.4.2 Plus on security higher than default</h2>
+		<p><a href="viewtopic.php-1535.html?f=16&amp;t=453">https://forum.xanasoft.com/viewtopic.php?f=16&amp;t=453</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Windows 11 - Can't open any app in Sandboxie 1.4.2 Plus on security higher than default</h3>
+				<div class="date">Posted: <strong>Mon Oct 17, 2022 4:05 pm</strong></div>
+				<div class="author">by <strong>bogdan.lazea</strong></div>
+				<div class="content">Using latest version of Windows 11 PRO and Sandboxie 1.4.2 Plus.<br>
+For some reason any attempt to open an app in a sandbox with security higher than Default fails like in the screenshot attached.<br>
+<br>
+For example trying to open Notepad++ and then Firefox with no addons or apps fails as seen in these logs<br>
+<br>
+|Time|         |Message|                                                                                                                         <br>
+<br>
+18:44:44.450   Sandboxie config has been reloaded                                                                                                <br>
+18:44:44.451   Sandboxie config has been reloaded                                                                                                <br>
+18:44:49.692   SandboxieRpcSs.exe (15404): SBIE2303 Could not hook PowerSettingRegisterNotification (1)                                          <br>
+18:44:49.705   SandboxieRpcSs.exe (15404): SBIE2203 Failed to communicate with Sandboxie Service:  RPCSS_SXS - (Sandboxie RpcSs) [77/FFFFFFFF]   <br>
+18:44:54.880   Start.exe (10740): SBIE2204 Cannot start sandboxed service RpcSs (1)                                                              <br>
+18:44:54.888   Start.exe (10740): SBIE2204 Cannot start sandboxed service DcomLaunch (-4)                                                        <br>
+18:45:12.497   SandboxieRpcSs.exe (2500): SBIE2303 Could not hook PowerSettingRegisterNotification (1)                                           <br>
+18:45:12.508   SandboxieRpcSs.exe (2500): SBIE2203 Failed to communicate with Sandboxie Service:  RPCSS_SXS - (Sandboxie RpcSs) [77/FFFFFFFF]    <br>
+<br>
+If I don't terminate that Start.exe hanging (Screenshot 01.jpg) app I get lots of messages like in Screenshot-02.jpg.<br>
+<br>
+Can someone help with this?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Windows 11 - Can't open any app in Sandboxie 1.4.2 Plus on security higher than default</h3>
+				<div class="date">Posted: <strong>Sat Oct 29, 2022 12:41 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Please try the newest build 1.5.2</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Windows 11 - Can't open any app in Sandboxie 1.4.2 Plus on security higher than default</h3>
+				<div class="date">Posted: <strong>Sun Oct 30, 2022 4:58 pm</strong></div>
+				<div class="author">by <strong>bogdan.lazea</strong></div>
+				<div class="content">No luck, tried 1.5.1 (1.5.2 wasn't available, maybe typo).<br>
+I got the output of trying to start firefox two times in hardened sandbox (see attached picture)<br>
+If I leave it running I get infinite Start.exe error (6980 and 31240): SBIE2204 error<br>
+<br>
+Uninstalled using Revo and installed fresh copy of 1.5.1.<br>
+<br>
+<img src="%5Battachment=0%5DScreenshot%202022-10-30%20185317.jpg%5B/attachment%5D" class="postimage" alt="Image"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Windows 11 - Can't open any app in Sandboxie 1.4.2 Plus on security higher than default</h3>
+				<div class="date">Posted: <strong>Thu Nov 17, 2022 5:45 pm</strong></div>
+				<div class="author">by <strong>bogdan.lazea</strong></div>
+				<div class="content">Problem is fixed with version 1.5.3.<br>
+When I installed Windows 11 OS fresh copy, install sandboxie non portable, but in settings put the location of sandboxes into C:\Users\&lt;user&gt;\Sandboxes folder. Then after deleting Default sandbox restart your PC. <br>
+After that I installed my Bitdefender Security Suite.<br>
+<br>
+Now Windows 11 and Bitdefender work as expected, and I am able to create Hardenened Security sandboxes and open Firefox inside. <br>
+<br>
+This ticket can be closed,<br>
+Cheers</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Windows 11 - Can't open any app in Sandboxie 1.4.2 Plus on security higher than default</h3>
+				<div class="date">Posted: <strong>Tue Dec 27, 2022 2:32 pm</strong></div>
+				<div class="author">by <strong>EvanFbNash</strong></div>
+				<div class="content">Hey there! Many people're having trouble with Sandboxie on Windows 11. It's definitely frustrating when things don't work as expected, especially when it comes to security.<br>
+Have you tried reaching out to the Sandboxie team for support? They may have some suggestions for troubleshooting the issue. In the meantime, it might be worth checking to see if there are any updates available for Sandboxie or for your system in general. Sometimes software updates can resolve compatibility issues like this.<br>
+You can also check out info on the <a href="https://mylegitkeys.com/product/microsoft-windows-11-pro-product-key-activation-license" class="postlink">windows 11 pro product key</a> for a possible solution.<br>
+Hang in there, and I hope you're able to get things up and running smoothly soon!</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

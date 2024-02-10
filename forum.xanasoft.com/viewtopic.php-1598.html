@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</h2>
+		<p><a href="viewtopic.php-295.html?f=16&amp;t=255">https://forum.xanasoft.com/viewtopic.php?f=16&amp;t=255</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>2</strong></div>
+					<div class="post">
+				<h3>Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</h3>
+				<div class="date">Posted: <strong>Thu Feb 10, 2022 12:00 am</strong></div>
+				<div class="author">by <strong>thomaz</strong></div>
+				<div class="content">With Sandboxie-Classic-x64-v5.55.8  hl.exe (CS Condition Zero) crashes and steam.exe follows (ca. 2x in 30 mins) <img class="smilies" src="images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"><br>
+With old old 5.33.6 all runs fine.<br>
+<br>
+But with 5.33.6 i have the problem that firefox (latest) sometimes doesnt terminate when i close it.<br>
+Window gone but firefox.exe still running.<br>
+Also some strange gfx bug 1x per day and, it looks like a tab appears and disappears very fast, also ca. once per day.<br>
+<br>
+With Sandboxie-Classic-x64-v5.55.8 i cant remember that firefox.exe remains after closing or any gfx bug or tabs (used it for some days).<br>
+<br>
+Due to the gaming problems im forced to use 5.33.6.<br>
+<br>
+And no, i will never let steam or any of its games run native on my main machine since many years ago i caught steam.exe stumbling through my mp3 archive. <img class="smilies" src="images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"><br>
+<br>
+So i hope that the probs will be fixed soon with Sandboxie Classic *dream* <img class="smilies" src="images/smilies/icon_e_smile.gif" width="15" height="17" alt=":)" title="Smile"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</h3>
+				<div class="date">Posted: <strong>Thu Feb 10, 2022 3:49 pm</strong></div>
+				<div class="author">by <strong>thomaz</strong></div>
+				<div class="content">Btw. anybody knows a fix for the firefox not closing bug?<br>
+a sandboxie setting or anything i must set in ff to have a guranteed termination on close?<br>
+Or an extra app which terminates firefox.exe when window isnt drawn anymore?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</h3>
+				<div class="date">Posted: <strong>Mon Feb 14, 2022 8:00 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">is steam installed to the sandbox or just runnign sandboxed but installed outside?<br>
+<br>
+Could you please take the time to test your way through the builds between 5.33.6 and 5.55.11 and tell me in which this crash got introduced.<br>
+To speed things up you can use an iterative approach start with something like 5.40 if the bug is there than pick one in between 5.33.6 and 5.40 some ware in the middle, of the bug is not, than  pick one in between 5.40 and 5.55.11 some ware in the middle, and so on... and then again in the midden and in the middle, this way you will need to test the minimum ob builds until you find the exact one that started the issue.<br>
+<br>
+Since you say the issue takes a couple of 10 min and I don't have CS Condition Zero anyways it would be best if you could help me debug the issue.<br>
+<br>
+You could also add EnableMiniDump=y to your sandboxie ini this will generate crash dumps in the box root directory, you could send me those generated with the latest 5.55.11 build for evaluation these might be indicate what the issue may be.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</h3>
+				<div class="date">Posted: <strong>Tue Feb 15, 2022 4:57 pm</strong></div>
+				<div class="author">by <strong>thomaz</strong></div>
+				<div class="content">I'll try and report.<br>
+But i think it will take a while.<br>
+The bug seems to be very special.<br>
+I play on a server for hrs without any crash and then it loads the map "css_aztec" and i got the crashes.<br>
+When i load the map in single player mode (start a local game) it doesnt crash.<br>
+So it must be a combination of the server (playing online) and the map.<br>
+All i know is, that it works with the older 5.33.6.<br>
+<br>
+Steam is installed outside the sandbox but initial installed through sandboxie with full read/write access to the install folder.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</h3>
+				<div class="date">Posted: <strong>Sat Apr 09, 2022 8:50 pm</strong></div>
+				<div class="author">by <strong>thomaz</strong></div>
+				<div class="content">Last working Sandboxie Version is v5.44.1.<br>
+<br>
+And with EnableMiniDump=y + latest + crash nothing is saved anywhere. <img class="smilies" src="images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"><br>
+Had 2x crashes and nothing is in root dir like described in 5.55.5 changelog.<br>
+I have 2 .dmp files in "steam/dumps" folder.
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>[GlobalSettings]
+
+FileRootPath=W:\Sandbox\%USER%\%SANDBOX%
+Template=4tTrayMinimizer
+Template=OfficeLicensing
+
+[DefaultBox]
+
+ConfigLevel=9
+Enabled=y
+NeverDelete=n
+NotifyInternetAccessDenied=y
+ClosedFilePath=E:\
+ClosedFilePath=F:\
+ClosedFilePath=G:\
+ClosedFilePath=H:\
+ClosedFilePath=I:\
+ClosedFilePath=J:\
+ClosedFilePath=K:\
+ClosedFilePath=L:\
+ClosedFilePath=M:\
+ClosedFilePath=N:\
+ClosedFilePath=O:\
+ClosedFilePath=P:\
+ClosedFilePath=Q:\
+ClosedFilePath=R:\
+ClosedFilePath=S:\
+ClosedFilePath=T:\
+ClosedFilePath=U:\
+ClosedFilePath=V:\
+ClosedFilePath=W:\
+ClosedFilePath=X:\
+ClosedFilePath=Y:\
+ClosedFilePath=Z:\
+ClosedFilePath=\Device\Mup\
+OpenPipePath=steam.exe,D:\_steam
+OpenPipePath=firefox.exe,D:\_apps\firefox\profile\places.sqlite
+OpenPipePath=firefox.exe,D:\_apps\firefox\profile\favicons.sqlite
+OpenPipePath=firefox.exe,D:\_apps\firefox\profile\storage-sync-v2.sqlite
+CopyLimitKb=100000
+AutoDelete=y
+RecoverFolder=D:\_temp\_downloads
+AutoRecover=y
+LingerProcess=rundll32.exe
+Template=OpenSmartCard
+Template=OpenBluetooth
+Template=SkipHook
+Template=FileCopy
+EnableMiniDump=y
+
+[UserSettings_4BC00582]
+
+SbieCtrl_UserName=xxx
+SbieCtrl_ShowWelcome=n
+SbieCtrl_NextUpdateCheck=-1
+SbieCtrl_UpdateCheckNotify=y
+SbieCtrl_BoxExpandedView_DefaultBox=y
+SbieCtrl_ReloadConfNotify=n
+SbieCtrl_EditConfNotify=n
+SbieCtrl_EnableLogonStart=y
+SbieCtrl_EnableAutoStart=y
+SbieCtrl_AddDesktopIcon=n
+SbieCtrl_AddQuickLaunchIcon=n
+SbieCtrl_AddContextMenu=y
+SbieCtrl_AddSendToMenu=y
+SbieCtrl_HideWindowNotify=n
+SbieCtrl_ActiveView=40021
+SbieCtrl_AutoApplySettings=y
+SbieCtrl_SettingChangeNotify=n
+SbieCtrl_WindowCoords=869,341,349,600
+SbieCtrl_RecoverTarget=W:\
+SbieCtrl_SaveRecoverTargets=y
+SbieCtrl_ProcessViewColumnWidths=250,70,300
+SbieCtrl_HideMessage=2111,OpenProcess (C0000022) access=00000040 initialized=1
+SbieCtrl_HideMessage=2111,OpenProcess (C0000022) access=00001410 initialized=1
+EnableMiniDump=y
+</code></pre></div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</h3>
+				<div class="date">Posted: <strong>Thu Apr 28, 2022 5:11 pm</strong></div>
+				<div class="author">by <strong>thomaz</strong></div>
+				<div class="content">All Half-Life 1 based games seem to crash.<br>
+Had crashes with Counterstrike 1.6 and Counterstrike Codition Zero.<br>
+<br>
+Anything i can do?<br>
+Do i make smthg wrong with setting up the minidump function?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</h3>
+				<div class="date">Posted: <strong>Sat Jul 30, 2022 7:00 pm</strong></div>
+				<div class="author">by <strong>thomaz</strong></div>
+				<div class="content">Now i tried Sandboxie-Classic-x64-v5.57.6 but still crashing. <img class="smilies" src="images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"><br>
+I was able to play for several hours then hl.exe crashed to desktop and steam.exe followed 10 seconds later.<br>
+Meanwhile with my 3rd complete different win 7 x64 system (Q67, H170 and now Z170).<br>
+With SandboxieInstall64-v5.44.1 all works but every couple firefox startups firefox.exe starts but no window appears, killtask firefox.exe and try again which is of course very disturbing.<br>
+<br>
+I really hope the hl.exe, steam.exe crashing  will get fixed. *dream* <img class="smilies" src="images/smilies/icon_e_smile.gif" width="15" height="17" alt=":)" title="Smile"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</h3>
+				<div class="date">Posted: <strong>Wed Apr 12, 2023 5:51 pm</strong></div>
+				<div class="author">by <strong>thomaz</strong></div>
+				<div class="content">Finally with Firefox 112.0 and Sandboxie 5.44.1, at least Firefox starts reliable.<br>
+Tried it ca 100x and Firefox opened everytime.<br>
+<br>
+With ff 111.0.1 and 5.44.1 it reached a really annoying level.<br>
+Sometimes i needed up to 5 tries till ff window showed up. <img class="smilies" src="images/smilies/icon_e_smile.gif" width="15" height="17" alt=":)" title="Smile"><br>
+<br>
+Did u ever investigate the hl.exe + steam.exe crashing problem with newer sandboxie versions?<br>
+The last time i tried a newer sandboxie version was since my last post here.<br>
+Is there a possibillity that it works now with latest sbie version?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</h3>
+				<div class="date">Posted: <strong>Fri Jul 07, 2023 10:47 pm</strong></div>
+				<div class="author">by <strong>thomaz</strong></div>
+				<div class="content">firefox 115.0.1 ... the bug is back.<br>
+was a nice, relaxing, problemless time <img class="smilies" src="images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</h3>
+				<div class="date">Posted: <strong>Wed Jul 12, 2023 5:35 pm</strong></div>
+				<div class="author">by <strong>thomaz</strong></div>
+				<div class="content">Now i tried Sandboxie-Plus v1.9.6 and after 30mins hl.exe crashed following steam.exe crash too. <img class="smilies" src="images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"><br>
+Sandboxie-Plus reports:
+<div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="download/file-45.php?id=152" class="postimage" alt="Clipboard01.jpg" onclick="viewableArea(this);"></dt>
+						<dd>Clipboard01.jpg (42.42 KiB) Viewed 4540 times</dd>
+		</dl>
+		
+		
+			</div></div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>2</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

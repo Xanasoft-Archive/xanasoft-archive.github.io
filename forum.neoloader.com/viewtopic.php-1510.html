@@ -1,0 +1,718 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>NeoLoader 0.42a Final Setup Issue - NeoLoader Forum</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - NeoLoader Forum" href="feed.php">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="feed-1.php?mode=topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Bugs" href="feed-10.php?f=171">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - NeoLoader 0.42a Final Setup Issue" href="feed-99.php?f=171&amp;t=3401">
+	<link rel="canonical" href="viewtopic.php-1505.html?t=3401">
+
+<!--
+	phpBB style name: prosilver Special Edition
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:      phpBB Limited ( https://www.phpbb.com/ )
+-->
+
+<link href="styles/prosilver/theme/print.css?assets_version=4" rel="stylesheet" media="print" title="printonly">
+
+<link href="styles/prosilver/theme/common.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/links.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/content.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/buttons.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/cp.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/forms.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/colours.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/imageset.css?assets_version=4" rel="stylesheet">
+
+<link href="styles/prosilver_se/theme/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/en/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/responsive.css?assets_version=4" rel="stylesheet" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)">
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=4" rel="stylesheet" />
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner">
+
+			<div id="site-description">
+				<a id="logo" class="logo" href="http://neoloader.com" title="NeoLoader Homepage"><span class="imageset site_logo"></span></a>
+				<h1>NeoLoader Forum</h1>
+				<p>Forum of the NeoLoader P2P Client/Downloader</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+						<div id="search-box" class="search-box search-header">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…">
+					<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+					<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+					
+				</fieldset>
+				</form>
+			</div>
+			
+			</div>
+		</div>
+
+		<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="linklist bulletin" role="menubar">
+
+		<li id="quick-links" class="small-icon responsive-menu dropdown-container" data-skip-responsive="true">
+			<a href="#" class="responsive-menu-link dropdown-trigger">Quick links</a>
+			<div class="dropdown hidden">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																								<li class="small-icon icon-search-unanswered"><a href="search.php-1.html?search_id=unanswered" role="menuitem">Unanswered posts</a></li>
+						<li class="small-icon icon-search-active"><a href="search.php-2.html?search_id=active_topics" role="menuitem">Active topics</a></li>
+						<li class="separator"></li>
+						<li class="small-icon icon-search"><a href="search.php.html" role="menuitem">Search</a></li>
+					
+											<li class="separator"></li>
+												<li class="small-icon icon-team"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li class="small-icon icon-faq" data-skip-responsive="true"><a href="faq.php.html" rel="help" title="Frequently Asked Questions" role="menuitem">FAQ</a></li>
+						
+			<li class="small-icon icon-logout rightside" data-skip-responsive="true"><a href="ucp.php.html?mode=login" title="Login" accesskey="x" role="menuitem">Login</a></li>
+					<li class="small-icon icon-register rightside" data-skip-responsive="true"><a href="ucp.php-1.html?mode=register" role="menuitem">Register</a></li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="linklist navlinks" role="menubar">
+						<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" accesskey="h" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="index">Board index</a></span>
+											<span class="crumb"><a href="viewforum.php-3.html?f=169" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="169">NeoLoader English</a></span>
+															<span class="crumb"><a href="viewforum.php-6.html?f=171" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="171">Bugs</a></span>
+												</li>
+		
+					<li class="rightside responsive-search" style="display: none;"><a href="search.php.html" title="View the advanced search options" role="menuitem">Search</a></li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body">
+		
+		
+<h2 class="topic-title"><a href="viewtopic.php-233.html?f=171&amp;t=3401">NeoLoader 0.42a Final Setup Issue</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+			<a href="posting.php-520.html?mode=reply&amp;f=171&amp;t=3401" class="button icon-button locked-icon" title="This topic is locked, you cannot edit posts or make further replies.">
+			Locked		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-1506.html?f=171&amp;t=3401&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…">
+				<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+				<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+				<input type="hidden" name="t" value="3401">
+<input type="hidden" name="sf" value="msgonly">
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			14 posts
+							<ul>
+		<li class="active"><span>1</span></li>
+			<li><a href="viewtopic.php-235.html?f=171&amp;t=3401&amp;start=10" role="button">2</a></li>
+			<li class="next"><a href="viewtopic.php-235.html?f=171&amp;t=3401&amp;start=10" rel="next" role="button">Next</a></li>
+	</ul>
+					</div>
+	
+</div>
+
+
+			<div id="p17194" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17194">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-36.html?author_id=1155&amp;sr=posts">98</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 28, 2012 7:17 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17194">
+
+			<h3 class="first"><a href="#p17194">NeoLoader 0.42a Final Setup Issue</a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1507.html?p=17194#p17194"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a></strong> &raquo; </span>Sat Jan 18, 2014 8:32 pm </p>
+
+			
+			
+			<div class="content">i've 0.41f and my log says:<br><em>NeoLoader ist Up To Date</em><br><br>Autoupdate doesn't work?</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17198" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17198">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17198">
+
+			<h3><a href="#p17198"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1508.html?p=17198#p17198"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Sun Jan 19, 2014 8:45 am </p>
+
+			
+			
+			<div class="content">it should be working no changes to that try again or try manually</div>
+
+			
+									
+									<div id="sig17198" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17199" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17199">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-36.html?author_id=1155&amp;sr=posts">98</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 28, 2012 7:17 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17199">
+
+			<h3><a href="#p17199"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1509.html?p=17199#p17199"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a></strong> &raquo; </span>Sun Jan 19, 2014 9:18 am </p>
+
+			
+			
+			<div class="content">tried again. Autoupdate doesn't work.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17200" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17200">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17200">
+
+			<h3><a href="#p17200"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1510.html?p=17200#p17200"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Sun Jan 19, 2014 9:32 am </p>
+
+			
+			
+			<div class="content">what release channel do you use?<br>I tryed it quick here with the final and it worked for me, also try if a clean install works?</div>
+
+			
+									
+									<div id="sig17200" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17201" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17201">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-36.html?author_id=1155&amp;sr=posts">98</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 28, 2012 7:17 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17201">
+
+			<h3><a href="#p17201"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1511.html?p=17201#p17201"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a></strong> &raquo; </span>Sun Jan 19, 2014 9:48 am </p>
+
+			
+			
+			<div class="content">and, as expected, the installer has failed. <strong>Another untested code</strong>.<br><br><img src="http://www.imagestorming.com/images/2014/01/19/neo_wizards.png" class="postimage" alt="Image"><br><br>I've selected my existing NeoLoader folder, but setup has created a new NeoLoader folder inside my existing one, so different from what is written, the setup create always a new folder.<br><br><br>[EDIT]<br>However, in my country the dotted lists are Top-Down.<br>First i select a folder, and finally i press install.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17202" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17202">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17202">
+
+			<h3><a href="#p17202"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1512.html?p=17202#p17202"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Sun Jan 19, 2014 10:01 am </p>
+
+			
+			
+			<div class="content">Creating a folder NeoLoader inside the selected folder is intentional behavioure. (you cant tel the extractor to create a subdir inside the current dir, so a user doubletaping on setup and install would end up with all files on the level of the installer and thats bad.)<br><br>This is a standard selfextracting rar archive, it contains a folder called NeoLaoder containing the setup and some Qt dll's.<br>It gets extracted to the folder selected as destination folder.<br><br>Did the clean setup worked?</div>
+
+			
+									
+									<div id="sig17202" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17203" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17203">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-36.html?author_id=1155&amp;sr=posts">98</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 28, 2012 7:17 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17203">
+
+			<h3><a href="#p17203"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1513.html?p=17203#p17203"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a></strong> &raquo; </span>Sun Jan 19, 2014 10:24 am </p>
+
+			
+			
+			<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>It gets extracted to the folder selected as destination folder.<br></div></blockquote><br><br>sure?<br><br>this is setup runned at 10:11, with selected folder = C:\program files\<strong>NeoLoader</strong><br><br><img src="http://www.imagestorming.com/images/2014/01/19/folder_neoloader.png" class="postimage" alt="Image"><br><br><img src="http://www.imagestorming.com/images/2014/01/19/folder_neoloader_neoloader.png" class="postimage" alt="Image"><br><br>The new NeoLoader.exe IS inside ..<strong>\Neoloader\NeoLoader</strong> folder, while the existing one (that i had updated at 9.59) has not been overwritten.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17205" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17205">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17205">
+
+			<h3><a href="#p17205"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1514.html?p=17205#p17205"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Sun Jan 19, 2014 10:41 am </p>
+
+			
+			
+			<div class="content">Regarding the update problem, the "0.41f" version, was the latest final or was not a "current" build ?<br><br>I'm thinking that maybe neoloader don't recognize updates if user is not using current build but an older one. <br><br>I'm using the "beta channel" and I never had any problems with the updating.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17206" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17206">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-36.html?author_id=1155&amp;sr=posts">98</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 28, 2012 7:17 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17206">
+
+			<h3><a href="#p17206"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1515.html?p=17206#p17206"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a></strong> &raquo; </span>Sun Jan 19, 2014 10:43 am </p>
+
+			
+			
+			<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>&gt;this is setup runned at 10:11, with selected folder = C:\program files\NeoLoader<br><br>thats wrong you should select C:\program files</div></blockquote><br><br><br>NO, the client is wrong. <br>If i want to overwrite the old version, I select the old folder (just like eMule), so C:\program files\NeoLoader. It's logical.<br>In fact, the suggestion says "<em>if the destination folder does not exist, it will be created automaticaly before extrac..</em>", SO IF the destination folder exist <strong>because/and i've selected it</strong>, the destination folder should not be created automatically.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17207" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17207">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17207">
+
+			<h3><a href="#p17207"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1516.html?p=17207#p17207"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Sun Jan 19, 2014 10:44 am </p>
+
+			
+			
+			<div class="content">The SFX archive contains<br><br>./NeoLoader/NeoSetup.exe<br>./NeoLoader/Config/NeoSetup.ini<br>./NeoLoader/cryptopp.dll<br>./NeoLoader/d3dcompiler_46.dll<br>./NeoLoader/icudt51.dll<br>./NeoLoader/icuin51.dll<br>./NeoLoader/icuuc51.dll<br>./NeoLoader/libeay32.dll<br>./NeoLoader/libEGLd.dll<br>./NeoLoader/libGLESv2d.dll<br>./NeoLoader/msvcp110d.dll<br>./NeoLoader/msvcr110d.dll<br>./NeoLoader/Qt5Concurrentd.dll<br>./NeoLoader/Qt5Cored.dll<br>./NeoLoader/Qt5Guid.dll<br>./NeoLoader/Qt5Networkd.dll<br>./NeoLoader/Qt5Widgetsd.dll<br>./NeoLoader/ssleay32.dll<br><br>When you extract that to C:/Program Files<br><br>you end up with <br><br>C:/Program Files/NeoLoader/NeoSetup.exe<br>C:/Program Files/NeoLoader/Config/NeoSetup.ini<br>C:/Program Files/NeoLoader/cryptopp.dll<br>C:/Program Files/NeoLoader/d3dcompiler_46.dll<br>C:/Program Files/NeoLoader/icudt51.dll<br>C:/Program Files/NeoLoader/icuin51.dll<br>C:/Program Files/NeoLoader/icuuc51.dll<br>C:/Program Files/NeoLoader/libeay32.dll<br>C:/Program Files/NeoLoader/libEGLd.dll<br>C:/Program Files/NeoLoader/libGLESv2d.dll<br>C:/Program Files/NeoLoader/msvcp110d.dll<br>C:/Program Files/NeoLoader/msvcr110d.dll<br>C:/Program Files/NeoLoader/Qt5Concurrentd.dll<br>C:/Program Files/NeoLoader/Qt5Cored.dll<br>C:/Program Files/NeoLoader/Qt5Guid.dll<br>C:/Program Files/NeoLoader/Qt5Networkd.dll<br>C:/Program Files/NeoLoader/Qt5Widgetsd.dll<br>C:/Program Files/NeoLoader/ssleay32.dll<br><br><br><br>Thats intended behavioure<br><br>As said its just an rar SFX it by default celects the working directory it is in, and if i don't put the folder in,<br>a user tha starts and clicks install without thinking will blast all files to the directory he has the setup in and that not good.</div>
+
+			
+									
+									<div id="sig17207" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+	
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=171&amp;t=3401">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<input type="submit" name="sort" value="Go" class="button2">
+			</fieldset>
+	</form>
+	<hr>
+
+<div class="action-bar bottom">
+	<div class="buttons">
+		
+			<a href="posting.php-520.html?mode=reply&amp;f=171&amp;t=3401" class="button icon-button locked-icon" title="This topic is locked, you cannot edit posts or make further replies.">
+			Locked		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-1506.html?f=171&amp;t=3401&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+	
+			<div class="pagination">
+			14 posts
+							<ul>
+		<li class="active"><span>1</span></li>
+			<li><a href="viewtopic.php-235.html?f=171&amp;t=3401&amp;start=10" role="button">2</a></li>
+			<li class="next"><a href="viewtopic.php-235.html?f=171&amp;t=3401&amp;start=10" rel="next" role="button">Next</a></li>
+	</ul>
+					</div>
+		<div class="clear"></div>
+</div>
+
+
+	<p class="jumpbox-return"><a href="viewforum.php-6.html?f=171" class="left-box arrow-left" accesskey="r">Return to “Bugs”</a></p>
+
+
+	<div class="dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+		<span title="Jump to" class="dropdown-trigger button dropdown-select">
+			Jump to		</span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																			<li><a href="viewforum.php.html?f=10">News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-1.html?f=11">Board News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-2.html?f=161">NeoLoader Releases</a></li>
+																<li><a href="viewforum.php-3.html?f=169">NeoLoader English</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-4.html?f=180">General/Discussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-5.html?f=170">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-6.html?f=171">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-7.html?f=172">Feature Requests</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-8.html?f=173">Script Development</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-9.html?f=174">Extensions</a></li>
+																<li><a href="viewforum.php-10.html?f=163">NeoLoader German</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-11.html?f=179">Algemeines/Diskussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-12.html?f=164">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-13.html?f=165">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-14.html?f=166">Feature Wünsche</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-15.html?f=167">Script Entwicklung</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-16.html?f=168">Erweiterungen</a></li>
+																<li><a href="viewforum.php-17.html?f=4">Community</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-18.html?f=81">OffTopic</a></li>
+										</ul>
+		</div>
+	</div>
+
+
+	<div class="stat-block online-list">
+		<h3>Who is online</h3>
+		<p>Users browsing this forum: No registered users and 4 guests</p>
+	</div>
+
+			</div>
+
+
+<div id="page-footer">
+	<div class="navbar">
+	<div class="inner">
+
+	<ul id="nav-footer" class="linklist bulletin" role="menubar">
+		<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" data-navbar-reference="index">Board index</a></span>
+					</li>
+		
+				<li class="rightside">All times are <abbr title="UTC+1">UTC+01:00</abbr></li>
+							<li class="small-icon icon-delete-cookies rightside"><a href="ucp.php-3.html?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">Delete all board cookies</a></li>
+									<li class="small-icon icon-team rightside" data-last-responsive="true"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>				<li class="small-icon icon-contact rightside" data-last-responsive="true"><a href="memberlist.php-11.html?mode=contactadmin" role="menuitem">Contact us</a></li>	</ul>
+
+	</div>
+</div>
+
+	<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+	</div>
+	<div id="loading_indicator"></div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close"></a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div class="copyright">
+		Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<script type="text/javascript" src="assets/javascript/jquery.min.js?assets_version=4"></script>
+<script type="text/javascript" src="assets/javascript/core.js?assets_version=4"></script>
+
+
+<script type="text/javascript" src="styles/prosilver/template/forum_fn.js?assets_version=4"></script>
+
+<script type="text/javascript" src="styles/prosilver/template/ajax.js?assets_version=4"></script>
+
+
+
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

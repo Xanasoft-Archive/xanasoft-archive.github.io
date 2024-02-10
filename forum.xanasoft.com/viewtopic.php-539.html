@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Sandboxie-Plus 1.10.5 Released</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Sandboxie-Plus 1.10.5 Released</h2>
+		<p><a href="viewtopic.php-72.html?f=27&amp;t=634">https://forum.xanasoft.com/viewtopic.php?f=27&amp;t=634</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Sandboxie-Plus 1.10.5 Released</h3>
+				<div class="date">Posted: <strong>Fri Aug 11, 2023 9:03 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">This build adds a new scriptable troubleshooting wizard to help resolve sandboxing and UI issues, the wizard can be directly invoked from the SBIEMSG pop-up dialog. The settings dialog has been slightly restructured to add more space to update options, a bug was fixed causing the updater to run every day and not once per week, and a setting was added allowing to pick the update interval.<br>
+We have also added an addon manager which allows installing additional components, like a script debugger for the troubleshooting wizard, a file checker, the logapi dll, and a few other useful addons.<br>
+This build has also significantly reworked the low level injection mechanism, it should now work better and is much more flexible, although this being a large change requires some testing to ensure it works great on all scenarios.<br>
+<br>
+Download: <a href="https://github.com/sandboxie-plus/Sandboxie/releases/tag/v1.10.5" class="postlink">https://github.com/sandboxie-plus/Sandb ... ag/v1.10.5</a><br>
+<br>
+[1.10.5 / 5.65.5] - 2023-08-12<br>
+Changed<br>
+<br>
+    Don't close submenus on mouse-leave (thanks typpos) #2963<br>
+Fixed<br>
+<br>
+    fixed issue with verification of business certificates<br>
+<br>
+[1.10.4 / 5.65.4] - 2023-08-11<br>
+Fixed<br>
+<br>
+    fixed Sandboxie-Plus-x64-v1.10.3 crash on startup #3174<br>
+    fixed issue with buttons not translated in the wizards #3133<br>
+<br>
+[1.10.3 / 5.65.3] - 2023-08-06<br>
+Added<br>
+<br>
+    added support for URL shortcut files in Run Menu #3151<br>
+    added workaround for NtQueryObject locking up in exotic scenarios, to enable it use 'UseDriverObjLookup=y'<br>
+    Addon Manager: added tooltip to version column with maintainer information #3167<br>
+    added mechanism to open websites for addons #3166<br>
+<br>
+Changed<br>
+<br>
+    improved business certificate handling, added usage count and machine bound options<br>
+<br>
+Fixed<br>
+<br>
+    fixed issues with pinned shortcuts<br>
+    fixed Process Suspend/Resume context menu #3156<br>
+    fixed issues with installers created with Qt #2493 #3153<br>
+<br>
+[1.10.2 / 5.65.2] - 2023-07-31<br>
+Added<br>
+<br>
+    re-added option to suspend sandboxed processes #3126<br>
+<br>
+Changed<br>
+<br>
+    changed format of the addon data #3135<br>
+        all users coming from versions 1.10.0 and 1.10.1 will need to reinstall the components in the addon manager<br>
+    "OpenClipboard=n" now also denies write to clipboard #1367<br>
+<br>
+Fixed<br>
+<br>
+    fixed issue with cross renaming of directories<br>
+    fixed issue with auto scroll not working #393<br>
+    fixed UI issue with new box removal protection #3104<br>
+    fixed issue with link argument handling #2969<br>
+    fixed IPC issue introduced in 1.10.1 #3132 #3134<br>
+    fixed issue with pinned run entry icons<br>
+    fixed UGlobalHotkey library not being compatible with Qt6<br>
+<br>
+Removed<br>
+<br>
+    removed hardcoded support for LogApiDll<br>
+        use the addon manager and DLL injection settings<br>
+<br>
+[1.10.1 / 5.65.1] - 2023-07-24<br>
+Added<br>
+<br>
+    added UI option to change ini editor #3116<br>
+    added separate protection against box removal and content deletion #3104<br>
+    added "auto scroll" in Sbie messages, resource monitor, API call log context menu #393<br>
+<br>
+Changed<br>
+<br>
+    reworked NT Object Handle handling<br>
+    "OpenClipboard=n" now is also implemented in user mode, making it work for compartment boxes<br>
+    changed Delete V2 scheme to use drive letters in FilePaths.dat (remains backward compatible with using NT paths) #3053<br>
+    improved robustness of snapshot merging #3017<br>
+<br>
+Fixed<br>
+<br>
+    fixed "Disable Security Isolation" causes a game to stop playing audio #2893<br>
+    fixed NtQueryDirectoryObject not implemented #2734<br>
+    fixed issue with working directory for Run Menu entries<br>
+    fixed improper global symlink in sandboxed namespace #3112<br>
+    fixed 'Addon already installed!' error when clicking 'Show Stack Trace' #3114<br>
+    fixed existing BoxNameTitle=process.exe,- removed when toggling other options #3106<br>
+    fixed asynchronously assigned PCA job not being properly detected #1919<br>
+    fixed incompatibility with first Windows 10 release #3117<br>
+    fixed remove sandbox only deletes the contents of the sandbox when an application is running in the sandbox #3118<br>
+    fixed crash issue with not properly terminated script engine #3120<br>
+    fixed ImDisk under Sandboxie supervision causes SBIE2337 and sometimes BSOD #1092<br>
+    fixed snapshots don't merge duplicate directory junctions #3016<br>
+    fixed snapshot related issue when using Delete V2 rename functionality<br>
+    fixed issue with Delete V2 when using network shares<br>
+    fixed issue when using "UseVolumeSerialNumbers=y" with accessing drive roots<br>
+    fixed remove snapshot resurrects deleted files when using Delete V2 #3015<br>
+<br>
+Removed<br>
+<br>
+    removed template support for Internet Download Manager #991<br>
+<br>
+[1.10.0 / 5.65.0] - 2023-07-12<br>
+<br>
+Added<br>
+<br>
+    added box scripting engine to make SandMan more flexible<br>
+    added scriptable troubleshooting wizard #1875<br>
+    added addon manager which helps to install additional and third-party components, available addons:<br>
+        ImDisk Toolkit - used to create RAM Disks and other virtual drives<br>
+        V4 Script Debugger - used to debug troubleshooting scripts<br>
+        Microsoft Debug Help Library - used for the stack trace feature introduced in 1.9.6<br>
+        signcheck.exe - used to scan files on VirusTotal before recovering them<br>
+        SbieHide.dll - a third-party DLL to hide SbieDll.dll<br>
+        LogAPI.dll - an API logging library used for Buster Sandbox Analyzer<br>
+    added option to set the update interval to 1, 7, 14 and 30 days<br>
+    added What's new in Sandboxie-Plus dialog in SbieCtrl.exe to praise the new features of the Plus UI<br>
+        Note: this is shown after the installation of Sandboxie Classic<br>
+    added "fixdacls" command to KmdUtil.exe, it repairs broken DACL entries on the Sandboxie folder to fix issues where SbieDll.dll fails to load<br>
+    added option to hide Sandboxie's own processes #3054<br>
+    added functionality to cache Sandboxie messages within the Plus UI #2920<br>
+    added button to invoke troubleshooting wizard directly from the SBIE message popup<br>
+<br>
+Changed<br>
+<br>
+    setup wizard has now a dedicated update configuration page<br>
+        this page will be shown once for all users who do not have updates enabled<br>
+    split the support page into Sandboxie Support and Sandboxie Updater tabs<br>
+    when the troubleshooting.7z file is available, the script engine will be used to match compatibility templates<br>
+        this allows a better granularity in template selection by using the AppCompatibility.js script<br>
+    reworked low level code injection mechanism to improve flexibility and debugging<br>
+        the main injection detour code is now written in C instead of Assembler and can properly report SbieDll.dll loading errors as SBIE2181<br>
+    improved session agent startup to be more flexible<br>
+    improved SBIEMSG help handling, the link now contains message details allowing to point to a more exact document (if available)<br>
+    updated certificate validation code<br>
+<br>
+Fixed<br>
+<br>
+    fixed uninstall issue in the Sandboxie Classic installer d1863ff<br>
+    added workaround for Chrome not starting on Windows 11 with KB5027231 #3040<br>
+    improved compatibility with procmon/stack traces for debug builds<br>
+    fixed issue with non-standard command lines<br>
+    fixed online updater not checking every 7 days, but daily<br>
+<br>
+Removed<br>
+<br>
+    cleaned up duplicate code (thanks lmou523) #3067</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Sandboxie-Plus 1.10.4 Released</h3>
+				<div class="date">Posted: <strong>Sat Aug 12, 2023 10:06 am</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">Version 1.10.4 got reclassified from a release to a pre-release, since there has been an issue with business certificate validation. It still works, like it should, for non-commercial settings, so you can keep using it.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Sandboxie-Plus 1.10.5 Released</h3>
+				<div class="date">Posted: <strong>Sun Aug 13, 2023 10:24 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Fix is up - Download: <a href="https://github.com/sandboxie-plus/Sandboxie/releases/tag/v1.10.5" class="postlink">https://github.com/sandboxie-plus/Sandb ... ag/v1.10.5</a><br>
+<br>
+[1.10.5 / 5.65.5] - 2023-08-12<br>
+Changed<br>
+<br>
+    Don't close submenus on mouse-leave (thanks typpos) #2963<br>
+<br>
+Fixed<br>
+<br>
+    fixed issue with verification of business certificates</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

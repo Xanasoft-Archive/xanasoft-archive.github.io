@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Hardware acceleration doesn't work in Firefox (and other browsers) when running in Sandboxie.</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Hardware acceleration doesn't work in Firefox (and other browsers) when running in Sandboxie.</h2>
+		<p><a href="viewtopic.php-336.html?f=16&amp;t=570">https://forum.xanasoft.com/viewtopic.php?f=16&amp;t=570</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Hardware acceleration doesn't work in Firefox (and other browsers) when running in Sandboxie.</h3>
+				<div class="date">Posted: <strong>Fri Apr 28, 2023 10:33 pm</strong></div>
+				<div class="author">by <strong>W1K23</strong></div>
+				<div class="content">For a long time, I was angry with Firefox for playing YouTube videos with a much higher CPU usage than Edge, Chrome. I thought Youtube was optimized for chromium. Today I finally found the cause of the problem.  <img class="smilies" src="images/smilies/icon_cry.gif" width="15" height="17" alt=":cry:" title="Crying or Very Sad">  I always run Firefox in Sandboxie. Hardware acceleration doesn't work in SBoxie. Therefore the CPU usage is 3 times higher and my computer gets very hot while playing 4K videos. When Firefox is started in the normal way, there is no high CPU usage and the notebook doesn't heat up, the fan doesn't spin.<br>
+CPU usage is same high under Edge and Chrome in Sandboxie while playing YouTube videos.<br>
+How to turn on Firefox hardware acceleration in Sandboxie?  <img class="smilies" src="images/smilies/icon_question.gif" width="15" height="17" alt=":?:" title="Question"> <br>
+<br>
+<strong class="text-strong">Firefox by default</strong><br>
+about:support<br>
+Graphics - Compositing: <strong class="text-strong">WebRender</strong> <br>
+<br>
+<strong class="text-strong">Firefox in Sandboxie</strong><br>
+Graphics - Compositing: <strong class="text-strong">WebRender (software) </strong></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Hardware acceleration does not work in Firefox (and other browsers) when running in Sandboxie.</h3>
+				<div class="date">Posted: <strong>Sat Apr 29, 2023 8:00 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Currently isolation is preventing this from working, <br>
+you could use a green compartment type box with reduced isolation.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Hardware acceleration does not work in Firefox (and other browsers) when running in Sandboxie.</h3>
+				<div class="date">Posted: <strong>Sat Apr 29, 2023 11:30 pm</strong></div>
+				<div class="author">by <strong>W1K23</strong></div>
+				<div class="content"><blockquote><div><cite><a href="memberlist.php-8.html?mode=viewprofile&amp;u=49">DavidXanatos</a> wrote: <a href="viewtopic.php-1696.html?p=1152#p1152" data-post-id="1152" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><div class="responsive-hide">Sat Apr 29, 2023 8:00 am</div></cite>
+Currently isolation is preventing this from working, <br>
+you could use a green compartment type box with reduced isolation.
+</div></blockquote>
+
+What about this setting?<br>
+security.sandbox.gpu.level = 0</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Hardware acceleration doesn't work in Firefox (and other browsers) when running in Sandboxie.</h3>
+				<div class="date">Posted: <strong>Sat Apr 29, 2023 11:55 pm</strong></div>
+				<div class="author">by <strong>W1K23</strong></div>
+				<div class="content">VP9 Hardware Acceleration Broken for Firefox and Edge <br>
+<a href="https://github.com/sandboxie-plus/Sandboxie/issues/742" class="postlink">https://github.com/sandboxie-plus/Sandboxie/issues/742</a><br>
+<br>
+Someone wrote this:<br>
+<em class="text-italics">"Firefox GPU sandboxing setting is turned on by default with Firefox 110 upgrade and the setting does not currently work with Sandboxie. If this setting is enabled when Firefox is sandboxed, it falls back to use of WebRender (Software D3D11)."</em><br>
+<br>
+Firefox 108.0 Nightly fallback to WebRender (Software D3D11) when it download and run in sandbox<br>
+<a href="https://github.com/sandboxie-plus/Sandboxie/issues/2444" class="postlink">https://github.com/sandboxie-plus/Sandboxie/issues/2444</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Hardware acceleration does not work in Firefox (and other browsers) when running in Sandboxie.</h3>
+				<div class="date">Posted: <strong>Tue Jul 11, 2023 1:34 am</strong></div>
+				<div class="author">by <strong>W1K23</strong></div>
+				<div class="content"><blockquote><div><cite><a href="memberlist.php-8.html?mode=viewprofile&amp;u=49">DavidXanatos</a> wrote: <a href="viewtopic.php-1696.html?p=1152#p1152" data-post-id="1152" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><div class="responsive-hide">Sat Apr 29, 2023 8:00 am</div></cite>
+Currently isolation is preventing this from working, <br>
+you could use a green compartment type box with reduced isolation.
+</div></blockquote>
+
+No one cares about this problem?<br>
+I tried running Vivaldi in Sandboxie and there is no problem with hardware acceleration! It works smoothly. It doesn't need any green box etc tricks, nor paid SB version!</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

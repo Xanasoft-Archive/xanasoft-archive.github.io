@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; NeoLoader Magnet Links for Hoster Downloads</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>NeoLoader Magnet Links for Hoster Downloads</h2>
+		<p><a href="viewtopic.php-383.html?f=168&amp;t=2694">http://forum.neoloader.com/viewtopic.php?f=168&amp;t=2694</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>NeoLoader Magnet Links for Hoster Downloads</h3>
+				<div class="date">Posted: <strong>Mon Jul 30, 2012 12:10 am</strong></div>
+				<div class="author">by <strong>Ekliptor</strong></div>
+				<div class="content">You can generate NeoLoader Magnet links for any hoster link by using the following PHP function:<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>function getNeoMagnetLink($file_name, $link_array, $with_neo_domain = true) {<br>&nbsp; &nbsp; $link = 'magnet:?dn=' . urlencode($file_name);<br>&nbsp; &nbsp; if ($with_neo_domain)<br>&nbsp; &nbsp; &nbsp; &nbsp; $link = 'http://link.neoloader.to/' . $link;<br>&nbsp; &nbsp; for ($i = 0; $i &lt; count($link_array); $i++)<br>&nbsp; &nbsp; &nbsp; &nbsp; $link .= '&xs.' . ($i+1) . '=' . urlencode($link_array&#91;$i&#93;);<br>&nbsp; &nbsp; return $link;<br>}</code></div><br><br>Example call:<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>$links = array('http://uploaded.to/file/3gkvtb8h');<br>$magnet_link = getNeoMagnetLink('NeoLoader Windows Installer', $links);<br>echo $magnet_link;</code></div><br>Will give you:<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>http://link.neoloader.to/magnet:?dn=NeoLoader+Windows+Installer&xs.1=http%3A%2F%2Fuploaded.to%2Ffile%2F3gkvtb8h</code></div><br><br><br>Note:<br>Using the "Get Link" Feature of a NeoLoader will give you Magnet Links with more information like file hashes, file size, etc... If the files you want to link are stored on your local hard drive you, you should use a NeoLoader to generate these links. However, in case you just have some hoster links the code above will be perfectly fine to create a collection of links for a specific file name.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

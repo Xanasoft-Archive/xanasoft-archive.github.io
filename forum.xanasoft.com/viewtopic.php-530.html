@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Sandboxie-Plus 1.11.2 Released</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Sandboxie-Plus 1.11.2 Released</h2>
+		<p><a href="viewtopic.php-58.html?f=27&amp;t=651">https://forum.xanasoft.com/viewtopic.php?f=27&amp;t=651</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Sandboxie-Plus 1.11.2 Released</h3>
+				<div class="date">Posted: <strong>Sat Sep 09, 2023 9:24 am</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content"><strong class="text-strong">New Features and Enhancements</strong><br>
+<br>
+Sandboxie-Plus 1.11.x comes with a new component ImBox.exe which in combination with new service and driver mechanisms enables exciting new functionality. The ImBox.exe is a block device proxy for the ImDisk driver (which can be installed using the add-on manager introduced in 1.10.x) and is capable of creating dynamic RAMDisks as well as mounting Encrypted Box Images using DiskCryptor's robust and reliable AES-XTS implementation.<br>
+
+  <ul> <li> The RAMDisks integration is available to all project supporters with a valid supporter certificate, it allows for seamless RAMDisk usage once configured on the add-on options settings page and enabled for selected sandboxes. The RAMDisk can be mounted without a drive letter providing a seamless experience, the appropriate Folders on the shared RAMDisk are linked to the default box root folder locations. The RAMDisk is NOT persistent, this means that all data stored on the RAMDisk vanish once the system is rebooted, making such a sandbox ideal to store transient confidential data.</li></ul>
+
+  <ul> <li> The Encrypted Box Image feature uses encrypted container files to store a boxes root directory (containing all files and the boxes' registry hive) the mounted encrypted volume is by default guarded by the driver such that only processes running within the sandbox (and essential sbie+ components) can access the files stored on that volume. In combination with the "ConfidentialBox=y" option, host process read access to sandboxed processes memory is effectively blocked, ensuring no rogue process on the host can access confidential data in RAM belonging to sandboxed processes. The combination of these mechanisms creates secure enclaves, which ensure data processed within an enclave can not leak to the host (except for user configured OpenFilePath locations) and is protected even when the host would to be compromised (only adversaries which obtained kernel level privileges can bypass these mechanisms).</li></ul>
+
+Note: As the new Box Encryption feature opens up a completely new branch of use-cases, which would merit being a separate product on its own, it requires a separate advanced encryption option which must be obtained in addition to a valid supporter certificate, except for the following certificate types: Contributor, Patreon, Huge and Large, all others need to be upgraded using an upgrade key which can be obtained on the web store and has to be entered on the support page.<br>
+<br>
+Also for more clarity the available certificate scheme was restructured Small was renamed to Subscription, Medium to just Personal, Large was removed and a Family Pack subscription was added.<br>
+<br>
+Download: <a href="https://github.com/sandboxie-plus/Sandboxie/releases/tag/v1.11.2" class="postlink">https://github.com/sandboxie-plus/Sandboxie/releases/tag/v1.11.2</a><br>
+<br>
+[1.11.2 / 5.66.2] - 2023-09-09<br>
+<br>
+Added<br>
+<br>
+    added update warning when updating with an expired personal certificate<br>
+    added an option to terminate the UI by clicking the close button #3253<br>
+    added an option to restore a Sandboxie window which has been minimized to the System Tray with a single click #3251<br>
+    added an option to minimize Sandboxie to the System Tray by clicking minimize button 3252<br>
+    added an independent desktop integration setting #3246<br>
+<br>
+Changed<br>
+<br>
+    moved tray option to an own tab<br>
+    replaced some graphics with better compressed ones (thanks idealths)<br>
+<br>
+Fixed<br>
+<br>
+    fixed subscription certificate recognition issue<br>
+    fixed logo cut-off in the About window #3249<br>
+    fixed issue with file recovery when using a ramdisk<br>
+<br>
+<a href="https://github.com/sandboxie-plus/Sandboxie/blob/master/CHANGELOG.md#1112--5662---2023-09-09" class="postlink">Complete changelog</a> with previous changes.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; WFP?</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>WFP?</h2>
+		<p><a href="viewtopic.php-734.html?f=12&amp;t=549">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=549</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>WFP?</h3>
+				<div class="date">Posted: <strong>Tue Mar 14, 2023 9:46 pm</strong></div>
+				<div class="author">by <strong>glate</strong></div>
+				<div class="content">I can't seem to figure out how to apply network restrictions. I have tried in both 1.7.2 and 1.8.0 and can't get either to work.<br>
+<br>
+What I'd like to do:<br>
+<br>
+1. Allow one program (for this example telnet.exe) internet access on port 443 to the IP 142.250.69.195<br>
+2. Block the program from any other internet access<br>
+3. Block all remaining programs from accessing the internet at all<br>
+<br>
+The more recent settings I attempted:<br>
+<br>
+1. Set Network Options to Block using Windows Filtering Platform<br>
+2. Added telnet.exe with mode Allow on the Process Restrictions tab.<br>
+3. Added a Network Firewall allow rule for telnet.exe on port 443 for IP * <br>
+4. Added an All Programs Block rule on Port * and IP * <br>
+- not sure if rule order matters but all programs is below telnet<br>
+5. Also tried editing the INI to use Block *,443 as per <a href="https://sandboxie-plus.com/sandboxie/blockport/" class="postlink">https://sandboxie-plus.com/sandboxie/blockport/</a><br>
+<br>
+I searched website/github/etc and found nothing that would help with this WFP configuration. Apologies if I missed something</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: WFP?</h3>
+				<div class="date">Posted: <strong>Wed Mar 15, 2023 8:01 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Hello,<br>
+<br>
+BlockPort is deprecated and no logner used.<br>
+<br>
+try this:<br>
+<br>
+AllowNetworkAccess=!&lt;InternetAccess&gt;,n<br>
+AllowNetworkAccess=&lt;BlockNetAccess&gt;,n<br>
+ProcessGroup=&lt;InternetAccess&gt;,telnet.exe<br>
+ClosedFilePath=&lt;BlockNetDevices&gt;,InternetAccessDevices<br>
+NetworkAccess=telnet.exe,Block;Port=1-79,81-65000;Protocol=Any<br>
+NetworkAccess=telnet.exe,Allow;Port=80;Protocol=Any<br>
+<br>
+example for telent and port 80</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

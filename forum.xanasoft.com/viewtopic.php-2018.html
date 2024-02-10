@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Browser bookmark</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Browser bookmark</h2>
+		<p><a href="viewtopic.php-621.html?f=12&amp;t=626">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=626</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>2</strong></div>
+					<div class="post">
+				<h3>Browser bookmark</h3>
+				<div class="date">Posted: <strong>Tue Jul 25, 2023 1:02 am</strong></div>
+				<div class="author">by <strong>forSandboxie</strong></div>
+				<div class="content">How to stop non sandboxed browser and sandboxed browser from "syncing" the bookmarks? When i bookmarked a page on sandboxed browser it always get added to non sandboxed browser bookmark and if i delete the added bookmark it will also get deleted on sandboxed browser.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Browser bookmark</h3>
+				<div class="date">Posted: <strong>Tue Jul 25, 2023 8:37 am</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">This should work by removing the template that gives direct access to the browser bookmarks from the configuration of that box.<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>Template=[nameofthebrowser_Bookmarks_DirectAccess</code></pre></div>
+
+Within Sandman (the default user interface for Sandboxie Plus) you can do that in the box options under "App Templates", while looking for the category "Web Browser", where you can disable the direct bookmark access. There are similar settings for other browser resources.<br>
+<br>
+I believe that the default is set the way it is, to move from sandboxed to unsandboxed without having any differences.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Browser bookmark</h3>
+				<div class="date">Posted: <strong>Tue Jul 25, 2023 1:12 pm</strong></div>
+				<div class="author">by <strong>forSandboxie</strong></div>
+				<div class="content">Thanks for the reply. When i checked the Template tab i don't see anything being enabled (no check mark) and when i try to remove it i get "only local templates can be removed" pop up dialog.
+<div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="download/file-60.php?id=157" class="postimage" alt="Screenshot (1).png" onclick="viewableArea(this);"></dt>
+						<dd>Screenshot (1).png (117.36 KiB) Viewed 4569 times</dd>
+		</dl>
+		
+		
+			</div>
+Should i remove these line from Template.ini?
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>[Template_Brave_Bookmarks_DirectAccess]
+Tmpl.Title=#4356,Brave Browser
+Tmpl.Class=WebBrowser
+OpenFilePath=brave.exe,%Tmpl.Brave%\Bookmarks*
+OpenFilePath=brave.exe,%Tmpl.Brave%\Favicons*</code></pre></div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Browser bookmark</h3>
+				<div class="date">Posted: <strong>Tue Jul 25, 2023 1:51 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">It is strange that there is no entry that is checked.<br>
+<br>
+Sandman does not allow for the removal of official templates, probably for the reason I am going to mention below, but editing the template.ini is possible, just that the template.ini will be updated whenever Sandboxie is updated, so any changes will be overwritten. Users can disable/enable templates.<br>
+<br>
+Users can also create custom (local) templates that are preserved during updates. Those can be removed via Sandman.<br>
+<br>
+Can you please take a look at
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>C:\Windows\Sandboxie.ini</code></pre></div>
+to inspect it for any line with
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>Template=[browsername]_Bookmarks_DirectAccess</code></pre></div>
+
+It might not even be the name of your browser.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Browser bookmark</h3>
+				<div class="date">Posted: <strong>Tue Jul 25, 2023 2:05 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">Something else you can try, if there is no template listed in any section.<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>TemplateReject=Brave_Bookmarks_DirectAccess</code></pre></div>
+
+If neither works, please share the contents of your Sandboxie.ini.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Browser bookmark</h3>
+				<div class="date">Posted: <strong>Wed Jul 26, 2023 1:23 am</strong></div>
+				<div class="author">by <strong>forSandboxie</strong></div>
+				<div class="content">Tried everything mentioned here and the bookmark still get synced somehow.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Browser bookmark</h3>
+				<div class="date">Posted: <strong>Wed Jul 26, 2023 8:24 am</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">I don't see why it should fail.<br>
+<br>
+Just wanting to point out that processes need to be restarted in order for changes to take effect, in case, someone wants to try to recreate that.<br>
+<br>
+With your set-up, sandboxed Brave should be able to read the bookmarks of the non-sandboxed Brave, but unable to modify them for the non-sandboxed Brave.<br>
+
+<blockquote class="uncited"><div>CopyBlockDenyWrite=y return a deny write error for all programs that try to open a file that can't be migrated</div></blockquote>
+
+You have set the above, so it should not be possible for the sandboxed Brave to copy the bookmark file into the sandbox. Normally, when a sandboxed program tries to write to a file Sandboxie creates a copy in the sandbox, so the program can write to the copy and then will also read it from there. I am not sure how that behaves when there is already a copy in the sandbox or if the program creates a new file on write errors. Anyhow, it still should the case that sandboxed Brave can read the bookmarks of non-sandboxed Brave, while the non-sandboxed Brave should not be able to read changes made by Brave inside the sandbox.<br>
+<br>
+You will have to clear the sandbox (delete its contents) to get rid of what has been stored inside.<br>
+<br>
+You can try adding the following to the section [DefaultBox], but it should not change the behavior I described.
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>ReadFilePath=path to the folder where the bookmarks are stored</code></pre></div>
+
+The following, added to [DefaultBox], will have the effect that sandboxed Brave can't read the bookmarks of the non-sandboxed one. It also prevents writing to the file outside the sandbox (which it should not do to begin with, as there is no OpenFilePath).
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>ClosedFilePath=path to the folder where the bookmarks are stored</code></pre></div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Browser bookmark</h3>
+				<div class="date">Posted: <strong>Wed Jul 26, 2023 8:31 am</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">This is not supposed to be a solution for the bookmarks being synced, just an attempt to see if these settings take proper effect.<br>
+<br>
+There is something that is not how it is supposed to be. If that is a bug, I'd take it to the issue tracker. You may do that, yourself, but I can also open an issue, linking to that forum thread. For that, you should provide the system you installed Sandboxie on (e.g. Windows 10, 64bit), the Sandboxie version (like 1.9.8, 64bit) and the version of Brave.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Browser bookmark</h3>
+				<div class="date">Posted: <strong>Wed Jul 26, 2023 10:38 am</strong></div>
+				<div class="author">by <strong>forSandboxie</strong></div>
+				<div class="content">I tried all of that and the bookmark still get synced. I already always restarted the processes and there's no difference.<br>
+<br>
+When i set the path to "C:\Users\Kkommputer\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default" the bookmarks no longer get synced but sandboxed browser will always start like a fresh install after being closed. If i set "C:\Users\Kkommputer\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\Bookmarks" instead the sandboxed browser will start without bookmark but a few seconds later the bookmark will get synced again.<br>
+<br>
+Would be nice if you can do the issue tracker thing on my behalf since i'm just an average user.<br>
+<br>
+My system are:<br>
+Edition	Windows 10 IoT Enterprise LTSC (64-bit)<br>
+Version	21H2<br>
+OS build	19044.3208<br>
+Experience	Windows Feature Experience Pack 1000.19041.1000.0<br>
+<br>
+Brave Version 1.56.11 Chromium: 115.0.5790.102 (Official Build) (64-bit)<br>
+<br>
+Sandboxie Version 1.9.8</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Browser bookmark</h3>
+				<div class="date">Posted: <strong>Wed Jul 26, 2023 12:00 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">David might reply here, if he can give any insight in the issue. I create a <a href="https://github.com/sandboxie-plus/Sandboxie/issues/3139" class="postlink">report here</a>. Thank you for providing the required details.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>2</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

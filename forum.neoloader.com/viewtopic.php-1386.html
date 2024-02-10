@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; 0.45 Final &amp; 0.46 Beta - Bugs - Page 3</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>0.45 Final &amp; 0.46 Beta - Bugs</h2>
+		<p><a href="viewtopic.php-216.html?f=171&amp;t=3456">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3456</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>3</strong> of <strong>5</strong></div>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Jul 29, 2014 8:50 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">please try Agian....</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Jul 29, 2014 3:39 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>please try Agian....</div></blockquote><br>I can't reproduce hash bug, so I think it is fixed.<br><br>There is a problem.<br>It is hard to complete downloading for neoloader.<br><br>clip0299.7z 1.2 MB<br><a href="https://mega.co.nz/#!4tknkRjB!Od9t1xM3ohgQi6Hb9uIeh5Wt5H0jJpjG61Zc6W6GXQg" class="postlink">https://mega.co.nz/#!4tknkRjB!Od9t1xM3ohgQi6Hb9uIeh5Wt5H0jJpjG61Zc6W6GXQg</a><br>clip0301.7z 770 KB<br><a href="https://mega.co.nz/#!VkkSBDbA!-A92UkZuofugLxLzwhg7TC72iTKp-jwdKMxl6NArUYQ" class="postlink">https://mega.co.nz/#!VkkSBDbA!-A92UkZuofugLxLzwhg7TC72iTKp-jwdKMxl6NArUYQ</a><br><br>test link<br><blockquote class="uncited"><div><a href="http://link.neoloader.to/magnet:?xt=urn:btih:8977fd06bb9ced930a9a1bec7f0f82f0e19accb3&xt=urn:neox:1oQZHkskXgJakIEfUCCbApivvmwNJWQ2JG9RvcL6tXk&dn=ubuntu-13.10&xl=4888461312" class="postlink">NeoLoader - Download File</a></div></blockquote></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Jul 29, 2014 8:19 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>enOehTsIsihT wrote:</cite>There is a problem.<br>It is hard to complete downloading for neoloader.</div></blockquote><br><br>This kind of is the fix for the corruption bug,<br><br>the problem was that neo completed the files not verifying parts that overlap with other files, now it does.<br>And that means that files next to the complete file must also become completed such that the overlapping part can be verifyed.<br><br>I wil work on improving that by highly prioritizing these parts, but the fix amy take some time as i don't want to break something again.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Jul 30, 2014 3:32 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>This kind of is the fix for the corruption bug,<br><br>the problem was that neo completed the files not verifying parts that overlap with other files, now it does.<br>And that means that files next to the complete file must also become completed such that the overlapping part can be verifyed.<br><br>I wil work on improving that by highly prioritizing these parts, but the fix amy take some time as i don't want to break something again.</div></blockquote><br>If neoloader adds magnet link to download file,the problem can't happen.<br>If neoloader adds neo link to download file,the problem can happen.<br><br>test link<br><blockquote class="uncited"><div>neo link<br><a href="http://link.neoloader.to/magnet:?xt=urn:btih:3b95cc9deb52439178fc1e162fda6c6004c01851&xt=urn:neox:Zb7L9pEJ_Xgjds_PvQO_S9uNLMmz6IY6g4rRlL7ibyc&dn=ubuntu-14.04&xl=4797235200" class="postlink">NeoLoader - Download File</a><br><br>magnet link<br>magnet:?xt=urn:btih:3B95CC9DEB52439178FC1E162FDA6C6004C01851<br></div></blockquote>
+<br>
+<br>
+<br>--------------------------------------------------------------------
+<br>7.
+<br>btih bug
+<br>
+<br>clip0314.7z 554 KB
+<br><a href="https://mega.co.nz/#!08U0UQxR!24a0CTmNnZGL2a9yOFoIsldKZjcM6PaAfNbA0VwFolg" class="postlink">https://mega.co.nz/#!08U0UQxR!24a0CTmNnZGL2a9yOFoIsldKZjcM6PaAfNbA0VwFolg</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Jul 30, 2014 8:19 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote class="uncited"><div>If neoloader adds magnet link to download file,the problem can't happen.<br>If neoloader adds neo link to download file,the problem can happen.</div></blockquote><br>I know, the reason is that torrent has a much smaller pieces Effectively than NeoHash,<br>If your master hash is a torrent hash it will complete the files much faster.<br><br>The NeoHash can have a part size down to 256 kb, but due to the tree structure it is not required to operate at the lowest level it can be operated at 256kb * 2^n <br>And n is selected such that the entire hash set is only around 100kb in size such that it can be stored and retrieved in NeoKad, <br>in future I will add an option to retrive the higher resolved branches on demand but thats not planned soon.<br><br><br>7. its due to old bugs that published wrong into to neo kad, i must add some feature that nodes wil drop informations after a month or so.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Jul 31, 2014 2:31 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">NeoLoader_31.07.2014_09-29-12,158.dmp 89 KB<br><a href="https://mega.co.nz/#!1xtlEJ5Q!u8S0u3PSChkk6SqcXHvv7bQV6bM4mhSPkT5lImt_DfY" class="postlink">https://mega.co.nz/#!1xtlEJ5Q!u8S0u3PSChkk6SqcXHvv7bQV6bM4mhSPkT5lImt_DfY</a><br><br>--------------------------------------------------------------------<br>NeoLoader_03.08.2014_02-37-28,301.dmp 102 KB<br><a href="https://mega.co.nz/#!x80lTYhT!mPQDXccPCAVLoFk5O-h25Yi24-qbqeO9ylnOPiL-6-o" class="postlink">https://mega.co.nz/#!x80lTYhT!mPQDXccPCAVLoFk5O-h25Yi24-qbqeO9ylnOPiL-6-o</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Aug 03, 2014 7:53 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">new beta released, i have reworked the hashing system, please check if it stil works as it should</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Aug 04, 2014 6:16 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>new beta released, i have reworked the hashing system, please check if it stil works as it should</div></blockquote><br>It works fine.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Aug 04, 2014 7:59 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>enOehTsIsihT wrote:</cite>It works fine.</div></blockquote><br><br>Thats good, the issue with slow file completion when using neo hash should also have been solved with a simple trick.<br><br><br>can you tell me what hashing issues are stil open?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Aug 04, 2014 11:15 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>Thats good, the issue with slow file completion when using neo hash should also have been solved with a simple trick.<br><br><br>can you tell me what hashing issues are stil open?</div></blockquote><br>Completing problem has been solved.<br><br>There are some wrong hash in neokad,so neoloader doesn't know how to select correct hash<br><br>7.<br>btih bug<br><br>clip0314.7z 554 KB<br><a href="https://mega.co.nz/#!08U0UQxR!24a0CTmNnZGL2a9yOFoIsldKZjcM6PaAfNbA0VwFolg" class="postlink">https://mega.co.nz/#!08U0UQxR!24a0CTmNnZGL2a9yOFoIsldKZjcM6PaAfNbA0VwFolg</a><br>--------------------------------------------------------------------<br>8.<br>Neoloader can't download multifile.<br><br>clip0319.7z 520 KB<br><a href="https://mega.co.nz/#!BlMx3Lba!vP8W7zWQb16OiSy4sbipFuRna2ij4h6QrVaHFkran0U" class="postlink">https://mega.co.nz/#!BlMx3Lba!vP8W7zWQb16OiSy4sbipFuRna2ij4h6QrVaHFkran0U</a><br>NeoLoader_04.08.2014_17-55-54,303.dmp 86 KB<br><a href="https://mega.co.nz/#!Yt9hlAzR!XN0B-erjOEjXmzan3D559Ki02EkUbu8P19I7mmK6k2A" class="postlink">https://mega.co.nz/#!Yt9hlAzR!XN0B-erjOEjXmzan3D559Ki02EkUbu8P19I7mmK6k2A</a><br>test link<br><blockquote class="uncited"><div>magnet:?xt=urn:btih:3B95CC9DEB52439178FC1E162FDA6C6004C01851</div></blockquote><br><br>--------------------------------------------------------------------<br>NeoKad_08.08.2014_17-12-29,678.dmp 47 KB<br><a href="https://mega.co.nz/#!ZpM0zKjB!hSiYG-n1nCiDXLDYiYSNt6S7AweSzgFDnKUeqdakWj0" class="postlink">https://mega.co.nz/#!ZpM0zKjB!hSiYG-n1nCiDXLDYiYSNt6S7AweSzgFDnKUeqdakWj0</a></div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>3</strong> of <strong>5</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

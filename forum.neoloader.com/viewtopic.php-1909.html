@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; funktionsweise</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>funktionsweise</h2>
+		<p><a href="viewtopic.php-324.html?f=164&amp;t=3177">http://forum.neoloader.com/viewtopic.php?f=164&amp;t=3177</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>2</strong></div>
+					<div class="post">
+				<h3>funktionsweise</h3>
+				<div class="date">Posted: <strong>Fri Mar 01, 2013 12:57 pm</strong></div>
+				<div class="author">by <strong>visionaer79</strong></div>
+				<div class="content">grÃ¼sse, zu aller erst gibt es ein groÃŸes lob an die entwickler fÃ¼r den neo lader <img class="smilies" src="./images/smilies/wink.png" alt=";)" title=";)">
+<br>man sieht das dieses projekt wirklich gut voran geht, mitllerweile kann ich auch eine verbindung zum neokad aufbauen und die suche funktioniert auch, wenn ich auch keine datei die gefunden wird wirklich laden kann, warum, wieso u. weshalb...keinen plan  
+<br>
+<br>gibt es einen link zu einem testfile um mal zu schauen wie das neokad so funzt, zwecks upload u. download? das wÃ¤re mal interessant
+<br>
+<br>gibt es irgendwo eine anzeige wo man schauen kann wieviele user gerade im neokad unterwegs sind?
+<br>
+<br>desweiteren wÃ¤re mal eine grundlegende erklÃ¤rung zum aufbau und zur genauen funktionsweise vom neoloader interessant, da ich das immer noch nicht genau verstehe, ich lade zb. eine datei vom och und der neolader guckt selbstÃ¤ndig im neokad ob das file dort bei anderen usern verfÃ¼gbar ist um den download zu unterstÃ¼tzen? ist das so richtig? wenn ich vom och aus'm netz lade werden dann teile automatisch geshared oder muss man das extra einstellen? es gibt jedenfalls fÃ¼r mich noch viele zu viele fragen zur genauen funktionsweise, ich wÃ¼rde gern wissen was genau im hintergrund, ob manuell aktivierbar bzw. automatisch passiert</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Mar 03, 2013 3:24 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Test file werden wir anlegen.<br><br><blockquote class="uncited"><div>ich lade zb. eine datei vom och und der neolader guckt selbstÃ¤ndig im neokad ob das file dort bei anderen usern verfÃ¼gbar ist um den download zu unterstÃ¼tzen?</div></blockquote><br>Ja, sofern fÃ¼r die datei Share on ED2K aktiviert wurde oder der datei ein torrent zugewiesen wurde.<br>Das geht aber nur mit dateien die nicht gepackt auf einem hoster liegen, also praktisch nur dateien die mit ienem anderen neo hoch geladen wurden.<br><br>Ein neues feature das gerade in arbeit ist wird anders runfunktionieren, wen du was aue ed2k oder torrent lÃ¤dst, werden chunks so wie beim web cache nur viel grÃ¶ser auf OCH's geladen so das andere P2P sauger die auch ein neo haben diese dan mit full speed herunterladen kÃ¶nnen.<br><br><blockquote class="uncited"><div>wenn ich vom och aus'm netz lade werden dann teile automatisch geshared oder muss man das extra einstellen? </div></blockquote><br>nur von OCH getÃ¤tigte downloads sind by default weder in ed2k geshared noch haben einen zugewiesenen torrent.<br><br><blockquote class="uncited"><div>es gibt jedenfalls fÃ¼r mich noch viele zu viele fragen zur genauen funktionsweise, ich wÃ¼rde gern wissen was genau im hintergrund, ob manuell aktivierbar bzw. automatisch passiert </div></blockquote><br><br>Das momentane design sorgt dafÃ¼r das von dateien die auf eine art und weise geladen wurden die entweder anonym ist (neo share, momentan noch work in progress) oder kein upload erfordert (OCH) nicht ohne User Wunsch im ed2k landen und auch kein Torrent automatisch erstellt wird.<br><span style="text-decoration: underline">So das der user maximale Sicherheit bei seinem saugen genieÃŸen kann.</span><br><br><br>Wir werden demnÃ¤chst auch etwas mehr infos Ã¼ber diese Features auf die HP stellen.<br><br><br>David X.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Apr 20, 2013 7:00 pm</strong></div>
+				<div class="author">by <strong>hooligan</strong></div>
+				<div class="content">kann man auch hoster wie ed2k/torrent ausschalten und nur neoshare benutzen?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Apr 20, 2013 7:44 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">prinzipiel ja, wobei es dafÃ¼r keinen expliziten Switch gibt, du kanst aber "Max Paralell Uploads" so wie "Max Paralell Downloads" auf der hoster settings page auf 0 stellen und dan werden weder uplaods an hoster noch downloads von hostern getÃ¤tigt.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Apr 20, 2013 8:04 pm</strong></div>
+				<div class="author">by <strong>Ekliptor</strong></div>
+				<div class="content">Der Grund warum es diese Setting aktuell nicht explizit gibt ist, dass wir uns wÃ¼nschen, dass viele Files auf Hoster geladen werden und im NeoKad die HTTP Links publiziert werden. So nimmt eines der Alleinstellungsmerkmale vom Neo fahrt auf und das Potential wird endlich sichtbar <img class="smilies" src="./images/smilies/wink.png" alt=";)" title=";)"><br><br>Und bis wir mehr User haben werdet ihr mit NeoShare leider sowieso nicht viele Files finden - auÃŸer ein paar Testfiles. Apropos testen.... @hooligan: Du verwendest doch als einer der Wenigen hier noch regelmÃ¤ÃŸig ed2k? Wie macht sich der Neo hier aktuell so bei langer Laufzeit? Ein entsprechender Testlauf und Report wÃ¤re sehr Willkommen <img class="smilies" src="./images/smilies/smile.png" alt=":)" title=":)"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Apr 20, 2013 8:15 pm</strong></div>
+				<div class="author">by <strong>hooligan</strong></div>
+				<div class="content">ich strÃ¤ube mich ein wenig ihn aufn esel server zu installieren,<br>da ich alle ports bei meinem vpn anbieter angeben mÃ¼sste<br>und auf der arbeit hat mir der neo die netzwerkfreigaben zerschossen<br><br>die hoster wollte ich ausschalten, da beim laden die captcha abfragen nerven(da krieg ich richtig dicke eier)<br><br>ansonsten wÃ¼rd ich schon den neo noch zusÃ¤tzlich zu meinen 2 eseln und utorrent starten<br><br>ich Ã¼berlegs mir mal</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Apr 20, 2013 8:32 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">"die netzwerkfreigaben zerschossen"<br>Wie geht den das?<br><br>Das solte eigentlich nicht passieren auÃŸer diese  UPnP lib macht murks aber was hat das mit netzwerk freigaben zu tun :/</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Apr 20, 2013 8:34 pm</strong></div>
+				<div class="author">by <strong>hooligan</strong></div>
+				<div class="content">ich habe halt nur den neo installiert auf xp<br>und danach waren meine netzwerklaufwerke weg<br>bzw der dienst war abgeschossen</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Apr 21, 2013 5:12 pm</strong></div>
+				<div class="author">by <strong>visionaer79</strong></div>
+				<div class="content"><blockquote class="uncited"><div>Der Grund warum es diese Setting aktuell nicht explizit gibt ist, dass wir uns wÃ¼nschen, dass viele Files auf Hoster geladen werden und im NeoKad die HTTP Links publiziert werden. So nimmt eines der Alleinstellungsmerkmale vom Neo fahrt auf und das Potential wird endlich sichtbar</div></blockquote><br>aber was bringt das? sorry aber ich verstehe den sinn nicht so recht <img class="smilies" src="./images/smilies/sad3.gif" alt=":sad3:" title="Sad3"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Apr 21, 2013 7:10 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Naja, das ist so was wie eMule WebCache nur auf Steroiden.<br><br>Der Hoster fungiert hier als ein riesiger Bandbreiten Multiplikator, Du musst den Part 1x Hochladen und Dutzende wen nicht hinderte kÃ¶nnen ihn von dort runter laden.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>2</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

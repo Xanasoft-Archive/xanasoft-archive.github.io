@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Quick Format</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Quick Format</h2>
+		<p><a href="viewtopic.php-357.html?f=17&amp;t=183">https://forum.xanasoft.com/viewtopic.php?f=17&amp;t=183</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>2</strong></div>
+					<div class="post">
+				<h3>Quick Format</h3>
+				<div class="date">Posted: <strong>Sun Nov 07, 2021 3:49 am</strong></div>
+				<div class="author">by <strong>21grammes</strong></div>
+				<div class="content">Hello<br>
+I have accidentally formatted unmounted encrypted partition and obviously, now my disk shows 100% free space.<br>
+I have the header backup'ed and i still know the password but i don't know how and IF, i can get back all my data.<br>
+<br>
+what can/should i do?<br>
+any help would be welcome, please!<br>
+<br>
+-- EDIT --<br>
+for anyone getting to this thread in the future, solution is:<br>
+1:*quick format by error*<br>
+2: don't touch anything, don't write anything to the disk.<br>
+3: clone the deleted disk &lt;sector by sector&gt; to another disk of the same size (preferably).<br>
+4: restore header to the original (deleted) disk<br>
+5: restart windows to be able to mount the disk<br>
+6: mount the disk<br>
+7: decrypt it<br>
+8: launch recovery process once disk fully decrypted.<br>
+9: enjoy getting back your "deleted" data.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Quick Format (2)</h3>
+				<div class="date">Posted: <strong>Mon Nov 08, 2021 8:20 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">hmm.... first of all make a full sector backup of the broken partition in order to not break it further when working on it.<br>
+<br>
+Than try restoring the header and then mounting the colume, you will probably get somethign that appears unformated, but than you can try wunning some file recovery tools that are designed for the case of having formated the wrong partition, this should be able to find the files.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Quick Format (2)</h3>
+				<div class="date">Posted: <strong>Mon Nov 08, 2021 11:24 pm</strong></div>
+				<div class="author">by <strong>21grammes</strong></div>
+				<div class="content">Thanks for your fast reply.<br>
+i'm gonna try this. <br>
+<br>
+i'll update the thread about how things went, maybe it'll help some other people like me in the future.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Quick Format (2)</h3>
+				<div class="date">Posted: <strong>Fri Nov 12, 2021 1:10 am</strong></div>
+				<div class="author">by <strong>21grammes</strong></div>
+				<div class="content"><blockquote><div><cite><a href="memberlist.php-8.html?mode=viewprofile&amp;u=49">DavidXanatos</a> wrote: <a href="viewtopic.php-1715.html?p=366#p366" data-post-id="366" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><div class="responsive-hide">Mon Nov 08, 2021 8:20 pm</div></cite>
+hmm.... first of all make a full sector backup of the broken partition in order to not break it further when working on it.<br>
+<br>
+Than try restoring the header and then mounting the colume, you will probably get somethign that appears unformated, but than you can try wunning some file recovery tools that are designed for the case of having formated the wrong partition, this should be able to find the files.
+</div></blockquote>
+
+so:<br>
+&gt;had a HDD crypted with disk cryptor<br>
+&gt;quick formated it by mistake without having the disk mounted<br>
+&gt;did no writing or whatever on the disk right after realizing my mistake.<br>
+&gt;did a full sector by sector clone of the original HDD<br>
+&gt;successfully restored the header on the original HDD<br>
+<br>
+there was no option to "mount" the disk via disk cryptor right after restoring the header, windows was still showing a 100% free space partition.<br>
+i still tried to start a file recovery process via the paid recovery software R-STUD**<br>
+<br>
+&gt;almost no result, and the small amount of results that the software found was corrupted when restored.<br>
+&gt;&gt;restarted the computer<br>
+&gt;&gt;after restarting, i was able to "mount" the disk, so i did.<br>
+&gt;&gt;disk successfully mounted<br>
+&gt;&gt;the disk now shows as "inaccessible" by windows, even tho in the windows disk management interface, the disk appears as a normal one.<br>
+&gt;&gt;&gt;did a second try with R-STUD** <br>
+&gt;&gt;&gt;same result as before mounting the drive (corrupted &amp; almost no result)<br>
+&gt;&gt;&gt;&gt;tried the free recovery software DMDE<br>
+&gt;&gt;&gt;&gt;still almost no result, and the few results were also corrupted.<br>
+<br>
+Anything else that i can try?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Quick Format</h3>
+				<div class="date">Posted: <strong>Sat Nov 13, 2021 11:39 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">mounting must work if it doe snot moutn the otehr tools will not be able to do anything</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Quick Format</h3>
+				<div class="date">Posted: <strong>Sat Nov 13, 2021 2:21 pm</strong></div>
+				<div class="author">by <strong>21grammes</strong></div>
+				<div class="content"><blockquote><div><cite><a href="memberlist.php-8.html?mode=viewprofile&amp;u=49">DavidXanatos</a> wrote: <a href="viewtopic.php-1718.html?p=372#p372" data-post-id="372" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><div class="responsive-hide">Sat Nov 13, 2021 11:39 am</div></cite>
+mounting must work if it doe snot moutn the otehr tools will not be able to do anything
+</div></blockquote>
+
+i was able to mount it after restarting windows, so yeah now it's indeed mounted.<br>
+but still, the recovery softwares aren't finding anything but a lot of corrupted .swf files or random corrupted files.<br>
+<br>
+what could be wrong?<br>
+i'm 100% sure that was the right header.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Quick Format</h3>
+				<div class="date">Posted: <strong>Sun Nov 14, 2021 5:24 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">hmm.... grab a disk editor and use it to view the mounted partition, if you can find anythign that does not look like random garbage than the header was right, if there is only high entropy garbage than probably its the wrong header.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Quick Format</h3>
+				<div class="date">Posted: <strong>Mon Nov 15, 2021 12:13 am</strong></div>
+				<div class="author">by <strong>21grammes</strong></div>
+				<div class="content">honestly this is beyond my knowledge/understanding, i'm not able to tell the difference between "high entropy garbage" and normal things in hex aha.<br>
+i took some screenshots of the mounted disk:<br>
+&gt;1:<img src="rYd4BGV.png" class="postimage" alt="Image"><br>
+&gt;2:<img src="8RSPgxI.png" class="postimage" alt="Image"><br>
+<br>
+what am i supposed to look at?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Quick Format (2)</h3>
+				<div class="date">Posted: <strong>Tue Nov 16, 2021 4:04 am</strong></div>
+				<div class="author">by <strong>21grammes</strong></div>
+				<div class="content"><blockquote><div><cite><a href="memberlist.php-8.html?mode=viewprofile&amp;u=49">DavidXanatos</a> wrote: <a href="viewtopic.php-1715.html?p=366#p366" data-post-id="366" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><div class="responsive-hide">Mon Nov 08, 2021 8:20 pm</div></cite>
+hmm.... first of all make a full sector backup of the broken partition in order to not break it further when working on it.<br>
+<br>
+Than try restoring the header and then mounting the colume, you will probably get somethign that appears unformated, but than you can try wunning some file recovery tools that are designed for the case of having formated the wrong partition, this should be able to find the files.
+</div></blockquote>
+
+i've tried to reproduce the steps of my original mistake but with a clean, brand new USB stick, in which i've put some mp4 files and some images.<br>
+here's what i did:<br>
+<br>
+1: encrypt the USB Stick<br>
+2: put the mp4 files etc<br>
+3: backup the header<br>
+4: unmount the disk<br>
+5: quick format the disk "by mistake"<br>
+6: restore the header<br>
+7: restart windows to be able to mount the disk via DiskCryptor<br>
+8: mount the disk<br>
+9: start the recover process with different recovery softwares<br>
+<br>
+tried 5 different recovery softwares, and still, none of them were able to find any of the previous files.<br>
+so i guess we can surely say it's not related about the header.<br>
+<br>
+Any other ideas of what to try sir?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Quick Format</h3>
+				<div class="date">Posted: <strong>Tue Nov 16, 2021 2:07 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Try the same test just skip the encryption<br>
+create volume, <br>
+add files<br>
+quick format<br>
+try recovering<br>
+<br>
+to test if any of these tools is any good</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>2</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

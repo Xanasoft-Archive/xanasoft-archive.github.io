@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; 0.43 (beta) Bugs - Page 6</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>0.43 (beta) Bugs</h2>
+		<p><a href="viewtopic.php-236.html?f=171&amp;t=3422">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3422</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>6</strong> of <strong>6</strong></div>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat May 03, 2014 3:09 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">As it looks mega supports downlaod resuming, this feature will be added to the next release of neoloader</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat May 03, 2014 6:37 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote class="uncited"><div>10.<br>Yes,it is a feature request.<br></div></blockquote>
+<br>
+<br>I looked into the possibility of allowing NeoShare to work with hashes other than a Neo Hash and i see a few problems with that:
+<br>aside of more publishment overhead, and additional code complexity etc...
+<br>the main issue i see is with multi files, 
+<br>NeoShare is strongly NeoKad based and relayed on NeoKad for hashset exchange and metadata exchange.
+<br>So if 2 neoshare clients talk to each other thay can no exchange a hash set or a multi files meta data, they relay on one of them publishing it into kad and the other one retrieving it from there.
+<br>
+<br>Without a NeoX hash we can not store metadata (multi file structire/subfile list) in NeoKad,
+<br>so for torrents we would for example need to publish the entire torrent into kad and thats not so cool...
+<br>
+<br>
+<br>
+<br>What would be some practical use cases where such a functionality would be really needed?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat May 03, 2014 7:38 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content"><a href="http://board.neoloader.com/bugs/3340-know-bugs-continuously-updated.html" class="postlink">http://board.neoloader.com/bugs/3340-know-bugs-continuously-updated.html</a><br><br>Updated on latest release (today, 0.43e).</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun May 04, 2014 1:54 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">15.<br>repeat bug<br><br>clip0694.7z 106 KB<br><a href="https://mega.co.nz/#!go8EHKSD!bc0OAyi8mF_9nQKQXUQ5lho60SpSnvSMs6N0Gwqj6OY" class="postlink">https://mega.co.nz/#!go8EHKSD!bc0OAyi8mF_9nQKQXUQ5lho60SpSnvSMs6N0Gwqj6OY</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun May 04, 2014 9:47 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>enOehTsIsihT wrote:</cite>15.<br>repeat bug<br><br>clip0694.7z 106 KB<br><a href="https://mega.co.nz/#!go8EHKSD!bc0OAyi8mF_9nQKQXUQ5lho60SpSnvSMs6N0Gwqj6OY" class="postlink">https://mega.co.nz/#!go8EHKSD!bc0OAyi8mF_9nQKQXUQ5lho60SpSnvSMs6N0Gwqj6OY</a></div></blockquote><br><br>found and fixed in next releae</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun May 04, 2014 11:42 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>enOehTsIsihT wrote:</cite>13.<br>clip0692.7z 919 KB<br><a href="https://mega.co.nz/#!RpUVBYza!fbjv8huYcg4E7yPciQVdGCdwnnIWc11gYYUgCLbA63Q" class="postlink">https://mega.co.nz/#!RpUVBYza!fbjv8huYcg4E7yPciQVdGCdwnnIWc11gYYUgCLbA63Q</a><br></div></blockquote>
+<br>
+<br>should be fixed but keep in mind that it may take some time to search for all as there is a limitation to 10 kad operations in total at one time.
+<br>you can open th eneokad exe manually befoure neolaoder to view the gui 
+<br>
+<br>than you seewhat its actually looking for</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun May 04, 2014 1:42 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">16.<br>clip0706.7z 205 KB<br><a href="https://mega.co.nz/#!Y8dWUSQS!dkvkHnQCm4Vh5MJQtz4uRR5oW14oh7idau_wqdpWTGE" class="postlink">https://mega.co.nz/#!Y8dWUSQS!dkvkHnQCm4Vh5MJQtz4uRR5oW14oh7idau_wqdpWTGE</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun May 04, 2014 1:47 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I see....
+<br>will be fixed in next release</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>6</strong> of <strong>6</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

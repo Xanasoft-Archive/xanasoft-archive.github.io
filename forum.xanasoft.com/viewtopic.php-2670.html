@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; HowTo? let sandboxed program mount a drive</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>HowTo? let sandboxed program mount a drive</h2>
+		<p><a href="viewtopic.php-1020.html?f=14&amp;t=534">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=534</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>HowTo? let sandboxed program mount a drive</h3>
+				<div class="date">Posted: <strong>Fri Jan 27, 2023 4:42 am</strong></div>
+				<div class="author">by <strong>SamDi</strong></div>
+				<div class="content">Hi!<br>
+I'm using SB+x64.1.6.7 on Win10x64.<br>
+When starting <a href="https://www.pcloud.com/release-notes/windows.html" class="postlink">pcloud client</a> (4.0.4) it normally mounts a drive P:\ (using <a href="https://www.callback.com/cbfsconnect/" class="postlink">CBFS</a>) which represents the cloud storage.<br>
+When starting it sandboxed (Enhanced Isolation, Privacy Enhanced) it doesn't connect this drive. <br>
+<br>
+Which additional settings are required?<br>
+<br>
+<br>
+Thank you very much.<br>
+<br>
+P.S. actual Sandbox config:
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>[pCloud]
+Enabled=y
+BlockNetworkFiles=y
+RecoverFolder=%{374DE290-123F-4565-9164-39C4925E467B}%
+RecoverFolder=%Personal%
+RecoverFolder=%Desktop%
+BorderColor=#0423ee,ttl
+Template=BlockTelemetry
+Template=OpenBluetooth
+Template=SkipHook
+Template=FileCopy
+Template=qWave
+Template=BlockPorts
+Template=LingerPrograms
+Template=AutoRecoverIgnore
+ConfigLevel=9
+AutoRecover=y
+UseSecurityMode=y
+UsePrivacyMode=y
+OpenFilePath=P:\
+OpenFilePath=S:\Data
+OpenFilePath=R:\pCloud
+OpenFilePath=C:\Users\SamDi\AppData\Local\pCloud
+ForceProcess=pCloud.exe
+ForceProcess=msedgewebview2.exe
+</code></pre></div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: HowTo? let sandboxed program mount a drive</h3>
+				<div class="date">Posted: <strong>Sun Jul 16, 2023 8:20 am</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">Could you make it work? If so, please share your knowledge.<br>
+<br>
+You may try without the privacy mode, to check if that is causing the issue. Just for testing. If it works without, there are other resources that need to be made accessible (either just reading or reading and writing).</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: HowTo? let sandboxed program mount a drive</h3>
+				<div class="date">Posted: <strong>Tue Jul 25, 2023 2:56 pm</strong></div>
+				<div class="author">by <strong>SamDi</strong></div>
+				<div class="content">Running it in a standard sandbox helped.<br>
+It just doesn't protect ones files/privacy if untrusted software can access anything  <img class="smilies" src="images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"> <br>
+<br>
+Sadly there's no support from the vendor even for Paying/PRO users.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: HowTo? let sandboxed program mount a drive</h3>
+				<div class="date">Posted: <strong>Tue Jul 25, 2023 4:41 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">Well, good that it works with a standard box. Now it seems that what has to be done is to figure out what resource is needed to be made available in some way, while the privacy setting is enabled.<br>
+<br>
+@DavidXanatos, what's the best way of finding out what resource that is.<br>
+
+<blockquote class="uncited"><div>Sadly there's no support from the vendor even for Paying/PRO users.</div></blockquote>
+
+Maybe, if you reach out directly. Understandably, support isn't satisfactory.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: HowTo? let sandboxed program mount a drive</h3>
+				<div class="date">Posted: <strong>Sun Jul 30, 2023 11:13 am</strong></div>
+				<div class="author">by <strong>SamDi</strong></div>
+				<div class="content"><blockquote class="uncited"><div>@DavidXanatos, what's the best way of finding out what resource that is.</div></blockquote>
+
+That's what I wanted to find out with this thread.<br>
+I don't use to use proprietary software when avoidable but in case I could limit e.g. pClouds client access to a very few folders it was way safer to use than with full access to everything or having to run pCloud as different user and work through file-/folder permissions (pCloud client has deltasync, FOSS rclone hasn't).<br>
+<br>
+I use/pay the software "as is", even without support it's still worth the money for me. So, as I said, it's just "sadly" there's no support.<br>
+<br>
+<br>
+P.S. Though having the box checked I don't get an email when forum threads are updated so only come by every once in a while.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: HowTo? let sandboxed program mount a drive</h3>
+				<div class="date">Posted: <strong>Sun Jul 30, 2023 5:14 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">About e-Mails, someone else mentioned that and I reached out to David about that, recently, but he did not log in here, so he could not look into the configuration.<br>
+<br>
+For the same reason, he has not replied to your report or my attempt to reach out for help.<br>
+<br>
+Support was probably better as there was a company releasing a product, with other products available as well, so they had the resources to have staff to handle this. With the fork after the release of the sources, things are different. I am not sure, if there were more users on here before the fire took out the forum, which could not be restored, but I still hope that this forum will get more users, so that they can help each other.<br>
+<br>
+I had <a href="https://github.com/sandboxie-plus/Sandboxie/issues/3144" class="postlink">this idea</a> for some time and now that upcoming releases will have a troubleshooting wizard, it could be something that makes it easier to use different kinds of boxes, if the program works in the first place.<br>
+<br>
+For now, you can take a look at the resources the program accesses in the standard box, by enabling the stack trace feature of Sandboxie. You can enable that in "View", where you select "Trace Logging". Now you can start the program in the standard box, use it like you intend to, and observe in the <em class="text-italics">Trace Log</em> what gets accesses. Then you can open the option for the sandbox and add the resources to it via "Resource Access" option.<br>
+<br>
+If the trace of Sandboxie/Sandman was not helpful, maybe the <em class="text-italics">Process Monitor</em> (Procmon) made by Sysinternals helps you to identify what the program accesses, while running in the standard box, that it needs to be able to access in the privacy type box.<br>
+<br>
+I can't tell you if there is a better way, which is why I thought David could provide a better answer.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

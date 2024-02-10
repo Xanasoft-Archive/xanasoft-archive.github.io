@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Enhanced Boxes Making Changes To NonSandboxed Opera?</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Enhanced Boxes Making Changes To NonSandboxed Opera?</h2>
+		<p><a href="viewtopic.php-2869.html?f=14&amp;t=451">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=451</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Enhanced Boxes Making Changes To NonSandboxed Opera?</h3>
+				<div class="date">Posted: <strong>Mon Oct 10, 2022 2:18 am</strong></div>
+				<div class="author">by <strong>PaulBox</strong></div>
+				<div class="content">Hi all, longtime Sandboxie user; just upgraded to Plus and got a licence. This is long but I want to be clear, and it's of concern, even if my error.<br>
+<br>
+I have searched around but couldn't find a similar problem.<br>
+I replicated this problem and it repeats. It does it with any kind of security enhancement; blue, orange or red boxes (Hardened With Data Protection,  security Hardened, Sandbox With Data Protection). Regular boxes seem fine. However, I'm concerned about this both as I'd liked to use enhanced, and if it pertains to any other box.<br>
+<br>
+I set three sandboxes for enhanced privacy.<br>
+All three had different names.<br>
+<br>
+I launched and used one, then used the second after terminating the first. Doing the same for the third, I noticed a history....<br>
+<br>
+The browser was the same for each sandbox. I was disturbed a sandbox was shared, reset all, began again but my history was there.<br>
+<br>
+I launched the non sandboxed opera portable. Each sandbox was writing to the unsandboxed Opera.<br>
+I have repeated this and sure enough, using any of the enhanced settings on a sandbox, including making a change on one that otherwise seems fine in normal use, results in sites I visit in one sandbox, being written to the actual browser itself. <br>
+<br>
+This is the first setting I used for all boxes. I can provide more information and shots.<br>
+<br>
+[Amazon]<br>
+FileRootPath=O:\Sandbox\Amazon<br>
+Enabled=y<br>
+BlockNetworkFiles=y<br>
+RecoverFolder=%{374DE290-123F-4565-9164-39C4925E467B}%<br>
+RecoverFolder=%Personal%<br>
+RecoverFolder=%Desktop%<br>
+BorderColor=#0423ee,ttl,6<br>
+Template=OpenBluetooth<br>
+Template=SkipHook<br>
+Template=FileCopy<br>
+Template=qWave<br>
+Template=BlockPorts<br>
+Template=LingerPrograms<br>
+Template=AutoRecoverIgnore<br>
+ConfigLevel=9<br>
+UseSecurityMode=y<br>
+UsePrivacyMode=y<br>
+OpenFilePath=O:\<br>
+AllowNetworkAccess=&lt;BlockNetAccess&gt;,n<br>
+BoxNameTitle=n<br>
+FakeAdminRights=y<br>
+ClosePrintSpooler=y<br>
+CopyLimitKb=81920<br>
+ClosedFilePath=!&lt;InternetAccess&gt;,InternetAccessDevices<br>
+ClosedFilePath=&lt;BlockNetDevices&gt;,InternetAccessDevices<br>
+ClosedIpcPath=!&lt;StartRunAccess&gt;,*<br>
+ProcessGroup=&lt;StartRunAccess&gt;,rundll32.exe,Opera_PortableSetup.exe,opera.exe,launcher.exe, Opera_Portable.exe<br>
+ProcessGroup=&lt;InternetAccess&gt;,OperaSetup.exe,Opera_PortableSetup.exe,opera.exe,launcher.exe<br>
+<br>
+Can you advise as to what I did/went wrong? Is this a bug? Even allowing access to O should not allow it to make changes, right? This is a setting I had before (and blocked off access to many locations myself in the.ini) and is required to access O as the sandbox is on it (it's a mountable drive). <br>
+<br>
+Regular sandbox works as always, including when the settings are the same except the "extra" protection level boxes.. I can see inside the Sandbox it has the "O" drive with files. It seems to modify only the sandboxed contents. I am checking as thoroughly as I can.<br>
+<br>
+ Any enhancements use the Opera Portable itself. There is only the "C" drive and no "O" drive where Opera is located.<br>
+<br>
+Thanks so much!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Enhanced Boxes Making Changes To NonSandboxed Opera?</h3>
+				<div class="date">Posted: <strong>Tue Oct 11, 2022 6:54 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Hello,<br>
+<br>
+OpenFilePath=O:\<br>
+<br>
+allows read and <strong class="text-strong">write</strong> access to O:\<br>
+<br>
+with UsePrivacyMode=y<br>
+<br>
+you need to use a new type of rule if you want to allow a read and copy on write access<br>
+<br>
+NormalFilePath=O:\<br>
+<br>
+this rule enables regular sandboxie behavior for the O:\ drive which is what i get from your request you want.<br>
+<br>
+Sandboxes applications will be able to read the all of O:\ but all changes they try to make will be contained within the sandbox.<br>
+<br>
+Cheers</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Trouble with fresh DC Installation on m.2 SSD - bootloop</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Trouble with fresh DC Installation on m.2 SSD - bootloop</h2>
+		<p><a href="viewtopic.php-420.html?f=19&amp;t=202">https://forum.xanasoft.com/viewtopic.php?f=19&amp;t=202</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Trouble with fresh DC Installation on m.2 SSD - bootloop</h3>
+				<div class="date">Posted: <strong>Thu Dec 02, 2021 6:13 pm</strong></div>
+				<div class="author">by <strong>WaystormZ</strong></div>
+				<div class="content">Hello all <img class="smilies" src="images/smilies/icon_e_smile.gif" width="15" height="17" alt=":)" title="Smile"><br>
+<br>
+I've got a small/big Problem with the Encryption of my Boot Partition: <br>
+MB: ASUS ROG STRIX B450 Gaming - Bios up to date (4602)<br>
+<br>
+I changed my Drive from a Samsung 840 EVO SSD to Samsung 980 m.2 NVME<br>
+I just made a fresh Installation of Win 10 Pro x64. (21H2)<br>
+<br>
+(I used this Video for Installation many Times on my 840 EVO)<br>
+<a href="https://www.youtube.com/watch?v=HaQEzA2ye4U" class="postlink">https://www.youtube.com/watch?v=HaQEzA2ye4U</a><br>
+<br>
+Installation of DC - reboot<br>
+Open DC<br>
+Click C: (sys) -&gt; Encrypt<br>
+<br>
+<span style="text-decoration:underline">Encryption Settings</span><br>
+Algorythm AES<br>
+Wipe Mode None<br>
+<br>
+<span style="text-decoration:underline">Boot Settings</span> nothing changed (Partition with Boot was highlighted)<br>
+<br>
+<span style="text-decoration:underline">Volume Password</span><br>
+Password writen &amp; Confirmed<br>
+Layout QWERTZ<br>
+<br>
+<em class="text-italics">Partition is encrypting</em><br>
+<br>
+Tools -&gt; Bootloader Config<br>
+made my loader.iso<br>
+changed config MAIN to Keyboard Layout QWERTZ -&gt; Save Changes<br>
+<br>
+Windows Restart after Status "mounted"<br>
+Bootloop or corrupt winload.efi (with other bios settings)<br>
+<br>
+--------<br>
+after my first Bootloop i tried many options in various ways:<br>
+<br>
+Encryption of "boot" Partition too (same as above)<br>
+Set Recovery of Boot to NO (bcedit /set {current/default} recoveryenabled NO) (and bcedit /set bootstatuspolicy ignoreallfailures) [as Admin]<br>
+BIOS: SCM avtivated/deaktivated <br>
+<br>
+Is there a way you can help me? Only curious thing is that Windows make 3 Partitions <br>
+16mb NTFS<br>
+456gb NTFS &lt;sys<br>
+100mb FAT32 &lt;boot<br>
+<br>
+-- last thing i'll try now is: <br>
+ReInstallation on Samsung 840 EVO to see, if NVME is the problem. If so, i'll maybe can duplicate a fresh Win Installation from there (encrypted) to the m.2<br>
+<br>
+Greetings</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Trouble with fresh DC Installation on m.2 SSD - bootloop</h3>
+				<div class="date">Posted: <strong>Mon Dec 06, 2021 6:40 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Your issue is that your new installation is UEFI, but the iso boot loader is BIOS/MBR only, if you did nto install an UEFI bootloader to the HDD or created a bootloader UEFI usb stick you will not be able to boot.<br>
+<br>
+You can however create a appropriate UEFI usb stick on any PC and use it with any other pc.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Trouble with fresh DC Installation on m.2 SSD - bootloop</h3>
+				<div class="date">Posted: <strong>Wed Jan 19, 2022 7:04 pm</strong></div>
+				<div class="author">by <strong>joshfisk3</strong></div>
+				<div class="content">Do you mean create a windows uefi bootloader for diskcryptor or for windows? I am currently having this issue as well.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

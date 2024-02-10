@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; 0.40 Bugs - Page 6</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>0.40 Bugs</h2>
+		<p><a href="viewtopic.php-1040.html?f=171&amp;t=3327">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3327</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>6</strong> of <strong>8</strong></div>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Oct 16, 2013 9:11 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote class="uncited"><div>And as manually halted the other 8 should be manually removed as well, why if I don't want download them should I wait the end of download to be able to remove them using that system ? </div></blockquote><br>So you can change your mind on wather you want the other or not, so that you can at any time halt or resume the sub files, and once you decided you have enough you can cleanup all unfinished stuff keeping finished files.<br>Its how any half decent torrent client handles the issue and I see no good reason to change that to something else.<br><br>Overhead will be ignorer. <br>As i explained in the previous post you can not get the packet lost stats and those i see no way to improve the estimation further.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Oct 16, 2013 9:36 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">ad 19. trayicon bug<br>found and fixed in 0.40d<br><br><br>ad 20. hoster bug<br>&gt; arch's color is gray. It doesn't have aich.<br>arch hash is always gray as there is no hashset/tree for any part validation<br>AICH hash should only be calculated if ed2k sharing on the file is enabled, is it?<br>If you have auto ed2k share enabled and it failed to set it than its a bug.<br><br>&gt;It can hash at the first time,but it can not hash after the first time.<br>&gt;When neoloader adds link to download, neoloader can't check the file that has downloaded or not .<br>Working on that should be fixed in the next release as well.<br><br>Cheers<br>David</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Oct 16, 2013 10:02 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>ad 19. trayicon bug<br>found and fixed in 0.40d<br><br><br>ad 20. hoster bug<br>&gt; arch's color is gray. It doesn't have aich.<br>arch hash is always gray as there is no hashset/tree for any part validation<br>AICH hash should only be calculated if ed2k sharing on the file is enabled, is it?<br>If you have auto ed2k share enabled and it failed to set it than its a bug.<br><br>&gt;It can hash at the first time,but it can not hash after the first time.<br>&gt;When neoloader adds link to download, neoloader can't check the file that has downloaded or not .<br>Working on that should be fixed in the next release as well.<br><br>Cheers<br>David</div></blockquote>
+<br>It can't auto ed2k share files(hoster).
+<br>
+<br>clip0130.7z (421 KB)
+<br><a href="https://mega.co.nz/#!JpEijDhQ!ANTkBlgaJiAXuIfBVvlljnbpT5havGUtb_I_0nIS0Vc" class="postlink">https://mega.co.nz/#!JpEijDhQ!ANTkBlgaJiAXuIfBVvlljnbpT5havGUtb_I_0nIS0Vc</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Oct 16, 2013 10:39 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">21.<br>mega bug<br><br>File(exe,torrent) can't be download from mega<br><br>clip0131.7z (362 KB)<br><a href="https://mega.co.nz/#!FxNhxRwC!ITn5SXK6Muk6aBMfhawc8m_xLkRN28VVR6iIoaT3Q8s" class="postlink">https://mega.co.nz/#!FxNhxRwC!ITn5SXK6Muk6aBMfhawc8m_xLkRN28VVR6iIoaT3Q8s</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Oct 16, 2013 10:44 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">&gt;It can't auto ed2k share files(hoster).<br>the issue seams to happen when there is only one file in the archive,<br>fixed in the next release 0.40d</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Oct 16, 2013 10:46 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>enOehTsIsihT wrote:</cite>21.<br>mega bug<br><br>File(exe,torrent) can't download from mega<br><br>clip0131.7z (362 KB)<br><a href="https://mega.co.nz/#!FxNhxRwC!ITn5SXK6Muk6aBMfhawc8m_xLkRN28VVR6iIoaT3Q8s" class="postlink">https://mega.co.nz/#!FxNhxRwC!ITn5SXK6Muk6aBMfhawc8m_xLkRN28VVR6iIoaT3Q8s</a></div></blockquote><br><br>hmm... can you send me the mega link to the exe please.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Oct 16, 2013 10:54 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>hmm... can you send me the mega link to the exe please.</div></blockquote><br>qbittorrent_3.1.0_setup.exe (9.5 MB)<br><a href="https://mega.co.nz/#!l8021LiY!LavuGifhDCZhM1brm6VJcFGklaQ-RvSBEO4IS5XfgHw" class="postlink">https://mega.co.nz/#!l8021LiY!LavuGifhDCZhM1brm6VJcFGklaQ-RvSBEO4IS5XfgHw</a><br>ubuntu-12.10-desktop-amd64.iso.torrent (30 KB)<br><a href="https://mega.co.nz/#!FksWQJKJ!F7jW0TjsKHJ8vVMa5DWQ9XLEvng-K1ygH__LJ5I2F2A" class="postlink">https://mega.co.nz/#!FksWQJKJ!F7jW0TjsKHJ8vVMa5DWQ9XLEvng-K1ygH__LJ5I2F2A</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Oct 16, 2013 12:08 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">mega bug fixed<br><br>0.40d released<br><br>Cheers<br>David X.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Oct 16, 2013 3:04 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content"><blockquote class="uncited"><div>Its how any half decent torrent client handles the issue and I see no good reason to change that to something else.<br><br>Overhead will be ignorer.<br>As i explained in the previous post you can not get the packet lost stats and those i see no way to improve the estimation further.</div></blockquote><br>Yes there is a better way to handle, such as an entry in the right click menu that says "Remove Uncomplete"<br><br>Regarding the overhead you said also that there is a % of packet lost to guess them, just increase it and the overhead will be usually/ofter under the 5-10% error limit.<br><br>Any news in 0.40d regarding the bluetack ipfilter?<br><br>ps. The beta channel is stopped at 0.40c<br>pps. In both, columms are missing. EDIT: There are after first switching on windows.<br>ppps. I'm running the final since the beta is not updated, and the 1st start wizard doesn't appear automatically at 1s startup. Using win8.1.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Oct 16, 2013 4:21 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">As you can see in the SS --&gt; <a href="1qBfA60.png" class="postlink">http://i.imgur.com/1qBfA60.png</a><br><br>In the red circled part when there aren't other network activities, the overhead missed is not 5-10% as you say.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>6</strong> of <strong>8</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

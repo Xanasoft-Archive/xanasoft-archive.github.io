@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; x64 support</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>x64 support</h2>
+		<p><a href="viewtopic.php-143.html?f=170&amp;t=3360">http://forum.neoloader.com/viewtopic.php?f=170&amp;t=3360</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>x64 support</h3>
+				<div class="date">Posted: <strong>Wed Nov 13, 2013 4:05 pm</strong></div>
+				<div class="author">by <strong>Automan</strong></div>
+				<div class="content">Apart installer issues, why has been dropped the x64 support?
+<br>Really almost 90% of the PC of the last 3 years are coming out with x64 OS.
+<br>I don't know  the real performance improvement between 32bit and 64bit, but running x86 executables under x64 OS is like using an emulator
+<br>I'm a bit disappointed about that and i hope in another solution :-)</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Nov 13, 2013 4:24 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">&gt;but running x86 executables under x64 OS is like using an emulator<br>that is false, there is no performance impact in using x86 the CPU is switching into x86 mode and executing the code nativly.<br><br>The support for the x64 bit version was dropped because MS VS 2012 displayed some issues when compiling x64 binary (like arbitrary reordering function calls in argument lists, etc...). <br>With SP3 thats supposed to have been fixed but for now i don't see a reason to risk strange problems again.<br><br>David X.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Nov 13, 2013 7:12 pm</strong></div>
+				<div class="author">by <strong>Automan</strong></div>
+				<div class="content">Well, according to official Microsoft reference, the WOV64 subsystem is declared as emulation layer with very little performance loss.<br>Anyway I think that you can provide with minimal effort a 64bit compiled version along with every new 32bit exe, stating that it is not officially supported. This is just my opinion...<br>I have 2 PC one desktop with Windows 8.1 OS and the laptop with Windows 7 64.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Nov 13, 2013 8:38 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">You will not notice any relevant difference running it on 32 bit system or under wow64 process.<br><br>Ok, the new PCs come out with 64bit system but where is the 64bit software ? All the software that the "medium user" want is still 32 bit. And the % of old PCs with 32 bit system is still very high.<br><br>And do you know why a lot of software are not avaible in x64 ? Because there are not real benefits , the x64 bit processor is more accurate, not faster as the majority of people think. For example in a p2p software there will be not any relevant different using it with 32 or 64 bit instruction, there could be instead new issues in the 64 version (and that's what happened to neoloader).</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Nov 14, 2013 9:22 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">The only real benefits if x64 software are:<br>1. &gt; 2GB memory allocation per process<br>2. new registers and opcodes that for appropriately optimized software give a substantial speed improvement, but! This mostly aplyes to FPU intensive applications, a.k.a. multimedia, simulations and scientific applications that do vectorisable operations.<br><br>NeoLoader is not such an application, its only part that would benefit from this improvements would be the Hashing and Crypto, but! Its already fast enough and I am not going to change the implementations on my own, its much to easy to fuck something up there and compromise security or cause data corruption, I'll stick to a tested well known library.<br><br>And now the downsides:<br>1. every pointer is twice in size, a.k.a. more memory usage<br><br>David X.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: x64 support</h3>
+				<div class="date">Posted: <strong>Thu Aug 13, 2015 11:11 pm</strong></div>
+				<div class="author">by <strong>Automan</strong></div>
+				<div class="content">David, I've seen that now you've switched to VS2013.<br>Have you tried to recompile for x64 now?<br>Cheers</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: x64 support</h3>
+				<div class="date">Posted: <strong>Sun Aug 16, 2015 10:10 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Yes I did and it seams to work ok, I will probably provide a x64 build for the next final release.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

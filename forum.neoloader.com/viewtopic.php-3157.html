@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; 0.40 (PrivateBeta) - Point of situation</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>0.40 (PrivateBeta) - Point of situation</h2>
+		<p><a href="viewtopic.php-1047.html?f=171&amp;t=3321">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3321</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>0.40 (PrivateBeta) - Point of situation</h3>
+				<div class="date">Posted: <strong>Mon Aug 26, 2013 12:17 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Hi, I did some fast tests on 0.40 and I decided to write a "point of situation", that is a sort of bugs/todo things IMHO.
+<br>
+<br>I wish also offi bug list will be updated after this post.
+<br>
+<br>Let's start with 2 little things in the UI that doesn't matter too much:
+<br>- In the 1st wizard on the right of tracing slide, is wrote Log instead of Low.
+<br>- On right click on client Cancel Transfer should be called Drop Source... and more details about how many time the source is ignored are appreciated
+<br>
+<br>Some other low importance issues not UI related:
+<br>- After auto-update it doesn't auto start. (I mean update scheduled and neoloader.exe launch) [tested from 0.39 to 0.40]
+<br>- ReHash all files after update [from 0.39 to 0.40]
+<br> *It <span style="text-decoration: underline">could</span> be caused from rework of hashing system
+<br>
+<br>Following are important things that may cause many problems:
+<br>- 10Kb/s in overhead measure are missing. (sometimes it does some jump on 15+)
+<br>- Closing the connection manager = close neoloader [opened from tray and closed it... neoloader closed too without any prompt]
+<br>- Upload unstability <span style="text-decoration: underline">may be</span> due to overhead caused from download speed. Aka, download speed is unstable cause unpload unstability due to variation of overhead, or upload overhead falling down and slots don't get bandwitch when download speed fall down.
+<br>
+<br>What's totally not working:
+<br>- WebUI, it's stucked at loading 
+<br>- Is not possible run NeoLoader on linux
+<br>
+<br>What I did not tested:
+<br>- Hosters downloading and anything else hoster related
+<br>- NeoLoader fur MAC (and surely I'll never test it)
+<br>
+<br>ps: IT lang file and default columms size/order will be updated before 0.40 final if david x. remember to advise me :P</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Aug 27, 2013 9:15 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Forgot to say that actually the others ed2k nickname are bugged, any "special" character is not readable (: / - .), and if they stay AFTER, instead before the ip we need an huge columm to read them,  I wish you can put them BEFORE the ip address.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Aug 27, 2013 11:35 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">the column shows URL's so every string has to be proeprly url encoded, that means no spaces and no special charakters</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Aug 27, 2013 12:17 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Is ugly :P</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Sep 09, 2013 12:59 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Also...<br><br>- Removing a multi file the folders are not deleted and sometimes you must click remove 2 times.<br>- Log is not autoscrolled, a switch up on the log that turn it off/on would be helpful.<br>- Still a lot of overhead not counted.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Sep 28, 2013 1:06 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">- In the 1st wizard on the right of tracing slide, is wrote Log instead of Low.
+<br>fixed
+<br>
+<br>- On right click on client Cancel Transfer should be called Drop Source... 
+<br>Cancel Transfer is fine for now
+<br>
+<br>
+<br>- Closing the connection manager = close neoloader [opened from tray and closed it... neoloader closed too without any prompt]
+<br>fixed in 0.40b
+<br>
+<br>- WebUI, it's stucked at loading
+<br>you already reported this its a know bug and will be fixed at some point
+<br>
+<br>- Is not possible run NeoLoader on linux
+<br>on some distributions it works fine, it needs more testing to find out the problematic dependancies
+<br>
+<br>
+<br>- Removing a multi file the folders are not deleted and sometimes you must click remove 2 times.
+<br>not removing folders is a known bug on the list <a href="http://board.neoloader.com/bugs/3276-known-bug-list-continuously-updated.html" class="postlink">http://board.neoloader.com/bugs/3276-known-bug-list-continuously-updated.html</a>
+<br>removing twice is intended, first time otu kill only the multifile, the second time you kill all sub files,
+<br>how else woudl you remove a multifile without killing its content?
+<br>
+<br>- Log is not autoscrolled, a switch up on the log that turn it off/on would be helpful.
+<br>it should switch between autpo scroll and nor auto scroll depanding on the cursor position, if its at the botom autoscrol is on else its of
+<br>
+<br>
+<br>to be tested:
+<br>- After auto-update it doesn't auto start. (I mean update scheduled and neoloader.exe launch) [tested from 0.39 to 0.40]
+<br>- ReHash all files after update [from 0.39 to 0.40]
+<br>
+<br>
+<br>still work in progress:
+<br>- 10Kb/s in overhead measure are missing. (sometimes it does some jump on 15+)
+<br>- Upload unstability may be due to overhead caused from download speed. Aka, download speed is unstable cause unpload unstability due to variation of overhead, or upload overhead falling down and slots don't get bandwitch when download speed fall down.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

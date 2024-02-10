@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Launch clean web browser with Sandboxie+</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Launch clean web browser with Sandboxie+</h2>
+		<p><a href="viewtopic.php-136.html?f=12&amp;t=688">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=688</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Launch clean web browser with Sandboxie+</h3>
+				<div class="date">Posted: <strong>Thu Nov 30, 2023 8:03 pm</strong></div>
+				<div class="author">by <strong>missionelect</strong></div>
+				<div class="content">Im looking for a way to launch a completely clean isolated web browser. I work in IT and Im constantly having to login to my customer's microsoft or google accounts etc. Im looking for a way to launch a web browser (like firefox for example) in sandboxie+ that doesnt access any of my browsing data for firefox that is already installed on my computer (previously visited sites, bookmarks, cache, addons, extensions, etc). I want a completely isolated browsing experience each time I launch that browser in sandboxie+ so that its as if I am launching firefox on a brand new computer. I dont want the sandboxed browser to attempt to login to my own SSO microsoft account on my windows computer for example when I visit a microsoft website. Then when I close the browser in sandboxie+ and reopen it later, I want it to be a brand new isolated browser again. Does that make sense? Any assistance would be greatly appreciated!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Launch clean web browser with Sandboxie+</h3>
+				<div class="date">Posted: <strong>Sat Dec 02, 2023 3:19 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">You could use a sandbox with data protection. The box-type preset has a blue icon. This however, requires that you have a contributor certificate.<br>
+<br>
+You can also block access to the profile(s), which you can do by using the GUI to add that folder or by adding to manually in the Sandboxie.ini <div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>ClosedFilePath=C:\Users\[your username]\AppData\Roaming\Mozilla\Firefox*
+ClosedFilePath=C:\Users\[your username]\AppData\Local\Mozilla\Firefox\Profiles*</code></pre></div>
+
+This can be done without the requirement for a certificate.<br>
+<br>
+Neither of the following templates shall be used in either case:<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>Template=Firefox_Bookmarks_DirectAccess
+Template=Firefox_Cookies_DirectAccess
+Template=Firefox_Passwords_DirectAccess
+Template=Firefox_Session_DirectAccess
+Template=Firefox_Profile_DirectAccess</code></pre></div>
+
+<br>
+<br>
+You may set the sandbox to auto delete its contents, if the browser in the sandbox should also be fresh. This can be done via the options of the sandbox under "File Options" &gt; Box delete options &gt; "Auto delete content when last sandboxed process terminates"<br>
+<br>
+It can be manually set by adding the following to the section for that particular sandbox in the Sandboxie.ini <div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>AutoDelete=y</code></pre></div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Launch clean web browser with Sandboxie+</h3>
+				<div class="date">Posted: <strong>Thu Dec 07, 2023 8:29 pm</strong></div>
+				<div class="author">by <strong>missionelect</strong></div>
+				<div class="content">Thanks so much for the info here! I really appreciate it. I did as you suggested, but now when I launch firefox sandboxed, it just pops up with an error that says "Your Firefox profile cannot be loaded. In may be missing or inaccessible." I click OK and it just closes firefox. Any thoughts on how to have it create a new profile when running in the sandbox?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Launch clean web browser with Sandboxie+</h3>
+				<div class="date">Posted: <strong>Fri Dec 08, 2023 6:06 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">When the sandbox is empty, Firefox should not detect any profile (if access to it is blocked) and create a new one.<br>
+<br>
+Alternatively, you can create a new profile. Start Firefox within the sandbox, with the argument to start the profile manager.<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>firefox.exe -P</code></pre></div>
+
+(or with -p -ProfileManager, any should work.)<br>
+<br>
+Firefox should start with a dialog, where you can select among profiles and create a new one.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Launch clean web browser with Sandboxie+</h3>
+				<div class="date">Posted: <strong>Tue Dec 26, 2023 7:59 pm</strong></div>
+				<div class="author">by <strong>offhub</strong></div>
+				<div class="content"><blockquote><div><cite><a href="memberlist.php-36.html?mode=viewprofile&amp;u=1202">missionelect</a> wrote: <a href="viewtopic.php-869.html?p=1658#p1658" data-post-id="1658" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><div class="responsive-hide">Thu Dec 07, 2023 8:29 pm</div></cite>
+... it just pops up with an error that says "Your Firefox profile cannot be loaded. In may be missing or inaccessible." I click OK and it just closes firefox. Any thoughts on how to have it create a new profile when running in the sandbox?
+</div></blockquote>
+
+Try using WriteFilePath instead of ClosedFilePath.<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>WriteFilePath=C:\Users\[your username]\AppData\Roaming\Mozilla\Firefox*
+WriteFilePath=C:\Users\[your username]\AppData\Local\Mozilla\Firefox\Profiles*</code></pre></div></div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

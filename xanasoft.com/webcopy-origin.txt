@@ -1,0 +1,1156 @@
+Uri: https://js.stripe.com/v3/?ver=3.0
+File Name: C:\Downloaded Web Sites\xanasoft.com\v3\index.htm
+Content Type: text/javascript
+
+Uri: https://stats.wp.com/w.js?ver=202405
+File Name: C:\Downloaded Web Sites\xanasoft.com\w.js
+Content Type: application/javascript
+
+Uri: https://www.gstatic.com/instantbuy/svg/dark_gpay.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\instantbuy\svg\dark_gpay.svg
+Content Type: image/svg+xml
+
+Uri: https://www.gstatic.com/instantbuy/svg/light_gpay.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\instantbuy\svg\light_gpay.svg
+Content Type: image/svg+xml
+
+Uri: https://www.paypalobjects.com/en_US/AT/i/btn/btn_donateCC_LG.gif
+File Name: C:\Downloaded Web Sites\xanasoft.com\en_US\AT\i\btn\btn_donateCC_LG.gif
+Content Type: image/gif
+
+Uri: https://xanasoft.com/
+File Name: C:\Downloaded Web Sites\xanasoft.com\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/2021/03/17/hello-world/
+File Name: C:\Downloaded Web Sites\xanasoft.com\2021\03\17\hello-world\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/2021/03/17/hello-world/feed/
+File Name: C:\Downloaded Web Sites\xanasoft.com\2021\03\17\hello-world\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://xanasoft.com/author/admin/
+File Name: C:\Downloaded Web Sites\xanasoft.com\author\admin\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/author/admin/feed/
+File Name: C:\Downloaded Web Sites\xanasoft.com\author\admin\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://xanasoft.com/cart/
+File Name: C:\Downloaded Web Sites\xanasoft.com\cart\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/cdn-cgi/images/browser-bar.png?1376755637
+File Name: C:\Downloaded Web Sites\xanasoft.com\cdn-cgi\images\browser-bar.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/cdn-cgi/images/cf-icon-browser.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\cdn-cgi\images\cf-icon-browser.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/cdn-cgi/images/cf-icon-cloud.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\cdn-cgi\images\cf-icon-cloud.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/cdn-cgi/images/cf-icon-error.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\cdn-cgi\images\cf-icon-error.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/cdn-cgi/images/cf-icon-horizontal-arrow.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\cdn-cgi\images\cf-icon-horizontal-arrow.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/cdn-cgi/images/cf-icon-ok.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\cdn-cgi\images\cf-icon-ok.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/cdn-cgi/images/cf-icon-server.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\cdn-cgi\images\cf-icon-server.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/cdn-cgi/images/cf-no-screenshot-error.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\cdn-cgi\images\cf-no-screenshot-error.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/cdn-cgi/images/cf-no-screenshot-warn.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\cdn-cgi\images\cf-no-screenshot-warn.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/cdn-cgi/images/icon-exclamation.png?1376755637
+File Name: C:\Downloaded Web Sites\xanasoft.com\cdn-cgi\images\icon-exclamation.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/cdn-cgi/l/email-protection
+File Name: C:\Downloaded Web Sites\xanasoft.com\cdn-cgi\l\email-protection.html
+Content Type: text/html
+
+Uri: https://xanasoft.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+File Name: C:\Downloaded Web Sites\xanasoft.com\cdn-cgi\scripts\5c5dd728\cloudflare-static\email-decode.min.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/cdn-cgi/styles/cf.errors.css
+File Name: C:\Downloaded Web Sites\xanasoft.com\cdn-cgi\styles\cf.errors.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/comments/feed/
+File Name: C:\Downloaded Web Sites\xanasoft.com\comments\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://xanasoft.com/contact/
+File Name: C:\Downloaded Web Sites\xanasoft.com\contact\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/feed/
+File Name: C:\Downloaded Web Sites\xanasoft.com\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://xanasoft.com/imprint/
+File Name: C:\Downloaded Web Sites\xanasoft.com\imprint\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/my-account/
+File Name: C:\Downloaded Web Sites\xanasoft.com\my-account\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/my-account/lost-password/
+File Name: C:\Downloaded Web Sites\xanasoft.com\my-account\lost-password\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/privacy-policy/
+File Name: C:\Downloaded Web Sites\xanasoft.com\privacy-policy\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/privacy-policy/feed/
+File Name: C:\Downloaded Web Sites\xanasoft.com\privacy-policy\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://xanasoft.com/product-category/sandboxie/
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\sandboxie\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product-category/sandboxie/?add-to-cart=3012
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\sandboxie\index-2.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product-category/sandboxie/?add-to-cart=3014
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\sandboxie\index-4.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product-category/sandboxie/?add-to-cart=3034
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\sandboxie\index-5.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product-category/sandboxie/?add-to-cart=3036
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\sandboxie\index-6.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product-category/sandboxie/?add-to-cart=3040
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\sandboxie\index-1.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product-category/sandboxie/?add-to-cart=3043
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\sandboxie\index-3.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product-category/sandboxie/feed/
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\sandboxie\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://xanasoft.com/product-category/software/
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\software\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product-category/software/?add-to-cart=3012
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\software\index-2.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product-category/software/?add-to-cart=3014
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\software\index-4.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product-category/software/?add-to-cart=3034
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\software\index-5.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product-category/software/?add-to-cart=3036
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\software\index-6.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product-category/software/?add-to-cart=3040
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\software\index-1.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product-category/software/?add-to-cart=3043
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\software\index-3.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product-category/software/feed/
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\software\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://xanasoft.com/product-category/uncategorized/
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\uncategorized\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product-category/uncategorized/?add-to-cart=53
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\uncategorized\index-1.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product-category/uncategorized/feed/
+File Name: C:\Downloaded Web Sites\xanasoft.com\product-category\uncategorized\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://xanasoft.com/product/my-test-product/
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\my-test-product\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-advanced-upgrade/
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-advanced-upgrade\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-advanced-upgrade/?add-to-cart=3012
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-advanced-upgrade\index-5.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-advanced-upgrade/?add-to-cart=3034
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-advanced-upgrade\index-3.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-advanced-upgrade/?add-to-cart=3036
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-advanced-upgrade\index-2.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-advanced-upgrade/?add-to-cart=3040
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-advanced-upgrade\index-1.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-advanced-upgrade/?add-to-cart=3043
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-advanced-upgrade\index-4.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-business/
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-business\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-business/?add-to-cart=3012
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-business\index-3.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-business/?add-to-cart=3014
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-business\index-4.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-business/?add-to-cart=3036
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-business\index-2.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-business/?add-to-cart=3040
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-business\index-5.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-business/?add-to-cart=3043
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-business\index-1.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-eternal/
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-eternal\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-eternal/?add-to-cart=3012
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-eternal\index-1.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-eternal/?add-to-cart=3014
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-eternal\index-5.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-eternal/?add-to-cart=3034
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-eternal\index-3.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-eternal/?add-to-cart=3040
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-eternal\index-2.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-eternal/?add-to-cart=3043
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-eternal\index-4.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-familypack/
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-familypack\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-familypack/?add-to-cart=3012
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-familypack\index-2.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-familypack/?add-to-cart=3014
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-familypack\index-4.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-familypack/?add-to-cart=3034
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-familypack\index-3.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-familypack/?add-to-cart=3036
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-familypack\index-1.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-familypack/?add-to-cart=3040
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-familypack\index-5.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-home/
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-home\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-home/?add-to-cart=3012
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-home\index-5.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-home/?add-to-cart=3014
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-home\index-4.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-home/?add-to-cart=3034
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-home\index-3.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-home/?add-to-cart=3036
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-home\index-2.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-home/?add-to-cart=3043
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-home\index-1.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-personal/
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-personal\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-personal/?add-to-cart=3014
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-personal\index-4.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-personal/?add-to-cart=3034
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-personal\index-2.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-personal/?add-to-cart=3036
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-personal\index-3.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-personal/?add-to-cart=3040
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-personal\index-1.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/product/sandboxie-plus-personal/?add-to-cart=3043
+File Name: C:\Downloaded Web Sites\xanasoft.com\product\sandboxie-plus-personal\index-5.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/shop/
+File Name: C:\Downloaded Web Sites\xanasoft.com\shop\index.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/shop/?add-to-cart=3012
+File Name: C:\Downloaded Web Sites\xanasoft.com\shop\index-2.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/shop/?add-to-cart=3014
+File Name: C:\Downloaded Web Sites\xanasoft.com\shop\index-4.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/shop/?add-to-cart=3034
+File Name: C:\Downloaded Web Sites\xanasoft.com\shop\index-5.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/shop/?add-to-cart=3036
+File Name: C:\Downloaded Web Sites\xanasoft.com\shop\index-6.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/shop/?add-to-cart=3040
+File Name: C:\Downloaded Web Sites\xanasoft.com\shop\index-1.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/shop/?add-to-cart=3043
+File Name: C:\Downloaded Web Sites\xanasoft.com\shop\index-3.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/shop/?add-to-cart=53
+File Name: C:\Downloaded Web Sites\xanasoft.com\shop\index-7.htm
+Content Type: text/html
+
+Uri: https://xanasoft.com/shop/feed/
+File Name: C:\Downloaded Web Sites\xanasoft.com\shop\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://xanasoft.com/wp-admin/css/forms.css?ver=6.3.3
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-admin\css\forms.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-admin/css/l10n.css?ver=6.3.3
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-admin\css\l10n.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-admin/css/login.css?ver=6.3.3
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-admin\css\login.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-admin/images/loading.gif
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-admin\images\loading.gif
+Content Type: image/gif
+
+Uri: https://xanasoft.com/wp-admin/images/w-logo-blue.png?ver=20131202
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-admin\images\w-logo-blue.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-admin/images/wordpress-logo.svg?ver=20131107
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-admin\images\wordpress-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-admin/js/password-strength-meter.js?ver=6.3.3
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-admin\js\password-strength-meter.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-admin/js/user-profile.js?ver=6.3.3
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-admin\js\user-profile.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/checkout-field-editor-and-manager-for-woocommerce/assets/css/frontend.css?ver=2.2.16
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\checkout-field-editor-and-manager-for-woocommerce\assets\css\frontend.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-content/plugins/prompt-cash-monetize-your-blog-with-bitcoin-cash/tpl/css/promptcash.css?ver=1.0.20
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\prompt-cash-monetize-your-blog-with-bitcoin-cash\tpl\css\promptcash.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-content/plugins/prompt-cash-monetize-your-blog-with-bitcoin-cash/tpl/js/bundle.js?ver=1.0.20
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\prompt-cash-monetize-your-blog-with-bitcoin-cash\tpl\js\bundle.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/verified-pay-credit-card-payments/tpl/css/verifiedpay.css?ver=1.0.27
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\verified-pay-credit-card-payments\tpl\css\verifiedpay.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-content/plugins/verified-pay-credit-card-payments/tpl/js/bundle.js?ver=1.0.27
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\verified-pay-credit-card-payments\tpl\js\bundle.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce-gateway-stripe/assets/css/stripe-styles.css?ver=7.6.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce-gateway-stripe\assets\css\stripe-styles.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce-gateway-stripe\assets\images\amex.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/credit-card.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce-gateway-stripe\assets\images\credit-card.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/diners.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce-gateway-stripe\assets\images\diners.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/discover.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce-gateway-stripe\assets\images\discover.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/jcb.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce-gateway-stripe\assets\images\jcb.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/maestro.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce-gateway-stripe\assets\images\maestro.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce-gateway-stripe\assets\images\mastercard.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce-gateway-stripe\assets\images\visa.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce-gateway-stripe/assets/js/jquery.mask.min.js?ver=7.6.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce-gateway-stripe\assets\js\jquery.mask.min.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce-gateway-stripe/assets/js/stripe-payment-request.js?ver=7.6.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce-gateway-stripe\assets\js\stripe-payment-request.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce-gateway-stripe/assets/js/stripe.js?ver=7.6.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce-gateway-stripe\assets\js\stripe.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce-paypal-payments/modules/ppcp-button/assets/css/gateway.css?ver=2.3.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-button\assets\css\gateway.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce-paypal-payments/modules/ppcp-button/assets/js/button.js?ver=2.3.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-button\assets\js\button.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css?ver=8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\css\photoswipe\default-skin\default-skin.min.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\css\photoswipe\default-skin\default-skin.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\css\photoswipe\default-skin\default-skin.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/preloader.gif
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\css\photoswipe\default-skin\preloader.gif
+Content Type: image/gif
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css?ver=8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\css\photoswipe\photoswipe.min.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/css/select2.css?ver=8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\css\select2.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\css\woocommerce-layout.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\css\woocommerce-smallscreen.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\css\woocommerce.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/fonts/star.eot
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\fonts\star.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/fonts/star.eot?
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\fonts\star-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/fonts/star.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\fonts\star.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/fonts/star.ttf
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\fonts\star.ttf
+Content Type: application/octet-stream
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/fonts/star.woff
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\fonts\star.woff
+Content Type: font/woff
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.eot
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\fonts\WooCommerce.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.eot?
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\fonts\WooCommerce-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\fonts\WooCommerce.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.ttf
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\fonts\WooCommerce.ttf
+Content Type: application/octet-stream
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.woff
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\fonts\WooCommerce.woff
+Content Type: font/woff
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/amex.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\amex.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/diners.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\diners.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/discover.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\discover.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/jcb.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\jcb.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/laser.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\laser.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/maestro.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\maestro.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/mastercard.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\mastercard.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/visa.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\images\icons\credit-cards\visa.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/images/icons/loader.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\images\icons\loader.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/js/flexslider/jquery.flexslider.js?ver=2.7.2-wc.8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\js\flexslider\jquery.flexslider.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.js?ver=8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\js\frontend\add-to-cart.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/js/frontend/address-i18n.js?ver=8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\js\frontend\address-i18n.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/js/frontend/cart.js?ver=8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\js\frontend\cart.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/js/frontend/country-select.js?ver=8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\js\frontend\country-select.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/js/frontend/lost-password.js?ver=8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\js\frontend\lost-password.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/js/frontend/password-strength-meter.js?ver=8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\js\frontend\password-strength-meter.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/js/frontend/single-product.js?ver=8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\js\frontend\single-product.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/js/frontend/tokenization-form.js?ver=8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\js\frontend\tokenization-form.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.js?ver=8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\js\frontend\woocommerce.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.js?ver=2.7.0-wc.8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\js\jquery-blockui\jquery.blockUI.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/js/jquery-payment/jquery.payment.js?ver=3.0.0-wc.8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\js\jquery-payment\jquery.payment.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.js?ver=2.1.4-wc.8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\js\js-cookie\js.cookie.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.js?ver=4.1.1-wc.8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\js\photoswipe\photoswipe-ui-default.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.js?ver=4.1.1-wc.8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\js\photoswipe\photoswipe.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/js/selectWoo/selectWoo.full.js?ver=1.0.9-wc.8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\js\selectWoo\selectWoo.full.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.js?ver=1.7.21-wc.8.2.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\plugins\woocommerce\assets\js\zoom\jquery.zoom.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/css/blocks.css?ver=20230630
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\css\blocks.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/font-lato.css?ver=20230328
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\font-lato.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-all-300-italic.woff?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-all-300-italic.woff
+Content Type: font/woff
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-all-300-normal.woff?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-all-300-normal.woff
+Content Type: font/woff
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-all-400-italic.woff?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-all-400-italic.woff
+Content Type: font/woff
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-all-400-normal.woff?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-all-400-normal.woff
+Content Type: font/woff
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-all-700-italic.woff?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-all-700-italic.woff
+Content Type: font/woff
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-all-700-normal.woff?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-all-700-normal.woff
+Content Type: font/woff
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-all-900-normal.woff?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-all-900-normal.woff
+Content Type: font/woff
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-300-italic.woff2?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-300-italic.woff2
+Content Type: font/woff2
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-300-normal.woff2?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-300-normal.woff2
+Content Type: font/woff2
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-400-italic.woff2?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-400-italic.woff2
+Content Type: font/woff2
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-400-normal.woff2?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-400-normal.woff2
+Content Type: font/woff2
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-700-italic.woff2?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-700-italic.woff2
+Content Type: font/woff2
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-700-normal.woff2?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-700-normal.woff2
+Content Type: font/woff2
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-900-normal.woff2?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-900-normal.woff2
+Content Type: font/woff2
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-ext-300-italic.woff2?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-ext-300-italic.woff2
+Content Type: font/woff2
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-ext-300-normal.woff2?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-ext-300-normal.woff2
+Content Type: font/woff2
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-ext-400-italic.woff2?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-ext-400-italic.woff2
+Content Type: font/woff2
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-ext-400-normal.woff2?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-ext-400-normal.woff2
+Content Type: font/woff2
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-ext-700-italic.woff2?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-ext-700-italic.woff2
+Content Type: font/woff2
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-ext-700-normal.woff2?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-ext-700-normal.woff2
+Content Type: font/woff2
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-ext-900-normal.woff2?ver=23
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-ext-900-normal.woff2
+Content Type: font/woff2
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/genericons/font/genericons-regular-webfont.eot
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\genericons\font\genericons-regular-webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/genericons/font/genericons-regular-webfont.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\genericons\font\genericons-regular-webfont.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/genericons/font/genericons-regular-webfont.ttf
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\genericons\font\genericons-regular-webfont.ttf
+Content Type: application/octet-stream
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/genericons/genericons.css?ver=3.0.3
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\genericons\genericons.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/images/pattern-dark.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\images\pattern-dark.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/images/pattern-light.svg
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\images\pattern-light.svg
+Content Type: image/svg+xml
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/js/functions.js?ver=20230526
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\js\functions.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-content/themes/twentyfourteen/style.css?ver=20230808
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\themes\twentyfourteen\style.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbieBusiness-100x100.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbieBusiness-100x100.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbieBusiness-150x150.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbieBusiness-150x150.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbieBusiness.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbieBusiness.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbieCryptoPack-100x100.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbieCryptoPack-100x100.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbieCryptoPack-150x150.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbieCryptoPack-150x150.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbieCryptoPack.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbieCryptoPack.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbieEternal-100x100.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbieEternal-100x100.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbieEternal-150x150.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbieEternal-150x150.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbieEternal.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbieEternal.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbieFamilyPack-100x100.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbieFamilyPack-100x100.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbieFamilyPack-150x150.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbieFamilyPack-150x150.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbieFamilyPack.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbieFamilyPack.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbieHome-100x100.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbieHome-100x100.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbieHome-150x150.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbieHome-150x150.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbieHome.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbieHome.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbiePersonal-100x100.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbiePersonal-100x100.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbiePersonal-150x150.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbiePersonal-150x150.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/2023/08/sbiePersonal.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\2023\08\sbiePersonal.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/woocommerce-placeholder-1024x1024.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\woocommerce-placeholder-1024x1024.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/woocommerce-placeholder-150x150.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\woocommerce-placeholder-150x150.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/woocommerce-placeholder-300x300.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\woocommerce-placeholder-300x300.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/woocommerce-placeholder-768x768.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\woocommerce-placeholder-768x768.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-content/uploads/woocommerce-placeholder.png
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-content\uploads\woocommerce-placeholder.png
+Content Type: image/png
+
+Uri: https://xanasoft.com/wp-includes/css/buttons.css?ver=6.3.3
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\css\buttons.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-includes/css/dashicons.css?ver=6.3.3
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\css\dashicons.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-includes/css/dist/block-library/style.css?ver=6.3.3
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\css\dist\block-library\style.css
+Content Type: text/css
+
+Uri: https://xanasoft.com/wp-includes/fonts/dashicons.eot?99ac726223c749443b642ce33df8b800
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\fonts\dashicons.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://xanasoft.com/wp-includes/fonts/dashicons.ttf?99ac726223c749443b642ce33df8b800
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\fonts\dashicons.ttf
+Content Type: application/octet-stream
+
+Uri: https://xanasoft.com/wp-includes/js/comment-reply.js?ver=6.3.3
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\js\comment-reply.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-includes/js/dist/hooks.js?ver=cb3553927d7ab6049113
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\js\dist\hooks.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-includes/js/dist/i18n.js?ver=28325ce370dfa8a48974
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\js\dist\i18n.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-includes/js/dist/vendor/regenerator-runtime.js?ver=0.13.11
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\js\dist\vendor\regenerator-runtime.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-includes/js/dist/vendor/wp-polyfill-inert.js?ver=3.1.2
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\js\dist\vendor\wp-polyfill-inert.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-includes/js/dist/vendor/wp-polyfill.js?ver=3.15.0
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\js\dist\vendor\wp-polyfill.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-includes/js/imagesloaded.min.js?ver=4.1.4
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\js\imagesloaded.min.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-includes/js/jquery/jquery-migrate.js?ver=3.4.1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\js\jquery\jquery-migrate.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-includes/js/jquery/jquery.js?ver=3.7.0
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\js\jquery\jquery.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\js\jquery\jquery.masonry.min.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-includes/js/masonry.min.js?ver=4.2.2
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\js\masonry.min.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-includes/js/underscore.min.js?ver=1.13.4
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\js\underscore.min.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-includes/js/wp-util.js?ver=6.3.3
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\js\wp-util.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-includes/js/zxcvbn-async.js?ver=1.0
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-includes\js\zxcvbn-async.js
+Content Type: application/javascript
+
+Uri: https://xanasoft.com/wp-json/
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\index.htm
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2F2021%2F03%2F17%2Fhello-world%2F
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-4
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2F2021%2F03%2F17%2Fhello-world%2F&format=xml
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-5
+Content Type: text/xml
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fcart%2F
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fcart%2F&format=xml
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-1
+Content Type: text/xml
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fcontact%2F
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-2
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fcontact%2F&format=xml
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-3
+Content Type: text/xml
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fimprint%2F
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-22
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fimprint%2F&format=xml
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-23
+Content Type: text/xml
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fmy-account%2F
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-24
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fmy-account%2F&format=xml
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-25
+Content Type: text/xml
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fprivacy-policy%2F
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-6
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fprivacy-policy%2F&format=xml
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-7
+Content Type: text/xml
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fproduct%2Fmy-test-product%2F
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-20
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fproduct%2Fmy-test-product%2F&format=xml
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-21
+Content Type: text/xml
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fproduct%2Fsandboxie-plus-advanced-upgrade%2F
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-14
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fproduct%2Fsandboxie-plus-advanced-upgrade%2F&format=xml
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-15
+Content Type: text/xml
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fproduct%2Fsandboxie-plus-business%2F
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-16
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fproduct%2Fsandboxie-plus-business%2F&format=xml
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-17
+Content Type: text/xml
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fproduct%2Fsandboxie-plus-eternal%2F
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-18
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fproduct%2Fsandboxie-plus-eternal%2F&format=xml
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-19
+Content Type: text/xml
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fproduct%2Fsandboxie-plus-familypack%2F
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-12
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fproduct%2Fsandboxie-plus-familypack%2F&format=xml
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-13
+Content Type: text/xml
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fproduct%2Fsandboxie-plus-home%2F
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-8
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fproduct%2Fsandboxie-plus-home%2F&format=xml
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-9
+Content Type: text/xml
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fproduct%2Fsandboxie-plus-personal%2F
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-10
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fxanasoft.com%2Fproduct%2Fsandboxie-plus-personal%2F&format=xml
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\oembed\1.0\embed-11
+Content Type: text/xml
+
+Uri: https://xanasoft.com/wp-json/wp/v2/pages/1392
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\wp\v2\pages\1392
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/wp/v2/pages/3
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\wp\v2\pages\3
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/wp/v2/pages/30
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\wp\v2\pages\30
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/wp/v2/pages/32
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\wp\v2\pages\32
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/wp/v2/pages/742
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\wp\v2\pages\742
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/wp/v2/posts/1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\wp\v2\posts\1
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/wp/v2/product/3012
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\wp\v2\product\3012
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/wp/v2/product/3014
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\wp\v2\product\3014
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/wp/v2/product/3034
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\wp\v2\product\3034
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/wp/v2/product/3036
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\wp\v2\product\3036
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/wp/v2/product/3040
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\wp\v2\product\3040
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/wp/v2/product/3043
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\wp\v2\product\3043
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/wp/v2/product/53
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\wp\v2\product\53
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/wp/v2/product_cat/17
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\wp\v2\product_cat\17
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/wp/v2/product_cat/18
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\wp\v2\product_cat\18
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/wp/v2/product_cat/19
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\wp\v2\product_cat\19
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-json/wp/v2/users/1
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-json\wp\v2\users\1
+Content Type: application/json
+
+Uri: https://xanasoft.com/wp-login.php
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-login.php.html
+Content Type: text/html
+
+Uri: https://xanasoft.com/wp-login.php?redirect_to=https:%2F%2Fxanasoft.com%2F2021%2F03%2F17%2Fhello-world%2F
+File Name: C:\Downloaded Web Sites\xanasoft.com\wp-login.php-1.html
+Content Type: text/html
+
+Uri: https://xanasoft.com/xmlrpc.php?rsd
+File Name: C:\Downloaded Web Sites\xanasoft.com\xmlrpc.php
+Content Type: text/xml
+

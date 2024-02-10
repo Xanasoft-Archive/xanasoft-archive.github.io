@@ -1,0 +1,789 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>0.49 Bugs - NeoLoader Forum</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - NeoLoader Forum" href="feed.php">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="feed-1.php?mode=topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Bugs" href="feed-10.php?f=171">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - 0.49 Bugs" href="feed-92.php?f=171&amp;t=3528">
+	<link rel="canonical" href="viewtopic.php-1208.html?t=3528">
+
+<!--
+	phpBB style name: prosilver Special Edition
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:      phpBB Limited ( https://www.phpbb.com/ )
+-->
+
+<link href="styles/prosilver/theme/print.css?assets_version=4" rel="stylesheet" media="print" title="printonly">
+
+<link href="styles/prosilver/theme/common.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/links.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/content.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/buttons.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/cp.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/forms.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/colours.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/imageset.css?assets_version=4" rel="stylesheet">
+
+<link href="styles/prosilver_se/theme/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/en/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/responsive.css?assets_version=4" rel="stylesheet" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)">
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=4" rel="stylesheet" />
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner">
+
+			<div id="site-description">
+				<a id="logo" class="logo" href="http://neoloader.com" title="NeoLoader Homepage"><span class="imageset site_logo"></span></a>
+				<h1>NeoLoader Forum</h1>
+				<p>Forum of the NeoLoader P2P Client/Downloader</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+						<div id="search-box" class="search-box search-header">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…">
+					<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+					<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+					
+				</fieldset>
+				</form>
+			</div>
+			
+			</div>
+		</div>
+
+		<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="linklist bulletin" role="menubar">
+
+		<li id="quick-links" class="small-icon responsive-menu dropdown-container" data-skip-responsive="true">
+			<a href="#" class="responsive-menu-link dropdown-trigger">Quick links</a>
+			<div class="dropdown hidden">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																								<li class="small-icon icon-search-unanswered"><a href="search.php-1.html?search_id=unanswered" role="menuitem">Unanswered posts</a></li>
+						<li class="small-icon icon-search-active"><a href="search.php-2.html?search_id=active_topics" role="menuitem">Active topics</a></li>
+						<li class="separator"></li>
+						<li class="small-icon icon-search"><a href="search.php.html" role="menuitem">Search</a></li>
+					
+											<li class="separator"></li>
+												<li class="small-icon icon-team"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li class="small-icon icon-faq" data-skip-responsive="true"><a href="faq.php.html" rel="help" title="Frequently Asked Questions" role="menuitem">FAQ</a></li>
+						
+			<li class="small-icon icon-logout rightside" data-skip-responsive="true"><a href="ucp.php.html?mode=login" title="Login" accesskey="x" role="menuitem">Login</a></li>
+					<li class="small-icon icon-register rightside" data-skip-responsive="true"><a href="ucp.php-1.html?mode=register" role="menuitem">Register</a></li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="linklist navlinks" role="menubar">
+						<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" accesskey="h" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="index">Board index</a></span>
+											<span class="crumb"><a href="viewforum.php-3.html?f=169" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="169">NeoLoader English</a></span>
+															<span class="crumb"><a href="viewforum.php-6.html?f=171" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="171">Bugs</a></span>
+												</li>
+		
+					<li class="rightside responsive-search" style="display: none;"><a href="search.php.html" title="View the advanced search options" role="menuitem">Search</a></li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body">
+		
+		
+<h2 class="topic-title"><a href="viewtopic.php-198.html?f=171&amp;t=3528">0.49 Bugs</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+			<a href="posting.php-510.html?mode=reply&amp;f=171&amp;t=3528" class="button icon-button locked-icon" title="This topic is locked, you cannot edit posts or make further replies.">
+			Locked		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-1209.html?f=171&amp;t=3528&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…">
+				<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+				<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+				<input type="hidden" name="t" value="3528">
+<input type="hidden" name="sf" value="msgonly">
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			82 posts
+							<ul>
+	<li class="dropdown-container dropdown-button-control dropdown-page-jump page-jump">
+		<a href="#" class="dropdown-trigger" title="Click to jump to page…" role="button">Page <strong>1</strong> of <strong>9</strong></a>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+				<li>Jump to page:</li>
+				<li class="page-jump-form">
+					<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="10" data-base-url=".&#x2F;viewtopic.php&#x3F;f&#x3D;171&amp;amp&#x3B;t&#x3D;3528" data-start-name="start">
+					<input class="button2" value="Go" type="button">
+				</li>
+			</ul>
+		</div>
+	</li>
+		<li class="active"><span>1</span></li>
+			<li><a href="viewtopic.php-1210.html?f=171&amp;t=3528&amp;start=10" role="button">2</a></li>
+			<li><a href="viewtopic.php-1211.html?f=171&amp;t=3528&amp;start=20" role="button">3</a></li>
+			<li><a href="viewtopic.php-1212.html?f=171&amp;t=3528&amp;start=30" role="button">4</a></li>
+			<li><a href="viewtopic.php-200.html?f=171&amp;t=3528&amp;start=40" role="button">5</a></li>
+			<li class="ellipsis" role="separator"><span>…</span></li>
+			<li><a href="viewtopic.php-204.html?f=171&amp;t=3528&amp;start=80" role="button">9</a></li>
+			<li class="next"><a href="viewtopic.php-1210.html?f=171&amp;t=3528&amp;start=10" rel="next" role="button">Next</a></li>
+	</ul>
+					</div>
+	
+</div>
+
+
+			<div id="p17822" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17822">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17822">
+
+			<h3 class="first"><a href="#p17822">0.49 Bugs</a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1213.html?p=17822#p17822"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Mon Nov 17, 2014 9:19 am </p>
+
+			
+			
+			<div class="content">An hotfix just got released to solve an allocating problem adding only .torrent files.<br><br>Please report any bug in this thread, bug list its up to date but if I forgot to add something or if any bug its not "really fixed" report it again here.<br><br><img class="smilies" src="./images/smilies/notebook.gif" alt=":lappy" title="lappy"><br><br>##########################<br><br>- Few issues with hosters and ed2k -<br><a href="1iLTYFW.jpg" class="postlink">http://i.imgur.com/1iLTYFW.jpg</a><br><a href="18CzVrC.jpg" class="postlink">http://i.imgur.com/18CzVrC.jpg</a><br>I got this file from summary and I noticed the following problems, some of them are visible in the screenshots:<br>1. Speed columm is not updated with transfer speed if the speed is 0 kb/s, it happens when download is complete and also if the hoster goes offline or stop the client for any reason. (it stay there also if clear downloads, also summary window is affected)<br>2. There's an ed2k source recognized as A4AF... but how is that possible if I was downloading (and now I am sharing) only this file ?<br>3. If the file transfer is not complete with an hoster, a manual transfer cancel is needed <br>4. ...and when starting download with another hoster the progressbar doesn't restart from 0%, it seems continue the download, but it is not when it will reach 100% is not complete.<br>5. Is it normal that I see the neo entities as unchecked/idle after restart in transfer list and I don't see the links anymore?<br>6. What does it mean und p2p sharing &gt; "No Torrents" "One Torrent" "All Torrents" ? What is the difference, why on that file from summary is "all torrents" ?<br><br>- Kickass.to searches aren't working, click on any result = no script error -</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17833" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17833">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-14.html?mode=viewprofile&amp;u=1009" class="avatar"><img src="download/file-4.php?avatar=1009_1425060435.png" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-14.html?mode=viewprofile&amp;u=1009" class="username">esher</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-12.html?author_id=1009&amp;sr=posts">46</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Apr 08, 2012 9:42 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17833">
+
+			<h3><a href="#p17833"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1214.html?p=17833#p17833"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-14.html?mode=viewprofile&amp;u=1009" class="username">esher</a></strong> &raquo; </span>Tue Nov 18, 2014 9:02 am </p>
+
+			
+			
+			<div class="content">when downloading a file from the summary or via neolink, if you disable both ed2k and torrent share, they restart sharing/downloading after a few seconds in the same time.<br><br>ed2k: data downloaded and file sizes often do not match while downloading ed2k files, downloaded data counter can reach 300% file size when NL do final verification/ when file is available and placed into Inc folder.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17851" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17851">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-21.html?mode=viewprofile&amp;u=3535" class="username">Axl_Mas</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-35.html?author_id=3535&amp;sr=posts">10</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Aug 23, 2013 7:06 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17851">
+
+			<h3><a href="#p17851"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1215.html?p=17851#p17851"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-21.html?mode=viewprofile&amp;u=3535" class="username">Axl_Mas</a></strong> &raquo; </span>Thu Nov 20, 2014 1:20 am </p>
+
+			
+			
+			<div class="content">Hi team,<br><br>Some problems on ubuntu-mate 64bit.<br>If I click on Shared files Neoloader 0.49 crashes immediately.<br>Here the log from bash:<br><br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>"Jo nov. 20 02 :14: 39 2014: Searching for Hash Set for 4 XXXXXXXXXXXXXXX" <br>"Jo nov. 20 02 :14: 39 2014: Searching for Hash Set for XXXXXXXXXXX" <br>"Jo nov. 20 02 :14: 39 2014: Searching for Hash Set for XXXXXXXXXXX" <br>"Jo nov. 20 02 :14: 39 2014: Standby is inhibited" <br>"Jo nov. 20 02 :14: 39 2014: Connecting emule kademlia" <br>"Jo nov. 20 02 :14: 40 2014: Standby is inhibited" <br>"Jo nov. 20 02 :14: 41 2014: Standby is inhibited" <br>"Jo nov. 20 02 :14: 42 2014: Standby is inhibited" <br>"Jo nov. 20 02 :14: 43 2014: Standby is inhibited" <br>"Jo nov. 20 02 :14: 44 2014: MuleKad Connected, ID: XXXXXXXXXXXXXXXXXXXXXXX" <br>"Jo nov. 20 02 :14: 44 2014: Standby is inhibited" <br>"Jo nov. 20 02 :14: 45 2014: Standby is inhibited" <br>signal 11 (Segmentation fault), address is 0x30 from 0x5f5b25<br>&#91;bt&#93;: (1) ./NeoLoader(_ZSt4swapIP8QMapDataI7QString8QVariantEEvRT_S6_+0x1c) &#91;0x5f5b25&#93;<br>Segmentation fault<br></code></div></div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17857" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17857">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17857">
+
+			<h3><a href="#p17857"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1216.html?p=17857#p17857"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Thu Nov 20, 2014 2:29 pm </p>
+
+			
+			
+			<div class="content">Thanks for the reports.<br><br>@Axl_Mas: Can you test if it happens on any other DE ? And on mint MATE ?<br><br>//bug list up to date.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17870" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17870">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-21.html?mode=viewprofile&amp;u=3535" class="username">Axl_Mas</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-35.html?author_id=3535&amp;sr=posts">10</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Aug 23, 2013 7:06 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17870">
+
+			<h3><a href="#p17870"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1217.html?p=17870#p17870"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-21.html?mode=viewprofile&amp;u=3535" class="username">Axl_Mas</a></strong> &raquo; </span>Fri Nov 21, 2014 11:23 pm </p>
+
+			
+			
+			<div class="content">It is a linux x64 bug.<br>I tried with another PC and another distro (Lubuntu 12.04 LTS 64bit) and there is the same bug.<br>I just installed and started neoloader and if i click to shared files the program crashes with the same error:<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>QSplitter::setCollapsible: Index 1 out of range<br>"SÃ¢ nov. 22 0:16: 31 2014: 7z: Loading Library..." <br>"SÃ¢ nov. 22 0:16: 31 2014: 7z: Loaded Successfuly" <br>"SÃ¢ nov. 22 0:16: 32 2014: loaded file list from disk" <br>"SÃ¢ nov. 22 0:16: 32 2014: Start local server NeoCore" <br>"SÃ¢ nov. 22 0:16: 32 2014: Start remote server on port 20035" <br>"SÃ¢ nov. 22 0:16: 32 2014: NeoLoader Core initialised" <br>"SÃ¢ nov. 22 0:16: 33 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 34 2014: Listen on TCP Port 6894" <br>"SÃ¢ nov. 22 0:16: 34 2014: Listen on UDP Port 6894" <br>"SÃ¢ nov. 22 0:16: 34 2014: Listen on TCP Port 4612" <br>"SÃ¢ nov. 22 0:16: 34 2014: Listen on UDP Port 4779" <br>"SÃ¢ nov. 22 0:16: 34 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 35 2014: Standby is inhibited" <br>connect: No route to host<br>"SÃ¢ nov. 22 0:16: 36 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 37 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 38 2014: Standby is inhibited" <br>connect: No route to host<br>"SÃ¢ nov. 22 0:16: 39 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 40 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 41 2014: Standby is inhibited" <br>connect: No route to host<br>"SÃ¢ nov. 22 0:16: 42 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 42 2014: Starting Module NeoKad" <br>"SÃ¢ nov. 22 0:16: 43 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 43 2014: Starting Module MuleKad" <br>"SÃ¢ nov. 22 0:16: 44 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 45 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 46 2014: Standby is inhibited" <br>connect: No route to host<br>"SÃ¢ nov. 22 0:16: 47 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 48 2014: Connecting NeoKad" <br>"SÃ¢ nov. 22 0:16: 48 2014: NeoKad Connected, ID: 05CDC799C7F7949DB4010E80F65925D6" <br>"SÃ¢ nov. 22 0:16: 48 2014: Installing script File Repository in NeoKad" <br>"SÃ¢ nov. 22 0:16: 48 2014: Installing script Keyword Index in NeoKad" <br>"SÃ¢ nov. 22 0:16: 48 2014: Installing script Link Safe in NeoKad" <br>"SÃ¢ nov. 22 0:16: 48 2014: Installing script Rating Agent in NeoKad" <br>"SÃ¢ nov. 22 0:16: 48 2014: Installing script Sharing Hub in NeoKad" <br>"SÃ¢ nov. 22 0:16: 48 2014: Installing script Source Tracker in NeoKad" <br>"SÃ¢ nov. 22 0:16: 49 2014: Connecting emule kademlia" <br>"SÃ¢ nov. 22 0:16: 49 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 50 2014: Standby is inhibited" <br>connect: No route to host<br>"SÃ¢ nov. 22 0:16: 51 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 51 2014: Connecting NeoKad" <br>"SÃ¢ nov. 22 0:16: 52 2014: NeoKad Connected, ID: 05CDC799C7F7949DB4010E80F65925D6" <br>"SÃ¢ nov. 22 0:16: 52 2014: Installing script File Repository in NeoKad" <br>"SÃ¢ nov. 22 0:16: 52 2014: Installing script Keyword Index in NeoKad" <br>"SÃ¢ nov. 22 0:16: 52 2014: Installing script Link Safe in NeoKad" <br>"SÃ¢ nov. 22 0:16: 52 2014: Installing script Rating Agent in NeoKad" <br>"SÃ¢ nov. 22 0:16: 52 2014: Installing script Sharing Hub in NeoKad" <br>"SÃ¢ nov. 22 0:16: 52 2014: Installing script Source Tracker in NeoKad" <br>"SÃ¢ nov. 22 0:16: 52 2014: Listen on TCP Port 6191" <br>"SÃ¢ nov. 22 0:16: 52 2014: Listen on UDP Port 6191" <br>"SÃ¢ nov. 22 0:16: 52 2014: Listen on TCP Port 4377" <br>"SÃ¢ nov. 22 0:16: 52 2014: Listen on UDP Port 5599" <br>"SÃ¢ nov. 22 0:16: 52 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 53 2014: MuleKad Connected, ID: A926D7B603AFE4AAD33BD6D67B2DC660" <br>connect: No route to host<br>"SÃ¢ nov. 22 0:16: 53 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 54 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 55 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 56 2014: Standby is inhibited" <br>connect: No route to host<br>signal 11 (Segmentation fault), address is 0x30 from 0x5f5b25<br>&#91;bt&#93;: (1) ./NeoLoader(_ZSt4swapIP8QMapDataI7QString8QVariantEEvRT_S6_+0x1c) &#91;0x5f5b25&#93;<br>Segmentation fault<br></code></div><br><br>If I will find the time this weekend I'll try even with a x32 linux distro.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17876" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17876">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17876">
+
+			<h3><a href="#p17876"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1218.html?p=17876#p17876"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Sat Nov 22, 2014 1:55 pm </p>
+
+			
+			
+			<div class="content">I wil look into the bugs on next weekend, this weekend is unfortunately blocked by some private stuff sorry for the delay.</div>
+
+			
+									
+									<div id="sig17876" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17937" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17937">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-13.html?mode=viewprofile&amp;u=3998" class="avatar"><img src="download/file-8.php?avatar=3998_1425060445.jpg" width="60" height="60" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-13.html?mode=viewprofile&amp;u=3998" class="username">Continuer</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-22.html?author_id=3998&amp;sr=posts">21</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Thu Nov 06, 2014 3:36 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17937">
+
+			<h3><a href="#p17937"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1219.html?p=17937#p17937"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-13.html?mode=viewprofile&amp;u=3998" class="username">Continuer</a></strong> &raquo; </span>Thu Nov 27, 2014 8:41 am </p>
+
+			
+			
+			<div class="content">Neoloader crashed when I made Multi File.
+<br>
+<br>Windows7 x64 SP1</div>
+
+							<dl class="attachbox">
+					<dt>
+						Attachments
+					</dt>
+											<dd>
+	
+		
+
+		
+				<dl class="file">
+			<dt><span class="imageset icon_topic_attach"></span> <a class="postlink" href="./download/file.php?id=643">NeoLoader_27.11.2014_15-21-48,324.zip</a></dt>
+						<dd>(28.97 KiB) Downloaded 535 times</dd>
+		</dl>
+		
+
+
+		
+		
+	</dd>
+									</dl>
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17953" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17953">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-14.html?author_id=1087&amp;sr=posts">393</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Apr 16, 2012 2:22 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17953">
+
+			<h3><a href="#p17953"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1220.html?p=17953#p17953"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a></strong> &raquo; </span>Fri Nov 28, 2014 4:20 am </p>
+
+			
+			
+			<div class="content">1.
+<br>Neokad can't be connected
+<br>
+<br>clip0495.7z 126 KB
+<br><a href="https://mega.co.nz/#!ph01xBAQ!YKHVyzmWzb0nlSebMwRKSknVB02_NyQMD7_vMMKvv_o" class="postlink">https://mega.co.nz/#!ph01xBAQ!YKHVyzmWzb0nlSebMwRKSknVB02_NyQMD7_vMMKvv_o</a>
+<br>
+<br>2.
+<br>file list bug
+<br>
+<br><a href="http://link.neoloader.to/magnet:?xt=urn:btih:3b95cc9deb52439178fc1e162fda6c6004c01851&xt=urn:neox:Zb7L9pEJ_Xgjds_PvQO_S9uNLMmz6IY6g4rRlL7ibyc&dn=ubuntu-14.04&xl=4797235200" class="postlink">NeoLoader - Download File</a>
+<br>[url=magnet:?xt=urn:btih:7A1073BC39E6B0B01E3730227B8FFEA6AEAC5D59]magnet:?xt=urn:btih:7A1073BC39E6B0B01E3730227B8FFEA6AEAC5D59[/url]
+<br>
+<br>clip0497.7z 308 KB
+<br><a href="https://mega.co.nz/#!t5F2jTCA!JkRQQ7LEiwNE88C10UCEr4bB6g-7043fNgBVoWT6LTI" class="postlink">https://mega.co.nz/#!t5F2jTCA!JkRQQ7LEiwNE88C10UCEr4bB6g-7043fNgBVoWT6LTI</a></div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17986" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17986">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17986">
+
+			<h3><a href="#p17986"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1221.html?p=17986#p17986"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Sat Nov 29, 2014 5:12 pm </p>
+
+			
+			
+			<div class="content">Neoloader crashed when I made Multi File.<br>fixed in next update<br><br>1.<br>2.<br>fixed in next update<br><br>//bug list up to date</div>
+
+			
+									
+									<div id="sig17986" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17994" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17994">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17994">
+
+			<h3><a href="#p17994"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-1222.html?p=17994#p17994"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Sun Nov 30, 2014 9:46 am </p>
+
+			
+			
+			<div class="content"><blockquote><div><cite>Neo26 wrote:</cite>- Few issues with hosters and ed2k -<br><a href="1iLTYFW.jpg" class="postlink">http://i.imgur.com/1iLTYFW.jpg</a><br><a href="18CzVrC.jpg" class="postlink">http://i.imgur.com/18CzVrC.jpg</a><br>I got this file from summary and I noticed the following problems, some of them are visible in the screenshots:<br>1. Speed columm is not updated with transfer speed if the speed is 0 kb/s, it happens when download is complete and also if the hoster goes offline or stop the client for any reason. (it stay there also if clear downloads, also summary window is affected)<br>2. There's an ed2k source recognized as A4AF... but how is that possible if I was downloading (and now I am sharing) only this file ?<br>3. If the file transfer is not complete with an hoster, a manual transfer cancel is needed <br>4. ...and when starting download with another hoster the progressbar doesn't restart from 0%, it seems continue the download, but it is not when it will reach 100% is not complete.<br>5. Is it normal that I see the neo entities as unchecked/idle after restart in transfer list and I don't see the links anymore?<br>6. What does it mean und p2p sharing &gt; "No Torrents" "One Torrent" "All Torrents" ? What is the difference, why on that file from summary is "all torrents" ?<br></div></blockquote><br><br>1. this is a known issue sometimes the bandwidth controll object gets scraped befoure the proeprly reseting<br>2. it says a4af if you havn't asked for this file, the user is a source cause he asked you for the file.<br>3. there should be an auto reset on recoverable errors, unrecoverable errors shoudl remain in error state, or in what condition that happens?<br>4. wil look into it<br>5. what links<br>6. no torrents means torrenting dissabled, one torrent means use only one torrent for that file, all torrents means use as many torrents as are there that for that file<br><br>//bug list up to date</div>
+
+			
+									
+									<div id="sig17994" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+	
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=171&amp;t=3528">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<input type="submit" name="sort" value="Go" class="button2">
+			</fieldset>
+	</form>
+	<hr>
+
+<div class="action-bar bottom">
+	<div class="buttons">
+		
+			<a href="posting.php-510.html?mode=reply&amp;f=171&amp;t=3528" class="button icon-button locked-icon" title="This topic is locked, you cannot edit posts or make further replies.">
+			Locked		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-1209.html?f=171&amp;t=3528&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+	
+			<div class="pagination">
+			82 posts
+							<ul>
+	<li class="dropdown-container dropdown-button-control dropdown-page-jump page-jump">
+		<a href="#" class="dropdown-trigger" title="Click to jump to page…" role="button">Page <strong>1</strong> of <strong>9</strong></a>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+				<li>Jump to page:</li>
+				<li class="page-jump-form">
+					<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="10" data-base-url=".&#x2F;viewtopic.php&#x3F;f&#x3D;171&amp;amp&#x3B;t&#x3D;3528" data-start-name="start">
+					<input class="button2" value="Go" type="button">
+				</li>
+			</ul>
+		</div>
+	</li>
+		<li class="active"><span>1</span></li>
+			<li><a href="viewtopic.php-1210.html?f=171&amp;t=3528&amp;start=10" role="button">2</a></li>
+			<li><a href="viewtopic.php-1211.html?f=171&amp;t=3528&amp;start=20" role="button">3</a></li>
+			<li><a href="viewtopic.php-1212.html?f=171&amp;t=3528&amp;start=30" role="button">4</a></li>
+			<li><a href="viewtopic.php-200.html?f=171&amp;t=3528&amp;start=40" role="button">5</a></li>
+			<li class="ellipsis" role="separator"><span>…</span></li>
+			<li><a href="viewtopic.php-204.html?f=171&amp;t=3528&amp;start=80" role="button">9</a></li>
+			<li class="next"><a href="viewtopic.php-1210.html?f=171&amp;t=3528&amp;start=10" rel="next" role="button">Next</a></li>
+	</ul>
+					</div>
+		<div class="clear"></div>
+</div>
+
+
+	<p class="jumpbox-return"><a href="viewforum.php-6.html?f=171" class="left-box arrow-left" accesskey="r">Return to “Bugs”</a></p>
+
+
+	<div class="dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+		<span title="Jump to" class="dropdown-trigger button dropdown-select">
+			Jump to		</span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																			<li><a href="viewforum.php.html?f=10">News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-1.html?f=11">Board News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-2.html?f=161">NeoLoader Releases</a></li>
+																<li><a href="viewforum.php-3.html?f=169">NeoLoader English</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-4.html?f=180">General/Discussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-5.html?f=170">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-6.html?f=171">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-7.html?f=172">Feature Requests</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-8.html?f=173">Script Development</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-9.html?f=174">Extensions</a></li>
+																<li><a href="viewforum.php-10.html?f=163">NeoLoader German</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-11.html?f=179">Algemeines/Diskussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-12.html?f=164">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-13.html?f=165">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-14.html?f=166">Feature Wünsche</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-15.html?f=167">Script Entwicklung</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-16.html?f=168">Erweiterungen</a></li>
+																<li><a href="viewforum.php-17.html?f=4">Community</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-18.html?f=81">OffTopic</a></li>
+										</ul>
+		</div>
+	</div>
+
+
+	<div class="stat-block online-list">
+		<h3>Who is online</h3>
+		<p>Users browsing this forum: No registered users and 2 guests</p>
+	</div>
+
+			</div>
+
+
+<div id="page-footer">
+	<div class="navbar">
+	<div class="inner">
+
+	<ul id="nav-footer" class="linklist bulletin" role="menubar">
+		<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" data-navbar-reference="index">Board index</a></span>
+					</li>
+		
+				<li class="rightside">All times are <abbr title="UTC+1">UTC+01:00</abbr></li>
+							<li class="small-icon icon-delete-cookies rightside"><a href="ucp.php-3.html?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">Delete all board cookies</a></li>
+									<li class="small-icon icon-team rightside" data-last-responsive="true"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>				<li class="small-icon icon-contact rightside" data-last-responsive="true"><a href="memberlist.php-11.html?mode=contactadmin" role="menuitem">Contact us</a></li>	</ul>
+
+	</div>
+</div>
+
+	<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+	</div>
+	<div id="loading_indicator"></div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close"></a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div class="copyright">
+		Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<script type="text/javascript" src="assets/javascript/jquery.min.js?assets_version=4"></script>
+<script type="text/javascript" src="assets/javascript/core.js?assets_version=4"></script>
+
+
+<script type="text/javascript" src="styles/prosilver/template/forum_fn.js?assets_version=4"></script>
+
+<script type="text/javascript" src="styles/prosilver/template/ajax.js?assets_version=4"></script>
+
+
+
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

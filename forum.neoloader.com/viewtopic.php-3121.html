@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; 0.40 Bugs - Page 5</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>0.40 Bugs</h2>
+		<p><a href="viewtopic.php-1040.html?f=171&amp;t=3327">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3327</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>5</strong> of <strong>8</strong></div>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Oct 15, 2013 9:58 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>Neo26 wrote:</cite>Yes they're, when an user delete/remove the main folder of the multifile it expect that all the subfolder, even including completed files are removed. Is obvious, the 2nd attemp for delete the already completed files, that in the 90% case of multi torrrent are useless, is a wasting of time.<br>Regarding the #4 is obvious that if I remove a file, his empty folder in incoming should be deleted as well, and not that I have to do it manually.</div></blockquote><br><br>#3 is intended behavior, as I explained to you a user must have the option to delete a torrent without at the same time deleting the subfiles.<br>only because you don't want to do that does not mean that other users also don't want this functionality.<br><br>EDIT: an option would be to add an additional Message box asking the user upon removal of a multifile if he wants to kill only the multifile or also all its subfiles<br><br>#4 is since a long time a known low priority bug.<br>EDIT: will be fixed in next release<br><br><br>&gt;Change your priorities.<br>No, as i explained TCP traffic can only be guessed, it can not be measured without a patch to the operating systems IP stack (an no on is going to do that).<br>The current guess seams to be mostly of by not more than 10% in normal cases, only when packet drop goes up doe to a overloaded connection the estimation error gets bigger.<br>And as explained above there is no reasonable way to get the packet drop stats from the OS.<br><br>&gt;They don't require it, the problem is in neoloader.<br>I will test that.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Oct 15, 2013 10:50 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Write some examples of when this feature deleting multi file is useful.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Oct 15, 2013 10:58 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>Neo26 wrote:</cite>Write some examples of when this feature deleting multi file is useful.</div></blockquote><br>When you are a releaser and you want to release a just on air CC licensed season of a TV series (like <a href="http://www.pioneerone.tv/" class="postlink">PIONEER ONE an original dramatic series for VODO.</a> for example) you have a directory with episodes 1-5 and make a multi-file out of it and share as torrent.<br>Than episode 6 gets released, so you add the new episode to your PioneerOne directory rescan the share.<br>Then use the remove multi-file option to kill the multi-file without killing the sub files and you create a new multi file now of all 1-6 episodes, and each week you repeat the process until the season is complete.<br><br>David X.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Oct 15, 2013 11:24 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">If I modify a multifile why should I remove the uncumplete files of this one ?<br><br>About the overhead in the best case is ~10-15% so it should be improved, it can go in low priority when it is around 5-10% USUALLY-OFTEN.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Oct 15, 2013 11:32 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>Neo26 wrote:</cite>If I modify a multifile why should I remove the uncumplete files of this one ?</div></blockquote><br>In the above sample you are a releaser you don't have incomplete files in that particular multifile.<br><br>You can only create a usable multi file out of complete files.<br><br><blockquote><div><cite>Neo26 wrote:</cite>About the overhead in the best case is ~10-15% so it should be improved, it can go in low priority when it is around 5-10% USUALLY-OFTEN.</div></blockquote>It will stay low priority as it is, as I already explained its all a guesswork it is as good as it gets...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Oct 15, 2013 11:59 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">The feature that I'm talking about include the incomplete files, because you said that the first attempt to delete will remove only the incomplete file, so I still don't have an example of the utility regarding this feature.<br><br>This "guesswork" should be improved a bit, as the network traffic is the main part of every p2p client, his measuring can't be a low priority.<br><br>If you just care about hosters then make a NeoHosterDownloader without the torrent/ed2k side.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Oct 15, 2013 12:28 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>Neo26 wrote:</cite>The feature that I'm talking about include the incomplete files, because you said that the first attempt to delete will remove only the incomplete file, so I still don't have an example of the utility regarding this feature.</div></blockquote><br>For that an example would be you add a torrent with 10 files you want only 2 of them, so you set all other 8 files on halted and wait until the download of the 2 files finishes, than you simply remove the torrent removing all 8 incomplete files you are not interested in living you only with the 2 you wanted to download in the first place.<br><br><blockquote class="uncited"><div>This "guesswork" should be improved a bit, as the network traffic is the main part of every p2p client, his measuring can't be a low priority.</div></blockquote><br>This "guesswork" is already better then in eMule, eMule does not take IP overhead into account at all.<br>And it is roughly as good as in NeoMule.<br><br>this must be good enough.<br><br>David X.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Oct 15, 2013 6:00 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">18.
+<br>When neoloader downloads  test file(multi)by neoshare ,neokad crashes.
+<br><div class="inline-attachment">
+	
+		
+
+		
+				<dl class="file">
+			<dt><span class="imageset icon_topic_attach"></span> <a class="postlink" href="./download/file.php?id=621">NeoKad_&amp;#36913;&amp;#19977; &amp;#21313;&amp;#26376; 16 00_56_13 2013.7z</a></dt>
+						<dd>(11.05 KiB) Downloaded 318 times</dd>
+		</dl>
+		
+
+
+		
+		
+	</div>
+<br><div class="inline-attachment">
+	
+		
+
+		
+				<dl class="file">
+			<dt><span class="imageset icon_topic_attach"></span> <a class="postlink" href="./download/file.php?id=621">NeoKad_&amp;#36913;&amp;#19977; &amp;#21313;&amp;#26376; 16 00_56_13 2013.7z</a></dt>
+						<dd>(11.05 KiB) Downloaded 318 times</dd>
+		</dl>
+		
+
+
+		
+		
+	</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>When neoloader uploads  test file(multi) by neoshare ,neokad crashes.
+<br><div class="inline-attachment">
+	
+		
+
+		
+				<dl class="file">
+			<dt><span class="imageset icon_topic_attach"></span> <a class="postlink" href="./download/file.php?id=621">NeoKad_&amp;#36913;&amp;#19977; &amp;#21313;&amp;#26376; 16 00_56_13 2013.7z</a></dt>
+						<dd>(11.05 KiB) Downloaded 318 times</dd>
+		</dl>
+		
+
+
+		
+		
+	</div>
+<br><div class="inline-attachment">
+	
+		
+
+		
+				<dl class="file">
+			<dt><span class="imageset icon_topic_attach"></span> <a class="postlink" href="./download/file.php?id=621">NeoKad_&amp;#36913;&amp;#19977; &amp;#21313;&amp;#26376; 16 00_56_13 2013.7z</a></dt>
+						<dd>(11.05 KiB) Downloaded 318 times</dd>
+		</dl>
+		
+
+
+		
+		
+	</div>
+<br><div class="inline-attachment">
+	
+		
+
+		
+				<dl class="file">
+			<dt><span class="imageset icon_topic_attach"></span> <a class="postlink" href="./download/file.php?id=621">NeoKad_&amp;#36913;&amp;#19977; &amp;#21313;&amp;#26376; 16 00_56_13 2013.7z</a></dt>
+						<dd>(11.05 KiB) Downloaded 318 times</dd>
+		</dl>
+		
+
+
+		
+		
+	</div>
+<br><div class="inline-attachment">
+	
+		
+
+		
+				<dl class="file">
+			<dt><span class="imageset icon_topic_attach"></span> <a class="postlink" href="./download/file.php?id=621">NeoKad_&amp;#36913;&amp;#19977; &amp;#21313;&amp;#26376; 16 00_56_13 2013.7z</a></dt>
+						<dd>(11.05 KiB) Downloaded 318 times</dd>
+		</dl>
+		
+
+
+		
+		
+	</div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Oct 16, 2013 3:43 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">19.<br>trayicon bug<br><br>clip0122.7z (158 KB)<br><a href="https://mega.co.nz/#!kwM0SJYI!EfmTLT4rJBTnqx87Lja3mQbuKXxq28NbnhPOkgalITM" class="postlink">https://mega.co.nz/#!kwM0SJYI!EfmTLT4rJBTnqx87Lja3mQbuKXxq28NbnhPOkgalITM</a><br>clip0121.7z (164 KB)<br><a href="https://mega.co.nz/#!Yo0XnBIT!UBJGGhMna46ULp-Lid4AjnqpPudRAab1qmyY6Z8XqX4" class="postlink">https://mega.co.nz/#!Yo0XnBIT!UBJGGhMna46ULp-Lid4AjnqpPudRAab1qmyY6Z8XqX4</a><br><br><br>20.<br>hoster bug<br><br>arch's color is gray. It doesn't have aich.<br><br>It can hash at the first time,but it can not hash after the first time.<br><br>When neoloader adds link to download, neoloader can't check the file that has downloaded or not .<br><br><br>clip0126.7z (699 KB)<br><a href="https://mega.co.nz/#!VwUCTCyR!WjeuL0IDN-SC3OH7eD-onBSnG1ZWR1QdlOn9pCVxrrc" class="postlink">https://mega.co.nz/#!VwUCTCyR!WjeuL0IDN-SC3OH7eD-onBSnG1ZWR1QdlOn9pCVxrrc</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Oct 16, 2013 8:25 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content"><blockquote class="uncited"><div>For that an example would be you add a torrent with 10 files you want only 2 of them, so you set all other 8 files on halted and wait until the download of the 2 files finishes, than you simply remove the torrent removing all 8 incomplete files you are not interested in living you only with the 2 you wanted to download in the first place.</div></blockquote><br><br>And as manually halted the other 8 should be manually removed as well, why if I don't want download them should I wait the end of download to be able to remove them using that system ? And if I want keep 1 handled to download it later maybe ?<br>I think that the choose of the main folder is clear that all the subfiles are affected, like the choose of a single subfolder or a single file, not depending on their status complete or not, if you want support that kind of managing (Be able to download only X files on a total of Y in the multi file) it should be handled correctly not bypassed with useless and boring features like that.<br><br>About overhead, if eMule suxxx we are not authorized to ignore the problem as you want do.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>5</strong> of <strong>8</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

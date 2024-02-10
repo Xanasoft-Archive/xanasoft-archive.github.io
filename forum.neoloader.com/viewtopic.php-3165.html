@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; Control IP Overhead feature (0.40 beta)</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>Control IP Overhead feature (0.40 beta)</h2>
+		<p><a href="viewtopic.php-1049.html?f=171&amp;t=3325">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3325</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Control IP Overhead feature (0.40 beta)</h3>
+				<div class="date">Posted: <strong>Tue Sep 10, 2013 11:13 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Hi, I tried to turn that feature on/off but I see no difference, it's bugged?
+<br>
+<br>btw, there is still a lot of overhead not counted.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Sep 10, 2013 12:16 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Control IP Overhead is a setting that shouldn't be public i think,<br><br>it also does not do what you think it does.<br><br>What it does is when disabled the bandwidth control always allows for IP overhead so that if you set your upload limit below the value that you generate in terms of IP overhead due to fast downloading, the overhead will go beyond the limit line int he starts. Say it wont be controlled or one could also say limited.<br><br>Howe ever any other upload traffic will remain limited, and the IP overhead will still be taken into account, say for example if you limit your upload to 20 kb/s and neo estimates 15 kb/s IP overhead it will adjust upload to 5 and the limit will be kept.<br><br>The limit will only be exceeded when the IP overhead is greater than the total set bandwidth limit.<br><br>I will remove the setting from the gui in the next version, though I'm not sure if to set it enabled or disabled by default.<br><br><br><br>About some overhead still not counted, it is some more IP overhead, it can not be counted by principle, it can only be guessed.<br>I don't know at this point how to make the guessing more accurate, I should add a MSS setting that would probably help.<br><br><br>David X.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Sep 10, 2013 12:19 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">I still not understand really good what it does so I give no suggestions about On/Off.<br><br>About the overhead... what are you waiting for ? <img class="smilies" src="./images/smilies/smile.png" alt=":)" title=":)"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Sep 10, 2013 12:23 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">&gt;     About the overhead... what are you waiting for ? <br><br><em>About some overhead still not counted, it is some more IP overhead, it can not be counted by principle, it can only be guessed.<br><span style="text-decoration: underline">I don't know at this point how to make the guessing more accurate</span>, I should add a MSS setting that would probably help.</em><br><br>MSS wont help you as the MSS you tolled me is the default DSL one, the one I have and the one Neo uses, so it would only help other users.<br><br>The problem with IP overhead is that you always have some packet lost and resent packets and there is no way to get the info win the OS how many they ware.<br>So we can guess the amount of frames sent and those the ACK count we should revive, but wen can't know how much packet lost there ware.<br><br>May be I could add a setting in % where a user can enter his expected packet lost, a.k.a. the % miss match between what Neo guesses assuming no lost at all and what the user sees on the network adapter.<br><br><br>EDIT: or I could add a NAFC like feature and measure the discrepance and create some correction table for the speed :/ <br>like the user would have to train Neo to his connection, would be cool though not n00b friendly i think.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Sep 10, 2013 12:31 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Let's make this test in the beta and later we'll decide if keep that settings fur final version but I think once found an acceptable value the setting is not needed.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

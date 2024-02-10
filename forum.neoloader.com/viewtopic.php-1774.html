@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; Stream file shouldn't be limited in media file and single file.</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>Stream file shouldn't be limited in media file and single file.</h2>
+		<p><a href="viewtopic.php-271.html?f=172&amp;t=6764">http://forum.neoloader.com/viewtopic.php?f=172&amp;t=6764</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Stream file shouldn't be limited in media file and single file.</h3>
+				<div class="date">Posted: <strong>Sat Jan 03, 2015 3:39 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">1.<br>Qbittorrent have the feature,but it can support all files and multifile.<br>EX:<br>If a lot of picture is in the multifile or archive file,streaming multifile or archive file is useful for user.<br><br>2.<br>Neolaoder can't play some media files(.TS .RM .RMVB .....).<br>Neoloader shouldn't check final file extension for playing,because player has the feature.<br>If files can't be played,user will be noticed by player.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Jan 03, 2015 9:41 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Absolutly not, neoloader should never download the chunks in a "stream" order if the streaming of the file is not possible.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Jan 03, 2015 11:42 am</strong></div>
+				<div class="author">by <strong>Havokdan</strong></div>
+				<div class="content">"Never"? It is not possible that just as eMule and Torrent, which give preference to the first pieces? Or an option for this? Building on the topic, you can not have some features, such as "follow the majority", which is to rename the downloaded file to what is used by most peers? The bar is horizontal with buttons instead of a vertical bar with text only? You also can not have those pre-defined filters to emulate the style (Video, File, Documents, Directories, Audio, etc.)? The option to show the countries of peers (disabled by default) with their respective flags, this is useful when'm downloading common content of my country. Of course, these requests are not for now, but who knows in the future. Hugs.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Jan 03, 2015 12:56 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">I mean, there's not any sense to download the chunks from first to last following this order, instead of the "normal" chunk selection (neo should use "zz" system). It's useful IMHO only when you want to stream a video file. If I am downloading an archive, or an ISO file, expecially if it's rare, why should I be allowed to bypass the normal chunk selection system that takes the less spread chunk first (if possible) ?<br><br><blockquote class="uncited"><div>which give preference to the first pieces? Or an option for this?</div></blockquote><br>If you mean "get preview chunks first" its already avaible, und options-general-"download preview sections first". "Stream File" its a different feature that tries to get the first chunk to the last chunk in order to reproduce a video file while downloading. It's designed for popular video files, but if you don't want watch it while downloading it absolutly doesn't provide any benefits.<br><br><blockquote class="uncited"><div>"follow the majority", which is to rename the downloaded file to what is used by most peers?</div></blockquote><br>Yeah but what's the benefit of doing that? Also, that's good for ed2k network only, torrent protocol doesn't have the renaming problem, plus the most spread file name sometimes is not the "original" file name. That can be discussed btw, let's see what D.X. thinks about that <img class="smilies" src="./images/smilies/smile.png" alt=":)" title=":)"><br>iirc this feature is avaible in MorphXT eMule Mod, but I don't remember who coded it or the first mod that implemented that.<br><br><blockquote class="uncited"><div>The bar is horizontal with buttons instead of a vertical bar with text only?</div></blockquote><br>I think that the UI can be (and should be) improved a lot, any suggestion for the future is accepted. But I don't know if a switchable bar could be made if that's what you mean.<br><br><blockquote class="uncited"><div>You also can not have those pre-defined filters to emulate the style (Video, File, Documents, Directories, Audio, etc.)?</div></blockquote><br>What do you mean? Can you make an example?<br><br><blockquote class="uncited"><div>The option to show the countries of peers (disabled by default) with their respective flags, this is useful when'm downloading common content of my country</div></blockquote><br>I already requested that feature some time ago, but keep in mind that if D.X. will add it, it will not be enabled by default because for most of the users is just a waste of cpu/memory usage. Let's see what he thinks here too, you have my +1 vote <img class="smilies" src="./images/smilies/smile.png" alt=":)" title=":)"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Jan 03, 2015 2:09 pm</strong></div>
+				<div class="author">by <strong>Havokdan</strong></div>
+				<div class="content"><blockquote class="uncited"><div>Yeah but what's the benefit of doing that? Also, that's good for ed2k network only, torrent protocol doesn't have the renaming problem, plus the most spread file name sometimes is not the "original" file name. That can be discussed btw, let's see what D.X. thinks about that <br>iirc this feature is avaible in MorphXT eMule Mod, but I don't remember who coded it or the first mod that implemented that.</div></blockquote><br><br>For this and other reasons, I love this mod. It is the customer ed2k that currently use.<br><br><blockquote class="uncited"><div>What do you mean? Can you make an example?</div></blockquote><br><br>The example to emulate, which has predefined categories when making search. It's that I can not use the feature as is provided in the currently Neoloader.<br><br>I'm sorry, my native language is Portuguese of Brazil, although I understand it is written in English, I have immense difficulty in writing in that language, so I'm using the google translator to do so.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Jan 03, 2015 4:56 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">On top/right of the search page you can set file extension... if you mean create a "Video" filter including all video extension, and "Audio" filter including all audio extensions I don't know, let's wait for D.X. answer.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Jan 06, 2015 7:59 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote class="uncited"><div>Yeah but what's the benefit of doing that? Also, that's good for ed2k network only, torrent protocol doesn't have the renaming problem, plus the most spread file name sometimes is not the "original" file name. That can be discussed btw, let's see what D.X. thinks about that<br>iirc this feature is avaible in MorphXT eMule Mod, but I don't remember who coded it or the first mod that implemented that.</div></blockquote><br><br>The issue is indeed mostly with ed2k only, a torrent has fixed names, I'm not sure about the dynamics of such a feature a.k.a. assuming all clients would have that how easy a small army of bots could fuck up the filenames for everyone.<br><br>The attack vector here is to have a small quantity of clients that fakes the name on purpose and to hit a file when it just have been releases such that the small group can pose as the majority.<br><br>If I would add it that would have to not switch automatically but offer to the user and ask for his approval.<br><br><blockquote class="uncited"><div>You also can not have those pre-defined filters to emulate the style (Video, File, Documents, Directories, Audio, etc.)?</div></blockquote><br>Not yet, but this will be added, the tree already have started/paused/stopped/complete, I will add an option in future to customize this filters.<br><br>Also if you pres Ctrl+F you can filter a file list by keyford<br><br><blockquote class="uncited"><div><blockquote class="uncited"><div>The option to show the countries of peers (disabled by default) with their respective flags, this is useful when'm downloading common content of my country</div></blockquote><br>I already requested that feature some time ago, but keep in mind that if D.X. will add it, it will not be enabled by default because for most of the users is just a waste of cpu/memory usage. Let's see what he thinks here too, you have my +1 vote </div></blockquote><br>Lets just say that this feature is on the very bottom of my todo list <img class="smilies" src="./images/smilies/biggrin.png" alt=":D" title=":D"> if i run out of features to add or bugs to fix I will add it</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; 0.41 Bugs - Page 4</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>0.41 Bugs</h2>
+		<p><a href="viewtopic.php-1033.html?f=171&amp;t=3337">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3337</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>4</strong> of <strong>18</strong></div>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Nov 05, 2013 11:24 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I think this time  i found the client replication bug, wil be fixed in next release <br>It semas there ware more than one bug that all caused the same issue :/<br><br>Also I was not able to reproduce the ED2K State set but no Hash problem, for me it always generated the ED2k hash as soon as the sub file was completed :/<br><br>"Neo26: Downloaded data counter bug: Screenshot / nb: Not always reproducable"<br>whats wrong with that?<br><br>"Neo26: UI bug regarding the download and shared windows, details here: 0.41 Bugs"<br>thats intentional behavioure a folder icon appears only if there is a multifile, if its only the directory structure no icon is shown.<br>and obviusly the multifile is not complete, as other sub files are missing<br><br>although i probably sould show afolder icon with normal folders and some special multifile icon for multifiles?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Nov 05, 2013 2:03 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content"><blockquote class="uncited"><div>I think this time i found the client replication bug, wil be fixed in next release<br>It semas there ware more than one bug that all caused the same issue :/</div></blockquote><br>Marked as green in the list.<br><br><blockquote class="uncited"><div>"Neo26: Downloaded data counter bug: Screenshot / nb: Not always reproducable"<br>whats wrong with that?</div></blockquote><br>The counter is not counting, and it happen for all very small files, such as .txt<br><br><blockquote class="uncited"><div>although i probably sould show afolder icon with normal folders and some special multifile icon for multifiles? </div></blockquote><br>Would be better.<br><br><blockquote class="uncited"><div> Also I was not able to reproduce the ED2K State set but no Hash problem, for me it always generated the ED2k hash as soon as the sub file was completed :/</div></blockquote><br>I'll send you an example torrent in pvt.<br><br>#############<br>New bugs:<br>If I delete some subfiles from a multi torrent they're added again as single files on client restart. It mean that is not possible manage those kind of files in a good way, because if I use the start and stop on the main folder it affect only the subfiles, and instead I would be able also to remove completly X files from the torrent even in the grabber before add them.<br><br>Many (irrelevant but easy to fix) UI bugs in summary window: The squares around the bug should be a bit longer (vertical side) and the 4 decimal cifres in %s are useless.<br>############<br><br>/offi bug list updated.<br><br><strong>EDIT:</strong> Added in list also that mega automatically stop downloading after some minutes and is impossible to download large files.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Nov 05, 2013 9:05 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">fixed autosort not sorting<br>fixed counter problem "Downloaded data counter bug" - for new counted stuff<br><br>about the torrent sub files comming back...<br>not sure how to solve it, actually you should nto be able to delete a sub file at all i think, as in case you want it back how do you do that?<br>I would sugest:<br>1. dissable deleting of sub files<br>2. pseudo delete them, say, delete data and set sub file to not download + show message about file not havong beed deleted due to<br>3. add a menu option to master files, restore missing subfiles... or somethign like this</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Nov 06, 2013 12:39 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Since actually there are other more important bugs, the 1st choice is better. <br>In fact, the start stop managment works ok, except the move from grabber to download windows cause problem and/or if the "added download in pause" is on, else is enough to manage them. Because in both case it will start all the files, also the one that you choosen as "stop" in the grabber or during the file was paused.<br><br>Maybe to fix when we do that move, it should remember the status in grabber and not autostart the main folder when added to download. For the other issue that is caused when downloaded files are in pause, I don't see any behavior of this feature, since we have the feature "always grab", so we could remove it.<br><br>Then it comes another little issue, when we want to start/stop the torrent without modify our decision regarding not download, well in that case a sort of "Force Stop" that ignores the operation done to main directory is helpful... and oh, it could work also from grabber!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Nov 06, 2013 12:54 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">14.
+<br>empty-torrent bug
+<br>
+<br>video
+<br>videobam:
+<br><a href="http://videobam.com/dQDGd" class="postlink">Fast, Free Video Hosting & Video Sharing - VideoBam</a>
+<br>mega:
+<br>clip0230.7z (1.7 MB)
+<br><a href="https://mega.co.nz/#!stEjkIJb!UqS7shIGwl0d86UpsTUAR2Jyy4p7dssSAVu6SIZS5CU" class="postlink">https://mega.co.nz/#!stEjkIJb!UqS7shIGwl0d86UpsTUAR2Jyy4p7dssSAVu6SIZS5CU</a>
+<br>
+<br>
+<br>test link
+<br>mega:
+<br>linux.txt (8 KB)
+<br><a href="https://mega.co.nz/#!A8FBxDDJ!JpEDnis8BPA9IwGR7Ud5gEHMs2Yhdej1AlEErtx-_8U" class="postlink">https://mega.co.nz/#!A8FBxDDJ!JpEDnis8BPA9IwGR7Ud5gEHMs2Yhdej1AlEErtx-_8U</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Nov 06, 2013 1:46 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">empty-torrent bug, added in offi bug list<br><br>ps. The "Force Stop" should be called "Do not download" and file marked as it, should be hided in some one once the torrent is complete and in shared window.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Nov 06, 2013 9:29 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I'm make a checkable sub menu item called "Disable" as it doe snot only affect download but also upload<br><br>The empty torrent bug is strange, it seams to happen randomly to a torrent, and after cleint restart its gone, wil look into it and try to fix it asap<br><br>I can not reproduce the ed2k not hashing bug...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Nov 07, 2013 4:57 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">15.
+<br>hashing count bug
+<br>
+<br>video
+<br>videobam:
+<br><a href="http://videobam.com/fevTK" class="postlink">Fast, Free Video Hosting & Video Sharing - VideoBam</a>
+<br>mega:
+<br>clip0236.7z (562 KB)
+<br><a href="https://mega.co.nz/#!dsMSzKpC!ObWP7HX-a7lp3TMykquQrwBkCxZhruAnVO5mF-saZFk" class="postlink">https://mega.co.nz/#!dsMSzKpC!ObWP7HX-a7lp3TMykquQrwBkCxZhruAnVO5mF-saZFk</a>
+<br>
+<br>
+<br>16.
+<br>upload by ed2k bug
+<br>
+<br>video
+<br>videobam:
+<br><a href="http://videobam.com/ExnMZ" class="postlink">Fast, Free Video Hosting & Video Sharing - VideoBam</a>
+<br>mega:
+<br>clip0231.7z (183 KB)
+<br><a href="https://mega.co.nz/#!solyDSIL!YY-_qAD6FHtMLNUzbsV3fFYhbM5CsTwrXqhYbTPh0Ns" class="postlink">https://mega.co.nz/#!solyDSIL!YY-_qAD6FHtMLNUzbsV3fFYhbM5CsTwrXqhYbTPh0Ns</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Nov 07, 2013 8:24 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">hashing fixed, <br>working on ed2k issue</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Nov 07, 2013 9:19 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">16.
+<br>upload by ed2k bug
+<br>Uploading 2.01GB data uses 6.29(5.46)GB upload volume.
+<br>
+<br>video
+<br>videobam:
+<br><a href="http://videobam.com/RBqSq" class="postlink">Fast, Free Video Hosting & Video Sharing - VideoBam</a>
+<br><a href="http://videobam.com/moZlZ" class="postlink">Fast, Free Video Hosting & Video Sharing - VideoBam</a>
+<br>mega:
+<br>clip0244.7z (374 KB)
+<br><a href="https://mega.co.nz/#!Y9smHQ6S!RpbsoA6sBNxAAYkInnaNuT4PzjVP8hhvO9XjJ_qKUZU" class="postlink">https://mega.co.nz/#!Y9smHQ6S!RpbsoA6sBNxAAYkInnaNuT4PzjVP8hhvO9XjJ_qKUZU</a>
+<br>clip0238.7z (539 KB)
+<br><a href="https://mega.co.nz/#!15VAwIqY!cnK5ozShJxHcNOBbNpBCilWToWwa5eAMj40O1DnAyBg" class="postlink">https://mega.co.nz/#!15VAwIqY!cnK5ozShJxHcNOBbNpBCilWToWwa5eAMj40O1DnAyBg</a></div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>4</strong> of <strong>18</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

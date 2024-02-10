@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; query: large numbers of files?</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>query: large numbers of files?</h2>
+		<p><a href="viewtopic.php-754.html?f=170&amp;t=3164">http://forum.neoloader.com/viewtopic.php?f=170&amp;t=3164</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>query: large numbers of files?</h3>
+				<div class="date">Posted: <strong>Sun Feb 17, 2013 10:04 pm</strong></div>
+				<div class="author">by <strong>Stoat</strong></div>
+				<div class="content">How well does Neo handle upload areas containing large numbers/volumes of files?
+<br>
+<br>In my case, that's ~37000 files and 11TB of data.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Feb 18, 2013 8:06 am</strong></div>
+				<div class="author">by <strong>Ekliptor</strong></div>
+				<div class="content">Unfortunately that amount of files will currently cause some problems, if it's possible at all. Once all those files are hashed (assuming you have a few GB of memory to keep all the hashes in the RAM), it will take at least 15 minutes to restart NeoLoader because loading a huge amount of files from the filelist-file from disk takes a very long time...<br><br>So right now NeoLoader isn't perfectly suited to handle that amount of data. But we definitely plan to work on it.<br>Some questions to better understand your situation and improve the file handling in future versions:<br>In what network do you plan to share your files? Torrent? ed2k? or Hosters? or all of them?<br>Do you know any client that can handle that amount of data without any problems? (including startup time)</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 01, 2013 1:35 am</strong></div>
+				<div class="author">by <strong>Stoat</strong></div>
+				<div class="content">Sorry for the long delay replying.
+<br>
+<br><blockquote><div><cite>Ekliptor wrote:</cite>Unfortunately that amount of files will currently cause some problems, if it's possible at all. Once all those files are hashed (assuming you have a few GB of memory to keep all the hashes in the RAM), it will take at least 15 minutes to restart NeoLoader because loading a huge amount of files from the filelist-file from disk takes a very long time...</div></blockquote><br><br>Most programs take quite a while to start up with this number of files on board<br><br><blockquote class="uncited"><div>So right now NeoLoader isn't perfectly suited to handle that amount of data. But we definitely plan to work on it.<br>Some questions to better understand your situation and improve the file handling in future versions:<br>In what network do you plan to share your files? Torrent? ed2k? or Hosters? or all of them?<br>Do you know any client that can handle that amount of data without any problems? (including startup time)</div></blockquote>
+<br>
+<br>Primarily ed2k/Kad, but "all" is a good long-term target.
+<br>
+<br>I'm running on Linux, with the main system daemon-only.
+<br>
+<br>Amule runs but has trouble with the numbers but takes about an hour to fully share everything.
+<br>
+<br>Mldonkey runs fine and has the same problem as amule at startup. When adding files it can take 6-12 hours to notice and start advertising them - that's because the way it scans directories it can take several passes to pick up everything.
+<br>
+<br>Both programs have memory footprints of about 2Gb and neither uses very much CPU (the system ~ 8 year old dual 2.1GHz 5140 Xeon server.)</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 01, 2013 9:06 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">hmm... I will release an up to date linux build this weekend.<br>So may by you can just test and tell us if it worked.<br><br>Cheers<br>David X.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

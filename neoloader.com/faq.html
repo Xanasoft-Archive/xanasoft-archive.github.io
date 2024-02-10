@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>NeoLoader</title>
+
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/animate.min.css" rel="stylesheet">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="canonical" href="faq.html" >
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js" ></script>
+<![endif]-->
+
+
+
+<script src="js/wow.min.js" ></script>
+<script>
+ new WOW().init();
+</script>
+
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+
+		$('.faq_answer').hide();
+		$('.faq_question').addClass('inactive');
+		$('.faq_question').click(function(){
+		t = $(this);
+		if (!t.hasClass('inactive'))
+		{
+		t.parent().children('.faq_answer').slideToggle();
+		t.addClass('inactive');
+		}
+		else
+		{
+		t.parent().children('.faq_answer').slideToggle();
+		t.removeClass('inactive');
+		}
+		return false;
+		});
+
+		});
+
+	</script>
+</head>
+
+<body>
+	<header>
+		<script type="text/javascript" src="js/header.js"></script>
+	</header>	
+	
+	<div id="wrap"><br>	
+		<section id="content">
+
+			<div class="faq">
+				<h1>Frequently Asked Questions - FAQ</h1>
+
+				<h2>Multi Network Filesharing</h2>
+				<div class="faq_item">
+					<div class="faq_question">And are you sure that is possible download a file from multiple network ? How ?</div >
+					<div class="faq_answer">
+<p>
+The only difficulty with downloading form multiple networks is to know which ed2k file hash corresponds to what torrent info hashes.<br>
+<br>
+There is no mathematical reversible correlation between a ed2k hash of a file and a torrent info hash of the same file.<br>
+With torrents you can even have multiple info hashes for the exact same file, as it does not take into account only the file content but also a set of metadata places in the info section of the torrent meta data.<br>
+<br>
+Of cause once you have successfully downloaded a torrent or some archive parts form a OCH you can hash it any way you want an get any hash you need.<br>
+So once you have the file completed you can generate the ed2k hash or an new torrent or calculate the neo hash, etc...<br>
+
+The trick is while starting with only the ed2k hash or only a torrent info hash to get the other hashes right at the start.
+<br><br>
+NeoLoader achieves that through its own Kad Network:<br>
+The first user who wants a particular file has to download it from only one of the networks but as soon as he completes the other hashes are calculated and published into the Kad network so that any user that comes after him can just ask the Kad for the other hashes he is missing and start downloading the file from all networks right away.
+<br>
+<br>
+Of cause it sounds simpler than it is, the hashes are uncorrelated that means a node can publish any association it wants also bogus ones, to mitigate the effects of such possible malicious informations NeoLoader will have a set of mechanisms.<br>
+For first of all one hash (the one the download was started with) is defined as a Master Hash, that means it is right by definition.<br>
+So that once a few parts are completed and hashed against the hash sets of the particular networks neo checks if all the hashes agree with the master hash result, if one of the retrieved hashes disagrees it is removed and put on a black list and the sharing of the file under the particular hash is stopped. At that point Neo can try to retrieve a other hash from the Kad for the particular network, an repeat the procedure.<br>
+The selection which hash result to take is being done basing on a majority vote system, meaning the hash that the most nodes published as belonging to the master hash is tried first, than the second most common, etc, though not all... a hash has to have a minimum quorum to be even taken into consideration.<br>
+<br><br>
+With Neo you can even download one file from two torrents!<br>
+</p>					
+					</div>
+				</div>
+
+				<div class="faq_item">
+					<div class="faq_question">How can I download a file from multiple torrents</div >
+					<div class="faq_answer">
+						
+<p>
+The feature to load a file from multiple networks works like this:<br>
+1. To be able to load a file from multiple networks, another Neo user has to have downloaded the file before from any network of his choosing.<br>
+2. Once the file is completed NeoLoader computes the hashes for all networks. The association of the hashes (i.e. that they belong to the same file) gets published in our NeoKad network under the NeoHash (which serves as master hash in this case.).<br>
+3. All following Neo users who want to download the file now, can add the file by adding any hash from any network (ed2k link, torrent/magnet link or NeoMagnet link). NeoLoader will then look in NeoKad for other confirmed hashes this file has. Afterwards it will add all these hashes and download the file from multiple networks automatically* (if the respective networks are enabled).<br>
+<br>
+<br>
+* Note to advanced users:<br>
+A torrent can contain multiple files. Therefore, when adding an ed2k link (or Neo link) no multi file torrent downloads will be started automatically. To find multi-file torrents, which contain the same file, you can right-click on the download and use "Find Aliases" to search from them. You can then add these multi files containing your desired file as new additional downloads and stop all single files you don't want (within these newly added multi files). NeoLoader won't add the same file on your disk twice and in the representation of the Download list the single file will still be visible as a single file even though it has new sources from the multi file (and in the multi file the already existing single file won't be visible, except in the file details under "SubFiles"). We don't start downloads for corresponding multi files automatically because the torrent pieces don't stop at the file boundaries. Thus, adding multi files will very likely cause downloads of other files, which have data in the same piece as your desired file (especially with large torrent piece sizes this is very likely to happen). To prevent automatically downloading parts of files you don't know (which might cause legal/copyright problems) and because parts of these unknown files might in theory be malicious, we don't start these multi file downloads automatically.<br>
+Adding single file torrents or ed2k links (which represent a single file too) to an existing multi file download is straightforward and done automatically.
+<br>
+<br>
+Note that for this process to work the original Neo, who downloaded the file first and published the hash associations, doesn't have to be online anymore. The information will be stored on many other nodes in NeoKad.
+</p>	
+						
+					</div>
+				</div>
+				
+			</div>
+
+		</section>
+	</div>	
+
+</body>
+</html>

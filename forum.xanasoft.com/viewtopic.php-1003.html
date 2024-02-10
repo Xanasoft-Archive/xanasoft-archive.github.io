@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Enabling read-access in privacy mode</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Enabling read-access in privacy mode</h2>
+		<p><a href="viewtopic.php-181.html?f=13&amp;t=627">https://forum.xanasoft.com/viewtopic.php?f=13&amp;t=627</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Enabling read-access in privacy mode</h3>
+				<div class="date">Posted: <strong>Thu Jul 27, 2023 3:41 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">Your situation: You have enabled <a href="https://sandboxie-plus.github.io/sandboxie-docs/Content/PrivacyMode.html" class="postlink">privacy mode</a> and want to configure a sandbox so that processes can read files from a certain folder, while attempts to write to that folder are still redirected to the sandbox.<br>
+<br>
+Please note, that privacy mode requires a <a href="https://sandboxie-plus.com/supporter-certificate/" class="postlink">supporter certificate</a>, which can be obtained by <a href="https://github.com/sandboxie-plus/Sandboxie/blob/master/CONTRIBUTING.md" class="postlink">several means</a>.<br>
+<br>
+The goal:<br>
+Sandboxed process(es) in a privacy enhanced sandbox should be able to read files and folders in `C:\Users\[username]\Desktop` and when (new) files are saved to `C:\Users\[username]\Desktop` those are written to the folder in the sandbox. The folder is just an example and can be any folder that isn't available for reading in privacy mode.<br>
+<br>
+Example:<br>
+Notepad.exe reads C:\Users\[username]\Desktop\source.txt (outside the sandbox) and when saving C:\Users\[username]\Desktop\output.txt the file is saved, but not written to the actual location. It's supposed to get saved in the sandbox and could be recovered from there, if desired.<br>
+<br>
+The solution is to use <em class="text-italics">NormalFilePath</em><br>
+<br>
+To match my example, you have to set:
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>NormalFilePath=C:\Users\[username]\Desktop</code></pre></div>
+
+Instead of editing your Sandboxie.ini manually, you can set the same via the user interface by right-clicking on the sandbox to open the options, and then <em class="text-italics">Resource Access</em>. At the tab <em class="text-italics">Files</em> you have to add the file/folder you want to make readable and select  <em class="text-italics">Normal</em> for the access type.<br>
+<br>
+Here is the <a href="https://sandboxie-plus.github.io/sandboxie-docs/Content/NormalFilePath.html" class="postlink">documentation for the NormalFilePath</a>. Here is an <a href="https://sandboxie-plus.github.io/sandboxie-docs/Content/ResourceAccess.html" class="postlink">overview of resources access types</a>.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

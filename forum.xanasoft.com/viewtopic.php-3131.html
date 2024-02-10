@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Saving files outside of sandbox directly</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Saving files outside of sandbox directly</h2>
+		<p><a href="viewtopic.php-1185.html?f=14&amp;t=577">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=577</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Saving files outside of sandbox directly</h3>
+				<div class="date">Posted: <strong>Sat May 06, 2023 9:19 am</strong></div>
+				<div class="author">by <strong>n4b7</strong></div>
+				<div class="content">I have an application running in a sandbox and want to store some files (via the application's save as dialogue) outside of the sandbox <span style="text-decoration:underline">directly</span>, without using Sandboxies file recovery utility.<br>
+I therefore specified a directory (with access mode: open) under the sandbox options &gt; Resource Access &gt; Files<br>
+However, the files are still not stored directly on the disk, I still have to go through the recovery dialogue.<br>
+What am I doing wrong?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Saving files outside of sandbox directly</h3>
+				<div class="date">Posted: <strong>Mon May 08, 2023 4:56 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">If the application is located outside the sandbox (or even installed outside the sandbox), <div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>OpenFilePath=your_path</code></pre></div> should work.<br>
+<br>
+However, if you created a box and downloaded an application (or even installed it inside the sandbox), then making the folder accessible via OpenFilePath does not work, for security reasons. Using <div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>OpenPipePath=your_path</code></pre></div> allows programs located inside the sandbox to write to that path.<br>
+<br>
+Edit: In the modern UI, the access type is called "open for all". And <a href="https://sandboxie-plus.github.io/sandboxie-docs/Content/OpenPipePath.html" class="postlink">here is the documentation for OpenPipePath</a>.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Saving files outside of sandbox directly</h3>
+				<div class="date">Posted: <strong>Sat May 13, 2023 7:39 am</strong></div>
+				<div class="author">by <strong>n4b7</strong></div>
+				<div class="content">That worked! Thank you!</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

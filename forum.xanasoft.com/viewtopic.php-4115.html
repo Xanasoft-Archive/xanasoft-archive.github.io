@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; SBIE2224 error when trying to sandbox a game</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>SBIE2224 error when trying to sandbox a game</h2>
+		<p><a href="viewtopic.php-2879.html?f=14&amp;t=430">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=430</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>SBIE2224 error when trying to sandbox a game</h3>
+				<div class="date">Posted: <strong>Thu Aug 18, 2022 6:04 am</strong></div>
+				<div class="author">by <strong>Filtered</strong></div>
+				<div class="content">BlackXchg.aes (18980): SBIE2224 Sandboxed program has crashed: BlackXchg.aes [Test_Box_1]<br>
+<br>
+I get the above error when trying to run one of my games in Sandboxie Plus. This file resides within the game directory, so I'm stumped as to why it isn't able to run at all. I made a new box with the same isolation level as the DefualtBox, uninstalled the game within that box and then reinstalled the game. So by all means, it should theoretically work, should it not? Any insight into the issue would be greatly appreciated. I'm still new to sandboxing in general, so I don't know what's safe/unsafe to alter in the settings yet.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: SBIE2224 error when trying to sandbox a game</h3>
+				<div class="date">Posted: <strong>Sat Aug 20, 2022 3:16 pm</strong></div>
+				<div class="author">by <strong>Filtered</strong></div>
+				<div class="content">I managed to get BlackXchg.aes to stop crashing by removing the line in the ini file - Template=BlockPorts - but the game still throws an error saying that the anti cheat module isn't working properly and then closes the game out.<br>
+<br>
+I did stumble upon this github talking about a similar issue so I tried the couple of suggestions mentioned in there, but to no different outcome.<br>
+<a href="https://github.com/sandboxie-plus/Sandboxie/issues/1192" class="postlink">https://github.com/sandboxie-plus/Sandboxie/issues/1192</a><br>
+<br>
+Any other suggestions? Is this sort of thing still needing to be developed to be able to properly sandbox anti-cheat systems in games?</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

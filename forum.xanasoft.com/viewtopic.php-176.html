@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; sandboxie vs data stealers</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>sandboxie vs data stealers</h2>
+		<p><a href="viewtopic.php-68.html?f=12&amp;t=734">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=734</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>sandboxie vs data stealers</h3>
+				<div class="date">Posted: <strong>Thu Feb 01, 2024 10:04 pm</strong></div>
+				<div class="author">by <strong>Shuit</strong></div>
+				<div class="content">i would like to use wechat on my computer, but have seen several reports that wechat is kinda sketchy. if configured correctly, could sandboxie prevent wechat, or data stealers like which it has been claimed to be, from obtaining information on and about my computer? would it be better to just use a virtual machine like with virtualbox or to just forget about it?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: sandboxie vs data stealers</h3>
+				<div class="date">Posted: <strong>Fri Feb 02, 2024 7:13 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">By default, a sandbox can read, whatever the user that runs the sandbox has access to, but it's possible to configure a sandbox to be more restrictive. This can be done via <a href="https://sandboxie-plus.github.io/sandboxie-docs/Content/ResourceAccess.html" class="postlink">resource access settings</a>, like <a href="https://sandboxie-plus.github.io/sandboxie-docs/Content/ClosedFilePath.html" class="postlink">Closed File Path</a>, <a href="https://sandboxie-plus.github.io/sandboxie-docs/Content/ClosedKeyPath.html" class="postlink">Closed Key Path</a> and <a href="https://sandboxie-plus.github.io/sandboxie-docs/Content/ClosedIpcPath.html" class="postlink">Closed IPC Path</a>.<br>
+<br>
+One feature that got added, still somewhat recently, is the <a href="https://sandboxie-plus.github.io/sandboxie-docs/PlusContent/privacy-mode.html" class="postlink">privacy mode</a>, which restricts access to generic windows location, while denying access to user data, unless the user configures it to be open. This feature requires a <a href="https://sandboxie-plus.com/supporter-certificate/" class="postlink">supporter certificate</a>. Even this feature will allow software to see other software being installed in "Program Files" and "Program Files (x86)". This can be reduced by not allowing some of those to be read via the access rules.<br>
+<br>
+Sandboxie probably won't make it harder for software to obtain information on what kind of device it is running on, e.g. Windows version, amount of RAM, CPU type.<br>
+<br>
+A virtual machine seems like a good idea to me, since that works differently as it provides a whole environment and does not rely on the host, as much. BTW, Sandboxie can be installed inside virtual machines.<br>
+<br>
+I can't comment on the chatting software, which certainly can be restricted by Sandboxie, but depending on your threat model, it might not be enough. The same is most likely true for info/data stealers.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

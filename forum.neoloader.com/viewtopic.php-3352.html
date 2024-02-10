@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; NeoLoader 0.31a Bug List - Page 2</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>NeoLoader 0.31a Bug List</h2>
+		<p><a href="viewtopic.php-1080.html?f=171&amp;t=3269">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3269</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>2</strong> of <strong>3</strong></div>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri May 10, 2013 9:04 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">0.31a fix list will be uplaoded soon<br><br>- Unstable download speed, same as upload, tested with linux distros. Upload is really really bad regarding torrent.<br>-- Stability improved in 0.31a using using more mule like timins on socket ratecontroll.<br>- Ed2k download is not working<br>--Should be fixed in 0.31a<br>- NeoKad search is not working (verified by me, reported by: enOehTsIsihT, thanks)<br>-- NeoKad should connect faster in 0.31a<br>- NeoLoader hashes every file that found with MuleKad search!! You can see this in log, this have to be fixed asap.<br>-- fixed in 0.31a<br>- Hashes every time shared files on startup<br>-- fixed in 0.31a<br>In other words the duplicate status should not be propagated to the multi file torrent containing the duplicate.<br>- Video Player is not working, I wish you will remove it :\<br>-- In the new updater/feature manager there will be an option wather to install the player or not.<br>- Crash (with .dmp) adding a torrent file. [Magnet links work correctly that's why I don't mark red this one]<br>-- fixed in 0.31a<br>- Double log line on multiple torrent corrupted part. 1 for folder that is useless and 1 for file that is correct/useful one<br>-- that is intended this way, for a normal multi file torent it does not make much sense, but when there will be more files in kad and the sub files will get ed2k hashes associated befoure completion its important to have logging for booth sub files and parent multi files.<br>- When paused files it still download/upload datas. Stop work correctly<br>-- the download will nto stop in place, outstanding requests will be allowed to compelte also uploads will be finished.<br>- ed2k file sharing bug --&gt; NeoLoader 0.31 Bug List (thx @enOehTsIsihT)<br>-- It actually is intended this way, the Share on Ed2k flag is set when the first time a file is seed by Neo, and it remains as it is set for ever unless the user changes it manually.<br>By deactivating default share on ed2k files that was granted ed2k shgaring will not be revoked this status.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri May 10, 2013 9:24 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content"><blockquote class="uncited"><div>- With 2 multitorrent can happen that there is a file with same name/hash but in 2 different folder of the 2 different torrent. NeoLoader don't share it when see same filename or same hash (it happened with a .txt)<br>-- The duplicate file isn&#8217;t shared on ED2K or NeoShare but booth torretns should be fully shared on BitTorrent<br>In other words the duplicate status should not be propagated to the multi file torrent containing the duplicate.</div></blockquote><br>I explained better on skype, will update it if needed in next version bug list</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri May 10, 2013 10:21 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Bug list updated <img class="smilies" src="./images/smilies/smile.png" alt=":)" title=":)"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri May 10, 2013 11:43 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>enOehTsIsihT wrote:</cite>"Delete file" has  a bug.<br><br>video<br><br>clip0018.7z (1.4 MB)<br><a href="https://mega.co.nz/#!NlMUVASY!G4-dq2o87Yt4fF56cxbiNXsYubkAbA98XK6c7hB3VDs" class="postlink">https://mega.co.nz/#!NlMUVASY!G4-dq2o87Yt4fF56cxbiNXsYubkAbA98XK6c7hB3VDs</a></div></blockquote>
+<br>
+<br>link has changed.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri May 10, 2013 6:13 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">Does Neoloader's bitTorrent support Unicode?<br><br>Some files's name(bitTorrent download) do not display.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri May 10, 2013 8:11 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content"><blockquote><div><cite>enOehTsIsihT wrote:</cite>Does Neoloader's bitTorrent support Unicode?<br><br>Some files's name(bitTorrent download) do not display.</div></blockquote><br><br>I don't know but if some files's name don't display probably not :\</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat May 11, 2013 1:49 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">I have no idea why it produced</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat May 11, 2013 2:25 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>0.31a fix list will be uplaoded soon<br><br>- Unstable download speed, same as upload, tested with linux distros. Upload is really really bad regarding torrent.<br>-- Stability improved in 0.31a using using more mule like timins on socket ratecontroll.<br>- Ed2k download is not working<br>--Should be fixed in 0.31a<br>- NeoKad search is not working (verified by me, reported by: enOehTsIsihT, thanks)<br>-- NeoKad should connect faster in 0.31a<br>- NeoLoader hashes every file that found with MuleKad search!! You can see this in log, this have to be fixed asap.<br>-- fixed in 0.31a<br>[color="#FF0000"]- Hashes every time shared files on startup<br>-- fixed in 0.31a[/color]<br>In other words the duplicate status should not be propagated to the multi file torrent containing the duplicate.<br>- Video Player is not working, I wish you will remove it :\<br>-- In the new updater/feature manager there will be an option wather to install the player or not.<br>- Crash (with .dmp) adding a torrent file. [Magnet links work correctly that's why I don't mark red this one]<br>-- fixed in 0.31a<br>- Double log line on multiple torrent corrupted part. 1 for folder that is useless and 1 for file that is correct/useful one<br>-- that is intended this way, for a normal multi file torent it does not make much sense, but when there will be more files in kad and the sub files will get ed2k hashes associated befoure completion its important to have logging for booth sub files and parent multi files.<br>- When paused files it still download/upload datas. Stop work correctly<br>-- the download will nto stop in place, outstanding requests will be allowed to compelte also uploads will be finished.<br>- ed2k file sharing bug --&gt; NeoLoader 0.31 Bug List (thx @enOehTsIsihT)<br>-- It actually is intended this way, the Share on Ed2k flag is set when the first time a file is seed by Neo, and it remains as it is set for ever unless the user changes it manually.<br>By deactivating default share on ed2k files that was granted ed2k shgaring will not be revoked this status.</div></blockquote>
+<br>
+<br>The file had be hashed.
+<br>
+<br>After Neoloader restarted,Neoloader hashes the file again.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat May 11, 2013 3:54 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">Neoloader uses BitTorrent to download in windows xp.
+<br>
+<br>Neoloader can be crashed .</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat May 11, 2013 1:10 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">NeoLoader 0.31b
+<br>
+<br>Neoloader downloads "Test File for Neo Share".
+<br>
+<br>After Neoloader restarted,Neoloader can be crashed.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>2</strong> of <strong>3</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

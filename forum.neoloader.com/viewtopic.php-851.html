@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; Compilation</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>Compilation</h2>
+		<p><a href="viewtopic.php-141.html?f=170&amp;t=6809">http://forum.neoloader.com/viewtopic.php?f=170&amp;t=6809</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Compilation</h3>
+				<div class="date">Posted: <strong>Sat Aug 22, 2015 4:34 am</strong></div>
+				<div class="author">by <strong>mph</strong></div>
+				<div class="content">I am looking to compile this to a *nix system other than Ubuntu. Is there any documentation on compilation?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Compilation</h3>
+				<div class="date">Posted: <strong>Sat Aug 22, 2015 12:16 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">No not really, my own notes are as follows:<br><br>Ubuntu 12 64 bit Qt5 unix build<br><br><br>pre-build steps:<br>	install qt using *.run file<br><br>install rabbitvcs: <br>		sudo add-apt-repository ppa:rabbitvcs/ppa<br>			or deb <!-- m --><a class="postlink" href="http://ftp.de.debian.org/debian">http://ftp.de.debian.org/debian</a><!-- m --> wheezy main<br>		sudo apt-get update<br>sudo apt-get install rabbitvcs-cli rabbitvcs-core rabbitvcs-gedit rabbitvcs-nautilus3<br><br>old<br>		sudo apt-get install rabbitvcs-nautilus3<br>or<br>sudo apt-get install rabbitvcs-core rabbitvcs-nautilus rabbitvcs-gedit rabbitvcs-cli<br><br>	install g++<br>		sudo apt-get install g++<br>//sudo apt-get install g++-4.6<br>//sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.6 10<br>//sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.6 10<br>		sudo apt-get install libxext-dev<br>	   	sudo apt-get install libssl-dev<br>sudo apt-get install libfuse-dev<br><br>install open gl<br>		sudo apt-get install libgl-dev<br>or<br>		apt-get install libgl1-mesa-dev<br> <br>	Install boost regex<br>		sudo apt-get install libboost-regex-dev<br><br><br>build steps:<br>	• Build Crypto++: <br>		./NeoLoader/crypto++$ make libcryptopp.so<br>	• Build V8:<br>git clone <!-- m --><a class="postlink" href="https://chromium.googlesource.com/chromium/tools/depot_tools.git">https://chromium.googlesource.com/chrom ... _tools.git</a><!-- m --><br><br>PATH=&quot;$HOME/Projects/Google/depot_tools:$PATH&quot;<br>Fetch v8<br><br>		./NeoLoader/v8$ make dependencies<br>		./NeoLoader/v8$ make x64.release library=shared<br>				make ia32.release library=shared<br><br><br>For V8 32 on 64<br>$ sudo apt-get install build-essential<br>$ sudo apt-get install libc6-dev-i386<br>$ sudo apt-get install g++-4.6-multilib<br><br><br>	• Build 7z<br>		./NeoLoader/7-Zip/p7zip_9.20.1$ make 7z<br>	• Building sqlite3<br>		gcc -c sqlite3.c -fpic<br>		gcc -shared -o libsqlite3.so sqlite3.o<br>	• Build utp:<br>		./NeoLoader/utp$ make<br><br>	• Build NeoLoader using Qt Creator<br> </div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

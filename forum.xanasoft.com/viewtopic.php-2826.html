@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Problem: Specific VST plugin does not work, when run in compartment sandbox</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Problem: Specific VST plugin does not work, when run in compartment sandbox</h2>
+		<p><a href="viewtopic.php-1094.html?f=14&amp;t=419">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=419</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Problem: Specific VST plugin does not work, when run in compartment sandbox</h3>
+				<div class="date">Posted: <strong>Thu Aug 04, 2022 6:13 pm</strong></div>
+				<div class="author">by <strong>Pebbles</strong></div>
+				<div class="content">Problem: the VST plugin suite "Captain Plugins" does not work in the DAW FL Studio, when running in sandboxed mode. The plugins only display a black window. They work fine if installed and run on a system where the host is unsandboxed.<br>
+I use an application compartment sandbox. Firewall is open both inside and outside the sandbox.<br>
+Sandboxie-Plus 1.2.7, Windows 10.<br>
+<br>
+To reproduce:<br>
+1. Download and install in a sandbox FL Studio trial from here: <a href="https://www.image-line.com/fl-studio-download/" class="postlink">https://www.image-line.com/fl-studio-download/</a><br>
+2. Install to same sandbox the VST plugin "Captain Plugins"  which can be downloaded here: <a href="https://mixedinkey.com/captain-plugins-download/" class="postlink">https://mixedinkey.com/captain-plugins-download/</a><br>
+3. Inside FL Studio, search for VSTs on the system, flag the Captain plugins for use (Captain Chords, Captain Melody, etc). (This step is probably the trickiest, if someone is not at all familiar with DAWs or FL Studio.)<br>
+4. Add one of the plugins to the channel rack in FL Studio, for example "Captain Melody".<br>
+<br>
+The plugin window now comes up, but is only black. All other plugins I've tested work, but the Captain Plugins are a bit more involved. Aside from the regular vst .dll or .vst3 file that make up most plugins, the Captain suite comes with a bunch of extra files and dependencies. They also need to go online in order to function properly, because they communicate with a server for part of their functionality.<br>
+<br>
+The tracelog below is for the sandbox running FL64.exe, the main executable for FL Studio and host to the plugins, as I try to add the VST.<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>|Process|                               |Type|                    |Status|    |Value|                                                                                                     
+
+FL64.exe (3340, 8832) - 20:03:28.683    Ipc (U)                               \Sessions\1\BaseNamedObjects\1ImmersiveFocusTrackingActiveEvent                                             
+FL64.exe (3340, 8832) - 20:03:28.683    WinClass (U)              (4)         TQuickPopupMenuWindow                                                                                       
+FL64.exe (3340, 8832) - 20:03:28.794    Ipc (U)                               \Sessions\1\BaseNamedObjects\1ImmersiveFocusTrackingActiveEvent                                             
+FL64.exe (3340, 8832) - 20:03:32.365    Ipc (U)                               \Sessions\1\BaseNamedObjects\1ImmersiveFocusTrackingActiveEvent                                             
+FL64.exe (3340, 8832) - 20:03:32.466    WinClass (U)              (6)         TPUtilWindow                                                                                                
+FL64.exe (3340, 8832) - 20:03:32.527    WinClass (U)              (4)         TSynthEditorForm                                                                                            
+FL64.exe (3340, 8832) - 20:03:32.537    WinClass (U)              (4)         TWrapperSynthPanel                                                                                          
+FL64.exe (3340, 8832) - 20:03:32.537    WinClass (U)              (4)         TVectorPanel                                                                                                
+FL64.exe (3340, 8832) - 20:03:32.537    WinClass (U)              (4)         TQuickSheetSelector                                                                                         
+FL64.exe (3340, 8832) - 20:03:32.547    WinClass (U)              (2)         TPUtilWindow                                                                                                
+FL64.exe (3340, 8832) - 20:03:32.608    WinClass (U)              (2)         TPluginForm                                                                                                 
+FL64.exe (3340, 8832) - 20:03:32.608    WinClass (U)              (2)         TVectorSheet                                                                                                
+FL64.exe (3340, 8832) - 20:03:32.608    WinClass (U)              (2)         TQuickTabSelector                                                                                           
+FL64.exe (3340, 8832) - 20:03:32.618    WinClass (U)              (2)         TPUtilWindow                                                                                                
+FL64.exe (3340, 8832) - 20:03:32.629    WinClass (U)              (2)         TVectorPanel                                                                                                
+FL64.exe (3340, 8832) - 20:03:32.629    WinClass (U)              (2)         TQuickSheetSelector                                                                                         
+FL64.exe (3340, 8832) - 20:03:32.689    WinClass (U)              (2)         TVectorSheet                                                                                                
+FL64.exe (3340, 8832) - 20:03:32.689    WinClass (U)              (4)         TVectorPanel                                                                                                
+FL64.exe (3340, 8832) - 20:03:32.689    WinClass (U)              (2)         TPluginForm                                                                                                 
+FL64.exe (3340, 8832) - 20:03:32.689    WinClass (U)              (2)         TVectorPanel                                                                                                
+FL64.exe (3340, 8832) - 20:03:32.689    WinClass (U)              (2)         TQuickSheetSelector                                                                                         
+FL64.exe (3340, 8832) - 20:03:32.689    WinClass (U)              (2)         TVectorSheet                                                                                                
+FL64.exe (3340, 8832) - 20:03:32.689    WinClass (U)              (2)         TVectorPanel                                                                                                
+FL64.exe (3340, 8832) - 20:03:32.689    WinClass (U)              (2)         TQuickStringGrid                                                                                            
+FL64.exe (3340, 8832) - 20:03:32.689    WinClass (U)              (2)         TVectorSheet                                                                                                
+FL64.exe (3340, 8832) - 20:03:32.699    WinClass (U)              (2)         TWrapperSynthPanel                                                                                          
+FL64.exe (3340, 8832) - 20:03:32.699    Ipc (U)                   (2)         \Sessions\1\BaseNamedObjects\d0cHWNDInterface:41662                                                         
+FL64.exe (3340, 8832) - 20:03:32.699    WinClass (U)              Open (3)    ApplicationManager_DesktopShellWindow                                                                       
+FL64.exe (3340, 8832) - 20:03:32.710    WinClass (U)              (2)         TNewCaption                                                                                                 
+FL64.exe (3340, 8832) - 20:03:32.710    WinClass (U)              (2)         TWinControlProxy                                                                                            
+FL64.exe (3340, 8832) - 20:03:32.710    Ipc (U)                   (2)         \Sessions\1\BaseNamedObjects\d0cHWNDInterface:4162a                                                         
+FL64.exe (3340, 8832) - 20:03:32.710    WinClass (U)              Open (3)    ApplicationManager_DesktopShellWindow                                                                       
+FL64.exe (3340, 8832) - 20:03:32.720    Ipc (U)                   (2)         \Sessions\1\BaseNamedObjects\1ImmersiveFocusTrackingActiveEvent                                             
+FL64.exe (3340, 8832) - 20:03:32.750    WinClass (U)              (2)         TVectorPanel                                                                                                
+FL64.exe (3340, 8832) - 20:03:32.750    WinClass (U)              (2)         TQuickSheetSelector                                                                                         
+FL64.exe (3340, 8832) - 20:03:32.750    Ipc (U)                               \Sessions\1\BaseNamedObjects\Global\{0077550B-89BA-4976-AA19-36EA3699C6A5} - Captain                        
+FL64.exe (3340, 8832) - 20:03:32.781    Ipc (U)                               \Sessions\1\BaseNamedObjects\Global\Cor_Private_IPCBlock_v4_3340                                            
+FL64.exe (3340, 8832) - 20:03:32.781    Ipc (U)                               Cor_SxSPublic_IPCBlock                                                                                      
+FL64.exe (3340, 8832) - 20:03:32.781    Ipc (U)                   Open        \KernelObjects\LowMemoryCondition                                                                           
+FL64.exe (3340, 8832) - 20:03:33.132    Ipc (U)                               \Sessions\1\BaseNamedObjects\Global\KFIPersonal                                                             
+FL64.exe (3340, 12272) - 20:03:33.132   Ipc / 區荈⃬䡥ҋ蠥䠀�譈曑裿Ǥ (U)   Open        \RPC Control\LSARPC_ENDPOINT                                                                                
+FL64.exe (3340, 12272) - 20:03:33.132   Ipc (U)                               \Sessions\1\BaseNamedObjects\Global\CPFATE_3340_v4.0.30319                                                  
+FL64.exe (3340, 8832) - 20:03:33.193    Ipc / 區荈⃬䡥ҋ蠥䠀�譈曑裿Ǥ (U)   Open        \BaseNamedObjects\FontCachePort                                                                             
+FL64.exe (3340, 8832) - 20:03:33.293    WinClass (U)              (2)         ATL:00007FFA1AD65A20                                                                                        
+FL64.exe (3340, 8832) - 20:03:33.394    WinClass (U)              (4)         TVSTPanel                                                                                                   
+FL64.exe (3340, 8832) - 20:03:33.394    Ipc (U)                               \Sessions\1\BaseNamedObjects\Local\UrlZonesSM_Dark                                                          
+FL64.exe (3340, 8832) - 20:03:33.394    Ipc (U)                               \Sessions\1\BaseNamedObjects\Local\ZonesCacheCounterMutex                                                   
+FL64.exe (3340, 8832) - 20:03:33.394    Ipc (U)                               \Sessions\1\BaseNamedObjects\Local\ZonesLockedCacheCounterMutex                                             
+FL64.exe (3340, 8832) - 20:03:33.455    WinClass (U)              (2)         HwndWrapper[CaptainEpicDomain;;0618f7ff-f967-4898-b4b5-d6602508e7bd]                                        
+FL64.exe (3340, 27672) - 20:03:33.606   Ipc / 荈⣬譌䣉쪋懨슀䧿톋譈䗈쀳䏨 (U)               \BaseNamedObjects\C:*ProgramData*Microsoft*Windows*Caches*cversions.2.ro                                    
+FL64.exe (3340, 27672) - 20:03:33.606   Ipc / 荈⣬譌䣉쪋懨슀䧿톋譈䗈쀳䏨 (U)               \Sessions\1\BaseNamedObjects\C:*ProgramData*Microsoft*Windows*Caches*cversions.2.ro                         
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc / 區荈⃬䡥ҋ蠥䠀�譈曑裿Ǥ (U)   Open        \RPC Control\dhcpcsvc6                                                                                      
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc / 區荈⃬䡥ҋ蠥䠀�譈曑裿Ǥ (U)   Open        \RPC Control\dhcpcsvc                                                                                       
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE\NETBT_TCPIP_{649BBD98-ECB1-425D-A255-BBEA18B0C24E}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{649BBD98-ECB1-425D-A255-BBEA18B0C24E}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE\NETBT_TCPIP_{DBFC91FD-7D79-4A2D-908C-090505499E70}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{DBFC91FD-7D79-4A2D-908C-090505499E70}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE\NETBT_TCPIP_{518BC0C4-E88C-476C-BD17-149174B2E6A0}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{518BC0C4-E88C-476C-BD17-149174B2E6A0}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE\NETBT_TCPIP_{D82874FD-BEA0-4F1B-8000-7EB90B250B30}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{D82874FD-BEA0-4F1B-8000-7EB90B250B30}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE\NETBT_TCPIP_{D30857CE-D2BD-4EE3-B34E-E9B0F1A3B23B}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{D30857CE-D2BD-4EE3-B34E-E9B0F1A3B23B}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE\NETBT_TCPIP_{05CFF98D-F5EC-4B2A-B417-C168E5CB8861}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{05CFF98D-F5EC-4B2A-B417-C168E5CB8861}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE\NETBT_TCPIP_{99853666-5544-496F-A27E-21211A6BCACB}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{99853666-5544-496F-A27E-21211A6BCACB}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE\NETBT_TCPIP_{D6D86EFD-4CD2-442D-B9F2-C99C67F1A0F7}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{D6D86EFD-4CD2-442D-B9F2-C99C67F1A0F7}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE\NETBT_TCPIP_{725D00D1-138F-42E5-A928-9A128E2587AC}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{725D00D1-138F-42E5-A928-9A128E2587AC}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE\NETBT_TCPIP_{27250A93-A725-4935-96FD-F074DEF17A71}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{27250A93-A725-4935-96FD-F074DEF17A71}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE\NETBT_TCPIP_{58890A74-12D0-4C61-96CD-51CAA1226B86}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{58890A74-12D0-4C61-96CD-51CAA1226B86}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE\NETBT_TCPIP_{57A133FE-F27A-467D-A2F3-E1CC7600F61B}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{57A133FE-F27A-467D-A2F3-E1CC7600F61B}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc / 區荈⃬䡥ҋ蠥䠀�譈曑裿Ǥ (U)   Open        \RPC Control\dhcpcsvc6                                                                                      
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc / 區荈⃬䡥ҋ蠥䠀�譈曑裿Ǥ (U)   Open        \RPC Control\dhcpcsvc                                                                                       
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE\NETBT_TCPIP_{649BBD98-ECB1-425D-A255-BBEA18B0C24E}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{649BBD98-ECB1-425D-A255-BBEA18B0C24E}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE\NETBT_TCPIP_{DBFC91FD-7D79-4A2D-908C-090505499E70}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{DBFC91FD-7D79-4A2D-908C-090505499E70}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE\NETBT_TCPIP_{518BC0C4-E88C-476C-BD17-149174B2E6A0}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{518BC0C4-E88C-476C-BD17-149174B2E6A0}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE\NETBT_TCPIP_{D82874FD-BEA0-4F1B-8000-7EB90B250B30}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{D82874FD-BEA0-4F1B-8000-7EB90B250B30}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE\NETBT_TCPIP_{D30857CE-D2BD-4EE3-B34E-E9B0F1A3B23B}                                                  
+FL64.exe (3340, 8832) - 20:03:33.758    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.758    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{D30857CE-D2BD-4EE3-B34E-E9B0F1A3B23B}                                                  
+FL64.exe (3340, 8832) - 20:03:33.759    Ipc (U)                               \DEVICE\NETBT_TCPIP_{05CFF98D-F5EC-4B2A-B417-C168E5CB8861}                                                  
+FL64.exe (3340, 8832) - 20:03:33.759    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.759    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{05CFF98D-F5EC-4B2A-B417-C168E5CB8861}                                                  
+FL64.exe (3340, 8832) - 20:03:33.759    Ipc (U)                               \DEVICE\NETBT_TCPIP_{99853666-5544-496F-A27E-21211A6BCACB}                                                  
+FL64.exe (3340, 8832) - 20:03:33.759    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.759    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{99853666-5544-496F-A27E-21211A6BCACB}                                                  
+FL64.exe (3340, 8832) - 20:03:33.759    Ipc (U)                               \DEVICE\NETBT_TCPIP_{D6D86EFD-4CD2-442D-B9F2-C99C67F1A0F7}                                                  
+FL64.exe (3340, 8832) - 20:03:33.759    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.759    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{D6D86EFD-4CD2-442D-B9F2-C99C67F1A0F7}                                                  
+FL64.exe (3340, 8832) - 20:03:33.759    Ipc (U)                               \DEVICE\NETBT_TCPIP_{725D00D1-138F-42E5-A928-9A128E2587AC}                                                  
+FL64.exe (3340, 8832) - 20:03:33.759    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.759    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{725D00D1-138F-42E5-A928-9A128E2587AC}                                                  
+FL64.exe (3340, 8832) - 20:03:33.759    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.759    Ipc (U)                               \DEVICE\NETBT_TCPIP_{27250A93-A725-4935-96FD-F074DEF17A71}                                                  
+FL64.exe (3340, 8832) - 20:03:33.759    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.759    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{27250A93-A725-4935-96FD-F074DEF17A71}                                                  
+FL64.exe (3340, 8832) - 20:03:33.759    Ipc (U)                               \DEVICE\NETBT_TCPIP_{58890A74-12D0-4C61-96CD-51CAA1226B86}                                                  
+FL64.exe (3340, 8832) - 20:03:33.759    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.759    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{58890A74-12D0-4C61-96CD-51CAA1226B86}                                                  
+FL64.exe (3340, 8832) - 20:03:33.759    Ipc (U)                               \DEVICE\NETBT_TCPIP_{57A133FE-F27A-467D-A2F3-E1CC7600F61B}                                                  
+FL64.exe (3340, 8832) - 20:03:33.759    Ipc (U)                               \DEVICE                                                                                                     
+FL64.exe (3340, 8832) - 20:03:33.759    Pipe / Pipe (U)           Open        \Device\NetBT_Tcpip_{57A133FE-F27A-467D-A2F3-E1CC7600F61B}                                                  
+FL64.exe (3340, 8832) - 20:03:33.759    Ipc / 區荈⃬䡥ҋ蠥䠀�譈曑裿Ǥ (U)   Open        \RPC Control\dhcpcsvc6                                                                                      
+FL64.exe (3340, 8832) - 20:03:33.759    RtClass (U)                           Windows.Foundation.Diagnostics.AsyncCausalityTracer                                                         
+FL64.exe (3340, 8832) - 20:03:34.011    WinClass (U)              (2)         HwndWrapper[CaptainEpicDomain;;677e36fc-5c29-47f3-a2f3-f6e67eb410da]                                        
+FL64.exe (3340, 8832) - 20:03:34.113    Ipc (U)                               \Sessions\1\BaseNamedObjects\1ImmersiveFocusTrackingActiveEvent                                             
+FL64.exe (3340, 8832) - 20:03:34.364    WinClass (U)              (2)         HwndWrapper[CaptainEpicDomain;;fbf83262-a128-4e26-889f-256844f1f807]                                        
+FL64.exe (3340, 4756) - 20:03:34.364    Ipc (U)                   Open        \Sessions\1\BaseNamedObjects\Local\__DDrawExclMode__                                                        
+FL64.exe (3340, 4756) - 20:03:34.364    Ipc (U)                   Open        \Sessions\1\BaseNamedObjects\__DDrawExclMode__                                                              
+FL64.exe (3340, 4756) - 20:03:34.364    Ipc (U)                   Open        \Sessions\1\BaseNamedObjects\Local\__DDrawCheckExclMode__                                                   
+FL64.exe (3340, 4756) - 20:03:34.364    Ipc (U)                   Open        \Sessions\1\BaseNamedObjects\__DDrawCheckExclMode__                                                         
+FL64.exe (3340, 4756) - 20:03:34.364    Ipc (U)                               \Sessions\1\BaseNamedObjects\Local\SM0:3340:304:WilStaging_02                                               
+FL64.exe (3340, 4756) - 20:03:34.364    Ipc (U)                               \Sessions\1\BaseNamedObjects\SM0:3340:304:WilStaging_02_p0                                                  
+FL64.exe (3340, 4756) - 20:03:34.364    Ipc (U)                               \Sessions\1\BaseNamedObjects\SM0:3340:304:WilStaging_02_p0h                                                 
+FL64.exe (3340, 4756) - 20:03:34.395    Ipc / 區荈⃬䡥ҋ蠥䠀�譈曑裿Ǥ (U)   Open        \RPC Control\SbieSvcPort                                                                                    
+FL64.exe (3340, 8832) - 20:03:35.050    WinClass (U)              (2)         HwndWrapper[CaptainEpicDomain;;f73fb862-8113-455f-b040-af11de0788de]                                        
+FL64.exe (3340, 8832) - 20:03:35.050    Ipc / 區荈⃬䡥ҋ蠥䠀�譈曑裿Ǥ (U)   (4)         \RPC Control\LSMApi                                                                                         
+FL64.exe (3340, 8832) - 20:03:35.050    WinClass (U)              (2)         HwndWrapper[CaptainEpicDomain;;f36b40da-d43d-4961-916f-2f224db4bc44]                                        
+FL64.exe (3340, 8832) - 20:03:35.060    Ipc / 區荈⃬䡥ҋ蠥䠀�譈曑裿Ǥ (U)   (4)         \RPC Control\LSMApi                                                                                         
+FL64.exe (3340, 8832) - 20:03:35.060    Ipc (U)                   (2)         \Sessions\1\BaseNamedObjects\d0cHWNDInterface:21636                                                         
+FL64.exe (3340, 8832) - 20:03:35.060    WinClass (U)              Open (9)    ApplicationManager_DesktopShellWindow                                                                       
+FL64.exe (3340, 8832) - 20:03:35.101    WinClass (U)              (2)         HwndWrapper[CaptainEpicDomain;;9d039fe3-541d-457e-b743-fa51a612beb7]                                        
+FL64.exe (3340, 8832) - 20:03:35.111    Ipc / 區荈⃬䡥ҋ蠥䠀�譈曑裿Ǥ (U)   (4)         \RPC Control\LSMApi                                                                                         
+FL64.exe (3340, 8832) - 20:03:35.111    WinClass (U)              (2)         HwndWrapper[CaptainEpicDomain;;b5604b54-482a-4760-b539-6b3c471af9b1]                                        
+FL64.exe (3340, 8832) - 20:03:35.121    Ipc / 區荈⃬䡥ҋ蠥䠀�譈曑裿Ǥ (U)   (4)         \RPC Control\LSMApi                                                                                         
+FL64.exe (3340, 8832) - 20:03:35.121    Ipc (U)                   (2)         \Sessions\1\BaseNamedObjects\d0cHWNDInterface:31636                                                         
+FL64.exe (3340, 8832) - 20:03:35.131    WinClass (U)              Open (3)    ApplicationManager_DesktopShellWindow                                                                       
+FL64.exe (3340, 8832) - 20:03:35.131    WinClass (U)              (2)         HwndWrapper[CaptainEpicDomain;;9230a0af-789a-4acd-9cbc-54a12658d873]                                        
+FL64.exe (3340, 26576) - 20:03:35.282   WinClass (U)              (2)         HwndWrapper[CaptainEpicDomain;;01fd4c94-8029-4e69-a07a-5b252ed2ee35]                                        
+FL64.exe (3340, 4756) - 20:03:35.454    Ipc / 區荈⃬䡥ҋ蠥䠀�譈曑裿Ǥ (U)               \RPC Control\LRPC-e2691546853d69ec3c                                                                        
+FL64.exe (3340, 4756) - 20:03:35.454    Ipc (U)                   (2)         \Sessions\1\BaseNamedObjects\CDdf212806D6EmB31yE0c                                                          
+FL64.exe (3340, 4756) - 20:03:35.454    Ipc (U)                   Open (2)    \Sessions\1\BaseNamedObjects\DWM_DX_FULLSCREEN_TRANSITION_EVENT                                             
+FL64.exe (3340, 8832) - 20:03:35.555    WinClass (U)              (3)         MSCTFComposition                                                                                            
+FL64.exe (3340, 8832) - 20:03:35.555    Ipc (U)                               \Sessions\1\BaseNamedObjects\Local\SM0:3340:120:WilError_03                                                 
+FL64.exe (3340, 9228) - 20:03:39.357    Ipc / 區荈⃬䡥ҋ蠥䠀�譈曑裿Ǥ (U)   Open        \RPC Control\webcache_{031b98cf-4a69-4c31-ab42-fd9b3c199407}_S-1-5-21-1671330709-1872611643-89555261-1001   
+FL64.exe (3340, 9228) - 20:03:39.357    Ipc (U)                               \Sessions\1\BaseNamedObjects\Local\SM0:3340:304:WilStaging_02                                               
+FL64.exe (3340, 9228) - 20:03:39.357    Ipc (U)                               \Sessions\1\BaseNamedObjects\SM0:3340:304:WilStaging_02_p0                                                  
+FL64.exe (3340, 9228) - 20:03:39.357    Ipc (U)                               \Sessions\1\BaseNamedObjects\SM0:3340:304:WilStaging_02_p0h                                                 
+FL64.exe (3340, 29352) - 20:03:39.357   Ipc (U)                               \Device\Afd\Endpoint                                                                                        
+FL64.exe (3340, 29352) - 20:03:39.357   Ipc (U)                               \Device\Afd                                                                                                 
+FL64.exe (3340, 29352) - 20:03:39.357   Ipc (U)                               \Device                                                                                                     
+FL64.exe (3340, 29352) - 20:03:39.357   Pipe / Pipe (U)           Open        \Device\Afd                                                                                                 
+FL64.exe (3340, 9228) - 20:03:39.357    Ipc / 區荈⃬䡥ҋ蠥䠀�譈曑裿Ǥ (U)   Open        \RPC Control\SbieSvcPort                                                                                    
+FL64.exe (3340, 9228) - 20:03:39.357    Ipc / 區荈⃬䡥ҋ蠥䠀�譈曑裿Ǥ (U)               \RPC Control\LRPC-d3ec5fc94039cba6a7                                                                        
+FL64.exe (3340, 20080) - 20:03:39.357   Ipc / 區荈⃬䡥ҋ蠥䠀�譈曑裿Ǥ (U)   Open        \RPC Control\SbieSvcPort                                                                                    
+FL64.exe (3340, 13332) - 20:03:44.383   Ipc / 荈⣬譌䣉쪋懨슀䧿톋譈䗈쀳䏨 (U)               \BaseNamedObjects\F932B6C7-3A20-46A0-B8A0-8894AA421973       </code></pre></div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Problem: Specific VST plugin does not work, when run in compartment sandbox</h3>
+				<div class="date">Posted: <strong>Sun Jul 16, 2023 7:05 am</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">If you still have this issue with a recent version of Sandboxie, please speak up again.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; 0.49 Bugs - Page 3</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>0.49 Bugs</h2>
+		<p><a href="viewtopic.php-198.html?f=171&amp;t=3528">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3528</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>3</strong> of <strong>9</strong></div>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Dec 21, 2014 6:48 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>Continuer wrote:</cite><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>magnet:?xt=urn:&#91;color="#FF0000"&#93;btih&#91;/color&#93;:2dd45004684b8e1288d806b77191fd72ffce0892&xt=urn:&#91;color="#0000FF"&#93;ed2k&#91;/color&#93;:b8f2989ac52c7893de4e7e600a814c3d&tr.0=http://tracker.ktxp.com:6868/announce&tr.1=udp://tracker.ktxp.com:6868/announce</code></div><br>I download files those have both btih&ed2k hash via magnet like above.<br>After I try to switch between BT and eMule Network protocol, NL Crashed<br><br>dump file attached<br>[ATTACH]646[/ATTACH]</div></blockquote><br><br>fixed in next beta, by delaying operation until torrent meta data are got<br><br>//bug list up to date</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Dec 21, 2014 7:26 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>Continuer wrote:</cite>Neoloader crash when I creat torrent of a folder that is already in bittorrent network<br>then NL crash again and again in the process of restarting it.<br>[ATTACH]644[/ATTACH]<br>[ATTACH]645[/ATTACH]</div></blockquote>
+<br>
+<br>test if it works with the 0.50 beta should be fixed</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Dec 21, 2014 9:22 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>enOehTsIsihT wrote:</cite>4.<br>preview bug<br><br>clip0506.7z 1.5 MB<br><a href="https://mega.co.nz/#!ghE3DRyA!MTjTcHs-pjfmJ2NXsWNq5y25C9ynBRu_3w0uoO2ddLo" class="postlink">https://mega.co.nz/#!ghE3DRyA!MTjTcHs-pjfmJ2NXsWNq5y25C9ynBRu_3w0uoO2ddLo</a></div></blockquote><br><br>This is not a bug.<br><br>Its intended behavioure, the player does not get the file path on HDD but instead a URL to neos webserver and pays it from there, neo answers the range requests when seeking and adapts its part request schedule accordingly. To do that neo does not answer the range request untill the needed section have been downloaded.<br><br>So far so good, if the file is stopped the section will never be downloaded and so the player is locked for ever.<br><br>Now it does not look soo great to the user thats true, I could do<br>1. start file is user hits play if its incomplete<br>2. when streaming interface is started tell it if the file is started or not, and if its not break the connection when a not available range gets requested<br><br>any ideas?<br><br><br>PS: can you give me a list of player software other than VLC that neo should support by default?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Dec 22, 2014 9:03 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content"><blockquote class="uncited"><div> PS: can you give me a list of player software other than VLC that neo should support by default? </div></blockquote><br><br>Actually no one IMHO, there are other problems that comes first and as far I know, VLC is the best player out there so I don't see any reason to support others/many players. If other players doesn't support that kind of stream or if they crash reproducing a file that is not complete yet is not a big deal, get VLC or use the built in player. Actually the time is limited and we should focus on other things instead of support many players...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Dec 22, 2014 9:04 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>Neo26 wrote:</cite>Actually no one IMHO, there are other problems that comes first and as far I know, VLC is the best player out there so I don't see any reason to support others/many players. If other players doesn't support that kind of stream or if they crash reproducing a file that is not complete yet is not a big deal, get VLC or use the built in player. Actually the time is limited and we should focus on other things instead of support many players...</div></blockquote><br><br>that would be next to no work, just that the drop down list has more entried and finds the players path on HDD automatically if installed in players default location</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Dec 22, 2014 9:07 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Add an autodetect for VLC player, I still don't see why we should support other players if they have problems with preview feature.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Dec 22, 2014 6:37 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>This is not a bug.<br><br>Its intended behavioure, the player does not get the file path on HDD but instead a URL to neos webserver and pays it from there, neo answers the range requests when seeking and adapts its part request schedule accordingly. To do that neo does not answer the range request untill the needed section have been downloaded.<br><br>So far so good, if the file is stopped the section will never be downloaded and so the player is locked for ever.<br><br>Now it does not look soo great to the user thats true, I could do<br>1. start file is user hits play if its incomplete<br>2. when streaming interface is started tell it if the file is started or not, and if its not break the connection when a not available range gets requested<br><br>any ideas?<br><br><br>PS: can you give me a list of player software other than VLC that neo should support by default?</div></blockquote><br>Sorry, I don't have any good idea for that now.<br><br>---------------------------<br>IDLE BUG doesn't be fixed.<br>clip0514.7z 468 KB<br><a href="https://mega.co.nz/#!okkFkZLD!qU-Va1wWL760fXaidP37yO2kRiFatFPVkE3oH5A9I1s" class="postlink">https://mega.co.nz/#!okkFkZLD!qU-Va1wWL760fXaidP37yO2kRiFatFPVkE3oH5A9I1s</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Dec 22, 2014 11:57 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Just to be sure... is the neo in question and the emule running behind the same NAT? <br>or are they running on completely different IP adresses?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Dec 23, 2014 3:15 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>Just to be sure... is the neo in question and the emule running behind the same NAT? <br>or are they running on completely different IP adresses?</div></blockquote><br>They are running in the same computer.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Dec 23, 2014 8:07 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>enOehTsIsihT wrote:</cite>They are running in the same computer.</div></blockquote><br><br>I think this will be the problem, the IP used iirc is not some 192.168.*.* but the extern IP of the router.<br><br>As I was testing that issue here I noticed that if I run the test with the extern IP the connection srops after a few packets and WireShark reports some retransmission attempts. (did not mater if 1 PC or 2 PC's as long as they booth ware behind the same NAT)<br>Repeating the test with the LAN IP worked just fine.<br><br>Long Story short: its a routing problem of the NAT not a Neo specific issue I think.<br><br>Whan tappens if you repeat the test with 2 eMules? it should fail as well....</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>3</strong> of <strong>9</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Allowing Sandboxed App to Open Browser Links Unsandboxed</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Allowing Sandboxed App to Open Browser Links Unsandboxed</h2>
+		<p><a href="viewtopic.php-708.html?f=12&amp;t=557">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=557</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Allowing Sandboxed App to Open Browser Links Unsandboxed</h3>
+				<div class="date">Posted: <strong>Tue Apr 04, 2023 7:08 pm</strong></div>
+				<div class="author">by <strong>SpeedyBrain</strong></div>
+				<div class="content">Hello,<br>
+<br>
+Is there a way to allow my sandboxed apps to open links in my regular browser window? There are often crashes and inability to run my browser with Sandboxie and it would just be nice to be able to open links normally. I use Sandboxie primarily for privacy reasons not for security. <br>
+<br>
+Thanks!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Allowing Sandboxed App to Open Browser Links Unsandboxed</h3>
+				<div class="date">Posted: <strong>Tue May 02, 2023 6:16 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">You can use the feature BreakoutProcess (or maybe BreakoutFolder).<br>
+<br>
+You may add the following to the sandbox section (in sandboxie.ini) of the box you want the browser to be opened outside the sandbox. Please note that if there is a sandbox that forces the program into a box, it will be opened in that box. (This is to enable users, to have a dedicated box for certain things and make sure that box will be used even when other sandboxes start the process.)<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>BreakoutProcess=ProgramName.exe</code></pre></div> where you have to replace the string ProgramName with the name of the browser's executable.<br>
+<br>
+When you use the modern user interface, you can also open the sandbox options and go to Program Control &gt; [Breakout Programs] to add the process via the GUI. (The UI has a search function, where you can type in what option you are looking for.)<br>
+<br>
+You can read more about <a href="https://sandboxie-plus.github.io/sandboxie-docs/Content/BreakoutProcess.html" class="postlink">Breakout Process</a> and <a href="https://sandboxie-plus.github.io/sandboxie-docs/Content/BreakoutFolder.html" class="postlink">Breakout Folder</a> in the documentation.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

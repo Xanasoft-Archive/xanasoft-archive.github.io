@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; 0.41 Bugs - Page 8</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>0.41 Bugs</h2>
+		<p><a href="viewtopic.php-1033.html?f=171&amp;t=3337">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3337</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>8</strong> of <strong>18</strong></div>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 9:11 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content"><blockquote><div><cite>abel wrote:</cite>Ok, soon i'll open in a separate thread a feature request for status column sorting.<br><br>Other bug (?)<br>if i change the filename under <em>Details</em> tab, the local .temp file doesn't change filename (as shown in tab <em>Properties -&gt; RelativePath</em>).</div></blockquote><br><br>Did you pushed apply ? At least in the client it works, not checked yet if it change .temp too.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 9:25 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>abel wrote:</cite>Ok, soon i'll open in a separate thread a feature request for status column sorting.</div></blockquote><br>ok<br><br><blockquote><div><cite>abel wrote:</cite>if i change the filename under <em>Details</em> tab, the local .temp file doesn't change filename (as shown in tab <em>Properties -&gt; RelativePath</em>).</div></blockquote><br>Thats also for a feature request.<br>Neo does not change names of files on HDD, you can change names in display, and if a file is moved form temp to incoming the name on HDD will be updated, but in no other condition.<br><br>@enOehTsIsihT<br>I found the bug and fixed it, please test again with the latest beta build.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 12:21 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>I found the bug and fixed it, please test again with the latest beta build.</div></blockquote><br>I tested it.<br>The bug is fixed.<br><blockquote><div><cite>enOehTsIsihT wrote:</cite>17.<br>upload by torrent<br>When neoloader has only one transfer,it can't upload stably<br><a href="yLHgMCa.jpg" class="postlink">http://i.imgur.com/yLHgMCa.jpg</a></div></blockquote>
+<br>
+<br>When transfer is utorrent or qbittorent,neoloader(upload) has the problem.
+<br>When transfer is neoloader,neoloader(upload) doesn't has the problem.
+<br><a href="XFD2vKO.jpg" class="postlink">http://i.imgur.com/XFD2vKO.jpg</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 1:03 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>enOehTsIsihT wrote:</cite>I tested it.<br>When transfer is utorrent or qbittorent,neoloader(upload) has the problem.<br>When transfer is neoloader,neoloader(upload) doesn't has the problem.<br><a href="XFD2vKO.jpg" class="postlink">http://i.imgur.com/XFD2vKO.jpg</a></div></blockquote><br><br>does that still happen with the latest beta (i thought i fixed that to)</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 1:49 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>does that still happen with the latest beta (i thought i fixed that to)</div></blockquote><br><br>Yes,that still happen with the latest beta.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 4:12 pm</strong></div>
+				<div class="author">by <strong>abel</strong></div>
+				<div class="content">Maybe a bug.
+<br>In the statistics tree, the Hosters is in the wrong level.
+<br>
+<br>Now:
+<br> - Bandwidth
+<br> - Networks
+<br> -- NeoShare
+<br> -- BitTorrent
+<br> -- ed2k/eMule
+<br> - [color="#FF0000"]Hosters[/color]
+<br> - IO Stats
+<br>
+<br>Shoud be:
+<br> - Bandwidth
+<br> - Networks
+<br> -- NeoShare
+<br> -- BitTorrent
+<br> -- ed2k/eMule
+<br> -- [color="#00FF00"]Hosters[/color]
+<br> - IO Stats</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 4:17 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">@abel<br>well hosters are not a network thats why i put them separately<br><br>@enOehTsIsihT<br>utorrent suxx with for example halite it works perfect.<br>utorrent seams to upen multiple connections in paralell and neo well, closess all but the first unfortunatelly utorrent dont want to use the first <img class="smilies" src="./images/smilies/tongue.png" alt=":p" title=":p"><br>wil have to look into how to change that behavioure to still avoid redundant connections while remain compatible to utorrent :/</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 4:32 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Should I add it to buglist? The uTorrent uploading bug.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 4:37 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>Neo26 wrote:</cite>Should I add it to buglist? The uTorrent uploading bug.</div></blockquote><br><br>just did it myself its the torrent bug enOehTsIsihT already reported and i thought i fixed, cause with halite it worked.<br>I edited the text to say explicitly its a utorretn related issue...<br><br>Also not sure how to debug it cant find any debug info in utorretn why it breaks :/</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 4:49 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">QBittorent has the same problem.<br>That's not only utorrent.<br><a href="5rNAo8a.jpg" class="postlink">http://i.imgur.com/5rNAo8a.jpg</a></div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>8</strong> of <strong>18</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

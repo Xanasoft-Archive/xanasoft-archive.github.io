@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; How to unblock network files</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>How to unblock network files</h2>
+		<p><a href="viewtopic.php-626.html?f=12&amp;t=611">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=611</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>How to unblock network files</h3>
+				<div class="date">Posted: <strong>Thu Jun 29, 2023 10:31 am</strong></div>
+				<div class="author">by <strong>n4b7</strong></div>
+				<div class="content">I have created a security hardened sandbox with the option "block network files and folders, unless specifically opened".<br>
+Under resouce access &gt; files, I added the network folder with option "open". However, I still get an access denied error (from within the sandboxed application). If I uncheck the above option, I can access the file.<br>
+How can I get "... unless specifically opened" to work?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: How to unblock network files</h3>
+				<div class="date">Posted: <strong>Fri Jul 14, 2023 6:46 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">Is the sandboxed application installed on the system (or located on the system, instead of being only in the sandbox)? If so, setting a resource to open should enable the resource to be accessed.<br>
+<br>
+However, if the application is installed to the sandbox or downloaded to it, then "Open for All" has to be used to be applicable for programs located inside the box, as well as those outside.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: How to unblock network files</h3>
+				<div class="date">Posted: <strong>Wed Jul 19, 2023 9:44 am</strong></div>
+				<div class="author">by <strong>n4b7</strong></div>
+				<div class="content">Thanks for your help.<br>
+The application is only installed inside the sandbox. However, even when using "open for all", I still get an "access denied" error.<br>
+<br>
+I now tried the same with a simple PDF reader in order to crosscheck. This lead to the same issue. I have the feeling that this is an issue with sandboxie.<br>
+Dummy setup I tried:<br>
+- Shared a local directory, and then mounted as a drive letter (Win 10)<br>
+- Created Sandbox with "Security Hardened Sandbox", option "block network files and folders, unless specifically opened" is activated.<br>
+- Sandbox Options &gt; Resource Access &gt; Files &gt; created "open for all" rule with access to above drive letter and subdirs (Z:\*)<br>
+- Installed PDF-Xchange inside the sandbox<br>
+- Started PDF-Xchange inside the sandbox and then drag and drop the PDF to to application leads to "access denied" error.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: How to unblock network files</h3>
+				<div class="date">Posted: <strong>Wed Jul 19, 2023 5:50 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">Can someone else test this, too, please?<br>
+<br>
+I tried to reproduce this (on Windows 7, so it might not be representative):<br>
+- Shared a local directory (I created a text file in it), which I mounted as a drive with the letter Z (Windows internal mount, no third-party software)<br>
+- Created new sandbox with default settings (I started with a standard box, which I changed to a hardened box)<br>
+- Gave access with "Open for All" to Z:\*<br>
+- Downloaded a text editor (that I have not installed (notepad3)) and unpacked in the sandbox<br>
+- I can open the folder with a sandboxed instance of the explorer<br>
+- I can open the file with notepad3, by launching the program and opening the file<br>
+- I can open the file by dragging the text file from the sandboxed explorer into the notepad3 window<br>
+<br>
+When I change the "Open for All" to "Open", I still can use the explorer to see the files. However, when I try to open it with notepad3, I get an error that access has been denied. It is good to see that it works, like I knew it was supposed to work. Just bad that it does not work for you.<br>
+<br>
+I assume that it is not related to the file type. I did not check PDF files. It's possible that there is a bug that results in an incompatibility with Windows 10 and Sandboxie, that no one encountered, yet, or did not realize.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

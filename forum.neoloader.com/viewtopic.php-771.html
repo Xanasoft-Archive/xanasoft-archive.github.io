@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; Newbie questions</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>Newbie questions</h2>
+		<p><a href="viewtopic.php-125.html?f=170&amp;t=6813">http://forum.neoloader.com/viewtopic.php?f=170&amp;t=6813</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>4</strong></div>
+					<div class="post">
+				<h3>Newbie questions</h3>
+				<div class="date">Posted: <strong>Wed Sep 09, 2015 6:31 pm</strong></div>
+				<div class="author">by <strong>carpler</strong></div>
+				<div class="content">Hi!<br>Today I tried the last NeoLoader 0.52c (build 165) on my micro-server with Windows Server 2012 R2.<br><br>The wizard that starts when the program is launched for the first time is not so clear in some option.<br>So here is my questions.<br><br>1) What is &quot;Lock to VPN Adapter&quot;? I have 2 options there &quot;Ethernet&quot; and &quot;Connection to local network (LAN)&quot; and I don't use any VPN adapter. I must leave blank this option?<br>2) Can you explain me the &quot;Static Hash&quot; option?<br><br>After the wizard, I started the program and added a torrent file (I'm sure that the torrent has many seeds), but the download never starts. Why?<br>I have opened the port on my router and another torrent client works on the same machine (with the same port), so what can it be?<br><br>Another question.<br>How can I add a torrent in the Web Gui? I see a text area where I can paste a link, but how can use a  file .torrent?<br><br>Many thanks!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Newbie questions</h3>
+				<div class="date">Posted: <strong>Wed Sep 09, 2015 9:48 pm</strong></div>
+				<div class="author">by <strong>OwenBurnett</strong></div>
+				<div class="content">Hi, thanks for trying neo <img class="smilies" src="images/smilies/icon_e_smile.gif" alt=":)" title="Smile"><br><br>1) This option will block neoloader on the network that you choose here. Basically using a VPN, you should lock neo on it, so if it will go offline or there's any problem neoloader will stop working instead of use the network without VPN (showing your real IP). I am not sure about that, because I never used a VPN. About the &quot;Ethernet&quot; option, I don't see it, probably is due to windows configuration or driver, I am not sure here either. And yeah, without a VPN there's no reason to lock neoloader on a certain adapter, leave it blank... for the torrent not downloading though try to lock it to Eth or LAN (restart after this change) and check if it will find seeds. If the problem persist, leave it blank it should be blank without a VPN.<br><br>2) It affect the ed2k/kad network only. You can find some infos here: <!-- m --><a class="postlink" href="http://www.emule-project.net/home/perl/help.cgi?l=1&topic_id=135&rm=show_topic">http://www.emule-project.net/home/perl/ ... show_topic</a><!-- m --><br>The usage of a static hash, like eMule, gives the benefit of the credit system avaible in any eMule client but you can be traced even between an ip change since this hash always remain the same (if you don't make a &quot;clean&quot; install, may stay the same for years). Even if in past this tracing never happened, is theorically possible and since our policy is against the credit system (I'll not explain why this night), by default we use a random hash. It should change if you restart neoloader after 6h, in that case on startup neo will choose a different userhash iirc.<br><br><blockquote class="uncited"><div>After the wizard, I started the program and added a torrent file (I'm sure that the torrent has many seeds), but the download never starts. Why?</div></blockquote><br><br>Mhhhh... do you see anything strange on &quot;NeoCore&quot; log ? Can you post a screenshot of the tracker window and transfer window ? (if you don't see them, activate &quot;Details Tab&quot;, there's a button on top left, and click on the file).<br><br>For your privacy( <img class="smilies" src="images/smilies/icon_rolleyes.gif" alt=":roll:" title="Rolling Eyes"> ), hide the torrent name, unless is a linux distro or an open office or any open/free/copyleft thing <img class="smilies" src="images/smilies/icon_razz.gif" alt=":P" title="Razz"><br><br>About adding .torrent from webUI, seems that actually is not possible. Do you need that feature ? If so, explain why <img class="smilies" src="images/smilies/icon_e_wink.gif" alt=";)" title="Wink"> <br>Sorry but I never use the web ui or the remote ui so I don't see why you should add a .torrent instead of the magnet link.<br><br>Also sorry for any mistake, it's late and I am already half-sleeping while answering. (apart the fact that my english is very bad anyway)</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Newbie questions</h3>
+				<div class="date">Posted: <strong>Wed Sep 09, 2015 10:04 pm</strong></div>
+				<div class="author">by <strong>carpler</strong></div>
+				<div class="content">Many thanks for the answers!<br>I think the problem of the torrent that would not start depended on the wrong &quot;Lock to VPN Adapter&quot; setting. I left this blank and now seems to work...<br><br>The reason to add a torrent with the WebGui is simple: NeoLoader is on a micro-server in my home network and is a headless-pc.<br>So, I must use the WebGui to add downloads.<br><br>Is not possible? Is hard to add this feature?<br><br>Thanks again!<br><br>EDIT<br>Another little test on my pc.<br>I started a new torrent on Neoloader: after initialazing, the download starts as expected.<br>The download speed was about 200K/s.<br>So I stopped NeoLoader and started on the same pc the client Tixati and add on it the same torrent.<br>The download speed was about 500K/s<br>Why this difference?<br>Both clients works with the same port (not in the same time!) and I'm sure that I've not setted any download speed limit.<br>There is something I can do?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Newbie questions</h3>
+				<div class="date">Posted: <strong>Thu Sep 10, 2015 7:10 am</strong></div>
+				<div class="author">by <strong>OwenBurnett</strong></div>
+				<div class="content">If any other client has it, I am pretty sure is possible. The only problem is that the dev has a limited amount of time at the moment, so probably you have to wait... can you use magnet links in the webui ?<br><br>About the speed, we have to look into it. Choose few copyleft torrents with different seed numbers, not just the very popular ones, and I'll try them on my machine too.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Newbie questions</h3>
+				<div class="date">Posted: <strong>Thu Sep 10, 2015 8:41 am</strong></div>
+				<div class="author">by <strong>carpler</strong></div>
+				<div class="content"><blockquote><div><cite>OwenBurnett wrote:</cite>If any other client has it, I am pretty sure is possible. The only problem is that the dev has a limited amount of time at the moment, so probably you have to wait... can you use magnet links in the webui ?<br><br>About the speed, we have to look into it. Choose few copyleft torrents with different seed numbers, not just the very popular ones, and I'll try them on my machine too.</div></blockquote><br><br>About magnet link: I don't think so (not tried). In the webUI there is only a text area for adding links...<br><br>My torrent is with 5 peers - 3 seeds, but is a large file, not finished yet. Today I try with another one.<br><br>Thank you!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Newbie questions</h3>
+				<div class="date">Posted: <strong>Thu Sep 10, 2015 9:07 am</strong></div>
+				<div class="author">by <strong>OwenBurnett</strong></div>
+				<div class="content">Copy and paste the magnet link in this area. Is not possible ?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Newbie questions</h3>
+				<div class="date">Posted: <strong>Thu Sep 10, 2015 9:48 am</strong></div>
+				<div class="author">by <strong>carpler</strong></div>
+				<div class="content"><blockquote><div><cite>OwenBurnett wrote:</cite>Copy and paste the magnet link in this area. Is not possible ?</div></blockquote><br><br>In the forum where I find many torrents there is no magnet link. There is only a link to download the .torrent file as follow:<br><!-- m --><a class="postlink" href="http://www.nameforum.com/forum/dl.php?t=xxxxx">http://www.nameforum.com/forum/dl.php?t=xxxxx</a><!-- m --><br>If you paste this link in the text area in NeoLoader, the program donwload the torrent file, but doesn't load the torrent.<br><br>EDIT<br>I found a torrent with magnet link and this works in WebUI.<br>I you can only download the .torrent file I don't know how...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Newbie questions</h3>
+				<div class="date">Posted: <strong>Thu Sep 10, 2015 6:10 pm</strong></div>
+				<div class="author">by <strong>OwenBurnett</strong></div>
+				<div class="content">Right click on the magnet link button, and &quot;copy address&quot;. Paste it in the WebUI and it should work. In future we'll probably add the .torrent to the webUI anyway if possible.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Newbie questions</h3>
+				<div class="date">Posted: <strong>Thu Sep 10, 2015 10:54 pm</strong></div>
+				<div class="author">by <strong>carpler</strong></div>
+				<div class="content"><blockquote><div><cite>OwenBurnett wrote:</cite>Right click on the magnet link button, and &quot;copy address&quot;. Paste it in the WebUI and it should work. In future we'll probably add the .torrent to the webUI anyway if possible.</div></blockquote><br><br>Yes, I test it and works.<br>But the magnet link is not always present: often there is also the link for downalod the .torret file...<br><br>Tomorrow I have other questions about Neoloader.<br>Now it's late...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Newbie questions</h3>
+				<div class="date">Posted: <strong>Fri Sep 11, 2015 7:44 am</strong></div>
+				<div class="author">by <strong>carpler</strong></div>
+				<div class="content">Ok, I'm here again.<br>In the Summary page I have noticed that in Firewall/NAT Status there are the following items:<br>NeoShare: OK<br>BitTorrent: OK<br>ed2kMule: Firewalled<br>I'm sure that the TCP and the UDP ports are correctly opened on the router: why this? Is because I have set &quot;&quot;No Server&quot; option?<br><br>About this, for me it is not so clear what it is the Neo Share part of NeoLoader.<br>Also I don't understand how can I check if the Kad part of the client works or not (I don't use ed2k server anymore).</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>4</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

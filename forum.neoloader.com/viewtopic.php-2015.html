@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; Integration von Captcha Dienste wie 9kw.eu?</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>Integration von Captcha Dienste wie 9kw.eu?</h2>
+		<p><a href="viewtopic.php-357.html?f=166&amp;t=3196">http://forum.neoloader.com/viewtopic.php?f=166&amp;t=3196</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>2</strong></div>
+					<div class="post">
+				<h3>Integration von Captcha Dienste wie 9kw.eu?</h3>
+				<div class="date">Posted: <strong>Fri Mar 15, 2013 4:53 pm</strong></div>
+				<div class="author">by <strong>thecoder2012</strong></div>
+				<div class="content">Es wÃ¤re toll wenn man fÃ¼r die Captchas automatische LÃ¶sunge wie 9kw.eu nutzen kÃ¶nnte.
+<br>Oder ein Pluginsystem um sowas einbinden zu kÃ¶nnen ggf. auch fÃ¼r Multi-Hoster.
+<br>
+<br>Siehe dortige API:
+<br><a href="http://www.9kw.eu/api.html" class="postlink">9kw.eu - Captcha Service for the user</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Mar 15, 2013 5:59 pm</strong></div>
+				<div class="author">by <strong>Ekliptor</strong></div>
+				<div class="content">Hallo <img class="smilies" src="./images/smilies/smile.png" alt=":)" title=":)"><br>VorschlÃ¤ge sind immer Willkommen <img class="smilies" src="./images/smilies/wink.png" alt=";)" title=";)"><br><br>Wir haben bereits diverse 3rd Party Captcha Solver getestet und planen in kommenden Versionen diese, den Usern besser zugÃ¤nglich zu machen.<br>Momentan geht dies nur Ã¼ber das NeoCore.in File:<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>&#91;Solver&#93;AutoSolve=0<br>Password=<br>ServerUrl=<br>UserName=</code></div><br>Allerdings wird das API Response Format von obigem Dienst nocht nicht unterstÃ¼tzt, da wir es bisher nur mit eigenen Test-APIs verwendet hatten. Kommt jedoch definitiv noch... Vom Zeitfenster wÃ¼rde ich sagen sind wir noch ein paar Monate davon entfernt, da momentan dringendere Features wie Hoster-Cache fÃ¼r p2p Downloads in Entwicklung sind.<br><br>Was meinst du mit Multi-Hoster Support? Der Captcha Solver funktioniert dann prinzipiell mit jedem Captcha von jeder Domain.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Mar 15, 2013 6:15 pm</strong></div>
+				<div class="author">by <strong>thecoder2012</strong></div>
+				<div class="content">Erstmal vielen Dank fÃ¼r die schnelle Antwort.
+<br>
+<br><blockquote class="uncited"><div>Allerdings wird das API Response Format von obigem Dienst nocht nicht unterstÃ¼tzt, da wir es bisher nur mit eigenen Test-APIs verwendet hatten.</div></blockquote><br>Gibt es eine Dokumentation, Beispiel oder wo genau findet man das nÃ¶tige API Response Format das aktuell unterstÃ¼tzt wird?<br><br><blockquote class="uncited"><div>Was meinst du mit Multi-Hoster Support?</div></blockquote>
+<br>Anbieter die mehrere PremiumzugÃ¤nge fÃ¼r (File-)Hoster unter einem Zugang vereinen.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Mar 15, 2013 7:04 pm</strong></div>
+				<div class="author">by <strong>Ekliptor</strong></div>
+				<div class="content">So ein Multi-Hoster ist letztlich ja auch nichts weiter als eine Domain, welche HTTP Downloads anbietet. Somit unterstÃ¼tzt der Neo diese bereits. Alles was fehlt wÃ¤re ein JavaScript File fÃ¼r die entsprechende Domain (im Scripts.7z) und es funktioniert. Hier mÃ¼ssen wir noch bessere Doku nachreichen, da wir dringend Script Entwickler fÃ¼r weitere Domains suchen <img class="smilies" src="./images/smilies/wink.png" alt=";)" title=";)"><br><br><br>Die Captcha API macht einen Multipart-Post mit dem Bild in unter "pict" und erwartet auf das selbe HTTP Request die Anwort:<br>0|BILD_ID|debug_irrelevant|debug_irrelevant|0|SOLUTION<br><br>Nach kurzem Ã¼berfliegen sieht es so aus, dass die von dir angesprochene API mehrere getrennte Requests erwartet und der Status serverseitig verwaltet wird. Dies wird noch nicht unterstÃ¼tzt. Prinzipiell kÃ¶nnte man, wenn wir die Captcha API erweitern und Dokumentieren, sie jedoch auch Ã¼ber unsere Domain-Scripte laufen lassen, d.h. dass man fÃ¼r eine Captcha-Solver Domain ein JavaScript File erstellt und somit der Neo mit jedem Solver umgehen kann.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Mar 15, 2013 8:45 pm</strong></div>
+				<div class="author">by <strong>thecoder2012</strong></div>
+				<div class="content"><blockquote><div><cite>Ekliptor wrote:</cite>Alles was fehlt wÃ¤re ein JavaScript File fÃ¼r die entsprechende Domain (im Scripts.7z) und es funktioniert. </div></blockquote><br>Auch wenn die Domain z.B. real-debrid.com wÃ¤re und man ein Link von netload.in hinzufÃ¼gt?<br>Es wÃ¤re ja dann nicht mehr wirklich basierend auf der Domain, daher kam meine Frage danach. HTTP Downloads selbst sind es ja schon nur eben "umgebogen".<br><br>BILD_ID ist die interne ID vom Service wie 9kw.eu oder wird die irgendwo Ã¼bermittelt?<br>Und meldet Neoloader irgendwo zurÃ¼ck ob damit der Download/Zugang mit der LÃ¶sung vom Captcha funktioniert hat?<br><br><blockquote class="uncited"><div>Nach kurzem Ã¼berfliegen sieht es so aus, dass die von dir angesprochene API mehrere getrennte Requests erwartet und der Status serverseitig verwaltet wird.</div></blockquote>
+<br>Man muss sich ja nicht an die offizielle API halten und biegt einfach was dran herum. Inoffiziell werden dort verschiedene Schnittstellen bereitgestellt. :-)
+<br>Idealerweise wird natÃ¼rlich die offizielle API eingehalten weil die Serverlast sonst wohl hÃ¶her bei der Verarbeitung ist.
+<br>
+<br>Also in der Datei NeoLoader/Config/NeoCore.ini im Abschnitt [Solver] sieht es nun so aus:
+<br>[Solver]
+<br>AutoSolve=1
+<br>Password=API_KEY
+<br>ServerUrl=http://www.9kw.eu/submit
+<br>UserName=API_KEY
+<br>
+<br>Laut Wireshark wird es Ã¼bermittelt und im genannten Format zurÃ¼ckgemeldet. Und ein Test-Download mit Captcha funktionierte.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Mar 15, 2013 8:59 pm</strong></div>
+				<div class="author">by <strong>Ekliptor</strong></div>
+				<div class="content"><blockquote class="uncited"><div><span style="color: #3E3E3E">Auch wenn die Domain z.B. real-debrid.com wÃ¤re und man ein Link von netload.in hinzufÃ¼gt?</span></div></blockquote>Ja, wenn man im Domain Script von real-debrid einen Regex eintrÃ¤gt, der bestimmte URLs von netload.in matched, dann werden netload Downloads Ã¼ber dieses Script verwaltet. Funktioniert bereits aktuell so mit ul.to und uploaded.net, was auch nur ein Script mit mehreren Regex EintrÃ¤gen zum matchen von URLs ist.<br><br><br><blockquote class="uncited"><div><span style="color: #3E3E3E">Laut Wireshark wird es Ã¼bermittelt und im genannten Format zurÃ¼ckgemeldet. Und ein Test-Download mit Captcha funktionierte.</span></div></blockquote>Wundert mich sehr, dass der Neo das Response Format von diesem Solver korrekt verarbeitet. Ohne sich die Seite genauer angeschaut zu haben kann ich jedoch nicht mehr dazu sagen und freue mich erstmal darÃ¼ber <img class="smilies" src="./images/smilies/smile.png" alt=":)" title=":)"> Die Captcha API wird aber wie gesagt noch ausgebaut, so dass sie definitiv mit beliebigen Solvern funktioniert.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Mar 22, 2013 12:00 am</strong></div>
+				<div class="author">by <strong>thecoder2012</strong></div>
+				<div class="content"><blockquote><div><cite>Ekliptor wrote:</cite>Die Captcha API wird aber wie gesagt noch ausgebaut, so dass sie definitiv mit beliebigen Solvern funktioniert.</div></blockquote>
+<br>Wird in der Captcha API auch enthalten sein, das der jeweilige Solver erfahren kann ob der Download/Vorgang geklappt hat oder gestartet wurde?
+<br>Viele Dienste bieten bei einem fehlerhaften Vorgang an das Guthaben zu erstatten oder wenigstens den Vorgang prÃ¼fen zu lassen.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Mar 23, 2013 8:17 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Ja das ist schon drin,<br>aber wie gesagt die api kan nur unseren prof of concept server und keine echten dienste.<br><br>Was cool wÃ¤re wÃ¤re wen ihr hier eine kurze liste an diensten zusammen tragen kÃ¶ntet welche unterstÃ¼tzt werden solten, samt link zu ihrer jeweiligen API.<br><br>LG<br>David</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 01, 2013 3:50 pm</strong></div>
+				<div class="author">by <strong>thecoder2012</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>Ja das ist schon drin,<br>aber wie gesagt die api kan nur unseren prof of concept server und keine echten dienste.</div></blockquote><br>Tja noch nie gehÃ¶rt das Dienste auch an Tools angepasst werden? Wie gesagt funktioniert es mit 9kw aber eine richtige Schnittstelle wÃ¤re besser. Eine RÃ¼ckmeldung ob die Eingabe funktioniert hat wÃ¼rde bereits erstmal ausreichend sein.<br><br><blockquote class="uncited"><div>Was cool wÃ¤re wÃ¤re wen ihr hier eine kurze liste an diensten zusammen tragen kÃ¶ntet welche unterstÃ¼tzt werden solten, samt link zu ihrer jeweiligen API.</div></blockquote>
+<br>Was fÃ¼r eine Liste genau suchst? Es gibt nur 2 kostenfreie Dienste in dem Bereich und davon hat nur 9kw eine offizielle API Dokumentation. Denkst warum im neuen JDownloader 2 nur die beiden Dienste wirklich gut funktionieren bzw. integriert sind. Ansonsten gibt es meines Wissen nur noch zahlreiche kostenpflichtige Dienste teilweise natÃ¼rlich auch mit API Dokumentation.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 01, 2013 3:56 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">der nÃ¤chste grÃ¶sere release (spÃ¤terstens 0.42) wird support fÃ¼r <br><br>9kweu<br>antigate<br>captchabrotherhood<br>deathbycaptcha<br><br>Das system wird komplet Ã¼berarbeitet, so das anschliesend fÃ¼rbelibige dienste skripte (wie hoster skripte) machen wird kÃ¶nnen,<br>die accounts werden auch entsprechend in der GUI einfach zu verwalten sein.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>2</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

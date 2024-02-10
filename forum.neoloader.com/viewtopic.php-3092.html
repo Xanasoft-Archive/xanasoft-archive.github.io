@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; 0.40 Bugs</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>0.40 Bugs</h2>
+		<p><a href="viewtopic.php-1040.html?f=171&amp;t=3327">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3327</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>8</strong></div>
+					<div class="post">
+				<h3>0.40 Bugs</h3>
+				<div class="date">Posted: <strong>Fri Sep 20, 2013 4:47 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">1.
+<br> Neoloader can not dowload multi file by neoshare.
+<br>
+<br>Can you create new test link,and it is multi file
+<br>
+<br>2.
+<br>
+<br>
+<br>clip0032.7z (348 KB)
+<br><a href="https://mega.co.nz/#!Zg0QwIBB!KJodLzDyrquDH6D3xHy5K3LXXrJH-saGvqbtQr7wbHM" class="postlink">https://mega.co.nz/#!Zg0QwIBB!KJodLzDyrquDH6D3xHy5K3LXXrJH-saGvqbtQr7wbHM</a>
+<br>
+<br>
+<br>3.
+<br>
+<br>Allocating big file can let neoloader use too much ram.
+<br>
+<br>It may let neoloader crashed.
+<br>
+<br><div class="inline-attachment">The attachment <strong>magnet.txt</strong> is no longer available</div>
+<br>
+<br>clip0027.7z (717 KB)
+<br><a href="https://mega.co.nz/#!U88nUSSI!JWueHnKskoQy5DHe-PcmJyu-2N8lTdaHctYS8ZNasgg" class="postlink">https://mega.co.nz/#!U88nUSSI!JWueHnKskoQy5DHe-PcmJyu-2N8lTdaHctYS8ZNasgg</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Sep 20, 2013 2:37 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I will make some fallback and cache size counting, so that if to much data agregates in cache it holds block requesting untill the cache is emptyed.<br><br>I think its a reasonable solution, although I'm not sure about some file prealocation feature it sould also help, but may be tricky to implement in a way that it does not hinger actually relevant IO operations</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Sep 20, 2013 2:51 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">4.
+<br>Big file has a bug.
+<br>
+<br>After hashing,Big file's hash(neo) is gray.
+<br>
+<br>It let neoloader hash again,after i restart neoloader .
+<br>
+<br>each start
+<br>
+<br>After hashing,hash(neo) still is gray.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Sep 21, 2013 1:18 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">5.<br><br>"Create torrent" can not cancel and save.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Sep 21, 2013 12:00 pm</strong></div>
+				<div class="author">by <strong>abel</strong></div>
+				<div class="content">ClientFailed with many hosters.<br><br><a href="http://www.imagestorming.com/9aO" class="postlink">http://www.imagestorming.com/9aO</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Sep 21, 2013 1:48 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">@enOehTsIsihT<br>creator fixed and update uplaoded<br><br>@abel<br>ups i broke more than i fixed with the letitbitfix,<br>now fixed proeprly, please test again</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Sep 21, 2013 3:17 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>@enOehTsIsihT<br>creator fixed and update uplaoded<br><br>@abel<br>ups i broke more than i fixed with the letitbitfix,<br>now fixed proeprly, please test again</div></blockquote><br><br>mediafire<br>22:06:32: File/Folder ID: 'gbb2feupp2h49wp' <br>22:06:32: This is a file link. Please use plowdown! <br>22:06:32: Unrecoverable script problem: <br><br>sendspace<br>22:08:39: This is not a directory list <br>22:08:39: Unrecoverable script problem: <br><br><br>"freakshare" can add to downloads,but it can not download.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Sep 21, 2013 4:26 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">it seams the regex patterns assigning operations to links...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Sep 21, 2013 4:36 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">pleas try again</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Sep 21, 2013 4:51 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">It can can add to downloads,but it can not download.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>8</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

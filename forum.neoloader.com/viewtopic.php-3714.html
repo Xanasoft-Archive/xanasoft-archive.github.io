@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; Download Queque Improvements</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>Download Queque Improvements</h2>
+		<p><a href="viewtopic.php-1638.html?f=172&amp;t=3402">http://forum.neoloader.com/viewtopic.php?f=172&amp;t=3402</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Download Queque Improvements</h3>
+				<div class="date">Posted: <strong>Sun Jan 19, 2014 1:25 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Hi, in last release a queque system for downloading (and sharing) files is added. At the moment that's better than nothing but it could be so much useful than now. I'm writing few suggestion for a better system:<br><br><ul><br><li>Actually we have only 1 value to choose, that mean the max active torrent. Instead we should have 2 values:<br> <strong>*Tot --&gt; Max Total Torrents:</strong> The total torrent active that count sharing+downloading torrents<br> <strong>*Down --&gt; Max Downloading Torrents:</strong> It counts the downloading torrent only.<br> Of course these value should respect following condition: <strong>Down&lt;=Tot !</strong> (aka the users should not be able to choose Down&gt;Tot for the correct behavior)<br></li><li>Slow torrents torrents don't cause an huge overhead value, so shouldn't be included in the queque. Rare torrent should get priority in any case. So:<br> *If "<strong>Source&lt;X <span style="text-decoration: underline">or</span> Speed&lt;Y</strong> torrent should be always active, aka get a position of "0" in the queque (or not counted).<br> * X and Y should be configurable, if someone have awesome connection speed could increase the default vale... (default could be X = 10 and Y = 100)<br> *Note the "or" in the condictions, it mean that one condition is enough to get the position 0 at the file. Plus, you could make them switchable, aka I can turn off the X and use only Y, or reverse.<br></li><li>The managing of queque for downloading torrents is easy, when a torrent is complete get his position on seeding queque and the following downloading torrent will start. <br>The seeding queque should work in the same way, counting as <strong>"complete" when a torrent reach 1:1 ratio</strong>.<br>It could be improved adding an incremental step that will be considered when all the torrent reached 1:1 ratio, I'll make an example: When 1:1 ratio restart the queque and put the goal at 1.5:1. Then 2.0:1. Then 2.5:1... and so on. In that case the "increment" is 0.5, but you could also make it switchable (I think first 1:1 and then 0.5 increment are the best default values).<br><strong>Note:</strong> Of course rare torrents (the X of previous point) should keep the posistion 0 and be always uploaded.<br></li><li>Many hosters downloads are so fast, so they should be included in the torrent downloading queque, for example when hoster speed is &gt; 100kb/s (or setable with &gt; "z")<br></li></ul><br>If is possible add such condictions in the queque system we could make the torrent managment a lot of better and use a lower value than the actual default 5 that still not solve the huge overhead of torrent downloading. For example using a Down = 1 and Tot = 2 by default (in that condictions there should be 1 downloading and 1 seeding torrent, and when all the downloads are complete 2 seeding torrents). CPU usage is better as well.<br><br>Sorry for the bad english... Bye.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Feb 10, 2014 2:49 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Is complete now, any idea/suggestion? Can it be technically done or it will remain a dream?
+<br>
+<br>Plus, any idea about how to integrate with hostercache uploads? What about queque hostercaches after active uploads reached the goal, and get always 1 (not 0!!) when all reached 1:1 ratio?</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

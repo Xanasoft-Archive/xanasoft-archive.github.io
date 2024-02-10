@@ -1,0 +1,1345 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Cannot get Messenger running in sandboxed mode - xanasoft.com</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - xanasoft.com" href="/feed">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed/topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Troubleshooting" href="/feed/forum/14">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - Cannot get Messenger running in sandboxed mode" href="/feed/topic/216">	
+	<link rel="canonical" href="viewtopic.php-4310.html?t=216">
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<link href="assets/css/font-awesome.min.css?assets_version=3" rel="stylesheet">
+<link href="styles/prosilver/theme/stylesheet.css?assets_version=3" rel="stylesheet">
+<link href="styles/prosilver/theme/en/stylesheet.css?assets_version=3" rel="stylesheet">
+
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=3" rel="stylesheet">
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar" role="banner">
+					<div class="inner">
+
+			<div id="site-description" class="site-description">
+		<a id="logo" class="logo" href="index.php.html" title="Board index">
+					<span class="site_logo"></span>
+				</a>
+				<h1>xanasoft.com</h1>
+				<p>Xanasoft support forum</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+									<div id="search-box" class="search-box search-header" role="search">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…">
+					<button class="button button-search" type="submit" title="Search">
+						<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+					</button>
+					<a href="search.php.html" class="button button-search-end" title="Advanced search">
+						<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+					</a>
+					
+				</fieldset>
+				</form>
+			</div>
+						
+			</div>
+					</div>
+				<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="nav-main linklist" role="menubar">
+
+		<li id="quick-links" class="quick-links dropdown-container responsive-menu" data-skip-responsive="true">
+			<a href="#" class="dropdown-trigger">
+				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>Quick links</span>
+			</a>
+			<div class="dropdown">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																									<li>
+								<a href="search.php-1.html?search_id=unanswered" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>Unanswered topics</span>
+								</a>
+							</li>
+							<li>
+								<a href="search.php-2.html?search_id=active_topics" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>Active topics</span>
+								</a>
+							</li>
+							<li class="separator"></li>
+							<li>
+								<a href="search.php.html" role="menuitem">
+									<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>Search</span>
+								</a>
+							</li>
+					
+										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li data-skip-responsive="true">
+			<a href="/help/faq" rel="help" title="Frequently Asked Questions" role="menuitem">
+				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>FAQ</span>
+			</a>
+		</li>
+						
+			<li class="rightside" data-skip-responsive="true">
+			<a href="ucp.php-12167.html?mode=login&amp;redirect=viewtopic.php%3Ft%3D216" title="Login" accesskey="x" role="menuitem">
+				<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>Login</span>
+			</a>
+		</li>
+					<li class="rightside" data-skip-responsive="true">
+				<a href="ucp.php-1.html?mode=register" role="menuitem">
+					<i class="icon fa-pencil-square-o  fa-fw" aria-hidden="true"></i><span>Register</span>
+				</a>
+			</li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
+								<li class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+										<span class="crumb" itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope=""><a href="index.php.html" itemtype="https://schema.org/Thing" itemscope="" itemprop="item" accesskey="h" data-navbar-reference="index"><i class="icon fa-home fa-fw"></i><span itemprop="name">Board index</span></a><meta itemprop="position" content="1"></span>
+
+																			<span class="crumb" itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope="" data-forum-id="4"><a href="viewforum.php-4.html?f=4" itemtype="https://schema.org/Thing" itemscope="" itemprop="item"><span itemprop="name">Sandboxie+</span></a><meta itemprop="position" content="2"></span>
+																							<span class="crumb" itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope="" data-forum-id="14"><a href="viewforum.php-7.html?f=14" itemtype="https://schema.org/Thing" itemscope="" itemprop="item"><span itemprop="name">Troubleshooting</span></a><meta itemprop="position" content="3"></span>
+												</li>
+		
+					<li class="rightside responsive-search">
+				<a href="search.php.html" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body" class="page-body" role="main">
+		
+		
+<h2 class="topic-title"><a href="viewtopic.php-3050.html?f=14&amp;t=216">Cannot get Messenger running in sandboxed mode</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+
+
+
+<div class="action-bar bar-top">
+	
+			<a href="posting.php-2053.html?mode=reply&amp;f=14&amp;t=216" class="button" title="Post a reply">
+							<span>Post Reply</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
+					</a>
+	
+			<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="viewtopic.php-4311.html?f=14&amp;t=216&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+	
+			<div class="search-box" role="search">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…">
+				<button class="button button-search" type="submit" title="Search">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</button>
+				<a href="search.php.html" class="button button-search-end" title="Advanced search">
+					<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+				</a>
+				<input type="hidden" name="t" value="216">
+<input type="hidden" name="sf" value="msgonly">
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			2 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+		</div>
+
+
+
+
+			<div id="p454" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile454">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-475.html?mode=viewprofile&amp;u=443" class="username">re11ding</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-532.html?author_id=443&amp;sr=posts">2</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Thu Dec 16, 2021 7:44 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content454">
+
+						<h3 class="first"><a href="viewtopic.php-4312.html?p=454#p454">Cannot get Messenger running in sandboxed mode</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-2054.html?mode=quote&amp;f=14&amp;p=454" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-4312.html?p=454#p454" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-475.html?mode=viewprofile&amp;u=443" class="username">re11ding</a></strong> &raquo; </span><time datetime="2021-12-16T19:52:15+00:00">Thu Dec 16, 2021 7:52 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">I'm trying to get this to work with messenger but it seems to crash the application if ran in Sandboxie. Main goal is to isolate the program so it cannot trace any activity outside of itself. Aka, it cannot read applications running outside of the sandbox, nor can it trace internet connections outside of the sandbox. (Not sure how to go about this yet, help on this would be appreciated too!) The application works as expected if not sandboxed.<br>
+<br>
+I have attached the debug log below from WinDBG as instructed by the main site. Also, if you could please give information on how you've figured out how to fix it using this information, I would love to learn for the future! Thanks for any and all help!<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>Microsoft (R) Windows Debugger Version 10.0.16299.15 AMD64
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+CommandLine: C:\Users\re11d\AppData\Local\Programs\Messenger\Messenger.exe
+Symbol search path is: srv*
+Executable search path is: 
+ModLoad: 00007ff7`00480000 00007ff7`04de5000   ZeratulWindows.exe
+ModLoad: 00007ffa`05140000 00007ffa`05330000   ntdll.dll
+ModLoad: 00007ffa`05040000 00007ffa`050f3000   C:\WINDOWS\System32\kernel32.dll
+ModLoad: 00007ffa`02f30000 00007ffa`031d5000   C:\WINDOWS\System32\KERNELBASE.dll
+ModLoad: 00000000`725e0000 00000000`7269c000   D:\Program Files\Sandboxie-Plus\SbieDll.dll
+ModLoad: 00007ffa`04830000 00007ffa`04838000   C:\WINDOWS\System32\psapi.dll
+ModLoad: 00007ffa`04950000 00007ffa`05037000   C:\WINDOWS\System32\SHELL32.dll
+ModLoad: 00007ffa`02dd0000 00007ffa`02eca000   C:\WINDOWS\System32\ucrtbase.dll
+ModLoad: 00007ffa`02cb0000 00007ffa`02cfa000   C:\WINDOWS\System32\cfgmgr32.dll
+ModLoad: 00007ffa`03700000 00007ffa`037a9000   C:\WINDOWS\System32\shcore.dll
+ModLoad: 00007ffa`031e0000 00007ffa`0327e000   C:\WINDOWS\System32\msvcrt.dll
+ModLoad: 00007ffa`040f0000 00007ffa`0420f000   C:\WINDOWS\System32\RPCRT4.dll
+ModLoad: 00007ffa`03a70000 00007ffa`03da6000   C:\WINDOWS\System32\combase.dll
+ModLoad: 00007ffa`02830000 00007ffa`028b4000   C:\WINDOWS\System32\bcryptPrimitives.dll
+ModLoad: 00007ffa`020b0000 00007ffa`0282b000   C:\WINDOWS\System32\windows.storage.dll
+ModLoad: 00007ffa`02d00000 00007ffa`02d9e000   C:\WINDOWS\System32\msvcp_win.dll
+ModLoad: 00007ffa`04490000 00007ffa`04527000   C:\WINDOWS\System32\sechost.dll
+ModLoad: 00007ffa`04840000 00007ffa`048e3000   C:\WINDOWS\System32\advapi32.dll
+ModLoad: 00007ffa`02040000 00007ffa`0205e000   C:\WINDOWS\System32\profapi.dll
+ModLoad: 00007ffa`02060000 00007ffa`020aa000   C:\WINDOWS\System32\powrprof.dll
+ModLoad: 00007ffa`01ff0000 00007ffa`02000000   C:\WINDOWS\System32\UMPDC.dll
+ModLoad: 00007ffa`048f0000 00007ffa`04942000   C:\WINDOWS\System32\shlwapi.dll
+ModLoad: 00007ffa`037b0000 00007ffa`037d6000   C:\WINDOWS\System32\GDI32.dll
+ModLoad: 00007ffa`028c0000 00007ffa`028e1000   C:\WINDOWS\System32\win32u.dll
+ModLoad: 00007ffa`02a40000 00007ffa`02bd8000   C:\WINDOWS\System32\gdi32full.dll
+ModLoad: 00007ffa`04690000 00007ffa`04824000   C:\WINDOWS\System32\USER32.dll
+ModLoad: 00007ffa`02000000 00007ffa`02011000   C:\WINDOWS\System32\kernel.appcore.dll
+ModLoad: 00007ffa`02c90000 00007ffa`02ca7000   C:\WINDOWS\System32\cryptsp.dll
+ModLoad: 00007ffa`02da0000 00007ffa`02dc6000   C:\WINDOWS\System32\bcrypt.dll
+ModLoad: 00007ffa`04210000 00007ffa`0427f000   C:\WINDOWS\System32\WS2_32.dll
+ModLoad: 00007ffa`04330000 00007ffa`04487000   C:\WINDOWS\System32\ole32.dll
+ModLoad: 00007ffa`039a0000 00007ffa`03a65000   C:\WINDOWS\System32\OLEAUT32.dll
+ModLoad: 00007ff9`bf490000 00007ff9`bf701000   C:\WINDOWS\SYSTEM32\uiautomationcore.dll
+ModLoad: 00007ff9`f9d30000 00007ff9`f9f24000   C:\WINDOWS\SYSTEM32\dbghelp.dll
+ModLoad: 00007ff9`e7a70000 00007ff9`e7c14000   C:\WINDOWS\WinSxS\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.18362.1977_none_cf6b13513eef0936\gdiplus.dll
+ModLoad: 00007ff9`fe910000 00007ff9`feed0000   C:\WINDOWS\SYSTEM32\d2d1.dll
+ModLoad: 00007ff9`934e0000 00007ff9`9371f000   C:\Users\re11d\AppData\Local\Programs\Messenger\WinSparkle.dll
+ModLoad: 00007ffa`028f0000 00007ffa`02a3a000   C:\WINDOWS\System32\CRYPT32.dll
+ModLoad: 00007ffa`02020000 00007ffa`02032000   C:\WINDOWS\System32\MSASN1.dll
+ModLoad: 00007ff9`f63e0000 00007ff9`f68b5000   C:\WINDOWS\SYSTEM32\WININET.dll
+ModLoad: 00007ff9`c5f40000 00007ff9`c613a000   C:\WINDOWS\SYSTEM32\MFPlat.DLL
+ModLoad: 00007ff9`ff330000 00007ff9`ff58b000   C:\WINDOWS\SYSTEM32\d3d11.dll
+ModLoad: 00007ffa`00cc0000 00007ffa`00dab000   C:\WINDOWS\SYSTEM32\dxgi.dll
+ModLoad: 00007ff9`efcc0000 00007ff9`effca000   C:\WINDOWS\SYSTEM32\DWrite.dll
+ModLoad: 00007ff9`ff590000 00007ff9`ff76c000   C:\WINDOWS\SYSTEM32\dcomp.dll
+ModLoad: 00007ff9`a0ea0000 00007ff9`a0fd9000   C:\WINDOWS\SYSTEM32\MFReadWrite.dll
+ModLoad: 00007ffa`008b0000 00007ffa`0099f000   C:\WINDOWS\SYSTEM32\PROPSYS.dll
+ModLoad: 00007ffa`014e0000 00007ffa`0151a000   C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+ModLoad: 00007ff9`c6c40000 00007ff9`c6e7c000   C:\WINDOWS\SYSTEM32\icu.dll
+ModLoad: 00007ff9`fc2d0000 00007ff9`fc2da000   C:\WINDOWS\SYSTEM32\AVRT.dll
+ModLoad: 00007ff9`ffbf0000 00007ff9`ffc14000   C:\WINDOWS\SYSTEM32\WINMM.dll
+ModLoad: 00007ffa`01f10000 00007ffa`01f3f000   C:\WINDOWS\SYSTEM32\SspiCli.dll
+ModLoad: 00007ff9`e68d0000 00007ff9`e68dc000   C:\WINDOWS\SYSTEM32\Secur32.dll
+ModLoad: 00007ff9`f60b0000 00007ff9`f60bb000   C:\WINDOWS\SYSTEM32\msdmo.dll
+ModLoad: 00007ff9`f8e00000 00007ff9`f8e16000   C:\Users\re11d\AppData\Local\Programs\Messenger\VCRUNTIME140.dll
+ModLoad: 00007ff9`fa450000 00007ff9`fa45a000   C:\WINDOWS\SYSTEM32\VERSION.dll
+ModLoad: 00007ff9`fffc0000 00007ffa`00059000   C:\WINDOWS\SYSTEM32\UxTheme.dll
+ModLoad: 00007ff9`e7c90000 00007ff9`e7c97000   C:\WINDOWS\SYSTEM32\MSIMG32.dll
+ModLoad: 00007ff9`f7600000 00007ff9`f7884000   C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.1977_none_9e80206be45c8f68\COMCTL32.dll
+ModLoad: 00007ff9`ffae0000 00007ff9`ffb0d000   C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+ModLoad: 00007ffa`00c30000 00007ffa`00c50000   C:\WINDOWS\SYSTEM32\dxcore.dll
+ModLoad: 00007ff9`c9680000 00007ff9`c96af000   C:\WINDOWS\SYSTEM32\RTWorkQ.DLL
+ModLoad: 00007ffa`019a0000 00007ffa`019ac000   C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL
+(23e4.4efc): Break instruction exception - code 80000003 (first chance)
+ntdll!LdrpDoDebuggerBreak+0x30:
+00007ffa`0521108c cc              int     3
+0:000&gt; g
+ModLoad: 00007ffa`04060000 00007ffa`0408e000   C:\WINDOWS\System32\IMM32.DLL
+ModLoad: 00007ffa`04280000 00007ffa`04322000   C:\WINDOWS\System32\clbcatq.dll
+ModLoad: 00007ff9`c3c00000 00007ff9`c3cca000   C:\Windows\System32\windows.applicationmodel.datatransfer.dll
+ModLoad: 00007ffa`04610000 00007ffa`04686000   C:\WINDOWS\System32\coml2.dll
+ModLoad: 00007ffa`01140000 00007ffa`01171000   C:\WINDOWS\SYSTEM32\ntmarta.dll
+ModLoad: 00007ff9`ffb10000 00007ff9`ffbe4000   C:\Windows\System32\CoreMessaging.dll
+ModLoad: 00007ff9`f1570000 00007ff9`f1817000   C:\Windows\System32\iertutil.dll
+ModLoad: 00007ff9`f60e0000 00007ff9`f6119000   C:\Program Files\Nahimic\Nahimic2\UserInterface\x64\Nahimic2DevProps.dll
+ModLoad: 00007ff9`f6120000 00007ff9`f616e000   C:\Program Files\Nahimic\Nahimic2\UserInterface\x64\Nahimic2OSD.dll
+ModLoad: 00007ffa`017d0000 00007ffa`01837000   C:\WINDOWS\system32\mswsock.dll
+ModLoad: 00007ff9`fd4c0000 00007ff9`fd532000   C:\WINDOWS\System32\MMDevApi.dll
+ModLoad: 00007ffa`01da0000 00007ffa`01dca000   C:\WINDOWS\System32\DEVOBJ.dll
+ModLoad: 00007ffa`01520000 00007ffa`015ea000   C:\WINDOWS\SYSTEM32\DNSAPI.dll
+ModLoad: 00007ffa`04530000 00007ffa`04538000   C:\WINDOWS\System32\NSI.dll
+ModLoad: 00007ff9`fd5d0000 00007ff9`fd72e000   C:\WINDOWS\SYSTEM32\AUDIOSES.DLL
+ModLoad: 00007ff9`fdbd0000 00007ff9`fdd22000   C:\WINDOWS\SYSTEM32\wintypes.dll
+ModLoad: 00007ff9`fb070000 00007ff9`fb07a000   C:\Windows\System32\rasadhlp.dll
+ModLoad: 00007ff9`f1ab0000 00007ff9`f2bae000   C:\Windows\System32\Windows.UI.Xaml.dll
+(23e4.2e88): Unknown exception - code 00000006 (first chance)
+(23e4.3564): Unknown exception - code 00000006 (first chance)
+ModLoad: 00007ff9`f42a0000 00007ff9`f42fd000   C:\Windows\System32\Bcp47Langs.dll
+(23e4.3564): Unknown exception - code 00000006 (first chance)
+(23e4.2e88): Unknown exception - code 00000006 (first chance)
+(23e4.3564): Unknown exception - code 00000006 (first chance)
+ModLoad: 00007ff9`f40a0000 00007ff9`f41e9000   C:\Windows\System32\Windows.UI.dll
+ModLoad: 00007ff9`f4000000 00007ff9`f409b000   C:\Windows\System32\TextInputFramework.dll
+ModLoad: 00007ff9`f3bb0000 00007ff9`f3ccb000   C:\Windows\System32\InputHost.dll
+ModLoad: 00007ff9`f3cd0000 00007ff9`f3ffa000   C:\Windows\System32\CoreUIComponents.dll
+(23e4.5030): Windows Runtime Originate Error - code 40080201 (first chance)
+ModLoad: 00007ff9`fa2f0000 00007ff9`fa306000   C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL
+ModLoad: 00007ff9`fa2a0000 00007ff9`fa2bc000   C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL
+ModLoad: 00007ff9`f35f0000 00007ff9`f3606000   C:\WINDOWS\SYSTEM32\ondemandconnroutehelper.dll
+(23e4.5030): C++ EH exception - code e06d7363 (first chance)
+(23e4.5030): C++ EH exception - code e06d7363 (!!! second chance !!!)
+KERNELBASE!RaiseException+0x69:
+00007ffa`02f73fa9 0f1f440000      nop     dword ptr [rax+rax]
+0:028&gt; .sympath srv*C:\Windows\Symbols*http://msdl.microsoft.com/download/symbols
+Symbol search path is: srv*C:\Windows\Symbols*http://msdl.microsoft.com/download/symbols
+Expanded Symbol search path is: srv*c:\windows\symbols*http://msdl.microsoft.com/download/symbols
+
+************* Path validation summary **************
+Response                         Time (ms)     Location
+Deferred                                       srv*C:\Windows\Symbols*http://msdl.microsoft.com/download/symbols
+0:028&gt; .reload
+Reloading current modules
+................................................................
+.........................
+0:028&gt; ~* k 99
+
+   0  Id: 23e4.4efc Suspend: 1 Teb: 00000027`725cc000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`726ff288 00007ffa`02f71f63 ntdll!NtDeviceIoControlFile+0xf
+*** ERROR: Symbol file could not be found.  Defaulted to export symbols for ZeratulWindows.exe - 
+01 00000027`726ff290 00007ff7`00482b79 KERNELBASE!WaitForSingleObjectEx+0x93
+02 00000027`726ff330 00000000`00000000 ZeratulWindows!rtc::tslog::TimeSeriesEngine::~TimeSeriesEngine+0x1059
+
+   1  Id: 23e4.25c8 Suspend: 1 Teb: 00000027`725d0000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`727fe768 00007ffa`0505f3e7 ntdll!NtDeviceIoControlFile+0xf
+*** ERROR: Symbol file could not be found.  Defaulted to export symbols for C:\Program Files\Nahimic\Nahimic2\UserInterface\x64\Nahimic2DevProps.dll - 
+01 00000027`727fe770 00007ff9`f60ed6a8 kernel32!Thread32Next+0xb7
+02 00000027`727fe7d0 00007ff9`f60ed70c Nahimic2DevProps!GetHotPatchInfo+0x3fa8
+03 00000027`727fe830 00007ff9`f60ee11e Nahimic2DevProps!GetHotPatchInfo+0x400c
+04 00000027`727fe860 00007ff9`f60e9af0 Nahimic2DevProps!GetHotPatchInfo+0x4a1e
+05 00000027`727fe8a0 00007ff9`f60e4288 Nahimic2DevProps!GetHotPatchInfo+0x3f0
+06 00000027`727fe8d0 00007ff9`f60e2bf4 Nahimic2DevProps+0x4288
+07 00000027`727fe970 00007ff9`f60e1334 Nahimic2DevProps+0x2bf4
+08 00000027`727fe9a0 00007ff9`f60e87ef Nahimic2DevProps+0x1334
+09 00000027`727fe9e0 00007ff9`f60ead0e Nahimic2DevProps+0x87ef
+0a 00000027`727fea20 00007ffa`046951e6 Nahimic2DevProps!GetHotPatchInfo+0x160e
+0b 00000027`727fea50 00007ffa`051e0c14 USER32!_ClientLoadLibrary+0xa6
+0c 00000027`727febf0 00007ffa`028c1464 ntdll!KiUserCallbackDispatcherContinue
+0d 00000027`727fed38 00007ffa`046a8be1 win32u!NtUserCallNextHookEx+0x14
+0e 00000027`727fed40 00007ffa`046b37b6 USER32!CallNextHookEx+0x161
+0f 00000027`727fed90 00007ffa`046be204 USER32!DispatchHookW+0xa6
+10 00000027`727fee20 00007ffa`051e0c14 USER32!__fnHkINLPCBTCREATESTRUCT+0x84
+11 00000027`727fee80 00007ffa`028c1f24 ntdll!KiUserCallbackDispatcherContinue
+12 00000027`727ff018 00007ffa`04697dc1 win32u!NtUserCreateWindowEx+0x14
+13 00000027`727ff020 00007ffa`046979b4 USER32!VerNtUserCreateWindowEx+0x211
+14 00000027`727ff3b0 00007ffa`046977f2 USER32!CreateWindowInternal+0x1b4
+*** ERROR: Symbol file could not be found.  Defaulted to export symbols for D:\Program Files\Sandboxie-Plus\SbieDll.dll - 
+15 00000027`727ff510 00000000`7260d4d0 USER32!CreateWindowExW+0x82
+16 00000027`727ff5a0 00007ff7`012f7c1c SbieDll!SbieApi_MonitorPut2+0x2b864
+17 00000027`727ff630 00007ff7`010b481d ZeratulWindows!react::uwp::ControlViewManager::~ControlViewManager+0x20264
+18 00000027`727ff8c0 00007ff7`00bc26d1 ZeratulWindows!Json::StaticString::operator=+0x122d5
+19 00000027`727ff950 00007ffa`02df10b2 ZeratulWindows!react::uwp::ShadowNodeBase::GetViewManager+0xfa6eb
+1a 00000027`727ff980 00007ffa`05057c24 ucrtbase!thread_start&lt;unsigned int (__cdecl*)(void *),1&gt;+0x42
+1b 00000027`727ff9b0 00007ffa`051ad721 kernel32!BaseThreadInitThunk+0x14
+1c 00000027`727ff9e0 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+
+   2  Id: 23e4.48ac Suspend: 1 Teb: 00000027`72400000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`728ff848 00007ffa`02f832a7 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`728ff850 00007ff7`0178b81c KERNELBASE!WaitForMultipleObjectsEx+0x107
+02 00000027`728ffb50 00000027`728ff8d0 ZeratulWindows!react::uwp::FrameworkElementViewManager::RefreshTransformMatrix+0x11154
+03 00000027`728ff8a8 00000000`00222007 0x00000027`728ff8d0
+04 00000027`728ff8b0 00000000`00000048 0x222007
+05 00000027`728ff8b8 00000000`00000001 0x48
+06 00000027`728ff8c0 00000000`00000000 0x1
+
+   3  Id: 23e4.52c0 Suspend: 1 Teb: 00000027`725d4000 Unfrozen "log_writer"
+ # Child-SP          RetAddr           Call Site
+00 00000027`729ff9e8 00007ffa`02f5e57a ntdll!NtDeviceIoControlFile+0xf
+01 00000027`729ff9f0 00007ffa`02dd865e KERNELBASE!WriteFile+0x7a
+02 00000027`729ffa60 00007ffa`02dd8840 ucrtbase!write_binary_nolock+0x52
+03 00000027`729ffaa0 00007ffa`02dd872f ucrtbase!_write_nolock+0xb0
+04 00000027`729ffb10 00007ff7`0174a16f ucrtbase!_write+0x8f
+05 00000027`729ffb60 00007ff7`0178b1b4 ZeratulWindows!react::uwp::ShadowNodeBase::YellowBox+0x2b739
+06 00000027`729ffbd0 00007ff7`01fcc0bc ZeratulWindows!react::uwp::FrameworkElementViewManager::RefreshTransformMatrix+0x10aec
+07 00000027`729ffc30 00007ff7`01cbd08d ZeratulWindows!TBE::IOStream::createFileStream+0x1786c
+08 00000027`729ffca0 00007ff7`01f83355 ZeratulWindows!Json::Value::isNull+0x39b7d
+09 00000027`729ffda0 00007ff7`01f8394e ZeratulWindows!react::uwp::ControlViewManager::OnViewCreated+0x32a0d
+0a 00000027`729ffe50 00007ff7`00bc26d1 ZeratulWindows!react::uwp::ControlViewManager::OnViewCreated+0x33006
+0b 00000027`729ffea0 00007ffa`02df10b2 ZeratulWindows!react::uwp::ShadowNodeBase::GetViewManager+0xfa6eb
+0c 00000027`729ffed0 00007ffa`05057c24 ucrtbase!thread_start&lt;unsigned int (__cdecl*)(void *),1&gt;+0x42
+0d 00000027`729fff00 00007ffa`051ad721 kernel32!BaseThreadInitThunk+0x14
+0e 00000027`729fff30 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+
+   4  Id: 23e4.4868 Suspend: 1 Teb: 00000027`725d6000 Unfrozen "log_writer"
+ # Child-SP          RetAddr           Call Site
+00 00000027`72aff7a8 00007ffa`02f5e57a ntdll!NtDeviceIoControlFile+0xf
+01 00000027`72aff7b0 00007ffa`02dd865e KERNELBASE!WriteFile+0x7a
+02 00000027`72aff820 00007ffa`02dd8840 ucrtbase!write_binary_nolock+0x52
+03 00000027`72aff860 00007ffa`02dd872f ucrtbase!_write_nolock+0xb0
+04 00000027`72aff8d0 00007ff7`0174a16f ucrtbase!_write+0x8f
+05 00000027`72aff920 00007ff7`0178b1b4 ZeratulWindows!react::uwp::ShadowNodeBase::YellowBox+0x2b739
+06 00000027`72aff990 00007ff7`01fcc0bc ZeratulWindows!react::uwp::FrameworkElementViewManager::RefreshTransformMatrix+0x10aec
+07 00000027`72aff9f0 00007ff7`01cbd08d ZeratulWindows!TBE::IOStream::createFileStream+0x1786c
+08 00000027`72affa60 00007ff7`01f83355 ZeratulWindows!Json::Value::isNull+0x39b7d
+09 00000027`72affb60 00007ff7`01f8394e ZeratulWindows!react::uwp::ControlViewManager::OnViewCreated+0x32a0d
+0a 00000027`72affc10 00007ff7`00bc26d1 ZeratulWindows!react::uwp::ControlViewManager::OnViewCreated+0x33006
+0b 00000027`72affc60 00007ffa`02df10b2 ZeratulWindows!react::uwp::ShadowNodeBase::GetViewManager+0xfa6eb
+0c 00000027`72affc90 00007ffa`05057c24 ucrtbase!thread_start&lt;unsigned int (__cdecl*)(void *),1&gt;+0x42
+0d 00000027`72affcc0 00007ffa`051ad721 kernel32!BaseThreadInitThunk+0x14
+0e 00000027`72affcf0 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+
+   5  Id: 23e4.1a44 Suspend: 1 Teb: 00000027`725d8000 Unfrozen "log_writer"
+ # Child-SP          RetAddr           Call Site
+00 00000027`72bff478 00007ffa`051a0cb0 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`72bff480 00007ffa`02f5ee6d ntdll!RtlSleepConditionVariableSRW+0x130
+02 00000027`72bff4f0 00007ff7`033362b4 KERNELBASE!SleepConditionVariableSRW+0x2d
+03 00000027`72bff530 00007ff7`033300b8 ZeratulWindows!Json::operator&gt;&gt;+0x2d5551
+04 00000027`72bff570 00007ff7`033301e4 ZeratulWindows!Json::operator&gt;&gt;+0x2cf355
+05 00000027`72bff5a0 00007ff7`01f832fa ZeratulWindows!Json::operator&gt;&gt;+0x2cf481
+06 00000027`72bff610 00007ff7`01f8394e ZeratulWindows!react::uwp::ControlViewManager::OnViewCreated+0x329b2
+07 00000027`72bff6c0 00007ff7`00bc26d1 ZeratulWindows!react::uwp::ControlViewManager::OnViewCreated+0x33006
+08 00000027`72bff710 00007ffa`02df10b2 ZeratulWindows!react::uwp::ShadowNodeBase::GetViewManager+0xfa6eb
+09 00000027`72bff740 00007ffa`05057c24 ucrtbase!thread_start&lt;unsigned int (__cdecl*)(void *),1&gt;+0x42
+0a 00000027`72bff770 00007ffa`051ad721 kernel32!BaseThreadInitThunk+0x14
+0b 00000027`72bff7a0 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+
+   6  Id: 23e4.4f9c Suspend: 1 Teb: 00000027`725dc000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`72cff8e8 00007ffa`051a0cb0 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`72cff8f0 00007ffa`02f5ee6d ntdll!RtlSleepConditionVariableSRW+0x130
+02 00000027`72cff960 00007ff7`033362b4 KERNELBASE!SleepConditionVariableSRW+0x2d
+03 00000027`72cff9a0 00007ff7`033300b8 ZeratulWindows!Json::operator&gt;&gt;+0x2d5551
+04 00000027`72cff9e0 00007ff7`033301e4 ZeratulWindows!Json::operator&gt;&gt;+0x2cf355
+05 00000027`72cffa10 00007ff7`01241c03 ZeratulWindows!Json::operator&gt;&gt;+0x2cf481
+06 00000027`72cffa80 00007ff7`01241e73 ZeratulWindows!react::uwp::ShadowNodeBase::IsRegisteredForMouseEvents+0x24a03
+07 00000027`72cffb30 00007ff7`01241e3b ZeratulWindows!react::uwp::ShadowNodeBase::IsRegisteredForMouseEvents+0x24c73
+08 00000027`72cffb70 00007ff7`00bc26d1 ZeratulWindows!react::uwp::ShadowNodeBase::IsRegisteredForMouseEvents+0x24c3b
+09 00000027`72cffba0 00007ffa`02df10b2 ZeratulWindows!react::uwp::ShadowNodeBase::GetViewManager+0xfa6eb
+0a 00000027`72cffbd0 00007ffa`05057c24 ucrtbase!thread_start&lt;unsigned int (__cdecl*)(void *),1&gt;+0x42
+0b 00000027`72cffc00 00007ffa`051ad721 kernel32!BaseThreadInitThunk+0x14
+0c 00000027`72cffc30 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+
+   7  Id: 23e4.4fc8 Suspend: 1 Teb: 00000027`725de000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`72dff7d8 00007ffa`051a0cb0 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`72dff7e0 00007ffa`02f5ee6d ntdll!RtlSleepConditionVariableSRW+0x130
+02 00000027`72dff850 00007ff7`033362b4 KERNELBASE!SleepConditionVariableSRW+0x2d
+03 00000027`72dff890 00007ff7`033300dc ZeratulWindows!Json::operator&gt;&gt;+0x2d5551
+04 00000027`72dff8d0 00007ff7`03330223 ZeratulWindows!Json::operator&gt;&gt;+0x2cf379
+05 00000027`72dff900 00007ff7`005f3012 ZeratulWindows!Json::operator&gt;&gt;+0x2cf4c0
+06 00000027`72dff970 00007ff7`010a1b99 ZeratulWindows!Json::StaticString::operator char const * __ptr64+0x7f82
+07 00000027`72dff9c0 00007ff7`010a2f26 ZeratulWindows!OpenDeeplinkUri+0xe4d5
+08 00000027`72dffa80 00007ff7`00bc26d1 ZeratulWindows!Json::StaticString::operator=+0x9de
+09 00000027`72dffad0 00007ffa`02df10b2 ZeratulWindows!react::uwp::ShadowNodeBase::GetViewManager+0xfa6eb
+0a 00000027`72dffb00 00007ffa`05057c24 ucrtbase!thread_start&lt;unsigned int (__cdecl*)(void *),1&gt;+0x42
+0b 00000027`72dffb30 00007ffa`051ad721 kernel32!BaseThreadInitThunk+0x14
+0c 00000027`72dffb60 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+
+   8  Id: 23e4.1ecc Suspend: 1 Teb: 00000027`725e0000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`72efe9c8 00007ffa`051a0cb0 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`72efe9d0 00007ffa`02f5ee6d ntdll!RtlSleepConditionVariableSRW+0x130
+02 00000027`72efea40 00007ff7`033362b4 KERNELBASE!SleepConditionVariableSRW+0x2d
+03 00000027`72efea80 00007ff7`033300b8 ZeratulWindows!Json::operator&gt;&gt;+0x2d5551
+04 00000027`72efeac0 00007ff7`033301e4 ZeratulWindows!Json::operator&gt;&gt;+0x2cf355
+05 00000027`72efeaf0 00007ff7`01f83114 ZeratulWindows!Json::operator&gt;&gt;+0x2cf481
+06 00000027`72efeb60 00007ff7`01f86b7a ZeratulWindows!react::uwp::ControlViewManager::OnViewCreated+0x327cc
+07 00000027`72efebd0 00007ff7`01f86b17 ZeratulWindows!react::uwp::ControlViewManager::OnViewCreated+0x36232
+08 00000027`72efec00 00007ff7`01302c3c ZeratulWindows!react::uwp::ControlViewManager::OnViewCreated+0x361cf
+09 00000027`72efec80 00007ff7`01302c74 ZeratulWindows!react::uwp::ControlViewManager::~ControlViewManager+0x2b284
+0a 00000027`72efedd0 00007ff7`01302c74 ZeratulWindows!react::uwp::ControlViewManager::~ControlViewManager+0x2b2bc
+0b 00000027`72efef20 00007ff7`013029e9 ZeratulWindows!react::uwp::ControlViewManager::~ControlViewManager+0x2b2bc
+0c 00000027`72eff070 00007ff7`0186e165 ZeratulWindows!react::uwp::ControlViewManager::~ControlViewManager+0x2b031
+0d 00000027`72eff110 00007ff7`01452ea8 ZeratulWindows!fba_profiler_get_all+0x595c2
+0e 00000027`72eff320 00007ff7`01493acd ZeratulWindows!IGLReportErrorGetHandler+0x35659
+0f 00000027`72eff3d0 00007ff7`01480599 ZeratulWindows!IGLReportErrorGetHandler+0x7627e
+10 00000027`72eff490 00007ff7`0144c029 ZeratulWindows!IGLReportErrorGetHandler+0x62d4a
+11 00000027`72eff500 00007ff7`0149b99d ZeratulWindows!IGLReportErrorGetHandler+0x2e7da
+12 00000027`72eff530 00007ff7`01868c12 ZeratulWindows!IGLReportErrorGetHandler+0x7e14e
+13 00000027`72eff570 00007ff7`0144ba07 ZeratulWindows!fba_profiler_get_all+0x5406f
+14 00000027`72effa40 00007ff7`0181e7db ZeratulWindows!IGLReportErrorGetHandler+0x2e1b8
+15 00000027`72effa70 00007ff7`0181e79f ZeratulWindows!fba_profiler_get_all+0x9c38
+16 00000027`72effab0 00007ff7`00bc26d1 ZeratulWindows!fba_profiler_get_all+0x9bfc
+17 00000027`72effae0 00007ffa`02df10b2 ZeratulWindows!react::uwp::ShadowNodeBase::GetViewManager+0xfa6eb
+18 00000027`72effb10 00007ffa`05057c24 ucrtbase!thread_start&lt;unsigned int (__cdecl*)(void *),1&gt;+0x42
+19 00000027`72effb40 00007ffa`051ad721 kernel32!BaseThreadInitThunk+0x14
+1a 00000027`72effb70 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+
+   9  Id: 23e4.2de0 Suspend: 1 Teb: 00000027`725e2000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`72fff0e8 00007ffa`051a0cb0 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`72fff0f0 00007ffa`02f5ee6d ntdll!RtlSleepConditionVariableSRW+0x130
+02 00000027`72fff160 00007ff7`033362b4 KERNELBASE!SleepConditionVariableSRW+0x2d
+03 00000027`72fff1a0 00007ff7`033300dc ZeratulWindows!Json::operator&gt;&gt;+0x2d5551
+04 00000027`72fff1e0 00007ff7`03330223 ZeratulWindows!Json::operator&gt;&gt;+0x2cf379
+05 00000027`72fff210 00007ff7`005f3012 ZeratulWindows!Json::operator&gt;&gt;+0x2cf4c0
+06 00000027`72fff280 00007ff7`0121688d ZeratulWindows!Json::StaticString::operator char const * __ptr64+0x7f82
+07 00000027`72fff2d0 00007ff7`012167ad ZeratulWindows!Json::Value::setType+0x6e527
+08 00000027`72fff340 00007ff7`01215fd7 ZeratulWindows!Json::Value::setType+0x6e447
+09 00000027`72fff3c0 00007ff7`0118c70b ZeratulWindows!Json::Value::setType+0x6dc71
+0a 00000027`72fff510 00007ff7`0118c69f ZeratulWindows!fba_node_reset+0x840e6
+0b 00000027`72fff550 00007ff7`0118c5db ZeratulWindows!fba_node_reset+0x8407a
+0c 00000027`72fff5c0 00007ff7`012c5954 ZeratulWindows!fba_node_reset+0x83fb6
+0d 00000027`72fff640 00007ff7`018688fe ZeratulWindows!rtc::tslog::TimeSeriesStream::SetCounterMetadata+0xf62
+0e 00000027`72fff6c0 00007ff7`0144baa0 ZeratulWindows!fba_profiler_get_all+0x53d5b
+0f 00000027`72fffb90 00007ff7`0181e7db ZeratulWindows!IGLReportErrorGetHandler+0x2e251
+10 00000027`72fffbc0 00007ff7`0181e79f ZeratulWindows!fba_profiler_get_all+0x9c38
+11 00000027`72fffc00 00007ff7`00bc26d1 ZeratulWindows!fba_profiler_get_all+0x9bfc
+12 00000027`72fffc30 00007ffa`02df10b2 ZeratulWindows!react::uwp::ShadowNodeBase::GetViewManager+0xfa6eb
+13 00000027`72fffc60 00007ffa`05057c24 ucrtbase!thread_start&lt;unsigned int (__cdecl*)(void *),1&gt;+0x42
+14 00000027`72fffc90 00007ffa`051ad721 kernel32!BaseThreadInitThunk+0x14
+15 00000027`72fffcc0 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+
+  10  Id: 23e4.4ad0 Suspend: 1 Teb: 00000027`725e4000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`730fed68 00007ffa`051a0cb0 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`730fed70 00007ffa`02f5ee6d ntdll!RtlSleepConditionVariableSRW+0x130
+02 00000027`730fede0 00007ff7`033362b4 KERNELBASE!SleepConditionVariableSRW+0x2d
+03 00000027`730fee20 00007ff7`033300dc ZeratulWindows!Json::operator&gt;&gt;+0x2d5551
+04 00000027`730fee60 00007ff7`03330223 ZeratulWindows!Json::operator&gt;&gt;+0x2cf379
+05 00000027`730fee90 00007ff7`005f3012 ZeratulWindows!Json::operator&gt;&gt;+0x2cf4c0
+06 00000027`730fef00 00007ff7`0121688d ZeratulWindows!Json::StaticString::operator char const * __ptr64+0x7f82
+07 00000027`730fef50 00007ff7`012167ad ZeratulWindows!Json::Value::setType+0x6e527
+08 00000027`730fefc0 00007ff7`01215fd7 ZeratulWindows!Json::Value::setType+0x6e447
+09 00000027`730ff040 00007ff7`0118c70b ZeratulWindows!Json::Value::setType+0x6dc71
+0a 00000027`730ff190 00007ff7`0118c69f ZeratulWindows!fba_node_reset+0x840e6
+0b 00000027`730ff1d0 00007ff7`0118c5db ZeratulWindows!fba_node_reset+0x8407a
+0c 00000027`730ff240 00007ff7`012c5954 ZeratulWindows!fba_node_reset+0x83fb6
+0d 00000027`730ff2c0 00007ff7`018688fe ZeratulWindows!rtc::tslog::TimeSeriesStream::SetCounterMetadata+0xf62
+0e 00000027`730ff340 00007ff7`0144babc ZeratulWindows!fba_profiler_get_all+0x53d5b
+0f 00000027`730ff810 00007ff7`0181e7db ZeratulWindows!IGLReportErrorGetHandler+0x2e26d
+10 00000027`730ff840 00007ff7`0181e79f ZeratulWindows!fba_profiler_get_all+0x9c38
+11 00000027`730ff880 00007ff7`00bc26d1 ZeratulWindows!fba_profiler_get_all+0x9bfc
+12 00000027`730ff8b0 00007ffa`02df10b2 ZeratulWindows!react::uwp::ShadowNodeBase::GetViewManager+0xfa6eb
+13 00000027`730ff8e0 00007ffa`05057c24 ucrtbase!thread_start&lt;unsigned int (__cdecl*)(void *),1&gt;+0x42
+14 00000027`730ff910 00007ffa`051ad721 kernel32!BaseThreadInitThunk+0x14
+15 00000027`730ff940 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+
+  11  Id: 23e4.b84 Suspend: 1 Teb: 00000027`725e6000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`731fefa8 00007ffa`051a0cb0 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`731fefb0 00007ffa`02f5ee6d ntdll!RtlSleepConditionVariableSRW+0x130
+02 00000027`731ff020 00007ff7`033362b4 KERNELBASE!SleepConditionVariableSRW+0x2d
+03 00000027`731ff060 00007ff7`033300dc ZeratulWindows!Json::operator&gt;&gt;+0x2d5551
+04 00000027`731ff0a0 00007ff7`03330223 ZeratulWindows!Json::operator&gt;&gt;+0x2cf379
+05 00000027`731ff0d0 00007ff7`005f3012 ZeratulWindows!Json::operator&gt;&gt;+0x2cf4c0
+06 00000027`731ff140 00007ff7`0121688d ZeratulWindows!Json::StaticString::operator char const * __ptr64+0x7f82
+07 00000027`731ff190 00007ff7`012167ad ZeratulWindows!Json::Value::setType+0x6e527
+08 00000027`731ff200 00007ff7`01215fd7 ZeratulWindows!Json::Value::setType+0x6e447
+09 00000027`731ff280 00007ff7`0118c70b ZeratulWindows!Json::Value::setType+0x6dc71
+0a 00000027`731ff3d0 00007ff7`0118c69f ZeratulWindows!fba_node_reset+0x840e6
+0b 00000027`731ff410 00007ff7`0118c5db ZeratulWindows!fba_node_reset+0x8407a
+0c 00000027`731ff480 00007ff7`012c5954 ZeratulWindows!fba_node_reset+0x83fb6
+0d 00000027`731ff500 00007ff7`018688fe ZeratulWindows!rtc::tslog::TimeSeriesStream::SetCounterMetadata+0xf62
+0e 00000027`731ff580 00007ff7`0144bad8 ZeratulWindows!fba_profiler_get_all+0x53d5b
+0f 00000027`731ffa50 00007ff7`0181e7db ZeratulWindows!IGLReportErrorGetHandler+0x2e289
+10 00000027`731ffa80 00007ff7`0181e79f ZeratulWindows!fba_profiler_get_all+0x9c38
+11 00000027`731ffac0 00007ff7`00bc26d1 ZeratulWindows!fba_profiler_get_all+0x9bfc
+12 00000027`731ffaf0 00007ffa`02df10b2 ZeratulWindows!react::uwp::ShadowNodeBase::GetViewManager+0xfa6eb
+13 00000027`731ffb20 00007ffa`05057c24 ucrtbase!thread_start&lt;unsigned int (__cdecl*)(void *),1&gt;+0x42
+14 00000027`731ffb50 00007ffa`051ad721 kernel32!BaseThreadInitThunk+0x14
+15 00000027`731ffb80 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+
+  12  Id: 23e4.2948 Suspend: 1 Teb: 00000027`725e8000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`732fef08 00007ffa`051a0cb0 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`732fef10 00007ffa`02f5ee6d ntdll!RtlSleepConditionVariableSRW+0x130
+02 00000027`732fef80 00007ff7`033362b4 KERNELBASE!SleepConditionVariableSRW+0x2d
+03 00000027`732fefc0 00007ff7`033300dc ZeratulWindows!Json::operator&gt;&gt;+0x2d5551
+04 00000027`732ff000 00007ff7`03330223 ZeratulWindows!Json::operator&gt;&gt;+0x2cf379
+05 00000027`732ff030 00007ff7`005f3012 ZeratulWindows!Json::operator&gt;&gt;+0x2cf4c0
+06 00000027`732ff0a0 00007ff7`0121688d ZeratulWindows!Json::StaticString::operator char const * __ptr64+0x7f82
+07 00000027`732ff0f0 00007ff7`012167ad ZeratulWindows!Json::Value::setType+0x6e527
+08 00000027`732ff160 00007ff7`01215fd7 ZeratulWindows!Json::Value::setType+0x6e447
+09 00000027`732ff1e0 00007ff7`0118c70b ZeratulWindows!Json::Value::setType+0x6dc71
+0a 00000027`732ff330 00007ff7`0118c69f ZeratulWindows!fba_node_reset+0x840e6
+0b 00000027`732ff370 00007ff7`0118c5db ZeratulWindows!fba_node_reset+0x8407a
+0c 00000027`732ff3e0 00007ff7`012c5954 ZeratulWindows!fba_node_reset+0x83fb6
+0d 00000027`732ff460 00007ff7`018688fe ZeratulWindows!rtc::tslog::TimeSeriesStream::SetCounterMetadata+0xf62
+0e 00000027`732ff4e0 00007ff7`0144baf4 ZeratulWindows!fba_profiler_get_all+0x53d5b
+0f 00000027`732ff9b0 00007ff7`0181e7db ZeratulWindows!IGLReportErrorGetHandler+0x2e2a5
+10 00000027`732ff9e0 00007ff7`0181e79f ZeratulWindows!fba_profiler_get_all+0x9c38
+11 00000027`732ffa20 00007ff7`00bc26d1 ZeratulWindows!fba_profiler_get_all+0x9bfc
+12 00000027`732ffa50 00007ffa`02df10b2 ZeratulWindows!react::uwp::ShadowNodeBase::GetViewManager+0xfa6eb
+13 00000027`732ffa80 00007ffa`05057c24 ucrtbase!thread_start&lt;unsigned int (__cdecl*)(void *),1&gt;+0x42
+14 00000027`732ffab0 00007ffa`051ad721 kernel32!BaseThreadInitThunk+0x14
+15 00000027`732ffae0 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+
+  13  Id: 23e4.3564 Suspend: 1 Teb: 00000027`725ea000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`733fbdf8 00000000`7262e86b ntdll!NtDeviceIoControlFile+0xf
+01 00000027`733fbe00 00000000`72631fee SbieDll!SbieApi_MonitorPut2+0x4cbff
+02 00000027`733fbe80 00000000`72633f30 SbieDll!SbieApi_MonitorPut2+0x50382
+03 00000027`733fbf80 00007ffa`051aff90 SbieDll!SbieApi_MonitorPut2+0x522c4
+04 00000027`733fbfd0 00007ffa`0153ede9 ntdll!RtlGetPersistedStateLocation+0x80
+05 00000027`733fc090 00007ffa`0153e70d DNSAPI!DnsGetInterfaceSettingsHelper+0x189
+06 00000027`733fc660 00007ffa`0153c570 DNSAPI!AddDnsAndDhcpConfiguration+0x17d
+07 00000027`733fc700 00007ffa`01547e44 DNSAPI!NetInfo_Build+0x120
+08 00000027`733fc850 00007ffa`01547597 DNSAPI!NetInfo_Get+0x2dc
+09 00000027`733fc8c0 00007ffa`0154748f DNSAPI!Query_InProcess+0x7f
+0a 00000027`733fc8f0 00007ffa`0153780c DNSAPI!InProc_InitiateQuery+0x177
+0b 00000027`733fc950 00007ffa`01536b6e DNSAPI!Query_PrivateExW+0xc3c
+0c 00000027`733fd190 00007ffa`017d261b DNSAPI!DnsQueryEx+0x16e
+0d 00000027`733fd310 00007ffa`017d211f mswsock!Rnr_DoDnsLookup+0x22b
+0e 00000027`733fd410 00007ffa`04217cbe mswsock!Dns_NSPLookupServiceNext+0x1ff
+0f 00000027`733fd780 00007ffa`04217b65 WS2_32!NSQUERY::LookupServiceNext+0xfe
+10 00000027`733fdee0 00007ffa`0421783f WS2_32!WSALookupServiceNextW+0xf5
+11 00000027`733fdf30 00007ffa`04217654 WS2_32!QueryDnsForFamily+0x18f
+12 00000027`733fe8e0 00007ffa`04215f2c WS2_32!QueryDns+0x170
+13 00000027`733fe9a0 00007ffa`04214e92 WS2_32!LookupAddressForName+0x17c
+14 00000027`733feab0 00007ffa`04212b75 WS2_32!GetAddrInfoW+0x222
+15 00000027`733fec50 00007ff7`022468f8 WS2_32!getaddrinfo+0xb5
+16 00000027`733fecd0 00007ff7`01fdf771 ZeratulWindows!curl_easy_unescape+0x59a8
+17 00000027`733fed60 00007ff7`02249459 ZeratulWindows!curl_global_sslset+0x810
+18 00000027`733feea0 00007ff7`02249593 ZeratulWindows!curl_url_set+0x1a61
+19 00000027`733fef20 00007ff7`01fe3fda ZeratulWindows!curl_url_set+0x1b9b
+1a 00000027`733fef80 00007ff7`01fe12d6 ZeratulWindows!curl_version_info+0x3f9b
+1b 00000027`733ff2d0 00007ff7`01fe7186 ZeratulWindows!curl_version_info+0x1297
+1c 00000027`733ff330 00007ff7`01fe6e29 ZeratulWindows!curl_multi_perform+0x3de
+1d 00000027`733ff560 00007ff7`01cc5fc6 ZeratulWindows!curl_multi_perform+0x81
+1e 00000027`733ff610 00007ff7`01863fdf ZeratulWindows!curl_easy_perform+0x175
+1f 00000027`733ff6a0 00007ff7`014473d6 ZeratulWindows!fba_profiler_get_all+0x4f43c
+20 00000027`733ff970 00007ff7`01444d6a ZeratulWindows!IGLReportErrorGetHandler+0x29b87
+21 00000027`733ff9b0 00007ff7`01446b73 ZeratulWindows!IGLReportErrorGetHandler+0x2751b
+22 00000027`733ffa20 00007ff7`0178b473 ZeratulWindows!IGLReportErrorGetHandler+0x29324
+23 00000027`733ffa50 00007ffa`02df10b2 ZeratulWindows!react::uwp::FrameworkElementViewManager::RefreshTransformMatrix+0x10dab
+24 00000027`733ffa90 00007ffa`05057c24 ucrtbase!thread_start&lt;unsigned int (__cdecl*)(void *),1&gt;+0x42
+25 00000027`733ffac0 00007ffa`051ad721 kernel32!BaseThreadInitThunk+0x14
+26 00000027`733ffaf0 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+
+  14  Id: 23e4.465c Suspend: 1 Teb: 00000027`725ec000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`734ff118 00007ffa`02f832a7 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`734ff120 00007ff7`0178b81c KERNELBASE!WaitForMultipleObjectsEx+0x107
+02 00000027`734ff420 00000027`734ff1a0 ZeratulWindows!react::uwp::FrameworkElementViewManager::RefreshTransformMatrix+0x11154
+03 00000027`734ff178 00000000`00222007 0x00000027`734ff1a0
+04 00000027`734ff180 00000000`00000048 0x222007
+05 00000027`734ff188 00000000`00000001 0x48
+06 00000027`734ff190 00000000`00000000 0x1
+
+  15  Id: 23e4.2fc8 Suspend: 1 Teb: 00000027`725ee000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`735ff3d8 00007ffa`02f832a7 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`735ff3e0 00007ff7`0178b81c KERNELBASE!WaitForMultipleObjectsEx+0x107
+02 00000027`735ff6e0 00000027`735ff460 ZeratulWindows!react::uwp::FrameworkElementViewManager::RefreshTransformMatrix+0x11154
+03 00000027`735ff438 00000000`00222007 0x00000027`735ff460
+04 00000027`735ff440 00000000`00000048 0x222007
+05 00000027`735ff448 00000000`00000001 0x48
+06 00000027`735ff450 00000000`00000000 0x1
+
+  16  Id: 23e4.4068 Suspend: 1 Teb: 00000027`725f0000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`736ff3f8 00007ffa`02f832a7 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`736ff400 00007ff7`0178b81c KERNELBASE!WaitForMultipleObjectsEx+0x107
+02 00000027`736ff700 00000027`736ff480 ZeratulWindows!react::uwp::FrameworkElementViewManager::RefreshTransformMatrix+0x11154
+03 00000027`736ff458 00000000`00222007 0x00000027`736ff480
+04 00000027`736ff460 00000000`00000048 0x222007
+05 00000027`736ff468 00000000`00000001 0x48
+06 00000027`736ff470 00000000`00000000 0x1
+
+  17  Id: 23e4.150c Suspend: 1 Teb: 00000027`725f2000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`737ff768 00007ffa`02f832a7 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`737ff770 00007ff7`0178b81c KERNELBASE!WaitForMultipleObjectsEx+0x107
+02 00000027`737ffa70 00000027`737ff7f0 ZeratulWindows!react::uwp::FrameworkElementViewManager::RefreshTransformMatrix+0x11154
+03 00000027`737ff7c8 00000000`00222007 0x00000027`737ff7f0
+04 00000027`737ff7d0 00000000`00000048 0x222007
+05 00000027`737ff7d8 00000000`00000001 0x48
+06 00000027`737ff7e0 00000000`00000000 0x1
+
+  18  Id: 23e4.1d50 Suspend: 1 Teb: 00000027`725f6000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`739ff2a8 00007ffa`02f832a7 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`739ff2b0 00007ff7`0178b81c KERNELBASE!WaitForMultipleObjectsEx+0x107
+02 00000027`739ff5b0 00000027`739ff330 ZeratulWindows!react::uwp::FrameworkElementViewManager::RefreshTransformMatrix+0x11154
+03 00000027`739ff308 00000000`00222007 0x00000027`739ff330
+04 00000027`739ff310 00000000`00000048 0x222007
+05 00000027`739ff318 00000000`00000001 0x48
+06 00000027`739ff320 00000000`00000000 0x1
+
+  19  Id: 23e4.2d5c Suspend: 1 Teb: 00000027`725f4000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`738ff658 00007ffa`02f832a7 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`738ff660 00007ff7`0178b81c KERNELBASE!WaitForMultipleObjectsEx+0x107
+02 00000027`738ff960 00000027`738ff6e0 ZeratulWindows!react::uwp::FrameworkElementViewManager::RefreshTransformMatrix+0x11154
+03 00000027`738ff6b8 00000000`00222007 0x00000027`738ff6e0
+04 00000027`738ff6c0 00000000`00000048 0x222007
+05 00000027`738ff6c8 00000000`00000001 0x48
+06 00000027`738ff6d0 00000000`00000000 0x1
+
+  20  Id: 23e4.fbc Suspend: 1 Teb: 00000027`725f8000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`73aff2d8 00007ffa`02f832a7 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`73aff2e0 00007ff7`0178b81c KERNELBASE!WaitForMultipleObjectsEx+0x107
+02 00000027`73aff5e0 00000027`73aff360 ZeratulWindows!react::uwp::FrameworkElementViewManager::RefreshTransformMatrix+0x11154
+03 00000027`73aff338 00000000`00222007 0x00000027`73aff360
+04 00000027`73aff340 00000000`00000048 0x222007
+05 00000027`73aff348 00000000`00000001 0x48
+06 00000027`73aff350 00000000`00000000 0x1
+
+  21  Id: 23e4.2e88 Suspend: 1 Teb: 00000027`725fa000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`73bfc6e8 00007ffa`02f71f63 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`73bfc6f0 00007ffa`0154806b KERNELBASE!WaitForSingleObjectEx+0x93
+02 00000027`73bfc790 00007ffa`01547d5e DNSAPI!TimedLock_Enter+0x33
+03 00000027`73bfc7c0 00007ffa`01547597 DNSAPI!NetInfo_Get+0x1f6
+04 00000027`73bfc830 00007ffa`0154748f DNSAPI!Query_InProcess+0x7f
+05 00000027`73bfc860 00007ffa`0153780c DNSAPI!InProc_InitiateQuery+0x177
+06 00000027`73bfc8c0 00007ffa`01536b6e DNSAPI!Query_PrivateExW+0xc3c
+07 00000027`73bfd100 00007ffa`017d261b DNSAPI!DnsQueryEx+0x16e
+08 00000027`73bfd280 00007ffa`017d211f mswsock!Rnr_DoDnsLookup+0x22b
+09 00000027`73bfd380 00007ffa`04217cbe mswsock!Dns_NSPLookupServiceNext+0x1ff
+0a 00000027`73bfd6f0 00007ffa`04217b65 WS2_32!NSQUERY::LookupServiceNext+0xfe
+0b 00000027`73bfde50 00007ffa`0421783f WS2_32!WSALookupServiceNextW+0xf5
+0c 00000027`73bfdea0 00007ffa`04217654 WS2_32!QueryDnsForFamily+0x18f
+0d 00000027`73bfe850 00007ffa`04215f2c WS2_32!QueryDns+0x170
+0e 00000027`73bfe910 00007ffa`04214e92 WS2_32!LookupAddressForName+0x17c
+0f 00000027`73bfea20 00007ffa`04212b75 WS2_32!GetAddrInfoW+0x222
+10 00000027`73bfebc0 00007ff7`022468f8 WS2_32!getaddrinfo+0xb5
+11 00000027`73bfec40 00007ff7`01fdf771 ZeratulWindows!curl_easy_unescape+0x59a8
+12 00000027`73bfecd0 00007ff7`02249459 ZeratulWindows!curl_global_sslset+0x810
+13 00000027`73bfee10 00007ff7`02249593 ZeratulWindows!curl_url_set+0x1a61
+14 00000027`73bfee90 00007ff7`01fe3fda ZeratulWindows!curl_url_set+0x1b9b
+15 00000027`73bfeef0 00007ff7`01fe12d6 ZeratulWindows!curl_version_info+0x3f9b
+16 00000027`73bff240 00007ff7`01fe7186 ZeratulWindows!curl_version_info+0x1297
+17 00000027`73bff2a0 00007ff7`01fe6e29 ZeratulWindows!curl_multi_perform+0x3de
+18 00000027`73bff4d0 00007ff7`01cc5fc6 ZeratulWindows!curl_multi_perform+0x81
+19 00000027`73bff580 00007ff7`01863fdf ZeratulWindows!curl_easy_perform+0x175
+1a 00000027`73bff610 00007ff7`014473d6 ZeratulWindows!fba_profiler_get_all+0x4f43c
+1b 00000027`73bff8e0 00007ff7`01444d6a ZeratulWindows!IGLReportErrorGetHandler+0x29b87
+1c 00000027`73bff920 00007ff7`01446b73 ZeratulWindows!IGLReportErrorGetHandler+0x2751b
+1d 00000027`73bff990 00007ff7`0178b473 ZeratulWindows!IGLReportErrorGetHandler+0x29324
+1e 00000027`73bff9c0 00007ffa`02df10b2 ZeratulWindows!react::uwp::FrameworkElementViewManager::RefreshTransformMatrix+0x10dab
+1f 00000027`73bffa00 00007ffa`05057c24 ucrtbase!thread_start&lt;unsigned int (__cdecl*)(void *),1&gt;+0x42
+20 00000027`73bffa30 00007ffa`051ad721 kernel32!BaseThreadInitThunk+0x14
+21 00000027`73bffa60 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+
+  22  Id: 23e4.22e0 Suspend: 1 Teb: 00000027`725fc000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`73cff2a8 00007ffa`02f832a7 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`73cff2b0 00007ff7`0178b81c KERNELBASE!WaitForMultipleObjectsEx+0x107
+02 00000027`73cff5b0 00000027`73cff330 ZeratulWindows!react::uwp::FrameworkElementViewManager::RefreshTransformMatrix+0x11154
+03 00000027`73cff308 00000000`00222007 0x00000027`73cff330
+04 00000027`73cff310 00000000`00000048 0x222007
+05 00000027`73cff318 00000000`00000001 0x48
+06 00000027`73cff320 00000000`00000000 0x1
+
+  23  Id: 23e4.2e44 Suspend: 1 Teb: 00000027`725fe000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`73dff0f8 00007ffa`051a0cb0 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`73dff100 00007ffa`02f5ee6d ntdll!RtlSleepConditionVariableSRW+0x130
+02 00000027`73dff170 00007ff7`033362b4 KERNELBASE!SleepConditionVariableSRW+0x2d
+03 00000027`73dff1b0 00007ff7`033300b8 ZeratulWindows!Json::operator&gt;&gt;+0x2d5551
+04 00000027`73dff1f0 00007ff7`033301e4 ZeratulWindows!Json::operator&gt;&gt;+0x2cf355
+05 00000027`73dff220 00007ff7`01943ede ZeratulWindows!Json::operator&gt;&gt;+0x2cf481
+06 00000027`73dff290 00007ff7`01945e30 ZeratulWindows!fba_profiler_get_all+0x12f33b
+07 00000027`73dff8c0 00007ff7`00bc26d1 ZeratulWindows!fba_profiler_get_all+0x13128d
+08 00000027`73dff910 00007ffa`02df10b2 ZeratulWindows!react::uwp::ShadowNodeBase::GetViewManager+0xfa6eb
+09 00000027`73dff940 00007ffa`05057c24 ucrtbase!thread_start&lt;unsigned int (__cdecl*)(void *),1&gt;+0x42
+0a 00000027`73dff970 00007ffa`051ad721 kernel32!BaseThreadInitThunk+0x14
+0b 00000027`73dff9a0 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+
+  24  Id: 23e4.2508 Suspend: 1 Teb: 00000027`72402000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`73eff6e8 00007ffa`051a0cb0 ntdll!NtDeviceIoControlFile+0xf
+01 00000027`73eff6f0 00007ffa`02f5ee6d ntdll!RtlSleepConditionVariableSRW+0x130
+02 00000027`73eff760 00007ff7`033362b4 KERNELBASE!SleepConditionVariableSRW+0x2d
+03 00000027`73eff7a0 00007ff7`033300b8 ZeratulWindows!Json::operator&gt;&gt;+0x2d5551
+04 00000027`73eff7e0 00007ff7`033301e4 ZeratulWindows!Json::operator&gt;&gt;+0x2cf355
+05 00000027`73eff810 00007ff7`01953b3a ZeratulWindows!Json::operator&gt;&gt;+0x2cf481
+06 00000027`73eff880 00007ff7`01953ac1 ZeratulWindows!fba_profiler_get_all+0x13ef97
+07 00000027`73eff8f0 00007ff7`01953c0a ZeratulWindows!fba_profiler_get_all+0x13ef1e
+08 00000027`73eff950 00007ff7`00bc26d1 ZeratulWindows!fba_profiler_get_all+0x13f067
+09 00000027`73eff9a0 00007ffa`02df10b2 ZeratulWindows!react::uwp::ShadowNodeBase::GetViewManager+0xfa6eb
+0a 00000027`73eff9d0 00007ffa`05057c24 ucrtbase!thread_start&lt;unsigned int (__cdecl*)(void *),1&gt;+0x42
+0b 00000027`73effa00 00007ffa`051ad721 kernel32!BaseThreadInitThunk+0x14
+0c 00000027`73effa30 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+
+  25  Id: 23e4.4078 Suspend: 1 Teb: 00000027`72404000 Unfrozen "GlobalCPUThread"
+ # Child-SP          RetAddr           Call Site
+00 00000027`73ffebd8 00007ffa`02f5e57a ntdll!NtDeviceIoControlFile+0xf
+01 00000027`73ffebe0 00007ffa`02dd865e KERNELBASE!WriteFile+0x7a
+02 00000027`73ffec50 00007ffa`02dd8840 ucrtbase!write_binary_nolock+0x52
+03 00000027`73ffec90 00007ffa`02dd872f ucrtbase!_write_nolock+0xb0
+04 00000027`73ffed00 00007ffa`02dd8ceb ucrtbase!_write+0x8f
+05 00000027`73ffed50 00007ffa`02dd771e ucrtbase!_acrt_stdio_flush_nolock+0x47
+06 00000027`73ffed80 00007ffa`02dd76cb ucrtbase!_fclose_nolock+0x2e
+07 00000027`73ffedb0 00007ff7`01def8d0 ucrtbase!fclose+0x4b
+08 00000027`73ffede0 00007ff7`0193c777 ZeratulWindows!curl_share_strerror+0x12035a
+09 00000027`73ffee60 00007ff7`019403ed ZeratulWindows!fba_profiler_get_all+0x127bd4
+0a 00000027`73fff0a0 00007ff7`014a42f5 ZeratulWindows!fba_profiler_get_all+0x12b84a
+0b 00000027`73fff440 00007ff7`01492409 ZeratulWindows!IGLReportErrorGetHandler+0x86aa6
+0c 00000027`73fff490 00007ff7`01492c9e ZeratulWindows!IGLReportErrorGetHandler+0x74bba
+0d 00000027`73fff640 00007ff7`01853dd3 ZeratulWindows!IGLReportErrorGetHandler+0x7544f
+0e 00000027`73fff670 00007ff7`01433ee8 ZeratulWindows!fba_profiler_get_all+0x3f230
+0f 00000027`73fff810 00007ff7`018559f0 ZeratulWindows!IGLReportErrorGetHandler+0x16699
+10 00000027`73fff9e0 00007ff7`01855923 ZeratulWindows!fba_profiler_get_all+0x40e4d
+11 00000027`73fffa20 00007ff7`0118fde7 ZeratulWindows!fba_profiler_get_all+0x40d80
+12 00000027`73fffa50 00007ff7`0118fd89 ZeratulWindows!fba_node_reset+0x877c2
+13 00000027`73fffab0 00007ff7`00bc26d1 ZeratulWindows!fba_node_reset+0x87764
+14 00000027`73fffae0 00007ffa`02df10b2 ZeratulWindows!react::uwp::ShadowNodeBase::GetViewManager+0xfa6eb
+15 00000027`73fffb10 00007ffa`05057c24 ucrtbase!thread_start&lt;unsigned int (__cdecl*)(void *),1&gt;+0x42
+16 00000027`73fffb40 00007ffa`051ad721 kernel32!BaseThreadInitThunk+0x14
+17 00000027`73fffb70 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+
+  26  Id: 23e4.45dc Suspend: 1 Teb: 00000027`72406000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`740fb1c8 00000000`00cd0ce6 0xcd0f03
+01 00000027`740fb1d0 00000000`00000000 0xcd0ce6
+
+# 28  Id: 23e4.5030 Suspend: 1 Teb: 00000027`7240a000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000027`742ff150 00007ff9`f8e046e2 KERNELBASE!RaiseException+0x69
+01 00000027`742ff230 00007ff7`0048ad49 VCRUNTIME140!_CxxThrowException+0xc2 [f:\dd\vctools\crt\vcruntime\src\eh\throw.cpp @ 136] 
+02 00000027`742ff2b0 00007ff7`0104f160 ZeratulWindows!fbgemm::CompressedSparseColumn::ColPtr+0x21b9
+03 00000027`742ff450 00007ff7`01055489 ZeratulWindows!fbgemm::compare_buffers&lt;__int64&gt;+0x59d38
+04 00000027`742ff4a0 00007ff7`012c0fd2 ZeratulWindows!fbgemm::compare_buffers&lt;__int64&gt;+0x60061
+05 00000027`742ff4e0 00007ff7`012c0eec ZeratulWindows!react::uwp::ShadowNodeBase::IsRegisteredForMouseEvents+0xa3dd2
+06 00000027`742ff570 00007ff7`012c06a8 ZeratulWindows!react::uwp::ShadowNodeBase::IsRegisteredForMouseEvents+0xa3cec
+07 00000027`742ff5c0 00007ff7`010801da ZeratulWindows!react::uwp::ShadowNodeBase::IsRegisteredForMouseEvents+0xa34a8
+08 00000027`742ff890 00007ff7`01082e32 ZeratulWindows!fbgemm::compare_buffers&lt;__int64&gt;+0x8adb2
+09 00000027`742ffb40 00007ff7`00bc26d1 ZeratulWindows!fbgemm::compare_buffers&lt;__int64&gt;+0x8da0a
+0a 00000027`742ffbd0 00007ffa`02df10b2 ZeratulWindows!react::uwp::ShadowNodeBase::GetViewManager+0xfa6eb
+0b 00000027`742ffc00 00007ffa`05057c24 ucrtbase!thread_start&lt;unsigned int (__cdecl*)(void *),1&gt;+0x42
+0c 00000027`742ffc30 00007ffa`051ad721 kernel32!BaseThreadInitThunk+0x14
+0d 00000027`742ffc60 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+</code></pre></div></div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p456" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile456">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-475.html?mode=viewprofile&amp;u=443" class="username">re11ding</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-532.html?author_id=443&amp;sr=posts">2</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Thu Dec 16, 2021 7:44 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content456">
+
+						<h3><a href="viewtopic.php-4313.html?p=456#p456">Re: Cannot get Messenger running in sandboxed mode</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-2055.html?mode=quote&amp;f=14&amp;p=456" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-4313.html?p=456#p456" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-475.html?mode=viewprofile&amp;u=443" class="username">re11ding</a></strong> &raquo; </span><time datetime="2021-12-17T20:22:03+00:00">Fri Dec 17, 2021 8:22 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">An update. Checking "Don't alter window class names created by sandboxed programs" allows a brief popup before the program crashes. A new Windbg log has been posted with this discovery and setting checked.<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>Microsoft (R) Windows Debugger Version 10.0.16299.15 AMD64
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+CommandLine: C:\Users\re11d\AppData\Local\Programs\Messenger\Messenger.exe
+Symbol search path is: srv*
+Executable search path is: 
+ModLoad: 00007ff6`f5340000 00007ff6`f9ca5000   ZeratulWindows.exe
+ModLoad: 00007ffa`b64a0000 00007ffa`b6690000   ntdll.dll
+ModLoad: 00007ffa`b4c90000 00007ffa`b4d43000   C:\WINDOWS\System32\kernel32.dll
+ModLoad: 00007ffa`b3f50000 00007ffa`b41f5000   C:\WINDOWS\System32\KERNELBASE.dll
+ModLoad: 00000000`6f5b0000 00000000`6f66c000   D:\Program Files\Sandboxie-Plus\SbieDll.dll
+ModLoad: 00007ffa`b5110000 00007ffa`b5118000   C:\WINDOWS\System32\psapi.dll
+ModLoad: 00007ffa`b55c0000 00007ffa`b5ca7000   C:\WINDOWS\System32\SHELL32.dll
+ModLoad: 00007ffa`b3d70000 00007ffa`b3e6a000   C:\WINDOWS\System32\ucrtbase.dll
+ModLoad: 00007ffa`b4200000 00007ffa`b424a000   C:\WINDOWS\System32\cfgmgr32.dll
+ModLoad: 00007ffa`b49b0000 00007ffa`b4a59000   C:\WINDOWS\System32\shcore.dll
+ModLoad: 00007ffa`b5cb0000 00007ffa`b5d4e000   C:\WINDOWS\System32\msvcrt.dll
+ModLoad: 00007ffa`b4540000 00007ffa`b465f000   C:\WINDOWS\System32\RPCRT4.dll
+ModLoad: 00007ffa`b5d60000 00007ffa`b6096000   C:\WINDOWS\System32\combase.dll
+ModLoad: 00007ffa`b3e90000 00007ffa`b3f14000   C:\WINDOWS\System32\bcryptPrimitives.dll
+ModLoad: 00007ffa`b35f0000 00007ffa`b3d6b000   C:\WINDOWS\System32\windows.storage.dll
+ModLoad: 00007ffa`b4250000 00007ffa`b42ee000   C:\WINDOWS\System32\msvcp_win.dll
+ModLoad: 00007ffa`b60a0000 00007ffa`b6137000   C:\WINDOWS\System32\sechost.dll
+ModLoad: 00007ffa`b62c0000 00007ffa`b6363000   C:\WINDOWS\System32\advapi32.dll
+ModLoad: 00007ffa`b33a0000 00007ffa`b33be000   C:\WINDOWS\System32\profapi.dll
+ModLoad: 00007ffa`b33c0000 00007ffa`b340a000   C:\WINDOWS\System32\powrprof.dll
+ModLoad: 00007ffa`b3350000 00007ffa`b3360000   C:\WINDOWS\System32\UMPDC.dll
+ModLoad: 00007ffa`b4660000 00007ffa`b46b2000   C:\WINDOWS\System32\shlwapi.dll
+ModLoad: 00007ffa`b4790000 00007ffa`b47b6000   C:\WINDOWS\System32\GDI32.dll
+ModLoad: 00007ffa`b3f20000 00007ffa`b3f41000   C:\WINDOWS\System32\win32u.dll
+ModLoad: 00007ffa`b42f0000 00007ffa`b4488000   C:\WINDOWS\System32\gdi32full.dll
+ModLoad: 00007ffa`b4f70000 00007ffa`b5104000   C:\WINDOWS\System32\USER32.dll
+ModLoad: 00007ffa`b3380000 00007ffa`b3391000   C:\WINDOWS\System32\kernel.appcore.dll
+ModLoad: 00007ffa`b3e70000 00007ffa`b3e87000   C:\WINDOWS\System32\cryptsp.dll
+ModLoad: 00007ffa`b3470000 00007ffa`b3496000   C:\WINDOWS\System32\bcrypt.dll
+ModLoad: 00007ffa`b4c20000 00007ffa`b4c8f000   C:\WINDOWS\System32\WS2_32.dll
+ModLoad: 00007ffa`b4850000 00007ffa`b49a7000   C:\WINDOWS\System32\ole32.dll
+ModLoad: 00007ffa`b46c0000 00007ffa`b4785000   C:\WINDOWS\System32\OLEAUT32.dll
+ModLoad: 00007ffa`77df0000 00007ffa`78061000   C:\WINDOWS\SYSTEM32\uiautomationcore.dll
+ModLoad: 00007ffa`a4fd0000 00007ffa`a51c4000   C:\WINDOWS\SYSTEM32\dbghelp.dll
+ModLoad: 00007ffa`a0cc0000 00007ffa`a0e64000   C:\WINDOWS\WinSxS\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.18362.1977_none_cf6b13513eef0936\gdiplus.dll
+ModLoad: 00007ffa`afc70000 00007ffa`b0230000   C:\WINDOWS\SYSTEM32\d2d1.dll
+ModLoad: 00007ffa`397c0000 00007ffa`399ff000   C:\Users\re11d\AppData\Local\Programs\Messenger\WinSparkle.dll
+ModLoad: 00007ffa`b34a0000 00007ffa`b35ea000   C:\WINDOWS\System32\CRYPT32.dll
+ModLoad: 00007ffa`b3360000 00007ffa`b3372000   C:\WINDOWS\System32\MSASN1.dll
+ModLoad: 00007ffa`a83e0000 00007ffa`a88b5000   C:\WINDOWS\SYSTEM32\WININET.dll
+ModLoad: 00007ffa`ace20000 00007ffa`ad01a000   C:\WINDOWS\SYSTEM32\MFPlat.DLL
+ModLoad: 00007ffa`b0690000 00007ffa`b08eb000   C:\WINDOWS\SYSTEM32\d3d11.dll
+ModLoad: 00007ffa`b2020000 00007ffa`b210b000   C:\WINDOWS\SYSTEM32\dxgi.dll
+ModLoad: 00007ffa`849a0000 00007ffa`84caa000   C:\WINDOWS\SYSTEM32\DWrite.dll
+ModLoad: 00007ffa`b0900000 00007ffa`b0adc000   C:\WINDOWS\SYSTEM32\dcomp.dll
+ModLoad: 00007ffa`64930000 00007ffa`64a69000   C:\WINDOWS\SYSTEM32\MFReadWrite.dll
+ModLoad: 00007ffa`b1590000 00007ffa`b167f000   C:\WINDOWS\SYSTEM32\PROPSYS.dll
+ModLoad: 00007ffa`b2840000 00007ffa`b287a000   C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+ModLoad: 00007ffa`72aa0000 00007ffa`72cdc000   C:\WINDOWS\SYSTEM32\icu.dll
+ModLoad: 00007ffa`acc50000 00007ffa`acc5a000   C:\WINDOWS\SYSTEM32\AVRT.dll
+ModLoad: 00007ffa`b0e80000 00007ffa`b0ea4000   C:\WINDOWS\SYSTEM32\WINMM.dll
+ModLoad: 00007ffa`b3270000 00007ffa`b329f000   C:\WINDOWS\SYSTEM32\SspiCli.dll
+ModLoad: 00007ffa`a0930000 00007ffa`a093c000   C:\WINDOWS\SYSTEM32\Secur32.dll
+ModLoad: 00007ffa`ad410000 00007ffa`ad41b000   C:\WINDOWS\SYSTEM32\msdmo.dll
+ModLoad: 00007ffa`a15b0000 00007ffa`a15c6000   C:\Users\re11d\AppData\Local\Programs\Messenger\VCRUNTIME140.dll
+ModLoad: 00007ffa`ab470000 00007ffa`ab47a000   C:\WINDOWS\SYSTEM32\VERSION.dll
+ModLoad: 00007ffa`b1470000 00007ffa`b1509000   C:\WINDOWS\SYSTEM32\UxTheme.dll
+ModLoad: 00007ffa`a0ff0000 00007ffa`a0ff7000   C:\WINDOWS\SYSTEM32\MSIMG32.dll
+ModLoad: 00007ffa`a94f0000 00007ffa`a9774000   C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.1977_none_9e80206be45c8f68\COMCTL32.dll
+ModLoad: 00007ffa`b0ae0000 00007ffa`b0b0d000   C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+ModLoad: 00007ffa`b1f90000 00007ffa`b1fb0000   C:\WINDOWS\SYSTEM32\dxcore.dll
+ModLoad: 00007ffa`accb0000 00007ffa`accdf000   C:\WINDOWS\SYSTEM32\RTWorkQ.DLL
+ModLoad: 00007ffa`b2d00000 00007ffa`b2d0c000   C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL
+(3df0.3b00): Break instruction exception - code 80000003 (first chance)
+ntdll!LdrpDoDebuggerBreak+0x30:
+00007ffa`b657108c cc              int     3
+0:000&gt; g
+ModLoad: 00007ffa`b6370000 00007ffa`b639e000   C:\WINDOWS\System32\IMM32.DLL
+ModLoad: 00007ffa`b6210000 00007ffa`b62b2000   C:\WINDOWS\System32\clbcatq.dll
+ModLoad: 00007ffa`7fb90000 00007ffa`7fc5a000   C:\Windows\System32\windows.applicationmodel.datatransfer.dll
+ModLoad: 00007ffa`b47c0000 00007ffa`b4836000   C:\WINDOWS\System32\coml2.dll
+ModLoad: 00007ffa`b2490000 00007ffa`b24c1000   C:\WINDOWS\SYSTEM32\ntmarta.dll
+ModLoad: 00007ffa`b0eb0000 00007ffa`b0f84000   C:\Windows\System32\CoreMessaging.dll
+ModLoad: 00007ffa`9e960000 00007ffa`9ec07000   C:\Windows\System32\iertutil.dll
+ModLoad: 00007ffa`5b080000 00007ffa`5b0b9000   C:\Program Files\Nahimic\Nahimic2\UserInterface\x64\Nahimic2DevProps.dll
+ModLoad: 00007ffa`836d0000 00007ffa`8371e000   C:\Program Files\Nahimic\Nahimic2\UserInterface\x64\Nahimic2OSD.dll
+ModLoad: 00007ffa`b2b30000 00007ffa`b2b97000   C:\WINDOWS\system32\mswsock.dll
+ModLoad: 00007ffa`adf80000 00007ffa`adff2000   C:\WINDOWS\System32\MMDevApi.dll
+ModLoad: 00007ffa`b30e0000 00007ffa`b310a000   C:\WINDOWS\System32\DEVOBJ.dll
+ModLoad: 00007ffa`ae540000 00007ffa`ae69e000   C:\WINDOWS\SYSTEM32\AUDIOSES.DLL
+ModLoad: 00007ffa`aecd0000 00007ffa`aee22000   C:\WINDOWS\SYSTEM32\wintypes.dll
+ModLoad: 00007ffa`b2880000 00007ffa`b294a000   C:\WINDOWS\SYSTEM32\DNSAPI.dll
+ModLoad: 00007ffa`b4840000 00007ffa`b4848000   C:\WINDOWS\System32\NSI.dll
+ModLoad: 00007ffa`ac710000 00007ffa`ac71a000   C:\Windows\System32\rasadhlp.dll
+(3df0.1ea0): Unknown exception - code 00000006 (first chance)
+ModLoad: 00007ffa`855a0000 00007ffa`8669e000   C:\Windows\System32\Windows.UI.Xaml.dll
+(3df0.1ea0): Unknown exception - code 00000006 (first chance)
+ModLoad: 00007ffa`89950000 00007ffa`899ad000   C:\Windows\System32\Bcp47Langs.dll
+(3df0.1ea0): Unknown exception - code 00000006 (first chance)
+ModLoad: 00007ffa`89c00000 00007ffa`89d49000   C:\Windows\System32\Windows.UI.dll
+ModLoad: 00007ffa`8a0b0000 00007ffa`8a14b000   C:\Windows\System32\TextInputFramework.dll
+ModLoad: 00007ffa`89ae0000 00007ffa`89bfb000   C:\Windows\System32\InputHost.dll
+ModLoad: 00007ffa`a5d30000 00007ffa`a605a000   C:\Windows\System32\CoreUIComponents.dll
+ModLoad: 00007ffa`ab4a0000 00007ffa`ab4b6000   C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL
+ModLoad: 00007ffa`b4a60000 00007ffa`b4b95000   C:\WINDOWS\System32\MSCTF.dll
+ModLoad: 00007ffa`ab480000 00007ffa`ab49c000   C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL
+ModLoad: 00007ffa`b16b0000 00007ffa`b190a000   C:\Windows\System32\twinapi.appcore.dll
+ModLoad: 00007ffa`b1ae0000 00007ffa`b1b09000   C:\Windows\System32\RMCLIENT.dll
+(3df0.42b0): Windows Runtime Transform Error - code 40080202 (first chance)
+ModLoad: 00007ffa`8b040000 00007ffa`8b0eb000   C:\Windows\System32\UiaManager.dll
+ModLoad: 00007ffa`ab4c0000 00007ffa`ab4cb000   C:\WINDOWS\SYSTEM32\WINNSI.DLL
+(3df0.1ea0): Unknown exception - code 000006d9 (first chance)
+(3df0.1ea0): Unknown exception - code 000006d9 (first chance)
+ModLoad: 00007ffa`ab1f0000 00007ffa`ab267000   C:\WINDOWS\System32\fwpuclnt.dll
+onecore\com\combase\dcomrem\resolver.cxx(2295)\combase.dll!00007FFAB5DD453E: (caller: 00007FFAB5DD2C9B) ReturnHr(1) tid(42b0) 80040154 Class not registered
+onecore\com\combase\dcomrem\resolver.cxx(2499)\combase.dll!00007FFAB5DD2CC2: (caller: 00007FFAB5DD36D9) ReturnHr(2) tid(42b0) 80040154 Class not registered
+onecore\windows\accessibletech\uiamanager\dll\uiawindownotifier.cpp(34)\UiaManager.dll!00007FFA8B049F91: (caller: 00007FFA89C1AAB6) ReturnHr(1) tid(42b0) 80040154 Class not registered
+ModLoad: 00007ffa`a4490000 00007ffa`a4c00000   C:\Windows\System32\OneCoreUAPCommonProxyStub.dll
+ModLoad: 00007ffa`9ec10000 00007ffa`9ede5000   C:\WINDOWS\SYSTEM32\urlmon.dll
+ModLoad: 00007ffa`9c8a0000 00007ffa`9c8c6000   C:\Windows\System32\srvcli.dll
+ModLoad: 00007ffa`b2950000 00007ffa`b295c000   C:\Windows\System32\netutils.dll
+ModLoad: 00007ffa`b1910000 00007ffa`b1924000   C:\WINDOWS\SYSTEM32\resourcepolicyclient.dll
+ModLoad: 00007ffa`a2580000 00007ffa`a2686000   C:\WINDOWS\System32\DriverStore\FileRepository\nvmii.inf_amd64_739f353bfad3fa54\nvldumdx.dll
+ModLoad: 00007ffa`ab3d0000 00007ffa`ab3ff000   C:\WINDOWS\SYSTEM32\cryptnet.dll
+ModLoad: 00007ffa`a93b0000 00007ffa`a94ee000   C:\WINDOWS\SYSTEM32\drvstore.dll
+ModLoad: 00007ffa`b2d90000 00007ffa`b2db9000   C:\WINDOWS\SYSTEM32\wldp.dll
+ModLoad: 00007ffa`b3410000 00007ffa`b346c000   C:\WINDOWS\System32\WINTRUST.dll
+ModLoad: 00007ffa`a7990000 00007ffa`a7aa2000   C:\Windows\System32\MrmCoreR.dll
+ModLoad: 00007ffa`89ab0000 00007ffa`89ae0000   C:\Windows\System32\bcp47mrm.dll
+(3df0.1ea0): C++ EH exception - code e06d7363 (first chance)
+(3df0.1ea0): C++ EH exception - code e06d7363 (first chance)
+ModLoad: 00007ffa`b55a0000 00007ffa`b55bd000   C:\WINDOWS\System32\imagehlp.dll
+(3df0.1ea0): C++ EH exception - code e06d7363 (first chance)
+onecore\base\appmodel\statemanager\apiset\lib\statespace.cpp(107)\kernelbase.dll!00007FFAB3FB2175: (caller: 00007FFAB3FD086B) ReturnHr(1) tid(42b0) 80073D54 The process has no package identity.
+onecore\base\appmodel\statemanager\apiset\lib\statemanager.cpp(53)\kernelbase.dll!00007FFAB3FD0888: (caller: 00007FFA8589A289) ReturnHr(2) tid(42b0) 80073D54 The process has no package identity.
+ModLoad: 00007ffa`852d0000 00007ffa`853e2000   C:\Windows\System32\Windows.UI.Immersive.dll
+ModLoad: 00007ffa`821f0000 00007ffa`8222b000   C:\WINDOWS\system32\DataExchange.dll
+ModLoad: 00007ffa`b26b0000 00007ffa`b26e3000   C:\WINDOWS\system32\rsaenh.dll
+onecore\com\combase\dcomrem\resolver.cxx(2295)\combase.dll!00007FFAB5DD453E: (caller: 00007FFAB5DD2C9B) ReturnHr(3) tid(42b0) 80040154 Class not registered
+onecore\com\combase\dcomrem\resolver.cxx(2499)\combase.dll!00007FFAB5DD2CC2: (caller: 00007FFAB5DD36D9) ReturnHr(4) tid(42b0) 80040154 Class not registered
+(3df0.614): Unknown exception - code 00000006 (first chance)
+(3df0.614): Unknown exception - code 00000006 (first chance)
+ModLoad: 00007ffa`5c250000 00007ffa`60c56000   C:\WINDOWS\System32\DriverStore\FileRepository\nvmii.inf_amd64_739f353bfad3fa54\nvwgf2umx.dll
+ModLoad: 00007ffa`757c0000 00007ffa`7586e000   C:\Program Files\NVIDIA Corporation\Ansel\NvCameraAllowlisting64.dll
+ModLoad: 00007ffa`7a210000 00007ffa`7a4d5000   C:\WINDOWS\system32\nvspcap64.dll
+(3df0.614): C++ EH exception - code e06d7363 (first chance)
+(3df0.614): C++ EH exception - code e06d7363 (first chance)
+(3df0.614): C++ EH exception - code e06d7363 (first chance)
+(3df0.2904): Unknown exception - code 00000006 (first chance)
+(3df0.2904): Unknown exception - code 00000006 (first chance)
+ModLoad: 00007ffa`b31a0000 00007ffa`b323d000   C:\WINDOWS\SYSTEM32\sxs.dll
+mincore\com\oleaut32\dispatch\ups.cpp(2125)\OLEAUT32.dll!00007FFAB46D57EB: (caller: 00007FFAB46D5962) ReturnHr(1) tid(42b0) 8002801D Library not registered.
+(3df0.2904): C++ EH exception - code e06d7363 (first chance)
+(3df0.2904): C++ EH exception - code e06d7363 (first chance)
+ModLoad: 00007ffa`a1580000 00007ffa`a1589000   C:\WINDOWS\system32\IconCodecService.dll
+ModLoad: 00007ffa`a5900000 00007ffa`a5aaf000   C:\WINDOWS\SYSTEM32\WindowsCodecs.dll
+(3df0.2904): C++ EH exception - code e06d7363 (first chance)
+ModLoad: 00007ffa`ad230000 00007ffa`ad2b6000   C:\Windows\System32\Windows.Graphics.dll
+onecoreuap\windows\wgi\winrt\display\displaycommon.cpp(411)\Windows.Graphics.dll!00007FFAAD2407D0: (caller: 00007FFAAD240515) ReturnHr(1) tid(42b0) 80070490 Element not found.
+onecoreuap\windows\wgi\winrt\display\displaycommon.cpp(411)\Windows.Graphics.dll!00007FFAAD2407D0: (caller: 00007FFAAD24049A) ReturnHr(2) tid(42b0) 80070490 Element not found.
+(3df0.1150): Unknown exception - code 00000006 (first chance)
+(3df0.1150): Unknown exception - code 00000006 (first chance)
+onecoreuap\windows\wgi\winrt\display\displaycommon.cpp(411)\Windows.Graphics.dll!00007FFAAD2407D0: (caller: 00007FFAAD240515) ReturnHr(3) tid(42b0) 80070490 Element not found.
+onecoreuap\windows\wgi\winrt\display\displaycommon.cpp(411)\Windows.Graphics.dll!00007FFAAD2407D0: (caller: 00007FFAAD24049A) ReturnHr(4) tid(42b0) 80070490 Element not found.
+onecoreuap\windows\wgi\winrt\display\displaycommon.cpp(411)\Windows.Graphics.dll!00007FFAAD2407D0: (caller: 00007FFAAD240515) ReturnHr(5) tid(42b0) 80070490 Element not found.
+ModLoad: 00007ffa`a67c0000 00007ffa`a68a5000   C:\Windows\System32\Windows.UI.Core.TextInput.dll
+ModLoad: 00007ffa`8ba60000 00007ffa`8baf9000   C:\WINDOWS\system32\directmanipulation.dll
+(3df0.1150): C++ EH exception - code e06d7363 (first chance)
+(3df0.1150): C++ EH exception - code e06d7363 (first chance)
+(3df0.1150): C++ EH exception - code e06d7363 (first chance)
+(3df0.2fd8): Unknown exception - code 00000006 (first chance)
+(3df0.2fd8): Unknown exception - code 00000006 (first chance)
+ModLoad: 00007ffa`ac740000 00007ffa`ac7c3000   C:\Windows\System32\Windows.Devices.Enumeration.dll
+onecore\com\combase\objact\objact.cxx(183)\combase.dll!00007FFAB5ED19AB: (caller: 00007FFAB5E1CC85) ReturnHr(5) tid(35a4) 8007051D An attempt has been made to operate on an impersonation token by a thread that is not currently impersonating a client.
+onecoreuap\base\devices\rtenum\dllsrv\deviceinfo.cpp(1086)\Windows.Devices.Enumeration.dll!00007FFAAC75341C: (caller: 00007FFAAC75C401) ReturnHr(1) tid(35a4) 8007051D An attempt has been made to operate on an impersonation token by a thread that is not currently impersonating a client.
+onecoreuap\base\devices\rtenum\dllsrv\deviceinfo.cpp(1009)\Windows.Devices.Enumeration.dll!00007FFAAC75C38C: (caller: 00007FF6F6573B6A) ReturnHr(2) tid(35a4) 8007051D An attempt has been made to operate on an impersonation token by a thread that is not currently impersonating a client.
+(3df0.35a4): Windows Runtime Originate Error - code 40080201 (first chance)
+(3df0.35a4): C++ EH exception - code e06d7363 (first chance)
+win32u!NtGdiDdDDIWaitForVerticalBlankEvent+0x14:
+00007ffa`b3f25c44 c3              ret
+0:034&gt; .sympath srv*C:\Windows\Symbols*http://msdl.microsoft.com/download/symbols
+Symbol search path is: srv*C:\Windows\Symbols*http://msdl.microsoft.com/download/symbols
+Expanded Symbol search path is: srv*c:\windows\symbols*http://msdl.microsoft.com/download/symbols
+
+************* Path validation summary **************
+Response                         Time (ms)     Location
+Deferred                                       srv*C:\Windows\Symbols*http://msdl.microsoft.com/download/symbols
+0:034&gt; .reload
+Reloading current modules
+................................................................
+......................................................
+0:034&gt; ~* k 99
+
+. 34  Id: 3df0.870 Suspend: -1 Teb: 00000019`01e81000 Unfrozen
+ # Child-SP          RetAddr           Call Site
+00 00000019`042ff618 00007ffa`b203af1f win32u!NtGdiDdDDIWaitForVerticalBlankEvent+0x14
+01 00000019`042ff620 00007ffa`8575f280 dxgi!CDXGIOutput::WaitForVBlank+0x6f
+02 00000019`042ff690 00007ffa`857609a1 Windows_UI_Xaml!RefreshRateInfo::WaitForRefreshInterval+0x30 [onecoreuap\windows\dxaml\xcp\plat\win\desktop\refreshrateinfo.cpp @ 109] 
+03 00000019`042ff6c0 00007ffa`8575f1df Windows_UI_Xaml!CompositorScheduler::RenderThreadFrame+0x201 [onecoreuap\windows\dxaml\xcp\core\compositor\compositorscheduler.cpp @ 447] 
+04 00000019`042ff750 00007ffa`b4ca7c24 Windows_UI_Xaml!CompositorScheduler::RenderThreadMain+0x87 [onecoreuap\windows\dxaml\xcp\core\compositor\compositorscheduler.cpp @ 304] 
+05 00000019`042ff780 00007ffa`b650d721 kernel32!BaseThreadInitThunk+0x14
+06 00000019`042ff7b0 00000000`00000000 ntdll!RtlUserThreadStart+0x21
+</code></pre></div></div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+	
+
+	<div class="action-bar bar-bottom">
+	
+			<a href="posting.php-2053.html?mode=reply&amp;f=14&amp;t=216" class="button" title="Post a reply">
+							<span>Post Reply</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
+					</a>
+		
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="viewtopic.php-4311.html?f=14&amp;t=216&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+
+			<form method="post" action="./viewtopic.php?f=14&amp;t=216">
+		<div class="dropdown-container dropdown-container-left dropdown-button-control sort-tools">
+	<span title="Display and sorting options" class="button button-secondary dropdown-trigger dropdown-select">
+		<i class="icon fa-sort-amount-asc fa-fw" aria-hidden="true"></i>
+		<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+	</span>
+	<div class="dropdown hidden">
+		<div class="pointer"><div class="pointer-inner"></div></div>
+		<div class="dropdown-contents">
+			<fieldset class="display-options">
+							<label>Display: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+								<label>Sort by: <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label>
+				<label>Direction: <select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+								<hr class="dashed">
+				<input type="submit" class="button2" name="sort" value="Go">
+						</fieldset>
+		</div>
+	</div>
+</div>
+		</form>
+	
+	
+	
+			<div class="pagination">
+			2 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+	</div>
+
+
+<div class="action-bar actions-jump">
+		<p class="jumpbox-return">
+		<a href="viewforum.php-7.html?f=14" class="left-box arrow-left" accesskey="r">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>Return to “Troubleshooting”</span>
+		</a>
+	</p>
+	
+		<div class="jumpbox dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+			<span title="Jump to" class="button button-secondary dropdown-trigger dropdown-select">
+				<span>Jump to</span>
+				<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+			</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																				<li><a href="viewforum.php.html?f=1" class="jumpbox-cat-link"> <span> General</span></a></li>
+																<li><a href="viewforum.php-1.html?f=27" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Announcements</span></a></li>
+																<li><a href="viewforum.php-2.html?f=28" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Forum Discussion</span></a></li>
+																<li><a href="viewforum.php-3.html?f=2" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Off-Topic</span></a></li>
+																<li><a href="viewforum.php-4.html?f=4" class="jumpbox-cat-link"> <span> Sandboxie+</span></a></li>
+																<li><a href="viewforum.php-5.html?f=12" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-6.html?f=13" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-7.html?f=14" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-8.html?f=15" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-9.html?f=16" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+																<li><a href="viewforum.php-10.html?f=3" class="jumpbox-cat-link"> <span> TaskExplorer</span></a></li>
+																<li><a href="viewforum.php-11.html?f=7" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-12.html?f=8" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-13.html?f=9" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-14.html?f=10" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-15.html?f=11" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+																<li><a href="viewforum.php-16.html?f=5" class="jumpbox-cat-link"> <span> DiskCryptor</span></a></li>
+																<li><a href="viewforum.php-17.html?f=17" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-18.html?f=18" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-19.html?f=19" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-20.html?f=20" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-21.html?f=21" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+																<li><a href="viewforum.php-22.html?f=6" class="jumpbox-cat-link"> <span> PrivateWin10</span></a></li>
+																<li><a href="viewforum.php-23.html?f=22" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-24.html?f=23" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-25.html?f=24" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-26.html?f=25" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-27.html?f=26" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+											</ul>
+		</div>
+	</div>
+
+	</div>
+
+
+			</div>
+
+
+<div id="page-footer" class="page-footer" role="contentinfo">
+	<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-footer" class="nav-footer linklist" role="menubar">
+		<li class="breadcrumbs">
+									<span class="crumb"><a href="index.php.html" data-navbar-reference="index"><i class="icon fa-home fa-fw" aria-hidden="true"></i><span>Board index</span></a></span>					</li>
+		
+				<li class="rightside">All times are <span title="UTC">UTC</span></li>
+							<li class="rightside">
+				<a href="ucp.php-2.html?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">
+					<i class="icon fa-trash fa-fw" aria-hidden="true"></i><span>Delete cookies</span>
+				</a>
+			</li>
+																<li class="rightside" data-last-responsive="true">
+				<a href="memberlist.php-11.html?mode=contactadmin" role="menuitem">
+					<i class="icon fa-envelope fa-fw" aria-hidden="true"></i><span>Contact us</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+
+	<div class="copyright">
+				<p class="footer-row">
+			<span class="footer-copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited</span>
+		</p>
+						<p class="footer-row" role="menu">
+			<a class="footer-link" href="ucp.php-3.html?mode=privacy" title="Privacy" role="menuitem">
+				<span class="footer-link-text">Privacy</span>
+			</a>
+			|
+			<a class="footer-link" href="ucp.php-4.html?mode=terms" title="Terms" role="menuitem">
+				<span class="footer-link-text">Terms</span>
+			</a>
+		</p>
+					</div>
+
+	<div id="darkenwrapper" class="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken" class="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	<img src="/cron/cron.task.core.tidy_cache" width="1" height="1" alt="cron"></div>
+
+<script src="assets/javascript/jquery-3.4.1.min.js?assets_version=3"></script>
+<script src="assets/javascript/core.js?assets_version=3"></script>
+
+
+<script>
+(function($) {  // Avoid conflicts with other libraries
+
+'use strict';
+
+	phpbb.addAjaxCallback('reporttosfs', function(data) {
+		if (data.postid !== "undefined") {
+			$('#sfs' + data.postid).hide();
+			phpbb.closeDarkenWrapper(5000);
+		}
+	});
+
+})(jQuery);
+</script>
+<script src="styles/prosilver/template/forum_fn.js?assets_version=3"></script>
+<script src="styles/prosilver/template/ajax.js?assets_version=3"></script>
+
+
+
+</body>
+</html>

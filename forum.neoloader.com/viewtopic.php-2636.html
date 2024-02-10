@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; Client Identification</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>Client Identification</h2>
+		<p><a href="viewtopic.php-730.html?f=170&amp;t=3316">http://forum.neoloader.com/viewtopic.php?f=170&amp;t=3316</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>4</strong></div>
+					<div class="post">
+				<h3>Client Identification</h3>
+				<div class="date">Posted: <strong>Sat Aug 17, 2013 10:05 am</strong></div>
+				<div class="author">by <strong>abel</strong></div>
+				<div class="content">With latest release 0.39, if i've seen correctly, there is a new option "client identification" below ed2k/emule section. what is the meaning of the entries?
+<br>
+<br>- random hash
+<br>- static hash
+<br>- secure random hash
+<br>- secure hash
+<br>
+<br>:-)</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Aug 17, 2013 10:21 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Random hash will generate a new userhash at every neoloader start (if I'm not going wrong), while static hash will generate one at first run and will never change.<br><br>With "Secure" we use the SUI system, this mean that our hash can't be cloned by other clients.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Aug 17, 2013 6:03 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">In random mode The hash will not be changed on each start only of the offline period was &gt; 6 hours.<br><br>Also the hash used in static secure (SUI) mode is not the same as used in normal static mode.<br>Meaning switching between normal static and secure static will not cause the client to be mistaken by others as a fake.<br><br>The feature was added due to not confirmed reports that a significant portion of releaser mods punish clients that don't have SUI.<br><br>Now this can be tested in the wild, if the portion really is significant, or if it is negligible and.<br><br>David X.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Aug 18, 2013 6:35 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">There was a request to put the hash mode selection into the first start wizard,<br>what is your opinion on the subject?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Aug 18, 2013 6:39 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">My opinion is yes, it should stay in the security window because is like any other security setting such as ipfilter and trackers.<br><br>Totally random hash helps to avoid tracking and static with sui is the reverse... is totally security related!<br><br>In fact, you did not added this because care about credits... and is clearly specificated that use the static SUI is not recommended because dangerous.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Aug 18, 2013 7:31 pm</strong></div>
+				<div class="author">by <strong>abel</strong></div>
+				<div class="content">Should <strong>not</strong> be added in the 1st wizard. The <span style="text-decoration: underline">average user</span> does not know (and should not know) the meaning of SUI and userhash, so he can't choose.<br>I think the secure random hash is the default right choice, so you can avoid the ban / score reduction of some mod , and avoid tracking of userhash.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Aug 18, 2013 7:54 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>abel wrote:</cite>Should <strong>not</strong> be added in the 1st wizard. The <span style="text-decoration: underline">average user</span> does not know (and should not know) the meaning of SUI and userhash, so he can't choose.<br>I think the secure random hash is the default right choice, so you can avoid the ban / score reduction of some mod , and avoid tracking of userhash.</div></blockquote><br><br>That sounds really reasonable.<br><br>I think I'll add in the wizard page a slider with 3 implicit options<br><br>Client Trackability for other P2P Networks<br><br>Minimized 	Mediocer	Unrestricted<br><br><br>Minimized: Random Hash with SUI, No Torrent Trackers<br>Mediocer: Random Hash with SUI, Torrent Trackers<br>Unrestricted: Static Hash with SUI, Torrent Trackers<br><br><br>Mediocer would be the default preset</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Aug 18, 2013 9:10 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">The default preset will be minimized, right?<br><br>Mhhh... SUI in all 3 choices...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Aug 18, 2013 9:16 pm</strong></div>
+				<div class="author">by <strong>abel</strong></div>
+				<div class="content">it's a good trade off.<br>However, i suggest the simple words <strong>Low</strong>, <strong>Medium</strong>, <strong>High </strong>instead of Minimized, Mediocre, Unrestricted. ;-)</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Aug 18, 2013 9:17 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Default would be the middle:<br>Random Hash with SUI, Torrent Trackers<br><br>Yes all 3 are with SUI.<br><br>&gt;Low, Medium, High<br>good idea<br><br>In case I add ed2k server support, the settings for trackers will be the same as for servers, though with the difference that no ed2k server will be preset, so without additional user intervention (adding some servers to list manually) no server connection will be established.<br><br><br>Cheers<br>David X.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>4</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

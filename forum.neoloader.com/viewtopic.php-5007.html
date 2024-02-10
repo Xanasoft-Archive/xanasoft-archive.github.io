@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; 0.41 Bugs - Page 7</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>0.41 Bugs</h2>
+		<p><a href="viewtopic.php-1033.html?f=171&amp;t=3337">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3337</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>7</strong> of <strong>18</strong></div>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Nov 09, 2013 4:46 pm</strong></div>
+				<div class="author">by <strong>abel</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite><br>Connected measn we are connected and can do source lookups, published means we actually published the file so the distinction is needed.</div></blockquote><br><br>Well done, but <strong>Ok</strong> for Server Type what means??<br><br>If <em>Ok </em>== <em>Connected </em>USE Connected also for Server Type, like NeoKad and MuleKad.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Nov 09, 2013 4:49 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">you are right Ok == Connected wil fix it asap</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Nov 09, 2013 6:42 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">Is 17 a bug?<br><br><br><br><br><br><br>upload by ed2k<br><br>Neoloader  uploads data to eMule.<br>Uploading 2.01GB data uses 6.29(5.46)GB upload volume.<br><br><br>eMules uploads data to eMule.<br>Uploading 4.37GB data uses 4.36GB upload volume.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Nov 09, 2013 6:53 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>enOehTsIsihT wrote:</cite>Is 17 a bug?<br><br>upload by ed2k<br><br>Neoloader  uploads data to eMule.<br>Uploading 2.01GB data uses 6.29(5.46)GB upload volume.<br><br><br>eMules uploads data to eMule.<br>Uploading 4.37GB data uses 4.36GB upload volume.</div></blockquote><br><br>dont understand</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Nov 09, 2013 6:58 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>enOehTsIsihT wrote:</cite>17.<br>upload by torrent<br>When neoloader has only one transfer,it can't upload stably<br><a href="yLHgMCa.jpg" class="postlink">http://i.imgur.com/yLHgMCa.jpg</a></div></blockquote><br>Is 17 a bug?<br><br>-------------------------------------------------------------------------------------------------------<br><br>upload by ed2k bug<br>Neoloader uploads data to eMule.<br>Uploading 2.01GB data uses 6.29(5.46)GB upload volume.<br><br>video<br>videobam:<br><a href="http://videobam.com/RBqSq" class="postlink">http://videobam.com/RBqSq</a><br><a href="http://videobam.com/moZlZ" class="postlink">http://videobam.com/moZlZ</a><br>mega:<br>clip0244.7z (374 KB)<br><a href="https://mega.co.nz/#!Y9smHQ6S!RpbsoA6sBNxAAYkInnaNuT4PzjVP8hhvO9XjJ_qKUZU" class="postlink">https://mega.co.nz/#!Y9smHQ6S!RpbsoA6sBNxAAYkInnaNuT4PzjVP8hhvO9XjJ_qKUZU</a><br>clip0238.7z (539 KB)<br><a href="https://mega.co.nz/#!15VAwIqY!cnK5ozShJxHcNOBbNpBCilWToWwa5eAMj40O1DnAyBg" class="postlink">https://mega.co.nz/#!15VAwIqY!cnK5ozShJxHcNOBbNpBCilWToWwa5eAMj40O1DnAyBg</a><br><br><br><br>eMule uploads data to eMule.<br>Uploading 4.37GB data uses 4.36GB upload volume.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Nov 09, 2013 7:12 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">yes, I don't think its a bug.<br>I tested it and with a 100% random file the countes show the same value.<br><br>The mismatch occures because eMule counts the amount of packet bytes send on the network, while neo counts the amount of file bytes transmitted.<br><br>When the file data gets compressed you need less packet bytes to transmit a certain amount of file bytes.<br>So the better a file can be compressed the larger the missmatch in countes will be.<br><br>Should I change neo to count always packet bytes?<br>I belive counting file bytes is more correct, but I guess that depands on what one wants to know.<br><br>EDIT: I think I'll change it to count emule style so that there wont be a confusion about that.<br><br>David X.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Nov 09, 2013 9:24 pm</strong></div>
+				<div class="author">by <strong>abel</strong></div>
+				<div class="content">sorting Status column doesn't work<br><br><img src="http://www.imagestorming.com/images/2013/11/10/neoloader_status_sorting.png" class="postimage" alt="Image"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 7:05 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">upload by ed2k<br>I use the other software to monitor internet traffic.  <br>Neoloader uses 683MB upload volume to transfer 216.29MB file.<br>eMule uses 229MB upload volume to transfer 216.29MB file.<br>Neoloader needs more upload time and upload volume to transfer files.<br>Is it a bug?<br><br><br><a href="http://videobam.com/BCUBZ" class="postlink">Fast, Free Video Hosting & Video Sharing - VideoBam</a><br><a href="http://videobam.com/tczCn" class="postlink">Fast, Free Video Hosting & Video Sharing - VideoBam</a><br><br>clip0010.7z 317 KB<br><a href="https://mega.co.nz/#!wsEg1KqR!N6gKkjQAf1ZAurTiFT4bpHBBH8ICcqs6AIVDR0GYieo" class="postlink">https://mega.co.nz/#!wsEg1KqR!N6gKkjQAf1ZAurTiFT4bpHBBH8ICcqs6AIVDR0GYieo</a><br>clip0012.7z 654 KB<br><a href="https://mega.co.nz/#!p8EhVSBA!V0lF6juikFOD9-nbVHVthw6KxtNhl2rUxjfW7VDRKOU" class="postlink">https://mega.co.nz/#!p8EhVSBA!V0lF6juikFOD9-nbVHVthw6KxtNhl2rUxjfW7VDRKOU</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 8:37 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">@abel<br>the status is sorted by the text in the column, its not sorting by rank or whatever. <br><br><br>@enOehTsIsihT<br>thats strange its a seaprated issue from the counter missmatch though, I will investigate it further...<br>Its deffnetly a bug.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 9:03 am</strong></div>
+				<div class="author">by <strong>abel</strong></div>
+				<div class="content">Ok, soon i'll open in a separate thread a feature request for status column sorting.<br><br>Other bug (?)<br>if i change the filename under <em>Details</em> tab, the local .temp file doesn't change filename (as shown in tab <em>Properties -&gt; RelativePath</em>).</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>7</strong> of <strong>18</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

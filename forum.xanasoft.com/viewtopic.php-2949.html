@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; SbieDrv.sys corrupted?</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>SbieDrv.sys corrupted?</h2>
+		<p><a href="viewtopic.php-1130.html?f=14&amp;t=296">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=296</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>SbieDrv.sys corrupted?</h3>
+				<div class="date">Posted: <strong>Sun Apr 03, 2022 8:57 pm</strong></div>
+				<div class="author">by <strong>Krueger</strong></div>
+				<div class="content">I have a clean Windows 7 machine that I have attempted to install Sandboxie on. <br>
+- There is no antivirus software<br>
+- Windows Defender is completely off<br>
+- Windows Firewall is completely off<br>
+- UAC is off<br>
+<br>
+After downloading the installation files I right-click and "un-block".<br>
+I right-click run-as-administrator to install sandboxie. It says it completes successfully.<br>
+<br>
+Upon attempting to run the Sandboxie Service is unable to start due to the SbieDrv.sys not running.<br>
+<br>
+Exact error is as follows:<br>
+Sandboxie Start (Window name)<br>
+Error: SBIE2331 Service start failed: (null)<br>
+--Click OK (opens new window)<br>
+Sandboxie Start (Window name)<br>
+Error: The Sandboxie driver (SbieDrv) is not available to sandbox programs. Make sure both the driver and Sandboxie service (SbieSvc) have started successfully.<br>
+<br>
+Event viewer Security Log:<br>
+Code integrity determined that the image hash of a file is not valid.  The file could be corrupt due to unauthorized modification or the invalid hash could indicate a potential disk device error.<br>
+<br>
+File Name:	\Device\HarddiskVolume3\Program Files\Sandboxie\SbieDrv.sys	<br>
+<br>
+Attempting to start the SbieDrv via cmd-prompt run as administrator<br>
+Cmd&gt; net start SbieDrv<br>
+Error:<br>
+System error 577 has occurred.<br>
+<br>
+Windows cannot verify the digital signature for this file. A recent hardware or software change might have installed a file that is signed incorrectly or damaged, or that might be malicious software from an unknown source.<br>
+<br>
+Anyone have a solution to this?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: SbieDrv.sys corrupted?</h3>
+				<div class="date">Posted: <strong>Sat Jul 15, 2023 6:58 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">This should be resolved by now. Nowadays, except for some pre-releases the installer is properly signed and the driver is always signed.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

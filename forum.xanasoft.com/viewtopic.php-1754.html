@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Is it possible to encrypt the drive first, then install Windows 7</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Is it possible to encrypt the drive first, then install Windows 7</h2>
+		<p><a href="viewtopic.php-372.html?f=17&amp;t=581">https://forum.xanasoft.com/viewtopic.php?f=17&amp;t=581</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Is it possible to encrypt the drive first, then install Windows 7</h3>
+				<div class="date">Posted: <strong>Tue May 09, 2023 6:10 pm</strong></div>
+				<div class="author">by <strong>RadarNyan</strong></div>
+				<div class="content">With the help of waybackmachine, I was able to get some information from old diskcryptor website:<br>
+<a href="http://web.archive.org/web/20191010101941/https://diskcryptor.net/wiki/LiveCD" class="postlink">http://web.archive.org/web/201910101019 ... iki/LiveCD</a><br>
+<a href="http://web.archive.org/web/20130817085258/http://diskcryptor.net/forum/index.php?topic=2290.0" class="postlink">http://web.archive.org/web/201308170852 ... pic=2290.0</a><br>
+<br>
+I was able to integrate diskcryptor into the Windows 7 installation media (a USB drive created with Rufus from original MSDN iso)<br>
+I've integrated diskcryptor to both boot.wim and install.wim following the instructions in pages above (note: the wiki page has some errors. In the spoiler titled "4.1. This step is not required for DiskCryptor ver 1.0 and above." this is false, only dc_fsf.sys related items are deprecated, registry editing is still needed.) <br>
+<br>
+I managed to launch diskcryptor from the installer (Shift+F10 brings up command prompt, from where I can launch diskcryptor) and format the system partition, mount it, then install Windows 7 to the mounted partition. However after reboot all I got is a "Missing operating system" message.<br>
+<br>
+This is "normal" as I haven't installed the diskcryptor bootloader, however no matter I try to install it to the MBR of the hard drive, or using an iso loader, all I can get is the "enter password:" message indicating the bootloader is working. As soon as I enter the correct password, the VM just crashes with the following message:<br>
+
+<blockquote class="uncited"><div>A fault has occurred causing a virtual CPU to enter the shutdown state. If this fault had occurred outside of a virtual machine, it would have caused the physical machine to restart. The shutdown state can be reached by incorrectly configuring the virtual machine, a bug in the guest operating system, or a problem in VMware Player.<br>
+<br>
+Click OK to restart the virtual machine or Cancel to power off the virtual machine.</div></blockquote>
+(PS: I used plop boot manager to make vmware boot from USB as it doesn't support that natively)<br>
+<br>
+I can confirm the Windows 7 is installed in an encrypted state by mounting the virtual hard disk into another VM and mount it with diskcryptor, and the diskcryptor related files and registry entries are present in the disk.<br>
+<br>
+<strong class="text-strong">So, is what I'm trying to achieve possible at all? Or is the post-install stage just isn't compatible with encryption what-so-ever?</strong><br>
+<br>
+I'm not looking for alternatives, I know I can encrypt a running OS (which is what I currently have) and I have successfully tested that it is possible to encrypt the system partition offline using the USB drive I created above after Windows 7 finishes installation and reaches desktop.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Is it possible to encrypt the drive first, then install Windows 7</h3>
+				<div class="date">Posted: <strong>Wed May 10, 2023 7:09 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I think it might be an issue with the MBR bootloader perhaps it fails to properly invoke the windows bootloader.<br>
+If it would be an issue with windows i would expect to see at least the windows boot logo.<br>
+Have you tried to re installing the bootloader to the volume after instalation finished form an other session of your live boot medium?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Is it possible to encrypt the drive first, then install Windows 7</h3>
+				<div class="date">Posted: <strong>Wed May 10, 2023 1:33 pm</strong></div>
+				<div class="author">by <strong>RadarNyan</strong></div>
+				<div class="content">I've done more tests with no success.<br>
+<br>
+1. I recreated the USB installation media from scratch.<br>
+<br>
+2. I grabbed an old HDD and disconnected every other drives on my desktop PC and tried to repeat what I did in VMware to rule out the possibility of something funky happening with VMware or Plop Boot Manager - same behavior observed as VMware warned me about: my PC reboots upon inputting the correct password.<br>
+<br>
+3. I tried to install DiskCryptor bootloader to the hard drive that contains the half-installed encrypted OS, doesn't work. I also tried to connect my old drive (which is encrypted with DiskCryptor after installing OS) and used bootloader on this drive to boot the half-installed one (bootloader was set to "First partition with appropriate password") and observed the same behavior (reboot upon entering password)<br>
+<br>
+I have no idea why would my PC reboot (VMware states that it's because CPU entered shutdown state), all the DiskCryptor bootloaders are configured to "Retry authentication" as Invalid password action, not "Halt System / Reboot System".<br>
+<br>
+Below is what the half-installed drive look like when mounted with DiskCryptor in a working OS, I'm not sure if the Windows Installer is able to load the DiskCryptor drivers in this state.<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code> Volume in drive F has no label.
+ Volume Serial Number is 8CB9-03B7
+
+ Directory of F:\
+
+2010/11/21  11:51    &lt;DIR&gt;          $Recycle.Bin
+2023/05/11  14:45    &lt;DIR&gt;          $WINDOWS.~BT
+2023/05/11  14:52    &lt;DIR&gt;          $WINDOWS.~LS
+2023/05/10  23:09             1,024 AMTAG.BIN
+2023/05/10  23:07    &lt;DIR&gt;          Boot
+2023/05/10  21:30           399,860 bootmgr
+2023/05/11  14:52             8,192 BOOTSECT.BAK
+2009/07/14  14:08    &lt;JUNCTION&gt;     Documents and Settings [C:\Users]
+2009/07/14  12:20    &lt;DIR&gt;          PerfLogs
+2023/05/10  21:25    &lt;DIR&gt;          Program Files
+2009/07/14  13:57    &lt;DIR&gt;          Program Files (x86)
+2009/07/14  14:08    &lt;DIR&gt;          ProgramData
+2023/05/11  14:54    &lt;DIR&gt;          System Volume Information
+2010/11/21  11:50    &lt;DIR&gt;          Users
+2023/05/11  14:52    &lt;DIR&gt;          Windows
+2023/05/11  14:45       536,870,912 WinPEpge.sys
+               4 File(s)    537,279,988 bytes
+              12 Dir(s)  151,673,589,760 bytes free
+</code></pre></div>
+
+Also, I've confirmed that the half-installed partition is marked as Active, and it is the only partition on the drive.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Is it possible to encrypt the drive first, then install Windows 7</h3>
+				<div class="date">Posted: <strong>Thu May 11, 2023 1:18 am</strong></div>
+				<div class="author">by <strong>RadarNyan</strong></div>
+				<div class="content">I managed to get it to work, the key is: I need to install Windows 7 to a partition <strong class="text-strong">encrypted</strong> with DiskCryptor, not <strong class="text-strong">formatted</strong>.<br>
+<br>
+1. Boot with modified Windows 7 installation media (dcrypt driver and registry added to boot.wim and install.wim)<br>
+<br>
+2. Open Command Prompt (Shift+F10) and run DiskPart, manually create a small (100 MB) partition, and format it:
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>DISKPART&gt;
+selecte disk 0
+clean
+create partition primary size=100
+format fs=ntfs quick
+</code></pre></div>
+Note: NTFS MFT reserved space size is determined by the initial size, having it too small could be a problem, see below.<br>
+<br>
+3. Exit DiskPart, start dcrypt.exe and <strong class="text-strong">encrypt</strong> the partition just created. <span style="color:#FF0000">Format with DiskCryptor will NOT work.</span><br>
+<br>
+4. Continue with Windows 7 install, expand the small partition to desired size when selecting install location.<br>
+<br>
+Of course, it is possible to create a large partition in the beginning, so there's no need for expanding later, but that would take more time to encrypt, which is why I originally wanted to use format instead (which is much faster, and can be instant if I don't care about empty spaces and use the quick format option).<br>
+<br>
+5. Windows Installer will reboot automatically in the end, the system will not boot since there's no DiskCryptor bootloader installed.<br>
+<br>
+This can be fixed by either using a DiskCryptor bootloader on USB / CD or boot with the modified install media again and run dcrypt.exe from there to install bootloader to MBR.<br>
+<br>
+6. After the bootloader issue is resolved, Windows installation will continue as normal.<br>
+<br>
+----------<br>
+<br>
+From what I've read (<a href="https://diskcryptor.org/volume/" class="postlink">https://diskcryptor.org/volume/</a>), the only difference between a partition encrypted with DiskCryptor and formatted with it is where the first 2048 bytes of the partition are stored, <span style="color:#0000FF"><strong class="text-strong">I guess there's just no support for relocation area at the end of volume (formatted instead of encrypted) on boot?</strong></span><br>
+<br>
+----------<br>
+<br>
+According to <a href="https://diskcryptor.org/faq/" class="postlink">https://diskcryptor.org/faq/</a> :
+<blockquote class="uncited"><div>Is it safe to resize encrypted partitions?<br>
+When the partition is mounted it can be resized with native windows facilities like diskmgmt.msc or diskpart.exe, compatybility with 3rd party tools has not been tested so I can only advize against it.</div></blockquote>
+So I assume my operation above (create a small partition, encrypt it, then expand) is safe, however what impact would this have comparing to creating a large partition in the beginning? (will NTFS MFT reserved space be too small?)<br>
+<br>
+EDIT: Yes, the above procedure will affect the size of NTFS MFT reserved space ("MFT Zone") size.<br>
+<br>
+1. Create a 100 MB partition, format with NTFS, then expand to 100 GB (102401 MB)
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>MFT Information
+---------------
+MFT size               : 0 MB (0% of drive)
+MFT start cluster      : 8533
+MFT zone clusters      : 8512 - 11744
+MFT zone size          : 12 MB (0% of drive)
+MFT mirror start       : 2</code></pre></div>
+2. Create a 100 GB (102401 MB) partition, format with NTFS
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>MFT Information
+---------------
+MFT size               : 0 MB (0% of drive)
+MFT start cluster      : 786432
+MFT zone clusters      : 786432 - 837664
+MFT zone size          : 200 MB (0% of drive)
+MFT mirror start       : 2</code></pre></div>
+This might lead to MFT fragmentation.<br>
+<br>
+PS: there are some spelling mistakes on the FAQ page, for instance: compatybility (compatibility) and advize (advise), left over from the original site?<br>
+<br>
+I understand that not filling the empty space with random data could compromise the plausible deniability, but I don't really care about that. All I want is my data isn't accessible without the password (say, when I send the SSD in for RMA), and I have TRIM enabled anyway, which if I understand correctly could result in "empty" spaces on the drive, correct?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Is it possible to encrypt the drive first, then install Windows 7</h3>
+				<div class="date">Posted: <strong>Mon May 15, 2023 4:55 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Hmm... yea it makes sense that the format with DC option wold cause issues when doing something that may resize the partition.<br>
+And the windows installer will shrink it to make space for the recovery partition.<br>
+<br>
+I normally don't use this option at all, to avoid such issues, when creating a new partition, I create an empty one of the required size, once its NTFS formatted, I shrink it to almost 0 then I encrypt it and then i expand it back to the original size. <br>
+This way I get my NTFS set up to the target size and avoid torturing my SSD's with encrypting empty space.<br>
+<br>
+With regard to plausible deniability, nowadays with trim that's pretty much useless, also for most applications its enough to ensure the data can't be accessed without PW.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Working with active Secure Boot</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Working with active Secure Boot</h2>
+		<p><a href="viewtopic.php-366.html?f=17&amp;t=599">https://forum.xanasoft.com/viewtopic.php?f=17&amp;t=599</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Working with active Secure Boot</h3>
+				<div class="date">Posted: <strong>Thu Jun 08, 2023 9:24 pm</strong></div>
+				<div class="author">by <strong>simplix</strong></div>
+				<div class="content">I suddenly remembered that I heard a long time ago about the possibility of working old-style drivers on updated systems, searched for information on the Internet and <a href="https://superuser.com/questions/1113674/how-do-i-allow-cross-signed-kernel-drivers-in-windows-10-version-1607-with-secur" class="postlink">found</a> what I was looking for. Checked on the latest version of Windows 11 with all updates and the method works! So:<br>
+<br>
+1. Add a tweak:
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CI\Policy]
+"UpgradedSystem"=dword:00000001</code></pre></div>
+
+2. Be sure to reboot.<br>
+<br>
+3. Now you can install <a href="https://github.com/DavidXanatos/DiskCryptor/releases/download/v1.2.3/dcrypt_setup_1.2_beta_3_signed.exe" class="postlink">dcrypt_setup_1.2_beta_3_signed.exe</a><br>
+<br>
+Done!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Working with active Secure Boot</h3>
+				<div class="date">Posted: <strong>Sun Jul 16, 2023 8:43 am</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">Thank you for sharing this.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

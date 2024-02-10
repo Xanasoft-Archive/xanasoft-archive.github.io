@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Secure erase of Sandbox folder</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Secure erase of Sandbox folder</h2>
+		<p><a href="viewtopic.php-277.html?f=15&amp;t=532">https://forum.xanasoft.com/viewtopic.php?f=15&amp;t=532</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Secure erase of Sandbox folder</h3>
+				<div class="date">Posted: <strong>Wed Jan 25, 2023 8:14 pm</strong></div>
+				<div class="author">by <strong>slemtorsk</strong></div>
+				<div class="content">Hello, and thanks for a great program!<br>
+<br>
+I started using sandboxie classic a long time ago, using plus today.<br>
+<br>
+ i really liked the function in sandboxie classic where you could select Eraser5 or Eraser6 to delete the content..<br>
+<br>
+Can you implenment this function in sandboxie plus? Costum delete commands. <br>
+<br>
+Have a nice day!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Secure erase of Sandbox folder</h3>
+				<div class="date">Posted: <strong>Sun Jan 29, 2023 9:05 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">You can go to the "Box Options" -&gt; "Advanced Options" -&gt; "Triggers"<br>
+There you can configure a trigger for "On Delete Content" to Run a Command which will be executed before the box content gets deleted, you can use the same syntax as classic sandboxie accepted and use this trigger to delete the content "securely".<br>
+<br>
+<br>
+However that said I don't consider this "securely" erase to be of any use:<br>
+for once any files deleted by Sandboxed programs before its cleared will be just deleted normally, and any operation like saving bookmarks by firefox normally creates a new file deletes the old one and renames the new file. So expect buttloads of data leakage.<br>
+second on modern SSD's you have wear leveling so any atempt of securely erasing anythign will be hitt and miss and  just unnecessarily put strain on the ssd and make it fail sooner. <br>
+<br>
+If you need security the recommended approach is to locate the sandbox on a ram disk, an encrypted volume.<br>
+<br>
+Cheers<br>
+David</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

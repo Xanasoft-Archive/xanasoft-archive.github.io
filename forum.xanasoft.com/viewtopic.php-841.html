@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Can you allow an application access a sandboxed application?</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Can you allow an application access a sandboxed application?</h2>
+		<p><a href="viewtopic.php-126.html?f=12&amp;t=728">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=728</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Can you allow an application access a sandboxed application?</h3>
+				<div class="date">Posted: <strong>Thu Jan 25, 2024 7:20 pm</strong></div>
+				<div class="author">by <strong>doggydaddy</strong></div>
+				<div class="content">HI,<br>
+<br>
+I was wondering if its possible to allow an application to interact with another application.  Specifically I have headtracking software (Trackir) i want to use mouse emulation for in VR.  This is accomplished by launching the head  tracking software (trackir5.exe) then launching a mouse emulator (tirmouse.exe) which then emulates the mouse using head tracking.  The game recognizes the trackir5.exe is running and uses that headtracking input on top of the native VR headtracking which is quite nauseating.  Im trying to run trackir5.exe and the tirmouse.exe so they can interact with each other and can control the mouse but the game software cant get the head tracking input.  Is this possible with sandboxie?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Can you allow an application access a sandboxed application?</h3>
+				<div class="date">Posted: <strong>Fri Jan 26, 2024 4:24 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">When it is possible to do that without Sandboxie, this should be possible while the software is sandboxed. By default, applications in sandboxes can see the processes of the host. The applications on the host are not prevented from accessing processes that run sandboxed, by default.<br>
+<br>
+Processes running in two different sandboxes don't see each other, by default.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Can you allow an application access a sandboxed application?</h3>
+				<div class="date">Posted: <strong>Fri Jan 26, 2024 4:47 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">(This assumes that the graphical user interface Sandman, which is the default GUI for Sandboxie-Plus, is being used.)<br>
+<br>
+You can disable that a sandboxed process can't see processes in other sandboxes in the Sandbox Options &gt; Advanced Options &gt; [Hide Processes] where you have to uncheck "Don't allow sandboxed processes to see processes running in other boxes". This is also the place where you can hide host processes from processes running in that sandbox.<br>
+<br>
+Sandbox Options &gt; Resource Access gives control over various resources that can be allowed or denied.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

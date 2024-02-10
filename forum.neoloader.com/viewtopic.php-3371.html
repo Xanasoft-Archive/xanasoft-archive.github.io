@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; _except_handler4_common in msvcrt.dll</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>_except_handler4_common in msvcrt.dll</h2>
+		<p><a href="viewtopic.php-1086.html?f=171&amp;t=3253">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3253</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>_except_handler4_common in msvcrt.dll</h3>
+				<div class="date">Posted: <strong>Thu Apr 11, 2013 4:46 pm</strong></div>
+				<div class="author">by <strong>kopot</strong></div>
+				<div class="content">I downloaded NeoLoader for Windows and tried to start it. The message appeared:
+<br><em>Entry point inet_ntop not found in ws2_32.dll</em>
+<br>I downloaded ws2_32.dll and copied it to NeoLoader directory. The message on start is:
+<br><em>Entry point _except_handler4_common not found in msvcrt.dll</em>
+<br>
+<br>I use Windows XP SP3</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Apr 11, 2013 6:42 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">hmm... windows XP this will be the problem,<br>hmm.... will have to look into it if I can work without inet_ntop<br><br>David X.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Apr 13, 2013 4:06 pm</strong></div>
+				<div class="author">by <strong>kopot</strong></div>
+				<div class="content">The problem with inet_ntop was solved by downloading ws2_32.dll. Now problem is with _except_handler4_common.
+<br>The error message refers to msvcrt.dll. But entry point _except_handler4_common is in library MSVCR100.dll, and this library is placed in NeoLoader directory.
+<br>PEDump of NeoLoader includes reference to MSVCR100.dll and _except_handler4_common
+<br>
+<br>  MSVCR100.dll
+<br>  Hint/Name Table: 0033C494
+<br>...
+<br>   238  ?_type_info_dtor_internal_method@type_info@@QAEXXZ
+<br>   545  _except_handler4_common
+<br>   495  _controlfp_s
+<br>...
+<br>
+<br>but they can't come to agreement <img class="smilies" src="./images/smilies/smile.png" alt=":)" title=":)"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Apr 20, 2013 12:38 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I tested the new version and a clean install forked on a cleanly installed winXP VM<br><br>let me please know if it works for you</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun May 05, 2013 1:10 pm</strong></div>
+				<div class="author">by <strong>kopot</strong></div>
+				<div class="content">I downloaded new NeoSetup and started it. Installer said  "_except_handler4_common in msvcrt.dll" three times, but continued installation process. Program NeoLoader starts  OK. Thank you!</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

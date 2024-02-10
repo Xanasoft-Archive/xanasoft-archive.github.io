@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; 0.49 Bugs</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>0.49 Bugs</h2>
+		<p><a href="viewtopic.php-198.html?f=171&amp;t=3528">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3528</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>9</strong></div>
+					<div class="post">
+				<h3>0.49 Bugs</h3>
+				<div class="date">Posted: <strong>Mon Nov 17, 2014 9:19 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">An hotfix just got released to solve an allocating problem adding only .torrent files.<br><br>Please report any bug in this thread, bug list its up to date but if I forgot to add something or if any bug its not "really fixed" report it again here.<br><br><img class="smilies" src="./images/smilies/notebook.gif" alt=":lappy" title="lappy"><br><br>##########################<br><br>- Few issues with hosters and ed2k -<br><a href="1iLTYFW.jpg" class="postlink">http://i.imgur.com/1iLTYFW.jpg</a><br><a href="18CzVrC.jpg" class="postlink">http://i.imgur.com/18CzVrC.jpg</a><br>I got this file from summary and I noticed the following problems, some of them are visible in the screenshots:<br>1. Speed columm is not updated with transfer speed if the speed is 0 kb/s, it happens when download is complete and also if the hoster goes offline or stop the client for any reason. (it stay there also if clear downloads, also summary window is affected)<br>2. There's an ed2k source recognized as A4AF... but how is that possible if I was downloading (and now I am sharing) only this file ?<br>3. If the file transfer is not complete with an hoster, a manual transfer cancel is needed <br>4. ...and when starting download with another hoster the progressbar doesn't restart from 0%, it seems continue the download, but it is not when it will reach 100% is not complete.<br>5. Is it normal that I see the neo entities as unchecked/idle after restart in transfer list and I don't see the links anymore?<br>6. What does it mean und p2p sharing &gt; "No Torrents" "One Torrent" "All Torrents" ? What is the difference, why on that file from summary is "all torrents" ?<br><br>- Kickass.to searches aren't working, click on any result = no script error -</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Nov 18, 2014 9:02 am</strong></div>
+				<div class="author">by <strong>esher</strong></div>
+				<div class="content">when downloading a file from the summary or via neolink, if you disable both ed2k and torrent share, they restart sharing/downloading after a few seconds in the same time.<br><br>ed2k: data downloaded and file sizes often do not match while downloading ed2k files, downloaded data counter can reach 300% file size when NL do final verification/ when file is available and placed into Inc folder.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Nov 20, 2014 1:20 am</strong></div>
+				<div class="author">by <strong>Axl_Mas</strong></div>
+				<div class="content">Hi team,<br><br>Some problems on ubuntu-mate 64bit.<br>If I click on Shared files Neoloader 0.49 crashes immediately.<br>Here the log from bash:<br><br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>"Jo nov. 20 02 :14: 39 2014: Searching for Hash Set for 4 XXXXXXXXXXXXXXX" <br>"Jo nov. 20 02 :14: 39 2014: Searching for Hash Set for XXXXXXXXXXX" <br>"Jo nov. 20 02 :14: 39 2014: Searching for Hash Set for XXXXXXXXXXX" <br>"Jo nov. 20 02 :14: 39 2014: Standby is inhibited" <br>"Jo nov. 20 02 :14: 39 2014: Connecting emule kademlia" <br>"Jo nov. 20 02 :14: 40 2014: Standby is inhibited" <br>"Jo nov. 20 02 :14: 41 2014: Standby is inhibited" <br>"Jo nov. 20 02 :14: 42 2014: Standby is inhibited" <br>"Jo nov. 20 02 :14: 43 2014: Standby is inhibited" <br>"Jo nov. 20 02 :14: 44 2014: MuleKad Connected, ID: XXXXXXXXXXXXXXXXXXXXXXX" <br>"Jo nov. 20 02 :14: 44 2014: Standby is inhibited" <br>"Jo nov. 20 02 :14: 45 2014: Standby is inhibited" <br>signal 11 (Segmentation fault), address is 0x30 from 0x5f5b25<br>&#91;bt&#93;: (1) ./NeoLoader(_ZSt4swapIP8QMapDataI7QString8QVariantEEvRT_S6_+0x1c) &#91;0x5f5b25&#93;<br>Segmentation fault<br></code></div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Nov 20, 2014 2:29 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Thanks for the reports.<br><br>@Axl_Mas: Can you test if it happens on any other DE ? And on mint MATE ?<br><br>//bug list up to date.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 21, 2014 11:23 pm</strong></div>
+				<div class="author">by <strong>Axl_Mas</strong></div>
+				<div class="content">It is a linux x64 bug.<br>I tried with another PC and another distro (Lubuntu 12.04 LTS 64bit) and there is the same bug.<br>I just installed and started neoloader and if i click to shared files the program crashes with the same error:<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>QSplitter::setCollapsible: Index 1 out of range<br>"SÃ¢ nov. 22 0:16: 31 2014: 7z: Loading Library..." <br>"SÃ¢ nov. 22 0:16: 31 2014: 7z: Loaded Successfuly" <br>"SÃ¢ nov. 22 0:16: 32 2014: loaded file list from disk" <br>"SÃ¢ nov. 22 0:16: 32 2014: Start local server NeoCore" <br>"SÃ¢ nov. 22 0:16: 32 2014: Start remote server on port 20035" <br>"SÃ¢ nov. 22 0:16: 32 2014: NeoLoader Core initialised" <br>"SÃ¢ nov. 22 0:16: 33 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 34 2014: Listen on TCP Port 6894" <br>"SÃ¢ nov. 22 0:16: 34 2014: Listen on UDP Port 6894" <br>"SÃ¢ nov. 22 0:16: 34 2014: Listen on TCP Port 4612" <br>"SÃ¢ nov. 22 0:16: 34 2014: Listen on UDP Port 4779" <br>"SÃ¢ nov. 22 0:16: 34 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 35 2014: Standby is inhibited" <br>connect: No route to host<br>"SÃ¢ nov. 22 0:16: 36 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 37 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 38 2014: Standby is inhibited" <br>connect: No route to host<br>"SÃ¢ nov. 22 0:16: 39 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 40 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 41 2014: Standby is inhibited" <br>connect: No route to host<br>"SÃ¢ nov. 22 0:16: 42 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 42 2014: Starting Module NeoKad" <br>"SÃ¢ nov. 22 0:16: 43 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 43 2014: Starting Module MuleKad" <br>"SÃ¢ nov. 22 0:16: 44 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 45 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 46 2014: Standby is inhibited" <br>connect: No route to host<br>"SÃ¢ nov. 22 0:16: 47 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 48 2014: Connecting NeoKad" <br>"SÃ¢ nov. 22 0:16: 48 2014: NeoKad Connected, ID: 05CDC799C7F7949DB4010E80F65925D6" <br>"SÃ¢ nov. 22 0:16: 48 2014: Installing script File Repository in NeoKad" <br>"SÃ¢ nov. 22 0:16: 48 2014: Installing script Keyword Index in NeoKad" <br>"SÃ¢ nov. 22 0:16: 48 2014: Installing script Link Safe in NeoKad" <br>"SÃ¢ nov. 22 0:16: 48 2014: Installing script Rating Agent in NeoKad" <br>"SÃ¢ nov. 22 0:16: 48 2014: Installing script Sharing Hub in NeoKad" <br>"SÃ¢ nov. 22 0:16: 48 2014: Installing script Source Tracker in NeoKad" <br>"SÃ¢ nov. 22 0:16: 49 2014: Connecting emule kademlia" <br>"SÃ¢ nov. 22 0:16: 49 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 50 2014: Standby is inhibited" <br>connect: No route to host<br>"SÃ¢ nov. 22 0:16: 51 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 51 2014: Connecting NeoKad" <br>"SÃ¢ nov. 22 0:16: 52 2014: NeoKad Connected, ID: 05CDC799C7F7949DB4010E80F65925D6" <br>"SÃ¢ nov. 22 0:16: 52 2014: Installing script File Repository in NeoKad" <br>"SÃ¢ nov. 22 0:16: 52 2014: Installing script Keyword Index in NeoKad" <br>"SÃ¢ nov. 22 0:16: 52 2014: Installing script Link Safe in NeoKad" <br>"SÃ¢ nov. 22 0:16: 52 2014: Installing script Rating Agent in NeoKad" <br>"SÃ¢ nov. 22 0:16: 52 2014: Installing script Sharing Hub in NeoKad" <br>"SÃ¢ nov. 22 0:16: 52 2014: Installing script Source Tracker in NeoKad" <br>"SÃ¢ nov. 22 0:16: 52 2014: Listen on TCP Port 6191" <br>"SÃ¢ nov. 22 0:16: 52 2014: Listen on UDP Port 6191" <br>"SÃ¢ nov. 22 0:16: 52 2014: Listen on TCP Port 4377" <br>"SÃ¢ nov. 22 0:16: 52 2014: Listen on UDP Port 5599" <br>"SÃ¢ nov. 22 0:16: 52 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 53 2014: MuleKad Connected, ID: A926D7B603AFE4AAD33BD6D67B2DC660" <br>connect: No route to host<br>"SÃ¢ nov. 22 0:16: 53 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 54 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 55 2014: Standby is inhibited" <br>"SÃ¢ nov. 22 0:16: 56 2014: Standby is inhibited" <br>connect: No route to host<br>signal 11 (Segmentation fault), address is 0x30 from 0x5f5b25<br>&#91;bt&#93;: (1) ./NeoLoader(_ZSt4swapIP8QMapDataI7QString8QVariantEEvRT_S6_+0x1c) &#91;0x5f5b25&#93;<br>Segmentation fault<br></code></div><br><br>If I will find the time this weekend I'll try even with a x32 linux distro.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Nov 22, 2014 1:55 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I wil look into the bugs on next weekend, this weekend is unfortunately blocked by some private stuff sorry for the delay.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Nov 27, 2014 8:41 am</strong></div>
+				<div class="author">by <strong>Continuer</strong></div>
+				<div class="content">Neoloader crashed when I made Multi File.
+<br>
+<br>Windows7 x64 SP1</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 28, 2014 4:20 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">1.
+<br>Neokad can't be connected
+<br>
+<br>clip0495.7z 126 KB
+<br><a href="https://mega.co.nz/#!ph01xBAQ!YKHVyzmWzb0nlSebMwRKSknVB02_NyQMD7_vMMKvv_o" class="postlink">https://mega.co.nz/#!ph01xBAQ!YKHVyzmWzb0nlSebMwRKSknVB02_NyQMD7_vMMKvv_o</a>
+<br>
+<br>2.
+<br>file list bug
+<br>
+<br><a href="http://link.neoloader.to/magnet:?xt=urn:btih:3b95cc9deb52439178fc1e162fda6c6004c01851&xt=urn:neox:Zb7L9pEJ_Xgjds_PvQO_S9uNLMmz6IY6g4rRlL7ibyc&dn=ubuntu-14.04&xl=4797235200" class="postlink">NeoLoader - Download File</a>
+<br>[url=magnet:?xt=urn:btih:7A1073BC39E6B0B01E3730227B8FFEA6AEAC5D59]magnet:?xt=urn:btih:7A1073BC39E6B0B01E3730227B8FFEA6AEAC5D59[/url]
+<br>
+<br>clip0497.7z 308 KB
+<br><a href="https://mega.co.nz/#!t5F2jTCA!JkRQQ7LEiwNE88C10UCEr4bB6g-7043fNgBVoWT6LTI" class="postlink">https://mega.co.nz/#!t5F2jTCA!JkRQQ7LEiwNE88C10UCEr4bB6g-7043fNgBVoWT6LTI</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Nov 29, 2014 5:12 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Neoloader crashed when I made Multi File.<br>fixed in next update<br><br>1.<br>2.<br>fixed in next update<br><br>//bug list up to date</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 30, 2014 9:46 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>Neo26 wrote:</cite>- Few issues with hosters and ed2k -<br><a href="1iLTYFW.jpg" class="postlink">http://i.imgur.com/1iLTYFW.jpg</a><br><a href="18CzVrC.jpg" class="postlink">http://i.imgur.com/18CzVrC.jpg</a><br>I got this file from summary and I noticed the following problems, some of them are visible in the screenshots:<br>1. Speed columm is not updated with transfer speed if the speed is 0 kb/s, it happens when download is complete and also if the hoster goes offline or stop the client for any reason. (it stay there also if clear downloads, also summary window is affected)<br>2. There's an ed2k source recognized as A4AF... but how is that possible if I was downloading (and now I am sharing) only this file ?<br>3. If the file transfer is not complete with an hoster, a manual transfer cancel is needed <br>4. ...and when starting download with another hoster the progressbar doesn't restart from 0%, it seems continue the download, but it is not when it will reach 100% is not complete.<br>5. Is it normal that I see the neo entities as unchecked/idle after restart in transfer list and I don't see the links anymore?<br>6. What does it mean und p2p sharing &gt; "No Torrents" "One Torrent" "All Torrents" ? What is the difference, why on that file from summary is "all torrents" ?<br></div></blockquote><br><br>1. this is a known issue sometimes the bandwidth controll object gets scraped befoure the proeprly reseting<br>2. it says a4af if you havn't asked for this file, the user is a source cause he asked you for the file.<br>3. there should be an auto reset on recoverable errors, unrecoverable errors shoudl remain in error state, or in what condition that happens?<br>4. wil look into it<br>5. what links<br>6. no torrents means torrenting dissabled, one torrent means use only one torrent for that file, all torrents means use as many torrents as are there that for that file<br><br>//bug list up to date</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>9</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

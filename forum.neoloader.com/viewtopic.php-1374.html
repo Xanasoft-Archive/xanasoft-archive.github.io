@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; 0.45 Final &amp; 0.46 Beta - Bugs - Page 2</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>0.45 Final &amp; 0.46 Beta - Bugs</h2>
+		<p><a href="viewtopic.php-216.html?f=171&amp;t=3456">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3456</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>2</strong> of <strong>5</strong></div>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Jul 14, 2014 8:27 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">i uploaded a new build 0.46b, please try the hash change bug again.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Jul 14, 2014 10:41 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>i uploaded a new build 0.46b, please try the hash change bug again.</div></blockquote><br>1.<br>hash change bug  0.46b<br><br>clip0252.7z 186 KB<br><a href="https://mega.co.nz/#!898VwZ6A!Hx__5lOctbFCBh-vXrazVvPuG6y9aEy2cOwcMwxV0nE" class="postlink">https://mega.co.nz/#!898VwZ6A!Hx__5lOctbFCBh-vXrazVvPuG6y9aEy2cOwcMwxV0nE</a><br><br>--------------------------------------------------------------------<br>crash bugs fixed</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Jul 14, 2014 7:50 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">hmm..<br>does that happen each time or only sometimes?<br>also new build uploaded right now, may be it fixes it?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Jul 15, 2014 2:45 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>hmm..<br>does that happen each time or only sometimes?<br>also new build uploaded right now, may be it fixes it?</div></blockquote><br>It is unfixed in the newest build.<br><br>Probability is more than 90% after the first time.<br><br>I think neoloader usually can hash files correctly at the first time.<br><br>--------------------------------------------------------------------<br><br>It just happened in multi file because some wrong subfiles in multi file.<br><br>It can happened in all kind of multi file,not just ubuntu-13.10.<br><br>Correct hash(neox) is 1oQZHkskXgJakIEfUCCbApivvmwNJWQ2JG9RvcL6tXk.<br><br>clip0264.7z 438 KB<br><a href="https://mega.co.nz/#!ZlFTkBxY!n71i6_iUnEszIMGU3v2oprawAetVH3I-8pzwx_od3d8" class="postlink">https://mega.co.nz/#!ZlFTkBxY!n71i6_iUnEszIMGU3v2oprawAetVH3I-8pzwx_od3d8</a><br><br>--------------------------------------------------------------------<br><br><br>ubuntu-13.10 has a lot of wrong neox because I download it for testing.<br><br>clip0256.7z 384 KB<br><a href="https://mega.co.nz/#!kt0QDTrR!aDktqyWaeyLHqpj9F3i7h16KbpsrClhXVJKyghckdm4" class="postlink">https://mega.co.nz/#!kt0QDTrR!aDktqyWaeyLHqpj9F3i7h16KbpsrClhXVJKyghckdm4</a><br><br>Neoloader sometimes adds correct hash in blacklist hash.<br><br>clip0258.7z 337 KB<br><a href="https://mega.co.nz/#!clMW3SpY!_nLfRn6iu8RuL3s_iMJGEc_pzx-L-GeAZ4wIG6_i6ow" class="postlink">https://mega.co.nz/#!clMW3SpY!_nLfRn6iu8RuL3s_iMJGEc_pzx-L-GeAZ4wIG6_i6ow</a><br><br>--------------------------------------------------------------------<br><br><br>I think hash system has 5 bugs.<br><br>1.<br>Neoloader can't hash multifile correctly.<br><br>2.<br>Master hash is unfixed and unpinned because Neoloader  can  change master hash  by itself.<br><br>3.<br>The function"rehash file"can't use hash(btih) to check file because it just rehash file .<br><br>4.<br>Neoloader sometimes adds correct hash in blacklist hash.<br><br>5.<br>ubuntu-13.10 has a lot of wrong neox so neoloader can search  wrong(fake) files by neokad.<br><br>clip0263.7z 362 KB<br><a href="https://mega.co.nz/#!t1dWBTLB!r2kNriJQsXV7RxJfCokLfEFELe2_yITGqd_ur9Mb1xo" class="postlink">https://mega.co.nz/#!t1dWBTLB!r2kNriJQsXV7RxJfCokLfEFELe2_yITGqd_ur9Mb1xo</a><br><br>--------------------------------------------------------------------<br><br>suitable metaData bug<br><br>I think neoloader can't search metaData  for long time.<br><br><br>waiting time 00:00:50~00:12:35<br><br>clip0270.7z 1.1 MB<br><a href="https://mega.co.nz/#!lotHBR4b!SxSplyIKc1ictd1QtYmt4z9Q7MX6PWLt2Q1UOkBVNeo" class="postlink">https://mega.co.nz/#!lotHBR4b!SxSplyIKc1ictd1QtYmt4z9Q7MX6PWLt2Q1UOkBVNeo</a><br><br>--------------------------------------------------------------------<br><br>NeoLoader_15.07.2014_13-50-49,013.dmp 87 KB<br><a href="https://mega.co.nz/#!AkMEmCaS!2suS_qt05D5_JtwJH8yeDqh-lHeFuRTJjjVWeGASKVo" class="postlink">https://mega.co.nz/#!AkMEmCaS!2suS_qt05D5_JtwJH8yeDqh-lHeFuRTJjjVWeGASKVo</a><br><br>--------------------------------------------------------------------<br><br>NeoKad_16.07.2014_06-26-03,929.dmp 73 KB<br><a href="https://mega.co.nz/#!lhdjBC4J!twbplYn4Vy0NACM3rYvsjWO-NUIqwIIhC0JbB65qXrw" class="postlink">https://mega.co.nz/#!lhdjBC4J!twbplYn4Vy0NACM3rYvsjWO-NUIqwIIhC0JbB65qXrw</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Jul 17, 2014 7:37 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Would you have time next week for a team viewer session or to test some custom builds with additional debug informations.<br>Its hard to reproduce the hashing error it doe snot happen always</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Jul 17, 2014 3:58 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">Neoloader can't use neokad now because current IP bug.<br><br>--------------------------------------------------------------------<br><br>NeoLoader_18.07.2014_20-14-55,325.dmp 89 KB<br><a href="https://mega.co.nz/#!9oFWBILK!NB_D1a-oqp6P8wl6VU6Lf1pFHXGOQAMrsQVO6MZM8TQ" class="postlink">https://mega.co.nz/#!9oFWBILK!NB_D1a-oqp6P8wl6VU6Lf1pFHXGOQAMrsQVO6MZM8TQ</a><br><br>--------------------------------------------------------------------<br>6.<br>delete file bug<br><br>clip0280.7z 691 KB<br><a href="https://mega.co.nz/#!o48BGCoY!ny6Qi6iMpAzgwpMFOcwirrXlKyh8_VljoZEWN2UN-gE" class="postlink">https://mega.co.nz/#!o48BGCoY!ny6Qi6iMpAzgwpMFOcwirrXlKyh8_VljoZEWN2UN-gE</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Jul 22, 2014 4:28 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Crash .dmp on close <a href="https://www26.zippyshare.com/v/8479057/file.html" class="postlink">Zippyshare.com - NeoLoader_22.07.2014_17-26-17,284.dmp</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Jul 27, 2014 6:20 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">new release (0.46c), should fix the hashing issue with multi file download/hash change on finish.<br>there ware a few errors in communication corruption from a master file to a sub file...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Jul 28, 2014 1:27 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>new release (0.46c), should fix the hashing issue with multi file download/hash change on finish.<br>there ware a few errors in communication corruption from a master file to a sub file...</div></blockquote><br>It is not fixed.<br><br>clip0286.7z 10.5 MB<br><a href="https://mega.co.nz/#!Y1UyXRCL!EC1Lt6Vm9TW3YclpLewKBYroIY81Q9vHZ7p52NHfrYI" class="postlink">https://mega.co.nz/#!Y1UyXRCL!EC1Lt6Vm9TW3YclpLewKBYroIY81Q9vHZ7p52NHfrYI</a><br><br>test link<br><blockquote class="uncited"><div><a href="http://link.neoloader.to/magnet:?xt=urn:btih:8977fd06bb9ced930a9a1bec7f0f82f0e19accb3&xt=urn:neox:1oQZHkskXgJakIEfUCCbApivvmwNJWQ2JG9RvcL6tXk&dn=ubuntu-13.10&xl=4888461312" class="postlink">NeoLoader - Download File</a></div></blockquote></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Jul 28, 2014 8:23 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">darn it!<br>this bug is really illusive...<br><br>I will scrap the current file verification system and redo it from scratch, that will be faster I guess...</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>2</strong> of <strong>5</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

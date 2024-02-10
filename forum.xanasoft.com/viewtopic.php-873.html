@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; command line to create and mount image for box encryption</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>command line to create and mount image for box encryption</h2>
+		<p><a href="viewtopic.php-138.html?f=12&amp;t=695">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=695</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>command line to create and mount image for box encryption</h3>
+				<div class="date">Posted: <strong>Fri Dec 08, 2023 4:09 am</strong></div>
+				<div class="author">by <strong>herbzhang</strong></div>
+				<div class="content">I am playing with box encryption in command line. I add UseFileImage=y to sandboxie.ini and run "start.exe /box:mybox notepad.exe", it gives error "Failed to mount root for mybox". Is there anyway to create and mount encrypted image using command line?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: command line to create and mount image for box encryption</h3>
+				<div class="date">Posted: <strong>Fri Dec 08, 2023 6:08 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">@David, is there anything like that, or shall I create an issue to remind you to support it?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: command line to create and mount image for box encryption</h3>
+				<div class="date">Posted: <strong>Tue Dec 26, 2023 6:18 pm</strong></div>
+				<div class="author">by <strong>offhub</strong></div>
+				<div class="content">See the links below.<br>
+<br>
+<a href="https://sandboxie-plus.github.io/sandboxie-docs/Content/StartCommandLine.html#mount-box-images" class="postlink">https://sandboxie-plus.github.io/sandbo ... box-images</a><br>
+<br>
+<a href="https://sandboxie-plus.github.io/sandboxie-docs/Content/StartCommandLine.html#unmount-box-images" class="postlink">https://sandboxie-plus.github.io/sandbo ... box-images</a><br>
+<br>
+<strong class="text-strong">EDIT</strong>:<br>
+It doesn't seem possible to create and mount a new encrypted box directly from the command line. At least initially, it is necessary to mount the encrypted box and assign a password to it. After creating a password, you can mount encrypted boxes from the command line.<br>
+<br>
+Example:
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>"C:\Program Files\Sandboxie-Plus\Start.exe" /box:BoxName /key:BoxPassword /mount_protected
+
+"C:\Program Files\Sandboxie-Plus\Start.exe" /box:BoxName "program.exe"
+
+"C:\Program Files\Sandboxie-Plus\Start.exe" /box:BoxName /unmount
+</code></pre></div></div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Is there a way to launch SandMan.exe in portable mode, and automatically hide the GUI?</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Is there a way to launch SandMan.exe in portable mode, and automatically hide the GUI?</h2>
+		<p><a href="viewtopic.php-156.html?f=12&amp;t=647">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=647</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>2</strong></div>
+					<div class="post">
+				<h3>Is there a way to launch SandMan.exe in portable mode, and automatically hide the GUI?</h3>
+				<div class="date">Posted: <strong>Sun Sep 03, 2023 7:10 pm</strong></div>
+				<div class="author">by <strong>drax-him-sklounst</strong></div>
+				<div class="content">I would find it useful for my use case to be able to launch SandMan.exe from the portable version of Sandboxie-Plus, but to hide the GUI automatically, or start in minimized to tray mode.<br>
+<br>
+Is there a parameter I can pass to make this happen, or would I have to submit a feature request?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Is there a way to launch SandMan.exe in portable mode, and automatically hide the GUI?</h3>
+				<div class="date">Posted: <strong>Mon Sep 04, 2023 4:58 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">@DavidXanatos are there command line arguments that make the new GUI reside in the tray?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Is there a way to launch SandMan.exe in portable mode, and automatically hide the GUI?</h3>
+				<div class="date">Posted: <strong>Fri Sep 15, 2023 8:06 am</strong></div>
+				<div class="author">by <strong>drax-him-sklounst</strong></div>
+				<div class="content">I can't find anything in any documentation about this, so I'm going to assume it isn't possible.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Is there a way to launch SandMan.exe in portable mode, and automatically hide the GUI?</h3>
+				<div class="date">Posted: <strong>Fri Sep 15, 2023 3:57 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">I guessed that the documentation could be lacking that function, since I did not see it in there and Sandman did not react differently with my attempts, but I could have been mistaken as the command could have a different argument.<br>
+<br>
+Sandboxie-Plus 1.11.2 got options inside the GUI to control what happens when the main window is closed, but this is not exactly what you are looking for.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Is there a way to launch SandMan.exe in portable mode, and automatically hide the GUI?</h3>
+				<div class="date">Posted: <strong>Sat Sep 16, 2023 6:08 pm</strong></div>
+				<div class="author">by <strong>drax-him-sklounst</strong></div>
+				<div class="content">Ah no worries, I appreciate your help. I guess I would have to make a feature request to get a '/quiet' option - not sure if I will do that but glad to know I have the option.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Is there a way to launch SandMan.exe in portable mode, and automatically hide the GUI?</h3>
+				<div class="date">Posted: <strong>Sun Sep 17, 2023 10:52 pm</strong></div>
+				<div class="author">by <strong>Zigul</strong></div>
+				<div class="content">If I understood correctly the desired result, it should be possible to launch a program minimized by clicking a link set to "minimized" (in Property / Shortcut tab, "Run" settings). I tried it with a Sandboxie-Plus portable version and it worked. If you want it to happen every time Windows starts up, it should be enough to put that link in "startup" folder.<br>
+Here an example: <a href="https://www.heyvaldemar.com/minimize-programs-on-windows-10-startup/" class="postlink">https://www.heyvaldemar.com/minimize-pr ... 0-startup/</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Is there a way to launch SandMan.exe in portable mode, and automatically hide the GUI?</h3>
+				<div class="date">Posted: <strong>Fri Sep 22, 2023 8:02 am</strong></div>
+				<div class="author">by <strong>drax-him-sklounst</strong></div>
+				<div class="content"><blockquote><div><cite><a href="memberlist.php-78.html?mode=viewprofile&amp;u=1169">Zigul</a> wrote: <a href="viewtopic.php-922.html?p=1551#p1551" data-post-id="1551" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><div class="responsive-hide">Sun Sep 17, 2023 10:52 pm</div></cite>
+If I understood correctly the desired result, it should be possible to launch a program minimized by clicking a link set to "minimized" (in Property / Shortcut tab, "Run" settings). I tried it with a Sandboxie-Plus portable version and it worked. If you want it to happen every time Windows starts up, it should be enough to put that link in "startup" folder.<br>
+Here an example: <a href="https://www.heyvaldemar.com/minimize-programs-on-windows-10-startup/" class="postlink">https://www.heyvaldemar.com/minimize-pr ... 0-startup/</a>
+</div></blockquote>
+
+Ah, thank you for that suggestion, but I don't think that will work. I'm hoping to minimize to system tray automatically, not just minimize to taskbar. The same behavior that when you click the 'x' in the gui, it will still be running but not visible on screen unless you open it from the systray icon.<br>
+<br>
+A lot of apps have a parameter allowing them to start silently, but sandboxie doesn't seem to.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Is there a way to launch SandMan.exe in portable mode, and automatically hide the GUI?</h3>
+				<div class="date">Posted: <strong>Tue Sep 26, 2023 1:17 pm</strong></div>
+				<div class="author">by <strong>Zigul</strong></div>
+				<div class="content">It seems I managed to obtain what you want using this .vbs script (I just wrote it in a notepad and changed the file extension)<br>
+<br>
+set WshShell = WScript.CreateObject("WScript.Shell")<br>
+WshShell.run("""C:\Program Files\Sandboxie-Plus\SandMan.exe""")<br>
+WshShell.appactivate ("Sandboxie-Plus")<br>
+WScript.Sleep(3000)<br>
+WshShell.SendKeys "%{F4}"<br>
+<br>
+This should work, assuming that the Sandboxie directory is correct (line 2) and 3 seconds is enough to launch it (line 4), otherwise you can adjust the script accordingly. The "appactivate" (line 3) should help avoid that alt+F4 is sent to any other already opened app; in case it's sent to Windows, it means you have to increase the waiting time in milliseconds in line 4.<br>
+As said above, you can put this script in Startup folder, if you need to. Now I think Sandboxie shouldn't "try to get froggy" anymore (assuming I guessed correctly the reference in your alias).</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Is there a way to launch SandMan.exe in portable mode, and automatically hide the GUI?</h3>
+				<div class="date">Posted: <strong>Thu Sep 28, 2023 9:14 am</strong></div>
+				<div class="author">by <strong>drax-him-sklounst</strong></div>
+				<div class="content"><blockquote><div><cite><a href="memberlist.php-78.html?mode=viewprofile&amp;u=1169">Zigul</a> wrote: <a href="viewtopic.php-924.html?p=1559#p1559" data-post-id="1559" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><div class="responsive-hide">Tue Sep 26, 2023 1:17 pm</div></cite>
+It seems I managed to obtain what you want using this .vbs script (I just wrote it in a notepad and changed the file extension)<br>
+<br>
+set WshShell = WScript.CreateObject("WScript.Shell")<br>
+WshShell.run("""C:\Program Files\Sandboxie-Plus\SandMan.exe""")<br>
+WshShell.appactivate ("Sandboxie-Plus")<br>
+WScript.Sleep(3000)<br>
+WshShell.SendKeys "%{F4}"<br>
+<br>
+This should work, assuming that the Sandboxie directory is correct (line 2) and 3 seconds is enough to launch it (line 4), otherwise you can adjust the script accordingly. The "appactivate" (line 3) should help avoid that alt+F4 is sent to any other already opened app; in case it's sent to Windows, it means you have to increase the waiting time in milliseconds in line 4.<br>
+As said above, you can put this script in Startup folder, if you need to. Now I think Sandboxie shouldn't "try to get froggy" anymore (assuming I guessed correctly the reference in your alias).
+</div></blockquote>
+
+I appreciate your help here! I'm already calling it from powershell scripts, and didn't want to overly complicate things. I might take your idea though and reimplement it in powershell, thank you <img class="smilies" src="images/smilies/icon_e_smile.gif" width="15" height="17" alt=":)" title="Smile"><br>
+<br>
+And you absolutely guessed the reference from my alias correctly! I hate it when any program tries to get froggy lol!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Is there a way to launch SandMan.exe in portable mode, and automatically hide the GUI?</h3>
+				<div class="date">Posted: <strong>Thu Sep 28, 2023 5:07 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content"><a href="https://github.com/sandboxie-plus/Sandboxie/issues/3335" class="postlink">Isaak654 has created a feature request</a> to enable that function out-of-the box.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>2</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

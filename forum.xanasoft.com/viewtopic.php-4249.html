@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Separate Recycle Bin context from all Shell Integration</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Separate Recycle Bin context from all Shell Integration</h2>
+		<p><a href="viewtopic.php-3029.html?f=14&amp;t=232">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=232</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Separate Recycle Bin context from all Shell Integration</h3>
+				<div class="date">Posted: <strong>Sat Jan 15, 2022 11:18 am</strong></div>
+				<div class="author">by <strong>dethknite</strong></div>
+				<div class="content">Older versions of Sandboxie included the right-click shell integration for exe's (but didn't clutter up the recycle bin menu). I empty the recycle bin countless times throughout the day, and when enabling the option, keep opening Sandboxed instead. I love the context menu integration for apps (use it), but end up turning it off now because the Recycle Bin opening Sandboxed is annoying.<br>
+<br>
+Could you please separate these out to two options:<br>
+[ ] Add 'Run Sandboxed' to the explorer context menu<br>
+[ ] Add 'Run Sandboxed' to the recycle bin menu</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Separate Recycle Bin context from all Shell Integration</h3>
+				<div class="date">Posted: <strong>Mon Jan 17, 2022 1:06 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I dont belive I'm doing anythign different then the old sandboxie, did so if something changes it may be with windows.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Separate Recycle Bin context from all Shell Integration</h3>
+				<div class="date">Posted: <strong>Thu Jan 27, 2022 7:19 am</strong></div>
+				<div class="author">by <strong>dethknite</strong></div>
+				<div class="content">Well... I found the reg key that is adding it.. and also uncovered a similar key that seems to fix it in my initial testing. I can only assume that Windows has changed the Recycle Bin functionality to use similar framework to what a "folder" would be... maybe something virtual. Appears directory correctly detects that the Recycle Bin is not a directory.<br>
+<br>
+<span style="text-decoration:underline">Registry Keys of note:</span><br>
+HKEY_CLASSES_ROOT\*\OpenWithList<br>
+HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers<br>
+HKEY_CLASSES_ROOT\Directory\Background<br>
+HKEY_CLASSES_ROOT\Directory\shell<br>
+HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers<br>
+HKEY_CLASSES_ROOT\Drive\shell<br>
+HKEY_CLASSES_ROOT\Drive\shellex\ContextMenuHandlers<br>
+HKEY_CLASSES_ROOT\Folder\shell<br>
+HKEY_CLASSES_ROOT\Folder\shellex\ContextMenuHandlers<br>
+<br>
+The current Sandboxie creates a key in "HKEY_CLASSES_ROOT\<strong class="text-strong">Folder</strong>\shell\sandbox\command"<br>
+<br>
+[HKEY_CLASSES_ROOT\Folder\shell\sandbox\command]<br>
+@="\"C:\\Program Files\\Sandboxie-Plus\\SandMan.exe\" /box:__ask__ C:\\WINDOWS\\explorer.exe \"%1\""<br>
+<br>
+I deleted this key and instead created it in "HKEY_CLASSES_ROOT\<strong class="text-strong">Directory</strong>\shell\sandbox\command"<br>
+<br>
+and it doesn't show up on the Recycle Bin... but still works for folders. The context menu may need adjustment though, as it now just says "sandbox".<br>
+<br>
+* FYI, Recycle Bin specific keys appears to be "HKEY_CLASSES_ROOT\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}". I find the "Run with CCleaner..." option here.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Separate Recycle Bin context from all Shell Integration</h3>
+				<div class="date">Posted: <strong>Tue Feb 01, 2022 11:32 am</strong></div>
+				<div class="author">by <strong>dethknite</strong></div>
+				<div class="content">In case anyone else desires the same functionality (no Explore Sandboxed on Recycle Bin but available for Folders), here is regcode for v1.0.8:<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\shell\sandbox]
+@="Explore &amp;Sandboxed"
+"Icon"="\"C:\\Program Files\\Sandboxie-Plus\\Start.exe\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\sandbox\command]
+@="\"C:\\Program Files\\Sandboxie-Plus\\SandMan.exe\" /box:__ask__ C:\\WINDOWS\\explorer.exe \"%1\""
+
+[-HKEY_CLASSES_ROOT\Folder\shell\sandbox]
+
+[-HKEY_CLASSES_ROOT\Folder\shell\sandbox]
+
+</code></pre></div></div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

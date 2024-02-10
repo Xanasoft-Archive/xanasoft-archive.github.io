@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Blocking Internet - WFP</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Blocking Internet - WFP</h2>
+		<p><a href="viewtopic.php-165.html?f=12&amp;t=654">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=654</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Blocking Internet - WFP</h3>
+				<div class="date">Posted: <strong>Tue Sep 12, 2023 7:23 am</strong></div>
+				<div class="author">by <strong>SandboxerFP</strong></div>
+				<div class="content">In addition to the option of completely blocking access to network devices, Sandboxie also provides another option to prevent internet access - which is  WFP (Windows Filtering Platform).  I would like to know how secure it is to use the WFP option to prevent programs from illicitly communicating over the internet, such as malicious programs that steal data and then send it somewhere. Does the WFP option offer full protection? <br>
+I've read that WFP only filters TCP/UDP protocols, but I'm not sure what that specifically implies for security... Could a malicious program potentially send data using other forms of protocols?<br>
+<br>
+I hope David or someone who is knowledgeable about this can shed some light on the matter.<br>
+<br>
+Thank you.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Blocking Internet - WFP</h3>
+				<div class="date">Posted: <strong>Tue Sep 12, 2023 5:55 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">When WFP is not enabled in the global settings and rules are set, they are applied by some hooks, but they can't be enforced. When this is the case Sandman.exe warns the user.<br>
+
+<blockquote class="uncited"><div>CAUTION: Windows Filtering Platform is not enabled with the driver, therefore these rules will be applied only in user mode and can not be enforced!!! This means that malicious applications may bypass them.</div></blockquote>
+
+Upon it being implemented, David wrote [my additions or removals, plus readability changes]:
+<blockquote class="uncited"><div>This functionality [WFP] needs to be enabled in the global Sandboxie settings, and the driver needs to be reloaded (or the PC rebooted) for the feature to be activated. Once this is done the firewall rules, which can be configured in the network options of each sandbox, will be enforced by the driver.<br>
+If the WFP support is not enabled the same rules still can be set and are used, but will be applied only by a set of user mode hooks, unlike the WFP implementation they will apply only to outgoing connections and there are no enforcement guarantees as user mode hooks can be bypassed or disabled by a malicious application.<br>
+<br>
+The rationale behind implementing this functionality in user and kernel mode (driver) instead of driver only is twofold, for once it allows for debugging of the rule processing code as both modes use the same code to make decisions based on the preset rules. Second the WFP callouts are global i.e. they are triggered for any process on the system whether it's sandboxed or not, in the lather case they don't do anything and the use of a hash map to identify sandboxed programs that require action should provide optimal performance. That said, users who run a 3rd party firewall which they may prefer may not want too many firewalls being active at once, while still wanting to use some per sandbox network rules for compatibility and not security reasons.<br>
+<br>
+[...]<br>
+<br>
+The rules are applied based on a specific decision priority:<br>
+<br>
+    A rule for a specified program trumps a rule for all programs except a given one, trumps rules for all programs<br>
+    A rule with a Port or IP trumps a rule without<br>
+    2a. A rule with ip and port trumps a rule with ip or port only<br>
+    2b. A rule with one ip trumps a rule with an ip range that is besides that on the same level<br>
+    Block rules trump allow rules<br>
+    A rule without a protocol means all protocols, a rule with a protocol trumps a rule without if it's the only difference<br>
+<br>
+The rule editing UI allows for testing rules, in the row below the rule list one can enter program name, port, ip and protocol to see which rules are in play and which rule will be applied in the end.<br>
+<br>
+When configuring per process network access restrictions and WFP is enabled, it is possible to choose between a WFP based approach and the old Sandboxie way of blocking the network device end points. The later approach is more absolute, but is known for causing some application to crash.</div></blockquote>
+
+Here is a <a href="https://github.com/sandboxie-plus/Sandboxie/releases/tag/0.9.3" class="postlink">link to the full text</a>.<br>
+<br>
+My gut feeling is that if something can't be used (blocking the network device) it is harder to abuse, than if some filtering is applied. Like a hardware switch that physically disconnects a device, like a camera, ensures that it can't function, while some software could report it being offline, but just disable any indication of it being active, while being active.<br>
+<br>
+David, or someone else, might fill in the rest.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

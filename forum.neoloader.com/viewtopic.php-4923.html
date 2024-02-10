@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; 0.41 Bugs - Page 11</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>0.41 Bugs</h2>
+		<p><a href="viewtopic.php-1033.html?f=171&amp;t=3337">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3337</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>11</strong> of <strong>18</strong></div>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 15, 2013 2:12 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>enOehTsIsihT wrote:</cite>19. max connections bug<br><br>videobam:<br><a href="http://videobam.com/YodBP" class="postlink">Fast, Free Video Hosting & Video Sharing - VideoBam</a><br>mega:<br>clip0259.7z 321 KB<br><a href="https://mega.co.nz/#!10s3gJra!Xg8x0DsYCtzTxwYMk1h7h2OFEHkWru91stAva8e4cKw" class="postlink">https://mega.co.nz/#!10s3gJra!Xg8x0DsYCtzTxwYMk1h7h2OFEHkWru91stAva8e4cKw</a></div></blockquote><br><br>The new beta of neoloader has a reworked torrent management, it limits the max amount of connections per torrent to 50, basically the setting Max Peers per tprretn was set to unlimited and a new limit introdiced max connections per torrent.<br>Thats why you can not reach your global connections limit.<br><br>This behavioure is analogues to uTorrents peer handling.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 15, 2013 3:01 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content"><strong>EDIT:</strong>Oh, I was with previous beta, I'll test right now how it works... do I need a clean install? Or how can I manually remove traces in the inis of the old managment? Und also, to reduce memory usage shouldn't we set a number of listed peers number too, for example 500 as in ed2k links even if connections active will be only 50?<br><br>It also crashed on torrent download completed with a dmp, and on restart the downloading file was on 4%, and it is a 6 GB iso file... nice really... <br><strong>EDIT:</strong>And I found not any .dmp.<br><br><strong>EDIT:</strong>After deleting the torrent that was returned on 4% after "completed crash", it was apparently removed but instead not deleted from incoming folder and still in filelist.xml file.<br><br>Memtrace.log of my session for a popular torrent (that now I have to restart...) and with speeds from my previous screenshot (what you think about my question regarding OH managment?)<br><blockquote class="uncited"><div>Full Memory Usage: 44.7773MB<br>Suspended FileList: 44.8086MB<br>Dealocated Interfaces: 44.4883MB<br>Dealocated File Manager: 44.4961MB<br>Dealocated Ul/Dl Manager: 44.4961MB<br>Dealocated Archive Loaders: 44.5039MB<br>Dealocated Hashing Thread: 44.4805MB<br>Dealocated Grabber: 44.4883MB<br>Dealocated Torrent Manager: 44.5039MB<br>Dealocated Mule Manager: 44.5234MB<br>Dealocated Neo Manager: 44.5469MB<br>Dealocated Web Managers: 42.168MB<br>Dealocated Network Manager: 41.5547MB<br>Dealocated IO Manager: 41.5312MB<br>Dealocated IpFilter: 38.7969MB<br>Dealocated Search Manager: 38.168MB<br>Residual Memory Usage: 38.1797MB<br></div></blockquote></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 15, 2013 3:19 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">You don't need a clean install. and teh latest beta for the new management.<br><br>It is ok to gether unlimited peers, as there is no actuall way to limit how much peers we get, we cna only start dropping them, and thats couner productive.<br>Instead its reasonable to limit only the ammount of active connections.<br>The behavioure is as already said the same as utorrent has.<br><br>A queue system is not needed for it to work ok eider.<br><br>So it showed 4% but the file was completed in incomming?<br>If it crashes and shows much les% after restart it should rehash the file and find already finished but forgoten parts.<br><br>Can you reproduce the oncomplete crash.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 15, 2013 3:22 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">No, in uTorrent the peers are listed between () only if trackers are active, else it shows only the one that had a connection with us. You're talking about memory usage problem with flags, and I claim for memory usage problem with a very long peer list that is much more counter productive.<br><br>Yes, a queque system is needed, this screenshot was with only 1 torrent active... do you image what crap will happen with 2 ? That's why is avaible in uT and that's why we need it.<br><br>The file in incoming was corrupted. At restart it was redownloading it.<br>I don't know if I can reproduce it and I hope not. Even after cleaning manually the filelist.xml I got this error<br><blockquote class="uncited"><div>15 <img class="smilies" src="./images/smilies/17.gif" alt=":17:" title="17"> 45: Opening from Command Line 'C:\Users\Davide\AppData\Local\Temp\xxx.torrent'<br>15 <img class="smilies" src="./images/smilies/17.gif" alt=":17:" title="17"> 59: Incomplete File xxx was modifyed and is being rehashed<br>15 <img class="smilies" src="./images/smilies/17.gif" alt=":17:" title="17"> 59: Incomplete File xxx was modifyed and is being rehashed</div></blockquote><br><br>You still not exaplained the new values under avaibility columm, and you did not said this change in the changelog too....</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 15, 2013 3:35 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Currently Connected peers / Total unique Peers we head a connection to / Total found peers <br><br>utorrent does not show the full list of peers it knows,<br>you can only switch bwteeen peers we are downloading form or all connected peers.<br><br>But it keeps all peers it knows in memory, also this is not so much data, you need the IP and a few status flags.<br><br>NeoLoader does this also in a simmilar way, a inactive a.k.a. not connected peer uses only a very littel of memory, and if a connection to that peer is established an auxyliary client object is created that has all the things needed to operate a peer that take all the memory.<br><br>PS: what value do you have under "Max Connections per File" inthe rottent panel?<br>should be 50, if its not its a bug with default config<br><br>David X.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 15, 2013 3:38 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Also flags don't uses too much memory but you claim that... pffff....<br><br>Btw, same file, new beta, shitty results: <a href="rjpa86T.jpg" class="postlink">http://i.imgur.com/rjpa86T.jpg</a><br><br>Same file with old beta, always with default settings is here: <a href="http://board.neoloader.com/bugs/3337-0-41-bugs-10.html#post16924" class="postlink">http://board.neoloader.com/bugs/3337-0-41-bugs-10.html#post16924</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 15, 2013 3:43 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">So you have set 50 max connections per torrent and only one torrent active and get &gt;&gt; 50 active connections, that will be most likely doe to incomming connections that are not limited on a per torrent basis.<br><br>PS: to say somethign ybout your to much overhead issue i need a SS with verbode Graphs enabled witl all that many lines.<br>There is nothign that can be done ab out IP ACK overhead.<br>Other clients dont measure it an dont limit it. Your ISP may also count it separatly, <br>try dissable ACK limitation and see if thany ou can reache full download speed.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 15, 2013 5:07 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">My upload speed is already sature, remove the ack limiting will cause more damage. After some restarts, I don't see any changes before and later the connection managment changes between the 2 latest beta versions, I just got more confusing avaibility columm.<br><br><strong>EDIT:</strong> After how many time it re-check for FW status? Can you add a manual recheck button in beta for tests only?<br><br><strong>EDIT:</strong> Verbose where I don't understand nothing <a href="mHVPV8P.jpg" class="postlink">http://i.imgur.com/mHVPV8P.jpg</a><br><br>We should be able to count in-out connection in non-verbose graph I think...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 15, 2013 7:50 pm</strong></div>
+				<div class="author">by <strong>abel</strong></div>
+				<div class="content">Recheck button already exists in MuleKad Module ;-)</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 15, 2013 9:55 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">crash reproduced, confirmed all the problem after the crash, downloaded data are almost all lost.<br><br><a href="http://www1.datafilehost.com/d/5a6fcbd8" class="postlink">Download NeoLoader ven 15. nov 21 41 38 2013.dmp</a><br><br>bug list updated</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>11</strong> of <strong>18</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

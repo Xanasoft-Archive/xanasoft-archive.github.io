@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; remove the trigger of stream file</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>remove the trigger of stream file</h2>
+		<p><a href="viewtopic.php-283.html?f=172&amp;t=3480">http://forum.neoloader.com/viewtopic.php?f=172&amp;t=3480</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>2</strong></div>
+					<div class="post">
+				<h3>remove the trigger of stream file</h3>
+				<div class="date">Posted: <strong>Thu Oct 23, 2014 4:43 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">"Play" is the trigger of stream file.
+<br>There is  some reason for removing the trigger of stream file.
+<br>If user click "play",neoloader enable stream file automatically.
+<br>1.
+<br>When neoloader enable stream file, it can reduce download speed.
+<br>2.
+<br>User only can preview the first few parts of file.
+<br>
+<br>I think "preview file" and "stream file"  have  some difference.
+<br>Let user have the choice of stream file.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Nov 11, 2014 3:46 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">There is the other feature requests.<br>1.<br>If file's first and last piece doesn't be completed ,let play be disabled(gray).<br><br>2.<br>If file is in the  shared tab,let user can double click to open file.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Nov 12, 2014 11:35 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I will remove the stream option as a switch entirely, instead I will use a request based trigger for chunk selection.<br>That means, if the user hits play a VLC player will open or whatever player was configured and instead of getting a local path to the temp file (what is a problem as currently in that case completion fails as it cant move the file) it will get a <a href="http://localhost:1600/" class="postlink">http://localhost:1600/</a>... url to play the file from neo's stream server, here Neo understands the range requests of the player and downloads this parts the player have requested, such that you can even seek through a just started movie file for example.<br>When the player quits the streaming status will be reset back to normal request behavior.<br><br><br>Sorry for not responding to this request for so long but this feature was in the pipeline for quite some time now and in will be finished in the next beta.<br><br>About the first last chunk option this will remain as it is now since we generally can not use streaming in ed2k as it is far to slow.<br><br>About graying out play, for torrents that's pointless you can usually start watching the torrent right away no need to wait for first last part. So I will need to look for a more complex indication for graying out the play button.<br><br><br>About opening files thats not so simple as you can connect a neo gui on one machine to a core on an other machine, <br>so i wil have to implement it such that if the two neos are on different devices double click wil not trigger an open but a http download of said file.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Nov 13, 2014 6:24 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">After playing,Neoloader doesn't enable  stream file of download management.<br>In fact,neoloader still stream file.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Nov 13, 2014 11:52 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Yes, sorry for the confusion,<br>the beta with that is not yet released.<br><br>EDIT: Next beta wil also contain open/download file by doubleclick<br><br>I would leave the play command enabled even if no first last part is yet available, is that ok?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Nov 13, 2014 3:25 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">new beta uploaded</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 14, 2014 8:31 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>Yes, sorry for the confusion,<br>the beta with that is not yet released.<br><br>EDIT: Next beta wil also contain open/download file by doubleclick<br><br>I would leave the play command enabled even if no first last part is yet available, is that ok?</div></blockquote><br>yes,it's ok.<br>The play command is always enabled,but color can be changed.<br>Some publishers block file's first and last piece.<br>When file can be previewed,It  help user to know.<br><br>--------------------------------------------------------------------<br>I can't find stream file' option.<br>Does it be removed?<br>I think it shouldn't be removed,because some users want the  feature.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 14, 2014 9:32 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">It is removed as its now not needed,<br>you just play the file and neo starts streaming as soon as the player starts requesting file data.<br>What for a separated streaming option would be needed?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 14, 2014 9:54 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>It is removed as its now not needed,<br>you just play the file and neo starts streaming as soon as the player starts requesting file data.<br>What for a separated streaming option would be needed?</div></blockquote><br>After playing,neoloader doesn't stream file now.<br>Some users need the  feature(stream file),but I don't.<br>Let user have the choice.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Nov 14, 2014 10:00 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">ok i readded the option in the public release 0.49</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>2</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

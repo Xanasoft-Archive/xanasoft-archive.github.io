@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; How to use Search in sandboxed Outlook?</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>How to use Search in sandboxed Outlook?</h2>
+		<p><a href="viewtopic.php-1022.html?f=14&amp;t=596">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=596</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>How to use Search in sandboxed Outlook?</h3>
+				<div class="date">Posted: <strong>Wed Jun 07, 2023 8:41 am</strong></div>
+				<div class="author">by <strong>SamDi</strong></div>
+				<div class="content">Hi!<br>
+<br>
+When running Outlook 2016 in a <em class="text-italics">Standard Isolation Sandbox</em> Search (for messages with content X) does find all mails it indexed when Oulook last time ran <span style="text-decoration:underline">un</span>sandboxed but no mails received since then.<br>
+How do I configure the sandbox so new mails are searchable/searched as well?<br>
+<br>
+<br>
+Thank you!<br>
+<br>
+<br>
+I'm using Sandboxie-Plus 1.9.6 x64 on Win10x64 21H2, ini secion:
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>Enabled=y
+BlockNetworkFiles=y
+RecoverFolder=%Desktop%
+RecoverFolder=%Personal%
+RecoverFolder=%{[snipped]}%
+RecoverFolder=D:\
+BorderColor=#02f6f6,on,3
+Template=AutoRecoverIgnore
+Template=LingerPrograms
+Template=BlockPorts
+Template=qWave
+Template=FileCopy
+Template=SkipHook
+Template=OpenBluetooth
+Template=Office_Outlook
+Template=BlockTelemetry
+ConfigLevel=10
+AutoRecover=y
+OpenFilePath=OUTLOOK.EXE,C:\Users\[snipped]\AppData\Local\Microsoft\Outlook\[snipped]@[snipped].com.ost
+OpenFilePath=OUTLOOK.EXE,C:\Users\[snipped]\AppData\Local\Microsoft\Outlook\[snipped]@[snipped].net.ost
+OpenFilePath=OUTLOOK.EXE,C:\Users\[snipped]\AppData\Local\Microsoft\Outlook\archive.pst
+OpenFilePath=OUTLOOK.EXE,C:\Users\[snipped]\Documents\Outlook Files\archive.pst
+OpenFilePath=OUTLOOK.EXE,D:\
+OpenFilePath=D:\
+BoxNameTitle=n
+CopyLimitKb=81920
+AllowNetworkAccess=&lt;BlockNetAccess&gt;,n
+DropAdminRights=y
+AutoDelete=y
+ClosedFilePath=&lt;BlockNetDevices&gt;,InternetAccessDevices
+SandboxieLogon=y
+ForceProcess=Presentations.exe
+ForceProcess=excelcnv.exe
+ForceProcess=MSACCESS.EXE
+ForceProcess=MSPUB.EXE
+ForceProcess=OUTLOOK.EXE
+ForceProcess=POWERPNT.EXE
+ForceProcess=MailClient.exe
+ForceProcessDisabled=EXCEL.EXE
+ForceProcessDisabled=WINWORD.EXE
+</code></pre></div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: How to use Search in sandboxed Outlook?</h3>
+				<div class="date">Posted: <strong>Sun Jul 16, 2023 8:43 am</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">Could you resolve this by now? I am sorry, I can't seem to help you. Maybe that should be moved to Github, since there are more people that can look into it, if that is still not working for you.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: How to use Search in sandboxed Outlook?</h3>
+				<div class="date">Posted: <strong>Tue Jul 25, 2023 2:58 pm</strong></div>
+				<div class="author">by <strong>SamDi</strong></div>
+				<div class="content">Nope.<br>
+I'm running Outlook unsandboxed if i have to search.<br>
+<br>
+A PITA but there's simply <strong class="text-strong"><em class="text-italics">no</em></strong> support from the vendor.<br>
+Hopefully I find another, better supported, alternative.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: How to use Search in sandboxed Outlook?</h3>
+				<div class="date">Posted: <strong>Tue Jul 25, 2023 4:45 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">@DavidXanatos, can you provide support on why searching in a sandboxed Outlook fails?<br>
+<br>
+All my guesses had been that it works, if Outlook can run.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

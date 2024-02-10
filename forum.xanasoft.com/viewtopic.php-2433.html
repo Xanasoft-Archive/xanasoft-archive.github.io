@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Can you &quot;virtualize&quot; a folder for a sandboxed process (don't show any host files but let the sandbox freely write to it)</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Can you &quot;virtualize&quot; a folder for a sandboxed process (don't show any host files but let the sandbox freely write to it)</h2>
+		<p><a href="viewtopic.php-782.html?f=12&amp;t=358">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=358</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Can you &quot;virtualize&quot; a folder for a sandboxed process (don't show any host files but let the sandbox freely write to it)</h3>
+				<div class="date">Posted: <strong>Thu Jun 09, 2022 7:31 am</strong></div>
+				<div class="author">by <strong>fmillion</strong></div>
+				<div class="content">I want to install a program within Sandboxie that is already installed on my host system. I don't want the installer or the program to have any awareness of its existence on the host.<br>
+<br>
+When I run the installer in Sandboxie, it detects the host installed instance (naturally, since sandboxed programs aren't prevented from reading host files by default) and thus thinks it's an <em class="text-italics">upgrade</em> and not a full installation. Furthermore, since the program stores data in the registry, the copy running in the sandbox pulls in all my settings from the host, which I don't want the sandboxed version to do.<br>
+<br>
+I tried using the Resource Rules to add a "Box Only (Write Only)" rule for the path under Program Files, the path under %APPDATA% and the Registry key that I know the program uses. However, this seems to have turned it into a "drop box" folder, where the sandbox cannot view the contents of the folder at all, but can write to files within it.  This isn't what I want, I want the sandboxed process to see an empty folder (or even better, no folder at all, but react correctly when the setup program creates the folder - as in, create the folder but don't show its host contents). <br>
+<br>
+An even more "pro" level of this feature (that I'd gladly contribute whatever I could towards, even helping with documentation if it were possible - sadly I'm not a strong C coder) would be a "virtual user account". As in, you have a sandbox that for all intents and purposes acts just like you made a new user account on Windows. The entire %USERPROFILE% hierarchy and the entire HKCU registry tree are empty (or copied in from the Default User folder the first time the sandbox launches - I think that's how Windows does it?) Running a browser or any application for that matter in that sandbox would be a completely empty browser, no plugins, no extensions, no bookmarks, no settings, etc. Combine this with isolating paths like I said above and you could work all sorts of scenarios involving installing temporary copies of programs that are much more strongly isolated from the host's filesystem and registry.<br>
+<br>
+Can this be done already?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Can you &quot;virtualize&quot; a folder for a sandboxed process (don't show any host files but let the sandbox freely write to</h3>
+				<div class="date">Posted: <strong>Tue Jun 14, 2022 7:07 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote class="uncited"><div>I tried using the Resource Rules to add a "Box Only (Write Only)" rule for the path under Program Files, the path under %APPDATA% and the Registry key that I know the program uses. However, this seems to have turned it into a "drop box" folder, where the sandbox cannot view the contents of the folder at all, but can write to files within it.</div></blockquote>
+
+strange this is not how this should work, it should work the way you expect it "I want the sandboxed process to see an empty folder (or even better, no folder at all, but react correctly when the setup program creates the folder - as in, create the folder but don't show its host contents)."<br>
+Perhaps there is a bug, can you test this using for example cmd.exe and see if that works well, may be there is a special case where it fails</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

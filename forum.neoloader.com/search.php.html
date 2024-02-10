@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>NeoLoader Forum - Search</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - NeoLoader Forum" href="feed.php">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="feed-1.php?mode=topics">			
+
+<!--
+	phpBB style name: prosilver Special Edition
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:      phpBB Limited ( https://www.phpbb.com/ )
+-->
+
+<link href="styles/prosilver/theme/print.css?assets_version=4" rel="stylesheet" media="print" title="printonly">
+
+<link href="styles/prosilver/theme/common.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/links.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/content.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/buttons.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/cp.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/forms.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/colours.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/imageset.css?assets_version=4" rel="stylesheet">
+
+<link href="styles/prosilver_se/theme/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/en/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/responsive.css?assets_version=4" rel="stylesheet" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)">
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=4" rel="stylesheet" />
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-search ltr ">
+
+
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner">
+
+			<div id="site-description">
+				<a id="logo" class="logo" href="http://neoloader.com" title="NeoLoader Homepage"><span class="imageset site_logo"></span></a>
+				<h1>NeoLoader Forum</h1>
+				<p>Forum of the NeoLoader P2P Client/Downloader</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+			
+			</div>
+		</div>
+
+		<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="linklist bulletin" role="menubar">
+
+		<li id="quick-links" class="small-icon responsive-menu dropdown-container" data-skip-responsive="true">
+			<a href="#" class="responsive-menu-link dropdown-trigger">Quick links</a>
+			<div class="dropdown hidden">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																								<li class="small-icon icon-search-unanswered"><a href="search.php-1.html?search_id=unanswered" role="menuitem">Unanswered posts</a></li>
+						<li class="small-icon icon-search-active"><a href="search.php-2.html?search_id=active_topics" role="menuitem">Active topics</a></li>
+						<li class="separator"></li>
+						<li class="small-icon icon-search"><a href="search.php.html" role="menuitem">Search</a></li>
+					
+											<li class="separator"></li>
+												<li class="small-icon icon-team"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li class="small-icon icon-faq" data-skip-responsive="true"><a href="faq.php.html" rel="help" title="Frequently Asked Questions" role="menuitem">FAQ</a></li>
+						
+			<li class="small-icon icon-logout rightside" data-skip-responsive="true"><a href="ucp.php.html?mode=login" title="Login" accesskey="x" role="menuitem">Login</a></li>
+					<li class="small-icon icon-register rightside" data-skip-responsive="true"><a href="ucp.php-1.html?mode=register" role="menuitem">Register</a></li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="linklist navlinks" role="menubar">
+						<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" accesskey="h" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="index">Board index</a></span>
+								</li>
+		
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body">
+		
+		
+<h2 class="solo">Search</h2>
+
+<form method="get" action="./search.php" data-focus="keywords">
+
+<div class="panel">
+	<div class="inner">
+	<h3>Search query</h3>
+
+	<fieldset>
+	<dl>
+		<dt><label for="keywords">Search for keywords:</label><br><span>Place <strong>+</strong> in front of a word which must be found and <strong>-</strong> in front of a word which must not be found. Put a list of words separated by <strong>|</strong> into brackets if only one of the words must be found. Use * as a wildcard for partial matches.</span></dt>
+		<dd><input type="search" class="inputbox" name="keywords" id="keywords" size="40" title="Search for keywords"></dd>
+		<dd><label for="terms1"><input type="radio" name="terms" id="terms1" value="all" checked="checked"> Search for all terms or use query as entered</label></dd>
+		<dd><label for="terms2"><input type="radio" name="terms" id="terms2" value="any"> Search for any terms</label></dd>
+	</dl>
+	<dl>
+		<dt><label for="author">Search for author:</label><br><span>Use * as a wildcard for partial matches.</span></dt>
+		<dd><input type="search" class="inputbox" name="author" id="author" size="40" title="Search for author"></dd>
+	</dl>
+	</fieldset>
+
+	</div>
+</div>
+
+<div class="panel bg2">
+	<div class="inner">
+
+	<h3>Search options</h3>
+
+	<fieldset>
+	<dl>
+		<dt><label for="search_forum">Search in forums:</label><br><span>Select the forum or forums you wish to search in. Subforums are searched automatically if you do not disable “search subforums“ below.</span></dt>
+		<dd><select name="fid[]" id="search_forum" multiple="multiple" size="8" title="Search in forums"><option value="10">News</option><option value="11">&nbsp; &nbsp;Board News</option><option value="161">&nbsp; &nbsp;NeoLoader Releases</option><option value="169">NeoLoader English</option><option value="180">&nbsp; &nbsp;General/Discussion</option><option value="170">&nbsp; &nbsp;Support</option><option value="171">&nbsp; &nbsp;Bugs</option><option value="172">&nbsp; &nbsp;Feature Requests</option><option value="173">&nbsp; &nbsp;Script Development</option><option value="174">&nbsp; &nbsp;Extensions</option><option value="163">NeoLoader German</option><option value="179">&nbsp; &nbsp;Algemeines/Diskussion</option><option value="164">&nbsp; &nbsp;Support</option><option value="165">&nbsp; &nbsp;Bugs</option><option value="166">&nbsp; &nbsp;Feature Wünsche</option><option value="167">&nbsp; &nbsp;Script Entwicklung</option><option value="168">&nbsp; &nbsp;Erweiterungen</option><option value="4">Community</option><option value="81">&nbsp; &nbsp;OffTopic</option></select></dd>
+	</dl>
+	<dl>
+		<dt><label for="search_child1">Search subforums:</label></dt>
+		<dd>
+			<label for="search_child1"><input type="radio" name="sc" id="search_child1" value="1" checked="checked"> Yes</label>
+			<label for="search_child2"><input type="radio" name="sc" id="search_child2" value="0"> No</label>
+		</dd>
+	</dl>
+	<dl>
+		<dt><label for="sf1">Search within:</label></dt>
+		<dd><label for="sf1"><input type="radio" name="sf" id="sf1" value="all" checked="checked"> Post subjects and message text</label></dd>
+		<dd><label for="sf2"><input type="radio" name="sf" id="sf2" value="msgonly"> Message text only</label></dd>
+		<dd><label for="sf3"><input type="radio" name="sf" id="sf3" value="titleonly"> Topic titles only</label></dd>
+		<dd><label for="sf4"><input type="radio" name="sf" id="sf4" value="firstpost"> First post of topics only</label></dd>
+	</dl>
+
+	<hr class="dashed">
+
+	<dl>
+		<dt><label for="show_results1">Display results as:</label></dt>
+		<dd>
+			<label for="show_results1"><input type="radio" name="sr" id="show_results1" value="posts" checked="checked"> Posts</label>
+			<label for="show_results2"><input type="radio" name="sr" id="show_results2" value="topics"> Topics</label>
+		</dd>
+	</dl>
+	<dl>
+		<dt><label for="sd">Sort results by:</label></dt>
+		<dd><select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="f">Forum</option><option value="i">Topic title</option><option value="s">Post subject</option></select>&nbsp;
+			<label for="sa"><input type="radio" name="sd" id="sa" value="a"> Ascending</label>
+			<label for="sd"><input type="radio" name="sd" id="sd" value="d" checked="checked"> Descending</label>
+		</dd>
+	</dl>
+	<dl>
+		<dt><label>Limit results to previous:</label></dt>
+		<dd><select name="st" id="st"><option value="0" selected="selected">All results</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></dd>
+	</dl>
+	<dl>
+		<dt><label>Return first:</label></dt>
+		<dd><select name="ch" title="Return first"><option value="-1">All available</option><option value="0">0</option><option value="25">25</option><option value="50">50</option><option value="100">100</option><option value="200">200</option><option value="300" selected="selected">300</option><option value="400">400</option><option value="500">500</option><option value="600">600</option><option value="700">700</option><option value="800">800</option><option value="900">900</option><option value="1000">1000</option></select> characters of posts</dd>
+	</dl>
+	</fieldset>
+
+	</div>
+</div>
+
+<div class="panel bg3">
+	<div class="inner">
+
+	<fieldset class="submit-buttons">
+		<input type="hidden" name="t" value="0">
+<input type="reset" value="Reset" name="reset" class="button2">&nbsp;
+		<input type="submit" name="submit" value="Search" class="button1">
+	</fieldset>
+
+	</div>
+</div>
+
+</form>
+
+
+			</div>
+
+
+<div id="page-footer">
+	<div class="navbar">
+	<div class="inner">
+
+	<ul id="nav-footer" class="linklist bulletin" role="menubar">
+		<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" data-navbar-reference="index">Board index</a></span>
+					</li>
+		
+				<li class="rightside">All times are <abbr title="UTC+1">UTC+01:00</abbr></li>
+							<li class="small-icon icon-delete-cookies rightside"><a href="ucp.php-3.html?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">Delete all board cookies</a></li>
+									<li class="small-icon icon-team rightside" data-last-responsive="true"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>				<li class="small-icon icon-contact rightside" data-last-responsive="true"><a href="memberlist.php-11.html?mode=contactadmin" role="menuitem">Contact us</a></li>	</ul>
+
+	</div>
+</div>
+
+	<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+	</div>
+	<div id="loading_indicator"></div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close"></a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div class="copyright">
+		Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<script type="text/javascript" src="assets/javascript/jquery.min.js?assets_version=4"></script>
+<script type="text/javascript" src="assets/javascript/core.js?assets_version=4"></script>
+
+
+<script type="text/javascript" src="styles/prosilver/template/forum_fn.js?assets_version=4"></script>
+
+<script type="text/javascript" src="styles/prosilver/template/ajax.js?assets_version=4"></script>
+
+
+
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

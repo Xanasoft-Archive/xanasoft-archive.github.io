@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Win10 don't boot after installation</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Win10 don't boot after installation</h2>
+		<p><a href="viewtopic.php-400.html?f=19&amp;t=132">https://forum.xanasoft.com/viewtopic.php?f=19&amp;t=132</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Win10 don't boot after installation</h3>
+				<div class="date">Posted: <strong>Mon Aug 30, 2021 11:27 pm</strong></div>
+				<div class="author">by <strong>Akashic</strong></div>
+				<div class="content">Hi,<br>
+<br>
+After installing Build v1.2 Beta 3 on Windows 10 and restarting machine on prompt, system doesn't boot anymore - just blue screen without any error code.<br>
+I'm trying to restore the boot partition using various tutorials but so far no luck (bootrec finds no windows installations). Any tips?<br>
+<br>
+Regards,<br>
+a.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Win10 don't boot after installation</h3>
+				<div class="date">Posted: <strong>Thu Sep 02, 2021 7:43 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Yes!<br>
+<br>
+Use the tool <a href="https://rufus.ie/de/" class="postlink">https://rufus.ie/de/</a> and an external USB HDD to create a live windows 10 disk,<br>
+boot form it, finish the win 10 setup on that disk,<br>
+once on the desktop, install DiskCryptor and reboot.<br>
+After the reboot you can use DC from the live insolation to mount the built in encrypted drives, decrypt them, uninstall or reinstall the boot loader and etc...<br>
+<br>
+Cheers<br>
+David X.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Win10 don't boot after installation</h3>
+				<div class="date">Posted: <strong>Mon Mar 07, 2022 2:15 am</strong></div>
+				<div class="author">by <strong>RonGeezy</strong></div>
+				<div class="content"><blockquote><div><cite><a href="memberlist.php-8.html?mode=viewprofile&amp;u=49">DavidXanatos</a> wrote: <a href="viewtopic.php-1810.html?p=234#p234" data-post-id="234" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><div class="responsive-hide">Thu Sep 02, 2021 7:43 am</div></cite>
+Yes!<br>
+<br>
+Use the tool <a href="https://rufus.ie/de/" class="postlink">https://rufus.ie/de/</a> and an external USB HDD to create a live windows 10 disk,<br>
+boot form it, finish the win 10 setup on that disk,<br>
+once on the desktop, install DiskCryptor and reboot.<br>
+After the reboot you can use DC from the live insolation to mount the built in encrypted drives, decrypt them, uninstall or reinstall the boot loader and etc...<br>
+<br>
+Cheers<br>
+David X.
+</div></blockquote>
+hey so I have the same issue with the same v1.2 beta 3. The affected original OS drive will not show up on windows live or diskcryptor or diskmanager. Tried swapping slot with another drive as well. The drive is a pcie m.2 samsung MZ-VLB512B</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Win10 don't boot after installation</h3>
+				<div class="date">Posted: <strong>Mon Mar 07, 2022 3:20 am</strong></div>
+				<div class="author">by <strong>RonGeezy</strong></div>
+				<div class="content"><blockquote><div><cite><a href="memberlist.php-8.html?mode=viewprofile&amp;u=49">DavidXanatos</a> wrote: <a href="viewtopic.php-1810.html?p=234#p234" data-post-id="234" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><div class="responsive-hide">Thu Sep 02, 2021 7:43 am</div></cite>
+Yes!<br>
+<br>
+Use the tool <a href="https://rufus.ie/de/" class="postlink">https://rufus.ie/de/</a> and an external USB HDD to create a live windows 10 disk,<br>
+boot form it, finish the win 10 setup on that disk,<br>
+once on the desktop, install DiskCryptor and reboot.<br>
+After the reboot you can use DC from the live insolation to mount the built in encrypted drives, decrypt them, uninstall or reinstall the boot loader and etc...<br>
+<br>
+Cheers<br>
+David X.
+</div></blockquote>
+hey so I have the same issue with the same v1.2 beta 3. The affected original OS drive will not show up on windows live or diskcryptor or diskmanager. Tried swapping slot with another drive as well. The drive is a pcie m.2 samsung MZ-VLB512B</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Win10 don't boot after installation</h3>
+				<div class="date">Posted: <strong>Mon Mar 07, 2022 8:23 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">DC does not do anything that could damage a drive, aside of putting it under a lot of load while en/de-crypting, so a close to death drive can be pushed past the threshold.<br>
+try it in an other pc for good measure a OEM diaglosis tool if available</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Win10 don't boot after installation</h3>
+				<div class="date">Posted: <strong>Mon Mar 07, 2022 1:37 pm</strong></div>
+				<div class="author">by <strong>RonGeezy</strong></div>
+				<div class="content"><blockquote><div><cite><a href="memberlist.php-8.html?mode=viewprofile&amp;u=49">DavidXanatos</a> wrote: <a href="viewtopic.php-1813.html?p=618#p618" data-post-id="618" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><div class="responsive-hide">Mon Mar 07, 2022 8:23 am</div></cite>
+DC does not do anything that could damage a drive, aside of putting it under a lot of load while en/de-crypting, so a close to death drive can be pushed past the threshold.<br>
+try it in an other pc for good measure a OEM diaglosis tool if available
+</div></blockquote>
+im not so sure this drive was at all close to death. maybe a little short on free space but I bought it only about three years ago. just for clarity, I did not run diskcryptor at all and certainly didn't try to encrypt my system drive (the affected drive). all I did was run the installation and manually restarted the computer when I reached the end (in other words, i would "restart later" and then closed out/saved everything before restarting). this is precisely when the error started. <br>
+<br>
+The only other nonapple laptop that I have does not have a slot for a pcie ssd. I have a usb type c dongle that I connect to the working laptop, but the drive will still not show up for me to scan it. both laptops are lenovo thinkpads running windows 10. I'll try to connect that to the working laptop and run diagnostic tools. praying I haven't lost my data</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Win10 don't boot after installation</h3>
+				<div class="date">Posted: <strong>Thu Mar 10, 2022 7:37 pm</strong></div>
+				<div class="author">by <strong>RonGeezy</strong></div>
+				<div class="content"><blockquote><div><cite><a href="memberlist.php-8.html?mode=viewprofile&amp;u=49">DavidXanatos</a> wrote: <a href="viewtopic.php-1813.html?p=618#p618" data-post-id="618" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><div class="responsive-hide">Mon Mar 07, 2022 8:23 am</div></cite>
+DC does not do anything that could damage a drive, aside of putting it under a lot of load while en/de-crypting, so a close to death drive can be pushed past the threshold.<br>
+try it in an other pc for good measure a OEM diaglosis tool if available
+</div></blockquote>
+So what everyone seems to think is that the drive was automatically encrypted by the program. I'm in pretty desperate straits as none of that data was backed up and so much completed work from my recently finished undergrad were all on that drive. I had a nearly finished scientific paper I was hoping to get published which may be lost <img class="smilies" src="images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"><br>
+<br>
+Do you have any other ideas? Even if it WAS encrypted, I never put in a password or even ordered its execution so I am not sure how I might decrypt it.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Win10 don't boot after installation</h3>
+				<div class="date">Posted: <strong>Fri Nov 03, 2023 5:06 am</strong></div>
+				<div class="author">by <strong>therentabrain</strong></div>
+				<div class="content">I had the same problem.  For me, what fixed it was <br>
+<br>
+Advanced startup options - Troubleshoot - Advanced options - Startup settings - Restart - Disable driver signature enforcement.<br>
+<br>
+this only lasted for one boot.  The problem came back every boot until I uninstalled the software.<br>
+<br>
+Do I need to disable it forever?  I have installed the same copy of the same EXE on two other computers without an issue.  <br>
+<br>
+I think this should be prominently explained when you install.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Win10 don't boot after installation</h3>
+				<div class="date">Posted: <strong>Fri Nov 03, 2023 11:10 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">The 1.2.3 build had signature issues in certain configurations.<br>
+the recently released 1.3.0 is signed the newest MSFT prescribed way and should not have any issues with driver signature.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

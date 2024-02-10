@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Run 2 instances with working directory?</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Run 2 instances with working directory?</h2>
+		<p><a href="viewtopic.php-1010.html?f=14&amp;t=648">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=648</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Run 2 instances with working directory?</h3>
+				<div class="date">Posted: <strong>Mon Sep 04, 2023 11:13 am</strong></div>
+				<div class="author">by <strong>seth67</strong></div>
+				<div class="content">Hi, I want to know how I can run two instances of the same app with different credentials and load a specific copy of a .dll for each of them (or at least set a working directory for the sandboxed app).<br>
+<br>
+To make it easy, I want to launch the same app twice and login with a different account, BUT they both must use their own copy of a .dll I modified in the base (working) directory from advanced.<br>
+<br>
+What I currently do is disable the mutex mechanism from the binary, and it launches two instances, but it doesn't seem to work after a certain screen. This is why I need to have it run in a virtualized environment.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Run 2 instances with working directory?</h3>
+				<div class="date">Posted: <strong>Mon Sep 04, 2023 4:56 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">You should be able to have two sandboxes with a copy of the program and the required .dll per sandbox. This means having two copies of everything, plus a different .dll for each instance.<br>
+<br>
+This should look like this:
+<blockquote class="uncited"><div>C:\Sandbox\%USER%\%SANDBOXNAME<strong class="text-strong">A</strong>%\drive\C\Program Files\YOURPROGRAM\(full copy and .dll A)<br>
+C:\Sandbox\%USER%\%SANDBOXNAME<strong class="text-strong">B</strong>%\drive\C\Program Files\YOURPROGRAM\(full copy and .dll B)</div></blockquote>
+
+Alternatively, having the program installed into the system and start each instance in a different sandbox, where you place the different .dll in the path inside each box.<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>ProtectHostImages=y</code></pre></div> must not be set, when ProtectHostImages is active boxed .dlls are not supposed to be loaded for binaries outside the sandbox.<br>
+<br>
+That should look like follows:
+<blockquote class="uncited"><div>C:\Program Files\YOURPROGRAM\<br>
+C:\Sandbox\%USER%\%SANDBOXNAME<strong class="text-strong">A</strong>%\path to where .dll A needs to be<br>
+C:\Sandbox\%USER%\%SANDBOXNAME<strong class="text-strong">B</strong>%\path to where .dll B needs to be</div></blockquote></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Run 2 instances with working directory?</h3>
+				<div class="date">Posted: <strong>Tue Sep 05, 2023 2:39 pm</strong></div>
+				<div class="author">by <strong>seth67</strong></div>
+				<div class="content">Many thanks bastik, could you also tell me how do i permit everything (remove all restrictions) to an app and just make it stay virtualized? Also, how can i make sandboxie "remember" the files? i see the app keeps downloading the same resource files everytime i open it.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Run 2 instances with working directory?</h3>
+				<div class="date">Posted: <strong>Tue Sep 05, 2023 5:17 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">By default, the files downloaded into a sandbox should remain present, until they get deleted by an application (e.g. a download manager loads parts of a file, merges them into one file and deletes the parts), the user opts to clear the sandbox (or when the box gets removed), or when the box is set to autodelete.<br>
+<br>
+When
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>AutoDelete=y</code></pre></div>
+is set the contents of the box will be removed, when the last program in the box has terminated.<br>
+<br>
+David has added <a href="https://sandboxie-plus.com/compartment-mode/" class="postlink">app compartment boxes</a>, which require a supporter certificate. He has already written something about <a href="https://github.com/sandboxie-plus/Sandboxie/issues/1515" class="postlink">the least strict sandboxing</a>. There are also some <a href="https://github.com/sandboxie-plus/Sandboxie/issues/2134#issuecomment-1215466315" class="postlink">debug options</a>, which can reduce the restrictions. The user interface may warn you about certain debug options being set, so they are not used in productive use by accident.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

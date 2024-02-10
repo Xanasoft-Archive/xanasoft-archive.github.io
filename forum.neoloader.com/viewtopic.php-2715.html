@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; OpenSuse file and protocol association</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>OpenSuse file and protocol association</h2>
+		<p><a href="viewtopic.php-745.html?f=170&amp;t=3362">http://forum.neoloader.com/viewtopic.php?f=170&amp;t=3362</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>2</strong></div>
+					<div class="post">
+				<h3>OpenSuse file and protocol association</h3>
+				<div class="date">Posted: <strong>Wed Nov 20, 2013 3:15 am</strong></div>
+				<div class="author">by <strong>biclasOS</strong></div>
+				<div class="content">hi there,
+<br>I have installed NeoLoader on OpenSuse 12.3 64 bits. I understand that NeoLoader is mostly a portable APP under linux environment, but is there a way to make NeoLoader open ed2k and torrent magnet URI?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Nov 20, 2013 7:47 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">There should be a checkbox in option general that do that, but I don't know if it works und linux. Wait for David's answer for more details <img class="smilies" src="./images/smilies/smile.png" alt=":)" title=":)"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Nov 20, 2013 9:31 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">No I'm sorry, this checkbox is only for windows,<br>I hadn't time to find out how to do that on other OSes.<br><br>Basically you need to call neo with the uri as sommandline parameter that would also work on linux, etc... but i dont know how to tell the OS to do that on file click, iirc. that would have to be done for each filemanager and each web browser individually.<br><br><br>PS: the current linux build is a bit outdated, i will try to upload a new one on weekend.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Nov 20, 2013 2:24 pm</strong></div>
+				<div class="author">by <strong>biclasOS</strong></div>
+				<div class="content"><blockquote class="uncited"><div>PS: the current linux build is a bit outdated, i will try to upload a new one on weekend.</div></blockquote><br>That would be appreciated <img class="smilies" src="./images/smilies/smile.png" alt=":)" title=":)"> Thanks!<br><br>I will see if I find a way to point Firefox to Neo.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Nov 23, 2013 11:43 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I uploaded 0.41d with up to date linux builds,<br>please tell me how it work.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Nov 25, 2013 6:44 pm</strong></div>
+				<div class="author">by <strong>biclasOS</strong></div>
+				<div class="content">Thanks, I have updated already. Everything seems to be working okay so far <img class="smilies" src="./images/smilies/smile.png" alt=":)" title=":)"><br><br>I have tried to point firefox to the NeoLoader executable but nothing happens! I am guessing some sort of argument is needed? Do you have any idea about what it might be?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Nov 25, 2013 9:03 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">hmm... no it should be fine with ./NeoLoader "magnet:?....."<br>you could try with console, if it fails than its some bug in the IPC mechanism that I'd have to fix...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Nov 28, 2013 5:28 pm</strong></div>
+				<div class="author">by <strong>biclasOS</strong></div>
+				<div class="content">It works in command line. I am obviously doing something wrong with Firefox!<br>Also I don't seem to be connecting to Kad or Neo(kad?) network.  torrents work fine though! Maybe I should create a new topic, but how do I check if I am connected?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Dec 01, 2013 5:22 pm</strong></div>
+				<div class="author">by <strong>biclasOS</strong></div>
+				<div class="content">I found a few glitches here and there :b<br>Neo doesn't open UDP ports through UPnP, and when Neo is closed the ports open through UPnP are not removed from the router. Also I noticed that there is an entry for TCP 20035 NeoLoaderServer! Should this port be open? I thought this port was related with NeoCore and the localhost interface?!<br><br>The tray icon doesn't work, at least not in openSUSE 12.3 KDE environment.<br><br>MuleKad seems to do a bootstrap from the link <a href="http://www.nodes-dat.com/" class="postlink">nodes.dat - nodes server for emule kademlia net</a> Would it be better to bootstrap from known clients? This way the nodes will be in related with the files I am transferring?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Dec 01, 2013 7:17 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content"><blockquote><div><cite>biclasOS wrote:</cite>MuleKad seems to do a bootstrap from the link <a href="http://www.nodes-dat.com/" class="postlink">nodes.dat - nodes server for emule kademlia net</a> Would it be better to bootstrap from known clients? This way the nodes will be in related with the files I am transferring?</div></blockquote><br><br>Mhhh... yes, this bootstrap is needed only for the first connection, if it does it every time, David should change it.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>2</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

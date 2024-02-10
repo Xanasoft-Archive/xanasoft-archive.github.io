@@ -1,0 +1,756 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>0.41 Bugs - Page 17 - NeoLoader Forum</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - NeoLoader Forum" href="feed.php">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="feed-1.php?mode=topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Bugs" href="feed-10.php?f=171">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - 0.41 Bugs" href="feed-209.php?f=171&amp;t=3337">
+	<link rel="canonical" href="viewtopic.php-3079.html?t=3337&amp;start=160">
+
+<!--
+	phpBB style name: prosilver Special Edition
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:      phpBB Limited ( https://www.phpbb.com/ )
+-->
+
+<link href="styles/prosilver/theme/print.css?assets_version=4" rel="stylesheet" media="print" title="printonly">
+
+<link href="styles/prosilver/theme/common.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/links.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/content.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/buttons.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/cp.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/forms.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/colours.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/imageset.css?assets_version=4" rel="stylesheet">
+
+<link href="styles/prosilver_se/theme/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/en/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/responsive.css?assets_version=4" rel="stylesheet" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)">
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=4" rel="stylesheet" />
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner">
+
+			<div id="site-description">
+				<a id="logo" class="logo" href="http://neoloader.com" title="NeoLoader Homepage"><span class="imageset site_logo"></span></a>
+				<h1>NeoLoader Forum</h1>
+				<p>Forum of the NeoLoader P2P Client/Downloader</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+						<div id="search-box" class="search-box search-header">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…">
+					<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+					<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+					
+				</fieldset>
+				</form>
+			</div>
+			
+			</div>
+		</div>
+
+		<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="linklist bulletin" role="menubar">
+
+		<li id="quick-links" class="small-icon responsive-menu dropdown-container" data-skip-responsive="true">
+			<a href="#" class="responsive-menu-link dropdown-trigger">Quick links</a>
+			<div class="dropdown hidden">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																								<li class="small-icon icon-search-unanswered"><a href="search.php-1.html?search_id=unanswered" role="menuitem">Unanswered posts</a></li>
+						<li class="small-icon icon-search-active"><a href="search.php-2.html?search_id=active_topics" role="menuitem">Active topics</a></li>
+						<li class="separator"></li>
+						<li class="small-icon icon-search"><a href="search.php.html" role="menuitem">Search</a></li>
+					
+											<li class="separator"></li>
+												<li class="small-icon icon-team"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li class="small-icon icon-faq" data-skip-responsive="true"><a href="faq.php.html" rel="help" title="Frequently Asked Questions" role="menuitem">FAQ</a></li>
+						
+			<li class="small-icon icon-logout rightside" data-skip-responsive="true"><a href="ucp.php.html?mode=login" title="Login" accesskey="x" role="menuitem">Login</a></li>
+					<li class="small-icon icon-register rightside" data-skip-responsive="true"><a href="ucp.php-1.html?mode=register" role="menuitem">Register</a></li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="linklist navlinks" role="menubar">
+						<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" accesskey="h" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="index">Board index</a></span>
+											<span class="crumb"><a href="viewforum.php-3.html?f=169" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="169">NeoLoader English</a></span>
+															<span class="crumb"><a href="viewforum.php-6.html?f=171" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="171">Bugs</a></span>
+												</li>
+		
+					<li class="rightside responsive-search" style="display: none;"><a href="search.php.html" title="View the advanced search options" role="menuitem">Search</a></li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body">
+		
+		
+<h2 class="topic-title"><a href="viewtopic.php-1038.html?f=171&amp;t=3337&amp;start=160">0.41 Bugs</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+			<a href="posting.php-1159.html?mode=reply&amp;f=171&amp;t=3337" class="button icon-button locked-icon" title="This topic is locked, you cannot edit posts or make further replies.">
+			Locked		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-3080.html?f=171&amp;t=3337&amp;start=160&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…">
+				<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+				<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+				<input type="hidden" name="t" value="3337">
+<input type="hidden" name="sf" value="msgonly">
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			173 posts
+							<ul>
+	<li class="dropdown-container dropdown-button-control dropdown-page-jump page-jump">
+		<a href="#" class="dropdown-trigger" title="Click to jump to page…" role="button">Page <strong>17</strong> of <strong>18</strong></a>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+				<li>Jump to page:</li>
+				<li class="page-jump-form">
+					<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="10" data-base-url=".&#x2F;viewtopic.php&#x3F;f&#x3D;171&amp;amp&#x3B;t&#x3D;3337" data-start-name="start">
+					<input class="button2" value="Go" type="button">
+				</li>
+			</ul>
+		</div>
+	</li>
+		<li class="previous"><a href="viewtopic.php-1037.html?f=171&amp;t=3337&amp;start=150" rel="prev" role="button">Previous</a></li>
+			<li><a href="viewtopic.php-1033.html?f=171&amp;t=3337" role="button">1</a></li>
+			<li class="ellipsis" role="separator"><span>…</span></li>
+			<li><a href="viewtopic.php-1035.html?f=171&amp;t=3337&amp;start=130" role="button">14</a></li>
+			<li><a href="viewtopic.php-1036.html?f=171&amp;t=3337&amp;start=140" role="button">15</a></li>
+			<li><a href="viewtopic.php-1037.html?f=171&amp;t=3337&amp;start=150" role="button">16</a></li>
+			<li class="active"><span>17</span></li>
+			<li><a href="viewtopic.php-1039.html?f=171&amp;t=3337&amp;start=170" role="button">18</a></li>
+			<li class="next"><a href="viewtopic.php-1039.html?f=171&amp;t=3337&amp;start=170" rel="next" role="button">Next</a></li>
+	</ul>
+					</div>
+	
+</div>
+
+
+			<div id="p17097" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17097">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17097">
+
+			<h3 class="first"><a href="#p17097"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3081.html?p=17097#p17097"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Tue Dec 24, 2013 2:00 pm </p>
+
+			
+			
+			<div class="content">The next release 0.42a will contain a lot of bug fixes and a fully reworked hashing policy, but this will take some more days, don't think there was no progress in the last weeks its just a lot of to change and cant be released partially.<br>A 0.42a will be available this year at least as beta download.<br><br>The new hashing scheme should not only resolve all the current hashing bugs, but also add new abilities, <br>like the possibility to assotiate more than one torrent into hash with a file allowing to download one and the same file from multiple singlefile torrents.<br><br>Happy holidays<br>David X.</div>
+
+			
+									
+									<div id="sig17097" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17098" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17098">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-36.html?author_id=1155&amp;sr=posts">98</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 28, 2012 7:17 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17098">
+
+			<h3><a href="#p17098"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3082.html?p=17098#p17098"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a></strong> &raquo; </span>Wed Dec 25, 2013 3:37 pm </p>
+
+			
+			
+			<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>I'm sorry for the inconvenience, but I don't try any size of the window after adding something new, Qt usually takes care of that automatically, in this case its a custom control and that failed.<br>As you remember last time you reported such problems it was the same GUI part.<br>I don't fiddle around with all possible window sizes instead I relay on testers to report such minor glitches.<br><br>Thanks fpr reporting will be fixed in the next release.<br><br>Cheers<br>David X.</div></blockquote><br><br>And this is the result: <strong>for the third time</strong>, the control is untested.<br><br><img src="http://www.imagestorming.com/images/2013/12/25/neo_cake.png" class="postimage" alt="Image"><br><br>Again: this is the wrong way.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17099" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17099">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17099">
+
+			<h3><a href="#p17099"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3083.html?p=17099#p17099"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Wed Dec 25, 2013 4:50 pm </p>
+
+			
+			
+			<div class="content">@abel: I don't have any UI "glitch" in summary windows. Regarding the columms sizes I'm preparing a better default .ini.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17100" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17100">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-36.html?author_id=1155&amp;sr=posts">98</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 28, 2012 7:17 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17100">
+
+			<h3><a href="#p17100"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3084.html?p=17100#p17100"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a></strong> &raquo; </span>Wed Dec 25, 2013 5:08 pm </p>
+
+			
+			
+			<div class="content">"<em>I don't have</em>" means that you have tested the GUI on a 14'' monitor with OS XP?<br><br><em>better </em>for who ? based on what criteria? Have you established a minimum size of GUI from which all controls must be visible and have no glitch?</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17101" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17101">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17101">
+
+			<h3><a href="#p17101"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3085.html?p=17101#p17101"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Wed Dec 25, 2013 7:24 pm </p>
+
+			
+			
+			<div class="content">"better" in general, with filename not short as progressbar for example, so each columm contain his value with a logic not random columm sizes.<br>I think is boring for the new user if he probably need to change the size of each columm manually. <br><br>Did you said that is reproducable only on 14'' monitor ? Didn't knew. I'm sure it will be fixed, anyway don't be angry for that, is just an UI glitch on a monitor size that is not pupular since 10 years. Until yesterday it was crashing on every complete torrent, I think that this was more important...</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17102" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17102">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17102">
+
+			<h3><a href="#p17102"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3086.html?p=17102#p17102"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Thu Dec 26, 2013 11:41 am </p>
+
+			
+			
+			<div class="content"><img src="http://www.imagedesert.com/daten/unben-1A992D9I.png" class="postimage" alt="Image"><br><br>Thats the smallest I can make the window on my screen, and for that Mather its the smallest you can make the window on any screen with a resolution bigger than hat.<br>Qt disallows resizing below the minimum size for each widget, that is except the screen is so small that it wouldn't fit otherwise!<br><br>Also the client is not tested on windows XP its not a officially supported platform so to say, we also have issues with P3 CPU's due to them lacking some SSE instructions the default Qt Build needs.</div>
+
+			
+									
+									<div id="sig17102" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17104" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17104">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-14.html?author_id=1087&amp;sr=posts">393</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Apr 16, 2012 2:22 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17104">
+
+			<h3><a href="#p17104"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3087.html?p=17104#p17104"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a></strong> &raquo; </span>Thu Dec 26, 2013 2:32 pm </p>
+
+			
+			
+			<div class="content">mega bug<br><br>1.Neoloader can't display size(downloaded).<br>2.Neoloader can't download two files from mega at the same time.<br>3.If file is .7z ,neoloader can't display progress.<br>4.After stopping download,neolaoder can't save progress.<br><br><br><br><br>test link<br>clip0356.7z 11.1 MB<br><a href="https://mega.co.nz/#!BoFSkBqC!OzuNQSX6KUQdMuVRwAWQaQD-PchEHW_jCbhtEqDz2nA" class="postlink">https://mega.co.nz/#!BoFSkBqC!OzuNQSX6KUQdMuVRwAWQaQD-PchEHW_jCbhtEqDz2nA</a><br>wlinsurance-20130815-A.aes256 3.32 GB<br><a href="https://mega.co.nz/#!dpMG2Qzb!KypjBkBbFVKW1DkgAEhzqz3gv4dVnyea8giplWAeOgU" class="postlink">https://mega.co.nz/#!dpMG2Qzb!KypjBkBbFVKW1DkgAEhzqz3gv4dVnyea8giplWAeOgU</a><br><br><br><br><br>video<br>videobam<br><a href="http://videobam.com/CkQky" class="postlink">Fast, Free Video Hosting & Video Sharing - VideoBam</a><br>mega<br>clip0426.7z 883 KB<br><a href="https://mega.co.nz/#!FltmzBzL!RyAQ13twasvZOuX1GYD5oFZTaR0vA6PzjpHbnHuuNjU" class="postlink">https://mega.co.nz/#!FltmzBzL!RyAQ13twasvZOuX1GYD5oFZTaR0vA6PzjpHbnHuuNjU</a><br><br><br>-----------------------------------------------------------------------------------------------------------------------<br><br>Completing bug is still exist.<br><br><br><br>----------------------------------------------------------------------------------------------------------------<br><br>I have some questions about the funtion(add source).<br>How can i use the funtion?<br>I add http(direct link),and then it can' work.<br>Can neoloader download http(direct link)?</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17108" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17108">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-36.html?author_id=1155&amp;sr=posts">98</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 28, 2012 7:17 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17108">
+
+			<h3><a href="#p17108"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3088.html?p=17108#p17108"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a></strong> &raquo; </span>Fri Dec 27, 2013 10:06 am </p>
+
+			
+			
+			<div class="content"><blockquote><div><cite>Neo26 wrote:</cite>on a monitor size that is not pupular since 10 years.</div></blockquote><br><br>10 is a random number?<br>here you can see the spread of XP and 1024*768 res, tipically used on 14'' or notebooks or tablet.<br><br><a href="http://gs.statcounter.com/?PHPSESSID=6gnou41va4u1m5c3ium0756e25#os-ww-monthly-201212-201311" class="postlink">StatCounter Global Stats - Browser, OS, Search Engine including Mobile Market Share</a><br><a href="http://gs.statcounter.com/?PHPSESSID=6gnou41va4u1m5c3ium0756e25#resolution-ww-monthly-201211-201311" class="postlink">StatCounter Global Stats - Browser, OS, Search Engine including Mobile Market Share</a><br><a href="http://www.w3counter.com/globalstats.php?year=2013&month=11" class="postlink">W3Counter - Global Web Stats</a></div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17109" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17109">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17109">
+
+			<h3><a href="#p17109"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3089.html?p=17109#p17109"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Fri Dec 27, 2013 12:36 pm </p>
+
+			
+			
+			<div class="content">Is my personal experience, I don't know how those sites make their stats and how accurated are them. <br><br>I think their totally uselss, each website have different values, for example the browser statistic posted here are totally different <a href="http://www.w3schools.com/browsers/browsers_stats.asp" class="postlink">Browser Statistics</a><br><br>The last 14'' monitor with xp that I used was surely more than 10 years ago. Then the smallest monitor that I seen was mine 17'', the most spread instead was 19''.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17110" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17110">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-36.html?author_id=1155&amp;sr=posts">98</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 28, 2012 7:17 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17110">
+
+			<h3><a href="#p17110"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3090.html?p=17110#p17110"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a></strong> &raquo; </span>Fri Dec 27, 2013 4:27 pm </p>
+
+			
+			
+			<div class="content"><blockquote><div><cite>Neo26 wrote:</cite>I think their totally uselss, each website have different values, for example the browser statistic posted here are totally different <a href="http://www.w3schools.com/browsers/browsers_stats.asp" class="postlink">Browser Statistics</a></div></blockquote><br><br>no one here has talked about the browser statistics, but OS and screen size/res.<br>In fact, this site also confirms "my" statistics:<br>XP is the second OS most used, and the monitors 14/15'' (1024*768 &lt;= res &lt;= 1366*768) are about 1/3 of the total.<br><a href="http://www.w3schools.com/browsers/browsers_os.asp" class="postlink">OS Statistics</a><br><a href="http://www.w3schools.com/browsers/browsers_display.asp" class="postlink">Browser Display Statistics</a><br><br>Therefore, in my opinion, neoloader must support this "target" and pass all the tests over it before being published.<br>Otherwise you should write "<em>NeoLoader is available for all major platforms, Windows &gt; XP, etc...</em>"</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+	
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=171&amp;t=3337&amp;start=160">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<input type="submit" name="sort" value="Go" class="button2">
+			</fieldset>
+	</form>
+	<hr>
+
+<div class="action-bar bottom">
+	<div class="buttons">
+		
+			<a href="posting.php-1159.html?mode=reply&amp;f=171&amp;t=3337" class="button icon-button locked-icon" title="This topic is locked, you cannot edit posts or make further replies.">
+			Locked		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-3080.html?f=171&amp;t=3337&amp;start=160&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+	
+			<div class="pagination">
+			173 posts
+							<ul>
+	<li class="dropdown-container dropdown-button-control dropdown-page-jump page-jump">
+		<a href="#" class="dropdown-trigger" title="Click to jump to page…" role="button">Page <strong>17</strong> of <strong>18</strong></a>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+				<li>Jump to page:</li>
+				<li class="page-jump-form">
+					<input type="number" name="page-number" min="1" maxlength="6" title="Enter the page number you wish to go to" class="inputbox tiny" data-per-page="10" data-base-url=".&#x2F;viewtopic.php&#x3F;f&#x3D;171&amp;amp&#x3B;t&#x3D;3337" data-start-name="start">
+					<input class="button2" value="Go" type="button">
+				</li>
+			</ul>
+		</div>
+	</li>
+		<li class="previous"><a href="viewtopic.php-1037.html?f=171&amp;t=3337&amp;start=150" rel="prev" role="button">Previous</a></li>
+			<li><a href="viewtopic.php-1033.html?f=171&amp;t=3337" role="button">1</a></li>
+			<li class="ellipsis" role="separator"><span>…</span></li>
+			<li><a href="viewtopic.php-1035.html?f=171&amp;t=3337&amp;start=130" role="button">14</a></li>
+			<li><a href="viewtopic.php-1036.html?f=171&amp;t=3337&amp;start=140" role="button">15</a></li>
+			<li><a href="viewtopic.php-1037.html?f=171&amp;t=3337&amp;start=150" role="button">16</a></li>
+			<li class="active"><span>17</span></li>
+			<li><a href="viewtopic.php-1039.html?f=171&amp;t=3337&amp;start=170" role="button">18</a></li>
+			<li class="next"><a href="viewtopic.php-1039.html?f=171&amp;t=3337&amp;start=170" rel="next" role="button">Next</a></li>
+	</ul>
+					</div>
+		<div class="clear"></div>
+</div>
+
+
+	<p class="jumpbox-return"><a href="viewforum.php-6.html?f=171" class="left-box arrow-left" accesskey="r">Return to “Bugs”</a></p>
+
+
+	<div class="dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+		<span title="Jump to" class="dropdown-trigger button dropdown-select">
+			Jump to		</span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																			<li><a href="viewforum.php.html?f=10">News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-1.html?f=11">Board News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-2.html?f=161">NeoLoader Releases</a></li>
+																<li><a href="viewforum.php-3.html?f=169">NeoLoader English</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-4.html?f=180">General/Discussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-5.html?f=170">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-6.html?f=171">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-7.html?f=172">Feature Requests</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-8.html?f=173">Script Development</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-9.html?f=174">Extensions</a></li>
+																<li><a href="viewforum.php-10.html?f=163">NeoLoader German</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-11.html?f=179">Algemeines/Diskussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-12.html?f=164">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-13.html?f=165">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-14.html?f=166">Feature Wünsche</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-15.html?f=167">Script Entwicklung</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-16.html?f=168">Erweiterungen</a></li>
+																<li><a href="viewforum.php-17.html?f=4">Community</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-18.html?f=81">OffTopic</a></li>
+										</ul>
+		</div>
+	</div>
+
+
+	<div class="stat-block online-list">
+		<h3>Who is online</h3>
+		<p>Users browsing this forum: No registered users and 1 guest</p>
+	</div>
+
+			</div>
+
+
+<div id="page-footer">
+	<div class="navbar">
+	<div class="inner">
+
+	<ul id="nav-footer" class="linklist bulletin" role="menubar">
+		<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" data-navbar-reference="index">Board index</a></span>
+					</li>
+		
+				<li class="rightside">All times are <abbr title="UTC+1">UTC+01:00</abbr></li>
+							<li class="small-icon icon-delete-cookies rightside"><a href="ucp.php-3.html?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">Delete all board cookies</a></li>
+									<li class="small-icon icon-team rightside" data-last-responsive="true"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>				<li class="small-icon icon-contact rightside" data-last-responsive="true"><a href="memberlist.php-11.html?mode=contactadmin" role="menuitem">Contact us</a></li>	</ul>
+
+	</div>
+</div>
+
+	<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+	</div>
+	<div id="loading_indicator"></div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close"></a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div class="copyright">
+		Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<script type="text/javascript" src="assets/javascript/jquery.min.js?assets_version=4"></script>
+<script type="text/javascript" src="assets/javascript/core.js?assets_version=4"></script>
+
+
+<script type="text/javascript" src="styles/prosilver/template/forum_fn.js?assets_version=4"></script>
+
+<script type="text/javascript" src="styles/prosilver/template/ajax.js?assets_version=4"></script>
+
+
+
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

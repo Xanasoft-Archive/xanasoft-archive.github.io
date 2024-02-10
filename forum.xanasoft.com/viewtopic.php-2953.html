@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; &quot;forced program&quot; doesn't work</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>&quot;forced program&quot; doesn't work</h2>
+		<p><a href="viewtopic.php-1132.html?f=14&amp;t=288">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=288</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>&quot;forced program&quot; doesn't work</h3>
+				<div class="date">Posted: <strong>Sat Mar 26, 2022 7:57 am</strong></div>
+				<div class="author">by <strong>wardance</strong></div>
+				<div class="content">Hello, I'm using the latest sandboxie plus.<br>
+I've tried to add several common programs like firefox, chrome to the forced programs list in the default sandbox options, which also has default settings. Afterwards, none of those programs run automatically inside a sandbox.<br>
+<br>
+If I right click the programs and ask it to run inside sandbox then it's OK.<br>
+<br>
+I don't know if I have a misunderstanding on how "forced program" works.<br>
+<br>
+Thanks.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: &quot;forced program&quot; doesn't work</h3>
+				<div class="date">Posted: <strong>Sat Jul 15, 2023 6:32 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">I am sorry to hear that this did not work for you. I hope that this has resolved in the time that has passed, since it should work like you intend it to work.<br>
+<br>
+Adding:
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>ForceProcess=processname.exe</code></pre></div> where processname is replaced by the name of the binary, like firefox.exe, makes it run in the box this is added to.<br>
+<br>
+For Firefox there is also a template: <div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>Template=Firefox_Force</code></pre></div> which could be added to the Sandboxie.ini<br>
+<br>
+And there is also <div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>ForceFolder=</code></pre></div> where you can point to a folder in which everything that gets started gets launched in the sandbox.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

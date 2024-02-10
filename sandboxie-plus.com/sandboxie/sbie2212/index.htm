@@ -1,0 +1,919 @@
+﻿<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>SBIE2212 | Sandboxie-Plus</title>
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://sandboxie-plus.com/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="https://sandboxie-plus.com/wp-content/themes/twentyfourteen/js/html5.js?ver=3.7.0"></script>
+	<![endif]-->
+	<meta name='robots' content='max-image-preview:large'>
+<link rel='dns-prefetch' href='../../index.htm'>
+<link rel="alternate" type="application/rss+xml" title="Sandboxie-Plus &raquo; Feed" href="../../feed/index.htm">
+<link rel="alternate" type="application/rss+xml" title="Sandboxie-Plus &raquo; Comments Feed" href="../../comments/feed/index.htm">
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"wpemoji":"https:\/\/sandboxie-plus.com\/wp-includes\/js\/wp-emoji.js?ver=6.3.3","twemoji":"https:\/\/sandboxie-plus.com\/wp-includes\/js\/twemoji.js?ver=6.3.3"}};
+/**
+ * @output wp-includes/js/wp-emoji-loader.js
+ */
+
+/**
+ * Emoji Settings as exported in PHP via _print_emoji_detection_script().
+ * @typedef WPEmojiSettings
+ * @type {object}
+ * @property {?object} source
+ * @property {?string} source.concatemoji
+ * @property {?string} source.twemoji
+ * @property {?string} source.wpemoji
+ * @property {?boolean} DOMReady
+ * @property {?Function} readyCallback
+ */
+
+/**
+ * Support tests.
+ * @typedef SupportTests
+ * @type {object}
+ * @property {?boolean} flag
+ * @property {?boolean} emoji
+ */
+
+/**
+ * IIFE to detect emoji support and load Twemoji if needed.
+ *
+ * @param {Window} window
+ * @param {Document} document
+ * @param {WPEmojiSettings} settings
+ */
+( function wpEmojiLoader( window, document, settings ) {
+	if ( typeof Promise === 'undefined' ) {
+		return;
+	}
+
+	var sessionStorageKey = 'wpEmojiSettingsSupports';
+	var tests = [ 'flag', 'emoji' ];
+
+	/**
+	 * Checks whether the browser supports offloading to a Worker.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @returns {boolean}
+	 */
+	function supportsWorkerOffloading() {
+		return (
+			typeof Worker !== 'undefined' &&
+			typeof OffscreenCanvas !== 'undefined' &&
+			typeof URL !== 'undefined' &&
+			URL.createObjectURL &&
+			typeof Blob !== 'undefined'
+		);
+	}
+
+	/**
+	 * @typedef SessionSupportTests
+	 * @type {object}
+	 * @property {number} timestamp
+	 * @property {SupportTests} supportTests
+	 */
+
+	/**
+	 * Get support tests from session.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @returns {?SupportTests} Support tests, or null if not set or older than 1 week.
+	 */
+	function getSessionSupportTests() {
+		try {
+			/** @type {SessionSupportTests} */
+			var item = JSON.parse(
+				sessionStorage.getItem( sessionStorageKey )
+			);
+			if (
+				typeof item === 'object' &&
+				typeof item.timestamp === 'number' &&
+				new Date().valueOf() < item.timestamp + 604800 && // Note: Number is a week in seconds.
+				typeof item.supportTests === 'object'
+			) {
+				return item.supportTests;
+			}
+		} catch ( e ) {}
+		return null;
+	}
+
+	/**
+	 * Persist the supports in session storage.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @param {SupportTests} supportTests Support tests.
+	 */
+	function setSessionSupportTests( supportTests ) {
+		try {
+			/** @type {SessionSupportTests} */
+			var item = {
+				supportTests: supportTests,
+				timestamp: new Date().valueOf()
+			};
+
+			sessionStorage.setItem(
+				sessionStorageKey,
+				JSON.stringify( item )
+			);
+		} catch ( e ) {}
+	}
+
+	/**
+	 * Checks if two sets of Emoji characters render the same visually.
+	 *
+	 * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+	 * scope. Everything must be passed by parameters.
+	 *
+	 * @since 4.9.0
+	 *
+	 * @private
+	 *
+	 * @param {CanvasRenderingContext2D} context 2D Context.
+	 * @param {string} set1 Set of Emoji to test.
+	 * @param {string} set2 Set of Emoji to test.
+	 *
+	 * @return {boolean} True if the two sets render the same.
+	 */
+	function emojiSetsRenderIdentically( context, set1, set2 ) {
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, context.canvas.width, context.canvas.height );
+		context.fillText( set1, 0, 0 );
+		var rendered1 = new Uint32Array(
+			context.getImageData(
+				0,
+				0,
+				context.canvas.width,
+				context.canvas.height
+			).data
+		);
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, context.canvas.width, context.canvas.height );
+		context.fillText( set2, 0, 0 );
+		var rendered2 = new Uint32Array(
+			context.getImageData(
+				0,
+				0,
+				context.canvas.width,
+				context.canvas.height
+			).data
+		);
+
+		return rendered1.every( function ( rendered2Data, index ) {
+			return rendered2Data === rendered2[ index ];
+		} );
+	}
+
+	/**
+	 * Determines if the browser properly renders Emoji that Twemoji can supplement.
+	 *
+	 * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+	 * scope. Everything must be passed by parameters.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @private
+	 *
+	 * @param {CanvasRenderingContext2D} context 2D Context.
+	 * @param {string} type Whether to test for support of "flag" or "emoji".
+	 * @param {Function} emojiSetsRenderIdentically Reference to emojiSetsRenderIdentically function, needed due to minification.
+	 *
+	 * @return {boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( context, type, emojiSetsRenderIdentically ) {
+		var isIdentical;
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * Test for Transgender flag compatibility. Added in Unicode 13.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (white flag emoji + transgender symbol).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					'\uD83C\uDFF3\uFE0F\u200D\u26A7\uFE0F', // as a zero-width joiner sequence
+					'\uD83C\uDFF3\uFE0F\u200B\u26A7\uFE0F' // separated by a zero-width space
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for UN flag compatibility. This is the least supported of the letter locale flags,
+				 * so gives us an easy test for full support.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly ([U] + [N]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					'\uD83C\uDDFA\uD83C\uDDF3', // as the sequence of two code points
+					'\uD83C\uDDFA\u200B\uD83C\uDDF3' // as the two code points separated by a zero-width space
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for English flag compatibility. England is a country in the United Kingdom, it
+				 * does not have a two letter locale code but rather a five letter sub-division code.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					// as the flag sequence
+					'\uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62\uDB40\uDC65\uDB40\uDC6E\uDB40\uDC67\uDB40\uDC7F',
+					// with each code point separated by a zero-width space
+					'\uD83C\uDFF4\u200B\uDB40\uDC67\u200B\uDB40\uDC62\u200B\uDB40\uDC65\u200B\uDB40\uDC6E\u200B\uDB40\uDC67\u200B\uDB40\uDC7F'
+				);
+
+				return ! isIdentical;
+			case 'emoji':
+				/*
+				 * Why can't we be friends? Everyone can now shake hands in emoji, regardless of skin tone!
+				 *
+				 * To test for Emoji 14.0 support, try to render a new emoji: Handshake: Light Skin Tone, Dark Skin Tone.
+				 *
+				 * The Handshake: Light Skin Tone, Dark Skin Tone emoji is a ZWJ sequence combining 🫱 Rightwards Hand,
+				 * 🏻 Light Skin Tone, a Zero Width Joiner, 🫲 Leftwards Hand, and 🏿 Dark Skin Tone.
+				 *
+				 * 0x1FAF1 == Rightwards Hand
+				 * 0x1F3FB == Light Skin Tone
+				 * 0x200D == Zero-Width Joiner (ZWJ) that links the code points for the new emoji or
+				 * 0x200B == Zero-Width Space (ZWS) that is rendered for clients not supporting the new emoji.
+				 * 0x1FAF2 == Leftwards Hand
+				 * 0x1F3FF == Dark Skin Tone.
+				 *
+				 * When updating this test for future Emoji releases, ensure that individual emoji that make up the
+				 * sequence come from older emoji standards.
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					'\uD83E\uDEF1\uD83C\uDFFB\u200D\uD83E\uDEF2\uD83C\uDFFF', // as the zero-width joiner sequence
+					'\uD83E\uDEF1\uD83C\uDFFB\u200B\uD83E\uDEF2\uD83C\uDFFF' // separated by a zero-width space
+				);
+
+				return ! isIdentical;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Checks emoji support tests.
+	 *
+	 * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+	 * scope. Everything must be passed by parameters.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @param {string[]} tests Tests.
+	 * @param {Function} browserSupportsEmoji Reference to browserSupportsEmoji function, needed due to minification.
+	 * @param {Function} emojiSetsRenderIdentically Reference to emojiSetsRenderIdentically function, needed due to minification.
+	 *
+	 * @return {SupportTests} Support tests.
+	 */
+	function testEmojiSupports( tests, browserSupportsEmoji, emojiSetsRenderIdentically ) {
+		var canvas;
+		if (
+			typeof WorkerGlobalScope !== 'undefined' &&
+			self instanceof WorkerGlobalScope
+		) {
+			canvas = new OffscreenCanvas( 300, 150 ); // Dimensions are default for HTMLCanvasElement.
+		} else {
+			canvas = document.createElement( 'canvas' );
+		}
+
+		var context = canvas.getContext( '2d', { willReadFrequently: true } );
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		var supports = {};
+		tests.forEach( function ( test ) {
+			supports[ test ] = browserSupportsEmoji( context, test, emojiSetsRenderIdentically );
+		} );
+		return supports;
+	}
+
+	/**
+	 * Adds a script to the head of the document.
+	 *
+	 * @ignore
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param {string} src The url where the script is located.
+	 *
+	 * @return {void}
+	 */
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+		script.src = src;
+		script.defer = true;
+		document.head.appendChild( script );
+	}
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	// Create a promise for DOMContentLoaded since the worker logic may finish after the event has fired.
+	var domReadyPromise = new Promise( function ( resolve ) {
+		document.addEventListener( 'DOMContentLoaded', resolve, {
+			once: true
+		} );
+	} );
+
+	// Obtain the emoji support from the browser, asynchronously when possible.
+	new Promise( function ( resolve ) {
+		var supportTests = getSessionSupportTests();
+		if ( supportTests ) {
+			resolve( supportTests );
+			return;
+		}
+
+		if ( supportsWorkerOffloading() ) {
+			try {
+				// Note that the functions are being passed as arguments due to minification.
+				var workerScript =
+					'postMessage(' +
+					testEmojiSupports.toString() +
+					'(' +
+					[
+						JSON.stringify( tests ),
+						browserSupportsEmoji.toString(),
+						emojiSetsRenderIdentically.toString()
+					].join( ',' ) +
+					'));';
+				var blob = new Blob( [ workerScript ], {
+					type: 'text/javascript'
+				} );
+				var worker = new Worker( URL.createObjectURL( blob ), { name: 'wpTestEmojiSupports' } );
+				worker.onmessage = function ( event ) {
+					supportTests = event.data;
+					setSessionSupportTests( supportTests );
+					worker.terminate();
+					resolve( supportTests );
+				};
+				return;
+			} catch ( e ) {}
+		}
+
+		supportTests = testEmojiSupports( tests, browserSupportsEmoji, emojiSetsRenderIdentically );
+		setSessionSupportTests( supportTests );
+		resolve( supportTests );
+	} )
+		// Once the browser emoji support has been obtained from the session, finalize the settings.
+		.then( function ( supportTests ) {
+			/*
+			 * Tests the browser support for flag emojis and other emojis, and adjusts the
+			 * support settings accordingly.
+			 */
+			for ( var test in supportTests ) {
+				settings.supports[ test ] = supportTests[ test ];
+
+				settings.supports.everything =
+					settings.supports.everything && settings.supports[ test ];
+
+				if ( 'flag' !== test ) {
+					settings.supports.everythingExceptFlag =
+						settings.supports.everythingExceptFlag &&
+						settings.supports[ test ];
+				}
+			}
+
+			settings.supports.everythingExceptFlag =
+				settings.supports.everythingExceptFlag &&
+				! settings.supports.flag;
+
+			// Sets DOMReady to false and assigns a ready function to settings.
+			settings.DOMReady = false;
+			settings.readyCallback = function () {
+				settings.DOMReady = true;
+			};
+		} )
+		.then( function () {
+			return domReadyPromise;
+		} )
+		.then( function () {
+			// When the browser can not render everything we need to load a polyfill.
+			if ( ! settings.supports.everything ) {
+				settings.readyCallback();
+
+				var src = settings.source || {};
+
+				if ( src.concatemoji ) {
+					addScript( src.concatemoji );
+				} else if ( src.wpemoji && src.twemoji ) {
+					addScript( src.twemoji );
+					addScript( src.wpemoji );
+				}
+			}
+		} );
+} )( window, document, window._wpemojiSettings );
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='../../wp-includes/css/dist/block-library/style.css?ver=6.3.3' media='all'>
+<style id='wp-block-library-theme-inline-css'>
+.wp-block-audio figcaption{
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme .wp-block-audio figcaption{
+  color:hsla(0,0%,100%,.65);
+}
+
+.wp-block-audio{
+  margin:0 0 1em;
+}
+
+.wp-block-code{
+  border:1px solid #ccc;
+  border-radius:4px;
+  font-family:Menlo,Consolas,monaco,monospace;
+  padding:.8em 1em;
+}
+
+.wp-block-embed figcaption{
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme .wp-block-embed figcaption{
+  color:hsla(0,0%,100%,.65);
+}
+
+.wp-block-embed{
+  margin:0 0 1em;
+}
+
+.blocks-gallery-caption{
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme .blocks-gallery-caption{
+  color:hsla(0,0%,100%,.65);
+}
+
+.wp-block-image figcaption{
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme .wp-block-image figcaption{
+  color:hsla(0,0%,100%,.65);
+}
+
+.wp-block-image{
+  margin:0 0 1em;
+}
+
+.wp-block-pullquote{
+  border-bottom:4px solid;
+  border-top:4px solid;
+  color:currentColor;
+  margin-bottom:1.75em;
+}
+.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{
+  color:currentColor;
+  font-size:.8125em;
+  font-style:normal;
+  text-transform:uppercase;
+}
+
+.wp-block-quote{
+  border-left:.25em solid;
+  margin:0 0 1.75em;
+  padding-left:1em;
+}
+.wp-block-quote cite,.wp-block-quote footer{
+  color:currentColor;
+  font-size:.8125em;
+  font-style:normal;
+  position:relative;
+}
+.wp-block-quote.has-text-align-right{
+  border-left:none;
+  border-right:.25em solid;
+  padding-left:0;
+  padding-right:1em;
+}
+.wp-block-quote.has-text-align-center{
+  border:none;
+  padding-left:0;
+}
+.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{
+  border:none;
+}
+
+.wp-block-search .wp-block-search__label{
+  font-weight:700;
+}
+
+.wp-block-search__button{
+  border:1px solid #ccc;
+  padding:.375em .625em;
+}
+
+:where(.wp-block-group.has-background){
+  padding:1.25em 2.375em;
+}
+
+.wp-block-separator.has-css-opacity{
+  opacity:.4;
+}
+
+.wp-block-separator{
+  border:none;
+  border-bottom:2px solid;
+  margin-left:auto;
+  margin-right:auto;
+}
+.wp-block-separator.has-alpha-channel-opacity{
+  opacity:1;
+}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots){
+  width:100px;
+}
+.wp-block-separator.has-background:not(.is-style-dots){
+  border-bottom:none;
+  height:1px;
+}
+.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){
+  height:2px;
+}
+
+.wp-block-table{
+  margin:0 0 1em;
+}
+.wp-block-table td,.wp-block-table th{
+  word-break:normal;
+}
+.wp-block-table figcaption{
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme .wp-block-table figcaption{
+  color:hsla(0,0%,100%,.65);
+}
+
+.wp-block-video figcaption{
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme .wp-block-video figcaption{
+  color:hsla(0,0%,100%,.65);
+}
+
+.wp-block-video{
+  margin:0 0 1em;
+}
+
+.wp-block-template-part.has-background{
+  margin-bottom:0;
+  margin-top:0;
+  padding:1.25em 2.375em;
+}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/**
+ * These rules are needed for backwards compatibility.
+ * They should match the button element rules in the base theme.json file.
+ */
+.wp-block-button__link {
+	color: #ffffff;
+	background-color: #32373c;
+	border-radius: 9999px; /* 100% causes an oval, but any explicit but really high value retains the pill shape. */
+
+	/* This needs a low specificity so it won't override the rules from the button element if defined in theme.json. */
+	box-shadow: none;
+	text-decoration: none;
+
+	/* The extra 2px are added to size solids the same as the outline versions.*/
+	padding: calc(0.667em + 2px) calc(1.333em + 2px);
+
+	font-size: 1.125em;
+}
+
+.wp-block-file__button {
+	background: #32373c;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #49007a;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--green: #24890d;--wp--preset--color--dark-gray: #2b2b2b;--wp--preset--color--medium-gray: #767676;--wp--preset--color--light-gray: #f5f5f5;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<style id='md-style-inline-css'>
+ 
+</style>
+<link rel='stylesheet' id='twentyfourteen-lato-css' href='../../wp-content/themes/twentyfourteen/fonts/font-lato.css?ver=20230328' media='all'>
+<link rel='stylesheet' id='genericons-css' href='../../wp-content/themes/twentyfourteen/genericons/genericons.css?ver=3.0.3' media='all'>
+<link rel='stylesheet' id='twentyfourteen-style-css' href='../../wp-content/themes/twentyfourteen/style.css?ver=20230808' media='all'>
+<link rel='stylesheet' id='twentyfourteen-block-style-css' href='../../wp-content/themes/twentyfourteen/css/blocks.css?ver=20230630' media='all'>
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfourteen-ie-css' href='https://sandboxie-plus.com/wp-content/themes/twentyfourteen/css/ie.css?ver=20140711' media='all' />
+<![endif]-->
+<script src='../../wp-includes/js/jquery/jquery.js?ver=3.7.0' id='jquery-core-js'></script>
+<script src='../../wp-includes/js/jquery/jquery-migrate.js?ver=3.4.1' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="../../wp-json/index.htm"><link rel="alternate" type="application/json" href="../../wp-json/wp/v2/pages/700"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.3.3">
+<link rel="canonical" href="index.htm">
+<link rel='shortlink' href='index.htm?p=700'>
+<link rel="alternate" type="application/json+oembed" href="../../wp-json/oembed/1.0/embed-446?url=https%3A%2F%2Fsandboxie-plus.com%2Fsandboxie%2Fsbie2212%2F">
+<link rel="alternate" type="text/xml+oembed" href="../../wp-json/oembed/1.0/embed-447?url=https%3A%2F%2Fsandboxie-plus.com%2Fsandboxie%2Fsbie2212%2F&#038;format=xml">
+<style id="fourteen-colors" type="text/css">/* Custom Contrast Color */
+		.site:before,
+		#secondary,
+		.site-header,
+		.site-footer,
+		.menu-toggle,
+		.featured-content,
+		.featured-content .entry-header,
+		.slider-direction-nav a,
+		.ie8 .featured-content,
+		.ie8 .site:before,
+		.has-black-background-color {
+			background-color: #49007a;
+		}
+
+		.has-black-color {
+			color: #49007a;
+		}
+
+		.grid .featured-content .entry-header,
+		.ie8 .grid .featured-content .entry-header {
+			border-color: #49007a;
+		}
+
+		.slider-control-paging a:before {
+			background-color: rgba(255,255,255,.33);
+		}
+
+		.hentry .mejs-mediaelement,
+		.widget .mejs-mediaelement,
+ 		.hentry .mejs-container .mejs-controls,
+ 		.widget .mejs-container .mejs-controls {
+			background: #49007a;
+		}
+
+		/* Player controls need separation from the contrast background */
+		.primary-sidebar .mejs-controls,
+		.site-footer .mejs-controls {
+			border: 1px solid;
+		}
+		
+			.content-sidebar .widget_twentyfourteen_ephemera .widget-title:before {
+				background: #49007a;
+			}
+
+			.paging-navigation,
+			.content-sidebar .widget .widget-title {
+				border-top-color: #49007a;
+			}
+
+			.content-sidebar .widget .widget-title, 
+			.content-sidebar .widget .widget-title a,
+			.paging-navigation,
+			.paging-navigation a:hover,
+			.paging-navigation a {
+				color: #49007a;
+			}
+
+			/* Override the site title color option with an over-qualified selector, as the option is hidden. */
+			h1.site-title a {
+				color: #fff;
+			}
+		
+		.menu-toggle:active,
+		.menu-toggle:focus,
+		.menu-toggle:hover {
+			background-color: #8d44be;
+		}
+		/* Higher contrast Accent Color against contrast color */
+		.site-navigation .current_page_item > a,
+		.site-navigation .current_page_ancestor > a,
+		.site-navigation .current-menu-item > a,
+		.site-navigation .current-menu-ancestor > a,
+		.site-navigation a:hover,
+		.featured-content a:hover,
+		.featured-content .entry-title a:hover,
+		.widget a:hover,
+		.widget-title a:hover,
+		.widget_twentyfourteen_ephemera .entry-meta a:hover,
+		.hentry .mejs-controls .mejs-button button:hover,
+		.widget .mejs-controls .mejs-button button:hover,
+		.site-info a:hover,
+		.featured-content a:hover {
+			color: #2c9115;
+		}
+
+		.hentry .mejs-controls .mejs-time-rail .mejs-time-current,
+		.widget .mejs-controls .mejs-time-rail .mejs-time-current,
+		.slider-control-paging a:hover:before,
+		.slider-control-paging .slider-active:before,
+		.slider-control-paging .slider-active:hover:before {
+			background-color: #2c9115;
+		}
+	</style>		<style id="wp-custom-css">
+			.entry-header{
+		min-width: 90%
+}
+.entry-content{
+		min-width: 90%
+}
+body.page-child.parent-pageid-108 .entry-title {
+	display: none;
+}
+.entry-title {
+	font-weight: bold;
+}		</style>
+		</head>
+
+<body class="page-template-default page page-id-700 page-child parent-pageid-108 wp-embed-responsive masthead-fixed full-width footer-widgets singular">
+<div id="page" class="hfeed site">
+	
+	<header id="masthead" class="site-header">
+		<div class="header-main">
+			<h1 class="site-title"><a href="../../index.htm" rel="home">Sandboxie-Plus</a></h1>
+
+			<div class="search-toggle">
+				<a href="#search-container" class="screen-reader-text" aria-expanded="false" aria-controls="search-container">
+					Search				</a>
+			</div>
+
+			<nav id="primary-navigation" class="site-navigation primary-navigation">
+				<button class="menu-toggle">Primary Menu</button>
+				<a class="screen-reader-text skip-link" href="#content">
+					Skip to content				</a>
+				<div class="menu-main-menu-container"><ul id="primary-menu" class="nav-menu"><li id="menu-item-1254" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1254"><a href="https://www.patreon.com/DavidXanatos">Support this Project on Patreon</a></li>
+<li id="menu-item-1609" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1609"><a href="https://xanasoft.com/product-category/sandboxie/">Shop</a></li>
+<li id="menu-item-1252" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1252"><a href="https://github.com/sandboxie-plus/">GitHub</a></li>
+<li id="menu-item-1251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1251"><a href="https://forum.xanasoft.com">Forum</a></li>
+<li id="menu-item-1624" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1624"><a href="https://xanasoft.com/contact/">Contact</a></li>
+</ul></div>			</nav>
+		</div>
+
+		<div id="search-container" class="search-box-wrapper hide">
+			<div class="search-box">
+				<form role="search" method="get" class="search-form" action="https://sandboxie-plus.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Search">
+			</form>			</div>
+		</div>
+	</header><!-- #masthead -->
+
+	<div id="main" class="site-main">
+
+<div id="main-content" class="main-content">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+			
+<article id="post-700" class="post-700 page type-page status-publish hentry">
+	<header class="entry-header"><h1 class="entry-title">SBIE2212</h1></header><!-- .entry-header -->
+	<div class="entry-content">
+		<h1>SBIE2212</h1>
+<p><strong>Message:</strong> SBIE2212 Email reader <em>program.exe</em> is not configured to run sandboxed</p>
+<p><strong>Logged To:</strong> <a href="../popupmessagelog/index.htm">Popup Message Log</a>.</p>
+<p><strong>Explanation:</strong></p>
+<p>This message is displayed when you run your mail reader program sandboxed, but have not yet enabled proper support for that program in Sandboxie.</p>
+<p>Sandboxie offers quick configuration for most email programs. Please see <a href="../applicationssettings/index.htm#email-reader">Sandbox Settings &gt; Applications &gt; Email Reader</a>, and then <a href="../testemailconfiguration/index.htm">Test Email Configuration</a>.</p>
+<p>By default, Sandboxie traps all changes in the sandbox, including changes to mailbox files, such as the addition of new mail. These changes will be deleted when the sandbox is deleted. To properly run your mail program sandboxed, you should configure Sandboxie to exclude your mailbox data files from sandboxing. For more information, see <a href="../emailprotection/index.htm">Email Protection</a>.</p>
+	</div><!-- .entry-content -->
+</article><!-- #post-700 -->
+
+		</div><!-- #content -->
+	</div><!-- #primary -->
+	</div><!-- #main-content -->
+
+<div id="secondary">
+		<h2 class="site-description">Open Source sandbox-based isolation software</h2>
+	
+		<nav class="navigation site-navigation secondary-navigation">
+		<div class="menu-navigation-menu-container"><ul id="menu-navigation-menu" class="menu"><li id="menu-item-1566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-1566"><a href="../../index.htm">Sandboxie Plus</a>
+<ul class="sub-menu">
+	<li id="menu-item-2381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2381"><a href="../../plus-features/index.htm">Sandboxie-Plus Features</a></li>
+	<li id="menu-item-2746" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2746"><a href="../../feature-comparison/index.htm">Feature Comparison</a></li>
+	<li id="menu-item-2379" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2379"><a href="../../sandboxie-live/index.htm">Sandboxie-Live</a></li>
+	<li id="menu-item-2451" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2451"><a href="../../contribute/index.htm">Contribute to Sandboxie</a></li>
+</ul>
+</li>
+<li id="menu-item-1570" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-has-children menu-item-1570"><a href="../index.htm">Sandboxie</a>
+<ul class="sub-menu">
+	<li id="menu-item-2744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2744"><a href="../allpages/index.htm">Support Page Index</a></li>
+</ul>
+</li>
+<li id="menu-item-1573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1573"><a href="../../downloads/index.htm">Downloads</a></li>
+<li id="menu-item-1574" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1574"><a href="https://xanasoft.com">More Software</a></li>
+</ul></div>	</nav>
+	
+		<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<aside id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="WT8CDSKHTSTZJ">
+<input type="image" src="../../en_US/AT/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+<img alt="" border="0" src="https://www.paypal.com/en_AT/i/scr/pixel.gif" width="1" height="1">
+</form></div></aside>	</div><!-- #primary-sidebar -->
+	</div><!-- #secondary -->
+
+		</div><!-- #main -->
+
+		<footer id="colophon" class="site-footer">
+
+			
+<div id="supplementary">
+	<div id="footer-sidebar" class="footer-sidebar widget-area" role="complementary">
+		<aside id="meta-4" class="widget widget_meta"><h1 class="widget-title">Meta</h1><nav aria-label="Meta">
+		<ul>
+						<li><a href="../../wp-login.php.html">Log in</a></li>
+			<li><a href="../../feed/index.htm">Entries feed</a></li>
+			<li><a href="../../comments/feed/index.htm">Comments feed</a></li>
+
+			<li><a href="https://wordpress.org/">WordPress.org</a></li>
+		</ul>
+
+		</nav></aside>	</div><!-- #footer-sidebar -->
+</div><!-- #supplementary -->
+
+			<div class="site-info">
+												<a href="https://wordpress.org/" class="imprint">
+					Proudly powered by WordPress				</a>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+	<style id='core-block-supports-inline-css'>
+/**
+ * Core styles: block-supports
+ */
+
+</style>
+<script src='../../wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script src='../../wp-includes/js/masonry.min.js?ver=4.2.2' id='masonry-js'></script>
+<script src='../../wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b' id='jquery-masonry-js'></script>
+<script src='../../wp-content/themes/twentyfourteen/js/functions.js?ver=20230526' id='twentyfourteen-script-js'></script>
+ </body>
+</html>

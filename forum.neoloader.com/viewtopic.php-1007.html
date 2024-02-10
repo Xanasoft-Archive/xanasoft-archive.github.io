@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; ed2k sharing &amp; minimize &amp; NeoShare &amp; fitness &amp; links</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>ed2k sharing &amp; minimize &amp; NeoShare &amp; fitness &amp; links</h2>
+		<p><a href="viewtopic.php-170.html?f=170&amp;t=3430">http://forum.neoloader.com/viewtopic.php?f=170&amp;t=3430</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>ed2k sharing &amp; minimize &amp; NeoShare &amp; fitness &amp; links</h3>
+				<div class="date">Posted: <strong>Sun May 04, 2014 12:02 am</strong></div>
+				<div class="author">by <strong>Zebra</strong></div>
+				<div class="content"><span style="font-size: 134%; line-height: normal">What is "Share new files automatically" option doing, does it mean that unchecking it will cause all newly hashed files will not be shared on ed2k network? Why this is not enabled by default? Why such an option even exist in <span style="text-decoration: underline">file sharing</span> application?!</span>
+<br>
+<br>
+<br>Close (X) button should close application, not minimize to tray, minimize (.) button should minimize/minimize to tray; will you add possibility to configure close/minimize buttons behavior?
+<br>
+<br>
+<br>What is Top Files in Summary tab doing? 2 unknown ("Dos.rar" & "Windows.7...") files just appeared here, what are they?
+<br>
+<br>
+<br>How NeoShare network works? The webpage says:
+<br>"File sharing can be performed in direct transfer mode (typical anonymous P2P) or push mode (Freenet style), as well as in a hybrid caching mode for optimized performance."
+<br>Where can I config direct transfer mode (something like I2P/Tor, right?), how much bandwidth I donate to network, how to config push mode (Freenet), how much disk space I donate to network? Does the anonymity/speed option means number of hops/relaynodes?
+<br>
+<br>
+<br>Whats the purpose of Fitness display, why not just display number of complete/incomplete sources?
+<br>
+<br>What the hell is "neolink", it only redirects to your page and nothing more? Why have you created yet another link format when you can use magnet links? Why "copy magnet link" is disabled from right-click, but works with "advanced link options" and why it doesn't contain AICH hash (aMule already supports such a links)?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun May 04, 2014 9:08 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content"><blockquote class="uncited"><div>What is "Share new files automatically" option doing, does it mean that unchecking it will cause all newly hashed files will not be shared on ed2k network? Why this is not enabled by default? Why such an option even exist in file sharing application?!</div></blockquote><br>This is a multi-platform p2p application, not an ed2k application. This option make that ANY downloaded files, when complete, will be shared on the ed2k network. It's not active by default because once downloaded a multi-torrent, for example, many times the subfiles alone are totally useless, and we don't want to spam the ed2k network. (an example is a MAME rom pack, a portable application, and many more)<br><br>Another reason is for the user safety, but David will explain it better.<br><br>You can manually share a file on ed2k once completed right clicking on it, but by default any download will not be shared automatically. <br><br><blockquote class="uncited"><div>Close (X) button should close application, not minimize to tray, minimize (.) button should minimize/minimize to tray; will you add possibility to configure close/minimize buttons behavior?</div></blockquote><br>Setting --&gt; Interface --&gt; Show Trayicon.<br>In that case when you push (X) will be minimized to tray. I don't know if that could be changed.<br><br><blockquote class="uncited"><div> What is Top Files in Summary tab doing? 2 unknown ("Dos.rar" & "Windows.7...") files just appeared here, what are they?</div></blockquote><br>Summary in short = List of most recently files shared on NeoKad using HosterCache.<br>What's HosterCache ? It's a "technology" that use file hosters to increase download speed. To prevent user safety, uploading is disabled by default.<br>How does it work ? When a NeoLoader ask for a certain file, if that option is active, the file will be uploaded to an hoster, and the link will be avaible througt neokad (encrypted)<br><br><blockquote class="uncited"><div>Whats the purpose of Fitness display, why not just display number of complete/incomplete sources?</div></blockquote><br>No one, for me it should be removed, but David don't want.<br><br>---<br><br>Regarding the other question, and probably my answer too, David will give you more infos asap.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun May 04, 2014 9:33 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote class="uncited"><div>What is "Share new files automatically" option doing, does it mean that unchecking it will cause all newly hashed files will not be shared on ed2k network? Why this is not enabled by default? Why such an option even exist in file sharing application?!</div></blockquote><br><br>NeoLoader supports not only P2P downloads but also downloading from One Click Hosters and the mentioned NeoShare, booth means of downloading are secure from legal attacks from company's they may object to whatever it is you are downloading/sharing. For Hosters that applyed to download only, but here for most users download is all they want anyways, and of cause the content itself must not be illegal, but being unlicensed is already perfectly fine in almost any jurisdiction, as it falls under the right to a private copy.<br><br>So a user that wants to be secure from legal attacks, a.k.a. follow the letter of the law and uses there for only hoster downloads and or neo share would be really fucked if hes client would put the files he safely downloaded onto ed2k and start uploading them those compromising him for legal prosecution, by some extortion experts.<br><br><br>You will also have noticed that there is no analogues feature for torrents, as with torrents you can not share a file automatically at all, you need to manually create a torrent and set a few parameters, and than publish the torrent some ware. So having a feature to create a random torrent automatically would be pointless as no one would find and download it.<br><br><br>Now this option applies only to new files, meaning files that themselves have not been downloaded from for example ed2k, if you downloaded a file from ed2k it will remain being shared on ed2k after completion, same goes for a torrent.<br><br><br>Only files that you downloaded of a network other than ed2k are subject to this setting.<br><br><br><blockquote class="uncited"><div>Close (X) button should close application, not minimize to tray, minimize (.) button should minimize/minimize to tray; will you add possibility to configure close/minimize buttons behavior?</div></blockquote><br><br>Ok, will be in included in the next release.<br><br><br><br><blockquote class="uncited"><div>What is Top Files in Summary tab doing? 2 unknown ("Dos.rar" & "Windows.7...") files just appeared here, what are they?</div></blockquote><br><br>When Neo loader publishes files for keyword search into neokad it optionally adds each week a keyword that is unique for this week, for example topfiles2014cw20 so all files that have been published and fulfill some availability criteria (see neo26's answer) can be found under this keyword. <br><br>The list in the summary page is a regular keyword search list for that said keyword.<br>The feature is intended to promote popular files, but for now there are not many files in there.<br><br><br><blockquote class="uncited"><div>How NeoShare network works? The webpage says:<br>"File sharing can be performed in direct transfer mode (typical anonymous P2P) or push mode (Freenet style), as well as in a hybrid caching mode for optimized performance."<br>Where can I config direct transfer mode (something like I2P/Tor, right?), how much bandwidth I donate to network, how to config push mode (Freenet), how much disk space I donate to network? </div></blockquote><br><br><br>The push mode is still under development and those for now only direct transfer mode is available. Yes its like I2P/Tor.<br>Whatever free bandwidth is left will be used for relaying packets for 3rd parties, there is no option to limit that currently.<br><br>Push mode will work the same way upload to hosters works, you will have a sub menu option on each file to push it to the NeoKad's block cache.<br><br><br><blockquote class="uncited"><div>Does the anonymity/speed option means number of hops/relaynodes?</div></blockquote><br>Yes.<br><br><br><blockquote class="uncited"><div>Whats the purpose of Fitness display, why not just display number of complete/incomplete sources?</div></blockquote><br><br>The Fitness show the expected download speed of the file depending on the type of network the file is on.<br>Also it shows the count of virtual complete sources.<br>The count of normal complete(seeds) sources and all sources is shown in the sources column, if advanced controls are enabled.<br><br>EDIT: this will be reworked soon to include also other parameters<br><br><blockquote class="uncited"><div>What the hell is "neolink", it only redirects to your page and nothing more? Why have you created yet another link format when you can use magnet links? Why "copy magnet link" is disabled from right-click, but works with "advanced link options" and why it doesn't contain AICH hash (aMule already supports such a links)?</div></blockquote><br><br>A neo link is a magnet link with additional values and perpended with a <a href="http://link.neoloader.to/" class="postlink">NeoLoader - Download File</a><br>The additional values contain the neo hash and if available a ed2k hash, for hoster dowloads you can also choose in the advanced link dialog to add a field that contains hoster links for the selected file.<br><br>The domain redirection allows such links being posted on the web to be added to your locally running NeoLoader on any platform.<br>The registration of uri schemes for magnet and ed2k works in neo only under windows, for linux you would need to have a different solution for each desktop flavor as far as I can tell.<br>The solution is similar to JDownlaoders Click'n'Load the website has a code snipped that calls a port on the localhost (that is also only accessible from local host) and sends the link content there, the client than adds the files to the download list.<br><br>Also its a nice improvement as a user that doe snot know what a torrent is when he clicks on a magnet link wont know what to do / how to procees if he does not yet have a torrent client installed.<br>The script however can detect that no NeoLoader is running (port is closed) and instruct the user to install it to proceed with <br><br><br>Copy magnet is enabled only if the file contains a torrent, otherwise its disabled,<br>in the advanced dialog you can still select it but it will not be a valid torrent magnet just a magnet with ed2k hash or neo hash.<br><br><br>if you copy a link in ed2k format it should include the AICH hash, if it does not, than there must be a bug some ware,<br>you can check in the detail tab of the file if it has a AICH hash.<br><br><br>Cheers<br>David X.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat May 31, 2014 6:55 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Everything seems clearly answered, in 1 month no one replied so I'll close the discussion. PM me to open again if u want say something about what's explained here, or feel free to start a new thread referred to this one <img class="smilies" src="./images/smilies/smile.png" alt=":)" title=":)"></div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

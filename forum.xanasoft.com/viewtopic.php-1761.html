@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Windows 10 Pro, only non-system drives</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Windows 10 Pro, only non-system drives</h2>
+		<p><a href="viewtopic.php-374.html?f=17&amp;t=207">https://forum.xanasoft.com/viewtopic.php?f=17&amp;t=207</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Windows 10 Pro, only non-system drives</h3>
+				<div class="date">Posted: <strong>Tue Dec 07, 2021 7:52 am</strong></div>
+				<div class="author">by <strong>tetromerch</strong></div>
+				<div class="content">If I only encrypt these, is there a chance Windows will still not boot?<br>
+I want to keep my C-drive unencrypted and encrypt my other ones.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Windows 10 Pro, only non-system drives</h3>
+				<div class="date">Posted: <strong>Tue Dec 07, 2021 9:16 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">As long as all boot relevant partitions are not encrypted, and you don't have secure boot enabled everything should be fine<br>
+So keep C:\ and the acompanying boot/uefi/recovery partitions unencrypted<br>
+the issue is that if windows denyes loading the DC driver even if nothing is encrypted it wil result in a BSOD on boot as the driver is registered as a low level filter driver. Windows is not smart enough to ignore that entry if it previusly declined to load the driver, in that case you can use a boot menu option to disable signature enforcement to boot once and uninstall dc</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Windows 10 Pro, only non-system drives</h3>
+				<div class="date">Posted: <strong>Tue Dec 07, 2021 9:27 am</strong></div>
+				<div class="author">by <strong>tetromerch</strong></div>
+				<div class="content">But this possible failure of Windows to load the driver (and BSOD'ing) would only be after DC install and FIRST boot, right?<br>
+So if it accepts it once, it'll always accept it, is that correct?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Windows 10 Pro, only non-system drives</h3>
+				<div class="date">Posted: <strong>Tue Dec 07, 2021 2:59 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">yes</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

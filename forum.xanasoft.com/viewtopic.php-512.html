@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Sandboxie-Plus v1.12.0</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Sandboxie-Plus v1.12.0</h2>
+		<p><a href="viewtopic.php-46.html?f=27&amp;t=678">https://forum.xanasoft.com/viewtopic.php?f=27&amp;t=678</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Sandboxie-Plus v1.12.0</h3>
+				<div class="date">Posted: <strong>Thu Oct 26, 2023 7:13 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">This build brings a lot of usability improvements most notably the ability to auto force all removable media (Requires a supporter certificate).<br>
+<br>
+In the settings exceptions can be specified, based on the volume serial number to exclude selected devices form forced sandboxing.<br>
+<br>
+This build also enhances on the global hot keys, two new hot keys have been added "Alt + Break" to bring the sandman window in front with the top most flag set, and "Ctrl + Alt + F" to toggle disabling of forced processes, furthermore the terminate all (panic hotkey) hot key "Shift + Break" has been improved, individual sandboxes can be configured to be excluded from a blanket global terminate all command, however when the panic hotkey is invoked 3 times with &lt; 1 sec between presses it will terminate all boxed processes, no exceptions.<br>
+<br>
+Also worth mentioning is an improvement to the service handling which allows to install and run the GOG launcher sand boxed in a reduced isolation box with the following configuration:<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>UnrestrictedSCM=y
+RunServicesAsSystem=y
+NoSecurityIsolation=y
+Template=RpcPortBindingsExt</code></pre></div>
+
+Further work is ongoing to make the GOG work in a standard sandbox.<br>
+<br>
+Download: <a href="https://github.com/sandboxie-plus/Sandboxie/releases/tag/v1.12.0" class="postlink">https://github.com/sandboxie-plus/Sandb ... ag/v1.12.0</a><br>
+<br>
+Changelog<br>
+<br>
+Added<br>
+    added mechanism to automatically set USB drives as forced folders (Requires a supporter certificate)<br>
+    added troubleshooting script for issue #3318 with parental controls<br>
+    started german translation of the troubleshooting scripts ...\SandboxiePlus\SandMan\Troubleshooting\lang_de.json #3293<br>
+    added "get_cert SBIEX-XXXXX-XXXXX-XXXXX-XXXXX" command to UpdUtil.exe allowing to get a cert by serial using command line<br>
+    added mechanism to revoke leaked or refunded certificates<br>
+    added new global hot key to bring sandman in fron as top most ALT+Break #3320<br>
+    added Exclude specific boxes from 'Terminate all processes' #3108<br>
+        Note: press the panic button hot key 3 times with less then 1 second between clicks to Terminate All with NO exceptions<br>
+    added Customizable global hotkey that toggles the state of "pause forced programs" #2441<br>
+    added Warn or prevent broad "forced folder" settings #650<br>
+    added CheckExpectFile function to Plus #768<br>
+<br>
+Changed<br>
+    improved suspend process ahndling #3375<br>
+    improved handling of issue reports<br>
+    updated reminder schedule<br>
+<br>
+Fixed<br>
+    fixed issue with auto updater not offering version updates<br>
+    fixed issue with new symlink handling code #3340<br>
+    fixed issue with Scm_StartServiceCtrlDispatcherX not behaving correctly when not run as service #1246 #3297<br>
+    fixed Issue with configuring the original folder of a symbolic link created using mklink to OpenPipePath #3207<br>
+<br>
+Removed<br>
+    removed obsolete /nosbiectrl switch #3391</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

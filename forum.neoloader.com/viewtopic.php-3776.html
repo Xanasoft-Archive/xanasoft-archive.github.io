@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; Better ipfilter support</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>Better ipfilter support</h2>
+		<p><a href="viewtopic.php-1655.html?f=172&amp;t=3130">http://forum.neoloader.com/viewtopic.php?f=172&amp;t=3130</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>2</strong></div>
+					<div class="post">
+				<h3>Better ipfilter support</h3>
+				<div class="date">Posted: <strong>Thu Jan 17, 2013 8:52 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Hi David,
+<br>
+<br>I wish a better ipfilter support before the final version of the neoloader or in one of next beta. 
+<br>
+<br>I would a configuration panel with and update link choice and update every X days/hours.
+<br>
+<br>Thanks. Sorry for bad english.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Jan 17, 2013 10:11 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I added a pool to see how much users want this in my opinion useless feature.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun May 19, 2013 8:52 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">The requested feature have been added<br><br>there is a setting: "Bandwidth/IPFilter" that takes a string,<br>1. a filename only -&gt; pointing to an ipfilter file in the config directory<br>2. a full path pointing to an ipfilter file at a arbitrary location<br>3. a url pointing to an plaintex or compressed ipfilter download<br><br>In case 3. Neo loader will check on each start if the file on the server has changed (HEAD request) and if so download it (GET request) and replace the old one. Howe ever no more than one update a day is done, even if the file has changed.<br><br><br>There is also a setting "Bandwidth/UseIPv6" that takes a boolean (true/false) to disable IPv6 Support since current ipfilter files does not support IPv6 addresses.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Aug 23, 2013 5:53 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">What do you think about add an edit system fur the ipfilter that let you See/Edit the ranges and read descritpion like in eMule ?<br><br>Is useful to check if an ipfilter filter a provider or another or many VPNs services and remove them if the user want.<br><br>Yes I know that is possible edit the filter with a txt editor but with the eMule's system I can order the IP ranges or the descrition and make it better/fast.<br><br>A little OT: I'm thinking about if that filters are really useful or not, there are many description that look like no sense such as some ip range of Telecom Italia (an italian provider) fur.... "Kad Activity"..... ?! And many more examples, really strange.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Aug 23, 2013 8:21 pm</strong></div>
+				<div class="author">by <strong>abel</strong></div>
+				<div class="content">No. I think that ad-hoc tool with a simple GUI can be released separately, as "Link Creator" or "ed2k link killer" and so on.<br>I don't want to see Neoloader become like NeoMule, with many buttons, options and windows. :-)</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Aug 24, 2013 8:18 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">And I don't like many exes :P<br><br>I don't see the problem to add a button on the menu where you can run manually the first wizard for example or in settings "Edit IpFilter". <br>Once done that we could add also the filter manually some address, with the description "manually filtered" but an editor to order/add/remove before is needed.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Aug 24, 2013 12:27 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote class="uncited"><div>What do you think about add an edit system fur the ipfilter that let you See/Edit the ranges and read descritpion like in eMule ?<br></div></blockquote><br>Not much, if you want to edit the file use an external tool.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Aug 24, 2013 1:08 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">As far I know there aren't external tool for editing ipfilters.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Aug 24, 2013 1:11 pm</strong></div>
+				<div class="author">by <strong>hooligan</strong></div>
+				<div class="content">peerblock^^</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Aug 24, 2013 2:47 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Thanks, but I still prefer something inside the client, that could let us personalize the ipfilter adding manually filtered clients in future.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>2</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

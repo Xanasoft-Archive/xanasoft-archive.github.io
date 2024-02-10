@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; notes in the margins</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>notes in the margins</h2>
+		<p><a href="viewtopic.php-392.html?f=18&amp;t=631">https://forum.xanasoft.com/viewtopic.php?f=18&amp;t=631</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>notes in the margins</h3>
+				<div class="date">Posted: <strong>Mon Aug 07, 2023 1:33 pm</strong></div>
+				<div class="author">by <strong>babut</strong></div>
+				<div class="content">when creating an encrypted partition, use the console whenever possible. there are enough reasons for that. the first reason is that you will save a couple of days(days, Carl!!) if you create a partition using the command "dccon -format &lt;ptN&gt; -raw -q -a -p &lt;password_in_double_quotes&gt;". the number in "ptN" can be found through the "dccon -enum" command, but it should be borne in mind that it will display only disks with volumes(it does not matter if they have file systems). and only after that, create a file system on an encrypted disk using the operating system itself. yes, DC is not VC, DC assumes that you have a telepathic gift and a desire to dig into the most unexpected things.<br>
+the second reason is that the GUI often crashes. and although i have not noticed any negative consequences from this, but this does not mean that there are none.<br>
+if there are several encrypted partitions on the disk, they are selected through the "5" boot mode(this is mentioned only in passing in man, since you are supposed to have a telepathic gift) in dcsprop. it looks something like this:<br>
+&lt;config key="BootMode"&gt;5&lt;/config&gt;<br>
+&lt;config key="BootDiskID"&gt;4250605865&lt;/config&gt;<br>
+the problem is that i haven't found any way to find out this magically ID(i don't have a telepathic gift!), except in the GUI, but in the GUI, the ability to select a specific partition for bootload lives its unpredictable life, and in most cases is blocked.<br>
+if bootloader does not want to be installed, giving an error that it is already installed, but does not want to be deleted, then delete the DCS folder from the EFI partition of this disk. telepaths can guess for themselves.<br>
+<br>
+and more. in practice, you will not get the speed that synthetic tests like DiskMark show, do not even hope. in the best case, the speed will be three times less for linear reading, and four times or more less for writing</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: notes in the margins</h3>
+				<div class="date">Posted: <strong>Mon Aug 07, 2023 2:18 pm</strong></div>
+				<div class="author">by <strong>babut</strong></div>
+				<div class="content">and one more thing. like Veracrypt, DC also likes to go where it is not asked, namely to rename the bootloader bootmgfw.efi in the EFI Windows folder. as a result, you will get unexpected problems, if not immediately, then sometime later. when you install the DC loader from the GUI, DC will ask you should he behaving like a pig, but it's easy not to keep track of this. in any case, after everything, go to the EFI section on the disk and restore the order given to us by the lord god there, i.e. restore the previous bootx64.efi(or whatever you have according to the architecture. for example, i have a uefi shell instead), restore the Windows bootloader in the "\EFI\Windows\Boot" folder, delete the DCS entry from the UEFI table(it will not be displayed in the BIOS anyway) and create it again. it is better to do it right away than to be unprepared for changes later(and they will be!)</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

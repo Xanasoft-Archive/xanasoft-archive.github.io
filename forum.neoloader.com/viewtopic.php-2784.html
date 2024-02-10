@@ -1,0 +1,748 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>How multiple networks works? - NeoLoader Forum</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - NeoLoader Forum" href="feed.php">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="feed-1.php?mode=topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Support" href="feed-8.php?f=170">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - How multiple networks works?" href="feed-203.php?f=170&amp;t=3302">
+	<link rel="canonical" href="viewtopic.php-2778.html?t=3302">
+
+<!--
+	phpBB style name: prosilver Special Edition
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:      phpBB Limited ( https://www.phpbb.com/ )
+-->
+
+<link href="styles/prosilver/theme/print.css?assets_version=4" rel="stylesheet" media="print" title="printonly">
+
+<link href="styles/prosilver/theme/common.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/links.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/content.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/buttons.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/cp.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/forms.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/colours.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/imageset.css?assets_version=4" rel="stylesheet">
+
+<link href="styles/prosilver_se/theme/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/en/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/responsive.css?assets_version=4" rel="stylesheet" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)">
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=4" rel="stylesheet" />
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner">
+
+			<div id="site-description">
+				<a id="logo" class="logo" href="http://neoloader.com" title="NeoLoader Homepage"><span class="imageset site_logo"></span></a>
+				<h1>NeoLoader Forum</h1>
+				<p>Forum of the NeoLoader P2P Client/Downloader</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+						<div id="search-box" class="search-box search-header">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…">
+					<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+					<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+					
+				</fieldset>
+				</form>
+			</div>
+			
+			</div>
+		</div>
+
+		<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="linklist bulletin" role="menubar">
+
+		<li id="quick-links" class="small-icon responsive-menu dropdown-container" data-skip-responsive="true">
+			<a href="#" class="responsive-menu-link dropdown-trigger">Quick links</a>
+			<div class="dropdown hidden">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																								<li class="small-icon icon-search-unanswered"><a href="search.php-1.html?search_id=unanswered" role="menuitem">Unanswered posts</a></li>
+						<li class="small-icon icon-search-active"><a href="search.php-2.html?search_id=active_topics" role="menuitem">Active topics</a></li>
+						<li class="separator"></li>
+						<li class="small-icon icon-search"><a href="search.php.html" role="menuitem">Search</a></li>
+					
+											<li class="separator"></li>
+												<li class="small-icon icon-team"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li class="small-icon icon-faq" data-skip-responsive="true"><a href="faq.php.html" rel="help" title="Frequently Asked Questions" role="menuitem">FAQ</a></li>
+						
+			<li class="small-icon icon-logout rightside" data-skip-responsive="true"><a href="ucp.php.html?mode=login" title="Login" accesskey="x" role="menuitem">Login</a></li>
+					<li class="small-icon icon-register rightside" data-skip-responsive="true"><a href="ucp.php-1.html?mode=register" role="menuitem">Register</a></li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="linklist navlinks" role="menubar">
+						<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" accesskey="h" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="index">Board index</a></span>
+											<span class="crumb"><a href="viewforum.php-3.html?f=169" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="169">NeoLoader English</a></span>
+															<span class="crumb"><a href="viewforum.php-5.html?f=170" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="170">Support</a></span>
+												</li>
+		
+					<li class="rightside responsive-search" style="display: none;"><a href="search.php.html" title="View the advanced search options" role="menuitem">Search</a></li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body">
+		
+		
+<h2 class="topic-title"><a href="viewtopic.php-762.html?f=170&amp;t=3302">How multiple networks works?</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+			<a href="posting.php-1143.html?mode=reply&amp;f=170&amp;t=3302" class="button icon-button reply-icon" title="Post a reply">
+			Post Reply		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-2779.html?f=170&amp;t=3302&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…">
+				<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+				<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+				<input type="hidden" name="t" value="3302">
+<input type="hidden" name="sf" value="msgonly">
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			8 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+	
+</div>
+
+
+			<div id="p16474" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16474">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-36.html?author_id=1155&amp;sr=posts">98</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 28, 2012 7:17 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16474">
+
+			<h3 class="first"><a href="#p16474">How multiple networks works?</a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1144.html?mode=quote&amp;f=170&amp;p=16474" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-2780.html?p=16474#p16474"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a></strong> &raquo; </span>Sun Jul 21, 2013 11:10 am </p>
+
+			
+			
+			<div class="content">I did not understand how the multi-protocol works. :-(
+<br>
+<br>I have 2 links, for the same file, released on two protocols:  ed2k and torrent.
+<br>If I add the ed2k links, NL not start to download even from the torrent network. Why?
+<br>If I add the torrent link, NL not start to download even from the ed2k network. Why?
+<br>
+<br>If I add them both, neloader treats them as two separate files. (<a href="http://www.imagestorming.com/image/2ma" class="postlink">Viewing image nl_test_multi_networks.png - Imagestorming - Reliable images hosting</a>)
+<br>
+<br>Where i've wrong? How can I download a file from both networks?
+<br>
+<br>(In attached the 2 links)
+<br>
+<br>Thanks :)</div>
+
+							<dl class="attachbox">
+					<dt>
+						Attachments
+					</dt>
+											<dd>
+	
+		
+
+		
+				<dl class="file">
+			<dt><span class="imageset icon_topic_attach"></span> <a class="postlink" href="./download/file.php?id=585">link_for_neoloader_test.7z</a></dt>
+						<dd>(40.83 KiB) Downloaded 400 times</dd>
+		</dl>
+		
+
+
+		
+		
+	</dd>
+									</dl>
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16475" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16475">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-15.html?mode=viewprofile&amp;u=4324" class="avatar"><img src="download/file-9.php?avatar=4324_1425060433.jpg" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-15.html?mode=viewprofile&amp;u=4324" style="color: #AA0000;" class="username-coloured">Ekliptor</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-23.html?author_id=4324&amp;sr=posts">37</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Feb 27, 2009 11:38 pm</dd>		
+		
+											
+							<dd class="profile-contact">
+				<strong>Contact:</strong>
+				<div class="dropdown-container dropdown-left">
+					<a href="#" class="dropdown-trigger"><span class="imageset icon_contact" title="Contact Ekliptor">Contact Ekliptor</span></a>
+					<div class="dropdown hidden">
+						<div class="pointer"><div class="pointer-inner"></div></div>
+						<div class="dropdown-contents contact-icons">
+																																								<div>
+																	<a href="http://www.applejuice-community.eu" title="Website" class="last-cell">
+										<span class="contact-icon phpbb_website-icon">Website</span>
+									</a>
+																	</div>
+																					</div>
+					</div>
+				</div>
+			</dd>
+				
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16475">
+
+			<h3><a href="#p16475"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1145.html?mode=quote&amp;f=170&amp;p=16475" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-2781.html?p=16475#p16475"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-15.html?mode=viewprofile&amp;u=4324" style="color: #AA0000;" class="username-coloured">Ekliptor</a></strong> &raquo; </span>Sun Jul 21, 2013 2:39 pm </p>
+
+			
+			
+			<div class="content">In your current situation NeoLoader has two different files represented by two different hashes. And there's no way for NeoLoader to know that these two files actually are the same.<br><br>The feature <strong>to load a file from multiple networks</strong> works like this:<br>1. To be able to load a file from multiple networks, another Neo user has to have downloaded the file before from <strong>any </strong>network of his choosing.<br>2. Once the file is completed NeoLoader computes the hashes for <strong>all </strong>networks. The association of the hashes (i.e. that they belong to the same file) gets published in our NeoKad network under the NeoHash (which serves as master hash in this case.).<br>3. All following Neo users who want to download the file now, can add the file by adding <strong>any </strong>hash from any network (ed2k link, torrent/magnet link or NeoMagnet link). NeoLoader will then look in NeoKad for other confirmed hashes this file has. Afterwards it will add all these hashes and download the file from multiple networks automatically* (if the respective networks are enabled).<br><br>* Note to advanced users:<br>A torrent can contain multiple files. Therefore, when adding an ed2k link (or Neo link) no multi file torrent downloads will be started automatically. To find multi-file torrents, which contain the same file, you can right-click on the download and use "Find Aliases" to search from them. You can then add these multi files containing your desired file as new additional downloads and stop all single files you don't want (within these newly added multi files). NeoLoader won't add the same file on your disk twice and in the representation of the Download list the single file will still be visible as a single file even though it has new sources from the multi file (and in the multi file the already existing single file won't be visible, except in the file details under "SubFiles"). We don't start downloads for corresponding multi files automatically because the torrent pieces don't stop at the file boundaries. Thus, adding multi files will very likely cause downloads of other files, which have data in the same piece as your desired file (especially with large torrent piece sizes this is very likely to happen). To prevent automatically downloading parts of files you don't know (which might cause legal/copyright problems) and because parts of these unknown files might in theory be malicious, we don't start these multi file downloads automatically.<br>Adding single file torrents or ed2k links (which represent a single file too) to an existing multi file download is straightforward and done automatically.<br><br>Note that for this process to work the original Neo, who downloaded the file first and published the hash associations, doesn't have to be online anymore. The information will be stored on many other nodes in NeoKad.<br><br><br><br>In your specific case your two downloads will finish separately and NeoLoader then will start hashing the files. Afterwards it will complain about a duplicate file. But after the first file has finished downloading all the hashes will get published in NeoKad, so that following users, who want to download the same file, will be able to combine sources from multiple networks <img class="smilies" src="./images/smilies/wink.png" alt=";)" title=";)"><br>Theoretically we could add a feature to "force" hash sets together while downloading (before the file is finished and NeoLoader can confirm that the hashes belong to the same file). But since this is probably a confusing process for the majority of users, we decided to hide these details that are going on "under the hood" of NeoLoader. Furthermore "same file content" doesn't necessarily mean "same hash", therefore adding such a feature would probably be the cause of a corrupt download every time a users manually combines hashes which don't belong to the exact same file.<br><br>I hope it's clear now. Otherwise just ask again. We really need a bigger wiki with a lot more contents and explanations about our features <img class="smilies" src="./images/smilies/wink.png" alt=";)" title=";)"></div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16476" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16476">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16476">
+
+			<h3><a href="#p16476"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1146.html?mode=quote&amp;f=170&amp;p=16476" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-2782.html?p=16476#p16476"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Sun Jul 21, 2013 2:45 pm </p>
+
+			
+			
+			<div class="content">What about write this in a sort of wiki, Ekli?</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16477" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16477">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-15.html?mode=viewprofile&amp;u=4324" class="avatar"><img src="download/file-9.php?avatar=4324_1425060433.jpg" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-15.html?mode=viewprofile&amp;u=4324" style="color: #AA0000;" class="username-coloured">Ekliptor</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-23.html?author_id=4324&amp;sr=posts">37</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Feb 27, 2009 11:38 pm</dd>		
+		
+											
+							<dd class="profile-contact">
+				<strong>Contact:</strong>
+				<div class="dropdown-container dropdown-left">
+					<a href="#" class="dropdown-trigger"><span class="imageset icon_contact" title="Contact Ekliptor">Contact Ekliptor</span></a>
+					<div class="dropdown hidden">
+						<div class="pointer"><div class="pointer-inner"></div></div>
+						<div class="dropdown-contents contact-icons">
+																																								<div>
+																	<a href="http://www.applejuice-community.eu" title="Website" class="last-cell">
+										<span class="contact-icon phpbb_website-icon">Website</span>
+									</a>
+																	</div>
+																					</div>
+					</div>
+				</div>
+			</dd>
+				
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16477">
+
+			<h3><a href="#p16477"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1147.html?mode=quote&amp;f=170&amp;p=16477" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-2783.html?p=16477#p16477"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-15.html?mode=viewprofile&amp;u=4324" style="color: #AA0000;" class="username-coloured">Ekliptor</a></strong> &raquo; </span>Sun Jul 21, 2013 2:54 pm </p>
+
+			
+			
+			<div class="content">Yeah that's the plan <img class="smilies" src="./images/smilies/wink.png" alt=";)" title=";)"> I'll probably just elaborate on it a bit more and then post it in our FAQ section outside of the forum. But I feel like there are probably a hundred more articles to similar and other topics still missing.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16478" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16478">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-36.html?author_id=1155&amp;sr=posts">98</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 28, 2012 7:17 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16478">
+
+			<h3><a href="#p16478"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1148.html?mode=quote&amp;f=170&amp;p=16478" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-2784.html?p=16478#p16478"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a></strong> &raquo; </span>Sun Jul 21, 2013 4:22 pm </p>
+
+			
+			
+			<div class="content">Thanks for answers. Now it's a bit more clear. And now i've a second question: <img class="smilies" src="./images/smilies/biggrin.png" alt=":D" title=":D"><br><br>After second point, ie after i've "ed2k link, torrent/magnet link or NeoMagnet link" of my release, my friends can download this file with eMule client (ed2k link) or uTorrent client (magnet) in their respective network, or necessarily have to download it with NL? <br><br>And, where is the option to take the ed2k links? in the context menu there is "ed2k share", and "get link" (with Get Torrent), but none of these returns the link <!-- m --><a class="postlink" href="ed2k://etc">ed2k://etc</a><!-- m --> etc</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16479" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16479">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-15.html?mode=viewprofile&amp;u=4324" class="avatar"><img src="download/file-9.php?avatar=4324_1425060433.jpg" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-15.html?mode=viewprofile&amp;u=4324" style="color: #AA0000;" class="username-coloured">Ekliptor</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-23.html?author_id=4324&amp;sr=posts">37</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Feb 27, 2009 11:38 pm</dd>		
+		
+											
+							<dd class="profile-contact">
+				<strong>Contact:</strong>
+				<div class="dropdown-container dropdown-left">
+					<a href="#" class="dropdown-trigger"><span class="imageset icon_contact" title="Contact Ekliptor">Contact Ekliptor</span></a>
+					<div class="dropdown hidden">
+						<div class="pointer"><div class="pointer-inner"></div></div>
+						<div class="dropdown-contents contact-icons">
+																																								<div>
+																	<a href="http://www.applejuice-community.eu" title="Website" class="last-cell">
+										<span class="contact-icon phpbb_website-icon">Website</span>
+									</a>
+																	</div>
+																					</div>
+					</div>
+				</div>
+			</dd>
+				
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16479">
+
+			<h3><a href="#p16479"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1149.html?mode=quote&amp;f=170&amp;p=16479" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-2785.html?p=16479#p16479"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-15.html?mode=viewprofile&amp;u=4324" style="color: #AA0000;" class="username-coloured">Ekliptor</a></strong> &raquo; </span>Sun Jul 21, 2013 6:00 pm </p>
+
+			
+			
+			<div class="content">There is currently no option to automatically make NeoLoader the default application for ed2k links or torrents in your operating system and open these files automatically. There will be such an option soon. But due to our support for different OS we have to make it work on all of them and postponed it so far due to features with higher priority.<br>The feature "get link" only shows you the link of the current file, so you can send it to your friends.<br><br>The options "edk share" and "Torrent" in the context menu only mean that these networks are enabled on the current file, regardless of your global settings.<br><br>If you send your friends an ed2k or torrent magnet link they can add in their respective client, they can also download the file with their own client (presuming you have enabled ed2k/torrent on this file). NeoLoader is fully compatible with these networks and even has some features their clients don't support (yet) like NAT for ed2k (see our <a href="http://www.neoloader.com/content/65-features.html" class="postlink">Feature List</a>).</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16480" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16480">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16480">
+
+			<h3><a href="#p16480"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1150.html?mode=quote&amp;f=170&amp;p=16480" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-2786.html?p=16480#p16480"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Sun Jul 21, 2013 7:33 pm </p>
+
+			
+			
+			<div class="content">To get an ed2k link you have to open the Get Link dialog and than use the combo box to select ed2k format, you can choose from: NeoLink, NeoLink (compressed), classic magnet link and a good old ed2k link.<br><br>As about registering NeoLoader to open a ed2k or magnet link by default, we only managed to get it to work on windows, but as Ekliptor said we are working on finding out how to add that for the unix world as well.</div>
+
+			
+									
+									<div id="sig16480" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16481" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16481">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-36.html?author_id=1155&amp;sr=posts">98</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 28, 2012 7:17 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16481">
+
+			<h3><a href="#p16481"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1151.html?mode=quote&amp;f=170&amp;p=16481" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-2787.html?p=16481#p16481"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a></strong> &raquo; </span>Mon Jul 22, 2013 12:11 am </p>
+
+			
+			
+			<div class="content">D'oh... i had not seen the combobox in "get link" dialog .... great!<br>Thanks for the answers .. ;-)</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+	
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=170&amp;t=3302">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<input type="submit" name="sort" value="Go" class="button2">
+			</fieldset>
+	</form>
+	<hr>
+
+<div class="action-bar bottom">
+	<div class="buttons">
+		
+			<a href="posting.php-1143.html?mode=reply&amp;f=170&amp;t=3302" class="button icon-button reply-icon" title="Post a reply">
+			Post Reply		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-2779.html?f=170&amp;t=3302&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+	
+			<div class="pagination">
+			8 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+		<div class="clear"></div>
+</div>
+
+
+	<p class="jumpbox-return"><a href="viewforum.php-5.html?f=170" class="left-box arrow-left" accesskey="r">Return to “Support”</a></p>
+
+
+	<div class="dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+		<span title="Jump to" class="dropdown-trigger button dropdown-select">
+			Jump to		</span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																			<li><a href="viewforum.php.html?f=10">News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-1.html?f=11">Board News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-2.html?f=161">NeoLoader Releases</a></li>
+																<li><a href="viewforum.php-3.html?f=169">NeoLoader English</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-4.html?f=180">General/Discussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-5.html?f=170">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-6.html?f=171">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-7.html?f=172">Feature Requests</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-8.html?f=173">Script Development</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-9.html?f=174">Extensions</a></li>
+																<li><a href="viewforum.php-10.html?f=163">NeoLoader German</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-11.html?f=179">Algemeines/Diskussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-12.html?f=164">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-13.html?f=165">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-14.html?f=166">Feature Wünsche</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-15.html?f=167">Script Entwicklung</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-16.html?f=168">Erweiterungen</a></li>
+																<li><a href="viewforum.php-17.html?f=4">Community</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-18.html?f=81">OffTopic</a></li>
+										</ul>
+		</div>
+	</div>
+
+
+	<div class="stat-block online-list">
+		<h3>Who is online</h3>
+		<p>Users browsing this forum: No registered users and 2 guests</p>
+	</div>
+
+			</div>
+
+
+<div id="page-footer">
+	<div class="navbar">
+	<div class="inner">
+
+	<ul id="nav-footer" class="linklist bulletin" role="menubar">
+		<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" data-navbar-reference="index">Board index</a></span>
+					</li>
+		
+				<li class="rightside">All times are <abbr title="UTC+1">UTC+01:00</abbr></li>
+							<li class="small-icon icon-delete-cookies rightside"><a href="ucp.php-3.html?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">Delete all board cookies</a></li>
+									<li class="small-icon icon-team rightside" data-last-responsive="true"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>				<li class="small-icon icon-contact rightside" data-last-responsive="true"><a href="memberlist.php-11.html?mode=contactadmin" role="menuitem">Contact us</a></li>	</ul>
+
+	</div>
+</div>
+
+	<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+	</div>
+	<div id="loading_indicator"></div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close"></a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div class="copyright">
+		Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	<img src="cron-1.php?cron_type=cron.task.core.tidy_sessions" width="1" height="1" alt="cron"></div>
+
+<script type="text/javascript" src="assets/javascript/jquery.min.js?assets_version=4"></script>
+<script type="text/javascript" src="assets/javascript/core.js?assets_version=4"></script>
+
+
+<script type="text/javascript" src="styles/prosilver/template/forum_fn.js?assets_version=4"></script>
+
+<script type="text/javascript" src="styles/prosilver/template/ajax.js?assets_version=4"></script>
+
+
+
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

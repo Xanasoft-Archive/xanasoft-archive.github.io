@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Only one copy of program can run</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Only one copy of program can run</h2>
+		<p><a href="viewtopic.php-3031.html?f=14&amp;t=234">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=234</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Only one copy of program can run</h3>
+				<div class="date">Posted: <strong>Sun Jan 16, 2022 7:35 pm</strong></div>
+				<div class="author">by <strong>GhostBear</strong></div>
+				<div class="content">Hello everyone!<br>
+<br>
+<br>
+First of all, I would like to thank the developer for a wonderful and very useful software. It almost solved my problem, just a little bit left <img class="smilies" src="images/smilies/icon_e_smile.gif" width="15" height="17" alt=":)" title="Smile"><br>
+<br>
+The problem is that during tests, the program is launched only in one instance in one of any 3 same sandboxes. If the copy in the sandbox is already running, the copy in the other sandbox tries to start, fails. In the logs remains:<br>
+<br>
+04:27:28.672 Start.exe (3556): SBIE2101 AlpcConnectPort (C0000022) access=001F0001 initialized=1<br>
+04:28:38.728 Start.exe (3772): SBIE2101 AlpcConnectPort (C0000022) access=001F0001 initialized=1<br>
+04:29:06.137 Start.exe (3924): SBIE2101 AlpcConnectPort (C0000022) access=001F0001 initialized=1<br>
+<br>
+The program allows you to run 2 copies: one in the sandbox and on a computer without a sandbox.<br>
+I tried to set the settings to hide processes from other sandboxes in the advanced settings on all three sandboxes, but it did not help.<br>
+<br>
+This is a 32 bit program (I guess, dont know exactly. But in the Task manager it has *32 mark, so I suggest it is) that runs on Windows 7 64 bit in 64 bit Sandbox Plus. When running outside of sandboxes, when trying to start a new copy, the program opens its own new window (it has such an option), but it is always one process. I need multiple processes of this program.<br>
+Also, the program in the course of work writes a little to the registry and creates a couple of files. There are no problems with this, separately in different sandboxes these parts work normally.<br>
+<br>
+Other software in these sandboxes works fine.<br>
+<br>
+The same weird stuff hapening on 32 win10 PC .<br>
+<br>
+Both win7 and win10 are VMware machines. but all other programs works well from sandboxes in this enviroment.<br>
+<br>
+<br>
+Can you please tell me how I can run several copies of such a capricious process in neighboring sandboxes?<br>
+<br>
+<br>
+Many thanks!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Only one copy of program can run</h3>
+				<div class="date">Posted: <strong>Mon Jan 17, 2022 1:05 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">hmm... what program is it?<br>
+I assume you have not configured any open paths int he access control options?<br>
+<br>
+Seams strange that you can run one out of the box one inside one box but then non in an otehr box :/<br>
+Have you set any custom IpcRoot Path or alike in your sandboxie.ini?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Only one copy of program can run</h3>
+				<div class="date">Posted: <strong>Tue Jan 18, 2022 12:11 pm</strong></div>
+				<div class="author">by <strong>GhostBear</strong></div>
+				<div class="content">Hi David!<br>
+<br>
+no, I didnt add any  IpcRoot Path manually, just tried add or disable some options in GUI<br>
+Thats a little cleared ini file (before send this I tried box3 with all "Template=" options removed from ini, so they are missing in that part)<br>
+<br>
+//Didnt find "spoiler" BBcode here, sorry...<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>#
+# Sandboxie-Plus configuration file
+#
+
+[GlobalSettings]
+Template=WindowsRasMan
+
+[DefaultBox]
+
+ConfigLevel=9
+BlockNetworkFiles=y
+Template=OpenSmartCard
+Template=OpenBluetooth
+Template=SkipHook
+Template=FileCopy
+Template=qWave
+Template=BlockPorts
+Template=LingerPrograms
+Template=Chrome_Phishing_DirectAccess
+Template=Firefox_Phishing_DirectAccess
+Template=AutoRecoverIgnore
+RecoverFolder=%{374DE290-123F-4565-9164-39C4925E467B}%
+RecoverFolder=%Personal%
+RecoverFolder=%Desktop%
+BorderColor=#00FFFF,ttl,6
+Enabled=y
+
+[UserSettings_087401AF]
+SbieCtrl_UserName=ivan
+SbieCtrl_NextUpdateCheck=-1
+SbieCtrl_WindowCoords=291,55,1236,543
+SbieCtrl_ActiveView=40021
+SbieCtrl_AutoApplySettings=n
+SbieCtrl_ProcessViewColumnWidths=250,70,300
+SbieCtrl_UpdateCheckNotify=n
+SbieCtrl_BoxExpandedView=1111,box1,box2,box3,DefaultBox
+SbieCtrl_AutoStartAgent=SandMan.exe
+
+[1111]
+Enabled=y
+ConfigLevel=9
+BlockNetworkFiles=y
+Template=Super_Socks5Cap
+Template=HmaProVpn
+Template=HideMyIp
+Template=EasyHideIp
+Template=Proxifier
+Template=VPNTunnel
+Template=OpenSmartCard
+Template=OpenBluetooth
+Template=SkipHook
+Template=FileCopy
+Template=qWave
+Template=BlockPorts
+Template=LingerPrograms
+Template=Chrome_Phishing_DirectAccess
+Template=Firefox_Phishing_DirectAccess
+Template=AutoRecoverIgnore
+RecoverFolder=%{374DE290-123F-4565-9164-39C4925E467B}%
+RecoverFolder=%Personal%
+RecoverFolder=%Desktop%
+BorderColor=#00FFFF,ttl,6
+OpenIpcPath=protonvpn.exe,base filter engine
+
+[box1]
+
+Enabled=y
+ConfigLevel=9
+BlockNetworkFiles=y
+Template=OpenSmartCard
+Template=OpenBluetooth
+Template=SkipHook
+Template=FileCopy
+Template=qWave
+Template=BlockPorts
+Template=LingerPrograms
+Template=Chrome_Phishing_DirectAccess
+Template=Firefox_Phishing_DirectAccess
+Template=AutoRecoverIgnore
+RecoverFolder=%{374DE290-123F-4565-9164-39C4925E467B}%
+RecoverFolder=%Personal%
+RecoverFolder=%Desktop%
+BorderColor=#00FFFF,ttl,6
+DropAdminRights=y
+HideOtherBoxes=y
+HideHostProcess=OmHookWnd
+HideHostProcess=C:\temp\data\program.exe
+IpcTrace=*
+UseSbieWndStation=y
+RunServicesAsSystem=y
+ClosedIpcPath=program.exe,\Sandbox\%USER%\%SANDBOX%\Session_%SESSION%
+OpenWinClass=!program.exe,
+
+[box2]
+Enabled=y
+ConfigLevel=9
+Template=OpenSmartCard
+Template=OpenBluetooth
+Template=SkipHook
+Template=FileCopy
+Template=qWave
+Template=BlockPorts
+Template=LingerPrograms
+Template=Chrome_Phishing_DirectAccess
+Template=Firefox_Phishing_DirectAccess
+Template=AutoRecoverIgnore
+RecoverFolder=%{374DE290-123F-4565-9164-39C4925E467B}%
+RecoverFolder=%Personal%
+RecoverFolder=%Desktop%
+BorderColor=#00ffff,ttl,6
+DropAdminRights=y
+FakeAdminRights=y
+BoxNameTitle=n
+OpenClipboard=n
+CopyLimitKb=81920
+HideOtherBoxes=y
+HideHostProcess=C:\temp\data\program.exe
+HideHostProcess=program.exe
+CallTrace=*
+FileTrace=*
+PipeTrace=*
+KeyTrace=*
+IpcTrace=*
+GuiTrace=*
+ClsidTrace=*
+NetFwTrace=*
+DebugTrace=y
+ErrorTrace=y
+InjectDll=\LogAPI\logapi32.dll
+InjectDll64=\LogAPI\logapi64.dll
+
+[box3]
+
+Enabled=y
+ConfigLevel=9
+
+RecoverFolder=%{374DE290-123F-4565-9164-39C4925E467B}%
+RecoverFolder=%Personal%
+RecoverFolder=%Desktop%
+BorderColor=#00FFFF,ttl,6
+CallTrace=*
+IpcTrace=*
+UseSbieWndStation=y
+RunServicesAsSystem=y
+HideOtherBoxes=y
+HideHostProcess=C:\temp\data\program.exe
+HideHostProcess=OmHookWnd
+
+[box4]
+Enabled=y
+AutoRecover=n
+BlockNetworkFiles=y
+RecoverFolder=%{374DE290-123F-4565-9164-39C4925E467B}%
+RecoverFolder=%Personal%
+RecoverFolder=%Desktop%
+BorderColor=#00FFFF,ttl
+Template=OpenBluetooth
+Template=SkipHook
+Template=FileCopy
+Template=qWave
+Template=BlockPorts
+Template=LingerPrograms
+Template=Chrome_Phishing_DirectAccess
+Template=Firefox_Phishing_DirectAccess
+Template=AutoRecoverIgnore
+ConfigLevel=9
+UsePrivacyMode=n
+</code></pre></div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Only one copy of program can run</h3>
+				<div class="date">Posted: <strong>Mon Jan 24, 2022 12:40 pm</strong></div>
+				<div class="author">by <strong>GhostBear</strong></div>
+				<div class="content">I found out that the program seems to be using some mechanism (maybe mutexes or semaphores) to keep track of the number of copies running. <br>
+If you first run the program on the host system, the program will not start in the sandbox. <br>
+If you run a program in a sandbox, you cannot run a new copy in another sandbox. <br>
+But it is possible to run one copy on the host system. <br>
+I absolutely do not understand what IPС's have to forbid to get normal isolation.<br>
+Can someone advise?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Only one copy of program can run</h3>
+				<div class="date">Posted: <strong>Mon Jan 24, 2022 7:34 pm</strong></div>
+				<div class="author">by <strong>GhostBear</strong></div>
+				<div class="content">it shows the same behaviour even with UsePrivacyMode=y option in choosen sandboxes or on global level.<br>
+<br>
+So, the isolaion of sandboxie is not quite enouh. Have anybody seen something like that before in sandboxie?<br>
+Even bunch of IPC path restrictions, which this program using did not help:
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>UsePrivacyMode=y
+ClosedIpcPath=\Sessions\*\BaseNamedObjects\windows_shell_global_counters
+ClosedIpcPath=\Sessions\*\BaseNamedObjects\SBIE_BOXED_ServiceInitComplete_*
+ClosedIpcPath=\Sessions\*\BaseNamedObjects\Global\__ComCatalogCache__
+// ClosedIpcPath=\RPC Control\SbieSvcPort (if allow this program cant start)
+ClosedIpcPath=\Sessions\*\BaseNamedObjects\*SboxSession*
+ClosedIpcPath=\Sessions\*\BaseNamedObjects\DBWinMutex
+ClosedIpcPath=\RPC Control\epmapper
+ClosedIpcPath=\Sessions\*\BaseNamedObjects\SBIE_BOXED_ServiceInitComplete_RpcSs
+ClosedIpcPath=\Sessions\*\BaseNamedObjects\SBIE_BOXED_ServiceInitComplete_DcomLaunch
+ClosedIpcPath=\BaseNamedObjects\windows_shell_global_counters
+ClosedIpcPath=\Sessions\*\BaseNamedObjects\Global\windows_shell_global_counters
+ClosedIpcPath=\Sessions\*\BaseNamedObjects\SBIE_BOXED_ServiceInitComplete_RpcSs
+ClosedIpcPath=\Sessions\*\BaseNamedObjects\SBIE_BOXED_DummyEvent_*
+ClosedIpcPath=\Sessions\*\BaseNamedObjects\SBIE_BOXED_ServiceInitComplete_DcomLaunch
+ClosedIpcPath=\ThemeApiPort
+ClosedIpcPath=\KernelObjects\MaximumCommitCondition
+ClosedIpcPath=\ThemeApiPort
+ClosedIpcPath=\RPC Control\lsapolicylookup</code></pre></div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Only one copy of program can run</h3>
+				<div class="date">Posted: <strong>Sat Jan 29, 2022 1:30 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I had time to take a look, its really strange I'll have to investigate that further...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Only one copy of program can run</h3>
+				<div class="date">Posted: <strong>Sun Jan 30, 2022 9:57 am</strong></div>
+				<div class="author">by <strong>GhostBear</strong></div>
+				<div class="content">I think that some kind of global variable space is used here, or something like that, which has its own Sandboxie and differs from that of the host system. But for all sandboxes, it is also common, and the program manages to carry out its check in neighboring sandboxes too</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Direct Start Firefox in Box - Page 2</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Direct Start Firefox in Box</h2>
+		<p><a href="viewtopic.php-808.html?f=12&amp;t=173">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=173</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>2</strong> of <strong>2</strong></div>
+					<div class="post">
+				<h3>Re: Direct Start Firefox in Box</h3>
+				<div class="date">Posted: <strong>Thu Jan 13, 2022 8:25 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">The color box is created by the UI its the same for the classic sbie.<br>
+in any case firefox is started in a sandbox, just that without sandman running you don't get the border.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Direct Start Firefox in Box</h3>
+				<div class="date">Posted: <strong>Thu Jan 13, 2022 12:36 pm</strong></div>
+				<div class="author">by <strong>SBTL</strong></div>
+				<div class="content">“The color box is created by the UI its the same for the classic sbie.”<br>
+<br>
+Wow. Yes, I know that &gt;.&lt;<br>
+<br>
+RED BOX = Firefox is Sandboxed = Because <span style="text-decoration:underline">Sandboxie is running</span><br>
+NO RED BOX = Firefox is <span style="text-decoration:underline">NOT</span> Sandboxed = Because <span style="text-decoration:underline">Sandboxie is NOT running</span><br>
+<br>
+“In any case firefox is started in a sandbox, just that without sandman running you don't get the border. “<br>
+<br>
+Yes. Awesome, you can understand <span style="text-decoration:underline">one thing</span> that I’ve been trying to explain for weeks on this post. <br>
+<br>
+<span style="text-decoration:underline"><strong class="text-strong">Sandboxie needs to be started for the shortcut to work…</strong></span><br>
+<br>
+Now – here’s what you still can't seem to understand:<br>
+<br>
+<span style="text-decoration:underline"><strong class="text-strong">This is not how the old Sandboxie worked….</strong><br>
+</span><br>
+<span style="text-decoration:underline">Old Sandboxie</span>:<br>
+1) Exit out of Sandboxie - (<span style="text-decoration:underline">Sandboxie is not running...</span>)<br>
+2) Click on Firefox Shortcut<br>
+3) <span style="text-decoration:underline">Sandboxie Automatically Starts</span><br>
+4) Firefox Opens <span style="text-decoration:underline">Sandboxed</span> <br>
+<br>
+<span style="text-decoration:underline">New Sandboxie</span>:<br>
+1) Exit out of Sandboxie - (<span style="text-decoration:underline">Sandboxie is not running...</span>)<br>
+2) Click on Firefox Shortcut<br>
+3) Sandboxie <span style="text-decoration:underline">DOES NOT</span> Automatically Start<br>
+3) Firefox Opens <span style="text-decoration:underline">UN-Sandboxed</span><br>
+<br>
+This is not that complicated...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Direct Start Firefox in Box</h3>
+				<div class="date">Posted: <strong>Thu Jan 13, 2022 12:54 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">"3) Firefox Opens UN-Sandboxed"<br>
+<br>
+On what are you basing this assessment?<br>
+<br>
+In my tests it was never relevant if the UI is running or not, a process started using a sandboxie link always started sand boxed.<br>
+like: C:\Program Files\Sandboxie-Plus\Start.exe /box:DefaultBox "C:\Program Files\Mozilla Firefox\firefox.exe"<br>
+<br>
+The UI does not take part in this.<br>
+<br>
+From your video the only thing you show is that the red border is missing.<br>
+Which is normal when the UI component is not active.<br>
+<br>
+If you claim that your link does not work and fail to start Firefox sand boxed when the UI is off, then <br>
+1. post the details of your link how did you set it up, target etc...<br>
+2. after you started Firefox and think it is not sand boxed, start the UI manually to verify that it is not sand boxed.<br>
+<br>
+Simply put demonstrate the suspected bug in a way that proves it, instead of making people thing you don't know how to operate the software.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Direct Start Firefox in Box</h3>
+				<div class="date">Posted: <strong>Thu Jan 13, 2022 1:15 pm</strong></div>
+				<div class="author">by <strong>SBTL</strong></div>
+				<div class="content">OK,<br>
+Finally we're getting somewhere. I can see now that it does run.<br>
+<br>
+I assumed that it was not running based on the fact there was no red border. Which is not an unreasonable assumption.<br>
+<br>
+This is still not how the old Sandboxie worked.<br>
+<br>
+With the old Sandboxie it would give the red border even if clicking on the shortcut without Sandboxie already being started. <br>
+<br>
+It's not very helpful having a sandboxed Firefox without the red border...<br>
+<br>
+I just checked to "Start UI when a sandboxed process is started."<br>
+<br>
+And that works. Even if Sandboxie is not already running it will bring up the red border. <br>
+<br>
+BUT it brings up the UI window too which I don't want. (This did not happen with the old Sandboxie. That version would evidently start the UI without opening the UI window.)<br>
+<br>
+Is there a way to get it to start the UI without bringing up the window?... <br>
+<br>
+(I can see now that the Old Sandboxie must have had this option checked; and it's what I've been trying to achieve. But because the UI window is popping up with the new version, it made me think it was all working differently - when that is the only real difference.)<br>
+<br>
+"Simply put demonstrate the suspected bug in a way that proves it, instead of making people thing you don't know how to operate the software."<br>
+<br>
+Maybe I would have learnt how to do this weeks ago if someone had bothered to explain. <br>
+I assumed it was possible, and asked a few times if it is was, but no one would answer.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Direct Start Firefox in Box</h3>
+				<div class="date">Posted: <strong>Thu Jan 13, 2022 7:18 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I see, I'll change it such that sandman.exe starts in that case like sbiectrl.exe in the background</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Direct Start Firefox in Box</h3>
+				<div class="date">Posted: <strong>Thu Jan 13, 2022 9:08 pm</strong></div>
+				<div class="author">by <strong>SBTL</strong></div>
+				<div class="content">Thank you, much appreciated. <br>
+<br>
+Sorry for getting annoyed; it's frustrating when you think your being very clear and people still don't understand what your talking about.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Direct Start Firefox in Box</h3>
+				<div class="date">Posted: <strong>Thu Jan 20, 2022 11:33 pm</strong></div>
+				<div class="author">by <strong>SBTL</strong></div>
+				<div class="content">Just installed the new version v1.0.8. Finally it's working like it use to. Thanks for fixing it.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>2</strong> of <strong>2</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

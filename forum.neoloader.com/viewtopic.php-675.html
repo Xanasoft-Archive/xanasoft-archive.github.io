@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; NeoLoader 0.40 Release</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>NeoLoader 0.40 Release</h2>
+		<p><a href="viewtopic.php-96.html?f=161&amp;t=3326">http://forum.neoloader.com/viewtopic.php?f=161&amp;t=3326</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>NeoLoader 0.40 Release</h3>
+				<div class="date">Posted: <strong>Thu Sep 19, 2013 8:38 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><img src="http://update.neoloader.to/Resources/Splash.jpg" class="postimage" alt="Image">
+<br>
+<br>
+<br>
+<br>Release  0.40
+<br>===================================
+<br>Rework of the hashing system
+<br><strong>added eMule download import</strong>
+<br>fixed some upload issues
+<br>some more minor fixes
+<br><strong>added ed2k server support</strong>
+<br>moved default download dir to Users/*/Downloads/NeoLoader/..
+<br>added estimeted SYN ACK overhead recording
+<br>added proepr IP overhead estimation for UTP frames 
+<br>added option to prevent standby while neo is running
+<br>Added eDonkey-Hybrid horde protocol
+<br>fixed MuleKad not being able to geta buddy
+<br>reworked the hoster system
+<br>
+<br>
+<br>Additionally to Torrent and eMule file sharing, NeoLoader now also has its own sharing network.
+<br><strong><span style="color: #ff0000">NeoShare </span></strong>is a anonymous P2P filesharing network that uses NeoKad to route packets between cryptographic endpoints. The implementaion provides TOR/I2P anonymization to those who want it, as well as plausible deniability to all other users. A node initiates a secure comminucation channel which is indistinguishable form a node mearly relaying data frames. The data frames are relayed using a unidirectional convergent mesh routing towards the tunnel exchange points in the target area. This method ensures that slow relaying nodes do not pose a bottle neck in the tunnel. All data is transferred using end-to-end encryption (using EC-Diffie-Hellman key exchange and AES 256 bit encryption). Additionally all communication between each hop is encrypted so that a traffic analysis can not reveal the route of data frames through the network.
+<br>
+<br>To sped up your Torrent and eMule Downloads:
+<br>We have a unique feature called "<span style="color: #ff0000"><strong>Hoster Cache</strong></span>". When you add your hoster accounts (free or premium) to NeoLoader, your client will upload data from the Torrent and ed2k network to file hosters. Other NeoLoader clients can then download the data directly from hosters. So the uploader multiplies his own upload bandwith by using hosters as a "cache" to spread files. You can test our new Hoster Cache Feature using this <strong><a href="http://link.neoloader.to/magnet:?dn=TestFile%20-%20ubuntu-12.10-desktop-i386.rar&xl=773283930&xt=urn:neo:1Gc3FjgosvlcW_VbYpe85EwbzWLbLraNVQkacG-kcrs&xt=urn:btih:bb460a58cdd703acf5a21bf4629be4bdd9eb9deb&tr=udp://tracker.publicbt.com:80/announce" class="postlink">TestFile</a></strong>. You find the password to your NeoLoader under Settings -&gt; General. (Address can be left empty, assuming NeoLoader is running on the same host as your WebBrowser).
+<br><strong><a href="http://link.neoloader.to/magnet:?dn=TestFile%20-%20ubuntu-12.10-desktop-i386.rar&xl=773283930&xt=urn:neo:1Gc3FjgosvlcW_VbYpe85EwbzWLbLraNVQkacG-kcrs&xt=urn:btih:bb460a58cdd703acf5a21bf4629be4bdd9eb9deb&tr=udp://tracker.publicbt.com:80/announce" class="postlink">Download TestFile</a></strong>
+<br>
+<br>
+<br>
+<br><strong>Downloads</strong>
+<br><a href="http://update.neoloader.to/win/x86/NeoSetup.exe" class="postlink"><img src="http://neoloader.to/images/logo_windows.png" class="postimage" alt="Image">Windows</a>
+<br><a href="http://update.neoloader.to/macos/NeoLoader.zip" class="postlink"><img src="http://neoloader.to/images/logo_apple.png" class="postimage" alt="Image">Mac OS X</a>
+<br><a href="http://update.neoloader.to/linux/x86/NeoLoader.tar.gz" class="postlink"><img src="http://neoloader.to/images/logo_linux.png" class="postimage" alt="Image">Linux</a>
+<br><a href="http://update.neoloader.to/linux/x64/NeoLoader.tar.gz" class="postlink"><img src="http://neoloader.to/images/logo_linux.png" class="postimage" alt="Image">Linux (x64)</a>
+<br>
+<br>[color="#FF0000"]<strong>Please Note that there is no more Windows x64 version available, use the x86 build instead.</strong>[/color]</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Sep 21, 2013 11:26 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Fixed a bug that caused letitbit downloads to fail</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Sep 26, 2013 5:21 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">0.40a released<br><br>fixed description bug,<br>neo kad search bug,<br>and updated hosters</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Sep 26, 2013 5:26 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">0.40a released, and here is a multi file test file:<br><br><a href="http://link.neoloader.to/magnet:?xt=urn:neox:a3mJUD0URpQbhe0MO56xjYz0m5iMH39izKmJErpOfBA&dn=NeoLoader&xl=73489403" class="postlink">NeoLoader - Download File</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Oct 05, 2013 6:20 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Release  0.40b<br>===================================<br>switched NIST Curves with brainpool once<br>added Proxy Option for hoster downloads<br>added cache size limit<br>Improved TCP overhead Estimation, should now have less than 5% Error.<br>fixed nasty memory corruption in ed2kMule code<br>fixed memory leek in hashset handling<br>extended hoster API to support complex download/upload schemes like needed for mega<br>added mega support script and a few other new scripts<br>fixed bug in eMule code causing lost of ranking informations</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Oct 14, 2013 3:14 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Release 0.40c<br>===================================<br>Improved Hash Tree performance by factor of 10<br>fixed kad publiching bug when using secure hash<br>added IO reordering to reduce HDD load and improve IO performance<br>added support for xfilesharing CMS based hosters (<strong>155</strong>)<br>fixed a bug in gui that allowed to set ed2k status for multi files<br>fixed some hoster bugs mega shoudl now work fine</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Oct 16, 2013 12:09 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Release 0.40d<br>===================================<br>Added new Halted priority to be used for preventing sub files from being downlaoded, instead of using the start/stop/pause states<br>start/stop/pause is now replicated to all sub files in the tree cherarchy<br>fixed empty folders not being cleared form incomming directory<br>Added file remove dialog to replace the 2 remove commands remove/delete<br>fixed mega bug<br>fixed tray close bug</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

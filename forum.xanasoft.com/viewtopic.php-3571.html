@@ -1,0 +1,1137 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :( - xanasoft.com</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - xanasoft.com" href="/feed">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed/topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Bug Reports" href="/feed/forum/16">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(" href="/feed/topic/255">	
+	<link rel="canonical" href="viewtopic.php-1597.html?t=255">
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<link href="assets/css/font-awesome.min.css?assets_version=3" rel="stylesheet">
+<link href="styles/prosilver/theme/stylesheet.css?assets_version=3" rel="stylesheet">
+<link href="styles/prosilver/theme/en/stylesheet.css?assets_version=3" rel="stylesheet">
+
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=3" rel="stylesheet">
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar" role="banner">
+					<div class="inner">
+
+			<div id="site-description" class="site-description">
+		<a id="logo" class="logo" href="index.php.html" title="Board index">
+					<span class="site_logo"></span>
+				</a>
+				<h1>xanasoft.com</h1>
+				<p>Xanasoft support forum</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+									<div id="search-box" class="search-box search-header" role="search">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…">
+					<button class="button button-search" type="submit" title="Search">
+						<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+					</button>
+					<a href="search.php.html" class="button button-search-end" title="Advanced search">
+						<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+					</a>
+					
+				</fieldset>
+				</form>
+			</div>
+						
+			</div>
+					</div>
+				<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="nav-main linklist" role="menubar">
+
+		<li id="quick-links" class="quick-links dropdown-container responsive-menu" data-skip-responsive="true">
+			<a href="#" class="dropdown-trigger">
+				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>Quick links</span>
+			</a>
+			<div class="dropdown">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																									<li>
+								<a href="search.php-1.html?search_id=unanswered" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>Unanswered topics</span>
+								</a>
+							</li>
+							<li>
+								<a href="search.php-2.html?search_id=active_topics" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>Active topics</span>
+								</a>
+							</li>
+							<li class="separator"></li>
+							<li>
+								<a href="search.php.html" role="menuitem">
+									<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>Search</span>
+								</a>
+							</li>
+					
+										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li data-skip-responsive="true">
+			<a href="/help/faq" rel="help" title="Frequently Asked Questions" role="menuitem">
+				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>FAQ</span>
+			</a>
+		</li>
+						
+			<li class="rightside" data-skip-responsive="true">
+			<a href="ucp.php-8463.html?mode=login&amp;redirect=viewtopic.php%3Ff%3D16%26p%3D661%26t%3D255" title="Login" accesskey="x" role="menuitem">
+				<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>Login</span>
+			</a>
+		</li>
+					<li class="rightside" data-skip-responsive="true">
+				<a href="ucp.php-1.html?mode=register" role="menuitem">
+					<i class="icon fa-pencil-square-o  fa-fw" aria-hidden="true"></i><span>Register</span>
+				</a>
+			</li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
+								<li class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+										<span class="crumb" itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope=""><a href="index.php.html" itemtype="https://schema.org/Thing" itemscope="" itemprop="item" accesskey="h" data-navbar-reference="index"><i class="icon fa-home fa-fw"></i><span itemprop="name">Board index</span></a><meta itemprop="position" content="1"></span>
+
+																			<span class="crumb" itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope="" data-forum-id="4"><a href="viewforum.php-4.html?f=4" itemtype="https://schema.org/Thing" itemscope="" itemprop="item"><span itemprop="name">Sandboxie+</span></a><meta itemprop="position" content="2"></span>
+																							<span class="crumb" itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope="" data-forum-id="16"><a href="viewforum.php-9.html?f=16" itemtype="https://schema.org/Thing" itemscope="" itemprop="item"><span itemprop="name">Bug Reports</span></a><meta itemprop="position" content="3"></span>
+												</li>
+		
+					<li class="rightside responsive-search">
+				<a href="search.php.html" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body" class="page-body" role="main">
+		
+		
+<h2 class="topic-title"><a href="viewtopic.php-295.html?f=16&amp;t=255">Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+
+
+
+<div class="action-bar bar-top">
+	
+			<a href="posting.php-524.html?mode=reply&amp;f=16&amp;t=255" class="button" title="Post a reply">
+							<span>Post Reply</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
+					</a>
+	
+			<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="viewtopic.php-1598.html?f=16&amp;t=255&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+	
+			<div class="search-box" role="search">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…">
+				<button class="button button-search" type="submit" title="Search">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</button>
+				<a href="search.php.html" class="button button-search-end" title="Advanced search">
+					<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+				</a>
+				<input type="hidden" name="t" value="255">
+<input type="hidden" name="sf" value="msgonly">
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			12 posts
+							<ul>
+		<li class="active"><span>1</span></li>
+				<li><a class="button" href="viewtopic.php-297.html?f=16&amp;t=255&amp;start=10" role="button">2</a></li>
+				<li class="arrow next"><a class="button button-icon-only" href="viewtopic.php-297.html?f=16&amp;t=255&amp;start=10" rel="next" role="button"><i class="icon fa-chevron-right fa-fw" aria-hidden="true"></i><span class="sr-only">Next</span></a></li>
+	</ul>
+					</div>
+		</div>
+
+
+
+
+			<div id="p576" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile576">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-123.html?author_id=494&amp;sr=posts">12</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jan 26, 2022 8:07 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content576">
+
+						<h3 class="first"><a href="viewtopic.php-1599.html?p=576#p576">Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-525.html?mode=quote&amp;f=16&amp;p=576" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-1599.html?p=576#p576" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a></strong> &raquo; </span><time datetime="2022-02-10T00:00:34+00:00">Thu Feb 10, 2022 12:00 am</time>
+			</p>
+			
+			
+			
+			<div class="content">With Sandboxie-Classic-x64-v5.55.8  hl.exe (CS Condition Zero) crashes and steam.exe follows (ca. 2x in 30 mins) <img class="smilies" src="images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"><br>
+With old old 5.33.6 all runs fine.<br>
+<br>
+But with 5.33.6 i have the problem that firefox (latest) sometimes doesnt terminate when i close it.<br>
+Window gone but firefox.exe still running.<br>
+Also some strange gfx bug 1x per day and, it looks like a tab appears and disappears very fast, also ca. once per day.<br>
+<br>
+With Sandboxie-Classic-x64-v5.55.8 i cant remember that firefox.exe remains after closing or any gfx bug or tabs (used it for some days).<br>
+<br>
+Due to the gaming problems im forced to use 5.33.6.<br>
+<br>
+And no, i will never let steam or any of its games run native on my main machine since many years ago i caught steam.exe stumbling through my mp3 archive. <img class="smilies" src="images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"><br>
+<br>
+So i hope that the probs will be fixed soon with Sandboxie Classic *dream* <img class="smilies" src="images/smilies/icon_e_smile.gif" width="15" height="17" alt=":)" title="Smile"></div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p578" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile578">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-123.html?author_id=494&amp;sr=posts">12</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jan 26, 2022 8:07 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content578">
+
+						<h3><a href="viewtopic.php-1600.html?p=578#p578">Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-526.html?mode=quote&amp;f=16&amp;p=578" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-1600.html?p=578#p578" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a></strong> &raquo; </span><time datetime="2022-02-10T15:49:39+00:00">Thu Feb 10, 2022 3:49 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">Btw. anybody knows a fix for the firefox not closing bug?<br>
+a sandboxie setting or anything i must set in ff to have a guranteed termination on close?<br>
+Or an extra app which terminates firefox.exe when window isnt drawn anymore?</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p584" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile584">
+			<dt class="no-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-8.html?mode=viewprofile&amp;u=49" class="avatar"><img class="avatar" src="download/file-1.php?avatar=49_1641977773.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-8.html?mode=viewprofile&amp;u=49" class="username">DavidXanatos</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-8.html?author_id=49&amp;sr=posts">339</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Mar 19, 2021 11:26 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content584">
+
+						<h3><a href="viewtopic.php-1601.html?p=584#p584">Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-527.html?mode=quote&amp;f=16&amp;p=584" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-1601.html?p=584#p584" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-8.html?mode=viewprofile&amp;u=49" class="username">DavidXanatos</a></strong> &raquo; </span><time datetime="2022-02-14T08:00:29+00:00">Mon Feb 14, 2022 8:00 am</time>
+			</p>
+			
+			
+			
+			<div class="content">is steam installed to the sandbox or just runnign sandboxed but installed outside?<br>
+<br>
+Could you please take the time to test your way through the builds between 5.33.6 and 5.55.11 and tell me in which this crash got introduced.<br>
+To speed things up you can use an iterative approach start with something like 5.40 if the bug is there than pick one in between 5.33.6 and 5.40 some ware in the middle, of the bug is not, than  pick one in between 5.40 and 5.55.11 some ware in the middle, and so on... and then again in the midden and in the middle, this way you will need to test the minimum ob builds until you find the exact one that started the issue.<br>
+<br>
+Since you say the issue takes a couple of 10 min and I don't have CS Condition Zero anyways it would be best if you could help me debug the issue.<br>
+<br>
+You could also add EnableMiniDump=y to your sandboxie ini this will generate crash dumps in the box root directory, you could send me those generated with the latest 5.55.11 build for evaluation these might be indicate what the issue may be.</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p592" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile592">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-123.html?author_id=494&amp;sr=posts">12</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jan 26, 2022 8:07 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content592">
+
+						<h3><a href="viewtopic.php-1602.html?p=592#p592">Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-528.html?mode=quote&amp;f=16&amp;p=592" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-1602.html?p=592#p592" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a></strong> &raquo; </span><time datetime="2022-02-15T16:57:45+00:00">Tue Feb 15, 2022 4:57 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">I'll try and report.<br>
+But i think it will take a while.<br>
+The bug seems to be very special.<br>
+I play on a server for hrs without any crash and then it loads the map "css_aztec" and i got the crashes.<br>
+When i load the map in single player mode (start a local game) it doesnt crash.<br>
+So it must be a combination of the server (playing online) and the map.<br>
+All i know is, that it works with the older 5.33.6.<br>
+<br>
+Steam is installed outside the sandbox but initial installed through sandboxie with full read/write access to the install folder.</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p661" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile661">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-123.html?author_id=494&amp;sr=posts">12</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jan 26, 2022 8:07 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content661">
+
+						<h3><a href="viewtopic.php-1603.html?p=661#p661">Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-529.html?mode=quote&amp;f=16&amp;p=661" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-1603.html?p=661#p661" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a></strong> &raquo; </span><time datetime="2022-04-09T20:50:44+00:00">Sat Apr 09, 2022 8:50 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">Last working Sandboxie Version is v5.44.1.<br>
+<br>
+And with EnableMiniDump=y + latest + crash nothing is saved anywhere. <img class="smilies" src="images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"><br>
+Had 2x crashes and nothing is in root dir like described in 5.55.5 changelog.<br>
+I have 2 .dmp files in "steam/dumps" folder.
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>[GlobalSettings]
+
+FileRootPath=W:\Sandbox\%USER%\%SANDBOX%
+Template=4tTrayMinimizer
+Template=OfficeLicensing
+
+[DefaultBox]
+
+ConfigLevel=9
+Enabled=y
+NeverDelete=n
+NotifyInternetAccessDenied=y
+ClosedFilePath=E:\
+ClosedFilePath=F:\
+ClosedFilePath=G:\
+ClosedFilePath=H:\
+ClosedFilePath=I:\
+ClosedFilePath=J:\
+ClosedFilePath=K:\
+ClosedFilePath=L:\
+ClosedFilePath=M:\
+ClosedFilePath=N:\
+ClosedFilePath=O:\
+ClosedFilePath=P:\
+ClosedFilePath=Q:\
+ClosedFilePath=R:\
+ClosedFilePath=S:\
+ClosedFilePath=T:\
+ClosedFilePath=U:\
+ClosedFilePath=V:\
+ClosedFilePath=W:\
+ClosedFilePath=X:\
+ClosedFilePath=Y:\
+ClosedFilePath=Z:\
+ClosedFilePath=\Device\Mup\
+OpenPipePath=steam.exe,D:\_steam
+OpenPipePath=firefox.exe,D:\_apps\firefox\profile\places.sqlite
+OpenPipePath=firefox.exe,D:\_apps\firefox\profile\favicons.sqlite
+OpenPipePath=firefox.exe,D:\_apps\firefox\profile\storage-sync-v2.sqlite
+CopyLimitKb=100000
+AutoDelete=y
+RecoverFolder=D:\_temp\_downloads
+AutoRecover=y
+LingerProcess=rundll32.exe
+Template=OpenSmartCard
+Template=OpenBluetooth
+Template=SkipHook
+Template=FileCopy
+EnableMiniDump=y
+
+[UserSettings_4BC00582]
+
+SbieCtrl_UserName=xxx
+SbieCtrl_ShowWelcome=n
+SbieCtrl_NextUpdateCheck=-1
+SbieCtrl_UpdateCheckNotify=y
+SbieCtrl_BoxExpandedView_DefaultBox=y
+SbieCtrl_ReloadConfNotify=n
+SbieCtrl_EditConfNotify=n
+SbieCtrl_EnableLogonStart=y
+SbieCtrl_EnableAutoStart=y
+SbieCtrl_AddDesktopIcon=n
+SbieCtrl_AddQuickLaunchIcon=n
+SbieCtrl_AddContextMenu=y
+SbieCtrl_AddSendToMenu=y
+SbieCtrl_HideWindowNotify=n
+SbieCtrl_ActiveView=40021
+SbieCtrl_AutoApplySettings=y
+SbieCtrl_SettingChangeNotify=n
+SbieCtrl_WindowCoords=869,341,349,600
+SbieCtrl_RecoverTarget=W:\
+SbieCtrl_SaveRecoverTargets=y
+SbieCtrl_ProcessViewColumnWidths=250,70,300
+SbieCtrl_HideMessage=2111,OpenProcess (C0000022) access=00000040 initialized=1
+SbieCtrl_HideMessage=2111,OpenProcess (C0000022) access=00001410 initialized=1
+EnableMiniDump=y
+</code></pre></div></div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p689" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile689">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-123.html?author_id=494&amp;sr=posts">12</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jan 26, 2022 8:07 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content689">
+
+						<h3><a href="viewtopic.php-1604.html?p=689#p689">Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-530.html?mode=quote&amp;f=16&amp;p=689" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-1604.html?p=689#p689" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a></strong> &raquo; </span><time datetime="2022-04-28T17:11:32+00:00">Thu Apr 28, 2022 5:11 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">All Half-Life 1 based games seem to crash.<br>
+Had crashes with Counterstrike 1.6 and Counterstrike Codition Zero.<br>
+<br>
+Anything i can do?<br>
+Do i make smthg wrong with setting up the minidump function?</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p865" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile865">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-123.html?author_id=494&amp;sr=posts">12</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jan 26, 2022 8:07 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content865">
+
+						<h3><a href="viewtopic.php-1605.html?p=865#p865">Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-531.html?mode=quote&amp;f=16&amp;p=865" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-1605.html?p=865#p865" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a></strong> &raquo; </span><time datetime="2022-07-30T19:00:22+00:00">Sat Jul 30, 2022 7:00 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">Now i tried Sandboxie-Classic-x64-v5.57.6 but still crashing. <img class="smilies" src="images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"><br>
+I was able to play for several hours then hl.exe crashed to desktop and steam.exe followed 10 seconds later.<br>
+Meanwhile with my 3rd complete different win 7 x64 system (Q67, H170 and now Z170).<br>
+With SandboxieInstall64-v5.44.1 all works but every couple firefox startups firefox.exe starts but no window appears, killtask firefox.exe and try again which is of course very disturbing.<br>
+<br>
+I really hope the hl.exe, steam.exe crashing  will get fixed. *dream* <img class="smilies" src="images/smilies/icon_e_smile.gif" width="15" height="17" alt=":)" title="Smile"></div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p1131" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1131">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-123.html?author_id=494&amp;sr=posts">12</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jan 26, 2022 8:07 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1131">
+
+						<h3><a href="viewtopic.php-1606.html?p=1131#p1131">Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-532.html?mode=quote&amp;f=16&amp;p=1131" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-1606.html?p=1131#p1131" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a></strong> &raquo; </span><time datetime="2023-04-12T17:51:49+00:00">Wed Apr 12, 2023 5:51 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">Finally with Firefox 112.0 and Sandboxie 5.44.1, at least Firefox starts reliable.<br>
+Tried it ca 100x and Firefox opened everytime.<br>
+<br>
+With ff 111.0.1 and 5.44.1 it reached a really annoying level.<br>
+Sometimes i needed up to 5 tries till ff window showed up. <img class="smilies" src="images/smilies/icon_e_smile.gif" width="15" height="17" alt=":)" title="Smile"><br>
+<br>
+Did u ever investigate the hl.exe + steam.exe crashing problem with newer sandboxie versions?<br>
+The last time i tried a newer sandboxie version was since my last post here.<br>
+Is there a possibillity that it works now with latest sbie version?</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p1248" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1248">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-123.html?author_id=494&amp;sr=posts">12</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jan 26, 2022 8:07 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1248">
+
+						<h3><a href="viewtopic.php-1607.html?p=1248#p1248">Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-533.html?mode=quote&amp;f=16&amp;p=1248" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-1607.html?p=1248#p1248" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a></strong> &raquo; </span><time datetime="2023-07-07T22:47:26+00:00">Fri Jul 07, 2023 10:47 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">firefox 115.0.1 ... the bug is back.<br>
+was a nice, relaxing, problemless time <img class="smilies" src="images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"></div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p1252" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1252">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-123.html?author_id=494&amp;sr=posts">12</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jan 26, 2022 8:07 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1252">
+
+						<h3><a href="viewtopic.php-1608.html?p=1252#p1252">Re: Sandboxie-Classic-x64-v5.55.8 - hl.exe crashes and steam.exe follows :(</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-534.html?mode=quote&amp;f=16&amp;p=1252" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-1608.html?p=1252#p1252" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-95.html?mode=viewprofile&amp;u=494" class="username">thomaz</a></strong> &raquo; </span><time datetime="2023-07-12T17:35:48+00:00">Wed Jul 12, 2023 5:35 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">Now i tried Sandboxie-Plus v1.9.6 and after 30mins hl.exe crashed following steam.exe crash too. <img class="smilies" src="images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"><br>
+Sandboxie-Plus reports:
+<div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="download/file-45.php?id=152" class="postimage" alt="Clipboard01.jpg" onclick="viewableArea(this);"></dt>
+						<dd>Clipboard01.jpg (42.42 KiB) Viewed 4561 times</dd>
+		</dl>
+		
+		
+			</div></div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+	
+
+	<div class="action-bar bar-bottom">
+	
+			<a href="posting.php-524.html?mode=reply&amp;f=16&amp;t=255" class="button" title="Post a reply">
+							<span>Post Reply</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
+					</a>
+		
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="viewtopic.php-1598.html?f=16&amp;t=255&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+
+			<form method="post" action="./viewtopic.php?f=16&amp;t=255">
+		<div class="dropdown-container dropdown-container-left dropdown-button-control sort-tools">
+	<span title="Display and sorting options" class="button button-secondary dropdown-trigger dropdown-select">
+		<i class="icon fa-sort-amount-asc fa-fw" aria-hidden="true"></i>
+		<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+	</span>
+	<div class="dropdown hidden">
+		<div class="pointer"><div class="pointer-inner"></div></div>
+		<div class="dropdown-contents">
+			<fieldset class="display-options">
+							<label>Display: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+								<label>Sort by: <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label>
+				<label>Direction: <select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+								<hr class="dashed">
+				<input type="submit" class="button2" name="sort" value="Go">
+						</fieldset>
+		</div>
+	</div>
+</div>
+		</form>
+	
+	
+	
+			<div class="pagination">
+			12 posts
+							<ul>
+		<li class="active"><span>1</span></li>
+				<li><a class="button" href="viewtopic.php-297.html?f=16&amp;t=255&amp;start=10" role="button">2</a></li>
+				<li class="arrow next"><a class="button button-icon-only" href="viewtopic.php-297.html?f=16&amp;t=255&amp;start=10" rel="next" role="button"><i class="icon fa-chevron-right fa-fw" aria-hidden="true"></i><span class="sr-only">Next</span></a></li>
+	</ul>
+					</div>
+	</div>
+
+
+<div class="action-bar actions-jump">
+		<p class="jumpbox-return">
+		<a href="viewforum.php-9.html?f=16" class="left-box arrow-left" accesskey="r">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>Return to “Bug Reports”</span>
+		</a>
+	</p>
+	
+		<div class="jumpbox dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+			<span title="Jump to" class="button button-secondary dropdown-trigger dropdown-select">
+				<span>Jump to</span>
+				<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+			</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																				<li><a href="viewforum.php.html?f=1" class="jumpbox-cat-link"> <span> General</span></a></li>
+																<li><a href="viewforum.php-1.html?f=27" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Announcements</span></a></li>
+																<li><a href="viewforum.php-2.html?f=28" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Forum Discussion</span></a></li>
+																<li><a href="viewforum.php-3.html?f=2" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Off-Topic</span></a></li>
+																<li><a href="viewforum.php-4.html?f=4" class="jumpbox-cat-link"> <span> Sandboxie+</span></a></li>
+																<li><a href="viewforum.php-5.html?f=12" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-6.html?f=13" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-7.html?f=14" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-8.html?f=15" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-9.html?f=16" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+																<li><a href="viewforum.php-10.html?f=3" class="jumpbox-cat-link"> <span> TaskExplorer</span></a></li>
+																<li><a href="viewforum.php-11.html?f=7" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-12.html?f=8" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-13.html?f=9" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-14.html?f=10" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-15.html?f=11" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+																<li><a href="viewforum.php-16.html?f=5" class="jumpbox-cat-link"> <span> DiskCryptor</span></a></li>
+																<li><a href="viewforum.php-17.html?f=17" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-18.html?f=18" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-19.html?f=19" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-20.html?f=20" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-21.html?f=21" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+																<li><a href="viewforum.php-22.html?f=6" class="jumpbox-cat-link"> <span> PrivateWin10</span></a></li>
+																<li><a href="viewforum.php-23.html?f=22" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-24.html?f=23" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-25.html?f=24" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-26.html?f=25" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-27.html?f=26" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+											</ul>
+		</div>
+	</div>
+
+	</div>
+
+
+			</div>
+
+
+<div id="page-footer" class="page-footer" role="contentinfo">
+	<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-footer" class="nav-footer linklist" role="menubar">
+		<li class="breadcrumbs">
+									<span class="crumb"><a href="index.php.html" data-navbar-reference="index"><i class="icon fa-home fa-fw" aria-hidden="true"></i><span>Board index</span></a></span>					</li>
+		
+				<li class="rightside">All times are <span title="UTC">UTC</span></li>
+							<li class="rightside">
+				<a href="ucp.php-2.html?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">
+					<i class="icon fa-trash fa-fw" aria-hidden="true"></i><span>Delete cookies</span>
+				</a>
+			</li>
+																<li class="rightside" data-last-responsive="true">
+				<a href="memberlist.php-11.html?mode=contactadmin" role="menuitem">
+					<i class="icon fa-envelope fa-fw" aria-hidden="true"></i><span>Contact us</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+
+	<div class="copyright">
+				<p class="footer-row">
+			<span class="footer-copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited</span>
+		</p>
+						<p class="footer-row" role="menu">
+			<a class="footer-link" href="ucp.php-3.html?mode=privacy" title="Privacy" role="menuitem">
+				<span class="footer-link-text">Privacy</span>
+			</a>
+			|
+			<a class="footer-link" href="ucp.php-4.html?mode=terms" title="Terms" role="menuitem">
+				<span class="footer-link-text">Terms</span>
+			</a>
+		</p>
+					</div>
+
+	<div id="darkenwrapper" class="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken" class="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	<img src="/cron/cron.task.core.tidy_sessions" width="1" height="1" alt="cron"></div>
+
+<script src="assets/javascript/jquery-3.4.1.min.js?assets_version=3"></script>
+<script src="assets/javascript/core.js?assets_version=3"></script>
+
+
+<script>
+(function($) {  // Avoid conflicts with other libraries
+
+'use strict';
+
+	phpbb.addAjaxCallback('reporttosfs', function(data) {
+		if (data.postid !== "undefined") {
+			$('#sfs' + data.postid).hide();
+			phpbb.closeDarkenWrapper(5000);
+		}
+	});
+
+})(jQuery);
+</script>
+<script src="styles/prosilver/template/forum_fn.js?assets_version=3"></script>
+<script src="styles/prosilver/template/ajax.js?assets_version=3"></script>
+
+
+
+</body>
+</html>

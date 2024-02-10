@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Bandai Namco Launcher - Blue Protocol</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Bandai Namco Launcher - Blue Protocol</h2>
+		<p><a href="viewtopic.php-230.html?f=14&amp;t=657">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=657</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Bandai Namco Launcher - Blue Protocol</h3>
+				<div class="date">Posted: <strong>Fri Sep 15, 2023 6:15 pm</strong></div>
+				<div class="author">by <strong>Osodarck</strong></div>
+				<div class="content">Hi There!<br>
+<br>
+I'm trying to run Blue Protocol from Bandai Namco Launcher. I'm able to run the Launcher's service and then the Launcher on sandboxie, but when I try to start the game Blue Protocol from the launcher nothing happens.<br>
+<br>
+I've used WinDBG to dump information of both exe files:<br>
+<br>
+<strong class="text-strong">BandaiNamcoLauncherService.exe:</strong><br>
+<a href="https://docs.google.com/document/d/1bDNQv__yvZBCxbRCV94V73OHU0DjQwSM3OWUSdybeoQ/edit?usp=sharing" class="postlink">https://docs.google.com/document/d/1bDN ... sp=sharing</a><br>
+<strong class="text-strong">BandaiNamcoLauncher.exe:</strong><br>
+<a href="https://docs.google.com/document/d/1iULDWOkWtPVR58Fijzl-JUvnvePGrLuTsvVjpZ7sx3A/edit?usp=sharing" class="postlink">https://docs.google.com/document/d/1iUL ... sp=sharing</a><br>
+<br>
+When I clicked to start the game the only changes I saw on the WinDBG was for BandaiNamcoLauncherService.exe (lines 179 to 183:<br>
+<br>
+ModLoad: 64f00000 64f2f000   E:\BandaiNamcoLauncher\Launcher\BridgeService\System.Security.AccessControl.dll<br>
+ModLoad: 74260000 7426f000   C:\Windows\SysWOW64\wtsapi32.dll<br>
+ModLoad: 70f70000 70fb7000   C:\Windows\SysWOW64\WINSTA.dll<br>
+ModLoad: 74500000 74525000   C:\Windows\SysWOW64\userenv.dll<br>
+ModLoad: 74550000 7456c000   C:\Windows\SysWOW64\profapi.dll<br>
+<br>
+Any instructions or directions will be great appreciated.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Bandai Namco Launcher - Blue Protocol</h3>
+				<div class="date">Posted: <strong>Mon Sep 18, 2023 5:24 pm</strong></div>
+				<div class="author">by <strong>Osodarck</strong></div>
+				<div class="content">Another important information: I was doing a lot of testing with sandboxie settings and noticed that I'm able to run the Blue Protocol exe manually, but I get an error telling it isn't authenticated. I guess this is because the autheticaton occurs when starting the game from the launcher passing throght the service.<br>
+<br>
+Please any help or directions... It seems to be so close to work...</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

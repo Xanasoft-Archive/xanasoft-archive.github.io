@@ -1,0 +1,926 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>A better UI/UX for NeoLoader - NeoLoader Forum</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - NeoLoader Forum" href="feed.php">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="feed-1.php?mode=topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Feature Requests" href="feed-12.php?f=172">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - A better UI/UX for NeoLoader" href="feed-239.php?f=172&amp;t=3303">
+	<link rel="canonical" href="viewtopic.php-3563.html?t=3303">
+
+<!--
+	phpBB style name: prosilver Special Edition
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:      phpBB Limited ( https://www.phpbb.com/ )
+-->
+
+<link href="styles/prosilver/theme/print.css?assets_version=4" rel="stylesheet" media="print" title="printonly">
+
+<link href="styles/prosilver/theme/common.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/links.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/content.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/buttons.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/cp.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/forms.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/colours.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/imageset.css?assets_version=4" rel="stylesheet">
+
+<link href="styles/prosilver_se/theme/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/en/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/responsive.css?assets_version=4" rel="stylesheet" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)">
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=4" rel="stylesheet" />
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner">
+
+			<div id="site-description">
+				<a id="logo" class="logo" href="http://neoloader.com" title="NeoLoader Homepage"><span class="imageset site_logo"></span></a>
+				<h1>NeoLoader Forum</h1>
+				<p>Forum of the NeoLoader P2P Client/Downloader</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+						<div id="search-box" class="search-box search-header">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…">
+					<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+					<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+					
+				</fieldset>
+				</form>
+			</div>
+			
+			</div>
+		</div>
+
+		<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="linklist bulletin" role="menubar">
+
+		<li id="quick-links" class="small-icon responsive-menu dropdown-container" data-skip-responsive="true">
+			<a href="#" class="responsive-menu-link dropdown-trigger">Quick links</a>
+			<div class="dropdown hidden">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																								<li class="small-icon icon-search-unanswered"><a href="search.php-1.html?search_id=unanswered" role="menuitem">Unanswered posts</a></li>
+						<li class="small-icon icon-search-active"><a href="search.php-2.html?search_id=active_topics" role="menuitem">Active topics</a></li>
+						<li class="separator"></li>
+						<li class="small-icon icon-search"><a href="search.php.html" role="menuitem">Search</a></li>
+					
+											<li class="separator"></li>
+												<li class="small-icon icon-team"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li class="small-icon icon-faq" data-skip-responsive="true"><a href="faq.php.html" rel="help" title="Frequently Asked Questions" role="menuitem">FAQ</a></li>
+						
+			<li class="small-icon icon-logout rightside" data-skip-responsive="true"><a href="ucp.php.html?mode=login" title="Login" accesskey="x" role="menuitem">Login</a></li>
+					<li class="small-icon icon-register rightside" data-skip-responsive="true"><a href="ucp.php-1.html?mode=register" role="menuitem">Register</a></li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="linklist navlinks" role="menubar">
+						<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" accesskey="h" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="index">Board index</a></span>
+											<span class="crumb"><a href="viewforum.php-3.html?f=169" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="169">NeoLoader English</a></span>
+															<span class="crumb"><a href="viewforum.php-7.html?f=172" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="172">Feature Requests</a></span>
+												</li>
+		
+					<li class="rightside responsive-search" style="display: none;"><a href="search.php.html" title="View the advanced search options" role="menuitem">Search</a></li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body">
+		
+		
+<h2 class="topic-title"><a href="viewtopic.php-1607.html?f=172&amp;t=3303">A better UI/UX for NeoLoader</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+			<a href="posting.php-1201.html?mode=reply&amp;f=172&amp;t=3303" class="button icon-button reply-icon" title="Post a reply">
+			Post Reply		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-3564.html?f=172&amp;t=3303&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…">
+				<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+				<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+				<input type="hidden" name="t" value="3303">
+<input type="hidden" name="sf" value="msgonly">
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			17 posts
+							<ul>
+		<li class="active"><span>1</span></li>
+			<li><a href="viewtopic.php-1609.html?f=172&amp;t=3303&amp;start=10" role="button">2</a></li>
+			<li class="next"><a href="viewtopic.php-1609.html?f=172&amp;t=3303&amp;start=10" rel="next" role="button">Next</a></li>
+	</ul>
+					</div>
+	
+</div>
+
+
+			<div id="p16482" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16482">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-36.html?author_id=1155&amp;sr=posts">98</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 28, 2012 7:17 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16482">
+
+			<h3 class="first"><a href="#p16482">A better UI/UX for NeoLoader</a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1202.html?mode=quote&amp;f=172&amp;p=16482" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-3565.html?p=16482#p16482"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a></strong> &raquo; </span>Mon Jul 22, 2013 1:40 am </p>
+
+			
+			
+			<div class="content">well, I'm not a graphic designer by profession, but i think i can give some suggestions to improve the usability of the client.
+<br>
+<br>The option "GUI mode" is great, but i think we can do better by improving the icons and the interaction with the user. 
+<br>
+<br>I created a few mockups to give you an idea of how to change some aspects.
+<br>
+<br>The new main interface:
+<br><div class="inline-attachment">
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=589&mode=view"><img src="./download/file.php?id=589&t=1" class="postimage" alt="iqh7uQUzk5FnS.png" title="iqh7uQUzk5FnS.png (45.63 KiB) Viewed 8278 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</div>
+<br>
+<br>- <strong>Big icons, flat, simple, without chrome and shadows, where the icon mean or remind what the label says</strong>. 
+<br>- Only one Progress Bar on top to report ongoing operations (hashing, search, starting in progress, closing in progress...)
+<br>- Menu Bar useless. Many items can be placed inside More button. For closing NL there is X button on the right upper corner.
+<br>- Status Bar useless. For display only important messages, a notification dialog (with autohide) will be better.
+<br>- The <strong>views</strong> are organized on the tree on the left side.
+<br>- The <strong>options</strong> are organized in the space at the top.
+<br>- Grabbers / Searches / Player in the left are redundant, so you can make it unclickable. Only list of results will be clickable.
+<br>
+<br>A search bar "intelligent" and clearly visible. The research is the lung of a p2p client, so it must have more space. 
+<br>When the user get the focus on the search bar, <strong>the view changes automatically</strong> for showing additional settings and the list of searches: 
+<br><div class="inline-attachment">
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=589&mode=view"><img src="./download/file.php?id=589&t=1" class="postimage" alt="iqh7uQUzk5FnS.png" title="iqh7uQUzk5FnS.png (45.63 KiB) Viewed 8278 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</div>
+<br>
+<br><div class="inline-attachment">
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=589&mode=view"><img src="./download/file.php?id=589&t=1" class="postimage" alt="iqh7uQUzk5FnS.png" title="iqh7uQUzk5FnS.png (45.63 KiB) Viewed 8278 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</div>
+<br>
+<br>
+<br>It makes no sense to add an icon for each type of link  .... <strong>only one</strong> BIG ADD icon: D 
+<br>The next window allows you to decide on the type of link to add (ed2k, collection, torrent, magnet, loaded from the HD, grabber). 
+<br><div class="inline-attachment">
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=589&mode=view"><img src="./download/file.php?id=589&t=1" class="postimage" alt="iqh7uQUzk5FnS.png" title="iqh7uQUzk5FnS.png (45.63 KiB) Viewed 8278 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</div>
+<br>
+<br>MORE contains LESS (:-P) used options (and for this they are grouped), and needs to be "smart", show options only if required by the view. We will see "twitter" and "about", but we will not see "clean completed" if we are in the statistics, or Open WebUI if we are already in Browser  .... and so on.
+<br><div class="inline-attachment">
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=589&mode=view"><img src="./download/file.php?id=589&t=1" class="postimage" alt="iqh7uQUzk5FnS.png" title="iqh7uQUzk5FnS.png (45.63 KiB) Viewed 8278 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</div>
+<br>
+<br>
+<br>Just my 2 cents. ;-)</div>
+
+							<dl class="attachbox">
+					<dt>
+						Attachments
+					</dt>
+											<dd>
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=590&mode=view"><img src="./download/file.php?id=590&t=1" class="postimage" alt="iFNrWEn2nnNlx.png" title="iFNrWEn2nnNlx.png (44.69 KiB) Viewed 8282 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</dd>
+											<dd>
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=588&mode=view"><img src="./download/file.php?id=588&t=1" class="postimage" alt="ileTGCQnqjGqd.png" title="ileTGCQnqjGqd.png (42.17 KiB) Viewed 8278 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</dd>
+											<dd>
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=587&mode=view"><img src="./download/file.php?id=587&t=1" class="postimage" alt="izND82fnbc49F.png" title="izND82fnbc49F.png (41.48 KiB) Viewed 8283 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</dd>
+											<dd>
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=586&mode=view"><img src="./download/file.php?id=586&t=1" class="postimage" alt="iNpltY5Zo01zm.png" title="iNpltY5Zo01zm.png (42.01 KiB) Viewed 8286 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</dd>
+									</dl>
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16483" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16483">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16483">
+
+			<h3><a href="#p16483"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1203.html?mode=quote&amp;f=172&amp;p=16483" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-3566.html?p=16483#p16483"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Mon Jul 22, 2013 3:32 pm </p>
+
+			
+			
+			<div class="content">Is just my opinion but I really don't like this kind of interface....</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16484" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16484">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-36.html?author_id=1155&amp;sr=posts">98</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 28, 2012 7:17 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16484">
+
+			<h3><a href="#p16484"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1204.html?mode=quote&amp;f=172&amp;p=16484" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-3567.html?p=16484#p16484"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a></strong> &raquo; </span>Mon Jul 22, 2013 7:05 pm </p>
+
+			
+			
+			<div class="content">Why ? And all or only something? :-)<br><br>What do you think about present icons, that IMHO are too small and unreadable?<br><br>What is the correlation between an icon with clapperboard and "share" or "grabber" (NeoLoader is not a VideoPlayer!) ?<br><br>What do you think about search bar in the upper right corner that have same options (in the down arrow) that are already in the Search window? <br><br>Don't you think that a single window for pasting all kinds of link is better that 3 different windows? :-)</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16485" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16485">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16485">
+
+			<h3><a href="#p16485"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1205.html?mode=quote&amp;f=172&amp;p=16485" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-3568.html?p=16485#p16485"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Mon Jul 22, 2013 8:09 pm </p>
+
+			
+			
+			<div class="content">Looks awesome, how have you made the mockup? <br><br>With some graphic program or is it it the GUI of some actual programming language?</div>
+
+			
+									
+									<div id="sig16485" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16486" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16486">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-36.html?author_id=1155&amp;sr=posts">98</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 28, 2012 7:17 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16486">
+
+			<h3><a href="#p16486"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1206.html?mode=quote&amp;f=172&amp;p=16486" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-3569.html?p=16486#p16486"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a></strong> &raquo; </span>Mon Jul 22, 2013 8:34 pm </p>
+
+			
+			
+			<div class="content"><a href="http://pencil.evolus.vn/" class="postlink">Home - Pencil Project</a><br><br>I used the default icons only to give you an idea, but of course you can create your own personal icons (with Photoshop or any) using the same "style" (big, flat, no shadow, cleaned, etc.). Unfortunately, i've no this skill, so i can't help you more than this. :-(</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16487" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16487">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16487">
+
+			<h3><a href="#p16487"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1207.html?mode=quote&amp;f=172&amp;p=16487" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-3570.html?p=16487#p16487"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Tue Jul 23, 2013 9:59 am </p>
+
+			
+			
+			<div class="content">I'm sorry but I don't like everything in this UI <img class="smilies" src="./images/smilies/frown.png" alt=":(" title=":("><br><br>For me, the one actually in neoloader with % overlayed in old progressbar (files and clients) like some emule mods is perfect.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16593" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16593">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-36.html?author_id=1155&amp;sr=posts">98</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 28, 2012 7:17 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16593">
+
+			<h3><a href="#p16593"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1208.html?mode=quote&amp;f=172&amp;p=16593" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-3571.html?p=16593#p16593"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a></strong> &raquo; </span>Tue Sep 03, 2013 8:34 pm </p>
+
+			
+			
+			<div class="content">There are any news for this request?<br>Can you submit the GUI to an <strong>expert/skilled</strong> of graphics/UX/UI, if you know, or to the community, hoping that someone collaborate?</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16594" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16594">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16594">
+
+			<h3><a href="#p16594"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1209.html?mode=quote&amp;f=172&amp;p=16594" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-3572.html?p=16594#p16594"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Thu Sep 05, 2013 7:00 am </p>
+
+			
+			
+			<div class="content">well,<br>a skilled expert will want money I'm affraid.<br>and the community here seams rather small...<br><br>if you can find someone who would want to help us with the gui for free that would be great.<br><br>Or we could get some quotations from experts and start a kick starter campaign for the money</div>
+
+			
+									
+									<div id="sig16594" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16595" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16595">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-36.html?author_id=1155&amp;sr=posts">98</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 28, 2012 7:17 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16595">
+
+			<h3><a href="#p16595"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1210.html?mode=quote&amp;f=172&amp;p=16595" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-3573.html?p=16595#p16595"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-42.html?mode=viewprofile&amp;u=1155" class="username">abel</a></strong> &raquo; </span>Thu Sep 05, 2013 7:54 pm </p>
+
+			
+			
+			<div class="content">We must not give up before trying.<br><br>I do not know, but i tried to do it by myself and provide a "modern" version, with some suggestions as a starting point.<br>No change in this direction?<br><br>A first step would be to try the <em>Usability Hallway Testing</em> over the current version.<br>Try to asking "add a collection and get file inside it", "download an http link from hosting", "do a search for a video file", "add a file in sharing", etc etc ... and record the random user behavior. These are the first feedback from which to start.<br>I am sure that with this version they will have a lot of problems to perform those actions. <br><br>If you deploy a public "mediocre" and not "usable" version, you will have lost forever the new users. The FIRST is the only installation that counts, not the version 0.80 or 2.0.<br>No matter how much code there is under the hood, but <strong>what the user sees the first time</strong>. ;-)</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17488" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17488">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17488">
+
+			<h3><a href="#p17488"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1211.html?mode=quote&amp;f=172&amp;p=17488" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-3574.html?p=17488#p17488"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Sat May 31, 2014 7:00 pm </p>
+
+			
+			
+			<div class="content"><strong>We're still interested to any UI improvement suggestion but a total rework is not planned at the moment.</strong></div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+	
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=172&amp;t=3303">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<input type="submit" name="sort" value="Go" class="button2">
+			</fieldset>
+	</form>
+	<hr>
+
+<div class="action-bar bottom">
+	<div class="buttons">
+		
+			<a href="posting.php-1201.html?mode=reply&amp;f=172&amp;t=3303" class="button icon-button reply-icon" title="Post a reply">
+			Post Reply		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-3564.html?f=172&amp;t=3303&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+	
+			<div class="pagination">
+			17 posts
+							<ul>
+		<li class="active"><span>1</span></li>
+			<li><a href="viewtopic.php-1609.html?f=172&amp;t=3303&amp;start=10" role="button">2</a></li>
+			<li class="next"><a href="viewtopic.php-1609.html?f=172&amp;t=3303&amp;start=10" rel="next" role="button">Next</a></li>
+	</ul>
+					</div>
+		<div class="clear"></div>
+</div>
+
+
+	<p class="jumpbox-return"><a href="viewforum.php-7.html?f=172" class="left-box arrow-left" accesskey="r">Return to “Feature Requests”</a></p>
+
+
+	<div class="dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+		<span title="Jump to" class="dropdown-trigger button dropdown-select">
+			Jump to		</span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																			<li><a href="viewforum.php.html?f=10">News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-1.html?f=11">Board News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-2.html?f=161">NeoLoader Releases</a></li>
+																<li><a href="viewforum.php-3.html?f=169">NeoLoader English</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-4.html?f=180">General/Discussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-5.html?f=170">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-6.html?f=171">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-7.html?f=172">Feature Requests</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-8.html?f=173">Script Development</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-9.html?f=174">Extensions</a></li>
+																<li><a href="viewforum.php-10.html?f=163">NeoLoader German</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-11.html?f=179">Algemeines/Diskussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-12.html?f=164">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-13.html?f=165">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-14.html?f=166">Feature Wünsche</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-15.html?f=167">Script Entwicklung</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-16.html?f=168">Erweiterungen</a></li>
+																<li><a href="viewforum.php-17.html?f=4">Community</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-18.html?f=81">OffTopic</a></li>
+										</ul>
+		</div>
+	</div>
+
+
+	<div class="stat-block online-list">
+		<h3>Who is online</h3>
+		<p>Users browsing this forum: No registered users and 2 guests</p>
+	</div>
+
+			</div>
+
+
+<div id="page-footer">
+	<div class="navbar">
+	<div class="inner">
+
+	<ul id="nav-footer" class="linklist bulletin" role="menubar">
+		<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" data-navbar-reference="index">Board index</a></span>
+					</li>
+		
+				<li class="rightside">All times are <abbr title="UTC+1">UTC+01:00</abbr></li>
+							<li class="small-icon icon-delete-cookies rightside"><a href="ucp.php-3.html?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">Delete all board cookies</a></li>
+									<li class="small-icon icon-team rightside" data-last-responsive="true"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>				<li class="small-icon icon-contact rightside" data-last-responsive="true"><a href="memberlist.php-11.html?mode=contactadmin" role="menuitem">Contact us</a></li>	</ul>
+
+	</div>
+</div>
+
+	<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+	</div>
+	<div id="loading_indicator"></div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close"></a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div class="copyright">
+		Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	<img src="cron-1.php?cron_type=cron.task.core.tidy_sessions" width="1" height="1" alt="cron"></div>
+
+<script type="text/javascript" src="assets/javascript/jquery.min.js?assets_version=4"></script>
+<script type="text/javascript" src="assets/javascript/core.js?assets_version=4"></script>
+
+
+<script type="text/javascript" src="styles/prosilver/template/forum_fn.js?assets_version=4"></script>
+
+<script type="text/javascript" src="styles/prosilver/template/ajax.js?assets_version=4"></script>
+
+
+
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

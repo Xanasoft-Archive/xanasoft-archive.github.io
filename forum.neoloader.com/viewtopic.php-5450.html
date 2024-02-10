@@ -1,0 +1,788 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>NeoLoader 0.35 Windows Bug - NeoSetup.exe - Application Error - NeoLoader Forum</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - NeoLoader Forum" href="feed.php">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="feed-1.php?mode=topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Bugs" href="feed-10.php?f=171">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - NeoLoader 0.35 Windows Bug - NeoSetup.exe - Application Error" href="feed-207.php?f=171&amp;t=3286">
+	<link rel="canonical" href="viewtopic.php-2907.html?t=3286">
+
+<!--
+	phpBB style name: prosilver Special Edition
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:      phpBB Limited ( https://www.phpbb.com/ )
+-->
+
+<link href="styles/prosilver/theme/print.css?assets_version=4" rel="stylesheet" media="print" title="printonly">
+
+<link href="styles/prosilver/theme/common.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/links.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/content.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/buttons.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/cp.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/forms.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/colours.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/imageset.css?assets_version=4" rel="stylesheet">
+
+<link href="styles/prosilver_se/theme/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/en/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/responsive.css?assets_version=4" rel="stylesheet" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)">
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=4" rel="stylesheet" />
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner">
+
+			<div id="site-description">
+				<a id="logo" class="logo" href="http://neoloader.com" title="NeoLoader Homepage"><span class="imageset site_logo"></span></a>
+				<h1>NeoLoader Forum</h1>
+				<p>Forum of the NeoLoader P2P Client/Downloader</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+						<div id="search-box" class="search-box search-header">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…">
+					<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+					<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+					
+				</fieldset>
+				</form>
+			</div>
+			
+			</div>
+		</div>
+
+		<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="linklist bulletin" role="menubar">
+
+		<li id="quick-links" class="small-icon responsive-menu dropdown-container" data-skip-responsive="true">
+			<a href="#" class="responsive-menu-link dropdown-trigger">Quick links</a>
+			<div class="dropdown hidden">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																								<li class="small-icon icon-search-unanswered"><a href="search.php-1.html?search_id=unanswered" role="menuitem">Unanswered posts</a></li>
+						<li class="small-icon icon-search-active"><a href="search.php-2.html?search_id=active_topics" role="menuitem">Active topics</a></li>
+						<li class="separator"></li>
+						<li class="small-icon icon-search"><a href="search.php.html" role="menuitem">Search</a></li>
+					
+											<li class="separator"></li>
+												<li class="small-icon icon-team"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li class="small-icon icon-faq" data-skip-responsive="true"><a href="faq.php.html" rel="help" title="Frequently Asked Questions" role="menuitem">FAQ</a></li>
+						
+			<li class="small-icon icon-logout rightside" data-skip-responsive="true"><a href="ucp.php.html?mode=login" title="Login" accesskey="x" role="menuitem">Login</a></li>
+					<li class="small-icon icon-register rightside" data-skip-responsive="true"><a href="ucp.php-1.html?mode=register" role="menuitem">Register</a></li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="linklist navlinks" role="menubar">
+						<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" accesskey="h" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="index">Board index</a></span>
+											<span class="crumb"><a href="viewforum.php-3.html?f=169" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="169">NeoLoader English</a></span>
+															<span class="crumb"><a href="viewforum.php-6.html?f=171" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="171">Bugs</a></span>
+												</li>
+		
+					<li class="rightside responsive-search" style="display: none;"><a href="search.php.html" title="View the advanced search options" role="menuitem">Search</a></li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body">
+		
+		
+<h2 class="topic-title"><a href="viewtopic.php-1021.html?f=171&amp;t=3286">NeoLoader 0.35 Windows Bug - NeoSetup.exe - Application Error</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+			<a href="posting.php-1157.html?mode=reply&amp;f=171&amp;t=3286" class="button icon-button locked-icon" title="This topic is locked, you cannot edit posts or make further replies.">
+			Locked		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-2908.html?f=171&amp;t=3286&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…">
+				<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+				<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+				<input type="hidden" name="t" value="3286">
+<input type="hidden" name="sf" value="msgonly">
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			37 posts
+							<ul>
+		<li class="active"><span>1</span></li>
+			<li><a href="viewtopic.php-1023.html?f=171&amp;t=3286&amp;start=10" role="button">2</a></li>
+			<li><a href="viewtopic.php-1024.html?f=171&amp;t=3286&amp;start=20" role="button">3</a></li>
+			<li><a href="viewtopic.php-1025.html?f=171&amp;t=3286&amp;start=30" role="button">4</a></li>
+			<li class="next"><a href="viewtopic.php-1023.html?f=171&amp;t=3286&amp;start=10" rel="next" role="button">Next</a></li>
+	</ul>
+					</div>
+	
+</div>
+
+
+			<div id="p16331" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16331">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-71.html?mode=viewprofile&amp;u=3493" class="username">GonZo</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-145.html?author_id=3493&amp;sr=posts">17</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Jun 24, 2013 7:08 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16331">
+
+			<h3 class="first"><a href="#p16331">NeoLoader 0.35 Windows Bug - NeoSetup.exe - Application Error</a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-2909.html?p=16331#p16331"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-71.html?mode=viewprofile&amp;u=3493" class="username">GonZo</a></strong> &raquo; </span>Wed Jun 26, 2013 1:29 am </p>
+
+			
+			
+			<div class="content">Description:
+<br>NeoSetup.exe - Application Error : The application failed to initialize properly (0xc0000005). Click on OK to terminate the application.
+<br>
+<br>Windows XP - SP3
+<br>CPU :P3@1GHz
+<br>
+<br>GonZo</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16340" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16340">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16340">
+
+			<h3><a href="#p16340"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-2910.html?p=16340#p16340"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Sun Jun 30, 2013 9:02 am </p>
+
+			
+			
+			<div class="content">hmm....<br>Not good, i will have to investigate the problm a bit more...<br><br>EDIT: Its a strange problem, other neo binarys work fine on XP, it seams to be some issue with initialising some static structures, that onlyoccurs when building with QtCreator, building with Vs does have not yeal this issue....<br><br>I will upload a new setup file compiled with VS, its easyer than finding out why QtCreator fails...</div>
+
+			
+									
+									<div id="sig16340" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16341" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16341">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-71.html?mode=viewprofile&amp;u=3493" class="username">GonZo</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-145.html?author_id=3493&amp;sr=posts">17</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Jun 24, 2013 7:08 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16341">
+
+			<h3><a href="#p16341"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-2911.html?p=16341#p16341"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-71.html?mode=viewprofile&amp;u=3493" class="username">GonZo</a></strong> &raquo; </span>Sun Jun 30, 2013 10:12 pm </p>
+
+			
+			
+			<div class="content">I will test it when its ready.
+<br>(Maybe related to the cpu P3 ?
+<br>
+<br>Thanks.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16344" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16344">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16344">
+
+			<h3><a href="#p16344"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-2912.html?p=16344#p16344"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Tue Jul 02, 2013 10:51 pm </p>
+
+			
+			
+			<div class="content"><blockquote><div><cite>GonZo wrote:</cite>Maybe related to the cpu P3 ?</div></blockquote><br>No, <br>no CPU specific releases are planned.<br><br>The advantage of such optimizations are negligible for P2P applications, most stuff neo does is a job for ALU's and most CPU optimizations work with the FPU or vectoring. <br>For raw Data processing like for example video rendering/compression it helps a lot, but for normal program logic code it does not help.<br><br>Where it helps is for example file hashing but afaik the used library is already quite highly optimized in this regard.</div>
+
+			
+									
+									<div id="sig16344" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16347" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16347">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16347">
+
+			<h3><a href="#p16347"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-2913.html?p=16347#p16347"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Wed Jul 03, 2013 10:51 am </p>
+
+			
+			
+			<div class="content">I have uploaded a new installer that should run on windows xp</div>
+
+			
+									
+									<div id="sig16347" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16348" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16348">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-71.html?mode=viewprofile&amp;u=3493" class="username">GonZo</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-145.html?author_id=3493&amp;sr=posts">17</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Jun 24, 2013 7:08 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16348">
+
+			<h3><a href="#p16348"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-2914.html?p=16348#p16348"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-71.html?mode=viewprofile&amp;u=3493" class="username">GonZo</a></strong> &raquo; </span>Wed Jul 03, 2013 7:23 pm </p>
+
+			
+			
+			<div class="content">Description:
+<br>Faulting application neosetup.exe, version 0.0.0.0, faulting module qt5gui.dll, version 5.0.2.0, fault address 0x00005600.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16350" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16350">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16350">
+
+			<h3><a href="#p16350"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-2915.html?p=16350#p16350"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Thu Jul 04, 2013 7:54 am </p>
+
+			
+			
+			<div class="content">it seams an other user can run it on XP: <a href="http://board.neoloader.com/bugs/3284-neoloader-0-35-windows-x64-bug.html#post16349" class="postlink">http://board.neoloader.com/bugs/3284-neoloader-0-35-windows-x64-bug.html#post16349</a><br><br>are there more informitons abotu the crash?</div>
+
+			
+									
+									<div id="sig16350" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16351" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16351">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-71.html?mode=viewprofile&amp;u=3493" class="username">GonZo</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-145.html?author_id=3493&amp;sr=posts">17</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Jun 24, 2013 7:08 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16351">
+
+			<h3><a href="#p16351"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-2916.html?p=16351#p16351"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-71.html?mode=viewprofile&amp;u=3493" class="username">GonZo</a></strong> &raquo; </span>Thu Jul 04, 2013 10:57 am </p>
+
+			
+			
+			<div class="content">I could send you a crash dump + log generated by Dr.Watson ?
+<br>Would need to send those by PM...
+<br>Or maybe you could create a debug build ?</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16352" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16352">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-71.html?mode=viewprofile&amp;u=3493" class="username">GonZo</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-145.html?author_id=3493&amp;sr=posts">17</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Jun 24, 2013 7:08 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16352">
+
+			<h3><a href="#p16352"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-2917.html?p=16352#p16352"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-71.html?mode=viewprofile&amp;u=3493" class="username">GonZo</a></strong> &raquo; </span>Thu Jul 04, 2013 11:17 am </p>
+
+			
+			
+			<div class="content">Can not send PM with attachments, hope this helps :
+<br>
+<br>Application exception occurred:
+<br>        App: C:\NeoLoader\NeoSetup.exe (pid=748)
+<br>        When: 2013-07-04 @ 11:49:17.554
+<br>        Exception number: c000001d (illegal instruction)
+<br>
+<br>*----&gt; State Dump for Thread Id 0x66c &lt;----*
+<br>
+<br>eax=00002020 ebx=00000096 ecx=0012a884 edx=0000d0d0 esi=0012a854 edi=00000000
+<br>eip=10005600 esp=0012a774 ebp=0012a83c iopl=0         nv up ei pl nz ac po nc
+<br>cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00000216
+<br>
+<br>*** ERROR: Symbol file could not be found.  Defaulted to export symbols for C:\NeoLoader\Qt5Gui.dll - 
+<br>function: Qt5Gui!QBrush__operator=
+<br>        100055fb cc               int     3
+<br>        100055fc cc               int     3
+<br>        100055fd cc               int     3
+<br>        100055fe cc               int     3
+<br>        100055ff cc               int     3
+<br>FAULT -&gt;*** ERROR: Module load completed but symbols could not be loaded for C:\NeoLoader\NeoSetup.exe
+<br>10005600 f20f10442404 movsdx xmm0,qword ptr [esp+0x4] ss:0023:0012a778=40ea9a8000000000
+<br>        10005606 660f2f0560751f10 comisd xmm0,qword ptr [Qt5Gui!QTouchEvent__operator=+0x41c0 (101f7560)]
+<br>        1000560e 720d             jb      Qt5Gui!QBrush__operator=+0x3d (1000561d)
+<br>        10005610 f20f5805e0761f10 addsd xmm0,qword ptr [Qt5Gui!QTouchEvent__operator=+0x4340 (101f76e0)]
+<br>        10005618 f20f2cc0         cvttsd2si eax,xmm0
+<br>        1000561c c3               ret
+<br>
+<br>*----&gt; Stack Back Trace &lt;----*
+<br>WARNING: Stack unwind information not available. Following frames may be wrong.
+<br>ChildEBP RetAddr  Args to Child              
+<br>0012a83c 1012a84b 0012a854 00d192f0 00d16a50 Qt5Gui!QBrush__operator=+0x20
+<br>00000000 00000000 00000000 00000000 00000000 Qt5Gui!QColor__light+0x5b
+<br>
+<br>*----&gt; Raw Stack Dump &lt;----*
+<br>000000000012a774  6a 9e 12 10 00 00 00 00 - 80 9a ea 40 84 a8 12 00  j..........@....
+<br>000000000012a784  c4 a8 12 00 2c a9 12 00 - a9 6b d1 00 0f 00 00 00  ....,....k......
+<br>000000000012a794  b8 a9 12 00 65 bb df 00 - 78 01 d1 00 f8 aa d1 00  ....e...x.......
+<br>000000000012a7a4  e8 f7 d1 00 d0 fb d1 00 - b8 2c f4 00 00 00 00 00  .........,......
+<br>000000000012a7b4  78 01 d1 00 9b 9a 9a 9a - 9a 9a ea 3f 20 18 18 18  x..........? ...
+<br>000000000012a7c4  18 18 a8 3f 9b 9a 9a 9a - 9a 9a ea 3f 1a 1a 1a 1a  ...?.......?....
+<br>000000000012a7d4  1a 1a ea 3f 19 19 19 19 - 19 19 e9 3f ff 03 00 00  ...?.......?....
+<br>000000000012a7e4  ff 02 00 00 87 00 00 00 - 00 00 00 00 ff ff 00 00  ................
+<br>000000000012a7f4  10 00 00 00 28 fc d1 00 - f4 0d 8d a5 e8 e4 1f 67  ....(..........g
+<br>000000000012a804  c0 2c f4 00 7c 00 00 00 - 00 60 73 40 00 00 00 00  .,..|....`s@....
+<br>000000000012a814  00 c0 6c 40 05 00 00 00 - 04 00 00 00 03 00 00 00  ..l@............
+<br>000000000012a824  34 a8 12 00 20 91 d1 00 - b8 00 91 7c 60 f5 d1 00  4... ......|`...
+<br>000000000012a834  00 a9 12 00 41 00 91 7c - 00 00 00 00 4b a8 12 10  ....A..|....K...
+<br>000000000012a844  54 a8 12 00 f0 92 d1 00 - 50 6a d1 00 00 00 00 00  T.......Pj......
+<br>000000000012a854  20 a6 d1 00 3c f8 d1 00 - 03 00 00 00 ce 28 e1 00   ...&lt;........(..
+<br>000000000012a864  28 02 8d a5 e2 28 e1 00 - c4 a8 12 00 96 00 00 00  (....(..........
+<br>000000000012a874  f0 92 d1 00 00 00 00 00 - 48 a9 12 00 41 00 91 7c  ........H...A..|
+<br>000000000012a884  01 00 00 00 ff ff d4 d4 - d0 d0 c8 c8 00 00 d1 00  ................
+<br>000000000012a894  d4 b9 d1 00 3a 0e 15 67 - 1f 00 8d a5 60 0e 15 67  ....:..g....`..g
+<br>000000000012a8a4  e8 60 d1 00 00 00 00 00 - c0 a8 12 00 29 f8 d1 00  .`..........)...</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16353" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16353">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16353">
+
+			<h3><a href="#p16353"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-2918.html?p=16353#p16353"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Thu Jul 04, 2013 12:03 pm </p>
+
+			
+			
+			<div class="content">"10005600 f20f10442404 movsdx xmm0,qword ptr [esp+0x4] ss:0023:0012a778=40ea9a8000000000"<br>says me it crashed trying to do some SSE operations, <br>you wrote earlier that you have a P3 processor, this is quite old, <br>it is possible that qt5 will not run on your hardware at all.<br><br>Have you tryed the neolaoder befoure 0.35 with qt4?<br>did this one worked?<br><br><br>If that would be the case I would have to release a "legacy" build compiled with an older compiler.....</div>
+
+			
+									
+									<div id="sig16353" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+	
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=171&amp;t=3286">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<input type="submit" name="sort" value="Go" class="button2">
+			</fieldset>
+	</form>
+	<hr>
+
+<div class="action-bar bottom">
+	<div class="buttons">
+		
+			<a href="posting.php-1157.html?mode=reply&amp;f=171&amp;t=3286" class="button icon-button locked-icon" title="This topic is locked, you cannot edit posts or make further replies.">
+			Locked		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-2908.html?f=171&amp;t=3286&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+	
+			<div class="pagination">
+			37 posts
+							<ul>
+		<li class="active"><span>1</span></li>
+			<li><a href="viewtopic.php-1023.html?f=171&amp;t=3286&amp;start=10" role="button">2</a></li>
+			<li><a href="viewtopic.php-1024.html?f=171&amp;t=3286&amp;start=20" role="button">3</a></li>
+			<li><a href="viewtopic.php-1025.html?f=171&amp;t=3286&amp;start=30" role="button">4</a></li>
+			<li class="next"><a href="viewtopic.php-1023.html?f=171&amp;t=3286&amp;start=10" rel="next" role="button">Next</a></li>
+	</ul>
+					</div>
+		<div class="clear"></div>
+</div>
+
+
+	<p class="jumpbox-return"><a href="viewforum.php-6.html?f=171" class="left-box arrow-left" accesskey="r">Return to “Bugs”</a></p>
+
+
+	<div class="dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+		<span title="Jump to" class="dropdown-trigger button dropdown-select">
+			Jump to		</span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																			<li><a href="viewforum.php.html?f=10">News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-1.html?f=11">Board News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-2.html?f=161">NeoLoader Releases</a></li>
+																<li><a href="viewforum.php-3.html?f=169">NeoLoader English</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-4.html?f=180">General/Discussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-5.html?f=170">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-6.html?f=171">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-7.html?f=172">Feature Requests</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-8.html?f=173">Script Development</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-9.html?f=174">Extensions</a></li>
+																<li><a href="viewforum.php-10.html?f=163">NeoLoader German</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-11.html?f=179">Algemeines/Diskussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-12.html?f=164">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-13.html?f=165">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-14.html?f=166">Feature Wünsche</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-15.html?f=167">Script Entwicklung</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-16.html?f=168">Erweiterungen</a></li>
+																<li><a href="viewforum.php-17.html?f=4">Community</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-18.html?f=81">OffTopic</a></li>
+										</ul>
+		</div>
+	</div>
+
+
+	<div class="stat-block online-list">
+		<h3>Who is online</h3>
+		<p>Users browsing this forum: No registered users and 5 guests</p>
+	</div>
+
+			</div>
+
+
+<div id="page-footer">
+	<div class="navbar">
+	<div class="inner">
+
+	<ul id="nav-footer" class="linklist bulletin" role="menubar">
+		<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" data-navbar-reference="index">Board index</a></span>
+					</li>
+		
+				<li class="rightside">All times are <abbr title="UTC+1">UTC+01:00</abbr></li>
+							<li class="small-icon icon-delete-cookies rightside"><a href="ucp.php-3.html?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">Delete all board cookies</a></li>
+									<li class="small-icon icon-team rightside" data-last-responsive="true"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>				<li class="small-icon icon-contact rightside" data-last-responsive="true"><a href="memberlist.php-11.html?mode=contactadmin" role="menuitem">Contact us</a></li>	</ul>
+
+	</div>
+</div>
+
+	<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+	</div>
+	<div id="loading_indicator"></div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close"></a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div class="copyright">
+		Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<script type="text/javascript" src="assets/javascript/jquery.min.js?assets_version=4"></script>
+<script type="text/javascript" src="assets/javascript/core.js?assets_version=4"></script>
+
+
+<script type="text/javascript" src="styles/prosilver/template/forum_fn.js?assets_version=4"></script>
+
+<script type="text/javascript" src="styles/prosilver/template/ajax.js?assets_version=4"></script>
+
+
+
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

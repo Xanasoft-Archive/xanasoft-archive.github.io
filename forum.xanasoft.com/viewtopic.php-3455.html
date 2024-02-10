@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Sandboxie 5.55.22 and MS Edge</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Sandboxie 5.55.22 and MS Edge</h2>
+		<p><a href="viewtopic.php-1543.html?f=16&amp;t=349">https://forum.xanasoft.com/viewtopic.php?f=16&amp;t=349</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Sandboxie 5.55.22 and MS Edge</h3>
+				<div class="date">Posted: <strong>Fri May 27, 2022 11:06 pm</strong></div>
+				<div class="author">by <strong>chubalz</strong></div>
+				<div class="content">Opening browser with sandbox mode appears white screen only. Chrome and firefox is okey. Only edge.<br>
+<br>
+Windows 11 21H2 22000.708</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Sandboxie 5.55.22 and MS Edge</h3>
+				<div class="date">Posted: <strong>Sat May 28, 2022 9:41 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I am not sure about the details of the issue, it seams MSFT changed something with regard to required privileges to access the GPU but strangely as said more advanced insider builds don't have that issue.<br>
+That said, I found a fix add<br>
+<br>
+PreferExternalManifest=msedge.exe,y<br>
+<br>
+to the affected sandbox, note though that changing advanced options for that box may remove that preset, hence if the issue comes back check the ini section if the option is still there.<br>
+I'll add that hard coded to sbiedll.dll in the next build</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Sandboxie 5.55.22 and MS Edge</h3>
+				<div class="date">Posted: <strong>Mon May 30, 2022 9:28 am</strong></div>
+				<div class="author">by <strong>chubalz</strong></div>
+				<div class="content">Thanks. I dont know where to modify to add PreferExternalManifest=msedge.exe,y ?<br>
+<br>
+ or i will wait for the next build?</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1321 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>0.36a Bugs - Page 2 - NeoLoader Forum</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - NeoLoader Forum" href="feed.php">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="feed-1.php?mode=topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Bugs" href="feed-10.php?f=171">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - 0.36a Bugs" href="feed-216.php?f=171&amp;t=3297">
+	<link rel="canonical" href="viewtopic.php-3251.html?t=3297&amp;start=10">
+
+<!--
+	phpBB style name: prosilver Special Edition
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:      phpBB Limited ( https://www.phpbb.com/ )
+-->
+
+<link href="styles/prosilver/theme/print.css?assets_version=4" rel="stylesheet" media="print" title="printonly">
+
+<link href="styles/prosilver/theme/common.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/links.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/content.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/buttons.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/cp.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/forms.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/colours.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/imageset.css?assets_version=4" rel="stylesheet">
+
+<link href="styles/prosilver_se/theme/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/en/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/responsive.css?assets_version=4" rel="stylesheet" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)">
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=4" rel="stylesheet" />
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner">
+
+			<div id="site-description">
+				<a id="logo" class="logo" href="http://neoloader.com" title="NeoLoader Homepage"><span class="imageset site_logo"></span></a>
+				<h1>NeoLoader Forum</h1>
+				<p>Forum of the NeoLoader P2P Client/Downloader</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+						<div id="search-box" class="search-box search-header">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…">
+					<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+					<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+					
+				</fieldset>
+				</form>
+			</div>
+			
+			</div>
+		</div>
+
+		<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="linklist bulletin" role="menubar">
+
+		<li id="quick-links" class="small-icon responsive-menu dropdown-container" data-skip-responsive="true">
+			<a href="#" class="responsive-menu-link dropdown-trigger">Quick links</a>
+			<div class="dropdown hidden">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																								<li class="small-icon icon-search-unanswered"><a href="search.php-1.html?search_id=unanswered" role="menuitem">Unanswered posts</a></li>
+						<li class="small-icon icon-search-active"><a href="search.php-2.html?search_id=active_topics" role="menuitem">Active topics</a></li>
+						<li class="separator"></li>
+						<li class="small-icon icon-search"><a href="search.php.html" role="menuitem">Search</a></li>
+					
+											<li class="separator"></li>
+												<li class="small-icon icon-team"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li class="small-icon icon-faq" data-skip-responsive="true"><a href="faq.php.html" rel="help" title="Frequently Asked Questions" role="menuitem">FAQ</a></li>
+						
+			<li class="small-icon icon-logout rightside" data-skip-responsive="true"><a href="ucp.php.html?mode=login" title="Login" accesskey="x" role="menuitem">Login</a></li>
+					<li class="small-icon icon-register rightside" data-skip-responsive="true"><a href="ucp.php-1.html?mode=register" role="menuitem">Register</a></li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="linklist navlinks" role="menubar">
+						<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" accesskey="h" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="index">Board index</a></span>
+											<span class="crumb"><a href="viewforum.php-3.html?f=169" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="169">NeoLoader English</a></span>
+															<span class="crumb"><a href="viewforum.php-6.html?f=171" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="171">Bugs</a></span>
+												</li>
+		
+					<li class="rightside responsive-search" style="display: none;"><a href="search.php.html" title="View the advanced search options" role="menuitem">Search</a></li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body">
+		
+		
+<h2 class="topic-title"><a href="viewtopic.php-1065.html?f=171&amp;t=3297&amp;start=10">0.36a Bugs</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+			<a href="posting.php-1166.html?mode=reply&amp;f=171&amp;t=3297" class="button icon-button locked-icon" title="This topic is locked, you cannot edit posts or make further replies.">
+			Locked		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-3252.html?f=171&amp;t=3297&amp;start=10&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…">
+				<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+				<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+				<input type="hidden" name="t" value="3297">
+<input type="hidden" name="sf" value="msgonly">
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			24 posts
+							<ul>
+		<li class="previous"><a href="viewtopic.php-1063.html?f=171&amp;t=3297" rel="prev" role="button">Previous</a></li>
+			<li><a href="viewtopic.php-1063.html?f=171&amp;t=3297" role="button">1</a></li>
+			<li class="active"><span>2</span></li>
+			<li><a href="viewtopic.php-1066.html?f=171&amp;t=3297&amp;start=20" role="button">3</a></li>
+			<li class="next"><a href="viewtopic.php-1066.html?f=171&amp;t=3297&amp;start=20" rel="next" role="button">Next</a></li>
+	</ul>
+					</div>
+	
+</div>
+
+
+			<div id="p16431" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16431">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-14.html?author_id=1087&amp;sr=posts">393</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Apr 16, 2012 2:22 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16431">
+
+			<h3 class="first"><a href="#p16431"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3253.html?p=16431#p16431"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a></strong> &raquo; </span>Sat Jul 13, 2013 5:55 pm </p>
+
+			
+			
+			<div class="content">"Neoloader Windows (x64)"can search by Neo Kad .<br>But "Neoloader Windows"can not search by Neo Kad .</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16432" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16432">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16432">
+
+			<h3><a href="#p16432"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3254.html?p=16432#p16432"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Sat Jul 13, 2013 7:08 pm </p>
+
+			
+			
+			<div class="content">yes its clear, though it does not seem to be rrelated to the count, i tryed 4 torrents with no crash, 
+<br>there is probably a bug with a rare condition that simply is the more likely the more torrents are added.</div>
+
+			
+									
+									<div id="sig16432" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16433" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16433">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16433">
+
+			<h3><a href="#p16433"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3255.html?p=16433#p16433"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Sat Jul 13, 2013 7:09 pm </p>
+
+			
+			
+			<div class="content"><blockquote><div><cite>enOehTsIsihT wrote:</cite>"Neoloader Windows (x64)"can search by Neo Kad .<br>But "Neoloader Windows"can not search by Neo Kad .</div></blockquote><br><br>the yesturday released version head a connect bug with neo kad it should now be fixed</div>
+
+			
+									
+									<div id="sig16433" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16434" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16434">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-14.html?author_id=1087&amp;sr=posts">393</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Apr 16, 2012 2:22 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16434">
+
+			<h3><a href="#p16434"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3256.html?p=16434#p16434"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a></strong> &raquo; </span>Sun Jul 14, 2013 1:31 am </p>
+
+			
+			
+			<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>the yesturday released version head a connect bug with neo kad it should now be fixed</div></blockquote><br><br>"Neoloader Windows"can search by Neo Kad in win7 .<br>But "Neoloader Windows"can not search by Neo Kad in winXP .<br><br>neocore<br><br>08:18:25: Checking for Neo Loader Updates.<br>08:18:21: 7z: Loading Library...<br>08:18:21: 7z: Loaded Successfuly<br>08:18:21: A signed script for !LangDetect.js, has an invalid signature<br>08:18:24: A signed script for serienjunkies.org.js, has an invalid signature<br>08:18:24: A signed script for thepiratebay.se.js, has an invalid signature<br>08:18:25: loaded file list from disk<br>08:18:25: Start local server NeoCore<br>08:18:25: Start remote server on port 20035<br>08:18:25: qrencode library is missing<br>08:18:25: Neo Loader Core initialised<br>08:18:28: Can not listen on TCPv6 Port 6826<br>08:18:28: Can not listen on UDPv6 Port 6826<br>08:18:28: Can not listen on TCPv6 Port 4691<br>08:18:28: Can not listen on UDPv6 Port 4748<br>08:18:29: Neo Loader ist Up To Date<br>08:18:35: Starting Module NeoKad<br>08:18:37: Starting Module MuleKad<br>08:18:40: Connecting NeoKad<br>08:18:42: Connecting emule kademlia<br>08:19:34: Couldnt start Search: Neo Kad Not Connected<br>08:23:26: saved file list to disk<br>08:25:34: Couldnt start Search: Neo Kad Not Connected<br><br><br>NeoKAD<br><br><br><br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10691<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10692<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10693<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10694<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10695<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10696<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10697<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10698<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10699<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10700<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10701<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10702<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10703<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10704<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10705<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10706<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10707<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10708<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10709<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10710<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10711<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10712<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10713<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10714<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10715<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10716<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10717<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10718<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10719<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10720<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10721<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10722<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10723<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10724<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10725<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10726<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10727<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10728<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10729<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10730<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10731<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10732<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10733<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10734<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10735<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10736<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10737<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10738<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10739<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10740<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10741<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10742<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10743<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10744<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10745<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10746<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10747<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10748<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10749<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10750<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10751<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10752<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10753<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10754<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10755<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10756<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10757<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10758<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10759<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10760<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10761<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10762<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10763<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10764<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10765<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10766<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10767<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10768<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10769<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10770<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10771<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10772<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10773<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10774<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10775<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10776<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10777<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10778<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10779<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10780<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10781<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10782<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10783<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10784<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10785<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10786<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10787<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10788<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10789<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10790<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10791<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10792<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10793<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10794<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10795<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10796<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10797<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10798<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10799<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10800<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10801<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10802<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10803<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10804<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10805<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10806<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10807<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10808<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10809<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10810<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10811<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10812<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10813<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10814<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10815<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:39: UTP Socket is listening at port 10816<br>08:18:39: UTP - UDP port bind(0) failed: 2 No such file or directory<br><br>08:18:40: SQLite query "CREATE TABLE entries (id BLOB, path TEXT, data BLOB, pub INTEGER, exp INTEGER, ak BLOB, cid BLOB, UNIQUE(id, path, cid) ON CONFLICT REPLACE)" failed: table entries already exists<br>08:18:40: SQLite query "CREATE INDEX id_index ON entries (id)" failed: index id_index already exists<br>08:18:40: Neo Kad Started</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16435" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16435">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-14.html?author_id=1087&amp;sr=posts">393</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Apr 16, 2012 2:22 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16435">
+
+			<h3><a href="#p16435"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3257.html?p=16435#p16435"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a></strong> &raquo; </span>Sun Jul 14, 2013 2:14 am </p>
+
+			
+			
+			<div class="content">Neoloader dowloads file by torrent.
+<br>
+<br>When log is "failed to load transfer",download speed is xxxB/s.
+<br>
+<br>video
+<br>
+<br>clip0057.7z (128 KB)
+<br><a href="https://mega.co.nz/#!Uo1SkCKS!UMhsQ3oL_oW3w8P1SmTnwzbuCmh9ir69_IcbT1mN86Q" class="postlink">https://mega.co.nz/#!Uo1SkCKS!UMhsQ3oL_oW3w8P1SmTnwzbuCmh9ir69_IcbT1mN86Q</a></div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16436" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16436">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16436">
+
+			<h3><a href="#p16436"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3258.html?p=16436#p16436"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Sun Jul 14, 2013 10:24 am </p>
+
+			
+			
+			<div class="content">shit... the fix needed a second fix.<br><br>Sorry for the inconvenience now NeoKad should really work (I hope)</div>
+
+			
+									
+									<div id="sig16436" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16437" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16437">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-14.html?author_id=1087&amp;sr=posts">393</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Apr 16, 2012 2:22 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16437">
+
+			<h3><a href="#p16437"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3259.html?p=16437#p16437"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a></strong> &raquo; </span>Sun Jul 14, 2013 10:44 am </p>
+
+			
+			
+			<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>shit... the fix needed a second fix.<br><br>Sorry for the inconvenience now NeoKad should really work (I hope)</div></blockquote>
+<br>
+<br>The bug is still exist in win xp
+<br>
+<br>
+<br>neocore
+<br>
+<br>17:34:18: Checking for Neo Loader Updates.
+<br>17:34:14: 7z: Loading Library...
+<br>17:34:14: 7z: Loaded Successfuly
+<br>17:34:14: A signed script for !LangDetect.js, has an invalid signature
+<br>17:34:17: A signed script for serienjunkies.org.js, has an invalid signature
+<br>17:34:17: A signed script for thepiratebay.se.js, has an invalid signature
+<br>17:34:18: loaded file list from disk
+<br>17:34:18: Start local server NeoCore
+<br>17:34:18: Start remote server on port 20035
+<br>17:34:18: qrencode library is missing
+<br>17:34:18: Neo Loader Core initialised
+<br>17:34:21: Can not listen on TCPv6 Port 6838
+<br>17:34:21: Can not listen on UDPv6 Port 6838
+<br>17:34:21: Can not listen on TCPv6 Port 4651
+<br>17:34:21: Can not listen on UDPv6 Port 4712
+<br>17:34:23: Neo Loader ist Up To Date
+<br>17:34:28: Starting Module NeoKad
+<br>17:34:30: Starting Module MuleKad
+<br>17:34:34: Connecting NeoKad
+<br>17:34:35: Connecting emule kademlia
+<br>17:34:43: Couldnt start Search: Internal Error
+<br>17:35:59: Couldnt start Search: Neo Kad Not Connected
+<br>17:36:04: Couldnt start Search: Neo Kad Not Connected
+<br>17:39:09: Couldnt start Search: Neo Kad Not Connected
+<br>17:39:20: saved file list to disk
+<br>
+<br>
+<br>NeoKAD
+<br>
+<br>
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10069
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10070
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10071
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10072
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10073
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10074
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10075
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10076
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10077
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10078
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10079
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10080
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10081
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10082
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10083
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10084
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10085
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10086
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10087
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10088
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10089
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10090
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10091
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10092
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10093
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10094
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10095
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10096
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10097
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10098
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10099
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10100
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10101
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10102
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10103
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10104
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10105
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10106
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10107
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10108
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10109
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10110
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10111
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10112
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10113
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10114
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10115
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10116
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10117
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10118
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10119
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10120
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10121
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10122
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10123
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10124
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10125
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10126
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10127
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10128
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10129
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10130
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10131
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10132
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10133
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10134
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10135
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10136
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10137
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10138
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10139
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10140
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10141
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10142
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10143
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10144
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10145
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10146
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10147
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10148
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10149
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10150
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10151
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10152
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10153
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10154
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10155
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10156
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10157
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10158
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10159
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10160
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10161
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10162
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10163
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10164
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10165
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10166
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10167
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10168
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10169
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10170
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10171
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10172
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10173
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10174
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10175
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10176
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10177
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10178
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10179
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10180
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10181
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10182
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10183
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10184
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10185
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10186
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10187
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10188
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10189
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10190
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10191
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: UTP Socket is listening at port 10192
+<br>17:34:34: UTP - UDP port bind(0) failed: 2 No such file or directory
+<br>
+<br>17:34:34: SQLite query "CREATE TABLE entries (id BLOB, path TEXT, data BLOB, pub INTEGER, exp INTEGER, ak BLOB, cid BLOB, UNIQUE(id, path, cid) ON CONFLICT REPLACE)" failed: table entries already exists
+<br>17:34:34: SQLite query "CREATE INDEX id_index ON entries (id)" failed: index id_index already exists
+<br>17:34:34: Neo Kad Started
+<br>17:34:35: Neo Kad Stopped
+<br>17:34:35: SQLite query "CREATE TABLE entries (id BLOB, path TEXT, data BLOB, pub INTEGER, exp INTEGER, ak BLOB, cid BLOB, UNIQUE(id, path, cid) ON CONFLICT REPLACE)" failed: table entries already exists
+<br>17:34:35: SQLite query "CREATE INDEX id_index ON entries (id)" failed: index id_index already exists
+<br>17:34:35: Neo Kad Started</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16438" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16438">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16438">
+
+			<h3><a href="#p16438"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3260.html?p=16438#p16438"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Sun Jul 14, 2013 11:31 am </p>
+
+			
+			
+			<div class="content">please try again</div>
+
+			
+									
+									<div id="sig16438" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16439" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16439">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-14.html?author_id=1087&amp;sr=posts">393</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Apr 16, 2012 2:22 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16439">
+
+			<h3><a href="#p16439"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3261.html?p=16439#p16439"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a></strong> &raquo; </span>Sun Jul 14, 2013 11:45 am </p>
+
+			
+			
+			<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>please try again</div></blockquote>
+<br>
+<br>The bug is still exist in win xp
+<br>
+<br>neocore
+<br>
+<br>18:38:15: 7z: Loading Library...
+<br>18:38:16: 7z: Loaded Successfuly
+<br>18:38:16: A signed script for !LangDetect.js, has an invalid signature
+<br>18:38:19: A signed script for serienjunkies.org.js, has an invalid signature
+<br>18:38:19: A signed script for thepiratebay.se.js, has an invalid signature
+<br>18:38:19: loaded file list from disk
+<br>18:38:19: Start local server NeoCore
+<br>18:38:19: Start remote server on port 20035
+<br>18:38:19: qrencode library is missing
+<br>18:38:19: Neo Loader Core initialised
+<br>18:38:19: Checking for Neo Loader Updates.
+<br>18:38:24: Neo Loader ist Up To Date
+<br>18:38:29: Starting Module NeoKad
+<br>18:38:31: Starting Module MuleKad
+<br>18:38:35: Connecting NeoKad
+<br>18:38:36: Connecting emule kademlia
+<br>18:38:57: Couldnt start Search: Neo Kad Not Connected
+<br>18:39:14: Couldnt start Search: Neo Kad Not Connected
+<br>18:39:24: Couldnt start Search: Neo Kad Not Connected
+<br>
+<br>
+<br>NeoKAD
+<br>
+<br>
+<br>18:38:30: Start local server 14166801594231962804
+<br>18:38:30: Generated new Private NodeKey
+<br>18:38:30: Neo Kad ID: 1B2CE1FB6333F85523113CA35F079491
+<br>18:38:30: UTP Socket is listening at port 9928
+<br>18:38:35: SQLite query "CREATE TABLE entries (id BLOB, path TEXT, data BLOB, pub INTEGER, exp INTEGER, ak BLOB, cid BLOB, UNIQUE(id, path, cid) ON CONFLICT REPLACE)" failed: table entries already exists
+<br>18:38:35: SQLite query "CREATE INDEX id_index ON entries (id)" failed: index id_index already exists
+<br>18:38:35: Neo Kad Started
+<br>18:38:35: Neo Kad Stopped
+<br>18:38:35: UTP Socket is listening at port 9406
+<br>18:38:35: SQLite query "CREATE TABLE entries (id BLOB, path TEXT, data BLOB, pub INTEGER, exp INTEGER, ak BLOB, cid BLOB, UNIQUE(id, path, cid) ON CONFLICT REPLACE)" failed: table entries already exists
+<br>18:38:35: SQLite query "CREATE INDEX id_index ON entries (id)" failed: index id_index already exists
+<br>18:38:35: Neo Kad Started
+<br>18:38:35: checking address</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p16440" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile16440">
+			<dt class="has-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-14.html?author_id=1087&amp;sr=posts">393</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon Apr 16, 2012 2:22 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content16440">
+
+			<h3><a href="#p16440"></a></h3>
+
+							
+			<p class="author"><a href="viewtopic.php-3262.html?p=16440#p16440"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-4.html?mode=viewprofile&amp;u=1087" class="username">enOehTsIsihT</a></strong> &raquo; </span>Sun Jul 14, 2013 11:59 am </p>
+
+			
+			
+			<div class="content">setup error
+<br>
+<br><div class="inline-attachment">
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=581&mode=view"><img src="./download/file.php?id=581&t=1" class="postimage" alt="setup error3.jpg" title="setup error3.jpg (2.68 KiB) Viewed 6813 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</div>
+<br><div class="inline-attachment">
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=581&mode=view"><img src="./download/file.php?id=581&t=1" class="postimage" alt="setup error3.jpg" title="setup error3.jpg (2.68 KiB) Viewed 6813 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</div>
+<br><div class="inline-attachment">
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=581&mode=view"><img src="./download/file.php?id=581&t=1" class="postimage" alt="setup error3.jpg" title="setup error3.jpg (2.68 KiB) Viewed 6813 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</div>
+<br><div class="inline-attachment">
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=581&mode=view"><img src="./download/file.php?id=581&t=1" class="postimage" alt="setup error3.jpg" title="setup error3.jpg (2.68 KiB) Viewed 6813 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</div>
+<br><div class="inline-attachment">
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=581&mode=view"><img src="./download/file.php?id=581&t=1" class="postimage" alt="setup error3.jpg" title="setup error3.jpg (2.68 KiB) Viewed 6813 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</div></div>
+
+							<dl class="attachbox">
+					<dt>
+						Attachments
+					</dt>
+											<dd>
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=580&mode=view"><img src="./download/file.php?id=580&t=1" class="postimage" alt="setup error4.jpg" title="setup error4.jpg (2.68 KiB) Viewed 6814 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</dd>
+											<dd>
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=582&mode=view"><img src="./download/file.php?id=582&t=1" class="postimage" alt="setup error2.jpg" title="setup error2.jpg (2.67 KiB) Viewed 6813 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</dd>
+											<dd>
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=583&mode=view"><img src="./download/file.php?id=583&t=1" class="postimage" alt="setup error1.jpg" title="setup error1.jpg (2.68 KiB) Viewed 6814 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</dd>
+											<dd>
+	
+				<dl class="thumbnail">
+			<dt><a href="./download/file.php?id=579&mode=view"><img src="./download/file.php?id=579&t=1" class="postimage" alt="setup error.jpg" title="setup error.jpg (2.71 KiB) Viewed 6816 times"></a></dt>
+					</dl>
+		
+
+		
+		
+
+
+		
+		
+	</dd>
+									</dl>
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+	
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=171&amp;t=3297&amp;start=10">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<input type="submit" name="sort" value="Go" class="button2">
+			</fieldset>
+	</form>
+	<hr>
+
+<div class="action-bar bottom">
+	<div class="buttons">
+		
+			<a href="posting.php-1166.html?mode=reply&amp;f=171&amp;t=3297" class="button icon-button locked-icon" title="This topic is locked, you cannot edit posts or make further replies.">
+			Locked		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-3252.html?f=171&amp;t=3297&amp;start=10&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+	
+			<div class="pagination">
+			24 posts
+							<ul>
+		<li class="previous"><a href="viewtopic.php-1063.html?f=171&amp;t=3297" rel="prev" role="button">Previous</a></li>
+			<li><a href="viewtopic.php-1063.html?f=171&amp;t=3297" role="button">1</a></li>
+			<li class="active"><span>2</span></li>
+			<li><a href="viewtopic.php-1066.html?f=171&amp;t=3297&amp;start=20" role="button">3</a></li>
+			<li class="next"><a href="viewtopic.php-1066.html?f=171&amp;t=3297&amp;start=20" rel="next" role="button">Next</a></li>
+	</ul>
+					</div>
+		<div class="clear"></div>
+</div>
+
+
+	<p class="jumpbox-return"><a href="viewforum.php-6.html?f=171" class="left-box arrow-left" accesskey="r">Return to “Bugs”</a></p>
+
+
+	<div class="dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+		<span title="Jump to" class="dropdown-trigger button dropdown-select">
+			Jump to		</span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																			<li><a href="viewforum.php.html?f=10">News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-1.html?f=11">Board News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-2.html?f=161">NeoLoader Releases</a></li>
+																<li><a href="viewforum.php-3.html?f=169">NeoLoader English</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-4.html?f=180">General/Discussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-5.html?f=170">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-6.html?f=171">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-7.html?f=172">Feature Requests</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-8.html?f=173">Script Development</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-9.html?f=174">Extensions</a></li>
+																<li><a href="viewforum.php-10.html?f=163">NeoLoader German</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-11.html?f=179">Algemeines/Diskussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-12.html?f=164">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-13.html?f=165">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-14.html?f=166">Feature Wünsche</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-15.html?f=167">Script Entwicklung</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-16.html?f=168">Erweiterungen</a></li>
+																<li><a href="viewforum.php-17.html?f=4">Community</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-18.html?f=81">OffTopic</a></li>
+										</ul>
+		</div>
+	</div>
+
+
+	<div class="stat-block online-list">
+		<h3>Who is online</h3>
+		<p>Users browsing this forum: No registered users and 3 guests</p>
+	</div>
+
+			</div>
+
+
+<div id="page-footer">
+	<div class="navbar">
+	<div class="inner">
+
+	<ul id="nav-footer" class="linklist bulletin" role="menubar">
+		<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" data-navbar-reference="index">Board index</a></span>
+					</li>
+		
+				<li class="rightside">All times are <abbr title="UTC+1">UTC+01:00</abbr></li>
+							<li class="small-icon icon-delete-cookies rightside"><a href="ucp.php-3.html?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">Delete all board cookies</a></li>
+									<li class="small-icon icon-team rightside" data-last-responsive="true"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>				<li class="small-icon icon-contact rightside" data-last-responsive="true"><a href="memberlist.php-11.html?mode=contactadmin" role="menuitem">Contact us</a></li>	</ul>
+
+	</div>
+</div>
+
+	<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+	</div>
+	<div id="loading_indicator"></div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close"></a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div class="copyright">
+		Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	<img src="cron-1.php?cron_type=cron.task.core.tidy_sessions" width="1" height="1" alt="cron"></div>
+
+<script type="text/javascript" src="assets/javascript/jquery.min.js?assets_version=4"></script>
+<script type="text/javascript" src="assets/javascript/core.js?assets_version=4"></script>
+
+
+<script type="text/javascript" src="styles/prosilver/template/forum_fn.js?assets_version=4"></script>
+
+<script type="text/javascript" src="styles/prosilver/template/ajax.js?assets_version=4"></script>
+
+
+
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

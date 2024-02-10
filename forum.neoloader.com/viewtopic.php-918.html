@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; Ubuntu server 14.04.1 &amp; Neoloader - Page 2</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>Ubuntu server 14.04.1 &amp; Neoloader</h2>
+		<p><a href="viewtopic.php-151.html?f=170&amp;t=6766">http://forum.neoloader.com/viewtopic.php?f=170&amp;t=6766</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>2</strong> of <strong>5</strong></div>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Jan 05, 2015 10:16 pm</strong></div>
+				<div class="author">by <strong>Giovannino</strong></div>
+				<div class="content">Ok... the installation went fine but 2 seconds after the configuration wizard NeoLoader had a crash.
+<br>
+<br>dmesg report:
+<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>&#91; 2229.087291&#93; QXcbEventReader&#91;1700&#93;: segfault at 7fb5089e3fc9 ip 00007fb5089e3fc9 sp 00007fb507bdeea0 error 14 in libXdmcp.so.6.0.0&#91;7fb508cc3000+5000&#93;</code></div><br><br>uname -a:<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>Linux server 3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt2-1 (2014-12-08) x86_64 GNU/Linux</code></div>
+<br>
+<br>anyway I started NeoLoader with the -daemon option and it is working!
+<br><a href="http://postimg.org/image/g6xrnvyrt/" class="postlink">[img=http://s28.postimg.org/g6xrnvyrt/Schermata.jpg]</a>
+<br>
+<br>Now I'll leave NeoLoader running to see if crashes
+<br>
+<br>David I have a dumb question: I wasn't able to pause or stop the download... only to "kill" it.. Is still the red wine in me?
+<br>(Personally I hate the Android/ios style of the webserver... but I'm an @sshole! ;-))</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Jan 05, 2015 11:58 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">The problem of the WebUI is that is really too much simplified...<br><br><span style="font-size: 75%; line-height: normal">... se domani riesco a fare il partizionamento manuale sul mio laptop ed installare Ubuntu-MATE o Mint in dual-boot con Windows 7 <span style="text-decoration: underline">senza bestemmiare</span> mi unisco a voi.</span><br><br>A linux newbie question, running neo inside the terminal of a desktop edition distro is the same of running it into a server edition distro?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Jan 06, 2015 7:43 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">When you clock on the file in the web view you get to a page where you have 4 buttons start pause stop and delete,<br>you should be able to use the stop button there.<br><br><br>&gt;A linux newbie question, running neo inside the terminal of a desktop edition distro is the same of running it into a server edition distro?<br>its simmilar but not identical as you have different libs available</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Jan 06, 2015 2:41 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">After a lot of troubles (fixparts, grub hiddet at 0 sec etc.) I have a dual-boot with Ubuntu-MATE.<br><br>First of all I may try to install neoloader normally this evening, as any other desktop user may want to, and then try to run on terminal and/or connect the UI remotely. <br><br>Another newbie question about Linux, you may help me... how can I disable mouse accelleration? I already googled it but under the folder "X11" I don't have any xorg.conf file...<br>... using xinput command I reduced the sensitivity because is really too high but mouse accelleration is still there and I find it really annoying.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Jan 06, 2015 3:31 pm</strong></div>
+				<div class="author">by <strong>The supreme</strong></div>
+				<div class="content">Hi David,  NeoLoader started!! <img class="smilies" src="./images/smilies/beer.gif" alt=":bier" title="bier">
+<br>Yes I use 64bit
+<br>From webGUI I can connect without problem but no from Neoloader GUI, in connection manager I put server ip (remote host), 20035 (remote port) and * (password), but when click on connect nothing happens.
+<br>Do I something wrong?
+<br>I checked in ini file and port and password is good!
+<br>
+<br>@Giovannino
+<br>Ps. the permission 777 was just a test then I put everything back as the original
+<br>
+<br>EDIT
+<br>I strated by -core and by -daemon no crash problem
+<br>
+<br>EDIT2
+<br>I forgot: if I want to close neoloader (for example for restart server) how I can close it? just kill process?? (I don't like kill, I'm peace man:36_11_6 <img class="smilies" src="./images/smilies/smile.png" alt=":)" title=":)"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Jan 06, 2015 4:41 pm</strong></div>
+				<div class="author">by <strong>Giovannino</strong></div>
+				<div class="content"><blockquote><div><cite>Neo26 wrote:</cite>The problem of the WebUI is that is really too much simplified...<br><br><span style="font-size: 75%; line-height: normal">... se domani riesco a fare il partizionamento manuale sul mio laptop ed installare Ubuntu-MATE o Mint in dual-boot con Windows 7 <span style="text-decoration: underline">senza bestemmiare</span> mi unisco a voi.</span><br><br>A linux newbie question, running neo inside the terminal of a desktop edition distro is the same of running it into a server edition distro?</div></blockquote><br>I agree about the webui... but I think it is only the beginning and we can't complain about it! ;-)<br>You don't need to create a multi boot environment... just install VirtualBox inside your main W7 installation and create a Linux VM.<br>The main difference between a desktop edition and a server disto is the presence of a desktop manager. The kernel is the same (even for Debian, CentOS and afik all the others)<br><br><br><blockquote><div><cite>DavidXanatos wrote:</cite>When you clock on the file in the web view you get to a page where you have 4 buttons start pause stop and delete,<br>you should be able to use the stop button there.<br></div></blockquote><br>It wasn't the wine... the buttons don't work, only the cancel one.<br><br><blockquote><div><cite>Neo26 wrote:</cite>After a lot of troubles (fixparts, grub hiddet at 0 sec etc.) I have a dual-boot with Ubuntu-MATE.<br><br>First of all I may try to install neoloader normally this evening, as any other desktop user may want to, and then try to run on terminal and/or connect the UI remotely. <br><br>Another newbie question about Linux, you may help me... how can I disable mouse accelleration? I already googled it but under the folder "X11" I don't have any xorg.conf file...<br>... using xinput command I reduced the sensitivity because is really too high but mouse accelleration is still there and I find it really annoying.</div></blockquote><br>xorg.conf isn't necessary if you use the free video drivers (intel, nouveau for nvidia or radeon for ati). What would you like to disable? The video acceleration of the mouse pointer or the speed of the mouse pointer? Maybe I can help you via PM.<br><br><blockquote><div><cite>The supreme wrote:</cite>Hi David,  NeoLoader started!! <img class="smilies" src="./images/smilies/beer.gif" alt=":bier" title="bier"><br>Yes I use 64bit<br>From webGUI I can connect without problem but no from Neoloader GUI, in connection manager I put server ip (remote host), 20035 (remote port) and * (password), but when click on connect nothing happens.<br>Do I something wrong?<br>I checked in ini file and port and password is good!<br><br>@Giovannino<br>Ps. the permission 777 was just a test then I put everything back as the original<br><br>EDIT<br>I strated by -core and by -daemon no crash problem<br><br>EDIT2<br>I forgot: if I want to close neoloader (for example for restart server) how I can close it? just kill process?? (I don't like kill, I'm peace man:36_11_6 <img class="smilies" src="./images/smilies/smile.png" alt=":)" title=":)"> </div></blockquote><br><br>As far I understand till now the only way to close the neoloader deamon is to kill the process... but this isn't a real problem beacuse it is a deamon and it is simple to create a systemd script to start, restart or stop the daemon (if David agrees I can write one).<br>(I wrote about systemd because the maiority of linux distributions are moving to systemd)<br><br>Cheers and beers!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Jan 06, 2015 9:38 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">@The supreme<br>sounds right what you are doing it should connect after you pressed connect,<br>you started the GUI with the command line option -gui ?<br><br>to shutdown neo use for example the browser<br><a href="http://serverip:1600/Console/?Command=Shutdown" class="postlink">http://serverip:1600/Console/?Command=Shutdown</a><br><br><br><br>@Giovannino<br>&gt;It wasn't the wine... the buttons don't work, only the cancel one.<br>hmm... ok i will check that<br><br>about run a read daemon/service we will have to look into that the shutdown may not work as expected, there ware some features added for that long time ago but after a few years of no one using it it might got broken with some other update and need fixing</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Jan 07, 2015 1:30 pm</strong></div>
+				<div class="author">by <strong>The supreme</strong></div>
+				<div class="content">No David, I press connect, but the button turns gray with written connecting, but after 2/3 second turn back and is not connected
+<br>I start gui from another pc on windows
+<br>
+<br><a href="http://serverip:1600/Console/?Command=Shutdown" class="postlink">http://serverip:1600/Console/?Command=Shutdown</a> it's good, I tried and it works <img class="smilies" src="./images/smilies/36_1_11.gif" alt=":36_1_11:" title="36 1 11"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Jan 07, 2015 3:40 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">I hope you can still help with more tests to make the remote UI (not WebUI) working too...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Jan 07, 2015 5:29 pm</strong></div>
+				<div class="author">by <strong>The supreme</strong></div>
+				<div class="content"><blockquote><div><cite>Neo26 wrote:</cite>I hope you can still help with more tests to make the remote UI (not WebUI) working too...</div></blockquote>
+<br>
+<br>I tried a lot of time, but remote UI dosen't connect, I don't know how I can connect, I have just 3 parameters to set, but simply don't work; with webUI all is good</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>2</strong> of <strong>5</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

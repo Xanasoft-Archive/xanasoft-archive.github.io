@@ -1,0 +1,810 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Sandboxie &amp; the modern 'Adguard Browser Assistant' compatibility issue - xanasoft.com</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - xanasoft.com" href="/feed">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed/topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Feature Requests" href="/feed/forum/15">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - Sandboxie &amp; the modern 'Adguard Browser Assistant' compatibility issue" href="/feed/topic/394">	
+	<link rel="canonical" href="viewtopic.php-1426.html?t=394">
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<link href="assets/css/font-awesome.min.css?assets_version=3" rel="stylesheet">
+<link href="styles/prosilver/theme/stylesheet.css?assets_version=3" rel="stylesheet">
+<link href="styles/prosilver/theme/en/stylesheet.css?assets_version=3" rel="stylesheet">
+
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=3" rel="stylesheet">
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar" role="banner">
+					<div class="inner">
+
+			<div id="site-description" class="site-description">
+		<a id="logo" class="logo" href="index.php.html" title="Board index">
+					<span class="site_logo"></span>
+				</a>
+				<h1>xanasoft.com</h1>
+				<p>Xanasoft support forum</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+									<div id="search-box" class="search-box search-header" role="search">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…">
+					<button class="button button-search" type="submit" title="Search">
+						<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+					</button>
+					<a href="search.php.html" class="button button-search-end" title="Advanced search">
+						<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+					</a>
+					
+				</fieldset>
+				</form>
+			</div>
+						
+			</div>
+					</div>
+				<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="nav-main linklist" role="menubar">
+
+		<li id="quick-links" class="quick-links dropdown-container responsive-menu" data-skip-responsive="true">
+			<a href="#" class="dropdown-trigger">
+				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>Quick links</span>
+			</a>
+			<div class="dropdown">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																									<li>
+								<a href="search.php-1.html?search_id=unanswered" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>Unanswered topics</span>
+								</a>
+							</li>
+							<li>
+								<a href="search.php-2.html?search_id=active_topics" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>Active topics</span>
+								</a>
+							</li>
+							<li class="separator"></li>
+							<li>
+								<a href="search.php.html" role="menuitem">
+									<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>Search</span>
+								</a>
+							</li>
+					
+										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li data-skip-responsive="true">
+			<a href="/help/faq" rel="help" title="Frequently Asked Questions" role="menuitem">
+				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>FAQ</span>
+			</a>
+		</li>
+						
+			<li class="rightside" data-skip-responsive="true">
+			<a href="ucp.php-5633.html?mode=login&amp;redirect=viewtopic.php%3Ff%3D15%26p%3D1516%26t%3D394" title="Login" accesskey="x" role="menuitem">
+				<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>Login</span>
+			</a>
+		</li>
+					<li class="rightside" data-skip-responsive="true">
+				<a href="ucp.php-1.html?mode=register" role="menuitem">
+					<i class="icon fa-pencil-square-o  fa-fw" aria-hidden="true"></i><span>Register</span>
+				</a>
+			</li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
+								<li class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+										<span class="crumb" itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope=""><a href="index.php.html" itemtype="https://schema.org/Thing" itemscope="" itemprop="item" accesskey="h" data-navbar-reference="index"><i class="icon fa-home fa-fw"></i><span itemprop="name">Board index</span></a><meta itemprop="position" content="1"></span>
+
+																			<span class="crumb" itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope="" data-forum-id="4"><a href="viewforum.php-4.html?f=4" itemtype="https://schema.org/Thing" itemscope="" itemprop="item"><span itemprop="name">Sandboxie+</span></a><meta itemprop="position" content="2"></span>
+																							<span class="crumb" itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope="" data-forum-id="15"><a href="viewforum.php-8.html?f=15" itemtype="https://schema.org/Thing" itemscope="" itemprop="item"><span itemprop="name">Feature Requests</span></a><meta itemprop="position" content="3"></span>
+												</li>
+		
+					<li class="rightside responsive-search">
+				<a href="search.php.html" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body" class="page-body" role="main">
+		
+		
+<h2 class="topic-title"><a href="viewtopic.php-249.html?f=15&amp;t=394">Sandboxie &amp; the modern 'Adguard Browser Assistant' compatibility issue</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+
+
+
+<div class="action-bar bar-top">
+	
+			<a href="posting.php-439.html?mode=reply&amp;f=15&amp;t=394" class="button" title="Post a reply">
+							<span>Post Reply</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
+					</a>
+	
+			<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="viewtopic.php-1427.html?f=15&amp;t=394&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+	
+			<div class="search-box" role="search">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…">
+				<button class="button button-search" type="submit" title="Search">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</button>
+				<a href="search.php.html" class="button button-search-end" title="Advanced search">
+					<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+				</a>
+				<input type="hidden" name="t" value="394">
+<input type="hidden" name="sf" value="msgonly">
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			6 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+		</div>
+
+
+
+
+			<div id="p828" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile828">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-15.html?mode=viewprofile&amp;u=616" class="username">Bros</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-25.html?author_id=616&amp;sr=posts">9</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon May 02, 2022 5:24 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content828">
+
+						<h3 class="first"><a href="viewtopic.php-1428.html?p=828#p828">Sandboxie &amp; the modern 'Adguard Browser Assistant' compatibility issue</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-440.html?mode=quote&amp;f=15&amp;p=828" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-1428.html?p=828#p828" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-15.html?mode=viewprofile&amp;u=616" class="username">Bros</a></strong> &raquo; </span><time datetime="2022-07-06T22:28:05+00:00">Wed Jul 06, 2022 10:28 pm</time>
+			</p>
+			
+			
+			
+			<div class="content"><strong class="text-strong">Adguard for Windows</strong> software release somewhere at August 2020, a brand new modern <strong class="text-strong">Adguard Browser Assistant</strong>.<br>
+From then it is available for download and installation as extension for mainstream Web browsers, such as for Mozilla Firefox:<br>
+<br>
+<a href="https://addons.mozilla.org/en-US/firefox/addon/adguard-browser-assistant/" class="postlink">https://addons.mozilla.org/en-US/firefo ... ssistant/ </a><br>
+<br>
+On the other word, you can just open your installed <strong class="text-strong">Adguard for Windows</strong> software on your computer -&gt; <strong class="text-strong">Settings</strong> -&gt; <strong class="text-strong">Browser Assistant</strong>: and press "<strong class="text-strong">Get the extension</strong>" green color online button here, and you will instantly have an option to install a modern <strong class="text-strong">Adguard Browser Assistant</strong> for your appropriate (default) Web browser...<br>
+<br>
+Adguard corp. create that modern <strong class="text-strong">Adguard Browser Assistant</strong>, because it is a more stable and have more options than the old <strong class="text-strong">Adguard Legacy (non-browser extension version) Assistant</strong>, which you can also find in that same <strong class="text-strong">Adguard for Windows</strong> software -&gt; <strong class="text-strong">Settings</strong> -&gt; <strong class="text-strong">Browser Assistant</strong> page...<br>
+<br>
+<br>
+<br>
+Somewhere at that same time 2020, <strong class="text-strong">Sandboxie</strong> software was in the middle of the crossover process from Sophos corp., also the previous Sandboxie forum run by Sophos was just in shut down process..., so asking about the new Sandboxie Feature (or a bug fix) request in that crowdy situation, was not so much of a priority.<br>
+<br>
+<br>
+<br>
+Now I am asking for help on <strong class="text-strong">Sandboxie</strong> new Feature request, that it can finally support a modern <strong class="text-strong">Adguard Browser Assistant</strong>, if it is in any way possible technically to do it, maybe also with parallel support with the official Adguard team, I do not know...<br>
+<br>
+In the meantime, for last two years, <strong class="text-strong">Sandboxie</strong> software still works with the old <strong class="text-strong">Adguard Legacy (non-browser extension version) Assistant</strong>, but the future of it is blurry, especially in a light that it already passes two years, and Adguard corp. can redraw and simply shut down the old <strong class="text-strong">Adguard Legacy (non-browser extension version) Assistant</strong> at any moment.<br>
+After all, the modern <strong class="text-strong">Adguard Browser Assistant</strong> is on the market for 2 years already, totally enough time for various compatibility issues settlement with other software on the market and with the modern <strong class="text-strong">Adguard Browser Assistant</strong> here...<br>
+Besides that, the modern <strong class="text-strong">Adguard Browser Assistant</strong> is a more stable and have more options than the old <strong class="text-strong">Adguard Legacy (non-browser extension version) Assistant</strong>, and in the future, this will bring just even more and more of the gaps here...<br>
+<br>
+<br>
+All in all, I also believe that <strong class="text-strong">IT Security</strong> and <strong class="text-strong">Privacy</strong> need to always join forces together. <br>
+Some really good <strong class="text-strong">VPN</strong> service and the <strong class="text-strong">Adguard</strong> software, are so precious today considering the Privacy..., same as <strong class="text-strong">Sandboxie</strong> software and our <strong class="text-strong">AV</strong> software, are so precious in the IT Security manner... We simply need all 4 of them, as a basic protection today...<br>
+<br>
+So, if you can, please make <strong class="text-strong">Sandboxie</strong> software and the <strong class="text-strong">Adguard</strong> software more compatible again, and that they better and up-to-date back coexist together.<br>
+<br>
+<br>
+Thank you in advance and best regards!</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p857" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile857">
+			<dt class="no-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-8.html?mode=viewprofile&amp;u=49" class="avatar"><img class="avatar" src="download/file-1.php?avatar=49_1641977773.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-8.html?mode=viewprofile&amp;u=49" class="username">DavidXanatos</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-8.html?author_id=49&amp;sr=posts">339</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Mar 19, 2021 11:26 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content857">
+
+						<h3><a href="viewtopic.php-1429.html?p=857#p857">Re: Sandboxie &amp; the modern 'Adguard Browser Assistant' compatibility issue</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-441.html?mode=quote&amp;f=15&amp;p=857" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-1429.html?p=857#p857" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-8.html?mode=viewprofile&amp;u=49" class="username">DavidXanatos</a></strong> &raquo; </span><time datetime="2022-07-24T11:21:02+00:00">Sun Jul 24, 2022 11:21 am</time>
+			</p>
+			
+			
+			
+			<div class="content">what issues do you have when trying to run it under sandboxie, the modern extension frameworks are so limited that I'm surprized there are issues when runnign sandboxed</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p863" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile863">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-15.html?mode=viewprofile&amp;u=616" class="username">Bros</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-25.html?author_id=616&amp;sr=posts">9</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon May 02, 2022 5:24 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content863">
+
+						<h3><a href="viewtopic.php-1430.html?p=863#p863">Re: Sandboxie &amp; the modern 'Adguard Browser Assistant' compatibility issue</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-442.html?mode=quote&amp;f=15&amp;p=863" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-1430.html?p=863#p863" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-15.html?mode=viewprofile&amp;u=616" class="username">Bros</a></strong> &raquo; </span><time datetime="2022-07-30T08:05:07+00:00">Sat Jul 30, 2022 8:05 am</time>
+			</p>
+			
+			
+			
+			<div class="content">The issue is, that the new modern <strong class="text-strong">Adguard Browser Assistant</strong> extension in <span style="text-decoration:underline">sandboxed</span> <strong class="text-strong">Mozilla Firefox</strong> Web browser for e.g., cannot even see for last 2 years, the connection with its own <strong class="text-strong">AdGuard for Windows</strong> installed application on the PC which sitting in the Tray, and they need to be both connected under the hood (the AdGuard for Windows software + AdGuard Browser Assistant extension), to function properly! <img class="smilies" src="images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"><br>
+<br>
+So, I was thinking here that Sandboxie need to "un-sandbox" somehow this AdGuard Browser Assistant extension totally, as an "exclusion rule" all here (and set this exclusion as a new optional Sandboxie setting that we can apply, if someone has also an AdGuard for Windows application on their PC...)<br>
+<br>
+... Or to do all this, by joint Sandboxie operation with official AdGuard software team, because fixing this is on mutual interest of both, including the users like me, that use this both great pieces of the software in the first place..., and perhaps it is impossible to fix this serious problem, if not in join forces all here, I do not know.<br>
+<br>
+I only know that one day AdGuard for Windows application will completely shut down their old <strong class="text-strong">AdGuard legacy assistant</strong> that still bearably and somehow function even last two years and even now..., and from that moment, all the AdGuard for Windows application users will be in so serious problem - to use the AdGuard for Windows application only on their PC, or to use the Sandboxie application on their PC only, because you cannot use them together on the same PC. <img class="smilies" src="images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"></div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p1408" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1408">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-15.html?mode=viewprofile&amp;u=616" class="username">Bros</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-25.html?author_id=616&amp;sr=posts">9</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon May 02, 2022 5:24 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1408">
+
+						<h3><a href="viewtopic.php-1431.html?p=1408#p1408">Re: Sandboxie &amp; the modern 'Adguard Browser Assistant' compatibility issue</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-443.html?mode=quote&amp;f=15&amp;p=1408" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-1431.html?p=1408#p1408" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-15.html?mode=viewprofile&amp;u=616" class="username">Bros</a></strong> &raquo; </span><time datetime="2023-07-16T19:55:06+00:00">Sun Jul 16, 2023 7:55 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">I do not want to sound ungrateful or inpatient in any way here, of course...<br>
+<br>
+But, since it already pass a one whole year from my initial reporting of this problem here,<br>
+I am just asking now, is there perhaps any more advances on this above mentioned problem to be fix?<br>
+<br>
+Or, is there any way that I can even additionally and technically help that this problem will be again successfully fix?<br>
+<br>
+<br>
+<br>
+Once more thank you in advance for all the help and best regards!</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p1516" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1516">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-34.html?mode=viewprofile&amp;u=1159" class="username">offhub</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-51.html?author_id=1159&amp;sr=posts">5</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Tue Sep 05, 2023 9:29 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1516">
+
+						<h3><a href="viewtopic.php-1432.html?p=1516#p1516">Re: Sandboxie &amp; the modern 'Adguard Browser Assistant' compatibility issue</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-444.html?mode=quote&amp;f=15&amp;p=1516" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-1432.html?p=1516#p1516" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-34.html?mode=viewprofile&amp;u=1159" class="username">offhub</a></strong> &raquo; </span><time datetime="2023-09-05T21:35:55+00:00">Tue Sep 05, 2023 9:35 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">Try these:<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>OpenIpcPath=Adguard.BrowserExtensionHost.exe,*\BaseNamedObjects*\Adguard*
+OpenIpcPath=Adguard.BrowserExtensionHost.exe,*\BaseNamedObjects*\net.pipe:*bmV0LnBpcGU6Ly8rL0FER1VBUkRBUElFTkRQ*
+OpenFilePath=Adguard.BrowserExtensionHost.exe,\Device\NamedPipe\*-*-*-*-*</code></pre></div></div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p1543" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1543">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-15.html?mode=viewprofile&amp;u=616" class="username">Bros</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-25.html?author_id=616&amp;sr=posts">9</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Mon May 02, 2022 5:24 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1543">
+
+						<h3><a href="viewtopic.php-1433.html?p=1543#p1543">Re: Sandboxie &amp; the modern 'Adguard Browser Assistant' compatibility issue</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-445.html?mode=quote&amp;f=15&amp;p=1543" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-1433.html?p=1543#p1543" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-15.html?mode=viewprofile&amp;u=616" class="username">Bros</a></strong> &raquo; </span><time datetime="2023-09-16T03:42:32+00:00">Sat Sep 16, 2023 3:42 am</time>
+			</p>
+			
+			
+			
+			<div class="content"><strong class="text-strong">@offhub:</strong> I apologize for waiting for my Replay for more then 10 days here, but after so many time here waiting for any kind of Replay, I was not so much in a feeling and hope for any Replay at all and in a long run... <img class="smilies" src="images/smilies/icon_e_smile.gif" width="15" height="17" alt=":)" title="Smile"><br>
+<br>
+Well, I can confirm that after I copy and paste your text code at the end of <strong class="text-strong">Sandboxie</strong> -&gt; <strong class="text-strong">Configure</strong> -&gt; <strong class="text-strong">Edit Configuration</strong> file, the modern <strong class="text-strong">AdGuard Browser Assistant </strong>start to miraculously works in my sandboxed <strong class="text-strong">Mozilla Firefox</strong> web browser, very great thanks for helping me out!  <img class="smilies" src="images/smilies/icon_e_biggrin.gif" width="15" height="17" alt=":D" title="Very Happy"> <br>
+<br>
+And not only that, now the whole new <strong class="text-strong">AdGuard (Browser Assistant)</strong> entry is present even via <strong class="text-strong">Sandboxie</strong> -&gt; <strong class="text-strong">Configure</strong> -&gt;  <strong class="text-strong">Software Compatibility</strong> list!  <img class="smilies" src="images/smilies/icon_e_biggrin.gif" width="15" height="17" alt=":D" title="Very Happy">  <br>
+<br>
+You able to resolve a very long time issue here, so Congratulate to you!  <img class="smilies" src="images/smilies/icon_e_biggrin.gif" width="15" height="17" alt=":D" title="Very Happy"> <br>
+<br>
+Once more thank you hugely for helping me out, and to the whole others, as my believe is that this will become more and more a widespread solution, since <strong class="text-strong">Sandboxie</strong> is a great for IT Security, same as <strong class="text-strong">AdGuard</strong> for protecting privacy and get rid of so many ads and similar in today's World!<br>
+<br>
+Cheers!  <img class="smilies" src="images/smilies/icon_e_biggrin.gif" width="15" height="17" alt=":D" title="Very Happy"></div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+	
+
+	<div class="action-bar bar-bottom">
+	
+			<a href="posting.php-439.html?mode=reply&amp;f=15&amp;t=394" class="button" title="Post a reply">
+							<span>Post Reply</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
+					</a>
+		
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="viewtopic.php-1427.html?f=15&amp;t=394&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+
+			<form method="post" action="./viewtopic.php?f=15&amp;t=394">
+		<div class="dropdown-container dropdown-container-left dropdown-button-control sort-tools">
+	<span title="Display and sorting options" class="button button-secondary dropdown-trigger dropdown-select">
+		<i class="icon fa-sort-amount-asc fa-fw" aria-hidden="true"></i>
+		<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+	</span>
+	<div class="dropdown hidden">
+		<div class="pointer"><div class="pointer-inner"></div></div>
+		<div class="dropdown-contents">
+			<fieldset class="display-options">
+							<label>Display: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+								<label>Sort by: <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label>
+				<label>Direction: <select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+								<hr class="dashed">
+				<input type="submit" class="button2" name="sort" value="Go">
+						</fieldset>
+		</div>
+	</div>
+</div>
+		</form>
+	
+	
+	
+			<div class="pagination">
+			6 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+	</div>
+
+
+<div class="action-bar actions-jump">
+		<p class="jumpbox-return">
+		<a href="viewforum.php-8.html?f=15" class="left-box arrow-left" accesskey="r">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>Return to “Feature Requests”</span>
+		</a>
+	</p>
+	
+		<div class="jumpbox dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+			<span title="Jump to" class="button button-secondary dropdown-trigger dropdown-select">
+				<span>Jump to</span>
+				<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+			</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																				<li><a href="viewforum.php.html?f=1" class="jumpbox-cat-link"> <span> General</span></a></li>
+																<li><a href="viewforum.php-1.html?f=27" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Announcements</span></a></li>
+																<li><a href="viewforum.php-2.html?f=28" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Forum Discussion</span></a></li>
+																<li><a href="viewforum.php-3.html?f=2" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Off-Topic</span></a></li>
+																<li><a href="viewforum.php-4.html?f=4" class="jumpbox-cat-link"> <span> Sandboxie+</span></a></li>
+																<li><a href="viewforum.php-5.html?f=12" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-6.html?f=13" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-7.html?f=14" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-8.html?f=15" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-9.html?f=16" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+																<li><a href="viewforum.php-10.html?f=3" class="jumpbox-cat-link"> <span> TaskExplorer</span></a></li>
+																<li><a href="viewforum.php-11.html?f=7" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-12.html?f=8" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-13.html?f=9" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-14.html?f=10" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-15.html?f=11" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+																<li><a href="viewforum.php-16.html?f=5" class="jumpbox-cat-link"> <span> DiskCryptor</span></a></li>
+																<li><a href="viewforum.php-17.html?f=17" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-18.html?f=18" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-19.html?f=19" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-20.html?f=20" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-21.html?f=21" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+																<li><a href="viewforum.php-22.html?f=6" class="jumpbox-cat-link"> <span> PrivateWin10</span></a></li>
+																<li><a href="viewforum.php-23.html?f=22" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-24.html?f=23" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-25.html?f=24" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-26.html?f=25" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-27.html?f=26" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+											</ul>
+		</div>
+	</div>
+
+	</div>
+
+
+			</div>
+
+
+<div id="page-footer" class="page-footer" role="contentinfo">
+	<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-footer" class="nav-footer linklist" role="menubar">
+		<li class="breadcrumbs">
+									<span class="crumb"><a href="index.php.html" data-navbar-reference="index"><i class="icon fa-home fa-fw" aria-hidden="true"></i><span>Board index</span></a></span>					</li>
+		
+				<li class="rightside">All times are <span title="UTC">UTC</span></li>
+							<li class="rightside">
+				<a href="ucp.php-2.html?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">
+					<i class="icon fa-trash fa-fw" aria-hidden="true"></i><span>Delete cookies</span>
+				</a>
+			</li>
+																<li class="rightside" data-last-responsive="true">
+				<a href="memberlist.php-11.html?mode=contactadmin" role="menuitem">
+					<i class="icon fa-envelope fa-fw" aria-hidden="true"></i><span>Contact us</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+
+	<div class="copyright">
+				<p class="footer-row">
+			<span class="footer-copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited</span>
+		</p>
+						<p class="footer-row" role="menu">
+			<a class="footer-link" href="ucp.php-3.html?mode=privacy" title="Privacy" role="menuitem">
+				<span class="footer-link-text">Privacy</span>
+			</a>
+			|
+			<a class="footer-link" href="ucp.php-4.html?mode=terms" title="Terms" role="menuitem">
+				<span class="footer-link-text">Terms</span>
+			</a>
+		</p>
+					</div>
+
+	<div id="darkenwrapper" class="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken" class="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	<img src="/cron/cron.task.core.tidy_cache" width="1" height="1" alt="cron"></div>
+
+<script src="assets/javascript/jquery-3.4.1.min.js?assets_version=3"></script>
+<script src="assets/javascript/core.js?assets_version=3"></script>
+
+
+<script>
+(function($) {  // Avoid conflicts with other libraries
+
+'use strict';
+
+	phpbb.addAjaxCallback('reporttosfs', function(data) {
+		if (data.postid !== "undefined") {
+			$('#sfs' + data.postid).hide();
+			phpbb.closeDarkenWrapper(5000);
+		}
+	});
+
+})(jQuery);
+</script>
+<script src="styles/prosilver/template/forum_fn.js?assets_version=3"></script>
+<script src="styles/prosilver/template/ajax.js?assets_version=3"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Sandboxie Plus v0.7.4 (Portable) - Processes breaks out</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Sandboxie Plus v0.7.4 (Portable) - Processes breaks out</h2>
+		<p><a href="viewtopic.php-1250.html?f=14&amp;t=39">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=39</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Sandboxie Plus v0.7.4 (Portable) - Processes breaks out</h3>
+				<div class="date">Posted: <strong>Wed Jun 09, 2021 1:55 pm</strong></div>
+				<div class="author">by <strong>katzenhai2</strong></div>
+				<div class="content">Hello,<br>
+<br>
+I'm using Sandboxie Plus v0.7.4 (Portable) in Windows 10 21H1. The running processes started in Sandboxie can see and communicate with each other and also with the ones on the Host (running outside of Sandboxie). I've enabled the options "Advanced Options / Hide Processes" and also manually included the processes which should not be seen by Sandboxie programs but that didn't help.<br>
+<br>
+I thought the main idea of Sandboxie is to prevent exactly this behaviour!?<br>
+<br>
+E.g. if I install the Mining Software for Chia (see chia.net) the processes it starts in Sandboxie are not secured from other processes outside of Sandboxie. I'm sure there are other programs with this behaviour but I haven't tried them so can't speak about them.<br>
+<br>
+INI-File of Sandboxie:
+<blockquote class="uncited"><div>
+[Test]<br>
+<br>
+Enabled=y<br>
+ConfigLevel=8<br>
+AutoRecover=n<br>
+BlockNetworkFiles=y<br>
+RecoverFolder=%{374DE290-123F-4565-9164-39C4925E467B}%<br>
+RecoverFolder=%Personal%<br>
+RecoverFolder=%Desktop%<br>
+BorderColor=#00ffff,on,6<br>
+Template=SkipHook<br>
+Template=FileCopy<br>
+Template=qWave<br>
+Template=BlockPorts<br>
+Template=LingerPrograms<br>
+Template=Chrome_Phishing_DirectAccess<br>
+Template=Firefox_Phishing_DirectAccess<br>
+Template=AutoRecoverIgnore<br>
+BoxNameTitle=n<br>
+BlockNetParam=y<br>
+DropAdminRights=y<br>
+FakeAdminRights=y<br>
+ClosePrintSpooler=n<br>
+OpenPrintSpooler=n<br>
+AllowSpoolerPrintToFile=n<br>
+CopyLimitKb=81920<br>
+PromptForFileMigration=y<br>
+CopyLimitSilent=n<br>
+NeverDelete=y<br>
+AutoDelete=n<br>
+AllowRawDiskRead=n<br>
+NotifyDirectDiskAccess=n<br>
+HideOtherBoxes=y<br>
+HideHostProcess=daemon.exe<br>
+HideHostProcess=start_timelord.exe<br>
+HideHostProcess=start_harvester.exe<br>
+HideHostProcess=start_full_node.exe<br>
+HideHostProcess=start_farmer.exe<br>
+HideHostProcess=start_introducer.exe<br>
+HideHostProcess=start_wallet.exe<br>
+HideHostProcess=Chia.exe<br>
+PreferExternalManifest=y<br>
+UseSbieWndStation=y<br>
+BlockPassword=n</div></blockquote></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Sandboxie Plus v0.7.4 (Portable) - Processes breaks out</h3>
+				<div class="date">Posted: <strong>Mon Jun 21, 2021 5:39 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Sandboxie only protects processes outside the sand box from processes inside the sandbox,<br>
+not the other way around.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

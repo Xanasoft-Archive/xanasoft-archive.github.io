@@ -1,0 +1,572 @@
+Uri: https://diskcryptor.org/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\index.htm
+Content Type: text/html
+
+Uri: https://diskcryptor.org/benchmark/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\benchmark\index.htm
+Content Type: text/html
+
+Uri: https://diskcryptor.org/bootloader/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\bootloader\index.htm
+Content Type: text/html
+
+Uri: https://diskcryptor.org/comments/feed/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\comments\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://diskcryptor.org/compilation/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\compilation\index.htm
+Content Type: text/html
+
+Uri: https://diskcryptor.org/console/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\console\index.htm
+Content Type: text/html
+
+Uri: https://diskcryptor.org/cryptousagerisks/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\cryptousagerisks\index.htm
+Content Type: text/html
+
+Uri: https://diskcryptor.org/downloads/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\downloads\index.htm
+Content Type: text/html
+
+Uri: https://diskcryptor.org/errors/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\errors\index.htm
+Content Type: text/html
+
+Uri: https://diskcryptor.org/faq/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\faq\index.htm
+Content Type: text/html
+
+Uri: https://diskcryptor.org/feed/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://diskcryptor.org/rng/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\rng\index.htm
+Content Type: text/html
+
+Uri: https://diskcryptor.org/screenshots/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\screenshots\index.htm
+Content Type: text/html
+
+Uri: https://diskcryptor.org/technical-aspects/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\technical-aspects\index.htm
+Content Type: text/html
+
+Uri: https://diskcryptor.org/troubleshooting/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\troubleshooting\index.htm
+Content Type: text/html
+
+Uri: https://diskcryptor.org/tutorials/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\tutorials\index.htm
+Content Type: text/html
+
+Uri: https://diskcryptor.org/volume/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\volume\index.htm
+Content Type: text/html
+
+Uri: https://diskcryptor.org/why-not-bitlocker/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\why-not-bitlocker\index.htm
+Content Type: text/html
+
+Uri: https://diskcryptor.org/wp-admin/css/forms.css?ver=6.3.3
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-admin\css\forms.css
+Content Type: text/css
+
+Uri: https://diskcryptor.org/wp-admin/css/l10n.css?ver=6.3.3
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-admin\css\l10n.css
+Content Type: text/css
+
+Uri: https://diskcryptor.org/wp-admin/css/login.css?ver=6.3.3
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-admin\css\login.css
+Content Type: text/css
+
+Uri: https://diskcryptor.org/wp-admin/images/loading.gif
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-admin\images\loading.gif
+Content Type: image/gif
+
+Uri: https://diskcryptor.org/wp-admin/images/w-logo-blue.png?ver=20131202
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-admin\images\w-logo-blue.png
+Content Type: image/png
+
+Uri: https://diskcryptor.org/wp-admin/images/wordpress-logo.svg?ver=20131107
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-admin\images\wordpress-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://diskcryptor.org/wp-admin/js/password-strength-meter.js?ver=6.3.3
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-admin\js\password-strength-meter.js
+Content Type: application/javascript
+
+Uri: https://diskcryptor.org/wp-admin/js/user-profile.js?ver=6.3.3
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-admin\js\user-profile.js
+Content Type: application/javascript
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/css/blocks.css?ver=20230630
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\css\blocks.css
+Content Type: text/css
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/font-lato.css?ver=20230328
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\font-lato.css
+Content Type: text/css
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-all-300-italic.woff?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-all-300-italic.woff
+Content Type: font/woff
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-all-300-normal.woff?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-all-300-normal.woff
+Content Type: font/woff
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-all-400-italic.woff?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-all-400-italic.woff
+Content Type: font/woff
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-all-400-normal.woff?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-all-400-normal.woff
+Content Type: font/woff
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-all-700-italic.woff?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-all-700-italic.woff
+Content Type: font/woff
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-all-700-normal.woff?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-all-700-normal.woff
+Content Type: font/woff
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-all-900-normal.woff?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-all-900-normal.woff
+Content Type: font/woff
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-300-italic.woff2?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-300-italic.woff2
+Content Type: font/woff2
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-300-normal.woff2?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-300-normal.woff2
+Content Type: font/woff2
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-400-italic.woff2?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-400-italic.woff2
+Content Type: font/woff2
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-400-normal.woff2?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-400-normal.woff2
+Content Type: font/woff2
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-700-italic.woff2?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-700-italic.woff2
+Content Type: font/woff2
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-700-normal.woff2?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-700-normal.woff2
+Content Type: font/woff2
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-900-normal.woff2?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-900-normal.woff2
+Content Type: font/woff2
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-ext-300-italic.woff2?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-ext-300-italic.woff2
+Content Type: font/woff2
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-ext-300-normal.woff2?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-ext-300-normal.woff2
+Content Type: font/woff2
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-ext-400-italic.woff2?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-ext-400-italic.woff2
+Content Type: font/woff2
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-ext-400-normal.woff2?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-ext-400-normal.woff2
+Content Type: font/woff2
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-ext-700-italic.woff2?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-ext-700-italic.woff2
+Content Type: font/woff2
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-ext-700-normal.woff2?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-ext-700-normal.woff2
+Content Type: font/woff2
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/fonts/lato/lato-latin-ext-900-normal.woff2?ver=23
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\fonts\lato\lato-latin-ext-900-normal.woff2
+Content Type: font/woff2
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/genericons/font/genericons-regular-webfont.eot
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\genericons\font\genericons-regular-webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/genericons/font/genericons-regular-webfont.svg
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\genericons\font\genericons-regular-webfont.svg
+Content Type: image/svg+xml
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/genericons/font/genericons-regular-webfont.ttf
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\genericons\font\genericons-regular-webfont.ttf
+Content Type: application/octet-stream
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/genericons/genericons.css?ver=3.0.3
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\genericons\genericons.css
+Content Type: text/css
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/images/pattern-dark.svg
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\images\pattern-dark.svg
+Content Type: image/svg+xml
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/images/pattern-light.svg
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\images\pattern-light.svg
+Content Type: image/svg+xml
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/js/functions.js?ver=20230526
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\js\functions.js
+Content Type: application/javascript
+
+Uri: https://diskcryptor.org/wp-content/themes/twentyfourteen/style.css?ver=20230808
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\themes\twentyfourteen\style.css
+Content Type: text/css
+
+Uri: https://diskcryptor.org/wp-content/uploads/sites/3/2021/03/DCvsTC_Benchmark_2x_Intel_Xeon_E5540.png
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\uploads\sites\3\2021\03\DCvsTC_Benchmark_2x_Intel_Xeon_E5540.png
+Content Type: image/png
+
+Uri: https://diskcryptor.org/wp-content/uploads/sites/3/2021/03/DCvsTC_Benchmark_Core_i5_660.png
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\uploads\sites\3\2021\03\DCvsTC_Benchmark_Core_i5_660.png
+Content Type: image/png
+
+Uri: https://diskcryptor.org/wp-content/uploads/sites/3/2021/03/DCvsTC_Benchmark_Core_i7_2600K.png
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\uploads\sites\3\2021\03\DCvsTC_Benchmark_Core_i7_2600K.png
+Content Type: image/png
+
+Uri: https://diskcryptor.org/wp-content/uploads/sites/3/2021/03/DCvsTC_Benchmark_Core_i7_940.png
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\uploads\sites\3\2021\03\DCvsTC_Benchmark_Core_i7_940.png
+Content Type: image/png
+
+Uri: https://diskcryptor.org/wp-content/uploads/sites/3/2021/03/DCvsTC_Benchmark_Intel_Atom_N450.png
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\uploads\sites\3\2021\03\DCvsTC_Benchmark_Intel_Atom_N450.png
+Content Type: image/png
+
+Uri: https://diskcryptor.org/wp-content/uploads/sites/3/2021/03/DC_scr_about.png
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\uploads\sites\3\2021\03\DC_scr_about.png
+Content Type: image/png
+
+Uri: https://diskcryptor.org/wp-content/uploads/sites/3/2021/03/DC_scr_bootconfig.png
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\uploads\sites\3\2021\03\DC_scr_bootconfig.png
+Content Type: image/png
+
+Uri: https://diskcryptor.org/wp-content/uploads/sites/3/2021/03/DC_scr_CD_encr.png
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\uploads\sites\3\2021\03\DC_scr_CD_encr.png
+Content Type: image/png
+
+Uri: https://diskcryptor.org/wp-content/uploads/sites/3/2021/03/DC_scr_encr.png
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\uploads\sites\3\2021\03\DC_scr_encr.png
+Content Type: image/png
+
+Uri: https://diskcryptor.org/wp-content/uploads/sites/3/2021/03/DC_scr_main.png
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\uploads\sites\3\2021\03\DC_scr_main.png
+Content Type: image/png
+
+Uri: https://diskcryptor.org/wp-content/uploads/sites/3/2021/03/DC_scr_settings.gif
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\uploads\sites\3\2021\03\DC_scr_settings.gif
+Content Type: image/gif
+
+Uri: https://diskcryptor.org/wp-content/uploads/sites/3/2021/03/DiskCryptor_RNG_01.png
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\uploads\sites\3\2021\03\DiskCryptor_RNG_01.png
+Content Type: image/png
+
+Uri: https://diskcryptor.org/wp-content/uploads/sites/3/2021/03/DiskCryptor_RNG_02.png
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\uploads\sites\3\2021\03\DiskCryptor_RNG_02.png
+Content Type: image/png
+
+Uri: https://diskcryptor.org/wp-content/uploads/sites/3/2021/03/DiskCryptor_Volume.png
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-content\uploads\sites\3\2021\03\DiskCryptor_Volume.png
+Content Type: image/png
+
+Uri: https://diskcryptor.org/wp-includes/css/buttons.css?ver=6.3.3
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\css\buttons.css
+Content Type: text/css
+
+Uri: https://diskcryptor.org/wp-includes/css/dashicons.css?ver=6.3.3
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\css\dashicons.css
+Content Type: text/css
+
+Uri: https://diskcryptor.org/wp-includes/css/dist/block-library/style.css?ver=6.3.3
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\css\dist\block-library\style.css
+Content Type: text/css
+
+Uri: https://diskcryptor.org/wp-includes/fonts/dashicons.eot?99ac726223c749443b642ce33df8b800
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\fonts\dashicons.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://diskcryptor.org/wp-includes/fonts/dashicons.ttf?99ac726223c749443b642ce33df8b800
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\fonts\dashicons.ttf
+Content Type: application/octet-stream
+
+Uri: https://diskcryptor.org/wp-includes/js/dist/hooks.js?ver=cb3553927d7ab6049113
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\js\dist\hooks.js
+Content Type: application/javascript
+
+Uri: https://diskcryptor.org/wp-includes/js/dist/i18n.js?ver=28325ce370dfa8a48974
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\js\dist\i18n.js
+Content Type: application/javascript
+
+Uri: https://diskcryptor.org/wp-includes/js/dist/vendor/regenerator-runtime.js?ver=0.13.11
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\js\dist\vendor\regenerator-runtime.js
+Content Type: application/javascript
+
+Uri: https://diskcryptor.org/wp-includes/js/dist/vendor/wp-polyfill-inert.js?ver=3.1.2
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\js\dist\vendor\wp-polyfill-inert.js
+Content Type: application/javascript
+
+Uri: https://diskcryptor.org/wp-includes/js/dist/vendor/wp-polyfill.js?ver=3.15.0
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\js\dist\vendor\wp-polyfill.js
+Content Type: application/javascript
+
+Uri: https://diskcryptor.org/wp-includes/js/imagesloaded.min.js?ver=4.1.4
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\js\imagesloaded.min.js
+Content Type: application/javascript
+
+Uri: https://diskcryptor.org/wp-includes/js/jquery/jquery-migrate.js?ver=3.4.1
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\js\jquery\jquery-migrate.js
+Content Type: application/javascript
+
+Uri: https://diskcryptor.org/wp-includes/js/jquery/jquery.js?ver=3.7.0
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\js\jquery\jquery.js
+Content Type: application/javascript
+
+Uri: https://diskcryptor.org/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\js\jquery\jquery.masonry.min.js
+Content Type: application/javascript
+
+Uri: https://diskcryptor.org/wp-includes/js/masonry.min.js?ver=4.2.2
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\js\masonry.min.js
+Content Type: application/javascript
+
+Uri: https://diskcryptor.org/wp-includes/js/underscore.min.js?ver=1.13.4
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\js\underscore.min.js
+Content Type: application/javascript
+
+Uri: https://diskcryptor.org/wp-includes/js/wp-util.js?ver=6.3.3
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\js\wp-util.js
+Content Type: application/javascript
+
+Uri: https://diskcryptor.org/wp-includes/js/zxcvbn-async.js?ver=1.0
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-includes\js\zxcvbn-async.js
+Content Type: application/javascript
+
+Uri: https://diskcryptor.org/wp-json/
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\index.htm
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2F
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2F&format=xml
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-1
+Content Type: text/xml
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fbenchmark%2F
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-8
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fbenchmark%2F&format=xml
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-9
+Content Type: text/xml
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fbootloader%2F
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-26
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fbootloader%2F&format=xml
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-27
+Content Type: text/xml
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fcompilation%2F
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-30
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fcompilation%2F&format=xml
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-31
+Content Type: text/xml
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fconsole%2F
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-18
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fconsole%2F&format=xml
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-19
+Content Type: text/xml
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fcryptousagerisks%2F
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-6
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fcryptousagerisks%2F&format=xml
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-7
+Content Type: text/xml
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fdownloads%2F
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-10
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fdownloads%2F&format=xml
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-11
+Content Type: text/xml
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Ferrors%2F
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-20
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Ferrors%2F&format=xml
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-21
+Content Type: text/xml
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Ffaq%2F
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-14
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Ffaq%2F&format=xml
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-15
+Content Type: text/xml
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Frng%2F
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-28
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Frng%2F&format=xml
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-29
+Content Type: text/xml
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fscreenshots%2F
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-4
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fscreenshots%2F&format=xml
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-5
+Content Type: text/xml
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Ftechnical-aspects%2F
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-22
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Ftechnical-aspects%2F&format=xml
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-23
+Content Type: text/xml
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Ftroubleshooting%2F
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-16
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Ftroubleshooting%2F&format=xml
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-17
+Content Type: text/xml
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Ftutorials%2F
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-12
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Ftutorials%2F&format=xml
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-13
+Content Type: text/xml
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fvolume%2F
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-24
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fvolume%2F&format=xml
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-25
+Content Type: text/xml
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fwhy-not-bitlocker%2F
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-2
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fdiskcryptor.org%2Fwhy-not-bitlocker%2F&format=xml
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\oembed\1.0\embed-3
+Content Type: text/xml
+
+Uri: https://diskcryptor.org/wp-json/wp/v2/pages/10
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\wp\v2\pages\10
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/wp/v2/pages/116
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\wp\v2\pages\116
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/wp/v2/pages/13
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\wp\v2\pages\13
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/wp/v2/pages/16
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\wp\v2\pages\16
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/wp/v2/pages/18
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\wp\v2\pages\18
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/wp/v2/pages/20
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\wp\v2\pages\20
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/wp/v2/pages/22
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\wp\v2\pages\22
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/wp/v2/pages/24
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\wp\v2\pages\24
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/wp/v2/pages/26
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\wp\v2\pages\26
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/wp/v2/pages/28
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\wp\v2\pages\28
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/wp/v2/pages/30
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\wp\v2\pages\30
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/wp/v2/pages/32
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\wp\v2\pages\32
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/wp/v2/pages/34
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\wp\v2\pages\34
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/wp/v2/pages/36
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\wp\v2\pages\36
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/wp/v2/pages/38
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\wp\v2\pages\38
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-json/wp/v2/pages/53
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-json\wp\v2\pages\53
+Content Type: application/json
+
+Uri: https://diskcryptor.org/wp-login.php
+File Name: C:\Downloaded Web Sites\diskcryptor.org\wp-login.php.html
+Content Type: text/html
+
+Uri: https://diskcryptor.org/xmlrpc.php?rsd
+File Name: C:\Downloaded Web Sites\diskcryptor.org\xmlrpc.php
+Content Type: text/xml
+
+Uri: https://projectbullrun.org/dual-ec/documents/SP800-90revised_March2007.pdf
+File Name: C:\Downloaded Web Sites\diskcryptor.org\dual-ec\documents\SP800-90revised_March2007.pdf
+Content Type: application/pdf
+
+Uri: https://www.cs.auckland.ac.nz/~pgut001/pubs/usenix98.pdf
+File Name: C:\Downloaded Web Sites\diskcryptor.org\~pgut001\pubs\usenix98.pdf
+Content Type: application/pdf
+
+Uri: https://www.paypalobjects.com/en_US/AT/i/btn/btn_donateCC_LG.gif
+File Name: C:\Downloaded Web Sites\diskcryptor.org\en_US\AT\i\btn\btn_donateCC_LG.gif
+Content Type: image/gif
+

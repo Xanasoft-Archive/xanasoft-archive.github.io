@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; How to get malawre trace in sandboxie?</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>How to get malawre trace in sandboxie?</h2>
+		<p><a href="viewtopic.php-2239.html?f=12&amp;t=143">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=143</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Execution Traces Sandboxie</h3>
+				<div class="date">Posted: <strong>Sun Sep 19, 2021 2:26 am</strong></div>
+				<div class="author">by <strong>yohanesray</strong></div>
+				<div class="content">I am using Sandboxie on Windows 10 operating system.<br>
+How do I get Execution Traces from the Host after I run malware, programs, or files in Sandboxie? can I use the API to get it?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>How to get malawre trace in sandboxie?</h3>
+				<div class="date">Posted: <strong>Sun Sep 19, 2021 1:10 pm</strong></div>
+				<div class="author">by <strong>nanababy</strong></div>
+				<div class="content">hello I'm a newbie in malware analysis and trying to get the trace of malware that execution in sandboxie. Is it possible to get it without API? thankyou</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: How to get malawre trace in sandboxie?</h3>
+				<div class="date">Posted: <strong>Mon Sep 20, 2021 6:51 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Are you the same user?<br>
+<br>
+About the question you can use the resource access monitor to trace what a program is doing, you can enable additional tracing in the advanced box options, and you can add the LogAPI dll to get additional trace output about interesting function calls.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: How to get malawre trace in sandboxie?</h3>
+				<div class="date">Posted: <strong>Mon Sep 20, 2021 4:10 pm</strong></div>
+				<div class="author">by <strong>yohanesray</strong></div>
+				<div class="content">Thanks for the reply,<br>
+<br>
+No, we are different users, but we are in one team working on a final project on campus.<br>
+<br>
+Currently, we want to get an execution trace when running the malware. I've tried resource access monitors to keep track of what a program is doing. I'm using Sandboxie classic v5.51.3.<br>
+<br>
+I've read quite a lot about Buster Sandbox Analyzer, so is it true that if I want to add LogAPI dll, I should use BSA <a href="https://bsa.isoftware.nl/" class="postlink">https://bsa.isoftware.nl/</a> ?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: How to get malawre trace in sandboxie?</h3>
+				<div class="date">Posted: <strong>Mon Sep 20, 2021 6:26 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">They use the same DLL but its configured differently the when used with BSA it wil communicate with the BSA tool, if used without with Sbie+ only it will communicate with Sbie+ and log the data to the trace log of plus.<br>
+<br>
+the version I'm using right now is: <a href="https://xanasoft.com/Downloads/LogAPI.zip" class="postlink">https://xanasoft.com/Downloads/LogAPI.zip</a><br>
+I men't for a long time to add it to the normal release, but the code quality is really not great on that DLL and i did not wanted to put it into the repo.<br>
+<br>
+You can also use the log syscall's option from the sbie driver but this causes far to much output, i should add a log to file only option</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: How to get malawre trace in sandboxie?</h3>
+				<div class="date">Posted: <strong>Tue Sep 21, 2021 4:52 am</strong></div>
+				<div class="author">by <strong>yohanesray</strong></div>
+				<div class="content">After configuring in sandboxie.ini to enable dll injection, like this:
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>InjectDll=C:\logAPI\logapi32.dll
+InjectDll64=C:\logAPI\logapi64.dll
+OpenPipePath=\Device\NamedPipe\LogAPI
+</code></pre></div>
+I've also read the documentation on <a href="https://sandboxie-plus.com/sandboxie/openpipepath/" class="postlink">https://sandboxie-plus.com/sandboxie/openpipepath/</a> and <a href="https://github.com/sandboxie-plus/LogApiDll" class="postlink">https://github.com/sandboxie-plus/LogApiDll</a><br>
+However, I'm still confused about the pipe, how do I set up and open the pipe server? Please help.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: How to get malawre trace in sandboxie?</h3>
+				<div class="date">Posted: <strong>Tue Sep 21, 2021 6:46 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">The pipe server is deprecated since a few versions, the new LogAPI Dll logs the entries directly through teh drivers rtace functionality.<br>
+<br>
+Just put the LogAPI directroty in your sandboxies instalation fodler and check the lowest chechbox in the trace settings than it wil make all the nececery ini modifications for you</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: How to get malawre trace in sandboxie?</h3>
+				<div class="date">Posted: <strong>Mon Nov 08, 2021 8:40 am</strong></div>
+				<div class="author">by <strong>yohanesray</strong></div>
+				<div class="content">Hi,<br>
+I'm currently using Sandboxie-Plus, and have read some of the documentation, but I'm still confused.<br>
+Apart from copying through trace logs directly, and getting reports via "C:\Sandbox\IEUser\DefaultBox\user\all\Microsoft\Windows\WER\ReportArchive"<br>
+how to get all reports related to trace logs and others, which have been logged in the folder?<br>
+thank you</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: How to get malawre trace in sandboxie?</h3>
+				<div class="date">Posted: <strong>Sat Nov 13, 2021 12:11 pm</strong></div>
+				<div class="author">by <strong>yohanesray</strong></div>
+				<div class="content">Hello,<br>
+I want to ask, when using the Sandboxie, can we or the Sandboxie directly send the trace to the host computer?<br>
+I mean, is there any trace of its execution that the host can see on specific storage or folder? so that it can be analyzed later? please help, thank you very much</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

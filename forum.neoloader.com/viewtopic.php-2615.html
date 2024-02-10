@@ -1,0 +1,769 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>magnet links, GUI improvements, searching, history - NeoLoader Forum</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - NeoLoader Forum" href="feed.php">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="feed-1.php?mode=topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Support" href="feed-8.php?f=170">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - magnet links, GUI improvements, searching, history" href="feed-78.php?f=170&amp;t=3484">
+	<link rel="canonical" href="viewtopic.php-963.html?t=3484">
+
+<!--
+	phpBB style name: prosilver Special Edition
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:      phpBB Limited ( https://www.phpbb.com/ )
+-->
+
+<link href="styles/prosilver/theme/print.css?assets_version=4" rel="stylesheet" media="print" title="printonly">
+
+<link href="styles/prosilver/theme/common.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/links.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/content.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/buttons.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/cp.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/forms.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/colours.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/imageset.css?assets_version=4" rel="stylesheet">
+
+<link href="styles/prosilver_se/theme/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/en/stylesheet.css?assets_version=4" rel="stylesheet">
+<link href="styles/prosilver/theme/responsive.css?assets_version=4" rel="stylesheet" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)">
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=4" rel="stylesheet" />
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner">
+
+			<div id="site-description">
+				<a id="logo" class="logo" href="http://neoloader.com" title="NeoLoader Homepage"><span class="imageset site_logo"></span></a>
+				<h1>NeoLoader Forum</h1>
+				<p>Forum of the NeoLoader P2P Client/Downloader</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+						<div id="search-box" class="search-box search-header">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…">
+					<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+					<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+					
+				</fieldset>
+				</form>
+			</div>
+			
+			</div>
+		</div>
+
+		<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="linklist bulletin" role="menubar">
+
+		<li id="quick-links" class="small-icon responsive-menu dropdown-container" data-skip-responsive="true">
+			<a href="#" class="responsive-menu-link dropdown-trigger">Quick links</a>
+			<div class="dropdown hidden">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																								<li class="small-icon icon-search-unanswered"><a href="search.php-1.html?search_id=unanswered" role="menuitem">Unanswered posts</a></li>
+						<li class="small-icon icon-search-active"><a href="search.php-2.html?search_id=active_topics" role="menuitem">Active topics</a></li>
+						<li class="separator"></li>
+						<li class="small-icon icon-search"><a href="search.php.html" role="menuitem">Search</a></li>
+					
+											<li class="separator"></li>
+												<li class="small-icon icon-team"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li class="small-icon icon-faq" data-skip-responsive="true"><a href="faq.php.html" rel="help" title="Frequently Asked Questions" role="menuitem">FAQ</a></li>
+						
+			<li class="small-icon icon-logout rightside" data-skip-responsive="true"><a href="ucp.php.html?mode=login" title="Login" accesskey="x" role="menuitem">Login</a></li>
+					<li class="small-icon icon-register rightside" data-skip-responsive="true"><a href="ucp.php-1.html?mode=register" role="menuitem">Register</a></li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="linklist navlinks" role="menubar">
+						<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" accesskey="h" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="index">Board index</a></span>
+											<span class="crumb"><a href="viewforum.php-3.html?f=169" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="169">NeoLoader English</a></span>
+															<span class="crumb"><a href="viewforum.php-5.html?f=170" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="170">Support</a></span>
+												</li>
+		
+					<li class="rightside responsive-search" style="display: none;"><a href="search.php.html" title="View the advanced search options" role="menuitem">Search</a></li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body">
+		
+		
+<h2 class="topic-title"><a href="viewtopic.php-161.html?f=170&amp;t=3484">magnet links, GUI improvements, searching, history</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+			<a href="posting.php-386.html?mode=reply&amp;f=170&amp;t=3484" class="button icon-button reply-icon" title="Post a reply">
+			Post Reply		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-964.html?f=170&amp;t=3484&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+			<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…">
+				<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+				<a href="search.php.html" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+				<input type="hidden" name="t" value="3484">
+<input type="hidden" name="sf" value="msgonly">
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			15 posts
+							<ul>
+		<li class="active"><span>1</span></li>
+			<li><a href="viewtopic.php-163.html?f=170&amp;t=3484&amp;start=10" role="button">2</a></li>
+			<li class="next"><a href="viewtopic.php-163.html?f=170&amp;t=3484&amp;start=10" rel="next" role="button">Next</a></li>
+	</ul>
+					</div>
+	
+</div>
+
+
+			<div id="p17742" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17742">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-18.html?mode=viewprofile&amp;u=3790" class="avatar"><img src="download/file-2.php?avatar=3790_1425060445.jpg" width="60" height="60" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-18.html?mode=viewprofile&amp;u=3790" class="username">Zebra</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-7.html?author_id=3790&amp;sr=posts">19</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat May 03, 2014 11:31 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17742">
+
+			<h3 class="first"><a href="#p17742">magnet links, GUI improvements, searching, history</a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-387.html?mode=quote&amp;f=170&amp;p=17742" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-965.html?p=17742#p17742"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-18.html?mode=viewprofile&amp;u=3790" class="username">Zebra</a></strong> &raquo; </span>Sun Nov 09, 2014 7:03 pm </p>
+
+			
+			
+			<div class="content">I'm sorry for not responding for a long time...<br><br><strong>Link system</strong>:<br>I think there should be an option to create a magnet links for eDonkey/Kad/NeoShare network:<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>magnet:?xt=urn:neo:&lt;NEO&gt;&xt=urn:ed2k:&lt;ED2K&gt;&urn:aich:&lt;AICH&gt;&dn=&lt;NAME&gt;&xl=&lt;SIZE&gt;</code></div>in addition the program should recognize (but create correct "urn:ed2k:") partially incorrect links with "urn:ed2khash:" (Shareaza creates that). If a file contain an unsupported hash (bitprint) AND supported one the client should not display any errors and just add a file into downloads.<br><span style="font-size: 75%; line-height: normal">I personally don't like "neolink" idea, Shareaza creators added a similar 3rd-party link shortener, for me it's useless... Maybe it's usable with hosters...</span><br><br><strong>Top files</strong>:<br>Is it completely decentralized feature, do you have control over it? What if someone will start uploading pr0n <img class="smilies" src="./images/smilies/36_1_30.gif" alt=":36_1_30:" title="36 1 30"> into hosters?<br><br><strong>Sick nomenclature</strong>:<br>In the interface I can find "Trackers", please don't use screwed BitTorrent nomenclature! Tracker is something what tracks and spies an user, in eDonkey network we have <span style="text-decoration: underline">Servers</span>, not trackers! Server means something which mediate/exchange peers. Transfers: it says connection encrypted, not encrypted but <span style="text-decoration: underline">obfuscated</span>!<br><br><strong>Incoming folder & sorting</strong>:<br>Incoming folder should be displayed as a folder similar as it's in eMule, now the program shows all files one-by-one in Shared tab. Now the Shared tab is a complete mess. It would be nice to sort a files in alphabetical order (AaBbCc...XxYxZz), not in Linux-alphabet order (ABC...XYZabc...xyz).<br><br><strong>History</strong>:<br>Why NeoLoader saves history of searched files in "GrabberList.xml" and "SearchLists.xml" files? There should be an option to disable that. There also should be an option in Archive tab to clean history with one click.<br><br><strong>Upload limit per network</strong>:<br>I've found an option in NeoCore.ini =&gt; BitTorrent =&gt; Upload, does it limit upload bandwidth in kB/s? If yes, maybe it should be set to 10kB/s by default to discourage using the worst and the most screwed P2P network ever created?<br><br><strong>Interface</strong>:<br>Grabber tab does nothing useful, it could be removed - you can paste links directly into downloads. Shared files - what does it mean started, paused, stopped; for me the file could be shared (file in shared folder), or unshared (file in shared folder, but excluded from shares), unshared files should be grayed out; there's no really need for dividing files into 2(3) categories. Similar with downloads...<br><br><strong>Searching</strong><br>Does "Smart Search" does actually do anything, or it's shitty option similar to "Automatic Search" in eMule? EDonkey servers, Kad, NeoKad, webpages provide different search results - for example Kad provides lots of results and spam, (trusted) servers provide less results but usually without spam, webpages provide no spam, but even less files. What "Goto new" option does?<br><br><strong>eDonkey Servers</strong><br>What is the difference between static and custom servers? What is it: <!-- m --><a class="postlink" href="ed2k://|server|46.105.126.71|4661|/">ed2k://|server|46.105.126.71|4661|/</a><!-- m --> - it's not on any known serverlist (peerates/emulesecurity/gruk/shortypower)?<br><br><strong>Share new files automatically in ed2k/kad network</strong>:<br>David said:<br><blockquote class="uncited"><div>Now this option applies only to new files, meaning files that themselves have not been downloaded from for example ed2k, if you downloaded a file from ed2k it will remain being shared on ed2k after completion, same goes for a torrent.</div></blockquote><br>I've added a magnet/neomagnet link with ed2k and neo hashes, I've downloaded file from only ed2k network will it count as an ed2k download? Similar situation, I've downloaded a file from ed2k users and from one peer which used NeoShare network, will it still count as an ed2k download?</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17744" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17744">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17744">
+
+			<h3><a href="#p17744"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-388.html?mode=quote&amp;f=170&amp;p=17744" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-966.html?p=17744#p17744"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Sun Nov 09, 2014 9:23 pm </p>
+
+			
+			
+			<div class="content"><blockquote class="uncited"><div>I think there should be an option to create a magnet links for eDonkey/Kad/NeoShare network:</div></blockquote><br>there is, see the get link sub menuin the download list for example<br><br><br><blockquote class="uncited"><div>Is it completely decentralized feature, </div></blockquote><br>yes<br><br><blockquote class="uncited"><div>do you have control over it? </div></blockquote><br>no<br><br>Basically any keyword search / file search and the top file search is no exception uses a script that is send with a neo kad search request that executes in each nodes v8 engine and looks in the file index for files matching the search criteria, doing data reduction (avoiding duplicate results) and in future possible some form of filename optimization, eg. instead of the most common file name pick the one that has the most informations like format release crew etc...<br><br>so well, the search script that each neo instalation have could have a word blacklist added,<br>but than you can just compile your own neo that uses a modded search script without that.<br><br><blockquote class="uncited"><div>What if someone will start uploading pr0n into hosters?</div></blockquote><br><br>than there will be porn on hosters <img class="smilies" src="./images/smilies/biggrin.png" alt=":D" title=":D"><br><br><br><blockquote class="uncited"><div>In the interface I can find "Trackers", please don't use screwed BitTorrent nomenclature! Tracker is something what tracks and spies an user, in eDonkey network we have Servers, not trackers! Server means something which mediate/exchange peers. <br></div></blockquote><br>what word would you recommend that would apply to all networks?<br><br>"hubs" may be ?<br><br><blockquote class="uncited"><div>Transfers: it says connection encrypted, not encrypted but obfuscated!</div></blockquote><br>fixed in next release<br><br><blockquote class="uncited"><div>Incoming folder should be displayed as a folder similar as it's in eMule, now the program shows all files one-by-one in Shared tab. </div></blockquote><br>what do you mean exactly?<br><br><blockquote class="uncited"><div>Now the Shared tab is a complete mess. It would be nice to sort a files in alphabetical order (AaBbCc...XxYxZz), not in Linux-alphabet order (ABC...XYZabc...xyz).</div></blockquote><br>I will improve the sort function.<br><br><br><blockquote class="uncited"><div>Why NeoLoader saves history of searched files in "GrabberList.xml" and "SearchLists.xml" files? There should be an option to disable that. <br></div></blockquote>Cause i find it a nice feature iirc emule also saves searches.<br>I can add a switch for that into the next release.<br><br><blockquote class="uncited"><div>There also should be an option in Archive tab to clean history with one click.</div></blockquote><br>will add that in next release<br><br><br><blockquote class="uncited"><div>I've found an option in NeoCore.ini =&gt; BitTorrent =&gt; Upload, does it limit upload bandwidth in kB/s? </div></blockquote><br>yes<br><br><blockquote class="uncited"><div>If yes, maybe it should be set to 10kB/s by default to discourage using the worst and the most screwed P2P network ever created?</div></blockquote><br>no<br><br><blockquote class="uncited"><div>Grabber tab does nothing useful, it could be removed - you can paste links directly into downloads. </div></blockquote><br><br>Well but it does, if you paste a set of http links neo does not know by default what links belong together,<br>for example you may paste 4 links where you have episode1.part1.rar episode1.part2.rar and episode2.part1.rar episode2.part2.rar <br>this are 2 files.<br>The grabber is designed for analyzing pasted links and grouping them into individual files.<br><br>if you paste thise 4 links into the download list you wil get only 1 file and neo after checking the filenames will stop the file with an error and require you to run the file through the grabber to resolve the conflict.<br><br><br><blockquote class="uncited"><div>Shared files - what does it mean started, paused, stopped; for me the file could be shared (file in shared folder), or unshared (file in shared folder, but excluded from shares), unshared files should be grayed out; there's no really need for dividing files into 2(3) categories. Similar with downloads...</div></blockquote><br><br>started - file is uploading/downloading<br>paused - file can collect metadata and search for sources/peers/nodes but will not engage in any payload transfer a.k.a. upload/download<br>stopped - the file is stopped it is not published to any network and doe snot engage in any network communication.<br><br><br><blockquote class="uncited"><div>Does "Smart Search" does actually do anything, or it's shitty option similar to "Automatic Search" in eMule? EDonkey servers, Kad, NeoKad, webpages provide different search results - for example Kad provides lots of results and spam, (trusted) servers provide less results but usually without spam, webpages provide no spam, but even less files. What "Goto new" option does?<br></div></blockquote><br>To be honest Smart Search is still under development, currently it only means search all available sources. But we are working on making it smart, a.k.a. categorizing a result list directory by series -&gt; season -&gt; episode and than retrieve meta data from the web to be displayed accordingly. But until this will work its still a long way ahead.<br><br><blockquote class="uncited"><div>What is the difference between static and custom servers? </div></blockquote><br>a static server is a server you always connect to and publish your files to<br>a custom server is a server configured for 1 file or a set of files and to such a server only files are published that have been configured to be published to it.<br><br><blockquote class="uncited"><div>What is it: <!-- m --><a class="postlink" href="ed2k://|server|46.105.126.71|4661|/">ed2k://|server|46.105.126.71|4661|/</a><!-- m --></div></blockquote><br>I don't know i think i got th list form neo26 hes one of the beta testers.<br><br><br><blockquote class="uncited"><div>I've added a magnet/neomagnet link with ed2k and neo hashes, I've downloaded file from only ed2k network will it count as an ed2k download? Similar situation, I've downloaded a file from ed2k users and from one peer which used NeoShare network, will it still count as an ed2k download? <br></div></blockquote><br>It will count as ed2k download as long as the file head enabled ed2k download option on it (the mule icon was not grayed out or dissabled with a red circle), even if you never seen a ed2k source for it.</div>
+
+			
+									
+									<div id="sig17744" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17747" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17747">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17747">
+
+			<h3><a href="#p17747"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-389.html?mode=quote&amp;f=170&amp;p=17747" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-967.html?p=17747#p17747"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Sun Nov 09, 2014 10:17 pm </p>
+
+			
+			
+			<div class="content">I don't like neolinks too :P<br><br>Regarding the porns problem in top files a filter to exclude files that contains certain words in the name could be added. No need to affect searches...<br><br>BitTorren is actually the best P2P protocol btw.<br><br>I'll provide an up to date server list, but I think we need a feature to autoupdate it on startup adding just a server.met link...<br><br>I agree with you about the Grabber, since add file in pause its the same <img class="smilies" src="./images/smilies/biggrin.png" alt=":D" title=":D"> Maybe this one should be removed :P</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17749" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17749">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-18.html?mode=viewprofile&amp;u=3790" class="avatar"><img src="download/file-2.php?avatar=3790_1425060445.jpg" width="60" height="60" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-18.html?mode=viewprofile&amp;u=3790" class="username">Zebra</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-7.html?author_id=3790&amp;sr=posts">19</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat May 03, 2014 11:31 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17749">
+
+			<h3><a href="#p17749"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-390.html?mode=quote&amp;f=170&amp;p=17749" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-968.html?p=17749#p17749"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-18.html?mode=viewprofile&amp;u=3790" class="username">Zebra</a></strong> &raquo; </span>Sun Nov 09, 2014 11:04 pm </p>
+
+			
+			
+			<div class="content"><blockquote class="uncited"><div>I think there should be an option to create a magnet links for eDonkey/Kad/NeoShare network:<br>there is, see the get link sub menuin the download list for example</div></blockquote><br>No, the magnet option is grayed out, only Advanced Link Options work, but it creates a link without aich: magnet:?xt=urn:neo:&lt;NEO&gt;&xt=urn:ed2k:&lt;ED2K&gt;&dn=&lt;NAME&gt;&xl=&lt;SIZE&gt;  I'm aware, that it won't be usable at the moment because 90% of users use eMule which doesn't supports magnets and the rest use Shareaza without AICH support, aMule doesn't recognize magnets correctly too.<br>Option to create magnets (urn:neox) from multiple files is grayed out also.<br><br><br><blockquote class="uncited"><div>Incoming folder should be displayed as a folder similar as it's in eMule, now the program shows all files one-by-one in Shared tab.<br>what do you mean exactly?</div></blockquote><br>I have 3 files (file1, file2, file3) in incoming folder and I have somewhere folders "music" and "books", NeoLoader will show: books, file1, file2, file3, music. I want it to show: books, incoming, music.<br><br><blockquote class="uncited"><div>Why NeoLoader saves history of searched files in "GrabberList.xml" and "SearchLists.xml" files? There should be an option to disable that.<br>Cause i find it a nice feature iirc emule also saves searches.<br>I can add a switch for that into the next release.</div></blockquote><br>I was wrong a bit: SearchLists.xml doesn't store any personal information - it's simply Top Files list.<br><br><blockquote class="uncited"><div>What is the difference between static and custom servers?<br>a static server is a server you always connect to and publish your files to<br>a custom server is a server configured for 1 file or a set of files and to such a server only files are published that have been configured to be published to it.</div></blockquote><br>So an average user doesn't need it, does it mean that NeoLoader can connect (and publish filelist) to 2 servers at the same time? An option that will never ever be added to eMule.<br><br><blockquote class="uncited"><div>BitTorren is actually the best P2P protocol btw.</div></blockquote><br>Why 2 identical files with different names are recognized in BitTorrent network as 2 different (another btih) files? Why you cannot create identical .torrent (same btih) with different programs? Can you share a file by drag-and-dropping it into shared folder? Forget about DHT/Kad, how long BT trackers and ED2K servers live? Maybe a year, maybe two. Will be the tracker list inside .torrent file up-to-dated and usable after a year? No! The serverlist in your eDonkey client will always work! BitTorrent network is the only network without a possibility to search a file by a name!</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17750" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17750">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-14.html?mode=viewprofile&amp;u=1009" class="avatar"><img src="download/file-4.php?avatar=1009_1425060435.png" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-14.html?mode=viewprofile&amp;u=1009" class="username">esher</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-12.html?author_id=1009&amp;sr=posts">46</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Apr 08, 2012 9:42 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17750">
+
+			<h3><a href="#p17750"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-391.html?mode=quote&amp;f=170&amp;p=17750" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-969.html?p=17750#p17750"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-14.html?mode=viewprofile&amp;u=1009" class="username">esher</a></strong> &raquo; </span>Sun Nov 09, 2014 11:57 pm </p>
+
+			
+			
+			<div class="content"><blockquote><div><cite>Zebra wrote:</cite>I'm aware, that it won't be usable at the moment because 90% of users use eMule which doesn't supports magnets and the rest use Shareaza without AICH support, aMule doesn't recognize magnets correctly too.</div></blockquote><br><br>i'm sorry for emule/shareaza/amule users, but ... who cares?</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17751" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17751">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17751">
+
+			<h3><a href="#p17751"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-392.html?mode=quote&amp;f=170&amp;p=17751" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-970.html?p=17751#p17751"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Mon Nov 10, 2014 9:52 am </p>
+
+			
+			
+			<div class="content"><blockquote class="uncited"><div>So an average user doesn't need it, does it mean that NeoLoader can connect (and publish filelist) to 2 servers at the same time? An option that will never ever be added to eMule.</div></blockquote><br><br>IMHO custom server is useless by the way, a server owner told me that servers can talk each other so everyone stores the same informations... also there are not other client that use/provide per-file servers.<br><br><blockquote class="uncited"><div>Why 2 identical files with different names are recognized in BitTorrent network as 2 different (another btih) files? Why you cannot create identical .torrent (same btih) with different programs? Can you share a file by drag-and-dropping it into shared folder? Forget about DHT/Kad, how long BT trackers and ED2K servers live? Maybe a year, maybe two. Will be the tracker list inside .torrent file up-to-dated and usable after a year? No! The serverlist in your eDonkey client will always work! BitTorrent network is the only network without a possibility to search a file by a name!</div></blockquote><br><br>Identical .torrents doesn't matter because it happen only for very popular files so its irrelevant, from any source it will be downloaded so fast. By the way it happen because as far I know make identical torrent is not possible... but who cares?<br>Why should I share by drag-drop ? Creating a torrent takes just a bit of more time but I can make more, such as multifiles, can you make multifiles on ed2k ?<br>Regarding the servers, we're saying that will die in 1-2 year (I said that too) since 2008, but they're still alive. Anyway, doesn't matter because any torrent can work with DHT only now. Regarding the information that they contain your wrong, ed2k servers store more informations, since once connected they know all your shared files and index them, that doesn't happen with trackers, they just know the single torrent file.<br>Search file by name is actually not necessary when there are awesome websites that gives you much more infos on the .torrent compared with the emule search...<br>Also, eMule's (90% of ed2k clients) chunk sizes and slotspeed make the transfers very very slow, any BT client doesn't have that problem. (yeah, no subchunk transfer too, neo should have that btw I think the size is too big even here...)<br><br>@esher: actually emule got the 90% of ed2k network, so if we want support ed2k network we must care a bit about them.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17753" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17753">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-14.html?mode=viewprofile&amp;u=1009" class="avatar"><img src="download/file-4.php?avatar=1009_1425060435.png" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-14.html?mode=viewprofile&amp;u=1009" class="username">esher</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-12.html?author_id=1009&amp;sr=posts">46</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Apr 08, 2012 9:42 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17753">
+
+			<h3><a href="#p17753"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-393.html?mode=quote&amp;f=170&amp;p=17753" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-971.html?p=17753#p17753"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-14.html?mode=viewprofile&amp;u=1009" class="username">esher</a></strong> &raquo; </span>Mon Nov 10, 2014 4:24 pm </p>
+
+			
+			
+			<div class="content">i still dont get whats the problem if we can manage magnets and they dont... i mean yeah there's a problem but it's not on our side.<br><br>Plus is emule dev that do not care bout its users and do not carw about the fact we are in 2014. 3 kb/s  guys, c'mon! you cannot be serious.<br><br>this is what you'll see if u download an ed2k-torrent magnet via neoloader:<br>you got 98% (+) of the file from torrents users, then u will help ed2k sources to get that file till shareratio limit is reached. after file's complete (20 - 40 min) you'll transfer only to ed2k sources cause they're slow as f...k. u'll have 50 total requests for that file 49 from ed2k , 1 from a bad connection bit user that will go  stalling everytime. we' re already carrying them. we overpassed the concept "care".</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17773" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17773">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17773">
+
+			<h3><a href="#p17773"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-394.html?mode=quote&amp;f=170&amp;p=17773" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-972.html?p=17773#p17773"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Wed Nov 12, 2014 11:23 am </p>
+
+			
+			
+			<div class="content"><blockquote class="uncited"><div>No, the magnet option is grayed out, only Advanced Link Options work, but it creates a link without aich: magnet:?xt=urn:neo:&lt;NEO&gt;&xt=urn:ed2k:&lt;ED2K&gt;&dn=&lt;NA ME&gt;&xl=&lt;SIZE&gt; I'm aware, that it won't be usable at the moment because 90% of users use eMule which doesn't supports magnets and the rest use Shareaza without AICH support, aMule doesn't recognize magnets correctly too.<br>Option to create magnets (urn:neox) from multiple files is grayed out also.</div></blockquote><br><br>You can currently create a magnet only if you have a torrent hash for that file.<br>Creating magnets form files shared only on ed2k is not intended, as than you can just create a ed2k link.<br><br>Also you can always create a NeoLink which is a magnet with some additions.<br><br><br><blockquote class="uncited"><div>I have 3 files (file1, file2, file3) in incoming folder and I have somewhere folders "music" and "books", NeoLoader will show: books, file1, file2, file3, music. I want it to show: books, incoming, music.</div></blockquote><br>anyone to second that request?<br><br><blockquote class="uncited"><div>So an average user doesn't need it, does it mean that NeoLoader can connect (and publish filelist) to 2 servers at the same time? An option that will never ever be added to eMule.</div></blockquote><br>Yes and no, the idea is to split the file list and publish each part to a different server, in order to prevent a rouge server operator form getting a long list of files. In many countries that may be the difference between a users details being disclosed by ISP under a court order or the court deicing the user was not heavy enough to have his privacy violated.<br><br><br><blockquote class="uncited"><div> BitTorrent network is the only network without a possibility to search a file by a name! <br></div></blockquote><br>That is not longer true, neoloader implements an own kademlia netowrk in which torrent files are indexed and those searchable just like emule files are.</div>
+
+			
+									
+									<div id="sig17773" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17774" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17774">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" class="avatar"><img src="download/file.php?avatar=561_1436253272.jpg" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a>							</dt>
+
+			<dd class="profile-rank">Site Admin</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-5.html?author_id=561&amp;sr=posts">769</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Jun 30, 2010 7:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17774">
+
+			<h3><a href="#p17774"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-395.html?mode=quote&amp;f=170&amp;p=17774" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-973.html?p=17774#p17774"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-1.html?mode=viewprofile&amp;u=561" style="color: #AA0000;" class="username-coloured">DavidXanatos</a></strong> &raquo; </span>Wed Nov 12, 2014 11:24 am </p>
+
+			
+			
+			<div class="content"><blockquote class="uncited"><div>yeah, no subchunk transfer too, neo should have that btw I think the size is too big even here...</div></blockquote>
+<br>Neo has sub chunk transfer</div>
+
+			
+									
+									<div id="sig17774" class="signature"><span style="text-decoration: underline">Live free or die trying!</span></div>
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p17778" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile17778">
+			<dt class="has-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="avatar"><img src="download/file-5.php?avatar=2495_1425060443.jpg" width="60" height="45" alt="User avatar"></a>														</div>
+								<a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a>							</dt>
+
+			<dd class="profile-rank">Site User</dd>
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-16.html?author_id=2495&amp;sr=posts">331</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sun Dec 09, 2012 1:53 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content17778">
+
+			<h3><a href="#p17778"></a></h3>
+
+									<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-396.html?mode=quote&amp;f=170&amp;p=17778" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+					
+			<p class="author"><a href="viewtopic.php-974.html?p=17778#p17778"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="memberlist.php-16.html?mode=viewprofile&amp;u=2495" class="username">Neo26</a></strong> &raquo; </span>Wed Nov 12, 2014 3:24 pm </p>
+
+			
+			
+			<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>Neo has sub chunk transfer</div></blockquote><br><br>Not working. Corrupted data always.</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+		<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+
+		</div>
+	</div>
+
+	<hr class="divider">
+	
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=170&amp;t=3484">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<input type="submit" name="sort" value="Go" class="button2">
+			</fieldset>
+	</form>
+	<hr>
+
+<div class="action-bar bottom">
+	<div class="buttons">
+		
+			<a href="posting.php-386.html?mode=reply&amp;f=170&amp;t=3484" class="button icon-button reply-icon" title="Post a reply">
+			Post Reply		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="viewtopic.php-964.html?f=170&amp;t=3484&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+	
+			<div class="pagination">
+			15 posts
+							<ul>
+		<li class="active"><span>1</span></li>
+			<li><a href="viewtopic.php-163.html?f=170&amp;t=3484&amp;start=10" role="button">2</a></li>
+			<li class="next"><a href="viewtopic.php-163.html?f=170&amp;t=3484&amp;start=10" rel="next" role="button">Next</a></li>
+	</ul>
+					</div>
+		<div class="clear"></div>
+</div>
+
+
+	<p class="jumpbox-return"><a href="viewforum.php-5.html?f=170" class="left-box arrow-left" accesskey="r">Return to “Support”</a></p>
+
+
+	<div class="dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+		<span title="Jump to" class="dropdown-trigger button dropdown-select">
+			Jump to		</span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																			<li><a href="viewforum.php.html?f=10">News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-1.html?f=11">Board News</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-2.html?f=161">NeoLoader Releases</a></li>
+																<li><a href="viewforum.php-3.html?f=169">NeoLoader English</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-4.html?f=180">General/Discussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-5.html?f=170">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-6.html?f=171">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-7.html?f=172">Feature Requests</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-8.html?f=173">Script Development</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-9.html?f=174">Extensions</a></li>
+																<li><a href="viewforum.php-10.html?f=163">NeoLoader German</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-11.html?f=179">Algemeines/Diskussion</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-12.html?f=164">Support</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-13.html?f=165">Bugs</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-14.html?f=166">Feature Wünsche</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-15.html?f=167">Script Entwicklung</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-16.html?f=168">Erweiterungen</a></li>
+																<li><a href="viewforum.php-17.html?f=4">Community</a></li>
+																<li>&nbsp; &nbsp;<a href="viewforum.php-18.html?f=81">OffTopic</a></li>
+										</ul>
+		</div>
+	</div>
+
+
+	<div class="stat-block online-list">
+		<h3>Who is online</h3>
+		<p>Users browsing this forum: No registered users and 1 guest</p>
+	</div>
+
+			</div>
+
+
+<div id="page-footer">
+	<div class="navbar">
+	<div class="inner">
+
+	<ul id="nav-footer" class="linklist bulletin" role="menubar">
+		<li class="small-icon icon-home breadcrumbs">
+			<span class="crumb"><a href="http://neoloader.com" data-navbar-reference="home">NeoLoader Homepage</a></span>						<span class="crumb"><a href="index.php.html" data-navbar-reference="index">Board index</a></span>
+					</li>
+		
+				<li class="rightside">All times are <abbr title="UTC+1">UTC+01:00</abbr></li>
+							<li class="small-icon icon-delete-cookies rightside"><a href="ucp.php-3.html?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">Delete all board cookies</a></li>
+									<li class="small-icon icon-team rightside" data-last-responsive="true"><a href="memberlist.php.html?mode=team" role="menuitem">The team</a></li>				<li class="small-icon icon-contact rightside" data-last-responsive="true"><a href="memberlist.php-11.html?mode=contactadmin" role="menuitem">Contact us</a></li>	</ul>
+
+	</div>
+</div>
+
+	<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+	</div>
+	<div id="loading_indicator"></div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close"></a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div class="copyright">
+		Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	<img src="cron-2.php?cron_type=cron.task.core.tidy_cache" width="1" height="1" alt="cron"></div>
+
+<script type="text/javascript" src="assets/javascript/jquery.min.js?assets_version=4"></script>
+<script type="text/javascript" src="assets/javascript/core.js?assets_version=4"></script>
+
+
+<script type="text/javascript" src="styles/prosilver/template/forum_fn.js?assets_version=4"></script>
+
+<script type="text/javascript" src="styles/prosilver/template/ajax.js?assets_version=4"></script>
+
+
+
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

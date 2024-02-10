@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Browser updates</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Browser updates</h2>
+		<p><a href="viewtopic.php-624.html?f=12&amp;t=624">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=624</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Browser updates</h3>
+				<div class="date">Posted: <strong>Sun Jul 23, 2023 10:21 am</strong></div>
+				<div class="author">by <strong>Techie</strong></div>
+				<div class="content">Hi,<br>
+<br>
+First of all, thanks for making Sandboxie-Plus!<br>
+<br>
+I've a question regarding browser updates. What would be the best way to make sure the browser gets updated properly? I use Vivaldi but this question is also related to Firefox and Chrome.<br>
+Normally browsers auto-update themselves when starting the browser, but when running them in Sandboxie the updates don't get installed properly.<br>
+So I'm wondering if there's a way to make sure they get updated outside the Sandbox first when starting them, and then start them in the Sandbox (without having to manually disable Sandboxie, do the update, then start it in Sandboxie).<br>
+<br>
+Any ideas? Thanks!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Browser updates</h3>
+				<div class="date">Posted: <strong>Sun Jul 23, 2023 1:02 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">When there is an update, my workflow is to disable the force rules, for the browser (or globally), start the browser, which gets launched outside the control of Sandboxie, can update itself like it normally does. Once the update is applied after the browser is restarted, I close it and re-enable the force rules. Then I launch the browser, which gets started under Sandboxie's supervision.<br>
+<br>
+It is possible to start a program and ignore the forced program rule like this:
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>"C:\Program Files\Sandboxie\Start.exe"  /dfp c:\path\to\program.exe</code></pre></div>
+or
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>"C:\Program Files\Sandboxie\Start.exe"  /disable_force  c:\path\to\program.exe</code></pre></div>
+which is the same just with the verbose string<br>
+<br>
+Since browsers restart during the update process, I am not sure if they will be able to update themselves in all instances, if they are just started unsandboxed once, and then "normally" after. If someone has tested this with satisfying results, it would be nice to know.<br>
+<br>
+If someone has an automated way, like a .bat or powershell script, that would also be nice to know.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Browser updates</h3>
+				<div class="date">Posted: <strong>Sun Jul 23, 2023 7:14 pm</strong></div>
+				<div class="author">by <strong>Techie</strong></div>
+				<div class="content">Hi Bastik,<br>
+<br>
+Thanks for your reply!<br>
+That's the way I do it as well. I didn't know about the command-line to start it without sandboxing though, that's very useful.<br>
+<br>
+Perhaps there's a few options to script this using PowerShell.<br>
+If it's possible to check if a new version is available on the browsers website, and if so, start it without sandboxing to let it update and then you can close it and start it again and this time it should notice it's up to date and then start it sandboxed.<br>
+I see that the installer for Vivaldi contains the full version number, for example Vivaldi.6.1.3035.204.x64.exe so it's possible to compare that against the currently installed Vivaldi.exe file version property.<br>
+I'll check if I can make a script and post it here.<br>
+Still, this would not be fully automatic since you would need to start the browser twice in case there is an update.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Browser updates</h3>
+				<div class="date">Posted: <strong>Sun Jul 23, 2023 9:47 pm</strong></div>
+				<div class="author">by <strong>Techie</strong></div>
+				<div class="content">It turns out it's quite easy to script update installations for Vivaldi since it has a separate app that can be used for automatic update installations. Here's a PowerShell script that checks for and installs updates and then starts Vivaldi sandboxed:<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>$scriptName = "Start Vivaldi"
+$scriptVersion = "1.0"
+
+#This script updates Vivaldi and then starts it sandboxed.
+
+#Modify these paths to point to where Vivaldi is installed:
+$vivaldiUpdateInstallerExePath = "C:\Users\Techie\AppData\Local\Vivaldi\Application\update_notifier.exe"
+$vivaldiExePath = "C:\Users\Techie\AppData\Local\Vivaldi\Application\vivaldi.exe"
+
+if(-not (Test-Path -Path $vivaldiExePath))
+{
+    Write-Host "Failed to find $($vivaldiUpdateInstallerExePath) (which is used for installing updates)."
+    Write-Host "Press Enter to exit."
+    Read-Host
+    exit
+}
+
+if(-not (Test-Path -Path $vivaldiExePath))
+{
+    Write-Host "Failed to find $($vivaldiExePath)."
+    Write-Host "Press Enter to exit."
+    Read-Host
+    exit
+}
+
+$sandboxieStartExePath = "C:\Program Files\Sandboxie-Plus\Start.exe"
+if(-not (Test-Path -Path $sandboxieStartExePath))
+{
+    Write-Host "Failed to find $($sandboxieStartExePath)."
+    Write-Host "Press Enter to exit."
+    Read-Host
+    exit
+}
+
+$currentVivaldiExeVersion = (Get-Item $vivaldiExePath).VersionInfo.FileVersion
+Write-Host "Currently installed Vivaldi version: $($currentVivaldiExeVersion)"
+
+Write-Host "Checking for updates."
+Start-Process -Wait $vivaldiUpdateInstallerExePath
+
+$newVivaldiExeVersion = (Get-Item $vivaldiExePath).VersionInfo.FileVersion
+if($currentVivaldiExeVersion -ne $newVivaldiExeVersion)
+{
+    Write-Host "Updated Vivaldi to version $($newVivaldiExeVersion)."
+    Write-Host "Press Enter to continue."
+    Read-Host
+}
+else
+{
+    Write-Host "No updates found."
+}
+
+Write-Host "Starting Vivaldi sandboxed."
+Start-Process $sandboxieStartExePath -ArgumentList $vivaldiExePath
+</code></pre></div>
+
+Before I found the above solution I wrote another script that's not as good but I'll leave it here anyway.<br>
+This script checks for the latest version on vivaldi.com and compares it to the installed version. If there's a newer version available, it starts Vivaldi unsandboxed, informs the user to click "Restart" in Vivaldi and to close it, and finally starts it sandboxed.<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>$scriptName = "Start Vivaldi"
+$scriptVersion = "0.5"
+
+#This script checks if a new version of Vivaldi is available.
+#If so, it starts Vivaldi outside the sandbox so it can update.
+#Otherwise it will start it in the sandbox.
+
+#Required PowerShell version: 5 (later version are not supported)
+
+#Modify this path to point to where vivaldi.exe is installed:
+$vivaldiExePath = "C:\Users\Techie\AppData\Local\Vivaldi\Application\vivaldi.exe"
+if(-not (Test-Path -Path $vivaldiExePath))
+{
+    Write-Host "Failed to find $($vivaldiExePath)."
+    Write-Host "Press Enter to exit."
+    Read-Host
+    exit
+}
+
+$sandboxieStartExePath = "C:\Program Files\Sandboxie-Plus\Start.exe"
+if(-not (Test-Path -Path $sandboxieStartExePath))
+{
+    Write-Host "Failed to find $($sandboxieStartExePath)."
+    Write-Host "Press Enter to exit."
+    Read-Host
+    exit
+}
+
+$vivaldiExeVersion = (Get-Item $vivaldiExePath).VersionInfo.FileVersion
+Write-Host "Currently installed Vivaldi version: $($vivaldiExeVersion)"
+
+$sandboxieStartExeArgumentsDisableForce = "/disable_force $($vivaldiExePath)"
+$sandboxieStartExeArgumentsEnableForce = "$($vivaldiExePath)"
+
+$vivaldiUri = "https://vivaldi.com/blog/"
+try
+{
+    Write-Host "Checking for updates on $vivaldiUri."
+    $webResponse = Invoke-WebRequest -Uri $vivaldiUri
+}
+catch
+{
+    Write-Host "Failed to check for updates."
+    Write-Host "Failed to connect to $($vivaldiUri)."
+    Write-Host "Error: $($PSItem)"
+    Write-Host "Starting Vivaldi sandboxed."
+    Start-Sleep -Seconds 4
+    Start-Process $sandboxieStartExePath -ArgumentList $sandboxieStartExeArgumentsEnableForce
+    exit
+}
+
+foreach($link in $webResponse.Links)
+{
+    if($link.href.contains("https://vivaldi.com/download/"))
+    {
+        $webVersion = $link.innerText -replace "Stable - ", "" -replace " \(", "." -replace "\)", ""
+        if($vivaldiExeVersion -ne $webVersion)
+        {
+            Write-Host "A new version is available: $($webVersion)"
+            Write-host "Starting Vivaldi unsandboxed to install the update."
+            Write-Host "Please wait and then click on `"Restart Required`" &gt; `"Restart`" in Vivaldi."
+            Write-Host "Wait for it to restart and then close it."
+            Write-Host "Press Enter to continue."
+            Read-Host
+            Start-Process -Wait $sandboxieStartExePath -ArgumentList $sandboxieStartExeArgumentsDisableForce
+            Write-Host "Update installed."
+            Write-Host "Starting Vivaldi sandboxed."
+            Start-Sleep -Seconds 4
+            Start-Process $sandboxieStartExePath -ArgumentList $sandboxieStartExeArgumentsEnableForce
+            exit
+        }
+        else
+        {
+            Write-host "The installed version is up-to-date."
+            Write-Host "Starting Vivaldi standboxed."
+            Start-Process $sandboxieStartExePath -ArgumentList $sandboxieStartExeArgumentsEnableForce
+            exit
+        }
+    }
+}
+
+Write-Host "Failed to check for updates."
+Write-Host "Couldn't locate the latest version number on $($vivaldiUri)."
+Write-Host "Starting Vivaldi sandboxed."
+Start-Sleep -Seconds 4
+Start-Process $sandboxieStartExePath -ArgumentList $sandboxieStartExeArgumentsEnableForce
+</code></pre></div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Browser updates</h3>
+				<div class="date">Posted: <strong>Mon Jul 24, 2023 11:24 am</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">Thank you for sharing your work.<br>
+<br>
+If someone needs this for their browser, I think they can benefit from your script and modify it to their environment. They could speak up, if they need help or just mention if something fails.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Browser updates</h3>
+				<div class="date">Posted: <strong>Mon Jul 24, 2023 12:14 pm</strong></div>
+				<div class="author">by <strong>Techie</strong></div>
+				<div class="content">You're welcome!</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

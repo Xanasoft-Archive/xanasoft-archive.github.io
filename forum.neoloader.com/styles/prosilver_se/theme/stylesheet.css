@@ -1,0 +1,69 @@
+/*  phpBB3 Style Sheet
+    --------------------------------------------------------------
+	Style name:			prosilver Special Edition
+	Based on style:		prosilver (the default phpBB 3.1.x style)
+	Original author:	Tom Beddard ( http://www.subblue.com/ )
+	Modified by:		phpBB Limited ( https://www.phpbb.com/ )
+    --------------------------------------------------------------
+*/
+
+/* common.css changes */
+
+/*#wrap {
+	padding: 0 0px;
+	margin: 0px
+	min-width: 650px;
+	border-width: 0px;
+}*/
+
+/*html, body {
+	background-color: #ACA8A1;
+}
+
+body.simple {
+	min-height: 100%;
+	background-color: #FFF;
+	padding: 0 5px;
+}
+
+.search-header {
+	box-shadow: 0 0 10px #505C65;
+}*/
+
+.headerbar {
+	background-color: #0022FF;
+	background-image: url("images/bg_header.gif");
+}
+
+/*.navbar {
+	background-color: #DCDEE2;
+}*/
+
+/*.forabg, .forumbg {
+	background-color: #0022FE;
+	background-image: url("./images/bg_list.gif");
+}*/
+
+/* content.css changes */
+/*li.row {
+	background-color: #E8ECEE;
+}
+
+li.row:hover {
+	background-color: #EBEFF1;
+}
+
+li.row.bg3 {
+	background-color: #F0F4F6;
+}
+
+li.row.bg3:hover {
+	background-color: #F4F8FA;
+}*/
+
+/* imageset.css changes */
+.imageset.site_logo {
+	background-image: url("images/site_logo.png");
+	padding-left: 70px;
+	padding-top: 70px;
+}

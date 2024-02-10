@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Toast notification's not working</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Toast notification's not working</h2>
+		<p><a href="viewtopic.php-128.html?f=12&amp;t=721">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=721</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Toast notification's not working</h3>
+				<div class="date">Posted: <strong>Tue Jan 16, 2024 7:47 pm</strong></div>
+				<div class="author">by <strong>tea</strong></div>
+				<div class="content">Hello all that read this,<br>
+<br>
+<br>
+I was working on getting discord to run sandboxed. With success. (The custom dummy files are needed)<br>
+And the only thing that I noticed not working is the screen share on applications and toast notification.<br>
+All I don't much care the screen share. The toast notification would a nice thing to have.<br>
+<br>
+All when I looked online. I saw nothing on it. not even anything over type: RtClass. <br>
+I'm not to familiar here. So is it even possible to get the toast notification to work?<br>
+And if so. how?<br>
+<br>
+<br>
+<br>
+  Error:<br>
+     |Process|      |Type|        |Status|   |Value|                                             <br>
+    Discord.exe    RtClass (U)   Closed     Windows.UI.Notifications.ToastNotificationManager</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Toast notification's not working</h3>
+				<div class="date">Posted: <strong>Thu Jan 18, 2024 7:08 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">I assume that this is the case with the standard type box (yellow box). Have you tried if it works with a compartment type box? (green box)<br>
+<br>
+This is supposed to be just for testing, if it works with that type. If that works, some resource might be blocked, which could be made available in the default box. David might be able to point you in the right direction if that is the case. If it does not work, this sounds like a feature request or if it is a bug, then it's a bug report.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Toast notification's not working</h3>
+				<div class="date">Posted: <strong>Sun Jan 21, 2024 10:27 pm</strong></div>
+				<div class="author">by <strong>tea</strong></div>
+				<div class="content">Hello, bastik,<br>
+<br>
+I manage to get Discord to run in the green box. <br>
+And everything worked in it*.<br>
+So do I now ask David to help with getting it to work in yellow? <br>
+<br>
+I needed to give it open root access for discord to actually start. All I can block access past that.<br>
+<br>
+It did not need the "Force usage if custom dummy Manifest files" option anymore too. So that is that.<br>
+<br>
+<br>
+Question. shall I also add a copy of the config? And how I setup discord sandboxed (yellow box)?<br>
+It is a little difficult to get it to work.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Toast notification's not working</h3>
+				<div class="date">Posted: <strong>Mon Jan 22, 2024 5:51 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">This is David's forum, he should read along and reply to support requests.<br>
+<br>
+I am glad that it worked with the compartment type box. You are free to share your config, which you might want to redact.<br>
+<br>
+Now you should be able to <a href="https://github.com/sandboxie-plus/Sandboxie/issues/1208#issuecomment-1200170825" class="postlink">create a trace-log</a>, for the box you run Discord in, so that you can see what it accesses. Once you figured out what it accesses to show the toast notifications, those resources can be made available in the yellow box.<br>
+<br>
+You may share your config (redact some information like the username, if needed) if you made it work, so others can learn from it, or Sandboxie can be improved via a template to add support for showing toast notifications.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Toast notification's not working</h3>
+				<div class="date">Posted: <strong>Fri Jan 26, 2024 3:41 pm</strong></div>
+				<div class="author">by <strong>bastik-1001</strong></div>
+				<div class="content">There is an <a href="https://github.com/sandboxie-plus/Sandboxie/issues/2770" class="postlink">issue about Xbox Game Bar toast notifications</a>. Maybe this gives some additional insight.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

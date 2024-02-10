@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; 0.51 Bugs - Page 2</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>0.51 Bugs</h2>
+		<p><a href="viewtopic.php-186.html?f=171&amp;t=6790">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=6790</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>2</strong> of <strong>3</strong></div>
+					<div class="post">
+				<h3>Re: 0.51 Bugs</h3>
+				<div class="date">Posted: <strong>Fri Apr 03, 2015 11:48 pm</strong></div>
+				<div class="author">by <strong>Zebra</strong></div>
+				<div class="content">I know it's thread about 0.51, but after updating to 0.50 all NeoShare icons in Shared tab (Sources section) indicate that the file is not shared on NS network; while icons for all newly shared files are fine.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: 0.51 Bugs</h3>
+				<div class="date">Posted: <strong>Fri Apr 03, 2015 11:58 pm</strong></div>
+				<div class="author">by <strong>OwenBurnett</strong></div>
+				<div class="content">Don't worry about the thread, since we are using github we can track the issue on it now. I think we shouldn't even open threads with bug lists anymore, anyway who doesn't have a github account can post in this section, opening a new thread for the bug or open a small list if encountered multiple defects.<br><br>The important is report the bugs, how/where its secondary <img class="smilies" src="images/smilies/icon_e_wink.gif" alt=";)" title="Wink"> <br><br>---<br><br>Regarding the bug that you reported, try to rehash the files and check if the &quot;neosharing&quot; turns on after hashing. There was a lot bug about hashes/hashing in the 0.49 iirc, maybe that's why &quot;old&quot; files aren't shared while &quot;new&quot; seems ok.<br><br>I am not sure, anyway tomorrow D.X. will surely take a look.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: 0.51 Bugs</h3>
+				<div class="date">Posted: <strong>Sat Apr 04, 2015 10:19 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I'm affraid its a other issue, the network selection was reworked, and it sets the status for new files, i need to add a fix that it resets the status on client start such that old files are handles properly, fix in next beta</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: 0.51 Bugs</h3>
+				<div class="date">Posted: <strong>Mon Apr 06, 2015 10:26 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">7.<br>context menu bug<br><!-- m --><a class="postlink" href="https://github.com/DavidXanatos/NeoLoader/issues/7">https://github.com/DavidXanatos/NeoLoader/issues/7</a><!-- m --></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: 0.51 Bugs</h3>
+				<div class="date">Posted: <strong>Mon Apr 06, 2015 4:51 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">fixed in next build</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: 0.51 Bugs</h3>
+				<div class="date">Posted: <strong>Wed Apr 08, 2015 6:22 pm</strong></div>
+				<div class="author">by <strong>tart</strong></div>
+				<div class="content">Hi<br><br>neoloader crashes on opening: <!-- m --><a class="postlink" href="https://mega.co.nz/#!s00xTLSZ!ZNvGdClPardnRlh8tg0uh8rt7ywrkFY7N_HVOgbVc-s">https://mega.co.nz/#!s00xTLSZ!ZNvGdClPa ... _HVOgbVc-s</a><!-- m --><br><br>the installer can't repair it as it thinks it is already running (even if not run after rebooting)<br><br>Cheers</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: 0.51 Bugs</h3>
+				<div class="date">Posted: <strong>Wed Apr 08, 2015 9:38 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Hi,<br><br>is the installer reporting an error or is it just not installing any updates?<br>can you send me your filelist.xml from your config directory storred under<br>C:\Users\[your user name]\AppData\Local\Neo<br><br>if you installed neolaoder outside of program files<br>the config dir will be a sub dir of oyur instalation directroy.<br><br>Cheers<br>David X.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: 0.51 Bugs</h3>
+				<div class="date">Posted: <strong>Wed Apr 08, 2015 11:55 pm</strong></div>
+				<div class="author">by <strong>tart</strong></div>
+				<div class="content">Guten Tag David,<br><br>It's installed in the programs (x86) directory.  When running installer to repair, and through some screens I select Create system restore (or not), Add to Start menu is already preselected then I press Upgrade - the error message is 'Please close all open neoloader windows first.  If it does not help, please restart windows and try again'<br><br>yes, it's simply:<br><br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;<br>&lt;Variant Type=&quot;List&quot;/&gt;<br></code></div><br><br>but I guess the filelist should have more, I am sharing maybe 800 files and downloading about 10, depending on what the list represents.<br>Cheers<br>tart</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: 0.51 Bugs</h3>
+				<div class="date">Posted: <strong>Thu Apr 09, 2015 7:06 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Than that the wrong file, the dump tells me it crashes when loading file list.<br>As a last resort you could try to uninstall neoloader fully after a clean reboot and than install it agian but than you aour incomplete downloads will be lost.<br><br>Alternatively we can make a Teamviewer session an di can take a look my self whats wrong and where the file ist gone.<br>when would you have time?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: 0.51 Bugs</h3>
+				<div class="date">Posted: <strong>Mon Apr 20, 2015 3:06 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">8.<br>Data loss bug<br><!-- m --><a class="postlink" href="https://github.com/DavidXanatos/NeoLoader/issues/9">https://github.com/DavidXanatos/NeoLoader/issues/9</a><!-- m --><br><br>-----------------------------------------------------------------------------------------------------<br><br>9.<br>Neoloader can't search subfile's all hashes.<br><!-- m --><a class="postlink" href="https://github.com/DavidXanatos/NeoLoader/issues/10">https://github.com/DavidXanatos/NeoLoader/issues/10</a><!-- m --><br><br>-----------------------------------------------------------------------------------------------------<br><br>10.<br>Neoloader can add wrong hash.<br><!-- m --><a class="postlink" href="https://github.com/DavidXanatos/NeoLoader/issues/11">https://github.com/DavidXanatos/NeoLoader/issues/11</a><!-- m --></div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>2</strong> of <strong>3</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

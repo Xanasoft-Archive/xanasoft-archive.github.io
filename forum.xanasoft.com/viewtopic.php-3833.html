@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; secure delete</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>secure delete</h2>
+		<p><a href="viewtopic.php-2251.html?f=12&amp;t=135">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=135</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>secure delete</h3>
+				<div class="date">Posted: <strong>Mon Sep 06, 2021 6:00 am</strong></div>
+				<div class="author">by <strong>mutsuura</strong></div>
+				<div class="content">Can I configure a Sandboxie Plus to use Heidi's eraserl.exe for deletion?<br>
+<br>
+If so, how? Thx.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: secure delete</h3>
+				<div class="date">Posted: <strong>Mon Sep 06, 2021 12:46 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Currently this is not supported, as its not really a usefull feature and more fake than secure.<br>
+You see, the old sandboxie sure can delete the files left in the end in a sandbox,<br>
+but it does not do anything of that sort with files created and deleted during the boxes operation.<br>
+<br>
+So for example chrome wants to save a bookmark file, it creates a new file saves the bookmarks to it, deletes the old bookmark file and than renames the temp file to be the new bookmark json file<br>
+and it does that 10's of times basically each time something about the bookmarks changes.<br>
+All these files are not erased securely at all.<br>
+<br>
+Also if you have a SSD you _CAN_NOT_ erase anything securely die to wear leveling, i.e. your SSD transparently reaping sectors and your overwriting hits other sectors than the original data was in.<br>
+<br>
+So if you need to securely get rid of you a sandbox, create a encrypted file based container using for example veracrypt, and point your sandbox to that location, once you are done using it, forget the password and create a new container.<br>
+<br>
+This described strategy is the only one that offers meaningful security on a SSD system</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: secure delete</h3>
+				<div class="date">Posted: <strong>Tue Oct 05, 2021 5:43 pm</strong></div>
+				<div class="author">by <strong>mutsuura</strong></div>
+				<div class="content">thx - veracrypt works.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

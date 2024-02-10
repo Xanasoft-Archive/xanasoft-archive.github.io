@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; Set as MasterHash</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>Set as MasterHash</h2>
+		<p><a href="viewtopic.php-750.html?f=170&amp;t=3351">http://forum.neoloader.com/viewtopic.php?f=170&amp;t=3351</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Set as MasterHash</h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 11:21 am</strong></div>
+				<div class="author">by <strong>abel</strong></div>
+				<div class="content"><img src="http://www.imagestorming.com/images/2013/11/10/neoloader_setAsMasterHash.png" class="postimage" alt="Image">
+<br>
+<br>What means and how it works? 
+<br>(Considering that there is a lot of confusion on the eMule docs/thread about the terms "<em>roothash</em>" and "<em>masterhash</em>")</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 11:35 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">The feature is not eMule specific and in fact it applies to all downloads that have more than one hash.<br><br>The fundamental problem is that there is no bijective correlation between the hashes. They all are calculated form the same source data but there is no way to verify that 2 hashes have really been calculated form the same source data, other than having the source data and recalculating them.<br><br>So for downloading a file thats useless, and if some one tells us bullshit we may have a file that has a ed2k hash that is for a different file than the torrent hash or neo hash, or etc...<br>Thats bad, cause than we will never finish the download and the results of hash verification will be conflicting.<br><br>To resolve this problem we define one hash as Master.<br>That means if there will be a conflict between the hashes the master always wins and the other hash is removed and blacklisted.<br><br>So in a real word scenario, it would look like this:<br>We add a torrent to download and neo finds in its kad an ed2k hash associated with the torrent info hash and adds the ed2k hash to the file.<br>Than Neo downloads some data form torrent hashes them using the ed2k hash and the torrent hash and well, the torrent hash says all OK, and the ed2k hash says not OK. Than Neo knows the ed2k hash does not really belong to the file and blacklists it and searches for a different one.<br>This way you can finish downloading exactly the file you wanted without any problems.<br><br>The master hash is by default set to the highest priority hash that was known at the moment the file was added to the download list.<br>So we prefer Neo hash over ed2k hash over aich hash over torrent hash, but once we chosen we stick to the choice even if we later find a higher priority hash, that is unless the user changes the choice manually with the context menu command in question.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 12:00 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Why should the user change the neo choice ? Does this button is really needed ?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 1:04 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">well the option is there mostly for me to test things, but i can immageine advanced users wanting to use it to</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 1:12 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>well the option is there mostly for me to test things, but i can immageine advanced users wanting to use it to</div></blockquote><br><br>I don't think so... I suggest to remove it when you finished your testing <img class="smilies" src="./images/smilies/wink.png" alt=";)" title=";)"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 1:24 pm</strong></div>
+				<div class="author">by <strong>abel</strong></div>
+				<div class="content">And advanced users use "Advanced" or "Developer" interface, so this should be hidden in Simple interface. ;-)</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 2:12 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">ok in next release it will be only in advanced interface</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 3:12 pm</strong></div>
+				<div class="author">by <strong>abel</strong></div>
+				<div class="content">and Developer interface .... a user "Developer" must have ALL the options of the Advanced & Simple users, plus others. <br><br>Simple &#8838; Advanced &#8838; Developer.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 10, 2013 7:18 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote><div><cite>abel wrote:</cite>and Developer interface .... a user "Developer" must have ALL the options of the Advanced & Simple users, plus others. <br><br>Simple &#8838; Advanced &#8838; Developer.</div></blockquote><br>yes thats the plan</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

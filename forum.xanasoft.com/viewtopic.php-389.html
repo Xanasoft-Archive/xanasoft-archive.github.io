@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Auto-decrypt on boot with password fallback.</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Auto-decrypt on boot with password fallback.</h2>
+		<p><a href="viewtopic.php-353.html?f=17&amp;t=703">https://forum.xanasoft.com/viewtopic.php?f=17&amp;t=703</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Auto-decrypt on boot with password fallback.</h3>
+				<div class="date">Posted: <strong>Mon Dec 18, 2023 10:41 pm</strong></div>
+				<div class="author">by <strong>Solf</strong></div>
+				<div class="content">Hi,<br>
+<br>
+I'm experimenting with DiskCryptor and trying to understand whether it's possible to set up things so that there's external bootloader (e.g. on USB) that automatically decrypts drives on boot -- however I also want to have a 'fallback' (e.g. password) option in case that USB drive is not available.<br>
+<br>
+The usecase would be e.g. laptop -- while at home I'd prefer to have it auto-decrypt and while traveling it should require a password.<br>
+<br>
+As far as I can tell, using keyfiles doesn't let me to fallback to a password -- because it seems keyfile content is being hashed or something, so seems impossible to enter keyfile contents manually.<br>
+<br>
+There seems to be an &lt;AutoPassword&gt; option in the source code (DCAuthLoadConfig()), but when I tried to add it to DcsProp (on USB stick, and also AutoLogin=1) -- I get the 'incorrect password' message at startup and still have to enter the correct password manually.<br>
+<br>
+So is there a way to setup it so that it uses some kind of 'password' if it's available (on USB or w/e) and otherwise falls back to asking the user for the password?<br>
+<br>
+Thanks!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Auto-decrypt on boot with password fallback.</h3>
+				<div class="date">Posted: <strong>Tue Dec 19, 2023 7:20 pm</strong></div>
+				<div class="author">by <strong>Solf</strong></div>
+				<div class="content">Turns out &lt;AutoPassword&gt; option works -- except there's a bug.<br>
+<br>
+The bug is that only half of the value of &lt;AutoPassword&gt; gets used (probably has something to do with wide-string conversion in the source code).<br>
+<br>
+The workaround is to enter your password twice into &lt;AutoPassword&gt; value.<br>
+<br>
+So it would be something like this:<br>
+&lt;config key="AutoLogin"&gt;1&lt;/config&gt;<br>
+&lt;config key="AutoPassword"&gt;[yourpassword][yourpassword]&lt;/config&gt;<br>
+<br>
+This works for me with UEFI bootloader. I don't know how to make this work with MBR.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

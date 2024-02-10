@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; neoloader 0.33 warte auf kern.......</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>neoloader 0.33 warte auf kern.......</h2>
+		<p><a href="viewtopic.php-348.html?f=165&amp;t=3280">http://forum.neoloader.com/viewtopic.php?f=165&amp;t=3280</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>neoloader 0.33 warte auf kern.......</h3>
+				<div class="date">Posted: <strong>Thu Jun 20, 2013 9:22 am</strong></div>
+				<div class="author">by <strong>GismoCrack</strong></div>
+				<div class="content">Moin,
+<br>
+<br>habe den neo loader gestartet bisschen in den einstellungen rumgeguckt, wollte was laden, nur war auf einmal alles grau hinterlegt und der neo sagte mir unten in der zeile vom neo  etwas wie 
+<br>
+<br>
+<br>kern busy......
+<br>
+<br>weiss es nicht mehr genau und seid dem wenn ich neo starten mÃ¶chte kommt nur das logo und in der rechten ecke steht dann warte auf kern......
+<br>
+<br>egal ob ich mit administrativen rechten arbeite oder nicht, mag es daran liegen das dies eine 32 bit version ist und ich eine 64er BS habe?
+<br>
+<br>Gruss</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu Jun 20, 2013 6:18 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Ne, bittigkeit solte egal sein.<br><br>umbenenne mal bitte die filelist.xml<br><br>dan solte er starten.<br><br>wen es das war kÃ¶ntest Du vieleicht das besagte file posten, damit ich den fehelr reprodizieren kann.<br><br>Oder hast Du was in dem connection manager herumgestelt und core GUI separation aktiviert ohne den core als service zu instalieren?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Jun 21, 2013 9:42 am</strong></div>
+				<div class="author">by <strong>GismoCrack</strong></div>
+				<div class="content">hallo,<br><br><br>nein habe nix an diesen sachen verstellt. habe nur versucht ein link hinzuzufÃ¼gen und dann hing er sich auf.....<br><br>in was soll ich die filelist umbennen?!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Jun 21, 2013 5:43 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">in irgendwas Hauptsache der Neo findet sie nicht wider *g*</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Jun 21, 2013 7:23 pm</strong></div>
+				<div class="author">by <strong>GismoCrack</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>in irgendwas Hauptsache der Neo findet sie nicht wider *g*</div></blockquote><br><br><br>sie heisst jetzt filelist1.xml aber dennoch kein start...hÃ¤ngt sich wieder beim loader auf</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Jun 22, 2013 8:56 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">hmm... interesant...<br>dan manch mal das gleiche mit alen files in config ordner einem nach dem andren, bus du das findest was den fehler verursacht.<br><br>Was auch interessant wÃ¤re:  wie ist den die CPU load wÃ¤rend er hÃ¤nt?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Jun 22, 2013 6:21 pm</strong></div>
+				<div class="author">by <strong>GismoCrack</strong></div>
+				<div class="content">Moin,
+<br>
+<br>fehler gefunden
+<br>
+<br>es lag an der neocore.ini
+<br>
+<br>
+<br>im anhang ist diese datei, wenn diese im ordner lag hatten meine 4 kerne eine durchschnittsbelastung von 25%.
+<br>
+<br>nachdem ich diese datei also gelÃ¶scht habe und neo gestartet habe startet er wieder vollkommen normal und erstellt eine neue logischerweise.
+<br>
+<br>LG
+<br>
+<br>[ATTACH]568[/ATTACH]</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Jun 22, 2013 7:23 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">[Content]<br>Incoming=F:\\<br>Temp=F:/Temp<br><br>Der hÃ¤ngt sich auf beim scannen von F:\\ nach Dateien,<br>um das zu beheben mÃ¼sste ich das suchen nach shared files in ein weiteren thread auslagern.<br>Ich weiÃŸ aber nicht ob das schlau ist, da mÃ¼sste ich denke ich mehr umbauen.<br><br>Ich denke es ist besser einfach <br><br>[Content]<br>Incoming=F:/Incoming<br>Temp=F:/Temp<br><br>zu benutzen</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

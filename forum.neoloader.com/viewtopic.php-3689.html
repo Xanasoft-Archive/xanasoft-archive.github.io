@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; Tracker exchange extension</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>Tracker exchange extension</h2>
+		<p><a href="viewtopic.php-1633.html?f=172&amp;t=3436">http://forum.neoloader.com/viewtopic.php?f=172&amp;t=3436</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>2</strong></div>
+					<div class="post">
+				<h3>Tracker exchange extension</h3>
+				<div class="date">Posted: <strong>Thu May 15, 2014 12:49 pm</strong></div>
+				<div class="author">by <strong>JFoX</strong></div>
+				<div class="content"><a href="http://www.bittorrent.org/beps/bep_0028.html" class="postlink">http://www.bittorrent.org/beps/bep_0028.html</a>
+<br>
+<br>I think this is very usefull in some torrents...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun May 18, 2014 3:06 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">are you sure thats usefull? since we have DHT we would have enough nodes anyway.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun May 18, 2014 3:08 pm</strong></div>
+				<div class="author">by <strong>JFoX</strong></div>
+				<div class="content">Some torrents arent too popular in DHT for some reason...<br>I used qbittorrent with and without tracker exchange and i see the diference in speed...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun May 18, 2014 3:12 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">ok, in that case i wil add it to my todo to be added in one of the next builds</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun May 18, 2014 5:12 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Sincerly I agree with Xanatos, I think that this feature is useless. Expecially if we spread useless trackers on the network (unregistered torrent or timed out).</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun May 18, 2014 5:46 pm</strong></div>
+				<div class="author">by <strong>JFoX</strong></div>
+				<div class="content"><blockquote><div><cite>Neo26 wrote:</cite>Sincerly I agree with Xanatos, I think that this feature is useless. Expecially if we spread useless trackers on the network (unregistered torrent or timed out).</div></blockquote><br><br>Sincerely i made some tests in some torrents and i see diferences...<br>You can make some searchs in btdigg and see that some torrents dont have seeds in DHT but have seeds in some public trackers (open bittorent for example)...<br>Is it possible for example if some tracker report unregistered, don't add it to the list?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun May 18, 2014 7:40 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content"><blockquote><div><cite>JFoX wrote:</cite>Sincerely i made some tests in some torrents and i see diferences...</div></blockquote><br><br><blockquote class="uncited"><div>Some torrents arent too popular in DHT for some reason...<br>I used qbittorrent with and without tracker exchange and i see the diference in speed...</div></blockquote><br><br>Could you post more details about those tests ?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu May 22, 2014 3:59 pm</strong></div>
+				<div class="author">by <strong>JFoX</strong></div>
+				<div class="content">Some people dont have dht and/or PEX activated even in public trackers because some private trackers recomend this....<br>Cenario 1<br>user 1 uses private trackers so he disable dht and pex and now is downloading some piratebay torrent with openbittorrent tracker...<br>user 2 made a search in in btdigg for example and get magnet without trackers<br>user 3 who have qbittorrent or utorrent with tracker exchange can give user 4 (if user 4 is using some client with tracker excange) address of torrent where user 1 is connected</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu May 22, 2014 6:05 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">The DHT and Pex are disable in the torrent itself, not globally in the client if someone use a private tracker. If a certain user turned of Pex and DHT is more his problem than our.<br><br>I still think that this feature is useless, completly.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu May 22, 2014 7:07 pm</strong></div>
+				<div class="author">by <strong>JFoX</strong></div>
+				<div class="content">I know that dht and pex are disabled  in torrent, but some trackers recomend to turn it off in user's clients and some users attend this recomendations...</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>2</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

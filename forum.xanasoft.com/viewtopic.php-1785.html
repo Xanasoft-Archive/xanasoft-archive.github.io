@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; Best flow for installing and encrypting</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>Best flow for installing and encrypting</h2>
+		<p><a href="viewtopic.php-382.html?f=17&amp;t=107">https://forum.xanasoft.com/viewtopic.php?f=17&amp;t=107</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Best flow for installing and encrypting</h3>
+				<div class="date">Posted: <strong>Sun Aug 01, 2021 1:37 am</strong></div>
+				<div class="author">by <strong>goldengate2032</strong></div>
+				<div class="content">I am looking to encrypt my Windows 10 PC with just one OS. I tried Veracrypt and it was easy to install and easy to make a recoverable USB device but VC is very unstable thus unusable.<br>
+<br>
+I am trying to understand the best way to install. I assume I need to enter the BIOS and turn on legacy and UEFI support and turn off secure boot? I then need to create a bootable Windows 10 USB device since I don't have a DVD using Rufus in case I need to decrypt the hard drive. I need to install Diskcryptor to the HD and to the USB? When installing DC to the HD do I need to install the bootloader to the HD or to the Windows bootable flash or another flash drive? If installing it to the HD, I read on your website that I have to worry about the Evil Maid Attack.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Best flow for installing and encrypting</h3>
+				<div class="date">Posted: <strong>Sat Aug 07, 2021 7:39 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Hi,<br>
+<br>
+Legacy support is not required as DC supports UEFI, but you should disable secure boot, yes.<br>
+Normal you install the bootloader to you boot drive, in case of uefi to the uefi partition, which remains not encrypted.<br>
+<br>
+And yes, someone could get his hands physically on your laptop and install a manipulated boot loader.<br>
+If you are worried about such a scenario you could indeed go with the option of booting with a flash drive instead.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Best flow for installing and encrypting</h3>
+				<div class="date">Posted: <strong>Sat Aug 07, 2021 5:59 pm</strong></div>
+				<div class="author">by <strong>goldengate2032</strong></div>
+				<div class="content">Hi David,<br>
+<br>
+Thanks for the help. Does DC make a bootable flash drive for you or create a zip file that allows the user to create one for recovery purposes? If no, how does a user decrypt their HD in case of an emergency. <br>
+<br>
+Thanks for continuing the development of DC!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Best flow for installing and encrypting</h3>
+				<div class="date">Posted: <strong>Sun Aug 08, 2021 9:42 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">The only things you need to decrypt any drive is the password +  keyfiles (if used) and the drives volume header being in tack or you having a backup.<br>
+<br>
+So you can create a bootable usb drive on any PC with DC installed and it wil work with any other DC encrypted PC.<br>
+you can also just take a DC encrypted drive put it into a PC with DC enter the passwords and access the data.<br>
+<br>
+My personal favorite is to have a 2nd boot drive with a full blown and also encrypted windows with DC to access the main drive in case of problems.<br>
+Rufus can create USB bootable windows live drives, this is best imho</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Best flow for installing and encrypting</h3>
+				<div class="date">Posted: <strong>Thu Aug 12, 2021 3:33 pm</strong></div>
+				<div class="author">by <strong>CRBR</strong></div>
+				<div class="content">Hello,<br>
+<br>
+Are there alternatives to "Windows To Go Drive" Recovery/Backup option. Dedicating a 16GB+ USB drive (needs to be purchased) just to run Windows live bloat is best avoided by those who can ill afford to splurge on non-essentials. Also, the whole Windows thing requires a 4GB+ download at one go, which again isn't feasible when you're on limited bandwidth (cellular network).<br>
+<br>
+A portable version of DC, if made available could negate the need for relying on Windows related recovery options and the like. There are other lightweight options (like Macrium Reflect etc) that can run a portable version in a live environment with little hassle.<br>
+<br>
+Hope you'd consider the request for a portable version of DC</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

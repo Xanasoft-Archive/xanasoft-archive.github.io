@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; 0.48 Bugs - Page 3</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>0.48 Bugs</h2>
+		<p><a href="viewtopic.php-207.html?f=171&amp;t=3475">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3475</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>3</strong> of <strong>3</strong></div>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 02, 2014 5:27 pm</strong></div>
+				<div class="author">by <strong>esher</strong></div>
+				<div class="content">Hoster upload as single file:<br><br>after a file is succesfully uploaded to hosters (shared - transfer tab) uploaded counter get back to 0 while the downloaded one shows the amount uploaded (file Dimension 96.13MB). <br>this happened with ALMOST all hosters i could upload to (i assume this means the transfer was successful but with a visual bug). <br>  <br>Upload to Hoster service   tempsend.com status: connected (waiting for browser)transfering/none  is not finishing after sending 96.13 MB,<br>as i could see, when i was at the pc, i uploaded more than 172 MB, i think the file stopped uploading after 200% file amount transferred (i wasnt at the pc anymore!), BUT<br>it shows now 96.13 MB as Downloaded amount like other hosters. i couldnt  see if it hapened with more hoster cause i went bed.<br><br>hoster uptobox.com  leaves both dl and ul counter to 0 after we transfer al the 96.13 mb, and starts again after a while, same with filebin.ca - mirrorcreator.com - dl.free.fr.<br><br>sendspace.com cannot complete transfer the whole file, it stops before reaching  96.13, it stopped approsimatively  at 35+ MB<br><br><br>NL to NL transmissions (ask for clips if neeeded):<br><br>Torrent: once you find another NL source via torrent, there will be 0.00 upload speed but (10.xx kbs overhead) and the other neoloader will see the same but as download.<br>Once the upload starts overhead drops, but when transfer finish overhead bug starts again.this overhead can reach 35kbs.<br><br>Ed2k (Horde): if while  NL1 is uploading to NL2, NL2 gives his upload slot to NL1, NL2 download from NL1 slowly decrease till stalling. long story short: there can't be a <span style="text-decoration: underline">simultaneous</span> mutual transfer.<br><br>Neontities: there is the chance u have an unexpected overhead like torrents but this never raised over 7 kbs.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 09, 2014 5:32 pm</strong></div>
+				<div class="author">by <strong>Zebra</strong></div>
+				<div class="content">1) <strong>Cannot add COMPLETE .torrent release into Neoloader</strong>:
+<br>How to add a .torrent file into NeoLoader? When I add a .torrent file into Shareaza, the program search for a filename/foldername (multiple file torrent) in the library, if file exists, it hashes it and if the hash is identical to the hash in .torrent file it starts sharing it in BitTorrent network; otherwise Shareaza starts downloading. When I add a file to NeoLoader, the program always tries to download file, there's no way to stop download and point to already shared file.
+<br>
+<br>2) <strong>Older entries remain in the GUI</strong>:
+<br>Start and complete a BT download, click "Sub Files", then remove the entire download and click any "normal" (single) file in Shared category: you will see inactive Sub Files tab with the list of removed files from multi-file torrent.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 09, 2014 9:56 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">1) Agree <img class="smilies" src="./images/smilies/smile.png" alt=":)" title=":)"><br><br>2) Could u explain it again with other words and maybe an example ? Is not clear for me. If you mean that the unchecked files aren't deleted from the SubFile's list, that's normal...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 09, 2014 10:03 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">1) is not a bug,<br><br>I'll look into an option to add this feature somehow, due to neos internal file handling schemes implementing such a feature is not so simple.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Nov 09, 2014 10:25 pm</strong></div>
+				<div class="author">by <strong>Zebra</strong></div>
+				<div class="content"><blockquote><div><cite>Neo26 wrote:</cite>2) Could u explain it again with other words and maybe an example ? Is not clear for me. If you mean that the unchecked files aren't deleted from the SubFile's list, that's normal...</div></blockquote><br><br>2) Start any multiple-file .torrent download, click sub files; and click any other file and the list of subfiles will remain (grayed-out) in the GUI.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Nov 10, 2014 10:22 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">//Bug List Updated<br><br>Bug:<br>Once forced a file, removing the "force" it will not stop even if he's outside of planned ratio. Also, an icon or a color change for forced files would be nice.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Nov 10, 2014 10:03 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I uploaded a new beta that has teh ability to import torrents if all sub file of the torrent are present works also with single file torrents,<br>please test it.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Nov 10, 2014 11:35 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">I think "force" should be another file status, not a tick/untick. Another status called "Force Start".</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Nov 11, 2014 2:56 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">8.
+<br>progress bug
+<br>
+<br>clip0484.7z 274 KB
+<br><a href="https://mega.co.nz/#!1pExXAZQ!Hi67lDnr7qq-ZIJlkX_l-zKCwO2EyZZpMd3ykcMs_Pw" class="postlink">https://mega.co.nz/#!1pExXAZQ!Hi67lDnr7qq-ZIJlkX_l-zKCwO2EyZZpMd3ykcMs_Pw</a>
+<br><blockquote class="uncited"><div>magnet:?xt=urn:btih:3B95CC9DEB52439178FC1E162FDA6C6004C01851</div></blockquote></div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>3</strong> of <strong>3</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; 0.39 Bugs</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>0.39 Bugs</h2>
+		<p><a href="viewtopic.php-1051.html?f=171&amp;t=3315">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3315</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>4</strong></div>
+					<div class="post">
+				<h3>0.39 Bugs</h3>
+				<div class="date">Posted: <strong>Fri Aug 16, 2013 6:38 pm</strong></div>
+				<div class="author">by <strong>abel</strong></div>
+				<div class="content">Hi, 
+<br>
+<br>i think this isn't a real bug, and also happened with previous versions, anyway my friend reported me that he can't start Neo, and he received this message:
+<br>
+<br><em>Application not initialized correctly (<strong>0xc000001d</strong>)</em>
+<br>
+<br><img src="http://www.imagestorming.com/images/2013/08/16/Immagine.png" class="postimage" alt="Image">
+<br>
+<br>Maybe this is related to the CPU instructions set? 
+<br>This is the info obtained with CPUZ (under Win XP SP3):
+<br>
+<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>Processors Information<br>-------------------------------------------------------------------------<br><br>Processor 1&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;ID = 0<br>&nbsp; &nbsp;Number of cores&nbsp; &nbsp;&nbsp; &nbsp;1 (max 1)<br>&nbsp; &nbsp;Number of threads&nbsp; &nbsp;1 (max 1)<br>&nbsp; &nbsp;Name&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;AMD Athlon XP<br>&nbsp; &nbsp;Codename&nbsp; &nbsp;&nbsp; &nbsp;Thoroughbred<br>&nbsp; &nbsp;Specification&nbsp; &nbsp;&nbsp; &nbsp;AMD Athlon(tm) XP 2000+<br>&nbsp; &nbsp;Package &nbsp; &nbsp;&nbsp; &nbsp;Socket A (462)<br>&nbsp; &nbsp;CPUID&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;6.8.1<br>&nbsp; &nbsp;Extended CPUID&nbsp; &nbsp;&nbsp; &nbsp;7.8<br>&nbsp; &nbsp;Core Stepping&nbsp; &nbsp;&nbsp; &nbsp;B0<br>&nbsp; &nbsp;Technology&nbsp; &nbsp;&nbsp; &nbsp;0.13 um<br>&nbsp; &nbsp;Core Speed&nbsp; &nbsp;&nbsp; &nbsp;1658.7 MHz<br>&nbsp; &nbsp;Multiplier x Bus Speed&nbsp; &nbsp;12.5 x 132.7 MHz<br>&nbsp; &nbsp;Rated Bus speed&nbsp; &nbsp;&nbsp; &nbsp;265.4 MHz<br>&nbsp; &nbsp;Instructions sets&nbsp; &nbsp;MMX (+), 3DNow! (+), SSE<br>&nbsp; &nbsp;L1 Data cache&nbsp; &nbsp;&nbsp; &nbsp;64 KBytes, 2-way set associative, 64-byte line size<br>&nbsp; &nbsp;L1 Instruction cache&nbsp; &nbsp;64 KBytes, 2-way set associative, 64-byte line size<br>&nbsp; &nbsp;L2 cache&nbsp; &nbsp;&nbsp; &nbsp;256 KBytes, 16-way set associative, 64-byte line size<br>&nbsp; &nbsp;FID/VID Control&nbsp; &nbsp;&nbsp; &nbsp;no<br><br>&nbsp; &nbsp;K7 Thermal sensor&nbsp; &nbsp;yes</code></div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Fri Aug 16, 2013 8:19 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Yes, its the SSE problem<br>I'm looking into it, but the right solution, compile QT is really a lot of work.<br><br>I already managed to compile a build though without sime libs, so i may be able to release a test build this weekend, thoug somstuff may not work</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Aug 18, 2013 9:37 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">crash dmp win7</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Aug 19, 2013 5:03 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">1.Transfer's progress in NeoShare only displays 0% and 100%.
+<br>
+<br>If transfer's progress is not 100%,they all displays 0%.
+<br>
+<br>2.
+<br>crash dmp win7
+<br><div class="inline-attachment">
+	
+		
+
+		
+				<dl class="file">
+			<dt><span class="imageset icon_topic_attach"></span> <a class="postlink" href="./download/file.php?id=601">NeoKad_&amp;#36913;&amp;#19968; &amp;#20843;&amp;#26376; 19 12_33_05 2013.7z</a></dt>
+						<dd>(10.92 KiB) Downloaded 324 times</dd>
+		</dl>
+		
+
+
+		
+		
+	</div>
+<br><div class="inline-attachment">
+	
+		
+
+		
+				<dl class="file">
+			<dt><span class="imageset icon_topic_attach"></span> <a class="postlink" href="./download/file.php?id=601">NeoKad_&amp;#36913;&amp;#19968; &amp;#20843;&amp;#26376; 19 12_33_05 2013.7z</a></dt>
+						<dd>(10.92 KiB) Downloaded 324 times</dd>
+		</dl>
+		
+
+
+		
+		
+	</div>
+<br><div class="inline-attachment">
+	
+		
+
+		
+				<dl class="file">
+			<dt><span class="imageset icon_topic_attach"></span> <a class="postlink" href="./download/file.php?id=601">NeoKad_&amp;#36913;&amp;#19968; &amp;#20843;&amp;#26376; 19 12_33_05 2013.7z</a></dt>
+						<dd>(10.92 KiB) Downloaded 324 times</dd>
+		</dl>
+		
+
+
+		
+		
+	</div>
+<br><div class="inline-attachment">
+	
+		
+
+		
+				<dl class="file">
+			<dt><span class="imageset icon_topic_attach"></span> <a class="postlink" href="./download/file.php?id=601">NeoKad_&amp;#36913;&amp;#19968; &amp;#20843;&amp;#26376; 19 12_33_05 2013.7z</a></dt>
+						<dd>(10.92 KiB) Downloaded 324 times</dd>
+		</dl>
+		
+
+
+		
+		
+	</div>
+<br>
+<br>
+<br>3.
+<br>crash dmp winxp
+<br><div class="inline-attachment">
+	
+		
+
+		
+				<dl class="file">
+			<dt><span class="imageset icon_topic_attach"></span> <a class="postlink" href="./download/file.php?id=601">NeoKad_&amp;#36913;&amp;#19968; &amp;#20843;&amp;#26376; 19 12_33_05 2013.7z</a></dt>
+						<dd>(10.92 KiB) Downloaded 324 times</dd>
+		</dl>
+		
+
+
+		
+		
+	</div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Aug 19, 2013 7:11 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Do you use simple progressbars ? Advanced progressbar are working correctly here.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Aug 19, 2013 11:33 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">There is an annoying bug in file renaming, I don't know if is a real bug or intended but if I rename the file inside the neoloader it doensn't change name the name of downloaded file in incoming folder.<br><br>Regarding the upload issue I think is related to stalling/connection reset slots, when they're kicked out from upload the loader wait a lot of time before call other slots. Not sure if that happen too with blocking/finished kicks, but is possible.<br>During this case the slot that are in upload usually are 3 or 4 and loader don't give them full bandwitch.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Aug 19, 2013 12:07 pm</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">There are 3 transfers in the same time.<br><br>progres.jpg (633 KB)<br><a href="https://mega.co.nz/#!o8NFVajC!Tss-OjAaRQ0u-obESR3SwDeY9uwJ66ivCX_zTy4BB8I" class="postlink">https://mega.co.nz/#!o8NFVajC!Tss-OjAaRQ0u-obESR3SwDeY9uwJ66ivCX_zTy4BB8I</a></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Aug 20, 2013 3:40 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">Detail's description can not display correctly.
+<br>
+<br>Some words display &#65533;&#65533;&#65533;&#65533;&#65533;&#65533;&#65533;&#65533;&#65533;&#65533;.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Tue Aug 20, 2013 6:40 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Und that window size is not saved on exit :P</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Aug 21, 2013 4:02 am</strong></div>
+				<div class="author">by <strong>enOehTsIsihT</strong></div>
+				<div class="content">1.Neoloader can not download multi file by only NeoShare,and it let neoloader(source)'s neokad crashed.<br><div class="inline-attachment">The attachment <strong>NeoLoader_&#36913;&#19977; &#20843;&#26376; 21 10_54_46 2013.7z</strong> is no longer available</div><br><br>2.<br><br>The magnet is copied from other bt client<br><br>Neoloader add magnet to download file by only NeoShare.<br><br>Hash(bith)'s color is gray,and Hash(neo)'s color is black.<br><br>Neoloader can download file by only NeoShare,but it can not get torrent.<br><br><br><br><br>Neoloader add magnet to download multi file by only NeoShare.<br><br>Hash(bith)'s color is gray,and Hash(neox)'s color is gray.<br><br>Neoloader can not download file by only NeoShare,and it can not get torrent.<br><br><br>3.<br>When the last windows is properties,neoloader can not save settings.<br><br>VIDEO<br><br>clip0005.7z (276 KB)<br><a href="https://mega.co.nz/#!Up1SWBxD!Geh0gH9x8q843GUYOhXfe0-aQPhvSkPrQECbo3XhdX0" class="postlink">https://mega.co.nz/#!Up1SWBxD!Geh0gH9x8q843GUYOhXfe0-aQPhvSkPrQECbo3XhdX0</a><br><br>4.<br>Transfer(neoloader)'s progress can not display correctly in NeoShare and ed2k,it can display correctly in bt.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>4</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

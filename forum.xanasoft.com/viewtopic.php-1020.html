@@ -1,0 +1,874 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>HowTo? let sandboxed program mount a drive - xanasoft.com</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - xanasoft.com" href="/feed">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed/topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Troubleshooting" href="/feed/forum/14">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - HowTo? let sandboxed program mount a drive" href="/feed/topic/534">	
+	<link rel="canonical" href="viewtopic.php-2669.html?t=534">
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<link href="assets/css/font-awesome.min.css?assets_version=3" rel="stylesheet">
+<link href="styles/prosilver/theme/stylesheet.css?assets_version=3" rel="stylesheet">
+<link href="styles/prosilver/theme/en/stylesheet.css?assets_version=3" rel="stylesheet">
+
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=3" rel="stylesheet">
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar" role="banner">
+					<div class="inner">
+
+			<div id="site-description" class="site-description">
+		<a id="logo" class="logo" href="index.php.html" title="Board index">
+					<span class="site_logo"></span>
+				</a>
+				<h1>xanasoft.com</h1>
+				<p>Xanasoft support forum</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+									<div id="search-box" class="search-box search-header" role="search">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…">
+					<button class="button button-search" type="submit" title="Search">
+						<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+					</button>
+					<a href="search.php.html" class="button button-search-end" title="Advanced search">
+						<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+					</a>
+					
+				</fieldset>
+				</form>
+			</div>
+						
+			</div>
+					</div>
+				<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="nav-main linklist" role="menubar">
+
+		<li id="quick-links" class="quick-links dropdown-container responsive-menu" data-skip-responsive="true">
+			<a href="#" class="dropdown-trigger">
+				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>Quick links</span>
+			</a>
+			<div class="dropdown">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																									<li>
+								<a href="search.php-1.html?search_id=unanswered" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>Unanswered topics</span>
+								</a>
+							</li>
+							<li>
+								<a href="search.php-2.html?search_id=active_topics" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>Active topics</span>
+								</a>
+							</li>
+							<li class="separator"></li>
+							<li>
+								<a href="search.php.html" role="menuitem">
+									<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>Search</span>
+								</a>
+							</li>
+					
+										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li data-skip-responsive="true">
+			<a href="/help/faq" rel="help" title="Frequently Asked Questions" role="menuitem">
+				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>FAQ</span>
+			</a>
+		</li>
+						
+			<li class="rightside" data-skip-responsive="true">
+			<a href="ucp.php-1939.html?mode=login&amp;redirect=viewtopic.php%3Ff%3D14%26t%3D534" title="Login" accesskey="x" role="menuitem">
+				<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>Login</span>
+			</a>
+		</li>
+					<li class="rightside" data-skip-responsive="true">
+				<a href="ucp.php-1.html?mode=register" role="menuitem">
+					<i class="icon fa-pencil-square-o  fa-fw" aria-hidden="true"></i><span>Register</span>
+				</a>
+			</li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
+								<li class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+										<span class="crumb" itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope=""><a href="index.php.html" itemtype="https://schema.org/Thing" itemscope="" itemprop="item" accesskey="h" data-navbar-reference="index"><i class="icon fa-home fa-fw"></i><span itemprop="name">Board index</span></a><meta itemprop="position" content="1"></span>
+
+																			<span class="crumb" itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope="" data-forum-id="4"><a href="viewforum.php-4.html?f=4" itemtype="https://schema.org/Thing" itemscope="" itemprop="item"><span itemprop="name">Sandboxie+</span></a><meta itemprop="position" content="2"></span>
+																							<span class="crumb" itemtype="http://schema.org/ListItem" itemprop="itemListElement" itemscope="" data-forum-id="14"><a href="viewforum.php-7.html?f=14" itemtype="https://schema.org/Thing" itemscope="" itemprop="item"><span itemprop="name">Troubleshooting</span></a><meta itemprop="position" content="3"></span>
+												</li>
+		
+					<li class="rightside responsive-search">
+				<a href="search.php.html" title="View the advanced search options" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body" class="page-body" role="main">
+		
+		
+<h2 class="topic-title"><a href="viewtopic.php-1020.html?f=14&amp;t=534">HowTo? let sandboxed program mount a drive</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+
+
+
+<div class="action-bar bar-top">
+	
+			<a href="posting.php-1218.html?mode=reply&amp;f=14&amp;t=534" class="button" title="Post a reply">
+							<span>Post Reply</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
+					</a>
+	
+			<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="viewtopic.php-2670.html?f=14&amp;t=534&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+	
+			<div class="search-box" role="search">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…">
+				<button class="button button-search" type="submit" title="Search">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+				</button>
+				<a href="search.php.html" class="button button-search-end" title="Advanced search">
+					<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+				</a>
+				<input type="hidden" name="t" value="534">
+<input type="hidden" name="sf" value="msgonly">
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			6 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+		</div>
+
+
+
+
+			<div id="p1071" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1071">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-56.html?mode=viewprofile&amp;u=976" class="username">SamDi</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-74.html?author_id=976&amp;sr=posts">9</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Jan 27, 2023 4:28 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1071">
+
+						<h3 class="first"><a href="viewtopic.php-2671.html?p=1071#p1071">HowTo? let sandboxed program mount a drive</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1219.html?mode=quote&amp;f=14&amp;p=1071" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-2671.html?p=1071#p1071" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-56.html?mode=viewprofile&amp;u=976" class="username">SamDi</a></strong> &raquo; </span><time datetime="2023-01-27T04:42:43+00:00">Fri Jan 27, 2023 4:42 am</time>
+			</p>
+			
+			
+			
+			<div class="content">Hi!<br>
+I'm using SB+x64.1.6.7 on Win10x64.<br>
+When starting <a href="https://www.pcloud.com/release-notes/windows.html" class="postlink">pcloud client</a> (4.0.4) it normally mounts a drive P:\ (using <a href="https://www.callback.com/cbfsconnect/" class="postlink">CBFS</a>) which represents the cloud storage.<br>
+When starting it sandboxed (Enhanced Isolation, Privacy Enhanced) it doesn't connect this drive. <br>
+<br>
+Which additional settings are required?<br>
+<br>
+<br>
+Thank you very much.<br>
+<br>
+P.S. actual Sandbox config:
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>[pCloud]
+Enabled=y
+BlockNetworkFiles=y
+RecoverFolder=%{374DE290-123F-4565-9164-39C4925E467B}%
+RecoverFolder=%Personal%
+RecoverFolder=%Desktop%
+BorderColor=#0423ee,ttl
+Template=BlockTelemetry
+Template=OpenBluetooth
+Template=SkipHook
+Template=FileCopy
+Template=qWave
+Template=BlockPorts
+Template=LingerPrograms
+Template=AutoRecoverIgnore
+ConfigLevel=9
+AutoRecover=y
+UseSecurityMode=y
+UsePrivacyMode=y
+OpenFilePath=P:\
+OpenFilePath=S:\Data
+OpenFilePath=R:\pCloud
+OpenFilePath=C:\Users\SamDi\AppData\Local\pCloud
+ForceProcess=pCloud.exe
+ForceProcess=msedgewebview2.exe
+</code></pre></div></div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p1352" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1352">
+			<dt class="no-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php.html?mode=viewprofile&amp;u=1069" class="avatar"><img class="avatar" src="download/file.php?avatar=1069_1689425178.png" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php.html?mode=viewprofile&amp;u=1069" class="username">bastik-1001</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-4.html?author_id=1069&amp;sr=posts">310</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 22, 2023 8:30 am</dd>		
+		
+											
+							<dd class="profile-contact">
+				<strong>Contact:</strong>
+				<div class="dropdown-container dropdown-left">
+					<a href="#" class="dropdown-trigger" title="Contact bastik-1001">
+						<i class="icon fa-commenting-o fa-fw icon-lg" aria-hidden="true"></i><span class="sr-only">Contact bastik-1001</span>
+					</a>
+					<div class="dropdown">
+						<div class="pointer"><div class="pointer-inner"></div></div>
+						<div class="dropdown-contents contact-icons">
+																																								<div>
+																	<a href="https://github.com/sandboxie-plus/Sandboxie" title="Website" class="last-cell">
+										<span class="contact-icon phpbb_website-icon">Website</span>
+									</a>
+																	</div>
+																					</div>
+					</div>
+				</div>
+			</dd>
+				
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1352">
+
+						<h3><a href="viewtopic.php-2672.html?p=1352#p1352">Re: HowTo? let sandboxed program mount a drive</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1220.html?mode=quote&amp;f=14&amp;p=1352" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-2672.html?p=1352#p1352" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php.html?mode=viewprofile&amp;u=1069" class="username">bastik-1001</a></strong> &raquo; </span><time datetime="2023-07-16T08:20:56+00:00">Sun Jul 16, 2023 8:20 am</time>
+			</p>
+			
+			
+			
+			<div class="content">Could you make it work? If so, please share your knowledge.<br>
+<br>
+You may try without the privacy mode, to check if that is causing the issue. Just for testing. If it works without, there are other resources that need to be made accessible (either just reading or reading and writing).</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p1434" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1434">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-56.html?mode=viewprofile&amp;u=976" class="username">SamDi</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-74.html?author_id=976&amp;sr=posts">9</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Jan 27, 2023 4:28 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1434">
+
+						<h3><a href="viewtopic.php-2673.html?p=1434#p1434">Re: HowTo? let sandboxed program mount a drive</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1221.html?mode=quote&amp;f=14&amp;p=1434" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-2673.html?p=1434#p1434" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-56.html?mode=viewprofile&amp;u=976" class="username">SamDi</a></strong> &raquo; </span><time datetime="2023-07-25T14:56:08+00:00">Tue Jul 25, 2023 2:56 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">Running it in a standard sandbox helped.<br>
+It just doesn't protect ones files/privacy if untrusted software can access anything  <img class="smilies" src="images/smilies/icon_e_sad.gif" width="15" height="17" alt=":(" title="Sad"> <br>
+<br>
+Sadly there's no support from the vendor even for Paying/PRO users.</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p1436" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1436">
+			<dt class="no-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php.html?mode=viewprofile&amp;u=1069" class="avatar"><img class="avatar" src="download/file.php?avatar=1069_1689425178.png" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php.html?mode=viewprofile&amp;u=1069" class="username">bastik-1001</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-4.html?author_id=1069&amp;sr=posts">310</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 22, 2023 8:30 am</dd>		
+		
+											
+							<dd class="profile-contact">
+				<strong>Contact:</strong>
+				<div class="dropdown-container dropdown-left">
+					<a href="#" class="dropdown-trigger" title="Contact bastik-1001">
+						<i class="icon fa-commenting-o fa-fw icon-lg" aria-hidden="true"></i><span class="sr-only">Contact bastik-1001</span>
+					</a>
+					<div class="dropdown">
+						<div class="pointer"><div class="pointer-inner"></div></div>
+						<div class="dropdown-contents contact-icons">
+																																								<div>
+																	<a href="https://github.com/sandboxie-plus/Sandboxie" title="Website" class="last-cell">
+										<span class="contact-icon phpbb_website-icon">Website</span>
+									</a>
+																	</div>
+																					</div>
+					</div>
+				</div>
+			</dd>
+				
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1436">
+
+						<h3><a href="viewtopic.php-2674.html?p=1436#p1436">Re: HowTo? let sandboxed program mount a drive</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1222.html?mode=quote&amp;f=14&amp;p=1436" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-2674.html?p=1436#p1436" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php.html?mode=viewprofile&amp;u=1069" class="username">bastik-1001</a></strong> &raquo; </span><time datetime="2023-07-25T16:41:41+00:00">Tue Jul 25, 2023 4:41 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">Well, good that it works with a standard box. Now it seems that what has to be done is to figure out what resource is needed to be made available in some way, while the privacy setting is enabled.<br>
+<br>
+@DavidXanatos, what's the best way of finding out what resource that is.<br>
+
+<blockquote class="uncited"><div>Sadly there's no support from the vendor even for Paying/PRO users.</div></blockquote>
+
+Maybe, if you reach out directly. Understandably, support isn't satisfactory.</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p1454" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1454">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="memberlist.php-56.html?mode=viewprofile&amp;u=976" class="username">SamDi</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-74.html?author_id=976&amp;sr=posts">9</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Jan 27, 2023 4:28 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1454">
+
+						<h3><a href="viewtopic.php-2675.html?p=1454#p1454">Re: HowTo? let sandboxed program mount a drive</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1223.html?mode=quote&amp;f=14&amp;p=1454" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-2675.html?p=1454#p1454" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php-56.html?mode=viewprofile&amp;u=976" class="username">SamDi</a></strong> &raquo; </span><time datetime="2023-07-30T11:13:39+00:00">Sun Jul 30, 2023 11:13 am</time>
+			</p>
+			
+			
+			
+			<div class="content"><blockquote class="uncited"><div>@DavidXanatos, what's the best way of finding out what resource that is.</div></blockquote>
+
+That's what I wanted to find out with this thread.<br>
+I don't use to use proprietary software when avoidable but in case I could limit e.g. pClouds client access to a very few folders it was way safer to use than with full access to everything or having to run pCloud as different user and work through file-/folder permissions (pCloud client has deltasync, FOSS rclone hasn't).<br>
+<br>
+I use/pay the software "as is", even without support it's still worth the money for me. So, as I said, it's just "sadly" there's no support.<br>
+<br>
+<br>
+P.S. Though having the box checked I don't get an email when forum threads are updated so only come by every once in a while.</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+				<div id="p1455" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1455">
+			<dt class="no-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="memberlist.php.html?mode=viewprofile&amp;u=1069" class="avatar"><img class="avatar" src="download/file.php?avatar=1069_1689425178.png" width="90" height="90" alt="User avatar"></a>														</div>
+								<a href="memberlist.php.html?mode=viewprofile&amp;u=1069" class="username">bastik-1001</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="search.php-4.html?author_id=1069&amp;sr=posts">310</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Sat Apr 22, 2023 8:30 am</dd>		
+		
+											
+							<dd class="profile-contact">
+				<strong>Contact:</strong>
+				<div class="dropdown-container dropdown-left">
+					<a href="#" class="dropdown-trigger" title="Contact bastik-1001">
+						<i class="icon fa-commenting-o fa-fw icon-lg" aria-hidden="true"></i><span class="sr-only">Contact bastik-1001</span>
+					</a>
+					<div class="dropdown">
+						<div class="pointer"><div class="pointer-inner"></div></div>
+						<div class="dropdown-contents contact-icons">
+																																								<div>
+																	<a href="https://github.com/sandboxie-plus/Sandboxie" title="Website" class="last-cell">
+										<span class="contact-icon phpbb_website-icon">Website</span>
+									</a>
+																	</div>
+																					</div>
+					</div>
+				</div>
+			</dd>
+				
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1455">
+
+						<h3><a href="viewtopic.php-2676.html?p=1455#p1455">Re: HowTo? let sandboxed program mount a drive</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="posting.php-1224.html?mode=quote&amp;f=14&amp;p=1455" title="Reply with quote" class="button button-icon-only">
+								<i class="icon fa-quote-left fa-fw" aria-hidden="true"></i><span class="sr-only">Quote</span>
+							</a>
+						</li>
+														</ul>
+							
+						<p class="author">
+									<a class="unread" href="viewtopic.php-2676.html?p=1455#p1455" title="Post">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">Post</span>
+					</a>
+								<span class="responsive-hide">by <strong><a href="memberlist.php.html?mode=viewprofile&amp;u=1069" class="username">bastik-1001</a></strong> &raquo; </span><time datetime="2023-07-30T17:14:29+00:00">Sun Jul 30, 2023 5:14 pm</time>
+			</p>
+			
+			
+			
+			<div class="content">About e-Mails, someone else mentioned that and I reached out to David about that, recently, but he did not log in here, so he could not look into the configuration.<br>
+<br>
+For the same reason, he has not replied to your report or my attempt to reach out for help.<br>
+<br>
+Support was probably better as there was a company releasing a product, with other products available as well, so they had the resources to have staff to handle this. With the fork after the release of the sources, things are different. I am not sure, if there were more users on here before the fire took out the forum, which could not be restored, but I still hope that this forum will get more users, so that they can help each other.<br>
+<br>
+I had <a href="https://github.com/sandboxie-plus/Sandboxie/issues/3144" class="postlink">this idea</a> for some time and now that upcoming releases will have a troubleshooting wizard, it could be something that makes it easier to use different kinds of boxes, if the program works in the first place.<br>
+<br>
+For now, you can take a look at the resources the program accesses in the standard box, by enabling the stack trace feature of Sandboxie. You can enable that in "View", where you select "Trace Logging". Now you can start the program in the standard box, use it like you intend to, and observe in the <em class="text-italics">Trace Log</em> what gets accesses. Then you can open the option for the sandbox and add the resources to it via "Resource Access" option.<br>
+<br>
+If the trace of Sandboxie/Sandman was not helpful, maybe the <em class="text-italics">Process Monitor</em> (Procmon) made by Sysinternals helps you to identify what the program accesses, while running in the standard box, that it needs to be able to access in the privacy type box.<br>
+<br>
+I can't tell you if there is a better way, which is why I thought David could provide a better answer.</div>
+
+			
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="Top">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">Top</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider">
+	
+
+	<div class="action-bar bar-bottom">
+	
+			<a href="posting.php-1218.html?mode=reply&amp;f=14&amp;t=534" class="button" title="Post a reply">
+							<span>Post Reply</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
+					</a>
+		
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																												<li>
+					<a href="viewtopic.php-2670.html?f=14&amp;t=534&amp;view=print" title="Print view" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>Print view</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+
+			<form method="post" action="./viewtopic.php?f=14&amp;t=534">
+		<div class="dropdown-container dropdown-container-left dropdown-button-control sort-tools">
+	<span title="Display and sorting options" class="button button-secondary dropdown-trigger dropdown-select">
+		<i class="icon fa-sort-amount-asc fa-fw" aria-hidden="true"></i>
+		<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+	</span>
+	<div class="dropdown hidden">
+		<div class="pointer"><div class="pointer-inner"></div></div>
+		<div class="dropdown-contents">
+			<fieldset class="display-options">
+							<label>Display: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+								<label>Sort by: <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label>
+				<label>Direction: <select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+								<hr class="dashed">
+				<input type="submit" class="button2" name="sort" value="Go">
+						</fieldset>
+		</div>
+	</div>
+</div>
+		</form>
+	
+	
+	
+			<div class="pagination">
+			6 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+	</div>
+
+
+<div class="action-bar actions-jump">
+		<p class="jumpbox-return">
+		<a href="viewforum.php-7.html?f=14" class="left-box arrow-left" accesskey="r">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>Return to “Troubleshooting”</span>
+		</a>
+	</p>
+	
+		<div class="jumpbox dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+			<span title="Jump to" class="button button-secondary dropdown-trigger dropdown-select">
+				<span>Jump to</span>
+				<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+			</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																				<li><a href="viewforum.php.html?f=1" class="jumpbox-cat-link"> <span> General</span></a></li>
+																<li><a href="viewforum.php-1.html?f=27" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Announcements</span></a></li>
+																<li><a href="viewforum.php-2.html?f=28" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Forum Discussion</span></a></li>
+																<li><a href="viewforum.php-3.html?f=2" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Off-Topic</span></a></li>
+																<li><a href="viewforum.php-4.html?f=4" class="jumpbox-cat-link"> <span> Sandboxie+</span></a></li>
+																<li><a href="viewforum.php-5.html?f=12" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-6.html?f=13" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-7.html?f=14" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-8.html?f=15" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-9.html?f=16" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+																<li><a href="viewforum.php-10.html?f=3" class="jumpbox-cat-link"> <span> TaskExplorer</span></a></li>
+																<li><a href="viewforum.php-11.html?f=7" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-12.html?f=8" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-13.html?f=9" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-14.html?f=10" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-15.html?f=11" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+																<li><a href="viewforum.php-16.html?f=5" class="jumpbox-cat-link"> <span> DiskCryptor</span></a></li>
+																<li><a href="viewforum.php-17.html?f=17" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-18.html?f=18" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-19.html?f=19" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-20.html?f=20" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-21.html?f=21" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+																<li><a href="viewforum.php-22.html?f=6" class="jumpbox-cat-link"> <span> PrivateWin10</span></a></li>
+																<li><a href="viewforum.php-23.html?f=22" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Discussions</span></a></li>
+																<li><a href="viewforum.php-24.html?f=23" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Tutorials</span></a></li>
+																<li><a href="viewforum.php-25.html?f=24" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Troubleshooting</span></a></li>
+																<li><a href="viewforum.php-26.html?f=25" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Feature Requests</span></a></li>
+																<li><a href="viewforum.php-27.html?f=26" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; Bug Reports</span></a></li>
+											</ul>
+		</div>
+	</div>
+
+	</div>
+
+
+			</div>
+
+
+<div id="page-footer" class="page-footer" role="contentinfo">
+	<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-footer" class="nav-footer linklist" role="menubar">
+		<li class="breadcrumbs">
+									<span class="crumb"><a href="index.php.html" data-navbar-reference="index"><i class="icon fa-home fa-fw" aria-hidden="true"></i><span>Board index</span></a></span>					</li>
+		
+				<li class="rightside">All times are <span title="UTC">UTC</span></li>
+							<li class="rightside">
+				<a href="ucp.php-2.html?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">
+					<i class="icon fa-trash fa-fw" aria-hidden="true"></i><span>Delete cookies</span>
+				</a>
+			</li>
+																<li class="rightside" data-last-responsive="true">
+				<a href="memberlist.php-11.html?mode=contactadmin" role="menuitem">
+					<i class="icon fa-envelope fa-fw" aria-hidden="true"></i><span>Contact us</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+
+	<div class="copyright">
+				<p class="footer-row">
+			<span class="footer-copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited</span>
+		</p>
+						<p class="footer-row" role="menu">
+			<a class="footer-link" href="ucp.php-3.html?mode=privacy" title="Privacy" role="menuitem">
+				<span class="footer-link-text">Privacy</span>
+			</a>
+			|
+			<a class="footer-link" href="ucp.php-4.html?mode=terms" title="Terms" role="menuitem">
+				<span class="footer-link-text">Terms</span>
+			</a>
+		</p>
+					</div>
+
+	<div id="darkenwrapper" class="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken" class="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	<img src="/cron/cron.task.core.tidy_cache" width="1" height="1" alt="cron"></div>
+
+<script src="assets/javascript/jquery-3.4.1.min.js?assets_version=3"></script>
+<script src="assets/javascript/core.js?assets_version=3"></script>
+
+
+<script>
+(function($) {  // Avoid conflicts with other libraries
+
+'use strict';
+
+	phpbb.addAjaxCallback('reporttosfs', function(data) {
+		if (data.postid !== "undefined") {
+			$('#sfs' + data.postid).hide();
+			phpbb.closeDarkenWrapper(5000);
+		}
+	});
+
+})(jQuery);
+</script>
+<script src="styles/prosilver/template/forum_fn.js?assets_version=3"></script>
+<script src="styles/prosilver/template/ajax.js?assets_version=3"></script>
+
+
+
+</body>
+</html>

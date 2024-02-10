@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; Upload priority proposal</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>Upload priority proposal</h2>
+		<p><a href="viewtopic.php-252.html?f=172&amp;t=6807">http://forum.neoloader.com/viewtopic.php?f=172&amp;t=6807</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>2</strong></div>
+					<div class="post">
+				<h3>Upload priority proposal</h3>
+				<div class="date">Posted: <strong>Sat Jul 04, 2015 8:01 pm</strong></div>
+				<div class="author">by <strong>esher</strong></div>
+				<div class="content">the idea is to push the file less transferred x network<br>tracking requesters chunk/piece composition for a single file using their reasks to etablish if there is any change - all requesters from a ntwork for each file - (if they acquired some data or not - improvement or stall)<br>the file with the longer stall status will get the slot. completing a succesfull upload session is count as an improvement and the file will go bottom queue.<br>downloads/part files will be reverse, last part file involved in any improvement (successfully downloaded part counts) will be the one.<br>give 50% chance to be a part or a complete upload slot and keep chosing randomly the client.<br>in other words... the complete file with the slowest parts transfer among requesters will be the one (any successful upload from our side will put it 0.00),<br>for downloads: still track other requesters reask status changing (if we just had a part it's an improvemt too - 0.00) the file that had just an improvement will be the one.<br><br>the goal is to push the less transferred file according the real file speed not to count how many 5000queue client sources it has.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Upload priority proposal</h3>
+				<div class="date">Posted: <strong>Tue Jul 07, 2015 8:46 am</strong></div>
+				<div class="author">by <strong>OwenBurnett</strong></div>
+				<div class="content">In 98% of cases the file speed is lower for the rare files, so those are the ones that should be pushed. But not just because of that, but to avoid their disappear <img class="smilies" src="images/smilies/icon_e_wink.gif" alt=";)" title="Wink"> <br><br>If a file is requested by 100 clients, while another one is requested by 5, its obviously this last one that need some extra &quot;tickets&quot; to get a chance to get in the upload slots.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Upload priority proposal</h3>
+				<div class="date">Posted: <strong>Tue Jul 07, 2015 12:40 pm</strong></div>
+				<div class="author">by <strong>esher</strong></div>
+				<div class="content">iirc neomule worked pretty much as you just described, the idea was good but it poorly failed in some situation.<br>1. all files with one request were pushed massively. Did they really need that push? i tried to search from a freind home same files and not all of them needed a particular push. <br>2. whenever you had more requests for the same file, u could often see the requesters were all stuck at the same % with the same parts. this files had no chance to be pushed. the more requesters got stuck at that point the lower the fil prio went.<br><br>relying on complete sources count from source Exchange is failing because you know, fine, there are 9 sources + me, but they clearly made poor priority choices. and reverse when there were 2 sources + me... there could be a good sharer.<br><br>i think we need something highly dynamic and crossprotocl effective. edit: or non crossprotocol effective... who cares!? <img class="smilies" src="images/smilies/icon_razz.gif" alt=":P" title="Razz"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Upload priority proposal</h3>
+				<div class="date">Posted: <strong>Wed Jul 08, 2015 1:11 am</strong></div>
+				<div class="author">by <strong>OwenBurnett</strong></div>
+				<div class="content">The point is not just the speed (where the system works in most of cases though, because we have to assume that the majority of the time an higher number of sources has a potential higher speed, exception are really really rare), but the lifetime of the file. With 2 sources only, it may be avaible only at certain times because both clients might be offline for days, or might disappear completely... that's why rare files really need a push, to increase the number of sources (with full file) avaible.<br><br>Its pratically impossible to trace &quot;filespeed&quot; accurately enough to make a priority system based on that...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Upload priority proposal</h3>
+				<div class="date">Posted: <strong>Thu Jul 09, 2015 1:01 pm</strong></div>
+				<div class="author">by <strong>esher</strong></div>
+				<div class="content">btw the current random queue with default priority  is basically a &quot;follow the majority&quot; mode . it's bad, even from your point of view because file rarity is brutally inrelevant.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Upload priority proposal</h3>
+				<div class="date">Posted: <strong>Thu Jul 09, 2015 1:20 pm</strong></div>
+				<div class="author">by <strong>OwenBurnett</strong></div>
+				<div class="content"><blockquote><div><cite>esher wrote:</cite>btw the current random queue with default priority  is basically a &quot;follow the majority&quot; mode . it's bad, even from your point of view because file rarity is brutally inrelevant.</div></blockquote><br><br>What do you mean with &quot;follow the majorty&quot; ? That file with more requests usually get more upload slot ? Well, its kinda obvious... to avoid that we should increase the &quot;tickets&quot; for the rare files. But on the other side, we should not make a brutal difference otherwise we won't upload the popular files in that situation.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Upload priority proposal</h3>
+				<div class="date">Posted: <strong>Thu Jul 09, 2015 3:00 pm</strong></div>
+				<div class="author">by <strong>esher</strong></div>
+				<div class="content"><blockquote><div><cite>OwenBurnett wrote:</cite>Its pratically impossible to trace &quot;filespeed&quot; accurately enough to make a priority system based on that...</div></blockquote><br><br>bummer.<br><br><blockquote><div><cite>OwenBurnett wrote:</cite>If a file is requested by 100 clients, while another one is requested by 5, its obviously this last one that need some extra &quot;tickets&quot; to get a chance to get in the upload slots.</div></blockquote><br><br>obvious.<br><br><blockquote><div><cite>OwenBurnett wrote:</cite> But on the other side, we should not make a brutal difference otherwise we won't upload the popular files in that situation.</div></blockquote><br><br>fair enough.<br><br><blockquote><div><cite>OwenBurnett wrote:</cite>file with more requests usually get more upload slot ? Well, its kinda obvious... </div></blockquote><br><br>obvious, if there is just 1 complete source, me.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Upload priority proposal</h3>
+				<div class="date">Posted: <strong>Fri Jul 10, 2015 2:22 am</strong></div>
+				<div class="author">by <strong>OwenBurnett</strong></div>
+				<div class="content"><blockquote><div><cite>esher wrote:</cite>obvious, if there is just 1 complete source, me.</div></blockquote><br><br>I understand your point, but we cannot force the other clients to upload more, expecially more than you <img class="smilies" src="images/smilies/icon_e_biggrin.gif" alt=":D" title="Very Happy"> <br><br>(or to manage the bandwitch in a smarter way)</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Upload priority proposal</h3>
+				<div class="date">Posted: <strong>Fri Jul 10, 2015 11:51 am</strong></div>
+				<div class="author">by <strong>esher</strong></div>
+				<div class="content">you maybe misunderstood last sentence. im not sure...<br>i meant as long my nl is the ONLY complete source, the &quot;tickets&quot; won't decrease  even in case of 5k requests.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: Upload priority proposal</h3>
+				<div class="date">Posted: <strong>Fri Jul 10, 2015 12:40 pm</strong></div>
+				<div class="author">by <strong>OwenBurnett</strong></div>
+				<div class="content"><blockquote><div><cite>esher wrote:</cite>you maybe misunderstood last sentence. im not sure...<br>i meant as long my nl is the ONLY complete source, the &quot;tickets&quot; won't decrease  even in case of 5k requests.</div></blockquote><br><br>mhhhh... we should be using 1 ticket each client for the lower priority and maybe 20-30 ticket each client for the higher, I don't know exactly how it is right now, must wait for DavidX <img class="smilies" src="images/smilies/icon_razz.gif" alt=":P" title="Razz"></div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>2</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

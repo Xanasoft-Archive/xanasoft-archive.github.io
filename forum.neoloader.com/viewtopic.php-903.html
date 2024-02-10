@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; Ubuntu server 14.04.1 &amp; Neoloader</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>Ubuntu server 14.04.1 &amp; Neoloader</h2>
+		<p><a href="viewtopic.php-151.html?f=170&amp;t=6766">http://forum.neoloader.com/viewtopic.php?f=170&amp;t=6766</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>5</strong></div>
+					<div class="post">
+				<h3>Ubuntu server 14.04.1 &amp; Neoloader</h3>
+				<div class="date">Posted: <strong>Sat Jan 03, 2015 4:30 pm</strong></div>
+				<div class="author">by <strong>The supreme</strong></div>
+				<div class="content">Hi all I'm new, first of all I'm very sorry for my english;
+<br>I'd like to talk about a problem between <strong>ubuntu server 14.04.1</strong> (no gui just command line) and Neoloader.
+<br>Problem start on installation:
+<br>
+<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>emanuele@servertest:~$ sudo dpkg -i neoloader_2014.0_amd64.deb<br>&#91;sudo&#93; password for emanuele:<br>no talloc stackframe at ../source3/param/loadparm.c:4864, leaking memory<br>Selecting previously unselected package neoloader.<br>(Reading database ... 57208 files and directories currently installed.)<br>Preparing to unpack neoloader_2014.0_amd64.deb ...<br>Unpacking neoloader (2014.0) ...<br>dpkg: dependency problems prevent configuration of neoloader:<br>&nbsp;neoloader depends on libfontconfig1 (&gt;= 2.9.0); however:<br>&nbsp; Package libfontconfig1 is not installed.<br>&nbsp;neoloader depends on libgl1-mesa-glx | libgl1; however:<br>&nbsp; Package libgl1-mesa-glx is not installed.<br>&nbsp; Package libgl1 is not installed.<br>&nbsp;neoloader depends on libx11-xcb1; however:<br>&nbsp; Package libx11-xcb1 is not installed.<br>&nbsp;neoloader depends on libxi6 (&gt;= 2:1.2.99.4); however:<br>&nbsp; Package libxi6 is not installed.<br>&nbsp;neoloader depends on libxrender1; however:<br>&nbsp; Package libxrender1 is not installed.<br><br>dpkg: error processing package neoloader (--install):<br>&nbsp;dependency problems - leaving unconfigured<br>Processing triggers for mime-support (3.54ubuntu1) ...<br>Errors were encountered while processing:<br>&nbsp;neoloader</code></div><br><br>And I try to solve the problem with <strong>sudo apt-get -f install</strong> and all dependencies are installed but not Neoloader:<br><br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>...<br>...<br>...<br>Setting up libxi6:amd64 (2:1.7.1.901-1ubuntu1) ...<br>Setting up libxrender1:amd64 (1:0.9.8-1) ...<br>Setting up neoloader (2014.0) ...<br>Starting NeoLoader live setup...<br>QXcbConnection: Could not connect to display<br>/var/lib/dpkg/info/neoloader.postinst: line 5:&nbsp; 1720 Aborted&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(core dumped) ./NeoSetup -select NeoLoader MediaPlayer.so.1 -download -install -start<br>Setting up libpciaccess0:amd64 (0.13.2-1) ...<br>Setting up libdrm-intel1:amd64 (2.4.56-1~ubuntu1) ...<br>Setting up libdrm-nouveau2:amd64 (2.4.56-1~ubuntu1) ...<br>Setting up libdrm-radeon1:amd64 (2.4.56-1~ubuntu1) ...<br>Setting up libllvm3.4:amd64 (1:3.4-1ubuntu3) ...<br>Setting up libgl1-mesa-dri:amd64 (10.1.3-0ubuntu0.2) ...<br>Setting up libtxc-dxtn-s2tc0:amd64 (0~git20131104-1.1) ...<br>update-alternatives: using /usr/lib/x86_64-linux-gnu/libtxc_dxtn_s2tc.so.0 to provide /usr/lib/x86_64-linux-gnu/libtxc_dxtn.so(libtxc-dxtn-x86_64-linux-gnu) in auto mode<br>Processing triggers for libc-bin (2.19-0ubuntu6) ...<br></code></div>
+<br>
+<br><strong>Do I something wrong?</strong>
+<br>and after, if somebody could write a micro guide (or link) to start neoloader in daemon version and which file i must edit for configure it.
+<br>At last: after install and launch the daemon on ubuntu server, for use GUI from windows, I open Neoloader I go on Neo tab =&gt; Connection Manager =&gt; Strop and put ip address, port, password (of coure what I must configure before on daemon) and click on connect.
+<br><strong>Is it right?</strong>
+<br>
+<br>It would be really great to use neoloader on sever because now I use amule for ed2k link (of course) and fatrat for torrent html and host (host not too much!!! just rapid...), but for to have no problems I don't start together the 2 program.
+<br>The server is a download station, dlna server, samba and ftp server. It's very very good and if I can use Neoloader will be more
+<br>
+<br>Thanks a lot for every answer</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Jan 03, 2015 4:58 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Hi,<br><br>I never tested it on a installation that did not head any GUI components installed, <br><br>I think there is a mistake in the installation script<br>it starts <br>./NeoSetup -select NeoLoader MediaPlayer.so.1 -download -install -start<br>this should be<br>./NeoSetup -embedded -select NeoLoader MediaPlayer.so.1 -download -install -start<br>the -embedded switch tells the setup to instantiate a APP object from the QT framework that does not require any GUI component.<br><br>Please try running the setup manually with the -embedded switch added<br><br>as for how to connect<br>it pretty much works as you already said the default password for a unconfirmed NeoLoader core will be just '*'<br>a Neo with a GUI would setup a random password on first Start of the GUI object, but a Neo run only as command line will not do that and require the user to change it.<br><br>David X.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sat Jan 03, 2015 10:08 pm</strong></div>
+				<div class="author">by <strong>The supreme</strong></div>
+				<div class="content">Hi David, Thank you so much for quick response.
+<br>
+<br>I installed in this way:
+<br><strong>dpkg-deb -x neoloader_2014.0_amd64.deb $HOME</strong> for extract deb packet in home directory, <strong>cd opt/NeoLoader</strong> for go inside new directory and 
+<br><strong>./NeoSetup -embedded -select NeoLoader MediaPlayer.so.1 -download -install -start</strong> as you wrote, and I had this:
+<br>
+<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>emanuele@servertest:~/opt/NeoLoader$ ./NeoSetup -embedded -select NeoLoader MediaPlayer.so.1 -download -install -start<br>Retrieving update packet informations...<br>Incpecting current instalation...<br>Downloading files...<br>Download Progress: &#91;##################################################&#93; 100%<br>Installing files...<br>Finishing Instalation...</code></div><br><br>and I have all file:<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>emanuele@servertest:~/opt/NeoLoader$ ls<br>7z.so&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;libNeoGUI.so.1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; libqtsingleapp.so.1<br>accessible&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; libNeoHelper.so.1&nbsp; &nbsp; &nbsp; &nbsp;libqwt.so.1<br>Codecs&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; libNeoScriptTools.so.1&nbsp; libsqlite3.so<br>Config&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; libqbencode.so.1&nbsp; &nbsp; &nbsp; &nbsp; libutp.so<br>imageformats&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; libqjson.so.1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;libv8.so<br>Language.7z&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;libQt5Concurrent.so.5&nbsp; &nbsp;libWebBrowser.so.1<br>libboost_regex.so.1.49.0&nbsp; libQt5Core.so.5&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;MuleKad<br>libcryptopp.so&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; libQt5DBus.so.5&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;NeoKad<br>libDHT.so.1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;libQt5Gui.so.5&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NeoLoader<br>libicudata.so.48&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; libQt5Network.so.5&nbsp; &nbsp; &nbsp; NeoSetup<br>libicudata.so.51&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; libQt5Script.so.5&nbsp; &nbsp; &nbsp; &nbsp;platforms<br>libicui18n.so.48&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; libQt5Sql.so.5&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Scripts.7z<br>libicui18n.so.51&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; libQt5Widgets.so.5&nbsp; &nbsp; &nbsp; sqldrivers<br>libicuuc.so.48&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; libqtftp.so.1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Updates<br>libicuuc.so.51&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; libqtping.so.1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; WebAPI.7z<br>libMiniUPnP.so.1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; libqtservice.so.1&nbsp; &nbsp; &nbsp; &nbsp;WebUI.7z</code></div><br><br>and now? <img class="smilies" src="./images/smilies/help.gif" alt=":help:" title="Help"> how I can start Neoloader without GUI?<br><br>I tried this:<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>emanuele@servertest:~/opt/NeoLoader$ ./NeoLoader<br>QXcbConnection: Could not connect to display<br>signal 6 (Aborted), address is 0x3e8000005ba from 0x7fcb8f236f79<br>&#91;bt&#93;: (1) /lib/x86_64-linux-gnu/libc.so.6(gsignal+0x39) &#91;0x7fcb8f236f79&#93;<br>&#91;bt&#93;: (2) /lib/x86_64-linux-gnu/libc.so.6(gsignal+0x39) &#91;0x7fcb8f236f79&#93;<br>&#91;bt&#93;: (3) /lib/x86_64-linux-gnu/libc.so.6(abort+0x148) &#91;0x7fcb8f23a388&#93;<br>&#91;bt&#93;: (4) libQt5Core.so.5(_ZNK14QMessageLogger5fatalEPKcz+0xae) &#91;0x7fcb9008668e&#93;<br>&#91;bt&#93;: (5) /home/emanuele/opt/NeoLoader/platforms/libqxcb.so(+0x62e94) &#91;0x7fcb86e3ce94&#93;<br>&#91;bt&#93;: (6) /home/emanuele/opt/NeoLoader/platforms/libqxcb.so(+0x64991) &#91;0x7fcb86e3e991&#93;<br>&#91;bt&#93;: (7) /home/emanuele/opt/NeoLoader/platforms/libqxcb.so(+0x7513a) &#91;0x7fcb86e4f13a&#93;<br>&#91;bt&#93;: (8) libQt5Gui.so.5(_ZN27QPlatformIntegrationFactory6createERK7QStringRK11QStringListS2_+0xa2) &#91;0x7fcb90758232&#93;<br>&#91;bt&#93;: (9) libQt5Gui.so.5(_ZN22QGuiApplicationPrivate25createPlatformIntegrationEv+0x377) &#91;0x7fcb90763967&#93;<br>&#91;bt&#93;: (10) libQt5Gui.so.5(_ZN22QGuiApplicationPrivate21createEventDispatcherEv+0x6d) &#91;0x7fcb907645dd&#93;<br>&#91;bt&#93;: (11) libQt5Core.so.5(_ZN16QCoreApplication4initEv+0x22d) &#91;0x7fcb90262e3d&#93;<br>&#91;bt&#93;: (12) libQt5Core.so.5(_ZN16QCoreApplicationC1ER23QCoreApplicationPrivate+0x25) &#91;0x7fcb90262ea5&#93;<br>&#91;bt&#93;: (13) libQt5Gui.so.5(_ZN15QGuiApplicationC2ER22QGuiApplicationPrivate+0x9) &#91;0x7fcb907650b9&#93;<br>&#91;bt&#93;: (14) libQt5Widgets.so.5(_ZN12QApplicationC1ERiPPci+0x52) &#91;0x7fcb91cb1a02&#93;<br>&#91;bt&#93;: (15) libqtsingleapp.so.1(_ZN19QtSingleApplicationC2ERK7QStringRiPPc+0x32) &#91;0x7fcb92aceb5c&#93;<br>&#91;bt&#93;: (16) ./NeoLoader(main+0x39c) &#91;0x585e49&#93;<br>&#91;bt&#93;: (17) /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf5) &#91;0x7fcb8f221ec5&#93;<br>&#91;bt&#93;: (18) ./NeoLoader() &#91;0x5855e9&#93;</code></div><br>and this<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>emanuele@servertest:~/opt/NeoLoader$ ./NeoLoader -embedded<br>signal 11 (Segmentation fault), address is 0x50 from 0x7fa66a294632<br>&#91;bt&#93;: (1) libqtsingleapp.so.1(_ZNK12QtLockedFile8isLockedEv+0xc) &#91;0x7fa66a294632&#93;<br>&#91;bt&#93;: (2) libqtsingleapp.so.1(_ZNK12QtLockedFile8isLockedEv+0xc) &#91;0x7fa66a294632&#93;<br>&#91;bt&#93;: (3) libqtsingleapp.so.1(_ZN11QtLocalPeer8isClientEv+0x26) &#91;0x7fa66a295330&#93;<br>&#91;bt&#93;: (4) libqtsingleapp.so.1(_ZN19QtSingleApplication9isRunningEv+0x1c) &#91;0x7fa66a296bc0&#93;<br>&#91;bt&#93;: (5) ./NeoLoader(main+0x956) &#91;0x586403&#93;<br>&#91;bt&#93;: (6) /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf5) &#91;0x7fa6669e9ec5&#93;<br>&#91;bt&#93;: (7) ./NeoLoader() &#91;0x5855e9&#93;</code></div>
+<br>but nothing
+<br>I don't know very good linux I start using it 8 month ago when I tried to set up my server and by google I always managed to find what I need and I learned all the little things that I know now; so I am sorry to steal your time, but if you can help me on this problem I would be really grateful of you <img class="smilies" src="./images/smilies/8.gif" alt=":8:" title="8"> (of course if all this is possible!) <img class="smilies" src="./images/smilies/36_1_32.gif" alt=":danl" title="dank"> <img class="smilies" src="./images/smilies/36_1_32.gif" alt=":danl" title="dank"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Jan 04, 2015 9:13 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">To start NeoLoader without a GUI you need to use the switch -core or -daemon<br><br>if you use the switch -core it will start in the current terminal session and the session will need to remain open as long as neo runs,<br>you can bypass this restriction by setting the ini setting Config/NeoLoader.ini -&gt; Integration/NoHUP to true this will make NeoLoader ignore the hand up signal when the terminal closes<br><br>or you can use the -daemon switch than NeoLoader will start a new instance of itself in a way that the new instance will also ignore the hand up signal. all console output of the second NeoLoader will be redirected to the first one and displayed in the starting console, but here you can now close the console or kill the process with Ctrl-C and the second NeoLoader will remain running.<br><br><blockquote class="uncited"><div>things that I know now; so I am sorry to steal your time, but if you can help me on this problem I would be really grateful of you (of course if all this is possible!)</div></blockquote><br>I'm happy to help.<br><br>it must work <img class="smilies" src="./images/smilies/biggrin.png" alt=":D" title=":D"><br><br>Cheers<br>David</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Jan 04, 2015 11:23 am</strong></div>
+				<div class="author">by <strong>Giovannino</strong></div>
+				<div class="content">Hi folks! ;-)<br><br>I'm interested too in the linux version of NeoLoader so I'll install on one Debian Wheezy VM and test it.<br><br>@The Supreme: the errors you saw on the first installation (fixed with apt-get install -f) are to be expected on a text-only installation (you didn't install Xorg). (Gli errori che hai incontrato sono dovuti al fatto che stai usando Ubuntu in modalitÃ  testo, senza server grafico).<br><br>@DavidXanatos: first... thanks for your hard work (to you and to the other developer, ofcourse!). Second... the project is yours and you only dicide what to do and how to develop but as far I can see It would be great if NeoLoader could run as an headless daemon with an internal web-server (like transmission-daemon). I never saw something more easy to manage/control as the transmission-daemon web-gui (and I know you want to keep it simple). I'm not a coder (the last time I wrote something in assembler the dinos were ruling over Earth! <img class="smilies" src="./images/smilies/wink.png" alt=";)" title=";)"> ) but I think in that way it would be more "architecture/so indipendent" and easier to maintain. Anyway thanks again! ;-)<br><br>Now I must return to my Debian VM to test! ;-)<br><br>(Sorry for my very bad English but It isn't my native language... is my fourth language! ;-))<br><br>[UPDATE]<br><br>I tried to install NeoLoader on a Debian Wheezy 64bit environment but It failed due to the libc6 version: NeoLoader requires a newer one.<br>I'll try with a Debian Jessie environment.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Jan 04, 2015 5:03 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content"><blockquote class="uncited"><div>as far I can see It would be great if NeoLoader could run as an headless daemon with an internal web-server (like transmission-daemon).</div></blockquote><br>emm... it does already.<br>you start it on a server with the -daemon switch<br>and access it from an otehr PC with <br><a href="http://serverIP:1600/" class="postlink">http://serverIP:1600/</a><br>and thats it <img class="smilies" src="./images/smilies/biggrin.png" alt=":D" title=":D"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Jan 05, 2015 12:12 pm</strong></div>
+				<div class="author">by <strong>The supreme</strong></div>
+				<div class="content">Hi David,
+<br>I was trying now but something goes wrong:
+<br>first attempt
+<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>emanuele@servertest:~/opt/NeoLoader$ ./NeoLoader -core<br>signal 11 (Segmentation fault), address is 0x50 from 0x7f3dd7851632<br>&#91;bt&#93;: (1) libqtsingleapp.so.1(_ZNK12QtLockedFile8isLockedEv+0xc) &#91;0x7f3dd7851632&#93;<br>&#91;bt&#93;: (2) libqtsingleapp.so.1(_ZNK12QtLockedFile8isLockedEv+0xc) &#91;0x7f3dd7851632&#93;<br>&#91;bt&#93;: (3) libqtsingleapp.so.1(_ZN11QtLocalPeer8isClientEv+0x26) &#91;0x7f3dd7852330&#93;<br>&#91;bt&#93;: (4) libqtsingleapp.so.1(_ZN19QtSingleApplication9isRunningEv+0x1c) &#91;0x7f3dd7853bc0&#93;<br>&#91;bt&#93;: (5) ./NeoLoader(main+0x956) &#91;0x586403&#93;<br>&#91;bt&#93;: (6) /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf5) &#91;0x7f3dd3fa6ec5&#93;<br>&#91;bt&#93;: (7) ./NeoLoader() &#91;0x5855e9&#93;</code></div><br>second attempt<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>emanuele@servertest:~/opt/NeoLoader$ ./NeoLoader -daemon<br>signal 11 (Segmentation fault), address is 0x50 from 0x7f9545d05632</code></div><br>third attempt<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>emanuele@servertest:~/opt/NeoLoader$ ./NeoLoader -daemon<br>signal 11 (Segmentation fault), address is 0x50 from 0x7fd46fd97632<br>&#91;bt&#93;: (1) libqtsingleapp.so.1(_ZNK12QtLockedFile8isLockedEv+0xc) &#91;0x7fd46fd97632&#93;<br>&#91;bt&#93;: (2) libqtsingleapp.so.1(_ZNK12QtLockedFile8isLockedEv+0xc) &#91;0x7fd46fd97632&#93;</code></div><br>After always as second attempt<br>I tried to set permission 777 on all file but nothing<br>Could be corrupt libqtsingleapp.so.1?<br>And last thing: on Connection Manager port is 20035 like inside NeoLoader.ini?<br><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>&#91;Core&#93;<br>AutoStart=0<br>BusName=NeoBus<br>BusPort=20034<br>LocalName=NeoCore<br>Password=*<br>RemoteHost=localhost<br>RemotePort=20035&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;----------------<br>Separate=0<br>ServiceName=NeoLoader<br>TimeoutSecs=30<br>TockenTimeOut=2592000<br>ValidTockens=</code></div>
+<br>
+<br>Thank you so much <img class="smilies" src="./images/smilies/36_1_32.gif" alt=":danl" title="dank"></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Jan 05, 2015 3:24 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Are you using the 64 bit version or the 32 bit version?<br><br>i updated the 64 bit build with a fix, please tell me if that helped, of if i need to update the 32 bit build as well...<br><br>for the remote GUI from an otehr neolaoder instalation its 20035 yes<br>for the web UI its 1600 or whatever is set in teh httpserver section of the ini file-<br><br>David</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Jan 05, 2015 9:19 pm</strong></div>
+				<div class="author">by <strong>Giovannino</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>emm... it does already.<br>you start it on a server with the -daemon switch<br>and access it from an otehr PC with <br><a href="http://serverIP:1600/" class="postlink">http://serverIP:1600/</a><br>and thats it <img class="smilies" src="./images/smilies/biggrin.png" alt=":D" title=":D"> </div></blockquote><br><br>Sorry man! Too much beer and red wine altered my vision.... <img class="smilies" src="./images/smilies/wink.png" alt=";)" title=";)"><br><br>I'll give a try!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Mon Jan 05, 2015 9:25 pm</strong></div>
+				<div class="author">by <strong>Giovannino</strong></div>
+				<div class="content">@The Supreme<br><br>Your segmentation fault is a library related problem, not related to the files permission.<br>Let me try with my debian server. Our libraries are compiled with different options.<br><br>[UPDATE]<br>I just downloade the new NeoLoader installer and saw a great improvement (with my Mate desktop... )<br><a href="http://postimg.org/image/j3ztgxol1/" class="postlink">[img=http://s18.postimg.org/j3ztgxol1/Schermata.jpg]</a></div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>5</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

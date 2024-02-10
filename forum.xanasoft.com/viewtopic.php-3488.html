@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; SandMan.exe crashes on start</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>SandMan.exe crashes on start</h2>
+		<p><a href="viewtopic.php-1557.html?f=16&amp;t=251">https://forum.xanasoft.com/viewtopic.php?f=16&amp;t=251</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>SandMan.exe crashes on start</h3>
+				<div class="date">Posted: <strong>Thu Feb 03, 2022 12:21 pm</strong></div>
+				<div class="author">by <strong>RedDwarf2</strong></div>
+				<div class="content">As the title says I can no longer start SandMan.exe because every time that I start it, it crashes. I have renamed the Sandboxie-Plus.ini file to *.bak so that it re-creates it but with no improvement.<br>
+<br>
+Things are now back to how they were with the very first versions of plus (+) which I found to be totally unstable and unusable. I then went back to the classic version for sometime until the plus version became more stable. Plus was fairly stable until before 1.0.8, it at least would run without crashing. 1.0.8 would run without crashing but stopped working and I updated to 1.0.9 hoping for some improvement but not so.<br>
+<br>
+BTW I do not want update checks and I wanted to disable that but cannot due to it crashing. Update checks never worked when it did run even when updates were available on github.<br>
+<br>
+Windows 7 x64 SP1<br>
+Sandboxie Plus v1.0.9</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: SandMan.exe crashes on start</h3>
+				<div class="date">Posted: <strong>Fri Feb 04, 2022 8:39 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">I'm sorry to hear that, unfortunately i cant reproduce the crash on my windows 7 VM, could you please provide a couple crash dumps so i can take a look into your issue.<br>
+<br>
+About the updater, its nto updating of github but of xanasoft.com and I inly set there new versions once a github one was stable for a week or two.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: SandMan.exe crashes on start</h3>
+				<div class="date">Posted: <strong>Sat Feb 05, 2022 12:15 pm</strong></div>
+				<div class="author">by <strong>RedDwarf2</strong></div>
+				<div class="content">Where can I find the crash dumps? I cannot access the Sandboxie interface because it crashes when I open it. I have tried searching but cannot find anything that looks like a log file therefore presumably logs need to be activated.<br>
+<br>
+The tray icon does show so it is loading but when I attempt to open the main window it always crashes. The Sandboxie window does briefly show on my desktop after opening from the tray with Show/Hide and then closes before I am unable to do anything.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: SandMan.exe crashes on start</h3>
+				<div class="date">Posted: <strong>Thu Feb 10, 2022 2:28 am</strong></div>
+				<div class="author">by <strong>RedDwarf2</strong></div>
+				<div class="content">I have downgraded to v1.0.3 and it runs as it should and the SB window can also be opened and everything works correctly. Then upgraded to 1.0.6 and it goes back to crashing when the main SB window opens. I have managed to find 1.0.4 and 1.0.5 in order to work out where the problems began.<br>
+<br>
+1.0.4 works but 1.0.5 does not.<br>
+<br>
+What changes were made between 1.0.4 and 1.0.5 that might cause the crashing?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: SandMan.exe crashes on start</h3>
+				<div class="date">Posted: <strong>Mon Feb 14, 2022 8:13 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">hmm strange there were only changes related to handling the situation when its not yet connected to the driver.<br>
+please check if the driver and teh service are runnign also please try the latest build 1.0.11<br>
+crash dumps are normally located at C:\Users\[user]\AppData\Local\CrashDumps</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: SandMan.exe crashes on start</h3>
+				<div class="date">Posted: <strong>Fri Feb 18, 2022 9:50 pm</strong></div>
+				<div class="author">by <strong>RedDwarf2</strong></div>
+				<div class="content"><blockquote><div><cite><a href="memberlist.php-8.html?mode=viewprofile&amp;u=49">DavidXanatos</a> wrote: <a href="viewtopic.php-3493.html?p=586#p586" data-post-id="586" onclick="if(document.getElementById(hash.substr(1)))href=hash">↑</a><div class="responsive-hide">Mon Feb 14, 2022 8:13 am</div></cite>
+hmm strange there were only changes related to handling the situation when its not yet connected to the driver.<br>
+please check if the driver and teh service are runnign also please try the latest build 1.0.11<br>
+crash dumps are normally located at C:\Users\[user]\AppData\Local\CrashDumps
+</div></blockquote>
+
+Thanks for the follow up on this matter. I have done as you have suggested and installed 1.0.11 and it crashed as soon as it ran after install. Following that I used Nirsoft DriverView to check that the driver was loaded which it was. The Service is also running. The Sandman window does open for a few seconds before closing even though I just leave it and do not interact with the window.<br>
+<br>
+I have added the debug info that I have and if there is anything else that would be helpful then please let me know.<br>
+
+<div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="download/file-91.php?id=64" class="postimage" alt="Sandboxie_Service.jpg" onclick="viewableArea(this);"></dt>
+						<dd>Sandboxie_Service.jpg (73.15 KiB) Viewed 2630 times</dd>
+		</dl>
+		
+		
+			</div>
+<div class="inline-attachment">
+			
+		
+				<dl class="file">
+			<dt class="attach-image"><img src="download/file-92.php?id=63" class="postimage" alt="Sandboxie_DriverViewer.jpg" onclick="viewableArea(this);"></dt>
+						<dd>Sandboxie_DriverViewer.jpg (119.75 KiB) Viewed 2630 times</dd>
+		</dl>
+		
+		
+			</div>
+<div class="inline-attachment">
+			
+		
+		
+				<dl class="file">
+			<dt><span class="imageset icon_topic_attach"></span> <a class="postlink" href="download/file-90.php?id=65">SandMan.exe.8336.7z</a></dt>
+						<dd>(139.3 KiB) Downloaded 86 times</dd>
+		</dl>
+		
+			</div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: SandMan.exe crashes on start</h3>
+				<div class="date">Posted: <strong>Sat Feb 19, 2022 9:54 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">to resolve teh issue goto your user section in teh sandboxie.ini<br>
+and delete the BoxDisplayOrder entry</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

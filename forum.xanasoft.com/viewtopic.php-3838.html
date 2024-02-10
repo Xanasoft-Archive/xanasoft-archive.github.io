@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; IE credentials shared across sandboxes</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>IE credentials shared across sandboxes</h2>
+		<p><a href="viewtopic.php-2253.html?f=12&amp;t=141">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=141</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>IE credentials shared across sandboxes</h3>
+				<div class="date">Posted: <strong>Thu Sep 16, 2021 4:16 pm</strong></div>
+				<div class="author">by <strong>omegabeam</strong></div>
+				<div class="content">Hi,<br>
+<br>
+I'm running into a weird problem where I don't know if this is normal or not. I had a sandbox (call it B) where I logged into my gmail with Internet Explorer, and left it, no auto delete, but I did close the window, and made sure to Terminate Programs from the Sandboxie UI.<br>
+<br>
+I then open INternet explorer again in another sandbox (Sandbox A) and when going to gmail, my credentials are already in. I thought it was weird so I wiped everything from Sandbox A to start over. I go to Internet Explorer again, back to gmail, and the creds are still there.<br>
+<br>
+What i'm noticing is the Internet Explorer data seems to be shared across all sandboxes, but it never touches outside though because when I test Internet Explorer without sandboxie, no credentials.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: IE credentials shared across sandboxes</h3>
+				<div class="date">Posted: <strong>Mon Sep 20, 2021 6:55 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">This is strange it should not be shared does this happen only with IE or with other browsers to?<br>
+Do you have any tempaltes enabled to allow access to the real user profile?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: IE credentials shared across sandboxes</h3>
+				<div class="date">Posted: <strong>Fri Sep 24, 2021 3:03 pm</strong></div>
+				<div class="author">by <strong>omegabeam</strong></div>
+				<div class="content">Yeah it is rather strange.<br>
+<br>
+What I'm trying to achieve is basically have google drive in the box, but the synced files would be outside. However, it is okay if Google Drive needs to update itself so I allow full access to the folder where I installed Google Drive as well. This template is the only template with OpenPipePath in its config file, now that I'm looking.<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>[GoogleDrive]
+
+Enabled=y
+ConfigLevel=9
+AutoRecover=y
+BlockNetworkFiles=y
+Template=OpenSmartCard
+Template=OpenBluetooth
+Template=SkipHook
+Template=FileCopy
+Template=qWave
+Template=BlockPorts
+Template=LingerPrograms
+Template=Chrome_Phishing_DirectAccess
+Template=Firefox_Phishing_DirectAccess
+Template=AutoRecoverIgnore
+RecoverFolder=%{374DE290-123F-4565-9164-39C4925E467B}%
+RecoverFolder=%Personal%
+RecoverFolder=%Favorites%
+RecoverFolder=%Desktop%
+BorderColor=#00FFFF,ttl
+OpenPipePath=C:\Google\*
+OpenPipePath=C:\Apps\Drive\*
+OpenPipePath=C:\Apps\Google\*</code></pre></div>
+
+<a href="https://postimg.cc/gwBqDs5r" class="postlink"><img src="gwBqDs5r/1632409407-09-23-2021-Sandbox-Settings-Google-Drive.png" class="postimage" alt="Image"></a></div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; NeoLoader 0.30b - Bug List</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>NeoLoader 0.30b - Bug List</h2>
+		<p><a href="viewtopic.php-1084.html?f=171&amp;t=3265">http://forum.neoloader.com/viewtopic.php?f=171&amp;t=3265</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>NeoLoader 0.30b - Bug List</h3>
+				<div class="date">Posted: <strong>Sun May 05, 2013 7:03 am</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">[CENTER]<strong>[color="#FF0000"]Know Bugs 0.30b[/color]</strong>[/CENTER]<br><br>- Can't choose Temp folder in 1st start wizard<br>- In 1st start wizard advanced options are not show, after turning off only grey out. It should be grey out and not invisible even first<br>- Default columm size & order have no sense<br>- Lag switching windows that show previous window<br>- Columm order is not auto-updated, you need to update it manually<br>- ed2k download don't find sources<br>- torrent download find peer but don't download<br>- No fileicon with magnet links after grabbed. It works after restart &lt;--- tried more times and now no more happens, strange<br>- Avaibility X/Y --&gt; With magnet link X stays always at 0 but peers are connected. <em>EDIT: Maybe because Y is total peers and X is seeds! Seems like that...</em><br>- AutoShare ed2k is active, but right click on single files it says not<br>- Can't select Temp directory in subfolder of Incoming one, else there will be download list bugged<br>- When removing/deleting a file from downloads, it is not canceled from Temp folder<br>- Really high overhead without reason (for example in upload 0b/s (25kb/s))<br>- Unstable download speed, same as upload, tested with linux distros<br>- Sometimes at startup it don't find any sources.seed.peer.<br>- When downloading multiple torrent files since the folder is not wrote on incoming folder there is a bug in filelist<br><br><strong>Host Untested <img class="smilies" src="./images/smilies/frown.png" alt=":(" title=":("> </strong></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun May 05, 2013 8:58 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Bug list updated.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed May 08, 2013 1:27 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Updated bug list</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu May 09, 2013 12:36 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">- Can't choose Temp folder in 1st start wizard<br>-- this is intended behavior (not a bug), we need to force the incoming directory and the temp directory to be on the same physical drive.<br>- In 1st start wizard advanced options are not show, after turning off only grey out. It should be grey out and not invisible even first<br>-- removing the items again would be better i agree, but it would be more complicated to implement, and I believe it does not really matter if its grayed out or fully hidden. I will leave it as it is for the foreseeable future.<br>- Default columm size & order have no sense<br>-- fixed in 0.31 using settings you send me<br>- Lag switching windows that show previous window<br>-- fixed in 0.31 when switching and waiting for new file list window is cleared.<br>- torrent download find peer but don't download<br>-- fixed in 0.31 issue was only with *,torrents not with magnets<br>- No fileicon with magnet links after grabbed. It works after restart &lt;--- tried more times and now no more happens, strange<br>-- fixed in 0.31<br>- AutoShare ed2k is active, but right click on single files it says not<br>-- fixed in 0.31, Note: after changing the setting it is not applyed to old files, also note that the state is being set only after the file was hashed and a ed2k has<br>- When removing/deleting a file from downloads, it is not canceled from Temp folder<br>-- fixed in 0.31<br>- When downloading multiple torrent files since the folder is not wrote on incoming folder there is a bug in filelist<br>-- fixed in 0.31<br>- single file sharing does not work<br>-- fixed in 0.31</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Thu May 09, 2013 2:55 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Thanks I'll test from now the new release and I'll make a new bug list.<br><br>I don't agree with temp folder on 1st wizard, you can even change it choosing the same drive as incoming without any problem, if not just prompt and error window :\<br><br>I will not delete these from bug list but I'll add you explanation about. Thanks.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

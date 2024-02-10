@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; Data Counters</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>Data Counters</h2>
+		<p><a href="viewtopic.php-760.html?f=170&amp;t=3310">http://forum.neoloader.com/viewtopic.php?f=170&amp;t=3310</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Data Counters</h3>
+				<div class="date">Posted: <strong>Sun Jul 28, 2013 12:07 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content">Hi,
+<br>
+<br>The new data counters are a bit confusing, can you give me an explanation so I can test if they works ?
+<br>
+<br>I mean in the upload and download speed, downloaded and uploaded, in both windows: download list and transfers for every client.
+<br>
+<br>Thanks</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Jul 28, 2013 2:17 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Ok:<br><br>so here it comes (assumed the GUI mode is Advanced or Dev):<br><br>The File Lists:<br><br>Download Speed Column: A kb/s (B kb/s) [C/D]<br>A = Download Rate<br>B = Download Rate including overhead<br>C = Active Downloads<br>D = Waiting Downloads<br><br>Downloaded Bytes Column: A - B<br>A = Downloaded Bytes<br>B = estimated time till download completion<br><br>Upload Speed Column: A kb/s (B kb/s) [C/D]<br>A = Upload Rate<br>B = Upload Rate including overhead<br>C = Active Uploads<br>D = Waiting Uploads<br><br>Uploaded Bytes Column: A - B<br>A = Uploaded Bytes<br>B = estimated time till 1:1 Sharing ratio<br><br><br>The Transfer Lists:<br><br>Download Speed Column: A kb/s (B kb/s) - C/D<br>A = Download Rate<br>B = Download Rate including overhead<br>C = Requested Bytes<br>D = request coutn adding up to C bytes of data<br><br>Downloaded Bytes Column A <br>A = Downloaded Bytes in total<br><br><br>Upload Speed Column: A kb/s (B kb/s) - C/D !*#<br>A = Upload Rate<br>B = Upload Rate including overhead<br>C = Bytes Cached in socket for Upload<br>D = individual request count that adds up to the C bytes of data<br>! = the uplaod slot is a focus slot<br>* = the upload slot is a trickle slot<br># = the slot is blocking<br><br>Uploaded Bytes Column A / B<br>A = Uploaded Bytes in total<br>B = Uploaded bytes during this upload session</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Jul 28, 2013 4:50 pm</strong></div>
+				<div class="author">by <strong>Neo26</strong></div>
+				<div class="content"><blockquote class="uncited"><div>Download Speed Column: A kb/s (B kb/s) - C/D<br>A = Download Rate<br>B = Download Rate including overhead<br>C = Requested Bytes<br>D = request coutn adding up to C bytes of data</div></blockquote><br><br>I need a better explanation about what is C and D.<br><br><blockquote class="uncited"><div>Uploaded Bytes Column A / B<br>A = Uploaded Bytes in total<br>B = Uploaded bytes during this upload session<br></div></blockquote><br><br>If the A is not userhash based, I think is totally useless. Couldn't you make it userhash based ? And what about on the torrent side ?<br><br><blockquote class="uncited"><div>Upload Speed Column: A kb/s (B kb/s) - C/D !*#<br>A = Upload Rate<br>B = Upload Rate including overhead<br>C = Bytes Cached in socket for Upload<br>D = individual request count that adds up to the C bytes of data<br>! = the uplaod slot is a focus slot<br>* = the upload slot is a trickle slot<br># = the slot is blocking</div></blockquote><br><br>Need to know C and D here too, I guess is the same...</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Sun Jul 28, 2013 5:22 pm</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">C is the size of data in bytes your client requested to download from the remote client.<br>D is the count if blocks that have ben requested and added together with their respectable sizes result in C<br><br><br>I will not make A it user hash based, tracking clients across sessions is a violation of their right to privacy <img class="smilies" src="./images/smilies/tongue.png" alt=":p" title=":p"><br><br><br>yes C and D for upload is similar,</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

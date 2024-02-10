@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; How to open links (from other programs) in an already running sandboxed web browser</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>How to open links (from other programs) in an already running sandboxed web browser</h2>
+		<p><a href="viewtopic.php-202.html?f=14&amp;t=585">https://forum.xanasoft.com/viewtopic.php?f=14&amp;t=585</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>How to open links (from other programs) in an already running sandboxed web browser</h3>
+				<div class="date">Posted: <strong>Sun May 21, 2023 3:04 pm</strong></div>
+				<div class="author">by <strong>Arf</strong></div>
+				<div class="content">How can I open hyperlinks/URLs, requested/triggered by any program (including the Sandboxie interface) open a new tab in an already running instance of a sandboxed Vivaldi?<br>
+<br>
+What I want to achieve isn't anything special I assume but after literally hours upon hours of trial and error, pinpointing the specific settings involved, I gave up and have to ask.<br>
+My baseline settings are at the end of the post.<br>
+<br>
+It's just not working when "Force Programs" is active, either via "Program Control" or via "App Templates --&gt; Force Vivaldi" (doesn't matter).<br>
+<br>
+When I open a link (e.g. going in the "Help" or "?" menu in any software and clicking on a go to home page entry) I can see Sandboxie opening a new instance of the vivaldi.exe but the process get's terminated soon after. Nothing is send to the open sandboxed Vivaldi window.<br>
+When I disable the force (pun intended), it works.<br>
+<br>
+I am also getting the notification (more on that one later):
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>vivaldi.exe (9684): SBIE2321 Cannot manage device map: [C0000034 / 11]</code></pre></div>
+
+<br>
+I found one other way to to make it work without removing the force, adding:
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>OpenWinClass=*</code></pre></div>
+
+But this would defeat the purpose of a more secure environment for me.<br>
+<br>
+It's not enough to use <em class="text-italics">OpenWinClass=#</em> but after the error message I mentioned, I got a hunch that the window name is involved somehow.<br>
+<br>
+I searched through Github issues and found a <a href="https://github.com/sandboxie-plus/Sandboxie/issues/2279" class="postlink">similar question from last year</a>. The answer given was adding <div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>OpenWinClass=vivaldi.exe,Chrome_MessageWindow</code></pre></div>, which was marked as solving the problem.<br>
+Not for me (when Force Programs is still on).<br>
+<br>
+Furthermore I looked through the (outdated) documentation and found a hint while reading about <a href="https://sandboxie-plus.com/sandboxie/openwinclass/" class="postlink">Open Win Class</a> about using a tool called <a href="https://www.catch22.net/projects/winspy/" class="postlink">WinSpy</a>.<br>
+<br>
+Used that and got a slightly different window class name from that, namely <em class="text-italics">Chrome_WidgetWin_1</em>.<br>
+<br>
+I added that and a third one (because trial and error) and had the following three:
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>OpenWinClass=Chrome_MessageWindow
+OpenWinClass=Chrome_WidgetWin_1
+OpenWinClass=Chrome_WidgetWindow
+</code></pre></div>
+
+<strong class="text-strong">It just does not work!</strong><br>
+<br>
+<br>
+I disabled the force again and noticed the error message again (which I suppressed in the meantime and now re-allowed message SBIE2321): Using <em class="text-italics">OpenWinClass=Chrome_MessageWindow</em> has an effect in the way that the error is gone. I assume it resolves the problem <em class="text-italics">C0000034 / 11</em>.<br>
+<br>
+<br>
+But still the main problem is still present: How in the world can I have the security of forcing vivaldi.exe into the sandbox as well as opening http and https requests into it (without using OpenWinClass=*)?<br>
+<br>
+<br>
+
+<div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><pre><code>AllowNetworkAccess=!&lt;InternetAccess&gt;,n
+AutoRecover=y
+BlockNetworkFiles=y
+BorderColor=#3939ef,ttl,4
+BoxNameTitle=n
+ClosedIpcPath=!&lt;StartRunAccess&gt;,*
+ClosePrintSpooler=y
+ConfigLevel=10
+CopyLimitKb=81920
+DropAdminRights=y
+Enabled=y
+ForceProcess=&lt;Vivaldi&gt;
+NotifyDirectDiskAccess=y
+NotifyNoCopy=y
+ProcessGroup=&lt;InternetAccess&gt;,vivaldi.exe
+ProcessGroup=&lt;Vivaldi&gt;,vivaldi.exe,update_notifier.exe,SandboxieCrypto.exe,RuntimeBroker.exe
+ProcessGroup=&lt;StartRunAccess&gt;,&lt;Vivaldi&gt;
+PromptForInternetAccess=y
+Template=AutoRecoverIgnore
+Template=BlockPorts
+Template=FileCopy
+Template=LingerPrograms
+Template=SkipHook
+Template=BlockTelemetry
+UseFileDeleteV2=y
+UseRegDeleteV2=y
+</code></pre></div></div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: How to open links (from other programs) in an already running sandboxed web browser</h3>
+				<div class="date">Posted: <strong>Sat Jun 03, 2023 12:10 pm</strong></div>
+				<div class="author">by <strong>Arf</strong></div>
+				<div class="content">After almost two weeks of nothing I have to ask: Where is the support in this support forum?<br>
+Should I post this as an "issue" on Github" instead?</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: How to open links (from other programs) in an already running sandboxed web browser</h3>
+				<div class="date">Posted: <strong>Sun Jun 04, 2023 10:34 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Github indeed gets more attention, sorry about that<br>
+and yes posting on github ensured I'll notice it earlier.<br>
+<br>
+I'll look into this issue soon</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: How to open links (from other programs) in an already running sandboxed web browser</h3>
+				<div class="date">Posted: <strong>Sat Dec 23, 2023 3:27 pm</strong></div>
+				<div class="author">by <strong>Arf</strong></div>
+				<div class="content">Almost seven months later, any news about what the status is?<br>
+<br>
+I would still like to get into Sandboxie and start using it but when it's not able to handle real life use cases like opening links, it's prohibitively hard to get exited ^_^<br>
+<br>
+Jokes aside, I would really appreciate any progress in this bug matter and I am sure many others would too.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>

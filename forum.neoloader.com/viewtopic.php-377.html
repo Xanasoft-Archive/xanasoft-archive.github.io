@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<title>NeoLoader Forum &bull; Beispiel / Anleitung um einen Captcha Service ala 9kw.eu per Script zu integrieren?</title>
+
+<link href="./styles/prosilver_se/theme/print.css" rel="stylesheet" type="text/css">
+</head>
+<body id="phpbb">
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>NeoLoader Forum</h1>
+		<p>Forum of the NeoLoader P2P Client/Downloader<br><a href="index.htm">http://forum.neoloader.com/</a></p>
+
+		<h2>Beispiel / Anleitung um einen Captcha Service ala 9kw.eu per Script zu integrieren?</h2>
+		<p><a href="viewtopic.php-375.html?f=167&amp;t=3358">http://forum.neoloader.com/viewtopic.php?f=167&amp;t=3358</a></p>
+	</div>
+
+	<div id="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>Beispiel / Anleitung um einen Captcha Service ala 9kw.eu per Script zu integrieren?</h3>
+				<div class="date">Posted: <strong>Wed Nov 13, 2013 4:48 am</strong></div>
+				<div class="author">by <strong>thecoder2012</strong></div>
+				<div class="content">Hiho,<br><br>laut der Changelog kann Neoloader seit 0.41b und höher auch Captche Dienste. <br><br>Leider fand man ansonsten keine Hilfe um es tatsächlich zu nutzen bzw. zu integrieren als Script. <br>Wenn man im Neoloader schaut, scheint bisher kein Service fÃ¼r die Rubrik hinterlegt zu sein.<br><br>Beispiel / Anleitung / Eckdaten (generic) um einen Captcha Service ala 9kw.eu per Script zu integrieren?<br><br>API Doku: <a href="http://www.9kw.eu/api.html" class="postlink">9kw.eu - Captcha Service for the user - captcha solver</a><br><br>Danke!</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3></h3>
+				<div class="date">Posted: <strong>Wed Nov 13, 2013 8:56 am</strong></div>
+				<div class="author">by <strong>DavidXanatos</strong></div>
+				<div class="content">Bitte NeoLoader updaten, und im tree unter services-&gt;&gt;Captcha solver schauen, da sollten 4 dienste drin sein inklusive  9kw.eu<br><br>David X.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Beispiel / Anleitung um einen Captcha Service ala 9kw.eu per Script zu integrieren?</h3>
+				<div class="date">Posted: <strong>Wed Nov 13, 2013 3:27 pm</strong></div>
+				<div class="author">by <strong>thecoder2012</strong></div>
+				<div class="content"><blockquote><div><cite>DavidXanatos wrote:</cite>Bitte NeoLoader updaten, und im tree unter services-&gt;&gt;Captcha solver schauen, da sollten 4 dienste drin sein inklusive  9kw.eu</div></blockquote><br>Okay danke. Scheint nach einem Update in der Tat so zu sein. <br><br>Nur der Button &quot;Buy Account&quot; bei 9kw.eu fährt nach <a href="http://neoloader.to/affiliate.php?domain=9kw.eu" class="postlink">http://neoloader.to/affiliate.php?domain=9kw.eu</a> aber dort scheint nichts dahinter zu sein? (reflink ist in jedem account bei 9kw zu finden)<br><br>Dazu hat 9kw ja einen API Key und nicht Username+Passwort für Zugriffe über Downloadtools.<br>Support von Mouse-/Klickcaptchas (für 9kw) vielleicht integrieren damit man die Plugins für die File-/Linkhoster entsprechend anpassen kann.<br><br>Habe mir gerade mal den Source von 9kweu.js angeschaut und plowshare ist kein gutes Beispiel für die Integration. Issue bei Plowshare ist dazu auch offen bzw. der Entwickler dort arbeitet an einer besseren Integration.<br><br>Änderungsvorschläge:<br>1. Bei &quot;source&quot; den Wert plowshare in neoloader Ã¤ndern. (plowshare steht zweimal im Code)<br>2. maxtimeout auf 300 erhöhen sonst ist die interne Priorität vom Vorgang bei 9kw geringer.<br>3. 10+6+6+7+7+8+8+9+9+10+10+20+20+20+30+30=210 =&gt; erhöhen auf 300 (am besten den max. Timeout einstellbar machen)<br>4. Obiger Link anpassen sonst sind neue User verwirrt, wenn es nicht funktioniert.<br>5. Wenn möglich bei 9kw/antigate das Feld auf &quot;API Key&quot; ändern statt Username/Password (laut Code wird Username ignoriert)<br>6. Möglichst noch Optionen einbauen für die Accounts (Guthaben vom Account ggf. zusätzliche Optionen wie Prio/confirm bei 9kw/cbh/antigate)<br>7. Falscher API Key wird auch mit Status &quot;Ok&quot; angezeigt.<br><br>Freue mich das Neoloader auch in diesem Bereich langsam Fortschritte macht.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer">
+		<div class="page-number">All times are <abbr title="UTC+1">UTC+01:00</abbr><br>Page <strong>1</strong> of <strong>1</strong></div>
+		<div class="copyright">Powered by phpBB&reg; Forum Software &copy; phpBB Limited<br>https://www.phpbb.com/</div>
+	</div>
+</div>
+
+</body>
+</html>
+Fatal: Not able to open ./cache/data_global.php

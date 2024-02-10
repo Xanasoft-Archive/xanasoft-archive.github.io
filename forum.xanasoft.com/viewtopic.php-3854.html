@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex">
+
+<title>xanasoft.com &bull; A strange error:  Non-sandboxed windows appear to be sandboxed.</title>
+
+<link href="styles/prosilver/theme/print.css" rel="stylesheet">
+<link href="styles/prosilver/theme/bidi.css" rel="stylesheet">
+</head>
+<body id="phpbb" class="ltr">
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+
+	<div id="page-header">
+		<h1>xanasoft.com</h1>
+		<p>Xanasoft support forum<br><a href="index.htm">https://forum.xanasoft.com/</a></p>
+
+		<h2>A strange error:  Non-sandboxed windows appear to be sandboxed.</h2>
+		<p><a href="viewtopic.php-2260.html?f=12&amp;t=105">https://forum.xanasoft.com/viewtopic.php?f=12&amp;t=105</a></p>
+	</div>
+
+	<div id="page-body" class="page-body">
+		<div class="page-number">Page <strong>1</strong> of <strong>1</strong></div>
+					<div class="post">
+				<h3>A strange error:  Non-sandboxed windows appear to be sandboxed.</h3>
+				<div class="date">Posted: <strong>Fri Jul 30, 2021 12:43 pm</strong></div>
+				<div class="author">by <strong>Sandboxer</strong></div>
+				<div class="content">I only use my five sandboxes to run browsers (Vivaldi, Firefox, Edge and IE). I usually force all browsers to open in DefaultBox, and I never start any other program sandboxed.  <br>
+<br>
+For the last couple of months, 0-5 times a day, the yellow border of DefaultBox appears around some other program's window.  Today I recorded a few things when an Excel spreadsheet received a yellow border.  <br>
+<br>
+* First, I used Sandboxie's Windows Finder, which reported that:<br>
+  <em class="text-italics">The selected window is running as part of the program Vivaldi.exe in sandbox DefaultBox.</em><br>
+This confirmed the yellow sandbox DefaultBox, but astonishingly it claimed that it was Vivaldi that was running in the sandbox!  Vivaldi is my default browser, and it was not running at all, although it had been earlier.<br>
+* I then emptied DefaultBox (including system files) with normal Windows delete.<br>
+* I then entered some new text into an Excel cell, and saved the file with Ctrl+S.  <br>
+* After refreshing the directory tree, the sandbox was still empty, and Excel still had its yellow border.<br>
+* I then closed Excel, and reopened the same file.  This time there was no yellow border, and Sandboxie's Windows finder reported that: <br>
+  <em class="text-italics">The selected window is not running as part of any sandboxed program.</em> <br>
+Also, the change that I had made within the Excel file had been properly saved.<br>
+<br>
+* Twenty minutes later I launched the XLSX file again --- it had a yellow border.<br>
+* I closed it and reopened it --- no yellow border.<br>
+<br>
+I am not a techie and I don't understand what is happening, so I can only report the behaviour.<br>
+64-bit Sandboxie-Plus V0.8.9 running on a 64-bit desktop (Intel Core i7-6700 CPU @ 3.40GHz) with Windows 10.0.19043.1110.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: A strange error:  Non-sandboxed windows appear to be sandboxed.</h3>
+				<div class="date">Posted: <strong>Tue Aug 17, 2021 6:36 am</strong></div>
+				<div class="author">by <strong>Sandboxer</strong></div>
+				<div class="content">This error is still a problem for me in V0.9.3.  The only changes that I can detect are that it usually seems to be happening less, and that the Window Finder now confirms that the window is sandboxed according to the colour of the border.<br>
+<br>
+Only my four browsers are forced into DefaultBox, and only The Bat! (my email client) is explicitly prevented from opening in a sandbox.<br>
+<br>
+But this afternoon, Sandboxie really seems to have caught the dreaded Delta variant!  Here is what happened on the same PC mentioned above.<br>
+<br>
+* I launched ESET Internet Security by left-clicking its System Tray icon.<br>
+   — Result: Launched in DefaultBox (yellow border, confirmed by Sandboxie Window Finder). <br>
+   — I repeated this twice more, with the same result.<br>
+   — I then launched ESET by left-clicking the system tray icon.  It launched unsandboxed. <br>
+   — It also launched unsandboxed using a button with the Start Menu LNK file.<br>
+<br>
+* I then launched this Forum webpage in DefaultBox, and it launched correctly.<br>
+<br>
+* I then launched portable Neo's SafeKeys using a button with its command.<br>
+   — Result:  It launched in DefaultBox, confirmed by border and Windows Finder.<br>
+   — I repeated the launch twice more, and it came up unsandboxed each time<br>
+   — But the fourth time it launched in LoginBox, confirmed by border and Finder.<br>
+   — Launches 5–7 came up unsandboxed.<br>
+<br>
+* I then launched RoboForm using a button with its Start Menu LNK. It launched unsandboxed.<br>
+   — The next time it launched in LoginBox.<br>
+   — The third time it launched in DefaultBox.<br>
+   — The fourth time it launched unsandboxed.<br>
+<br>
+At this stage, I quickly logged into RoboForm, then into the Forum, and posted this note.</div>
+			</div>
+			<hr>
+					<div class="post">
+				<h3>Re: A strange error:  Non-sandboxed windows appear to be sandboxed.</h3>
+				<div class="date">Posted: <strong>Mon Sep 06, 2021 1:14 am</strong></div>
+				<div class="author">by <strong>Sandboxer</strong></div>
+				<div class="content">I installed Sandboxie V0.9.5 (64-bit) a few days ago, and the problems described in my two posts above now seem to have disappeared.<br>
+<br>
+Once again, thanks David.</div>
+			</div>
+			<hr>
+			</div>
+
+	<div id="page-footer" class="page-footer">
+		<div class="page-number">All times are <span title="UTC">UTC</span><br>Page <strong>1</strong> of <strong>1</strong></div>
+			<div class="copyright">
+				<p>Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+				</p>
+							</div>
+	</div>
+</div>
+
+</body>
+</html>
